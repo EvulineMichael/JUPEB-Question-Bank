@@ -1,0 +1,713 @@
+[
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Give the empirical formula of a compound containing 92.26% C and H.",
+    "options": ["CH", "CH2", "C2H3", "C2H5"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "The gas heavier than air is",
+    "options": ["pure N2", "pure Cl2", "moist air", "moist H2"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Thermodynamics",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "A well-stoppered thermos flask contains some ice cubes. This is an example of",
+    "options": ["closed system", "open system", "isolated system", "non-thermodynamic system"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "The kinds of bonding in NH4+ is",
+    "options": ["ionic/dative", "ionic/covalent", "dative/covalent", "metallic/dative"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Measurement",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "The ratio of the absolute error in measurement to the expected true value defines the",
+    "options": ["relative error", "mean error", "absolute error", "random error"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "The mass spectrum of an atom shows two peaks with masses 80 and 100, if the isotopic ratio of the isotopes is 6:5 respectively, determine the average atomic mass of the atom.",
+    "options": ["98.0", "90.2", "89.1", "72.7"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "What is the atomic mass of a triatomic elementary gas with a vapour density of 48?",
+    "options": ["48", "96", "32", "16"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Stoichiometry",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "In the equation, xNH3 + yO2 → zNO + wH2O. If x is 2, then y, z, and w are respectively",
+    "options": ["5/2, 4, 6", "5/2, 2, 3", "3, 2, 4", "2, 4, 6"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Electronic Configuration",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "The element whose electronic configuration is 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^{10} is a",
+    "options": ["metal", "non-metal", "noble gas", "metalloid"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Chemistry of Hydrogen",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Which of the following characteristics shows that hydrogen resembles halogens?",
+    "options": ["Hydrogen is the lightest", "H atom contains one electron", "H forms ionic hydrides with alkali metals", "Hydrogen has three isotopes"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Alkyl Halides",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "What type of reaction can convert alkyl halide into an alcohol?",
+    "options": ["addition", "elimination", "substitution", "hydrolysis"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "The scientist who discovered Neutrons is",
+    "options": ["J.J. Thomson", "Rutherford", "James Chadwick", "G.T. Seaberry"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Periodic Table and Periodicity",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Identify the elements that have the smallest first ionization energy.",
+    "options": ["15P", "19K", "6C", "12Mg"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Chemical Reactions",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Which of the following ionic compounds is insoluble in water?",
+    "options": ["(NH4)2CO3", "AgBr", "CuSO4", "KI"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Electrochemistry",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "When lead acid battery is discharged",
+    "options": ["SO2 is evolved", "lead sulphate is consumed", "lead is formed", "sulphuric acid is used up"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Chemical Kinetics",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "The rate constant does not depend on",
+    "options": ["temperature", "concentration", "presence of a catalyst", "nature of reactants"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Nuclear Chemistry",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "The total mass of protons and neutrons of an isotope are not equal to the actual mass of the nuclide because of",
+    "options": ["radioactivity", "binding energy", "attraction between electrons and the nucleus", "proton-proton interaction"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Calculate the volume of 0.200 M Na2CO3 solution which contains 53.0 g of Na2CO3? [Na = 23, C = 12, O = 16]",
+    "options": ["0.20 L", "1.60 L", "2.50 L", "0.50 L"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "Identify the option which contains the highest number of atoms.",
+    "options": ["71 g of chlorine", "48 g of magnesium", "127 g of iodine", "4 g of hydrogen"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "If 2.5 L of a sample of a gas at 27°C and 1 bar pressure is compressed to a volume of 500 mL at constant temperature. What is the percentage increase in pressure?",
+    "options": ["100%", "400%", "500%", "80%"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Chemistry of Hydrogen",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "The process of preparing hydrogen from red-hot coke and steam is generally called",
+    "options": ["Lane's process", "Reforming of Coke", "Linde's process", "Bosch's process"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "s-block elements",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "The formula for washing soda is",
+    "options": ["Na2CO3", "Na2CO3·10H2O", "Na2CO3·3H2O", "Na2CO3·7H2O"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Chemistry of Hydrogen",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Synthesis gas is a mixture of",
+    "options": ["Steam and CO", "CO and N2", "H2 and CO", "H2 and CH4"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Nuclear Chemistry",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The destructive action of Hydrogen bombs is based on",
+    "options": ["natural radioactivity", "nuclear fission", "nuclear fusion", "natural reaction"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Nuclear Chemistry",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "If a radioactive element is placed in an evacuated container, its rate of disintegration",
+    "options": ["will be increased.", "will be decreased.", "will change very slightly.", "will remain unchanged."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Nuclear Chemistry",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "If the half-life of a radioactive nuclide is 24 hours. What time will be required for 12.5% of its original amount to remain?",
+    "options": ["1 day", "2 days", "3 days", "4 days"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Thermodynamics",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "For exothermic reactions to be spontaneous, the temperature should be",
+    "options": ["high", "0°C", "low", "373K"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Periodic Table and Periodicity",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "An element with high electronegativity has",
+    "options": ["High Ionization Energy and high Electron Affinity", "High Ionization Energy and low Electron Affinity", "Low Ionization Energy and high EA", "Low Ionization Energy and low EA"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Chemical Kinetics",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "How does a catalyst alter the rate of a reaction?",
+    "options": ["By changing the reaction conditions", "By lowering the activation energy", "By changing the order", "By reversing the order"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "What is the correct order of melting points of B, Al, and Ga?",
+    "options": ["B > Al > Ga", "Al > B > Ga", "Ga > B > Al", "B > Ga > Al"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The mixing of atomic orbitals at different energy levels to form hybrid orbitals is known as",
+    "options": ["isomerism", "hybridization", "delocalization", "cyclization"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Organic Reactions",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "An organic reaction in which bond fission results in formation of free radicals is",
+    "options": ["homolytic", "ozonolysis", "rearrangement", "elimination"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "d-block elements",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The 3d metal ions are generally paramagnetic in nature because",
+    "options": ["they form coloured salts", "they have one or more unpaired electron", "they have one or more paired s-electrons", "they are reducing agents"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Organic Reactions",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Grignard reagent is prepared by the reaction between an alkyl halide and",
+    "options": ["Zinc in the presence of alcohol", "Magnesium in the presence of dry ether", "Magnesium in the presence of alcohol", "Magnesium in the presence of moist ether"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "s-block elements",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Which of the following is the most stable hydroxide?",
+    "options": ["Mg(OH)2", "Ca(OH)2", "Sr(OH)2", "Ba(OH)2"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "In the esterification of carboxylic acid with alcohol, which bond of the carboxylic acid undergoes cleavage?",
+    "options": ["C-C", "C=O", "C-H", "O-H"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Which of the following oxides is neutral but toxic?",
+    "options": ["CO2", "CO", "SnO", "H2O"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Macromolecules",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The product of the Polymerization of styrene is",
+    "options": ["polyethylene", "polypropylene", "polystyrene", "toluene"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "What is the hybrid state of boron in boric acid?",
+    "options": ["sp", "sp²", "sp³", "sp3d"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Amino Acids and Proteins",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "An example of a zwitterion is",
+    "options": ["alanine", "methyl acetate", "glucose", "sodium hydroxide"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Macromolecules",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "Which of the following is the main structural feature of proteins?",
+    "options": ["peptide linkage", "glycoside linkage", "ether linkage", "ester linkage"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Acid-Base Equilibria",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The acid with the highest Ka value is",
+    "options": ["HIO", "HFO", "HClO", "BrOH"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Macromolecules",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "The force of attraction between the neighboring peptide chains is",
+    "options": ["Van der Waal's forces", "Covalent bond", "Hydrogen bond", "peptide linkage"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Which element of group 16 cannot form a compound of the type XF6?",
+    "options": ["Selenium", "Sulphur", "Oxygen", "Tellurium"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Which of the following compounds can be used as a refrigerant?",
+    "options": ["CCl4", "CH2Cl2", "CF4", "CF2Cl2"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "What is the same in various hydrides of chalcogens?",
+    "options": ["Molecular shape", "Reducing nature", "Central bond angle", "Magnitude of inter-particle forces"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Chemistry of Hydrogen",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Synthesis gas is a mixture of",
+    "options": ["Steam and CO", "CO and N2", "H2 and CO", "H2 and CH4"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Nuclear Chemistry",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The reaction, 91Pa^{234} → 92U^{234} occurs with the emission of",
+    "options": ["α-particle", "β-particle", "p-particle", "position"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Chemical Kinetics",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "The substance that adsorbs and activates reactants to form products which cannot break away is",
+    "options": ["Catalyst.", "Metal", "Adsorbate.", "Precipitate"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Isomerism",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Tautomeric product of propenol is",
+    "options": ["propenoic acid", "propanol", "propanal", "propanone"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Electronic Configuration",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) Write the electronic configuration of the elements with the following atomic numbers:\n(i) 35\n(ii) 26 [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Electronic Configuration",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) Write the designation for the orbital occupied by an electron described by the following quantum numbers:\n(i) n = 3, l = 1\n(ii) n = 4, l = 0\n(iii) n = 3, l = 2\n(iv) n = 3, l = 0 [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) 20g of a hydrocarbon produced 62.85g of CO2 and 25.57g of H2O when completely combusted in air.\n(i) Determine the empirical formula of the hydrocarbon.\n(ii) If the molecular mass of the compound is 252 g/mol, determine the molecular formula of the hydrocarbon. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Measurement",
+    "type": "Essay",
+    "questionNumber": "1d",
+    "question": "(d) Five persons measure the length of a room and obtained the following results: 10.325m, 10.320m, 10.315m, 10.313m and 10.327m. Determine the:\n(i) mean deviation\n(ii) standard deviation [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) (i) What is ionization of atom? [1 mark]\n(ii) An electron for a hydrogen atom is at an infinite excitation and the maximum wavelength of electromagnetic radiation that can completely remove (ionize) the electron from the H atom is 1460 nm, what is the initial state of the electron? (R = 2.18 × 10^{-18} J, h = 6.626 × 10^{-34}, c = 3 × 10^8) [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) The following equation shows the reaction of phosphine (PH3) with a hydrogen ion, H+: PH3 + H+ → PH4+\n(i) Predict the shape and bond angle of phosphine [1 mark]\n(ii) State the type of bonds present in PH4+ [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Thermochemistry",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) (i) State Hess's law of heat summation. [1 mark]\n(ii) Given the following data:\nH2(g) + ½O2(g) → H2O(l) ΔH = -285.8 kJ\nN2O5(g) + H2O(l) → 2HNO3(l) ΔH = -76.6 kJ\n½N2(g) + 3/2O2(g) + ½H2(g) → HNO3(l) ΔH = -174.1 kJ\nCalculate the standard enthalpy change ΔH for the reaction: 2N2(g) + 5O2(g) → 2N2O5(g) [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) Calculate the e.m.f of the cell at 25°C for the following electrochemical cell: Cr / Cr^{3+}(0.1M) // Fe^{2+}(0.01M) / Fe. Given the following standard reduction potentials: E°Cr^{3+}/Cr = -0.74V and E°Fe^{2+}/Fe = -0.44V [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Equilibrium State",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) Decomposition of COCl2 is a reversible process written as COCl2(g) ⇌ CO(g) + Cl2(g). When the reaction is at equilibrium, what will be the effect of:\n(i) Adding more COCl2\n(ii) Adding more Cl2 [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Nuclear Chemistry",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) (i) Define Nuclear binding energy [1 mark]\n(ii) A compound is used in an experiment 6.5 days after it was prepared. If the sample originally contained 0.35g of phosphorus-32 with a half-life of 15 days. How many grams was used in the experiment? [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Equilibrium State",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) Consider the reaction for the combustion of iron: 4Fe(aq) + 3O2(g) ⇌ 2Fe2O3(aq) at 25°C. An equilibrium mixture contains 0.2 moles of Fe, 0.3 moles of O2 and 0.4 moles of Fe2O3 all in a 2000 mL reaction vessel.\n(i) Write the equilibrium constant expression for the reaction\n(ii) Calculate the values of Kc and Kp for the reaction [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "4c",
+    "question": "(c) Balance the redox equation in basic medium: MnO4^- + C2O4^{2-} → MnO2 + CO2 [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Ionic Equilibria",
+    "type": "Essay",
+    "questionNumber": "4d",
+    "question": "(d) (i) Write an expression for the Ksp of magnesium hydroxide, stating its unit. [1 mark]\n(ii) Given that the numerical value of the Ksp of magnesium hydroxide is 2.0 × 10^{-11}, calculate the concentration of Mg(OH)2 in a saturated solution. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) Give a reason for the following:\n(i) Zn, Cd and Hg are not considered as true transition metals [1 mark]\n(ii) Zn^{2+} salts are white, while Cu^{2+} salts are blue [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "d-block elements",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) Write the electronic configuration of the following atoms/ions and indicate the magnetic property:\n(i) V^{3+}\n(ii) Fe^{3+}\n(iii) Ti\n(iv) Cr^{+} [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) The melting points of some oxides of Group IV elements are given below:\nOxide: CO2 (-78°C), SiO2 (1610°C), SnO2 (1630°C)\nDescribe the bonding and its relation to the melting point for the following oxides:\n(i) CO2\n(ii) SiO2\n(iii) SnO2 [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Essay",
+    "questionNumber": "5d",
+    "question": "(d) Deduce the hybrid orbitals involved in the bonding molecules of CH4 and BCl3. [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "s-block elements",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Arrange the hydroxides and the sulphates of alkaline earth metals in increasing order of solubilities. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Nanochemistry",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Write the classification of nanostructured materials based on their dimensionality. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) Na2O, Al2O3 and P4O10 are oxides of period 3. Explain using balanced equations, what is observed when each compound is reacted with:\n(i) An alkali\n(ii) An acid\n(iii) Which oxide(s) in c(i) above will give a solution whose pH is higher than 7 in water? [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Chemistry of Hydrogen",
+    "type": "Essay",
+    "questionNumber": "6d",
+    "question": "(d) Justify the placement of hydrogen into groups I and VII of the periodic table. [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Carbonyl Compounds",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) HCN reacts with propanal (CH3CH2CHO) to form compound F.\n(i) Give the name and the structure of the organic product F.\n(ii) State the type of reaction involved.\n(iii) Write the formula and name the product obtained when Compound F is hydrolysed in acid (H2O/H+). [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Petroleum Industry",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) The table below is obtained in the fractions obtained from crude petroleum. Fill in the missing components:\n\nTemp. of Separation | No. of C atoms | Fraction | Use\nUnder 30°C | 2-4 | Petroleum gas |\n30°-180°C | 4-9 | | Motor fuel\n160°-230°C | 8-16 | Kerosene | Heat, jet fuel\n200°-320°C | | Diesel | Motor fuel\n300°-450°C | 16-30 | | Heating lubricants\n>300°C Vacuum | >25 | Petroleum jelly/paraffin wax |\nResidue | | Asphalt | In construction [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Aromatic Compounds",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) Write equations to illustrate the following reactions:\n(i) Nitration of bromobenzene\n(ii) Bromination of nitrobenzene [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "7d",
+    "question": "(d) (i) Write the open-chain structures of D-glucose and D-fructose. [1 mark]\n(ii) Explain why Fehling's solution is reduced by glucose and not by sucrose. [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) (i) Give the name and structure of the product formed from the reaction of butene and hydrogen bromide in the presence of peroxide. [2 marks]\n(ii) Write three differences between Inductive and Mesomeric Effects. [1½ marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Show how the compound formed between atom X and Y (i.e. X-Y) can be subjected to:\n(i) Homolytic fission\n(ii) Heterolytic fission\nState the condition(s) that may lead to each type of fission. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) List three uses of polymers. [1½ marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2025,
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "8d",
+    "question": "(d) Give two examples of each of the following:\n(i) a free radical\n(ii) an electrophile\n(iii) a nucleophile [1½ marks]",
+    "options": []
+  }
+]

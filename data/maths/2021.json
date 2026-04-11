@@ -1,0 +1,661 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Obtain the equation of normal to the curve 2y = x² - 4x + 1 at the point (1,2).",
+    "options": ["2x + y = 1", "2xy = 1", "2x - y = 1", "y - x = 1"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Polynomials",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Determine the respective values of p and q if (x - 1) and (x + 2) are factors of 2x³ + px² - x + q = 0.",
+    "options": ["-5, 6", "6, 5", "5, -6", "5, 6"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Functions",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "If f: x → x² + c and g: x → ax + b, find (g ∘ f)(x).",
+    "options": ["a(x² + c) + b", "(ax + b)² + c", "a(x² + c)", "(ax + b)²"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Quadratic Equations",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "If α and β are the roots of the quadratic equation ax² + bx + c = 0, obtain the equation whose roots are 1/α and 1/β.",
+    "options": ["cx² + bx + a", "bx² + cx + a", "cx² + abx + 1", "x² + bx + a"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Indices",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Deduce the values of x if 9x² = 3^(5x - 2).",
+    "options": ["2, 1/4", "1/2, 3", "1/2, 4", "1/2, 2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Inequalities",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Solve the inequality 2x² + 3x - 2 ≤ 0.",
+    "options": ["(2, 1/2)", "[-2, 1/2]", "[2, 1/2]", "(-2, 1/2)"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Partial Fractions",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "Resolve the expression 1/(1 - x²) into partial fractions.",
+    "options": ["(1/2)/(1 - x) + (1/2)/(1 + x)", "(1/2)/(1 - x) - (1/2)/(1 + x)", "(1/2)/(1 - x) - 1/(1 + x)", "1/(1 - x) + (1/2)/(1 + x)"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Sequences and Series",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "The sum of the first n terms of a geometric series is 127 and the sum of their reciprocals is 127/64, if the first term is 1, find n and the common ratio.",
+    "options": ["5, 2", "7, 2", "2, 7", "5, 7"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Obtain the points common to the two loci whose equations are y² - 6y - 4x + 1 = 0 and 2y - x - 11 = 0.",
+    "options": ["(-1, 9), (-1, 7)", "(7, 9), (-1, 5)", "(7, -9), (-1, 5)", "(-5, 9), (-1, 7)"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Trigonometry",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Solve for tan θ in the equation 7 sec²θ = 6 tan θ + 8.",
+    "options": ["1, 1/7", "1, -1/7", "2, 1/7", "-2, 1/7"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Binomial Theorem",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "What is the coefficient of x⁶ in the expansion (1/x² - x)¹⁸?",
+    "options": ["1020", "2020", "3060", "4020"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Set Theory",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Given that A = {x: x < 4, x is a natural number} and B = {x: x ≥ 2, x is an integer}. Deduce (A ∩ B) × (A \\ B).",
+    "options": ["{(1,2), (1,3)}", "{(2,3), (2,1)}", "{(2,1), (3,1)}", "{(3,2), (1,2)}"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Evaluate the gradient of the curve 3x² + 2xy - y² - 8 = 0 at point A(3, 1).",
+    "options": ["10", "-5", "8", "5"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "An ellipse is a conic section whose eccentricity (e) is",
+    "options": ["e = 1", "0 < e < 1", "e > 1", "e ≥ 2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Sequences and Series",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Find the sum to infinity of the following series: 3 + 2 + 4/3 + 8/9 + 16/27 + ...",
+    "options": ["1270", "190", "18", "9"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "If x = t² + 1 and y = t³ + 2, find y'.",
+    "options": ["2t", "3t", "3t/2", "2t/3"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "If y = (3x + 8)¹⁹, obtain the derivative of y with respect to x.",
+    "options": ["(3x + 8)¹⁸", "27(3x + 8)", "57(3x + 8)¹⁸", "19(3x + 8)¹⁸"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Evaluate ∫₋₁¹ x²(x³ + 1) dx.",
+    "options": ["2/3", "1/3", "-2", "2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "If y = (1 - 4x)⁻², deduce dy/dx.",
+    "options": ["8(1 - 4x)⁻³", "8(1 - 4x)⁻²", "-8(1 - 4x)⁻²", "8(1 - 4x)⁻²"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Limits and Continuity",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "Compute lim_{x→4} {(x - 4)/(√x - 2)}.",
+    "options": ["2", "-4", "4", "0"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "First Order Differential Equations",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "Which of the following differential equations is non-linear?",
+    "options": ["y'' + 4y' - 6y = 0", "y'' + 2xy' - y = 1", "y'' + 2y dy/dx + y² = 0", "y''' + 2y'' + x²y' = x"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "First Order Differential Equations",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Solve the differential equation dy/dx - x²/y = 0.",
+    "options": ["3y² - x³ = C", "2y² - x² + C = 0", "3y² - 2x³ = C", "2y³ - 3x² = C"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Curve Sketching",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "An asymptote is a tangent to curve in two points at",
+    "options": ["the origin", "infinity", "the axes", "the centre"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The following are turning points except",
+    "options": ["maximum point", "minimum point", "inflexion point", "maximum and minimum"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "First Order Differential Equations",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "Solve the differential equation x dy + y dx = 0.",
+    "options": ["x - y = C", "xy = C", "x/y = C", "y/x = C"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "If y = 1/x then the nth derivative of y with respect to x equals",
+    "options": ["(-1)ⁿ n! / xⁿ⁺¹", "(-1)ⁿ⁺¹ n! / xⁿ", "(-1)ⁿ⁻¹ n! / xⁿ⁺¹", "(-1)ⁿ n! / xⁿ"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "If y = e²ˣ⁻¹, find d²y/dx² - 2 dy/dx - 2y.",
+    "options": ["2", "1", "0", "-2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Integrate the function x eˣ.",
+    "options": ["eˣ(x - 1)", "eˣ(x + 1)", "x eˣ(x + 1)", "x(eˣ - 1)"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "If C is the constant of integration, then which of the following is true for ∫ f'(x)/f(x) dx?",
+    "options": ["ln[f'(x)]² + C", "ln[f(x)] + C", "f'(x)/f(x) + C", "[f(x)]² + C"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "The motion of a particle along a straight line is specified by the equation x = 4t⁴ - 3t³, evaluate the velocity after 3 seconds.",
+    "options": ["513 m/s", "378 m/s²", "351 m/s", "486 m/s²"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The motion of a particle along a straight line is specified by the equation x = 4t⁴ - 3t³, compute the acceleration after 3 seconds.",
+    "options": ["513 m/s", "378 m/s²", "351 m/s", "486 m/s²"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "Given that a = i + j - 2k, b = i + k, c = 2i - j + 3k. Evaluate |2a + b + 2c|.",
+    "options": ["√85", "√58", "±√58", "-√85"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "A car accelerates uniformly for 4s and maintains a constant speed for 10s before it finally decelerates uniformly to rest in 6s. If the total distance travelled is 600 m, calculate the maximum speed.",
+    "options": ["40 m/s", "-40 m/s", "25 m/s", "41 m/s"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "A body of mass 6 kg is suspended at a position P by two light inextensible strings AP and BP which are inclined respectively at angle 20° and 60° to the upward vertical. If the system is in equilibrium, calculate the total tension in the string.",
+    "options": ["62.75 N", "87.71 N", "32.75 N", "25.57 N"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Moments",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "A uniform beam is 14 m long and has a mass of 40 kg. Masses of 10 kg and 20 kg are suspended from its ends. At what point from the 20 kg mass must the beam be suspended so that it may rest horizontally on the support?",
+    "options": ["8 m", "7 m", "5 m", "6 m"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "A particle moving along the centre defined by r = a cos ωt i + a sin ωt j. Determine its speed at any time t.",
+    "options": ["-a cos ωt i + aω sin ωt j", "-aω", "aω", "-ω²r"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Evaluate ∫₀² F(t) dt if F(t) = 2e⁻ᵗ i + 5 cos t j - 3 sin t k.",
+    "options": ["-2i + 3k", "2(1 - e⁻²)i + 5 sin 2 j + 3(1 - cos 2)k", "2e⁻ᵗ i + 5 sin t j + 3 cos t k", "-2i + 3j + 3(1 - cos 2)k"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "Two forces 10 N and 6 N act in the direction 060° and 330° respectively. Find the x-component of their resultant.",
+    "options": ["5√3 - 3", "3 - 5√3", "5 - 3√3", "3√3 - 5"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The diagram above is a velocity-time graph of a moving object. Calculate the distance travelled when the acceleration is zero.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Velocity-time graph. Please refer to your original past question paper.",
+    "options": ["120 m", "90 m", "150 m", "240 m"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Correlation and Regression",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Negative Correlation means",
+    "options": ["Linear dependence", "Direct relationship", "Inverse relationship", "No relationship"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Combinatorics",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "How many 5-letter code-words can be formed from the letters of the word ALGEBRA, if the code-word must begin with A and end with A?",
+    "options": ["20", "120", "60", "40"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Combinatorics",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "In how many ways can a committee of 5 be formed from a group of 8 people consisting of 3 boys, 3 girls and a brother-sister pair, if the committee must include the brother-sister pair?",
+    "options": ["40", "20", "56", "36"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Probability",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "Find the probability of at least 4 heads in 6 tosses of a fair coin.",
+    "options": ["11/32", "10/21", "1/6", "1/2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Normal Distribution",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "On a final examination in Mathematics, the mean was 72 and the standard deviation was 15. Determine the standard score of students receiving the grade of 60.",
+    "options": ["-0.5", "1", "-0.8", "2.5"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The mean of the numbers 2, 5, 6, 8, x, y is 6, and their standard deviation is √5. Compute x and y.",
+    "options": ["6, 9", "6, 7", "5, 9", "2, 4"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Probability Distributions",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Compute the expected number of males and its standard deviation in a random sample of 100 families.",
+    "options": ["25, 5", "50, 25", "50, 5", "10, 5"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Significance Testing",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The hypothesis of primary interest is",
+    "options": ["alternative", "specified", "null", "exact"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Correlation and Regression",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The equation y = β₀ + β₁x is called",
+    "options": ["a correlation equation", "a prediction equation", "a linear regression equation", "a non-linear regression equation"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Probability",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "An unbiased six sided die has the score 2 engraved on two sides, the score 4 on three sides and score 6 on the remaining one side. The die is thrown once. Compute the probability of obtaining: a score of 6 or less.",
+    "options": ["2/6", "1/6", "5/6", "1"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Probability",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "An unbiased six sided die has the score 2 engraved on two sides, the score 4 on three sides and score 6 on the remaining one side. The die is thrown once. Compute the probability of obtaining an odd score.",
+    "options": ["0", "1", "2/6", "5/6"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) (i) Consider two lines L₁ and L₂ that are perpendicular to each other. Show that the gradient m₂ = -1/m₁ or m₁ = -1/m₂. [3 marks]\n(ii) Find the equation of the straight line through (1, -2) which is perpendicular to 3x - 2y = 6. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) (i) Find the centre and radius of the circle x² + y² + 3x - 2y + 2 = 0. [3 marks]\n(ii) If the ends of a diameter of a circle have coordinates (5, 4) and (-3, 6), find the equation of the circle. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) Find the equation of the tangent to the circle x² + y² + 2x - 3y = -1 at the point (3, 4). [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Inequalities",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) For what values of x is |x - 1| > 2|x + 3|? [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Complex Numbers",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) (i) Write 1 + i√3 and 1 - i√3 in trigonometric form and simplify (1 + i√3)⁹ + (1 - i√3)⁹ in x + iy form. [3 marks]\n(ii) Find tan(7π/12) using the known values of tangent of π/3 and π/4. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Sequences and Series",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) Prove by induction that 1 + 3 + 5 + ... + (2n - 1) = n². [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) Integrate the following functions with respect to x: y = (e³ˣ + 3)/(e³ˣ + 9x + 2). [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) ∫ 8x dx/(3 + 2x). [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) ∫ dx/(9 - 4x²). [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) Determine the initial value problem dy/dx = (y - 1)/(x + 3), y(-1) = 0. [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Second Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) Solve the initial value problem y'' + 2y' - y = 0; y(0) = 0, y'(0) = -1. [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "4c",
+    "question": "(c) Solve the differential equations:\n(i) (x² + 1) dy/dx + (y² - 1) = 0 [2½ marks]\n(ii) dy/dx = (x² - y²)/(2x²) [2½ marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) Find the area of the triangle whose two adjacent sides are given by vectors a = 2i - 3j + k and b = 2i + 3j - 4k. [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Newton's Laws and Forces",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) A body of mass 6 kg has on a smooth plane inclined at an angle of 60° to the horizontal. This body is attached to another body of mass 10 kg by a light inextensible string. Find:\n(i) the acceleration of the system. [3 marks]\n(ii) the tension in the string. (Take g = 10 m/s²) [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Work, Energy and Power",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) A car of mass 200 kg moves forward on a road with an acceleration of 0.8 m/s² and covers a distance of 200 m. If the road has a resistance of 40 N, calculate the driving power of the car if the trip lasted 20 seconds. [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) A man paddles a boat downstream a distance of 3 km in 20 minutes, and rows back in 40 minutes. Find his average speed:\n(i) downstream, [½ mark]\n(ii) upstream, [½ mark]\n(iii) for the whole journey. [½ mark]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) A rifle bullet passes through two planks in succession, and the average resistance of the second plank is 50% more than that of the first. The initial velocity is 800 m/s, and the bullet loses 160 m/s in passing through each plank. Show that the ratio of the thickness of the planks is as 27:14. [4½ marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) (i) Find the constant c such that the vectors a = i - j + 2k and b = i + 3j - ck are perpendicular to each other. [2 marks]\n(ii) Find the area of triangle ABC where the position vectors of A, B, C are -j + 2k, i + 4j - 3k, and i - 3j + 2k, respectively. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Significance Testing",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Define the following concepts associated with hypothesis testing:\n(i) Hypothesis, [1 mark]\n(ii) Null hypothesis, [1 mark]\n(iii) Alternative hypothesis, [1 mark]\n(iv) Level of significance of a test, [1 mark]\n(v) Critical region of a test. [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Significance Testing",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) The Director of Admissions at a City university advises parents of incoming students about the cost of textbooks during a typical semester. A sample of 100 students enrolled in the university indicates a sample mean cost of 315.40, with a sample standard deviation of 43.20.\n(i) Using a 1% level of significance, is there evidence that the population average is above 300? [2½ marks]\n(ii) What is your answer in 7b(i) if the standard deviation is 75 and a 5% level of significance is used? [2½ marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Measures of Location",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) The Table below shows the distribution of heights (in cm) of some athletes. Using an assumed mean of 167 cm, find (i) the mean and (ii) standard deviation of the distribution.\n\nHeight (cm): 150-154, 155-159, 160-164, 165-169, 170-174, 175-179, 180-184\nNo of Athletes: 4, 14, 26, 32, 22, 11, 3 [8 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Correlation and Regression",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Find the coefficient of linear correlation between the variables X and Y presented in the table below.\n\nX: 1, 2, 3, 6, 8\nY: 1, 2, 3, 4, 5 [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2021,
+    "category": "Correlation and Regression",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) What is your conclusion from (b) above? [2 marks]",
+    "options": []
+  }
+]

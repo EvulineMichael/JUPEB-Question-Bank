@@ -1,0 +1,818 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Binomial Theorem",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "How many terms are contained in the expansion of (1 + 5x)¹⁸?",
+    "options": ["18", "19", "17", "20"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Logarithms",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Evaluate log₄(1/8).",
+    "options": ["3/2", "-3/2", "-1/2", "1/2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Complex Numbers",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Given two numbers Z₁ = 2(cos35° + i sin35°) and Z₂ = 5(cos25° + i sin25°), find Re(Z₁Z₂).",
+    "options": ["10", "5", "60", "20"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Sequences and Series",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "If the 10th and 21st terms of a harmonic sequence are 21 and 10 respectively, what is the 210th term of the sequence?",
+    "options": ["1", "10", "21", "210"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Quadratic Equations",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Formulate a quadratic equation whose sum and product of roots are 3/4 and -1/2 respectively.",
+    "options": ["4x² + 3x - 2 = 0", "4x² - 3x - 2 = 0", "4x² - 3x - 8 = 0", "4x² + 3x - 8 = 0"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Find the sum of the non-zero components of the x and y intercepts of the line 3x + 4y + 12 = 0.",
+    "options": ["0", "-3", "-4", "-7"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Partial Fractions",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "Given that (10x + 21)/[(x - 2)(x + 5)] = k/(x - 2) + 3/(x + 5), determine the value of k.",
+    "options": ["-7", "-3", "3", "7"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Inequalities",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Find the range of values of x which satisfies the inequality x(x - 5) ≥ -6.",
+    "options": ["2 ≤ x ≤ -3", "-2 ≤ x ≤ 3", "x ≤ 2, x ≥ 3", "x ≥ 2, x ≤ 3"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "The function y = 5 - 2x³ + 3x² has a maximum value of y as",
+    "options": ["6", "5", "1", "9"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Evaluate ∫(x⁵ - 3x³ - 1/x) dx.",
+    "options": ["5x⁴ - 6x² + 1/x² + c", "x⁶/6 - x⁴/4 - ln|x| + c", "x⁶/6 - 3x⁴/4 - ln|x| + c", "x⁶/6 - 3x⁴/4 - 1/x² + c"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "Consider the function f(x) = √2 sin³x + 8. Obtain d/dx (∫ f(x) dx).",
+    "options": ["√2 cos³x + 8", "√2 sin³x + 8", "1/(2√2 sin³x + 8)", "1/(2√2 cos³x + 8)"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "If x = 3t² + 5 and y = t² - 1, then dy/dx =",
+    "options": ["1/3", "3", "2t/(6t + 1)", "1"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Partial Differentiation",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Given that u = x² + 3x²y + y², find u_xy.",
+    "options": ["2x + 6xy", "3x² + 2y", "6x", "2x + 3x² + 2y"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "If y = eˣ cos x, evaluate d²y/dx² - dy/dx.",
+    "options": ["eˣ(cos x - sin x)", "-eˣ(cos x + sin x)", "eˣ(cos x + sin x)", "-eˣ sin x"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Second Order Differential Equations",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "One solution of the differential equation y'' + 3y' + 2y = 0 is",
+    "options": ["e³ˣ", "e⁻³ˣ", "e⁻ˣ", "eˣ"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Limits and Continuity",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Consider the function f(x) = kx² + 3x - 2. If lim_{x→2} f(x) = 8, find the value of k.",
+    "options": ["8", "1", "4", "6"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "First Order Differential Equations",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "Solve the differential equation y' = e^(2x - y).",
+    "options": ["-eʸ = e⁻²ˣ/2 + C", "eʸ = e²ˣ/2 + C", "y = e^(2x - y)/2 + C", "y + e^(2x - y)/2 + C = 0"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Find the gradient of the curve y = √(2x) - 1/x² at the point x = 1.",
+    "options": ["(4 + √2)/2", "√2", "√2/2", "(1 + √2)/2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Normal Distribution",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "A Professor's exam scores are approximately distributed normally with mean 80 and standard deviation 5. Find P(X ≤ 82).",
+    "options": ["0.15542", " 0.65542", "0.02275", "0.11507"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Probability",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "A bag contains nine plates, numbered from 1 to 9. A plate is drawn from the bag. If the number is even, then a coin is tossed. If the number is odd, then a die is thrown. How many outcomes are possible?",
+    "options": ["38", "30", "240", "8"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Combinatorics",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "Solve for the value of n if: C(n+1, 3) = C(n, 2).",
+    "options": ["2", "3", "5", "1"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Probability",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "If at least one child in a family with 2 children is a boy, what is the probability that both children are boys?",
+    "options": ["2/3", "1/3", "2/5", "1/5"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Probability Distributions",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Let X be a random variable having density function f(x) = { 1/4, -2 ≤ x ≤ 2; 0, otherwise }. What is the standard deviation of X if the variance of X is 4/3?",
+    "options": ["1.03", "1.13", "1.35", "3.13"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "t-Distribution",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The graph of student's t distribution with 9 degrees of freedom is shown in the figure below. Find the value of t₁ for which the shaded area on the right is 0.05.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: t-distribution graph. Please refer to your original past question paper.",
+    "options": ["0.95", "1.83", "-1.83", "-0.95"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Probability Distributions",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "Find the value of the constant c given that the function f(x) = { cx², 0 < x < 3; 0, otherwise } is a probability function.",
+    "options": ["9", "7/27", "1/27", "1/9"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Correlation and Regression",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "If two regression coefficients are 0.8 and 0.2, what would be the value of coefficient of correlation?",
+    "options": ["0.6", "0.4", "0.3", "0.5"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "A parabola y² = 4ax has focus (1, 2) and directrix x = 4. Obtain the equation of the parabola.",
+    "options": ["y² - 4y - 10x - 11 = 0", "y² + 4y - 10x - 11 = 0", "y² - 4y + 10x - 11 = 0", "y² - 4y - 10x + 11 = 0"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Matrices",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "If A = [[2, 5], [1, 3]], evaluate (A⁻¹)ᵀ.",
+    "options": ["", "", "", ""]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "The derivative of y = logₑ(3x² - 4)² with respect to x is",
+    "options": ["12/(3x² - 4)²", "12x/(3x² - 4)²", "12x(3x² - 4)", "12x/(3x² - 4)"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Second Order Differential Equations",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Which of the following differential equations is non-linear?",
+    "options": ["d²y/dx² + 4y = sec x", "y d²y/dx² + dy/dx + 7y = 4x", "d²y/dx² + 3 dy/dx + y = 0", "x dy/dx + 7y = cos x"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The name given to the formula ∫ₐᵇ f(x) dx = (h/2)[(y₀ + yₙ) + 2(y₁ + y₂ + ... + yₙ₋₁)] is",
+    "options": ["Trapezoidal rule", "Simpson rule", "Lagrange rule", "Newton-Cotes rule"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Maclaurin and Taylor Series",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "The antiderivative of the power series 1 + t + t²/2! + t³/3! + ... is",
+    "options": ["e⁻ᵗ + 1", "e⁻ᵗ - 1", "eᵗ + 1", "eᵗ - 1"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Significance Testing",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "A criterion of judgment upon which a decision is made regarding the value stated in the null hypothesis is",
+    "options": ["Level of significance", "P value", "Critical value", "Z test"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Combinatorics",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "A, B, C, D, E and F are six students. In how many ways can they be seated in a row if A and B must sit beside each other?",
+    "options": ["720", "240", "120", "480"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Random Variables",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "What is Var(X - Y) given that X and Y are independent random variables?",
+    "options": ["Var(X) - Var(Y)", "Var(XY)", "Var(X) + Var(Y)", "X Var(-Y)"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Measures of Dispersion",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Consider the measurement on yield and plant height of a paddy variety. The mean and standard deviation for yield are 50 kg and 10 kg respectively. The mean and standard deviation for plant height are 55 cm and 5 cm respectively. Using coefficient of variation, what is the variability of yield to plant height?",
+    "options": ["The yield is subject to more variation than plant height", "The plant height is subject to more variation than yield", "Neither yield nor plant height is subjected to variation", "Both plant height and yield are subjected to the same amount variation"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "For any given data set, what is the value of Σ(x - x̄)?",
+    "options": ["0", "1", "-1", "2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Set Theory",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "In a youth club with 94 members, 60 like modern music while 50 like traditional music. The number of members who like both modern and traditional music is three times the number of members who do not like any type of music. How many members like only one type of music?",
+    "options": ["86", "62", "8", "24"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Trigonometry",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "If sin θ = 4/5 and θ is an acute angle, obtain the value of (sin 2θ + cos 2θ).",
+    "options": ["7/25", "-7/25", "17/25", "24/2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Number Systems",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Which of the following statements is false?",
+    "options": ["Zero is a rational number", "Every real number is a complex number", "A natural number is a rational number", "Every integer is a natural number"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Friction",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "Frictional force encountered after commencement of motion is called",
+    "options": ["post friction", "dynamic friction", "kinematics friction", "limiting friction"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Work, Energy and Power",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "A body at a height of 10 m moves with a velocity 10 m/s. If the mass of the body is 10 kg. What is the total energy of the body? [Assume g = 10 m/s²]",
+    "options": ["1500 J", "1000 J", "500 J", "2500 J"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Work, Energy and Power",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "Calculate the average power required to raise a 100 kg drum to a height of 15 m in one minute. [g = 10 m/s²]",
+    "options": ["250 W", "0.25 W", "20 W", "2.5 W"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Work, Energy and Power",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Calculate the potential energy of a body of mass 1200 g hanging at a height of 10 m above the ground on a tree. [g = 10 m/s²]",
+    "options": ["120 J", "0.12 J", "12 J", "1.2 J"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The velocity of a body due to vertical fall from rest is given by",
+    "options": ["v = √(gh)", "v = √(2gh)", "v = √(g/h)/h", "v = √(2g/h)/h"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "A particle moves so that its position vector is given by r = a cos ωt i + b sin ωt j where ω is a constant. The path described by the particle is",
+    "options": ["a circle", "an ellipse", "a parabola", "a straight line"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Describe the unit vector in the direction of 4i - 3k.",
+    "options": ["(3/5)i - (2/5)j + (1/5)k", "(4/7)i + (3/7)k", "(3/9)i - (2/9)j + (1/9)k", "(4/5)i - (3/5)k"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The distance, S in metres moved by a particle in time, t in seconds is given by S(t) = 4t² - 3t. Find the velocity after 2 seconds.",
+    "options": ["26 m/s", "16 m/s", "26 m/s", "13 m/s"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "An object of mass 4 kg moving at a constant velocity of 15 m/s comes in contact with a resistance of 20 N. How long does it take the body to come to rest?",
+    "options": ["2 s", "4 s", "3 s", "5 s"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Friction",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "If the minimum force required to move a bus of mass 0.2 kg over a rough surface is 0.5 N, what is the coefficient of friction?",
+    "options": ["0.25", "0.20", "0.10", "0.30"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Demand and Supply",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "In a perfect market, the demand and supply functions are respectively D = x² - 2x - 14 and S = 2x + 7, where x is the price per unit. Obtain the number of quantity demanded at equilibrium.",
+    "options": ["77", "21", "28", "49"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Marginal Concepts",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "A marketer's marginal revenue function is MR = 6x² - 8x + 3. If the production increases from 15 to 25 units, what is the total revenue of the marketer?",
+    "options": ["22930", "22390", "32920", "29230"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Inventory",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "In an inventory system, which of the following best describes costing method?",
+    "options": ["FIFO", "LIFO", "Ending Inventory", "Average Cost"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Cost Functions",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Given that the fixed cost of manufacturing a carton of toothpick is ₦3500 and the marginal cost at q units is (100 + 2q). Calculate the total cost of 120 units.",
+    "options": ["29,900", "45,700", "91,600", "32,460"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Depreciation",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The cost of an asset is ₦10,750. If the asset is expected to last for 5 years with residual value of ₦2,250.00, compute the annual depreciation.",
+    "options": ["1,700", "8,500", "13,000", "2,600"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Compound Interest",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Find the amount of money that must be invested now that will grow to ₦8000 in four years at 5% per annum compound interest.",
+    "options": ["5816.62", "6585.62", "8561.62", "6581.62"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Marginal Concepts",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "The cost function of a television set is given by C = 5 - p - p²/2 + p³/3. Calculate p for which the marginal cost is minimum.",
+    "options": ["-1", "1/2", "1", "-1/2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Linear Programming",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "Consider the following linear programming problem: Maximize P = 5x + 6y, subject to x + 2y ≤ 12, 3x + 5y ≤ 15, x ≥ 0, y ≥ 0. What do x and y represent?",
+    "options": ["decision variables", "solution variables", "definition variables", "explanation variables"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Elasticity of Demand",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "Given the demand function x = 10 + 3p², find the price elasticity of demand at p = 3.",
+    "options": ["45/37", "54/37", "33/37", "18/37"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Annuities",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "An annuity that is payable forever is called",
+    "options": ["present value", "gratuity", "perpetual", "amortization"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Indices",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) (i) Given that 3^(x + y) = 81 and (x - y) log₂ 8 = log₂ 256, evaluate 2xy. [3 marks]\n(ii) Find the possible values of k for which the equation 3x² + (k/3)x = -25/3 has equal roots. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Sequences and Series",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) Find the 20th term of a harmonic sequence if its 3rd and 7th terms are 1/3 and 1/47 respectively. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Set Theory",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) In a survey carried out on a certain JUPEB class, 26% study Mathematics, 36% study Physics and 48% study Chemistry; 5% study Mathematics and Physics, 4% study Mathematics and Chemistry, 8% study Physics and Chemistry, while 4% study none of the three subjects. Draw the Venn diagram for the information and then determine the percentage of students who study:\n(i) all the three subjects;\n(ii) only two subjects;\n(iii) only Mathematics. [5 marks]",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram required: Venn diagram. Please draw it yourself based on the data provided.",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Coordinate Geometry",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) Find the equation of the circle with centre (-5, 2) which passes through the point (3, 5). [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Polynomials",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) Let (x + 2) be a factor of the polynomial P(x) = 2x³ - 5x² + kx + 8.\n(i) Find k. [2 marks]\n(ii) Factorize the polynomial completely. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Binomial Theorem",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) (i) Obtain the binomial expansion of (2x + 3t)⁵. [3 marks]\n(ii) Using the binomial expansion obtained in (i), evaluate (2.03)⁵. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Limits and Continuity",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) Evaluate the following limits:\n(i) lim_{x→0} (√(x + 16) - 4)/x [3 marks]\n(ii) lim_{x→∞} √(3x² + 6)/(5 - 5x) [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Partial Fractions",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) Given that (x² + 4)/(3x³ + 4x² - 4x) = A/x + B/(x + 2) + C/(3x - 2), determine the values of A, B and C. Hence, evaluate ∫₁² (x² + 4)/(3x³ + 4x² - 4x) dx. [6 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) Differentiate 9x³ - 5 from first principle. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) Given that y = e²ˣ cos 3x, obtain d²y/dx² - 4 dy/dx in terms of y. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) Find the volume of the solid generated by the rotation round the x-axis of the part of the curve y = 2 cos x between x = 0 and x = π. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "4c",
+    "question": "(c) Solve the differential equations:\n(i) (1/cot x) dy/dx = 2y - 3 [3 marks]\n(ii) 5y'' - 2y' - 3y = 0, y(0) = 5, y'(0) = 1 [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Significance Testing",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) The yields of rice from six plots are 1.0, 1.4, 0.8, 1.6, 2.0 and 2.2 tonnes per acre. Test at a level of significance of 0.05 whether this supports the contention that the true average yield for that kind of rice is 1.4 tonnes per acre. [7 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Probability Distributions",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) Out of 2400 families with 5 children each, how many would you expect to have:\n(i) 5 girls [2 marks]\n(ii) either 2 or 3 boys [3 marks]\nIf the probabilities for boys and girls are equal.",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Normal Distribution",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) If a normal distribution with mean 230 and standard deviation 20, what is the probability that an observation from this population lies between 220 and 250? [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Probability Distributions",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) The discrete random variable X has probability function as shown in the figure.\nShow that the value of b is 6/7. [6 marks]",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Probability function table/figure. Please refer to your original past question paper.",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Find:\n(i) the probability that X is less than 3 or greater than 4;\n(ii) Var(X). [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Correlation and Regression",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) (i) The following data shows the number of times two groups of students X and Y attended JUPEB classes in a semester. Compute the Pearson's correlation coefficient between X and Y.\nX: 4, 5, 3, 5, 8\nY: 15, 16, 20, 16, 22 [5 marks]\n(ii) Interpret your result. [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Newton's Laws and Forces",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) A particle of mass 4 kg rests on an inclined plane at an angle 30° to the horizontal surface. The coefficient of friction is 0.5.\n(i) Find the acceleration of the particle if it moves up the plane with a force of 80 N. [3 marks]\n(ii) Find the velocity attained after 3 s if it moves with an initial velocity of 12 m/s. [Take g = 10 m/s²] [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) If A = 2i - j + 3k, B = 3i + 2j + k and C = i + qj + 4k are coplanar, find the value of q. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Moments of Inertia",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) Calculate the moment of inertia and radius of gyration of a thin uniform rod of length 12 cm and mass 4 kg through its centre perpendicular to its length. [6 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) (i) Find the value of m when 2i - 3j + 5k and 3i - mj + 2k are perpendicular. [3 marks]\n(ii) Find the Cartesian equation through the point (2, 5, 3) with normal 3i + 2j - 7k. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) (i) If A = 2i - 3j + 5k and B = 3i + mj - 2k are equal in magnitude, find the smallest value of m. [3 marks]\n(ii) If W = 3t i - t² j and Z = 3t² i - 3j, verify the result d(W·Z)/dt = W·(dZ/dt) + (dW/dt)·Z. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) Given a quadrilateral ABCD in which AB = (4, 7), BC = (6, 2) and CD = (-7, 8). Find:\n(i) AD; [1 mark]\n(ii) the lengths of the sides of the quadrilateral. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Compound Interest",
+    "type": "Essay",
+    "questionNumber": "9a",
+    "question": "(a) ₦500,000 was invested in a clothing business for 2 years at 4% compounded semi-annually.\n(i) Find the compound amount. [3 marks]\n(ii) Find the compound interest. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Market Equilibrium",
+    "type": "Essay",
+    "questionNumber": "9b",
+    "question": "(b) Find the equilibrium price and quantity given the market below:\nQₛ = -14 + 2P;\nQ_d = 130 - 6P. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Profit Maximization",
+    "type": "Essay",
+    "questionNumber": "9c",
+    "question": "(c) The demand and cost functions for a scientific calculator are p = 4000 - 2q² and C = 25 + 1400q respectively, where p is the price in Naira and q is the quantity produced and C is the total cost of producing calculators in Naira. Determine the price and quantity for maximum profit, and the maximum profit. [6 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Linear Programming",
+    "type": "Essay",
+    "questionNumber": "10a",
+    "question": "(a) Two tailoring companies P and Q earn ₦300 and ₦400 respectively per day. P can stitch 4 pants and 6 shirts while Q can stitch 4 pants and 10 shirts per day.\n(i) Set up a linear programming problem to minimize the cost of producing at least 28 units by company P and 30 units by company Q. [2 marks]\n(ii) With the aid of a graph, compute the minimum cost. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Inventory",
+    "type": "Essay",
+    "questionNumber": "10b",
+    "question": "(b) UNIBEN group of company had a beginning inventory of ₦800,000. In May 2021, it purchased and received goods worth ₦500,000; and had net sales of ₦900,000. If it maintained a 30% markup on sales,\n(i) compute cost of goods sold; [1 mark]\n(ii) estimate the ending inventory; [2 marks]\n(iii) calculate the inventory turnover at cost, correct to 2 decimal places. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2024,
+    "category": "Compound Interest",
+    "type": "Essay",
+    "questionNumber": "10c",
+    "question": "(c) A recent study shows that the cost of living in a city has been increasing by 4% a year. Calculate a family's monthly expected payment for 5 years if the current payment is ₦200,000. [2 marks]",
+    "options": []
+  }
+]

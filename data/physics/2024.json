@@ -1,0 +1,645 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Physical Quantities and Units",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Which of the following pair of physical quantities do not have the same dimensions?",
+    "options": ["weight and tension", "stress and pressure", "impulse and moment of a force", "energy and work"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Two vectors M and N are given as follows: M = 3.0i - 4.5j and N = -2.5i + 5.0j. Determine the magnitude of their vector sum.",
+    "options": ["0.50", "0.71", "1.00", "5.70"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "A velocity-time graph is plotted as shown above. Use the diagram to answer questions 4 and 5. Calculate its acceleration in m/s².",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Velocity-time graph. Please refer to your original past question paper.",
+    "options": ["0", "1", "5", "20"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Compute its displacement.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Velocity-time graph. Please refer to your original past question paper.",
+    "options": ["4 m", "5 m", "20 m", "80 m"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Heat and Energy",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Which of the following statements is correct about volatile liquids? They have",
+    "options": ["low boiling point", "low evaporating rate", "high conductivity", "high density"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Circular and Oscillatory Motions",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "A car travels at a uniform speed through a level circular curve on the road. Which of the following correctly describes the magnitude of the acceleration, velocity and force acting on the car?",
+    "options": ["Constant, changing, changing", "Constant, constant, constant", "Constant, changing, constant", "Changing, changing, changing"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "A ball is dropped from a height with a velocity of 40 m/s, it hits the ground and rebounds with a velocity v₁ to a height h. Assuming that g = 10 m/s² and the coefficient of restitution is 0.6, find v₁ and h.",
+    "options": ["-36 m/s, 25 m", "-24 m/s, 51 m", "-12 m/s, 49 m", "36 m/s, 17 m"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "A ball of mass 0.3 kg moving at a velocity of 20 m/s is suddenly hit by a force of 5 N for a time of 0.03 sec. Find its new velocity of motion.",
+    "options": ["12.50 m/s", "5.75 m/s", "20.50 m/s", "24.75 m/s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Geometrical Optics",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "An object placed 2 m from a plane mirror is shifted by 0.5 m away from the mirror. What is the distance between the object and its image?",
+    "options": ["2 m", "1.5 m", "5 m", "3 m"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Lenses and Optical Instruments",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "A girl cannot see objects that are closer to her eyes than 80 cm. Evaluate the power of the lens which she will use to see clearly objects at the least distance of distinct vision.",
+    "options": ["2.75 dioptres", "4.15 dioptres", "7.71 dioptres", "9.30 dioptres"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Temperature and Thermometry",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "If the freezing point of alcohol is -175°F, determine its temperature in degree centigrade.",
+    "options": ["175°C", "-295°C", "-115°C", "215°C"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Sound Waves",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Which of the following characteristics of sound enables us to differentiate a high note from a low note?",
+    "options": ["Quality", "Loudness", "Pitch", "Intensity"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Temperature and Thermometry",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Which of these thermometers works by generating electromotive force in a circuit?",
+    "options": ["Thermocouple", "Optical pyrometer", "Platinum resistance", "Constant volume gas"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Alternating Current Circuits",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "The current through a resistor in an a.c. circuit is given as I = 2 sin ωt. Determine the d.c. equivalent of the current.",
+    "options": ["1/√2 A", "2√2 A", "2 A", "√2 A"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Sound Waves",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "When vibration occurs in an air column, the distance between a node and antinode is equal to",
+    "options": ["one-quarter of the wavelength", "one-half of the wavelength", "the wavelength", "twice the wavelength"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Lenses and Optical Instruments",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "The distance between the two lenses of a telescope under normal adjustment is",
+    "options": ["twice the focal length of the eyepiece", "twice the focal length of the objective lens", "positive difference between the focal lengths of the eyepiece and objective lens", "the sum of the focal lengths of the eye piece and the objective lens"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Geometrical Optics",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "An object is placed at a distance of 15 cm from a convex mirror of radius of curvature 30 cm. The virtual image produced is located",
+    "options": ["7.5 cm away from the mirror", "0.0 cm away from the mirror", "10.0 cm away from the mirror", "30.0 cm away from the mirror"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Waves",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Calculate the wavelength of the second overtone of a string fastened tightly between two walls 24 cm apart.",
+    "options": ["24 cm", "16 cm", "12 cm", "8 cm"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Waves",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "A wave traveling along a spring",
+    "options": ["cannot be transverse", " transport particles of matter.", "has no kinetic energy.", "has a definite wavelength."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Electromagnetic Waves",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "Which of the following is not an electromagnetic wave?",
+    "options": ["Cosmic ray", "Gamma ray", "β ray", "X ray"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "A potentiometer wire carrying a steady current is 1 m long with a standard cell of e.m.f 1.1 V suitably connected, a balanced length of 44.0 cm was obtained. At what e.m.f of the cell will a balance length of 68.0 cm be obtained?",
+    "options": ["0.85 V", "1.70 V", "3.40 V", "5.25 V"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Sound Waves",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "The wavelength of a sound wave in a certain material is 36.0 cm. What is the speed of the sound wave in a period of 1.1 millisecond?",
+    "options": ["300.0 m/s", "327.3 m/s", "342.0 m/s", "360.0 m/s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Magnetic Field",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "A proton moving at a speed of 1.0 × 10⁶ m/s enters a magnetic field B = 0.3 T directed perpendicular to its direction of motion. Given that the mass and charge of the proton are 1.67 × 10⁻²⁷ kg and 1.6 × 10⁻¹⁹ C respectively, calculate the radius of the subsequent circle described by the proton.",
+    "options": ["2.9 × 10⁻³ m", "3.5 × 10⁻² m", "1.7 × 10⁻¹ m", "5.8 × 10⁻⁴ m"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Magnetic Field",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "A proton moves directly vertically downwards into a horizontal magnetic field B = 0.5 T from west to east, given that the speed of the proton is 5.6 × 10⁶ m/s, calculate the force acting on the proton.",
+    "options": ["8.0 × 10⁻¹³ N", "4.0 × 10⁻¹² N", "4.8 × 10⁻¹³ N", "8.0 × 10⁻²⁶ N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Electromagnetic Induction",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "The flow of induced e.m.f in a coil due to an alternating current in a neighboring coil is known as",
+    "options": ["capacitance", "flux linkages", "self inductance", "mutual inductance"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "The resistance of a conductor depends on the following except.",
+    "options": ["Nature of material", "Area of cross-section", "Length", "Viscosity"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "A galvanometer has a resistance of 4Ω. By using a shunt wire of resistance 0.04Ω, the galvanometer could be converted to an ammeter capable of reading 2.5 A. What is the current through the galvanometer?",
+    "options": ["2 mA", "10 mA", "20 mA", "25 mA"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Fusion is not usually used for generating electric power because",
+    "options": ["no energy is released when fusion takes place", "very high temperatures are required to initiate fusion reaction", "the raw materials needed is not easily available", "heavy nuclei are involved"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Wave-Particle Duality",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "What is the momentum of a photon of violet light that has a wavelength of 4.00 × 10² nm?",
+    "options": ["1.06 × 10⁻²⁷ kg m/s", "1.66 × 10⁻²⁷ kg m/s", "1.06 × 10⁻²⁷ kg/m/s", "2.46 × 10⁻²⁶ eV/m/s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Calculate the radius of the orbit associated with the energy level E₄ of the hydrogen atom.",
+    "options": ["0.848 nm", "0.34 nm", "2.12 nm", "0.477 nm"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Modern Physics",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "In NMR spectroscopy, the spinning nuclei in a strong magnetic field must be irradiated by which of the following?",
+    "options": ["Perpendicular and stronger field", "Perpendicular and weaker field", "Parallel and stronger field", "Parallel and weaker field"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "Which of the following is used in a nuclear reactor to slow down fast moving neutrons?",
+    "options": ["Carbon dioxide gas", "Liquid sodium metal", "Concrete shield", "Graphite rods"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "One of the following types of radiation is not employed in food preservation.",
+    "options": ["Gamma rays", "High energy x-rays", "alpha particles", "High energy electron beams"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Semiconductors",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Zener diode is used for",
+    "options": ["current amplification", "power amplification.", "voltage regulation.", "energy conversion."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Approximate the value of the angle between two vectors P = 2i + 3j + 4k and Q = i - 2j + 3k.",
+    "options": ["39°", "47°", "67°", "89°"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "A JUPEB student of mass 0.1 kg moving with velocity of 20 m/s is hit by a force which acts on it for 0.02 s. If the JUPEB student moves off in the opposite direction with a velocity of 25 m/s, calculate the magnitude of the force.",
+    "options": ["25 N", "100 N", "125 N", "225 N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "An elevator moves up with an acceleration of 5 m/s². Determine the reaction of the floor on an object of mass 25 kg placed on the floor of the lift. Take g = 10 m/s².",
+    "options": ["125 N", "375 N", "1250 N", "275 N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "When a person in a boat throws out a package, the boat moves in the opposite direction. The person exerts a force on the package, the package exerts a force on the person-boat system. This force propels the boat slightly backwards. This is a statement of",
+    "options": ["Newton's first law of motion", "Newton's third law of motion", "Gravitational law of motion", "Kepler's law of planetary motion"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "A projectile launched at 45° with a velocity of 100 m/s hits a target. What will be the velocity if the range is doubled?",
+    "options": ["141.4 m/s", "241.56 m/s", "41.5 m/s", "400.5 m/s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Physical Quantities and Units",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Which of the following quantity is a fundamental quantity?",
+    "options": ["Speed", "Density", "Impulse", "Length"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Waves",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "Given the progressive wave equation y = 5 sin(2000πt - 0.4x), calculate the wavelength.",
+    "options": ["12.4 m", "15.7 m", "17.5 m", "18.6 m"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "When the radius of the cross section of a fixed length of wire is halved, its resistance is",
+    "options": ["doubled", "quadrupled", "tripled", "squared"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "The resistivity of a given wire of cross sectional area 0.7 mm² is 4.9 × 10⁻⁴ Ω mm. Calculate the resistance of a 2 m length of the wire.",
+    "options": ["6.9 Ω", "5.3 Ω", "2.8 Ω", "1.4 Ω"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Electrostatics",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "When the distance between charges is increased to three times its original size, the magnitude of the force under Coulomb's law is given as",
+    "options": ["1/16 F", "1/9 F", "1/4 F", "2/9 F"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Gravitational Field",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Total eclipse of the sun occurs when",
+    "options": ["earth is between the moon and the sun", "sun is between the moon and the earth", "moon is between the sun and the earth", "ozone layer is threatened"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Capacitors",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "A 3 μF capacitor is connected in series with a 6 μF capacitor. When a 300 V potential difference is applied across this combination, the total energy stored in the two capacitors is",
+    "options": ["0.09 J", "0.18 J", "0.27 J", "0.14 J"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Beta ray emitted by radioactive substances is",
+    "options": ["a pulse of electromagnetic wave", "an electron detached from an orbit outside the nucleus", "an electron which was existing inside the nucleus", "an electron, emitted by the nucleus as a result of decay of a neutron inside the nucleus"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "X-Rays",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "Why was it effective for Compton to scatter electrons using X-rays and not microwaves? This is because",
+    "options": ["x-rays are more penetrating than microwaves", "x-rays have lower frequency than microwaves", "microwaves have shorter wavelengths than X-rays", "x-rays have shorter wavelength than microwaves"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "X-Rays",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "In an x-ray machine, electrons are accelerated and then fired so that they are incident on a metal target. Which part of the process produces the characteristic x-ray spectra?",
+    "options": ["The incident electron loses energy", "The incident electron knocks an electron out of one of the metal atoms", "A vacancy in an energy level in a metal atom is filled", "The incident electron emits an x-ray"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Semiconductors",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "The following are distinct regions in the p-n junction EXCEPT",
+    "options": ["p-region", "depletion region", "n-region", "bias region"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Hydrostatics",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) Define the following terms:\n(i) Relative density;\n(ii) Viscosity;\n(iii) Moment of inertia;\n(iv) Surface tension. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Gravitational Field",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) State Kepler's third law. [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(ii) An object is launched to air with an initial velocity v = (12.5 m/s)i + (20.0 m/s)j. Calculate the total time of flight, T. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "1d",
+    "question": "(c) Using dimensional analysis, find the relation between the viscous force F on a spherical body of radius r, angular velocity ω and its coefficient of viscosity, η. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Newton's Laws and Forces",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) Differentiate between contact force and field force and give TWO examples of each type of force. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) (i) Explain each of the following as used in projectile motion: Time of flight and Range. [2 marks]\n(ii) A particle accelerates at 10 m/s² from rest for 6 s. Calculate the distance covered by the particle in the 6th second. [2 marks]",
+    "options": []
+  },
+    {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Hydrostatics",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) A copper ball of density 8900 kg/m³ weighs 50 N in air. Calculate its weight when it is totally immersed in methylated spirit of density 800 kg/m³. [g = 9.8 m/s²]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) (i) Distinguish between heat and temperature. [2 marks]\n(ii) State any THREE reasons why mercury is preferred to alcohol as a thermometric liquid. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Ideal Gases",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) (i) State Boyle's law and express its mathematical relations. [2 marks]\n(ii) A gas contained in a cylinder is of volume 1.0 × 10⁻² m³ at temperature 325 K and pressure 2.7 × 10⁵ N/m². When some of the gas is used at constant temperature, the pressure falls to 1.2 × 10⁵ N/m². Calculate the number of moles of the gas used. (Take R = 8.3 J mol⁻¹ K⁻¹) [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) (i) Define specific latent heat of fusion, and state its unit. [2 marks]\n(ii) A 250 g of water at 65°C is added to 150 g of water at 5°C. Neglecting heat absorbed by the surrounding, determine the equilibrium temperature of the mixture. [S.H.C. of water = 4200 J kg⁻¹ K⁻¹] [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Sound Waves",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) A piano string has a mass of 25.2 g and length 120.0 cm.\n(i) Calculate the linear mass density of the string.\n(ii) How much tension must be applied to the string for it to vibrate at a fundamental frequency of 50.0 Hz?\n(iii) Determine the frequency of the third and fourth harmonics. [5 marks]",
+    "options": []
+  },
+    {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "5",
+    "question": "(a) Define the following:\n(i) Electric field intensity;\n(ii) Electric potential. [2 marks]\n\n(b) (i) State the Gauss law mathematically and define the terms in the equation.\n(ii) A point charge of 50 μC is placed at the centre of a cube of sides 15 cm, find the: total flux through the whole surface of the cube and the flux through each face of the cube. [5 marks]\n\n(c) Calculate the electric field intensity and electric potential due to a positive charge of 5.2 × 10⁻⁹ C at a point 20 cm away. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Capacitors",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) (i) Explain the term 'capacitance' of a capacitor.\n(ii) Define the term 'Coulomb'. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Evaluate the amount of charge through the filament of a 220 V, 100 W electric bulb in 4 s. [2 marks]\n\n(c) Give THREE examples of non-ohmic conductors with their respective I-V characteristics. [6 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Applied Physics",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Give TWO applications each of X-rays, ultrasound and NMR. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Semiconductors",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) (i) Give ONE difference between P-type and N-type semiconductors. [1 mark]\n(ii) Calculate the binding energy for the nuclide ⁶²₂₈Ni which has an atomic mass of 61.928349 u. [Take the mass of proton = 1.007825 u; mass of neutron = 1.008665 u; and 1 u = 931.5 MeV/c²]. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Modern Physics",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) A metallic surface has a work function of 5.0 × 10⁻¹⁶ eV. Calculate the frequency of the photon whose energy is required to eject electron with a kinetic energy of 5.5 × 10⁻¹⁶ eV. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Explain the following terms and give two examples of each.\n(i) Isotopes;\n(ii) Isobar. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Define the following terms:\n(i) Decay constant (λ)\n(ii) Half-life. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) The ground state of hydrogen is -13.6 eV and the first excited state is -0.85 eV. Calculate the wavelength of the radiation emitted if the atom returns from this excited state to the ground state. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2024,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "8c(ii)",
+    "question": "(ii) A piece of bone from an archaeological site is found to give a count rate 15 counts/min. A similar sample of fresh bone gives a count rate of 19 counts/min. Calculate the age of the specimen. [Given that the half-life of carbon-14 is 5530 years] [3 marks]",
+    "options": []
+  }
+]

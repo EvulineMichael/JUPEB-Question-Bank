@@ -1,0 +1,672 @@
+[
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Measurement",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "The reproducibility or repeatability of a measurement is termed",
+    "options": ["Accuracy", "Precision", "Range", "Confidence Interval"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "The alpha (α) scattering experiment is synonymous with",
+    "options": ["J.J. Thomson", "Ernest Rutherford", "James Chadwick", "Henry Mosley"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Acid-Base Equilibria",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "According to Brønsted-Lowry, an acid is a/an",
+    "options": ["proton acceptor.", "proton donor.", "electron acceptor.", "electron donor."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Isotopes of hydrogen differ from one another in",
+    "options": ["atomic number.", "number of protons.", "number of electrons.", "number of neutrons."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "A solution of known concentration is termed a",
+    "options": ["standard solution.", "unsaturated solution.", "saturated solution.", "supersaturated solution."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Which of the following is the reason why CCl4 is non-polar?",
+    "options": ["The polar bonds cancel each other.", "The molecule is non-linear.", "The molecule is covalent.", "Small electronegativity difference between C and Cl."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Electronic Configuration",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "In what period of the periodic table can the element with the electronic configuration 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^1 be found?",
+    "options": ["4", "3", "2", "1"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "When a proton and an electron beam are subjected to the same strong electric field, the electron beam is deflected at a greater angle than the proton beam because",
+    "options": ["electron beam has a negative charge while proton beam has a positive charge", "an electron is heavier than a proton", "the electron is lighter than the proton", "an electron has more electrical energy than a proton"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "X(g)+ → X(g)2+ + e- . The energy utilized in the equation is typical of",
+    "options": ["1st electron affinity", "1st ionization energy", "2nd ionization energy", "2nd electron affinity"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Electronic Configuration",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Which of these electronic configurations belong to an element in period 3 of the periodic table?",
+    "options": ["[Ne] 3s^1", "1s^2", "[He] 2s^2 2p^3", "[Ar] 4s^2 3d^3"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "0.200 mol of a hydrocarbon undergo complete combustion to give 35.2g of carbon dioxide and 14.4g of water as the only products. What is the molecular formula of the hydrocarbon? (C = 12.0, H = 1.0, O = 16.0)",
+    "options": ["C2H4", "C2H6", "C4H4", "C4H8"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Which of the following is the best evidence of the presence of ionic bonding in an unknown substance? The substance conducts electricity",
+    "options": ["in the solid state and in aqueous solution.", "when molten and in aqueous solution.", "in the solid state and when molten.", "when molten but not in the solid state."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Chemical Kinetics",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "Decomposition reaction has a half-life that does not depend on the initial concentration of the reactant. What is the order of the reaction?",
+    "options": ["zero order", "first order", "second order", "pseudo-first order"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Fucoserratene, a hydrocarbon usually identified as the sexual pheromone of the brown seaweed Fucus serratus has an empirical formula of C2H3. If the experimentally determined molecular weight of this substance is 108 g/mol, the molecular formula of fucoserratene is",
+    "options": ["C4H6", "C6H9", "C8H12", "C10H15"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Atoms of elements principally go into bonding in order to achieve",
+    "options": ["stability", "covalency", "electrovalency", "attraction"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Thermodynamics",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "In a chemical reaction, the heat change at constant pressure is referred to as",
+    "options": ["Entropy", "Enthalpy", "Gibbs free energy", "Bond energy"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Chemical Kinetics",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "In a given chemical reaction, the exponent(s) of the concentration terms with respect to the reactant species as determined experimentally is/are called",
+    "options": ["Molecularity", "Order of reaction", "Elementary step", "Rate law"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Nuclear Chemistry",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Which of the following is used as detector for radiations from nuclear processes?",
+    "options": ["Cyclotron", "Particle accelerator", "Geiger counter", "Electron volts system"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Chemical Kinetics",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "The following represents a plot obtained from an experiment to graphically determine the activation energy of a reaction.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Plot for activation energy determination. Please refer to your original past question paper to see the plot.",
+    "options": ["Ea/R", "-Ea/R", "Ea/RT", "-R/Ea"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "Equal numbers of moles of He(g), Ar(g), and Ne(g) are placed in a glass vessel at room temperature. If the vessel has a pinhole-sized leak, which of the following will be true regarding the relative values of the partial pressures of the gases remaining in the vessel after some of the gas mixture has effused?",
+    "options": ["PHe > PNe > PAr", "PAr > PNe > PHe", "PNe > PAr > PHe", "PAr > PHe > PNe"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Electrochemistry",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "Sodium is not suitable as a sacrificial anode to prevent corrosion of underground iron pipes because",
+    "options": ["It would react with groundwater quickly.", "It has less standard electrode potential than that of iron.", "It will form an oxide coating that prevents further oxidation.", "It is not a transition metal."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "A solid which contains more than one type of bonding is",
+    "options": ["Ice.", "Diamond.", "Iron.", "Calcium oxide."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Coordination Chemistry",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "What is the coordination number of the coordination compound Pt(NH3)2C2O4?",
+    "options": ["3", "4", "6", "8"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Ionic Equilibria",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "All the following will exhibit common ion effect except",
+    "options": ["Addition of sodium acetate to a solution of acetic acid.", "Addition of sodium chromate to a saturated solution of lead chromate.", "Addition of hydrochloric acid to a saturated solution of silver chloride.", "Addition of hydrochloric acid to a saturated solution of silver nitrate."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Thermochemistry",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "When white phosphorus burns in air, it produces phosphorus (V) oxide. P4(s) + 5O2(g) → P4O10(s); ΔH = -3010 kJ. What is ΔH for the following equation? P4O10(s) → P4(s) + 5O2(g)",
+    "options": ["+3010 kJ", "-3010 kJ", "+602 kJ", "-602 kJ"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Chemistry of Hydrogen",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Water gas is a mixture of two gases namely",
+    "options": ["CO and NO", "CO2 and H2", "CO and H2", "CO and H2O"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "s-block elements",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "Which of the following is/are true of alkali metals? (I) They have the largest size in their respective period (II) They have weak metallic bonding (III) They are soft and they have low melting point",
+    "options": ["I only", "II only", "I, II and III", "I and III only"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "The following statements are properties of group 17 elements except",
+    "options": ["They have a valency of -1", "They belong to the p-block of the periodic table", "They are all non-metals", "They are all reducing agents with Fluorine having the highest reducing power."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "d-block elements",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "Transition elements usually exhibit variable oxidation states mainly because",
+    "options": ["they are metals", "they are employed as catalysts", "their d-electrons are involved in bonding", "they have high melting and boiling point"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "The highest oxidation number of iodine is",
+    "options": ["-1", "0", "+5", "+7"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "Which of the following does not exhibit allotropy?",
+    "options": ["Sulphur", "Phosphorus", "Carbon", "Nitrogen"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "Which of the following inter-halogen compound below does not exist?",
+    "options": ["CIBr3", "IF3", "CIF5", "ICl3"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Periodic Table and Periodicity",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "Why is the ionic radius of a chloride ion larger than the ionic radius of a sodium ion?",
+    "options": ["A chloride ion has one more occupied electron shell than a sodium ion", "chlorine has a higher proton number than sodium", "Ionic radius increases regularly across the third period", "Sodium is a metal, chloride is a non-metal"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Periodic Table and Periodicity",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "Which group of particles is in order of increasing size?",
+    "options": ["N, O, F", "N^{3-}, O^{2-}, F-", "Na^{+}, Mg^{2+}, Al^{3+}", "Na^{+}, Ne, F"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Periodic Table and Periodicity",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Diagonal relationships exist between the following pairs except",
+    "options": ["Be and Al", "B and Si", "Li and Mg", "Mg and Al"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Organic Reactions",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Chlorine reacts with methane in the presence of sunlight through a process known as free radical reaction. Which equation represents the propagation step?",
+    "options": ["CH4 + Cl• → CH3• + HCl", "CH3• + CH3• → C2H6", "CH3• + Cl• → CH3Cl", "Cl2 → 2Cl•"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "What is the product of the reaction between bromine and ethene gas?",
+    "options": ["2-bromoethane", "Bromoethane", "1,2-dibromoethane", "1,1-dibromoethane"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The IUPAC name of the compound CH≡C - CH2 - CH2 - COOH is",
+    "options": ["1-pentyn-4-oic acid", "pentyn-1-oic acid", "5-pentyn-1-oic acid", "pent-4-yn-1-oic acid"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Organic Reactions",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "A family of organic compounds which follows a regular structural pattern such that each successive member differs from the preceding one by a -CH2- group is termed",
+    "options": ["Homologue", "Organic series", "Homologous series", "Isotopic series"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The hybridization of the carbon atom in ethyne is",
+    "options": ["sp^4", "sp", "sp^3", "sp^2"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Isomerism",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The following types of isomerism are found in aliphatic alkanes EXCEPT",
+    "options": ["Geometric isomerism", "Position isomerism", "Chain isomerism", "Structural isomerism"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Isomerism",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "How many isomers are possible for a hydrocarbon with molecular formula C4H8?",
+    "options": ["two", "three", "four", "six"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Alcohols",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "What compounds are formed when sodium metal reacts with propanol?",
+    "options": ["Sodium propoxide and hydrogen", "Sodium oxide and propene", "Sodium hydroxide and propene", "Sodium methoxide and water"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "s-block elements",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Which of the following chemical equations represents the reaction of group 1 metal hydrides (MH) with water?",
+    "options": ["MH + H2O → MO + 3H", "MH + H2O → MOH + H2", "MH + H2O → MOH + 2H", "MH + H2O → M + OH + H2"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Coordination Chemistry",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "What are the geometric shape and oxidation number of the cobalt in the complex ion, [Co(NH3)4(H2O)2]^{3+}?",
+    "options": ["Tetrahedral, +3", "Octahedral, -3", "Octahedral, +3", "Tetrahedral, -3"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "What type of reaction occurs between propene and concentrated hydrogen bromide solution to produce a mixture of 2-bromopropane and 1-bromopropane?",
+    "options": ["Addition", "Substitution", "Elimination", "Displacement"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Coordination Chemistry",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "How many counter ions are there in the coordination compound [Co(NH3)5Cl]Cl2?",
+    "options": ["1", "2", "5", "6"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Alcohols",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The product of oxidation of secondary alcohol with K2Cr2O7 / H+ is a/an",
+    "options": ["carboxylic acid", "ester", "aldehyde", "ketone"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Macromolecules",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "The following are reducing sugars EXCEPT?",
+    "options": ["Fructose", "Sucrose", "Maltose", "Cellulose"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Isomerism",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "How many isomeric forms are there for the molecular formula C3H6Br2?",
+    "options": ["4", "1", "2", "3"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) Distinguish between ionization energy and electron affinity giving an example in each case. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Periodic Table and Periodicity",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) Briefly describe and give reasons for the observed trends of the following atomic properties in the periodic table:\n(i) Atomic size\n(ii) Ionization energy\n(iii) Electron affinity. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) Balance the following oxidation-reduction reactions, which occur in acidic solution, using half-reaction method:\nCr2O7^{2-}(aq) + Cl^-(aq) → Cr^{3+}(aq) + Cl2(g) [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "1d",
+    "question": "(d) Assign oxidation number to each atom in the following reaction and hence identify the oxidizing agent and reducing agent in each reaction.\n(i) 2Al(s) + 3H2SO4(aq) → Al2(SO4)3(aq) + 3H2(g)\n(ii) PbO(s) + CO(g) → Pb(s) + CO2(g) [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Mole Concept",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) A compound X is known to contain carbon, hydrogen and oxygen only. When it is burnt completely in excess oxygen, carbon dioxide and water are given out as the only products. It is found that 0.46g of X gives 0.88g carbon dioxide and 0.54g water. Find the empirical formula of compound X. (R.A.M: H = 1.0, C = 12.0, O = 16.0) [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Thermodynamics",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) (i) Differentiate between extensive and intensive property.\n(ii) Give one example each of extensive and intensive property. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) (i) State one information that each of the three (3) quantum numbers n, l and m give about the atomic orbital.\n(ii) Identify the orbitals described by the following quantum numbers and arrange them in order of increasing energy.\n[Quantum numbers table would be here - missing from text] [4 marks]",
+    "textUnclear": true,
+    "note": "The quantum numbers table/image was not clearly visible in the PDF. Please provide the quantum numbers for question 2(c)(ii).",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) (i) Write the van der Waals equation and state all the parameters. [2 marks]\n(ii) If sulfur (IV) oxide were an ideal gas, the pressure at 0.0°C exerted by 1.0 mole occupying 22.4L would be 1.0 atm (22.4L is the molar volume of an ideal gas at STP). Use the Van der Waals equation to estimate the pressure of this volume of 1.0 mol SO2 at 0.0°C. (Take a = 6.865 L^2·atm/mol^2, b = 0.05679 L/mol.) [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Chemical Reactions",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) Briefly account for the following observation: when a solution of sodium iodide and potassium nitrate are mixed together, no visible reaction is observed, however when a solution of lead nitrate is substituted for potassium nitrate, a visible reaction is observed and a precipitate is formed. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Nuclear Chemistry",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) (i) Distinguish between natural and induced radioactivity.\n(ii) The isotope 90/38 Sr is one of the extremely hazardous species in the fallout from a nuclear fission explosion. A 0.600g sample diminishes to 0.395g in ten years. Calculate the half-life. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Equilibrium State",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) (i) State the law of mass action.\n(ii) Using relevant illustrative reaction, distinguish between the reaction quotient (Q) and the equilibrium constant (K). [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Solutions and Colligative Properties",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) 70g of ethanol and 30g of methanol were mixed to form a solution. If the vapour pressure of ethanol is 75 mmHg and methanol is 22 mmHg at 20°C. (C = 12, O = 16, H = 1)\n(i) Calculate the mole fraction of ethanol and methanol in the solution.\n(ii) Calculate pressure of each component and total vapour pressure of the solution. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "4c",
+    "question": "(c) The table below contains standard electrode potential information which should be used, as appropriate, in answering the following questions:\n\nHalf-equation: I2(aq) + 2e- → 2I-(aq), Fe3+(aq) + e- → Fe2+(aq), VO2+ + 2H+(aq) + e- → VO2+(aq) + H2O(l), Cl2(g) + 2e- → 2Cl-(aq)\n\nA reaction occurs when gaseous chlorine is passed into iron(II) sulphate solution.\n(i) Write half-equations and the cell equation for the reaction.\n(ii) Calculate the value of the standard cell e.m.f. for the reaction. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) (i) Using chemical equations only, show the amphoteric behaviour of aluminium in Group 13. [2 marks]\n(ii) Using chemical equations only, describe what happens when fluorine and bromine are separately added to water. Name the type of reaction that occurs. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Periodic Table and Periodicity",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) (i) What is meant by diagonal relationship?\n(ii) Give two (2) properties of lithium that illustrates its diagonal relationship with magnesium. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Chemistry of the Environment",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) Mention two (2) consequences of ozone layer depletion. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) (i) Write balanced equations for the reactions of sodium and phosphorus with oxygen and chlorine respectively.\n(ii) Write chemical equations to illustrate what happens when each oxide in (i) is in contact with water.\n(iii) Using chemical equations only, describe what happens when water is added to the chlorides of the elements in (a)(i). [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Coordination Chemistry",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Consider the coordination compound [Co(NH3)6]Cl3.\n(i) State the primary valency of the central metal ion.\n(ii) State the secondary valency of the central metal ion.\n(iii) How many moles of silver chloride will be precipitated when 1 mole of the compound is reacted with silver nitrate?\n(iv) Which ions would be formed when the compound is dissolved in water? [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "p-block elements",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) (i) Arrange the halogen hydrides in order of increasing acidic strength.\n(ii) Account for the order in (c) above. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) (i) Give three characteristics of homologous series.\n(ii) Name 3 classes of compounds which form such a series.\n(iii) Define the term hybridization. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Alcohols",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) A saturated organic compound A containing two carbon atoms reacted with ethanoic acid in the presence of a mineral acid to form a compound B with a sweet smell.\n(i) Name the functional group present in A.\n(ii) Draw the structure of A.\n(iii) Write a chemical equation to show the formation of B.\n(iv) Name the compound B. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Write the name and structure of the major organic product from each of the following reactions.\n(i) CH3CONH2 on heating with dilute HCl\n(ii) CH3CH2CH2CONH2 on heating with LiAlH4\n(iii) CH3CH2CO2H on refluxing with SOCl2\n(iv) CH3COCH2CH3 on shaking with H2NNH2 [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) (i) Name 4 types of addition reactions an alkene would undergo.\n(ii) Write the structure of the following compounds: butoxy-pentane and N-propylpropanoate. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2021,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) Potassium manganate(VII) solution (potassium permanganate) reacts with but-2-ene in the cold. Describe the colour change in the potassium manganate(VII) solution under:\n(i) acidic conditions;\n(ii) alkaline conditions. [2 marks]",
+    "options": []
+  }
+]

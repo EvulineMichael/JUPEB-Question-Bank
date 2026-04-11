@@ -1,0 +1,661 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Quadratic Equations",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Find the non-zero negative value of x which satisfies the equation",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Equation missing from PDF. Please refer to your original past question paper.",
+    "options": ["2", "-2", "√2", "-√2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Matrices",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "If Z = [[2, 3, 3], [4, 1, 0], [1, 4, 0]] find determinant of Z.",
+    "options": ["35", "45", "-35", "48"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Complex Numbers",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Compute (1 + 3/(1 + i))².",
+    "options": ["-8/2 - 15/2 i", "4 - 15/2 i", "17/2 - 15/2 i", "4"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Find the centre and radius of the circle 8x² + 8y² - 24x - 40y + 18 = 0.",
+    "options": ["(3/2, 5/2) and r = 3/2", "(-3/2, 5/2) and r = 5/2", "(3/2, -5/2) and r = 3/2", "(3/2, 5/2) and r = 5/2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Find the equation of the tangent to the circle 2x² + 2y² = 30 at the point (-3, 6).",
+    "options": ["x + y - 15 = 0", "x - 2y + 5 = 0", "x + 2y - 5 = 0", "x - 2y + 15 = 0"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Given the equation of the ellipse x²/2 + y² = 1. Find the equation of the directrices.",
+    "options": ["x = (0, ±1)", "x = (0, ±2)", "x = (0, ±3)", "x = (0, ±4)"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "Find the gradient of the curve y = x³ - 6x² + 11x - 6 at the point (1, 0).",
+    "options": ["-1", "-2", "1", "2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Set Theory",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Given sets A = {a, b, 1, 3} and B = {a, 2, 4}, find A ∪ B.",
+    "options": ["∅", "{a, b, 1, 2, 3, 4}", "{a, b, 1, 3}", "{b, 1, 2, 3, 4}"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Set Theory",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Let P be the set of prime factors of 42 and Q be the set of prime factors of 45. Find P ∩ Q.",
+    "options": ["{2}", "{3}", "{7}", "{5}"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Polynomials",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "A polynomial 2x³ + ax² + bx - 1 has a factor (x - 1) and the remainder when it is divided by (x - 2) is -4. Find a + b.",
+    "options": ["-1", "1", "-2", "2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Logarithms",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "Solve the equation log₃ x + log_x 3 = 10/3.",
+    "options": ["√3, 9", "27, √3", "10, 9", "27, √3"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Quadratic Equations",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "Solve the equation √(2x + 3) - √(x - 2) = 2.",
+    "options": ["3, 6", "3, 11", "27, 3", "3, 10"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Inequalities",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "If y = x(x⁶ - 1), find the range for which y = 0.",
+    "options": ["(-∞, 0) ∪ (0, ∞)", "(-1, -∞) ∪ (0, ∞)", "[-1, 0) ∪ [0, 1]", "(-∞, ∞)"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Limits and Continuity",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Evaluate lim_{x → -3} ((3x² - 27)/(x + 35)).",
+    "options": ["-18", "9", "0", "3"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Evaluate ∫₁ᵉ (1/x²) dx.",
+    "options": ["0", "2", "1", "2e"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Evaluate ∫₀^π cos x dx.",
+    "options": ["2", "7", "-1", "1"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Limits and Continuity",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "Evaluate lim_{x → ∞} ((2x³ + x² - 5)/(x³ + 2x + 1)).",
+    "options": ["5", "0", "2", "∞"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The expression px² + qx + r equals 4 at x = 1. If the derivative is 2x + 1, what are the values of p, q and r respectively?",
+    "options": ["1, 1, 2", "1, 2, 1", "1, 0, 1", "1, -1, 2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "The gradient of a curve at any point (x, y) is given by 2x + 3. If the curve passes through the origin, find the equation of the curve.",
+    "options": ["x(x+2)", "x(2x+3)", "x² - 4", "2x + 3"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "The position of an object in motion at any time t is given by s = 3t³ - 5t - 2. Obtain the velocity of the object after 2 seconds.",
+    "options": ["31 m/s", "36 m/s", "18 m/s", "20 m/s"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "Find the derivative of 2x³ - 5x² + 2.",
+    "options": ["x² - 10x", "6x² - 10x", "-10x - 6x²", "6x - 10"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Find the derivative of y = (3 + 2x)(1 - x).",
+    "options": ["-1 - 4x", "4x - 1", "-4x + 1", "-4x"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Differentiate (x + y)² = 5.",
+    "options": ["-4", "-2", "-1", "10"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Limits and Continuity",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "Evaluate: lim_{x → 5} (x² - 25)/(x - 5).",
+    "options": ["5", "15", "10", "12"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "If y = (x - 1)eˣ, find dy/dx.",
+    "options": ["(2 - x)eˣ", "eˣ 2x", "-xeˣ", "2x"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Find the modulus of 2i + 3j - 4k.",
+    "options": ["√12", "√29", "√3", "√28"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "Find the scalar product of a = 2i + 3j and b = -i + 4j.",
+    "options": ["20", "10", "-10", "-20"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Find the value of n for which the vectors si + nj - 3k and ni - j + 5k are perpendicular.",
+    "options": ["90", "0°", "15/(s - 1)", "(s - 1)/15"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "Obtain the projection of vector a = (3, -1, 5) on the vector b = (2, 1, -3).",
+    "options": ["-2/√14", "-2/√35", "√14", "√35"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Find the volume of the tetrahedron OABC with point A(2,1,1), B(0,-1,1) and C(-1,3,0).",
+    "options": ["2/5", "3/4", "4/3", "-4/3"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "The distance S in meters moved by a particle in t seconds is given by S = 1.5t² - t. Find its speed after t seconds.",
+    "options": ["3t m/s", "(3t-1) m/s", "(3t+1) m/s", "(1-3t) m/s"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "A car starts from A and travels 10 km due West, 20 km North-West and 30 km due North. Find the displacement from A.",
+    "options": ["51.3 km", "53.3 km", "43 km", "50.3 km"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "The brakes of a train are able to produce a retardation of 1.2 m/s². If the train is travelling at 90 km/h, at what distance from a station should the brakes be applied?",
+    "options": ["200 m", "250 m", "260 m", "240 m"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "A particle is projected with a velocity of 20 m/s up a smooth inclined plane of inclination 30°. Find the distance described up the plane.",
+    "options": ["40.8 m", "48 m", "40 m", "38 m"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "A block of mass 20 kg rests on a horizontal plane whose coefficient of friction is 0.4. Find the least force required to move the block if it acts horizontally.",
+    "options": ["190 N", "80 N", "196 N", "78.4 N"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "A mass of 8 kg hangs in equilibrium, suspended by two light inelastic strings making angles 30° and 45° with the horizontal, calculate the tensions in the two strings.",
+    "options": ["57.4 N, 70.3 N", "50 N, 70 N", "60.5 N, 60.5 N", "50 N, 50 N"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "If a = 2i + 3j + 5k, b = 3i - 5j + 2k, c = i - j, calculate λ such that 2a - 5b + λc is perpendicular to the x-axis.",
+    "options": ["8", "9", "10", "7"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Probability",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "The probabilities that John and Joanna will pass an examination are 2/3 and 4/5 respectively. Find the probability that only one of them will pass.",
+    "options": ["2/15", "4/15", "1/15", "6/15"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Combinatorics",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "In how many ways can a committee of 2 men and 2 women be formed from 3 men and 5 women?",
+    "options": ["12", "30", "20", "10"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Correlation and Regression",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The formula for Spearman's rank correlation is:",
+    "options": ["1 + (6∑d²)/(N(N² - 1))", "1 - (∑d²)/(N(N² - 1))", "1 - (6∑d²)/(N(N² - 1))", "1 - (6∑d²)/N²"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Random Variables",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The following are continuous random variables except",
+    "options": ["The temperature of an object", "The distance between two points", "The population of a school", "The marks obtained by a group of students"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Normal Distribution",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The following are features of a standard normal curve except",
+    "options": ["It is bell-shaped", "The area under the curve is 1", "It is symmetric about the mean", "The variance is zero"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Probability",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "An experiment in which the outcomes are two possibilities: 'Success' or 'failure' is said to be",
+    "options": ["Binomial", "Normal", "Geometric", "Bernoulli"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Correlation and Regression",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The range of values of rank correlation (r_rank) is",
+    "options": ["-1 ≤ r_rank ≤ 1", "0 ≤ r_rank ≤ 1", "-1 ≤ r_rank ≤ 0", "r_rank ≥ 1"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Find the geometric mean of the data: 5, 15, 10, 8, 12.",
+    "options": ["72000", "821.1", "9.36", "10"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "One can easily determine the ... of a distribution from histogram.",
+    "options": ["mean", "mode", "median", "standard deviation"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Find the mean of the following scores: Scores: 61,64,67,70,73; Frequency: 5,18,42,27,8",
+    "options": ["65", "67.45", "67", "68"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "What is the mode of the following numbers: 1,8,8,10,9,2,7,8,2,2,4,1,1,8,7,1?",
+    "options": ["8", "8 and 1", "1", "None of the above"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Significance Testing",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "The level of a test is the maximum probability of committing Type I error when the null hypothesis holds.",
+    "options": ["acceptance", "rejection", "significance", "significant"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Measures of Dispersion",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "The standard deviation of a statistic describes",
+    "options": ["the shape of its distribution", "the centre of its distribution", "the amount of skewness associated with its distribution", "the amount of variability associated with its distribution"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Set Theory",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) Given A = {-5, -3, -1, 0, 1, 2, 3}, B = {-4, -3, 0, 3, 5, 8}. Find A Δ B. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Set Theory",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) If A, B, and C are any sets, show that A ∪ (B ∪ C) = (A ∪ B) ∪ C. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Set Theory",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) In an election involving three parties for the chairmanship and gubernatorial election of Lagos State, voters cast their votes as follows: 190 voted for party A, 200 for party B and 250 for party C. 80 voted for A and B, 60 voted for A and C, 100 voted for B and C and 40 voted for B alone. If 500 people voted during the election, find:\n(i) The number of voters who voted for all the three parties. [3 marks]\n(ii) The number of voters who voted for A and B but not C. [3 marks]\n(iii) The number of voters who did not vote for any party. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Matrices",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) (i) Evaluate the determinant A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]. [3 marks]\n(ii) What do you conclude from 2(a)(i)? [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Partial Fractions",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(iii) Resolve (x³ - 1)/[(x + 3)(x + 1)²] in partial fractions. Hence, obtain its Binomial expansion up to terms x². [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) If cos(x + α) = sin(x + β), find tan x in terms of α and β. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Trigonometry",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) If sin A = 4/5 and cos B = 12/13, where A is obtuse and B is acute, find without using tables the values of:\n(i) sin(A + B)\n(ii) tan(A - B). [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) By using the reduction formula for ∫ secⁿ x dx, evaluate the definite integral ∫₀^π sec⁶ x dx. [10 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) Find the area enclosed by the curve y = x² and the x-axis between x₁ = 0 and x₂ = 2. [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Limits and Continuity",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) Evaluate lim_{x → 0} (1/x - csc x). [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Maclaurin and Taylor Series",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) By Taylor's theorem, show that logₑ(1 + x) = x - x²/2 + x³/3 - x⁴/4 + ... + xⁿ/n, and hence evaluate logₑ(1.1) to four decimal places. [8 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "4c",
+    "question": "(c) Using the trapezoidal rule with ordinates x = 1.0, 1.4, 1.8, 2.2, 2.6, 3.0; evaluate ∫₁³ 1/(x + 1) dx. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Moments of Inertia",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) In the study of motion of rigid bodies, explain the following concepts:\n(i) Moment of inertia of the system [4 marks]\n(ii) Radius of gyration of the system. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Moments of Inertia",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) Find the moment of inertia and radius of gyration of a uniform thin rod of length 2a, density ρ about an axis passing through one end of the rod perpendicular to its length. [7 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Newton's Law of Cooling",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) State Newton's law of cooling and write out the differential equation describing the temperature of the body. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "First Order Differential Equations",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) A beaker of water initially at 100°C is allowed to cool in a room maintained at 15°C. After two minutes, the water temperature is 85°C. Find the temperature of the water after four minutes and the time taken for the water to reach 40°C. (Hint: use Newton's law of cooling 6(a) above). [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) If the position vectors of points A, B and C are a = i + 3j - 7k, b = 7i + 6j + 5k and c = 9i + 7j + βk, respectively. Find\n(i) |a + b| [3 marks]\n(ii) the value of β if A, B and C are collinear. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Measures of Location",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) The following data represent scores of 50 students in a Statistics test:\n72 93 70 59 78 74 65 73 80 57 67 72 57 83 76 74 56 68 67 74 76 79 72 61 72 73 76 67 49 71 53 67 65 100 83 69 61 72 68 65 51 75 68 75 66 77 61 64 74 72\nBy using a class interval of five (45-49, 50-54, etc):\n(i) Prepare the frequency distribution table. [4 marks]\n(ii) What is the coefficient of variation? [4 marks]\n(iii) Does the data represent a sample or a population? [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Measures of Location",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) Discuss briefly the measures of location associated with frequencies hence; explain mean, mode, and median. [6 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Correlation and Regression",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) (i) Find the coefficient of linear correlation between the variables A and B in the below table:\nA: 1, 2, 3, 4, 5\nB: 1, 2, 3, 6, 8 [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Correlation and Regression",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(ii) Five students were ranked according to their scores in Mathematics and Physics thus:\nStudent: A, B, C, D, E\nMathematics: 1, 3, 5, 2, 4\nPhysics: 2, 1, 3, 4, 5\nCalculate the Spearman's rank correlation coefficient. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Random Variables",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Differentiate between discrete and continuous random variable. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2015,
+    "category": "Probability",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) A company that manufactures computer chips finds that 5% of the chips they produce are defective. If 8 chips are selected at random, find the probability that:\n(i) 2 chips will be defective [2 marks]\n(ii) at least 2 chips will be defective. [2 marks]\n(iii) calculate for (i) and (ii) above, the number of expected defective chips and variance in a sample of 2,000 chips. [3 marks]",
+    "options": []
+  }
+]

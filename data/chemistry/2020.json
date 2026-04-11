@@ -1,0 +1,689 @@
+[
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Which of the following statements is incorrect?",
+    "options": ["An atom is electrically neutral", "the size of a cation is smaller than that of the corresponding atom", "The size of an anion is bigger than that of the corresponding atom", "An atom and its ion have an unequal number of protons"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Acid-Base Equilibria",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Bronsted-Lowry base is",
+    "options": ["an electron pair acceptor.", "a proton acceptor.", "an electron pair donor.", "a proton donor."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Which rule states that no two electron in an atom can have the same set of quantum numbers?",
+    "options": ["Hund's rule", "Aufbau's principle", "de Broglie hypothesis", "Pauli's exclusion principle"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Calculate the relative molecular mass of a gaseous compound if 13.15 g of the compound occupies 4.80 dm3 at STP.",
+    "options": ["61", "34", "24", "29"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Electronic Configuration",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Which one of the following species has the same electronic configuration as Al^{3+} ion?",
+    "options": ["F-", "Cl-", "S^{2-}", "O-"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Stoichiometry",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "What is the volume of oxygen required to burn completely 45 cm^3 of methane?",
+    "options": ["400 cm^3", "180 cm^3", "90 cm^3", "22.5 cm^3"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Chemical Reactions",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "Which of the following is TRUE regarding a precipitation reaction?",
+    "options": ["Both products must be soluble in water", "At least one of the products will be insoluble in water", "At least one of the reactants must be insoluble in water", "Spectator ions form insoluble salts"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Arrange the following in the order of increasing boiling point: CH4, HCN, CaO",
+    "options": ["CH4 < HCN < CaO", "HCN < CH4 < CaO", "CH4 < CaO < HCN", "CaO < CH4 < HCN"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "The electronegativity values of Si and H are 1.8 and 2.1 respectively. What type of bond exist within SiH4?",
+    "options": ["Ionic", "Polar covalent", "Coordinate covalent", "Non-polar bond"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Electrochemistry",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "When an atom is oxidised, its oxidation number",
+    "options": ["decreases, as electrons are gained", "decreases, as electrons are lost", "increases, as electrons are gained", "increases, as electrons are lost"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "What mass of carbon dioxide is formed when 60.0 g of carbon is burned in 750.0 g of oxygen? [C = 12, O = 16]",
+    "options": ["60.0 g", "160.0 g", "220.0 g", "1031 g"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Acid-Base Equilibria",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "A solution capable of resisting change in pH upon the addition of small amount of acid or base is",
+    "options": ["an aqueous solution.", "a colloidal solution.", "a buffer solution.", "super saturated solution."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "What is the percentage by mass of carbon present in 6.0 g of a hydrocarbon which burns completely in air to produce 11.0g of carbon dioxide? [C = 12, O = 16]",
+    "options": ["25%", "33%", "50%", "75%"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Structure and Bonding in Organic Compounds",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "In which of the following species is sp^2 hybrid orbitals NOT involved?",
+    "options": ["PCl3", "BF3", "C2H4", "CO2"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Electrochemistry",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Calculate the standard e.m.f. in volts of a cell that uses the following half-cell reactions: Fe^{2+}(aq) + 2e^- ⇌ Fe(s) E° = -0.44V; Ni^{2+}(aq) + 2e^- ⇌ Ni(s) E° = -0.25V",
+    "options": ["0.18", "0.69", "0.11", "0.19"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Electrochemistry",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "What is the oxidation number of oxygen in Na2O2?",
+    "options": ["-1", "+1", "-2", "+2"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Thermodynamics",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "If the enthalpy of a given reaction is -215 kJ mol^{-1} and the entropy change of the reaction is 15.2 J mol^{-1} K^{-1} at 30°C, then the reaction will",
+    "options": ["not be spontaneous", "be spontaneous", "be irreversible", "be at equilibrium"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Thermodynamics",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "The temperature and pressure at which the three phases of pure water coexist respectively are",
+    "options": ["273K and 760mmHg", "298K and 1 atm.", "0.01°C and 4.5mmHg", "0.273°C and 0.1mmHg"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Acid-Base Equilibria",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "The pH of buffer solution depends upon concentration of",
+    "options": ["conjugate acid", "conjugate base", "salt", "conjugate acid and base"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Mole Concept",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "What is the mole fraction of oxygen gas in a mixture containing 32.0g of oxygen gas, 32.0g of methane gas and 32.0g of sulphur (IV) oxide? [C = 12, O = 16, H = 1, S = 32]",
+    "options": ["0.143", "0.286", "0.333", "0.572"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "At 17°C a sample of hydrogen gas occupies 125 cm^3, what will the volume be at 100°C, if the pressure remains constant?",
+    "options": ["21 cm^3", "97 cm^3", "161 cm^3", "735 cm^3"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Why is the first ionization energy of phosphorus greater than that of silicon?",
+    "options": ["The outer electron in phosphorus is paired", "The atomic radius of a phosphorus atom is greater", "A phosphorus atom has one more proton in its nucleus", "The outer electron in a phosphorus is more shielded"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Periodic Table and Periodicity",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Which of the following pairs exhibit the most similar chemical properties?",
+    "options": ["Li and Mg", "Ca and Zn", "B and C", "N and O"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "d-block elements",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "Which of the following metals is not a first row transition element?",
+    "options": ["V", "Cd", "Cr", "Mn"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "The following ions have noble gas electronic configuration except",
+    "options": ["Sr^{2+}", "Rb^+", "I^-", "Sn^{2+}"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Chemical Bonding",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Which of the following compounds is the anion most polarized?",
+    "options": ["LiF", "LiI", "LiCl", "LiBr"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Solutions and Colligative Properties",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "The colligative properties of a solution are affected by",
+    "options": ["Nature of the solute", "Concentration of solute molecules", "Amount of liquid", "Surface area of solute"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Coordination Chemistry",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "What is the coordination number and oxidation state of the central atom in [NiCl2(en)2]?",
+    "options": ["6,2", "6,0", "4,2", "4,4"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Chemistry of the Environment",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "Excess soil acidity caused by acid rain can be neutralized by",
+    "options": ["adding more fertilizers", "adding molten cryolite", "adding brine", "adding quick lime"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "s-block elements",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Which of the following is an s-block element?",
+    "options": ["Cs", "Ar", "Cl", "He"]
+  },
+  {
+  "subject": "Chemistry",
+  "year": 2020,
+  "category": "Thermochemistry",
+  "type": "Objective",
+  "questionNumber": 31,
+  "question": "Use the following data to determine the standard enthalpy change of formation for solid ICl3.\n\nI₂(s) + Cl₂(g) → 2ICl(s)     ΔH° = +14 kJ/mol\nICl(s) + Cl₂(g) → ICl₃(s)    ΔH° = -88 kJ/mol",
+  "options": ["-60 kJ/mol", "-74 kJ/mol", "-81 kJ/mol", "-162 kJ/mol"]
+},
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "The oxide of nitrogen used as a mild anesthetic for surgery is",
+    "options": ["nitrogen(IV)oxide.", "dinitrogen(I)oxide.", "dinitrogen tetraoxide.", "nitrogen(II)oxide."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Equilibrium State",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "Which of these reactions in equilibrium is unaffected by a change in pressure?",
+    "options": ["2O3(g) ⇌ 3O2(g)", "PCl5(g) ⇌ PCl3(g) + Cl2(g)", "N2O4 ⇌ 2NO2", "2HI(g) ⇌ H2(g) + I2(g)"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "The trihalides of phosphorus reacts with water to form one of the following acids.",
+    "options": ["H3PO4", "H5P3O10", "H3PO3", "H4P2O6"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "p-block elements",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Which of the following hydrogen halides is the most acidic: HF, HCl, HBr, HI?",
+    "options": ["HF", "HI", "HBr", "HCl"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Coordination Chemistry",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "The IUPAC name for [FeF4(H2O)2] is",
+    "options": ["diaquatetrafluoroiron (III) ion", "diaquatetrafluoroferrate (III) ion", "diaquatetrafluoroiron (III)", "diaquatetrafluoroferrate (III)"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Carbonyl Compounds",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Reaction between a hydrazine and a carbonyl compound yields a",
+    "options": ["hydrazone", "diazonium salt", "benzaldehyde", "phenyl hydrazine"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Amines",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "Which of the following is tertiary amine?",
+    "options": ["CH3CH2NH2", "CH3CH2NHCH3", "(CH3CH2)2NCH3", "CH3(NH)3"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Amines",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "Name the following organic compound.",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Organic compound structure. Please refer to your original past question paper to see the structure.",
+    "options": ["3-ethylbutanamines", "3-methylamine pentane", "2-ethylbutanamine", "3-ethyl-4-butanamine"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Organic Reactions",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "Heterolytic bond fission results in the formation of positively charged carbon species known as",
+    "options": ["free radicals.", "carbanions.", "carbonium ions.", "carbenes."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Electrochemistry",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The following statements are true of an electrolytic cell EXCEPT",
+    "options": ["It converts electric energy to chemical energy.", "A porous partition is not needed.", "Cathode is negative electrode while anode is positive electrode.", "Electrodes are in separate compartment"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Alcohols",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "The oxidation of CH3CH2CHOHCH3 with potassium tetraoxomanganate (VII) gives",
+    "options": ["CH3CH2CH2COOH", "CH3CH2COOH", "CH3CH2COCH3", "CH3CH2CH2CHOH"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "Hydrogenation of vegetable oils to produce margarine is an example of",
+    "options": ["addition reaction.", "Substitution reaction.", "Elimination reaction.", "Redox reaction."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Macromolecules",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "The enzyme suitable for the conversion of starch to maltose is",
+    "options": ["Maltase", "zymase", "lipase", "diastase"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "CH3CH2CHCHCH2CH3 does not undergo",
+    "options": ["Addition reaction.", "Substitution reaction.", "Combustion reaction.", "Polymerization reaction."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Isomerism",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "The compound with molecular formula C5H12 has",
+    "options": ["2 isomers.", "3 isomers.", "4 isomers.", "5 isomers."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Organic Reactions",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Consider the structure: what electronic effect is likely to be observed?",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Structure for electronic effect. Please refer to your original past question paper to see the structure.",
+    "options": ["Inductive effect", "Electromeric effect", "steric effect", "Tautomeric effect"]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Amines",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "The following compounds C6H13NH2, C3H7NH2, CH3CH2NH2 and CH3NHCH3 are all related as ...",
+    "options": ["chain isomers.", "homologues.", "functional group isomers.", "primary amines."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Alkanes, Alkenes, Alkynes",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "Which of the following reactions is suitable for the synthesis of alkenes?",
+    "options": ["Dehydration of primary alcohols.", "Hydrolysis of primary alcohols.", "Reduction of primary alcohols.", "Oxidation of primary alcohols."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Isomerism",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "Branched chain isomers have the following properties when compared with their linear isomers.",
+    "options": ["Low boiling point, low melting point and high density.", "Lower boiling point, high melting point and lower density.", "Higher boiling point, high melting point and low density.", "Lower boiling point, low melting point and low density."]
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Phase Diagrams",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) The phase diagram above is for a one-component system, Z.\n(i) What is T?\n(ii) Under what condition will Z sublime?\n(iii) What phase does Z exist as at 298K and 10^5 Pa? [3 marks]",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Phase diagram for one-component system Z. Please refer to your original past question paper to see the diagram.",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) The atomic mass of a naturally occurring element Y is 55.8. The masses of the isotopes of the element are 54Y and 57Y.\n(i) Calculate the percentage abundance of each isotope.\n(ii) Deduce the isotopic mass ratio. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) Balance the redox reaction below in alkaline medium and identify the oxidizing and reducing agents.\nI^- + MnO4^- → IO3^- + MnO2 [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Stoichiometry",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) In an experiment, 15.0g of methanol and 10.0g of carbon (II) oxide were placed in a reaction vessel. [C = 12, H = 1, O = 16]\nCH3OH(l) + CO(g) → HC2H3O2(l)\n(i) Determine which reactant is the limiting reactant.\n(ii) From (i) above, calculate the theoretical yield of acetic acid.\n(iii) If the actual yield is 19.1g, what is the percentage yield? [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Chemical Bonding",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) (i) Distinguish between a polar and non-polar molecule.\n(ii) State which of the following molecules is/are polar or non-polar.\n(a) CCl4 (b) HF (c) CO2 (d) CHCl3 [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) (i) Define the term degeneracy as it applies to atomic orbitals.\n(ii) Give the values of the azimuthal and magnetic quantum number of the electrons in an atom when n = 4 [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Electrochemistry",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) (i) What are fuel cells?\n(ii) With the aid of equations, state the reactions that occur at the anode and cathode of H2/O2 fuel cell. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Thermochemistry",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) Calculate the standard enthalpy change for the reaction:\nCH4(g) + Cl2 → CH3Cl(g) + HCl(g)\ngiven the following bond enthalpies at 298K:\nC-H: +411 kJ/mol, Cl-Cl: +243 kJ/mol, C-Cl: +327 kJ/mol, H-Cl: +431 kJ/mol [3 marks]",
+    "options": []
+  },
+  {
+  "subject": "Chemistry",
+  "year": 2020,
+  "category": "Nuclear Chemistry",
+  "type": "Essay",
+  "questionNumber": "3c",
+  "question": "(c) The decay series of U-238 is shown below:(ii) Identify the types of radiation represented by A and Q. [3 marks]",
+  "diagramMissing": true,
+  "diagramNote": "⚠️ Diagram missing: Nuclear decay series diagram with arrows and radiation symbols. Please refer to your original past question paper to see the complete decay scheme.",
+  "options": []
+},
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) 2g of He, 3g of N2 and 4g of Ar were introduced into a 15 dm^3 vessel at 100°C.\n(i) What are the mole fractions of He, N2 and Ar in the system?\n(ii) Calculate the total pressure of the system and hence the partial pressures of each of the gases in the vessel. [1 atm = 101325 Nm^{-2}, He = 4.0, N = 14.0, Ar = 39.9] [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Acid-Base Equilibria",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) (i) The dissociation constant for an acid is a measure of its strength. Use the information below to arrange the following acids in order of increasing acidity:\nCH3CH2COOH (1.259×10^{-5}), CH3CHClCOOH (1.585×10^{-3}), CH3CCl2COOH (3.982×10^{-2}), CH2ClCH2COOH (7.943×10^{-5})\n(ii) Suggest a reason for your arrangement. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Solutions and Colligative Properties",
+    "type": "Essay",
+    "questionNumber": "4c",
+    "question": "(c) (i) Differentiate between ideal and non-ideal solutions.\n(ii) How does the solution of a non-volatile solute affect the following properties?\n(a) Vapour pressure lowering (b) Freezing point depression [4 marks]",
+    "options": []
+  },
+{
+  "subject": "Chemistry",
+  "year": 2020,
+  "category": "p-block elements",
+  "type": "Essay",
+  "questionNumber": "5a",
+  "question": "(a) (i) Use balanced chemical equations to illustrate what happens when the following compounds are added to water:\n(a) NaCl (b) SO3 (c) Al2O3 (d) Na2O\n(ii) Predict the pH of the solutions. [4 marks]",
+  "options": []
+},
+{
+  "subject": "Chemistry",
+  "year": 2020,
+  "category": "s-block elements",
+  "type": "Essay",
+  "questionNumber": "5b",
+  "question": "(b) (i) Explain giving reasons the trend in the solubility of group 2 sulphates.\n(ii) Arrange the sulphates in order of increasing solubility. [3 marks]",
+  "options": []
+},
+ {
+  "subject": "Chemistry",
+  "year": 2020,
+  "category": "Chemistry of the Environment",
+  "type": "Essay",
+  "questionNumber": "5c",
+  "question": "(c) (i) List four (4) greenhouse gases.\n(ii) State the source of environmental impact of any two in (c)(i) above. [3 marks]",
+  "options": []
+},
+{
+  "subject": "Chemistry",
+  "year": 2020,
+  "category": "d-block elements",
+  "type": "Essay",
+  "questionNumber": "6a",
+  "question": "(a) (i) State two properties of water that are different from the hydrides of group 16.\n(ii) Why are the first ionization energies of the d-block metals greater than those of the s-block metals? [4 marks]",
+  "options": []
+},
+{
+  "subject": "Chemistry",
+  "year": 2020,
+  "category": "Chemistry of Hydrogen",
+  "type": "Essay",
+  "questionNumber": "6b",
+  "question": "(b) (i) List three types of hydrides and give example of each.\n(ii) Give balanced chemical equations for the reaction of two types of hydrides with water. [5 marks]",
+  "options": []
+},
+  {
+  "subject": "Chemistry",
+  "year": 2020,
+  "category": "p-block elements",
+  "type": "Essay",
+  "questionNumber": "6c",
+  "question": "(c) Name the ore from which Aluminium can be extracted. [1 mark]",
+  "options": []
+},
+    {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Organic Reactions",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) (i) Give two (2) differences between nucleophilic substitution unimolecular (SN1) and nucleophilic substitution bimolecular (SN2) reaction. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Alcohols",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) There are several isomers with the molecular formula C5H12O.\n(i) Provide the structures and names of three unbranched isomers of the alkanol with formula C5H12O.\n(ii) Which isomer(s) is/are chiral?\n(iii) Write a chemical equation for each compound in (b) with excess acidified K2Cr2O7 and provide names for the products formed. [5 marks]",
+    "options": []
+  },
+    {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Macromolecules",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) Below are the structures of two natural amino acids (glycine and alanine).\n(i) Draw the structure of the compound formed when glycine is combined with alanine.\n(ii) What class of compound is formed in (i) above?\n(iii) What type of bond is obtained?\n(iv) Draw the zwitterionic forms of glycine and alanine. [3 marks]",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Structures of glycine and alanine. Please refer to your original past question paper to see the structures.",
+    "options": []
+  } ,
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Carbonyl Compounds",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) An organic compound F, with the empirical formula C5H10O has a vapour density of 43.\n(i) What is the molecular formula of F?\n(ii) If F does not react with Fehling's or Tollen's reagent but gives a yellow precipitate when reacted with aqueous iodine, draw the structure and give the IUPAC name of F.\n(iii) Write a reaction equation for the reduction of F with NaBH4. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Aromatic Compounds",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Methyl benzene can react with chlorine in two ways. The products formed in each case depends on the reaction conditions.\n(i) Draw the structures of A and B.\n(ii) Predict the products for the reaction of A and B with NaOH. [2 marks]",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Methyl benzene chlorination reaction scheme (structures of A and B). Please refer to your original past question paper to see the scheme.",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Carbonyl Compounds",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) (iii) Write a balanced equation and name the product(s) formed when:\n(a) CH3CH2COCH2CH2CH3 reacts with LiAlH4\n(b) Benzene reacts with CH3Cl\n(c) CH3CH2OH reacts with CH3CH2CH2COOH [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Chemistry",
+    "year": 2020,
+    "category": "Carboxylic Acids and Derivatives",
+    "type": "Essay",
+    "questionNumber": "8d",
+    "question": "(d) Arrange the following carboxylic acids in order of increasing acidity. Justify your answer.\n3-chloropentanoic acid; pentanoic acid; 2,2-dichloropentanoic acid; 3,3-dichloropentanoic acid; 2-chloropentanoic acid; 4-chloropentanoic acid. [2 marks]",
+    "options": []
+  }
+]

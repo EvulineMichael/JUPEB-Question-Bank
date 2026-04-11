@@ -1,0 +1,649 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Wave Theory of Light",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Which of the following phenomena posed a significant challenge to the wave theory of light in the 19th century?",
+    "options": ["Interference patterns observed in double-slit experiments.", "Photoelectric effect observations.", "Polarization of light.", "Diffraction of light around obstacles."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Given two displacements A = (8i + 3j - 2k) m and B = (4i - 6j + 8k) m. Determine the magnitude of the displacement 3A - B.",
+    "options": ["9 m", "11 m", "15 m", "25 m"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Physical Quantities and Units",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "From the following options, select the quantity that has the same unit with momentum?",
+    "options": ["Impulse.", "Moment.", "Pressure.", "Tension."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Measurement",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "An attempt was made to determine the volume V of a cylinder. The radius r was measured as 3.30 ± 0.05 cm and the length L was measured as 25 ± 0.4 cm. Evaluate the value of V and the uncertainty in this value using the relation: V = πr²L.",
+    "options": ["(869 ± 0.02) cm³", "(869 ± 0.45) cm³", "(869 ± 4.00) cm³", "(869 ± 40.00) cm³"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Wave Theory of Light",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "In the formation of a rainbow, the light from the sun on water droplets undergoes",
+    "options": ["dispersion only.", "only total internal reflection.", "dispersion and total internal reflection.", "scattering."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Measurement",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "A student measures the length of a table and finds it to be 1.7 meters. If another student measures the same table and reports the length as 170 centimeters, what can you conclude about their measurements? The measurements are",
+    "options": ["accurate and precise.", "precise but not accurate.", "accurate but not precise.", "neither accurate nor precise."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "The electrical resistance from a platinum at 0°C is 10.50 ohms and 12.80 ohms at 100°C. Determine the temperature when the resistance is 11.75 ohms assuming that the change in the electrical resistance of the conductor is proportional to the change in temperature.",
+    "options": ["50.15°C", "52.25°C", "54.35°C", "64.55°C"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Heat and Energy",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "A 500 W heater is used to heat 0.6 kg of water from 25°C to 100°C in t₁(s). If another 1000 W heater is used to heat 0.2 kg of water from 10°C to 100°C in t₂(s), determine t₁/t₂.",
+    "options": ["2.0", "3.0", "4.0", "5.0"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Heat and Energy",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Two identical metal rods, one at 50°C and the other at 20°C, are placed in contact with each other. What will happen over time?",
+    "options": ["Heat will flow from the rod at 20°C to the rod at 50°C until they reach thermal equilibrium.", "The rod at 50°C will cool down, and the rod at 20°C will heat up until they reach the same temperature.", "Both rods will maintain their initial temperatures as they do not affect each other.", "The rod at 20°C will heat up the rod at 50°C until they reach a temperature between 20°C and 50°C."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Heat and Energy",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "A metal rod of length 200 centimetres at 20°C is heated to 120°C. If the coefficient of linear expansion for the metal is 2 × 10⁻⁵ °C⁻¹, what is the final length of the rod?",
+    "options": ["0.004 metre", "2.004 metres", "2.040 metres", "4.040 metres"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Electrostatics",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The law that relates the emerging electric flux through a closed surface to the enclosed charges is known as",
+    "options": ["Faraday's law.", "Coulomb's law.", "Gauss's law.", "Ampere's law."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Alternating Current Circuits",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "When an input step voltage or signal is applied to a circuit, which of the following represents the time response?",
+    "options": ["Frequency.", "Half-life.", "Peak period.", "Time delay."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Electrostatics",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "In a region of space with a uniform electric field, what is the relationship between equipotential surfaces and the electric field lines? Equipotential surfaces",
+    "options": ["are perpendicular to the electric field lines.", "are parallel to the electric field lines.", "intersect the electric field lines at a constant angle.", "and electric field lines have no relationship."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Electrostatics",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "A charge of 2 μC is placed at a distance of 4 cm from another charge of 5 μC. What is the electric potential energy of this system, given that the electric constant k is 9 × 10⁹ Nm²/C²?",
+    "options": ["0 J", "1.00 J", "1.75 J", "2.25 J"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Modern Physics",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "What is the function of the Grid, as part of the electron gun in a cathode ray oscilloscope? It",
+    "options": ["emits electrons when heated by the filaments.", "accelerates the electrons to a very high speed.", "controls the brightness of the beam.", "deflects the beam in the vertical direction."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "In Bohr's model of the atom, electrons orbit the nucleus at distinct energy levels. Which statement BEST describes the behavior of electrons in these energy levels? Electrons",
+    "options": ["move in random paths within an energy level.", "can transition between energy levels without absorbing or emitting energy.", "absorb or emit energy when transitioning between energy levels.", "remain stationary within an energy level and do not change their positions."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Wave-Particle Duality",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "In a Compton scattering experiment, an X-ray photon with an initial wavelength of 0.1 nm scatters off an electron at an angle of 60°. Evaluate the change in wavelength of the photon after scattering.",
+    "options": ["1.21 pm", "2.24 pm", "4.12 pm", "4.48 pm"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Two forces having magnitude 5 N and 4 N have an angle of 30° between them. What is the scalar product?",
+    "options": ["10√3 N", "20√3 N", "10√3 N", "5√3 N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "An object is thrown horizontally from the open window of a building. If the initial speed of the object is 20 m/s and it hits the ground 2.0 s later, from what height was it thrown? [Neglect air resistance and assume the ground is level, Take g = 9.8 m/s²]",
+    "options": ["4.9 m", "9.8 m", "10.0 m", "19.6 m"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Geometrical Optics",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "In an experiment to find focal length of a concave mirror, a graph is drawn between the magnitude of u and v. The graph looks like",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Graph of u vs v for concave mirror experiment. Please refer to your original past question paper.",
+    "options": ["", "", "", ""]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Electromagnetic Induction",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "Heat loss in a transformer due to eddy current can be reduced by",
+    "options": ["keeping their resistance low.", "pouring water on the transformer.", "having the iron core laminated.", "building air-conditioned house for the transformer."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Magnetic Field",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Calculate the magnitude of the force due to a magnetic field of 0.40 T on an electron moving perpendicular to the field with a speed of 4.00 × 10⁶ m/s.",
+    "options": ["1.28 × 10⁻¹³ N", "1.28 × 10⁻⁶ N", "2.56 × 10⁻¹³ N", "2.56 × 10⁻⁶ N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Physical Quantities and Units",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Given that a physical quantity has a dimension MLT⁻¹, determine the actual quantity.",
+    "options": ["Density.", "Momentum.", "Weight.", "Young Modulus."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "A plane is flying with a velocity of 250 km/h at an angle of 30° north of east. What are the respective horizontal and vertical components of the plane's velocity?",
+    "options": ["125 km/h, 216.5 km/h", "216.5 km/h, 125.0 km/h", "250 km/h, 125.0 km/h", "125.0 km/h, 250 km/h"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Electromagnetic Induction",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "If the current in a solenoid (coil of wire) increases uniformly from 0 A to 3 A in 3 × 10⁻³ s, calculate the magnitude of the self induced e.m.f. (Take the inductance as 25 mH).",
+    "options": ["10 V", "18 V", "25 V", "31 V"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Two electrical appliances, A and B, are both rated at 1200 W. However, appliance A operates at 120 V, and appliance B operates at 240 V. Compare the current flowing through each appliance.",
+    "options": ["Appliances A and B have the same current.", "The current cannot be determined from the given information.", "Appliance B has a higher current than appliance A.", "Appliance A has a higher current than appliance B."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Physical Quantities and Units",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "Which of the following is respectively arranged as dimension of Impulse, momentum and work?",
+    "options": ["ML²T⁻¹, MLT⁻¹, ML²T⁻²", "MLT⁻¹, MLT⁻¹, ML²T⁻²", "ML²T⁻², MLT⁻¹, MLT⁻¹", "MLT⁻¹, ML²T⁻², MLT⁻¹"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Heat and Energy",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "How much heat must be added to 50 kg of lead at 30°C to cause it to melt? Specific heat capacity of lead is 130 J kg⁻¹ °C⁻¹, it melts at 330°C and its heat of fusion is 24600 J kg⁻¹.",
+    "options": ["1950000 J", "123000 J", "1827000 J", "3180000 J"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Magnetic Field",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "Calculate the force on a charge +6 μC moving with a velocity 2 × 10⁶ m/s in a field of magnetic flux density 0.45 T parallel to the field.",
+    "options": ["5.4 N", "3.4 N", "0.0 N", "3.0 N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "X-Rays",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "A beam of X-rays with an intensity of 500 W/m² is incident on a lead sheet with a thickness of 2 cm. If the linear attenuation coefficient of lead for X-rays is 0.1 cm⁻¹, compute the intensity of the X-ray beam after passing through the lead sheet.",
+    "options": ["400 W/m²", "409 W/m²", "449 W/m²", "499 W/m²"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "X-Rays",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "Choose from the given options, the correct property of X-rays. They",
+    "options": ["affect photographic plates.", "are not diffracted by crystals.", "are deflected by electric or magnetic fields.", "have very low frequency."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "Which of the following types of motion describes the motion of smoke particles from a chimney?",
+    "options": ["Rotational motion.", "Circular motion.", "Random motion.", "Oscillatory motion."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Circular and Oscillatory Motions",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "When the period of the satellite in its orbit equals the period of rotation of the earth about its axis, the orbit is called",
+    "options": ["inertial orbit.", "terminal orbit.", "parking orbit.", "sinusoidal orbit."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "A boat is moving northward with a velocity of 18 m/s, and a crosswind is blowing from the east with a velocity of 15 m/s. Determine the resultant velocity of the boat.",
+    "options": ["33.0 m/s north", "23.4 m/s north-east", "17.2 m/s east", "3.0 m/s north-east"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Thermodynamics",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "The random distribution of the kinetic and potential energies associated with the particles of a system is known as",
+    "options": ["Internal energy", "Thermal equilibrium", "Carnot engine", "Viscosity"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Which of the following statements is NOT true about the resistivity of a metal? Resistivity",
+    "options": ["is the reciprocal of conductivity.", "varies inversely with temperature.", "varies linearly with temperature.", "is proportional to resistance."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Heat and Energy",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Which of the following options BEST describes a 'Blackbody'?",
+    "options": ["A perfect absorber and emitter of all electromagnetic radiation.", "An object that appears completely black and absorbs all visible light.", "A material with low thermal conductivity.", "A substance that reflects all incident light."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Capacitors",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "A capacitor is connected to a 12-volt battery and stores a charge of 4 μC. What is the energy stored in the capacitor?",
+    "options": ["12 μJ", "24 μJ", "48 μJ", "96 μJ"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "X-Rays",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "Moseley's Law finds application in which of the following?",
+    "options": ["Determining the mass of subatomic particles.", "Identifying elements in crystal structures.", "Understanding the behaviour of plasma in fusion reactors.", "Calculating the energy levels of electrons in atoms."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The Bohr radius is defined as",
+    "options": ["rₙ = (ε₀h²)/(mZe²)·n³", "rₙ = (ε₀h²)/(πmZe²)·n²", "rₙ = (ε₀h²)/(πmZe⁶)·n²", "rₙ = (h⁹)/(πmZe²)·n²"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "X-Rays",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "Which of the following properties of X-rays allows them to penetrate matter and produce images in medical imaging techniques?",
+    "options": ["X-rays travel at the speed of light.", "X-rays have wavelengths longer than visible light.", "X-rays have high energy and short wavelengths.", "X-rays have a higher frequency compared to gamma rays."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Elasticity",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "A spring of force constant k is stretched a certain distance. It takes twice as much work to stretch a second spring by half this distance. The force constant of the second spring is?",
+    "options": ["k", "2k", "4k", "8k"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Ideal Gases",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "A sample of gas is initially at a temperature of 300 K and a pressure of 2 atm. If the temperature is doubled while the volume is kept constant, what will be the new pressure of the gas if it behaves ideally?",
+    "options": ["1 atm", "2 atm", "4 atm", "8 atm"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Heat and Energy",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "An electric current of 3 A flowing through an electric heating element of resistance 20Ω embedded in 1000 g of an oil raises the temperature of the oil by 10°C in 10 s. What is the specific heat capacity of the liquid?",
+    "options": ["0.18 J g⁻¹ °C⁻¹", "2.18 J g⁻¹ °C⁻²", "0.28 J g⁻¹ °C⁻¹", "0.08 J g⁻¹ °C⁻¹"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "X-Rays",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "What principle underlies the operation of a CT (Computed Tomography) scanner?",
+    "options": ["Doppler effect in sound waves.", "Refraction of X-rays through a medium.", "Interference of light waves from multiple X-ray projections.", "Reconstruction of 3D images from multiple X-ray projections."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Geometrical Optics",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "In placing your right palm in front of a plane mirror, its image appears in the mirror as a left palm. This is referred to as",
+    "options": ["angular inversion.", "lateral inversion.", "angular magnification.", "lateral magnification"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Magnetic Field",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Which of the following illustrates the definition of angle dip? The angle between the",
+    "options": ["direction of the magnetic North and the direction of geographic North.", "direction of the earth's magnetic flux and the horizontal.", "earth's magnetic field and the vertical.", "meridian and the magnetic north pole."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "X-Rays",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "Compute the accelerating potential if the frequency of an emitted X-ray is 1.6 × 10¹⁶ Hz. (e = 1.6 × 10⁻¹⁹ C, h = 6.63 × 10⁻³⁴ Js)",
+    "options": ["11.4 V", "44.7 V", "66.3 V", "88.0 V"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "In a medical procedure, a radioactive isotope with a half-life of 6 hours is injected into a patient. If the initial activity was 80 mCi, what will be the activity after 18 hours?",
+    "options": ["5 mCi", "10 mCi", "20 mCi", "40 mCi"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Sound Waves",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "The wavelength of a sound wave in a certain material is 36.0 cm. What is the speed of the sound wave in a period of 1.1 millisecond?",
+    "options": ["300.0 m/s", "327.3 m/s", "342 m/s", "360 m/s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Measurement",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) (i) A vernier caliper has 20 divisions on the vernier scale. 1 cm on the main scale is divided into 10 equal parts. Determine the least count on the vernier scale. [2 marks]\n(ii) Complete the below table:\nS/N | Physical quantity | Unit\nI | | Js⁻¹\nII | Surface tension |\nIII | | Nm\nIV | Electric charge | [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) A mason working at a construction site drops his trowel from a height of 125 m. How long does it take to reach the ground? [Take g = 10 m/s²] [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Elasticity",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) (i) A body of mass 4 × 10⁻³ kg is placed on top of a spiral spring of force constant 400 N/m. If the spring is compressed downwards by 0.02 m and then returns, calculate the height to which the body is projected. [g = 10 m/s²] [2 marks]",
+    "options": []
+  },
+    {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Work, Energy and Power",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(ii) The engine of a train produces a force of 5000 N when moving at 50 m/s. What is the power rating of the engine? [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Newton's Laws and Forces",
+    "type": "Essay",
+    "questionNumber": "2",
+    "question": "(a) Explain the following:\n(i) Centre of gravity;\n(ii) Angular momentum;\n(iii) Inertia;\n(iv) Terminal speed. [2 marks]\n\n(b) (i) State Newton's second law of motion. [1 mark]\n(ii) If A = -5i + 6j - 3k and B = 7i + 8j + 4k, find A × B. [3 marks]\n\n(c) A body of mass 10 kg is kept in equilibrium by two ropes as shown in the diagram below. If one rope pulls the body in a horizontal direction and the other in a direction 40° to the vertical, calculate the tension in each rope. [4 marks]",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Equilibrium of body with two ropes. Please refer to your original past question paper.",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Electromagnetic Waves",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) (i) State any FOUR components of the electromagnetic spectrum in order of their decreasing wavelength. [2 marks]\n(ii) State TWO properties of electromagnetic waves that distinguish them from mechanical waves. [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) (i) State and define the THREE modes of heat transfer. [3 marks]\n(ii) A filament of a light bulb of surface area 7 × 10⁻⁶ m² operates at 1727°C. Calculate the electrical power which must be supplied to filament if its emissivity is 0.91. [Stefan constant = 5.67 × 10⁻⁸ Wm⁻²K⁻⁴] [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) (i) Distinguish between heat and temperature. [2 marks]\n(ii) State any THREE reasons why mercury is preferred to alcohol as a thermometric liquid. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Ideal Gases",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) (i) State Boyle's law and express its mathematical relations. [2 marks]\n(ii) A gas contained in a cylinder is of volume 1.0 × 10⁻² m³ at temperature 325 K and pressure 2.7 × 10⁵ N/m². When some of the gas is used at constant temperature, the pressure falls to 1.2 × 10⁵ N/m². Calculate the number of moles of the gas used. [Take R = 8.3 J mol⁻¹ K⁻¹] [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) Draw a diagram to illustrate the magnetic field between the south poles of two bar magnets. On your diagram, indicate the 'neutral point' with K. [2 marks]",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram required: Magnetic field between south poles of two bar magnets. Please draw it yourself or refer to your original past question paper.",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) Draw a diagram to illustrate the magnetic field between the south poles of two bar magnets. On your diagram, indicate the 'neutral point' with K. [2 marks]",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram required: Magnetic field between south poles of two bar magnets. Please draw it yourself or refer to your original past question paper.",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Alternating Current Circuits",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) A lamp used in a JUPEB Foundation School is rated 60 W, 220 V with a 4400 V AC supply and operated by a transformer which is 95% efficient. Calculate the\n(i) ratio of the number of turns between the primary and secondary coils of the transformer respectively.\n(ii) current supplied by the mains circuit. [4 marks]\n\n(c) (i) In an A.C circuit, the peak value of the potential difference is 180 V. What is the instantaneous potential difference when it has reached two-third of a cycle? [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) (i) Explain the term 'Temperature coefficient of resistance'. [1 mark]\n(ii) The resistance of a conductor is 3 kΩ at a temperature of 150°C, if the temperature coefficient of resistance is 0.005 °C⁻¹, at what temperature will the resistance become 5 kΩ. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Magnetic Field",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) (i) State Fleming's Right hand rule. [2 marks]\n(ii) A solid of 2000 turns coil is 75 cm long and carries a current of 2 A, calculate magnetic flux density at the centre of the solenoid. Hence determine the force exerted on an electron moving with a velocity 3000 m/s through the interior of the solenoid at an angle of 30° relative to the solenoid axis. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Capacitors",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) A 10 μF capacitor is connected in series with a 0.4 MΩ resistor. The DC voltage supply is 200 V, calculate the voltage in the capacitor, 5 s after the power is supplied. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Atomic Structure",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) An electron makes a transition from -3.4 eV energy level to -13.6 eV energy level. Calculate the:\n(i) amount of energy in joules lost as a result of the transition.\n(ii) frequency of the emitted radiation. [Take h = 6.63 × 10⁻³⁴ Js] [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) In a thermonuclear reaction, the difference between the initial and final mass is 1.0 × 10⁻²⁹ kg. What is the amount of energy released in the process? [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Modern Physics",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) A photoelectric surface has a threshold frequency of 4.02 × 10¹⁴ Hz. If light of frequency 5.00 × 10¹⁵ Hz illuminates the surface, calculate the:\n(i) work function;\n(ii) threshold wavelength;\n(iii) kinetic energy of the emitted photons. [h = 6.63 × 10⁻³⁴ Js] [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Modern Physics",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Explain the term threshold frequency and work function as used in the concept of photoelectric effect. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) Consider the popular nuclear reaction that uses deuterium as fuel;\n3(²₁H) → ⁴₂He + ¹₁H + ¹₀n\n(i) Determine the mass defect of a single reaction given the following data:\n(²₁H) = 2.014 u, ⁴₂He = 4.0026 u, ¹₁H = 1.0078 u, ¹₀n = 1.0087 u\n(ii) Determine the energy in Joules released during a single fusion reaction. [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2025,
+    "category": "X-Rays",
+    "type": "Essay",
+    "questionNumber": "8c",
+    "question": "(c) A clinical X-ray tube was designed to operate at 24.8 kV. Determine the maximum possible wavelength of the radiation emitted from the tube. [3 marks]",
+    "options": []
+  }
+]

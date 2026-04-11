@@ -1,0 +1,616 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Modern Physics",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "A particle with rest mass m moves with speed 0.6c. Its kinetic energy is ....",
+    "options": ["0.18mc^2", "0.22mc^2", "0.25mc^2", "mc^2"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Which of the following particles is stable?",
+    "options": ["Neutron", "Proton", "Pion", "Muon"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Work, Energy and Power",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "To travel at a constant speed, a car engine provides 24 KW of useful power. The driving force on the car is 600 N. At what speed does it travel?",
+    "options": ["2.5 m/s", "4.0 m/s", "25 m/s", "40 m/s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Semiconductors",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "A pure semiconductor at room temperature has:",
+    "options": ["more electrons/m^2 in its conduction band than holes/m^2 in its valence band", "more electrons/m^2 in its conduction band than a typical metal", "more electrons/m^2 in its valence band than at T = 0K", "more electrons/m^2 in its conduction band than at T = 0K"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Modern Physics",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "The proper time between two events is measured by clocks at rest in a reference frame in which the two events",
+    "options": ["occur at the same time", "occur at the same coordinates", "occur at separate coordinates", "occur at separate times and separate coordinates"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "A handbag weighing 162 N is carried by two students each holding the handle of the bag next to him. If each handle is inclined at 60° to the vertical, find the force on each student's arm",
+    "options": ["324 N", "162 N", "121 N", "81 N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "A rope is being used to pull a mass of 10 kg vertically upward. Determine the tension on the rope, if starting from rest, the mass acquires a velocity of 4 m/s in 8 s. [g = 10 m/s^2]",
+    "options": ["105 N", "95 N", "50 N", "55 N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Geometrical Optics",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "A boy observes a piece of stone at the bottom of a river 6.0 m deep. If he looks vertically from the surface of the river, how far does the stone appear to be from him? [Refractive index of water = 4/3]",
+    "options": ["8.0 m", "4.5 m", "6.0 m", "5.5 m"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "A cell has an internal resistance of 0.01Ω. An instrument that can measure the resistance accurately is .........",
+    "options": ["Ohm-meter", "Potentiometer", "Electroscope", "Oscilloscope"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Magnetic Field",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "A conductor of length 2m carries a current of 0.8A while kept in a magnetic field of magnetic flux density 0.5 T. The maximum force acting on it is",
+    "options": ["16.2 N", "8.0 N", "3.2 N", "0.8 N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Semiconductors",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The bond that forms a semiconductor is",
+    "options": ["Covalent", "Electrovalent", "Metallic", "Electrostatic"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Modern Physics",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "The particle nature of light is demonstrated by",
+    "options": ["Photoelectric effect", "Speed of light", "Colours of light", "Diffraction of light"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Ideal Gases",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "________ law states that at constant pressure, the volume of a given mass of gas is directly proportional to the absolute temperature.",
+    "options": ["Charles's", "Gay Lussac's", "Boyle's", "Pascal's"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Physical Quantities and Units",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Use dimensional analysis to determine which of the following equations is certain wrong: I. λ = vt, II. F = m/a, III. F = mv/t, IV. h = v²/2g, V. v = (2gh)^{1/2}",
+    "options": ["I only", "I and III", "II and III", "II only"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Sound Waves",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "A ________ can hear sound as high as 100,000 Hz",
+    "options": ["cat", "bat", "goat", "dog"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Modern Physics",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "For an electron to be ejected from the surface of a metal, the radiation energy must be",
+    "options": ["greater than the work function of the metal", "less than the work function of the metal", "equal to the work function of the metal", "greater than the rest mass energy of the electron"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Gravitational Field",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "________ is the only natural satellite of the earth",
+    "options": ["stars", "mercury", "sun", "moon"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "A 2-kilogram block rests at the edge of a platform that is 10 meters above level ground. The block is launched horizontally from the edge of the platform with an initial speed of 3 meters per second. Air resistance is negligible. The time it will take for the block to reach the ground is approximately [Take g = 10 m/s²].",
+    "options": ["0.3 s", "1.0 s", "1.4 s", "2.0 s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "A diver initially moving horizontally with speed v dives off the edge of a vertical cliff and lands in the water a distance d from the base of the cliff. How far from the base of the cliff would the diver have landed if the diver initially had been moving horizontally with speed 2v?",
+    "options": ["d", "3d", "2d", "4d"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "A truck traveled 400 meters north in 80 seconds, and then it traveled 300 meters east in 70 seconds. The magnitude of the average velocity of the truck was most nearly",
+    "options": ["1.2 m/s", "3.3 m/s", "4.6 m/s", "6.6 m/s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Electrostatics",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "The field intensity at a point close to a charged plane conductor situated in air is 3.5 × 10^6 V/m. The surface density of charge is: [Take the permittivity of free space as 8.85 × 10^{-12} F/m]",
+    "options": ["2.53 μC/m²", "26.55 × 10^{-12} C/m²", "31.0 × 10^{-12} μC/m²", "31.0 μC/m²"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Electrostatics",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Two parallel horizontal metal plates are 25 mm apart and a potential difference of 1000 V is applied across the plates. The field intensity between the plates is:",
+    "options": ["40 V/m", "25000 V/m", "40 kV/m", "2.5 kV/m"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Modern Physics",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Which of the following defines the Heisenberg uncertainty principle for position and momentum?",
+    "options": ["Δx Δp ≤ h/2", "Δx Δp = h/2", "Δx Δp ≥ h/2", "Δx Δp ≥ 2h"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "The ejection of an alpha particle from a nucleus results in",
+    "options": ["an increase in the atomic number by one", "an increase in the atomic mass by four", "a decrease in the atomic number by two", "none of the above"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "Hydrogen-3 is a radioactive isotope of hydrogen. Which type of radiation would you expect an atom of this isotope to emit? (i) beta particle (ii) an alpha particle (iii) a gamma ray",
+    "options": ["(i) only", "(ii) only", "(i) and (iii)", "(i), (ii) and (iii)"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Physical Quantities and Units",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Which of the following are derived units? (i) metres (ii) Coulomb (iii) Kilogram (iv) Ampere (v) Joule",
+    "options": ["I and III only", "II and V only", "II, IV and V only", "I, II, III and IV"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Physical Quantities and Units",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "The dimension of power is",
+    "options": ["ML²T⁻³", "MLT⁻²", "ML²T⁻²", "ML⁻²T³"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Work, Energy and Power",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Which of the following quantities has the same unit as kilowatt-hour?",
+    "options": ["Force × acceleration", "Force × Velocity", "Force × distance", "Force × time"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Elasticity",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "An elastic string of length 20 cm extends to 24 cm when it supports a weight of 50 N. The energy stored in the string is?",
+    "options": ["1 J", "2 J", "5 J", "10 J"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Which of the following radiations will pass through a sheet of paper? (I) Alpha rays (II) Beta rays (III) Gamma rays",
+    "options": ["I only", "I and III only", "I, II and III only", "II and III only"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Modern Physics",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "A metal having a work function of 5.76 eV is illuminated with a radiation of 7.88 eV. The kinetic energy of the electrons emitted from the metal surface is",
+    "options": ["2.12 eV", "1.37 eV", "45.39 eV", "13.64 eV"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "X-Rays",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "What is the energy associated with an X-ray of wavelength 9 × 10^{-10} m? (Planck's constant = 6.6 × 10^{-34} Js and velocity of light = 3 × 10^8 m/s)",
+    "options": ["7.5 × 10^{14} J", "2.20 × 10^{-16} J", "7.5 × 10^5 J", "1.3 × 10^{-15} J"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "Two football players with masses 75 kg and 100 kg run directly toward each other with speeds of 6 m/s and 8 m/s respectively. If they grab each other as they collide, the combined speed of the two players just after the collision would be:",
+    "options": ["2 m/s", "3.4 m/s", "4.6 m/s", "7.1 m/s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Sound Waves",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "The velocity of sound in a gas is given by v_s = √(γP/ρ) where the symbols have their usual meanings. For a particular gas under certain conditions, v_s is found to be 400 m/s. What is the new value of v_s if the pressure were reduced by 5%?",
+    "options": ["89.4 m/s", "20 m/s", "100 m/s", "390 m/s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Waves",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "Which of the following statement is/are true of interference of waves? (I) It is a result of superposition of two or more waves. (II) It can be explained using corpuscular nature of light. (III) It can be explained using wave nature of light waves. (IV) Only the wave-particle duality of light can be used to explain interferences. (V) It produces bright and dark fringes.",
+    "options": ["I and III only", "I and IV only", "I, II and V only", "I, III and V only"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "Resistance of a material depends on the following except",
+    "options": ["temperature", "length and cross-section area of the material", "nature of the material", "shape of the material"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "X-Rays",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "An X-ray tube takes a current of 7.0 mA and operates at a potential difference of 80 kV. What power is dissipated?",
+    "options": ["460 W", "560 W", "660 W", "760 W"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "Which of the following describes what occurs in the fission process?",
+    "options": ["A heavy nucleus is fragmented into lighter ones.", "A neutron is split into a neutron and proton.", "Two light nuclei are combined into a heavier one.", "A proton is split into three quarks."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "The coordinate of a particle in meters is given by x(t) = 16t - 3.0t³, where the time t is in seconds. The particle is momentarily at rest at t =",
+    "options": ["0.75 s", "1.3 s", "5.3 s", "7.3 s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Thermodynamics",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The maximum efficiency of a heat engine which operates between the measured temperatures of 227°C and 727°C is",
+    "options": ["50%", "20%", "30%", "40%"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Modern Physics",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "The stopping potential for electrons ejected by 6.8 × 10^{14} Hz electromagnetic radiation incident on a certain sample is 1.8 V. The kinetic energy of the most energetic electrons ejected and the work function of the sample, respectively, are",
+    "options": ["1.8 eV, 2.8 eV", "1.8 eV, 1.0 eV", "1.8 eV, 4.6 eV", "2.8 eV, 1.0 eV"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "When a kaon decays via the strong interaction the products must include a:",
+    "options": ["baryon", "lepton", "strange particle", "electron"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Atomic Structure",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "A particle with spin angular momentum is called a:",
+    "options": ["lepton", "hadron", "fermion", "boson"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Which of the following consists entirely of vector quantities?",
+    "options": ["velocity, magnetic flux and reaction", "tension, magnetic flux and mass", "displacement, impulse and power", "work, pressure and moment"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Two forces each of 10N act on a body, one towards the north and the other towards the east. The magnitude and the direction of the resultant force are",
+    "options": ["10N, 45°W", "20N, 45°E", "10√2 N, 45°W", "10√2 N, 45°E"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Heat and Energy",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "The main reason for making the cover of a vacuum flask air tight is to prevent heat loss by",
+    "options": ["conduction", "evaporation", "radiation", "convection"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "A cell can supply currents of 0.4A and 0.2A through a 4.0Ω and 10.0Ω resistors respectively. The internal resistance of the cell is",
+    "options": ["0.5Ω", "1.0Ω", "1.5Ω", "2.0Ω"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "A working electric motor takes a current of 1.5A when the p.d. across it is 250V. If its efficiency is 80%, the power output is",
+    "options": ["562.0 W", "469.0 W", "300.0 W", "133.0 W"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Alternating Current Circuits",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "At what frequency would a capacitor of 2.5 μF used in radio circuit have a reactance of 250Ω?",
+    "options": ["200π Hz", "π/800 Hz", "800/π Hz", "8000π Hz"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "A certain radioactive source emits radiations that were found to be deflected by both magnetic and electric fields. The radiations are",
+    "options": ["ultra-violet rays", "gamma rays", "alpha rays", "beta rays"]
+  },
+{
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Hydrodynamics",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) From a consideration of the flow of a liquid through a narrow tube, define viscosity. Express the coefficient of viscosity η in terms of the internal frictional force F, surface area A of the liquid and velocity gradient dv/dx and derive its units using dimensional analysis. [2 marks]\n\n(b) (i) Discuss qualitatively the motion of a small metal ball allowed to drop downwards in a long vertical tube of viscous liquid so that it moves along the axis of the tube. Sketch the variation of velocity v with time t. [3 marks]\n(ii) Write down the equation relating the velocity v of a ball bearing of radius r and mass m falling vertically, from rest, in a viscous liquid after an elapsed time t. The effect of the buoyancy of the liquid should be neglected. Obtain an expression for the terminal velocity v₀. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) An object is thrown forward horizontally from the top of a cliff 20 m high with a horizontal velocity of 15 m/s. Calculate:\n(i) The time to return to the ground\n(ii) The horizontal distance from the foot of the cliff at which the object strikes the ground. [Take g = 10 m/s²]. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Geometrical Optics",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) A narrow beam of light traveling in air is incident on a slab of transparent material. The incident beam makes an angle of 40.0° with the normal, and the refracted beam makes an angle of 26.0° with the normal. (Refractive index = 1.00 for air). Use Snell's law of refraction to:\n(i) find the index of refraction of the slab material. [2 marks]\n(ii) find the speed of light through the slab material. [2 marks]\n(iii) Draw a diagram to support your answer in (ii) above. [1 mark]\n(iv) Explain the concept of total internal reflection. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Lenses and Optical Instruments",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) Complete the table of the image properties for converging and diverging lenses below: [3 marks]\n\nCases: \n1. Converging, Object >2f → Image position <2f, Orientation Inverted, Size Smaller, Type Real\n2. Converging, Object =2f → Image position 2f, Orientation Inverted, Size Same, Type Real\n3. Converging, Object >f but <2f → Image position >2f, Orientation Inverted, Size Larger, Type Real\n4. Converging, Object =f → No image is formed\n5. Converging, Object <f → Image position >f, Orientation Upright, Size Larger, Type Virtual\n6. Diverging, Any position → Image position <f, Orientation Upright, Size Smaller, Type Virtual",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) State Ohm's law. [1 mark]\n\n(b) A battery of emf 24 V and internal resistance r is connected to a circuit having two parallel resistors of 3Ω and 6Ω in series with an 8Ω resistor. The current flowing in the 3Ω resistor is 0.8A. Calculate:\n(i) The current in the 6Ω resistor.\n(ii) The internal resistance r of the battery.\n(iii) The terminal potential difference of the battery. [6 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Capacitors",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) (i) Define the capacitance of a capacitor. [1 mark]\n(ii) A capacitor carrying 10 μC charge has a voltage of 50 V across its plates. [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "4",
+    "question": "(a) Define radioactivity. [1 mark]\n\n(b) Calculate the total binding energy of an alpha particle. The masses of the neutron, proton and alpha particle are respectively 1.008665 u, 1.007825 u and 4.002603 u. (1u = 931.5 MeV/c²). [3 marks]\n\n(c) (i) Define half-life of a radioactive substance. [1 mark]\n(ii) Show that half-life T½ = ln2/λ where λ is the decay constant. [2 marks]\n(iii) A radioactive material has an initial activity of 7000 counts per second and an activity of 875 counts per second after 6 hrs. What is the half-life of the material? [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) Differentiate between scalar and vector quantities and give two examples in each case. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Newton's Laws and Forces",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) (i) At a stage in the launch of a satellite, the force due to thrust is equal to the gravitational force. Determine the rate of change of the satellite's momentum at that instant. [2 marks]\n(ii) A truck accelerates uniformly from rest at 2 m/s² for 10 s, maintains a steady velocity for 30 s, and is then brought to rest in 5 s under uniform retardation. Calculate the total distance travelled by the truck. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) A projectile is launched with an initial velocity of 35 m/s at an angle of 40° to the horizontal. Find:\n(i) The maximum height attained,\n(ii) Total time of flight,\n(iii) Range. (Take g = 9.8 m/s²). [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) State how three features of a thermos flask are used to reduce heat loss. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Thermodynamics",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) (i) State Zeroth law of thermodynamics. [1 mark]\n(ii) Give an implication of this law. [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) (i) A steel rod has a length of 30 m at 0°C. Calculate the length of the rod after it has been heated to 40°C, given that the linear expansion coefficient is 11 × 10^{-6} /°C. [2 marks]\n(ii) A 0.050 kg steel mass, heated to 200.0°C is dropped into a beaker containing 0.400 kg of water. The initial temperature of the water is 20.0°C and the final temperature with the steel is 22.4°C. Calculate the specific heat of the steel mass. Assume the beaker has negligible heat capacity. Specific heat capacity of water = 4186 J/kg°C. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Gravitational Field",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Explain what is meant by a field of force. [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) State Coulomb's Law. [1 mark]\n\n(c) A negative charge of 6.0 × 10^{-6} C exerts an attractive force of 65 N on a second charge that is 0.050 m away. What is the magnitude of the second charge? (ε₀ = 8.85 × 10^{-12} F/m) [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "7d",
+    "question": "(d) Find the currents I₁, I₂ and I₃ in the circuit below. [5 marks]",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Circuit diagram with resistors and currents I₁, I₂, I₃. Please refer to your original past question paper.",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Wave-Particle Duality",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) Explain the term wave-particle duality. [1 mark]\n\n(b) (i) Write down, without proof, de Broglie's relation. [1 mark]\n(ii) A bullet of mass 20 g is moving with a speed of 300 m/s. Calculate the de Broglie wavelength of the bullet. [2 marks]",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2015,
+    "category": "Modern Physics",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(c) Define the following: Photoelectric effect and work function. [2 marks]\n\n(d) The threshold frequency for a metal surface is 3 × 10^{14} Hz. If the metal is illuminated with a radiation of 7.88 eV, what is the kinetic energy of the electrons emitted from the metal surface? [Planck constant, h = 6.6 × 10^{-34} J.s, 1 eV = 1.602 × 10^{-19} J]. [3 marks]",
+    "options": []
+  }
+]

@@ -1,0 +1,630 @@
+[
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Set Theory",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "Let Q, N, Z, C and Qᶜ denote the set of Rational, Natural, Integer, Complex and Irrational numbers respectively. Which of the following set contains the whole set of real numbers?",
+    "options": ["N ∪ Z", "Z ∪ C", "Q ∪ Qᶜ ∪ {0}", "Q ∪ C"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Inequalities",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Determine the solution set of the inequality: 2x² - 3x - 2 < 0",
+    "options": ["(2, ∞)", "(-∞, -1/2)", "(-1/2, 2)", "[-1/2, 2]"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Complex Numbers",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Evaluate the conjugate of the complex number: z = 1/(-1 + i)",
+    "options": ["1/(-1 - i)", "(-1 + i)/2", "-1 - i", "-1 + i"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Indices",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "Compute the value of x if (4⁻ˣ × 32ˣ⁺¹ + 5x)/5 = (16²ˣ⁺¹)/5 + x",
+    "options": ["1/5", "2/5", "3/5", "4/5"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Trigonometry",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "Find tan 75° in surd form.",
+    "options": ["(√3 - 2)/2", "(√3 + 2)/2", "(2 - √3)/2", "(√2 - 3)/2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Logarithms",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "Given that log₁₀2 = 0.3010, log₁₀3 = 0.4771 and log₁₀7 = 0.8451, compute log₁₄72.",
+    "options": ["0.6502", "1.6205", "3.6105", "1.5025"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Sequences and Series",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "If U₁ = 3, U₂ = 4 and Uₙ = a + bn, compute U₆.",
+    "options": ["3", "4", "2", "8"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Quadratic Equations",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "Let α and β be the roots of the equation: x² + 5x + 6 = 0. Deduce the equation whose roots are α² and β².",
+    "options": ["x² - 13x + 36 = 0", "x² - 5x + 13 = 0", "x² + 13x + 36 = 0", "x² - 13x - 13 = 0"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Partial Fractions",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Which form of partial fraction is equivalent to the algebraic fraction: f(x)/[(x² + 1)(x - b)²]?",
+    "options": ["(Ax + B)/(x² + a) + (Cx + D)/(x - b)²", "(Ax + B)/(x² + a) + C/(x - b) + D/(x - b)²", "(Ax + B)/(x² + a) + (Cx + D)/(x - b) + (Ex + F)/(x - b)²", "(Ax + B)/(x² + a) + C/(x - b) + D/(x - b)²"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "Determine the centre and the radius of the circle x² + y² - 2ax + 2yb + a² = 0 in terms of a and b.",
+    "options": ["Centre (-a, -b), radius = b", "Centre (a, b), radius = a", "Centre (a, -b), radius = b", "Centre (-a, b), radius = a"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Complex Numbers",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "Express 1 + i in the conjugate of its polar.",
+    "options": ["√2(cos45° + i sin45°)", "√2(cos 315° + isin315°)", "√2(cos 315° - isin315°)", "2(cos45° - i sin45°)"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Binary Operations",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "A binary operation * is defined on the set of real numbers R by: x * y = (1/5)(5x + 5y - 4) for any two real numbers x, y ∈ R. Calculate the identity element.",
+    "options": ["5", "4", "5/4", "4/5"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Matrices",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "If P = [[y, 3, 0], [2, 1, y], [2, 1, 2]], what is the range of values of y for which |P| > 0?",
+    "options": ["-2 < y < 6", "2 < y < 6", "-6 < y < 2", "-6 < y < -2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Sequences and Series",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "Calculate the sum to infinity of 1 + tan30° + tan²30° + tan³30° + ...",
+    "options": ["½(3 + √3)", "½(2 + √3)", "½(3 - √3)", "½(2 - √3)"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Logarithms",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "Estimate the value of the product log₂3 × log₂4 × log₄5 × log₅6 × log₆7 × log₇8.",
+    "options": ["1", "2", "3", "4"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Quadratic Equations",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Let the expression ax² + bx + c = 8 at x = 1. If the derivative is 4x + 2, determine the values of a, b and c respectively.",
+    "options": ["2, 4, 2", "4, 4, 0", "2, 2, 4", "4, 2, 2"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "The distance S in metres moved by a particle in time t in seconds is given by S(t) = 3.5t³ - 2t. Evaluate its speed after 2 seconds.",
+    "options": ["22 m/s", "40 m/s", "24 m/s", "28 m/s"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "Calculate the gradient of the curve y = x³ - 3x² + 7x + 23 at the point (2, 1).",
+    "options": ["7", "38", "4", "28"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Coordinate Geometry",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "Find the derivative of the line joining the points A(3, 5) to B(6, -8).",
+    "options": ["-13/3", "13/3", "22", "-22"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Limits and Continuity",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "Evaluate: lim_{x → ∞} [(x + sin x)/(x(x + 1))].",
+    "options": ["0", "-2", "2", "∞"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Parametric Equations",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "Given that x = sin(t) and y = cos(t), then the letter t is simply called the ______.",
+    "options": ["Time", "Variation", "Parameter", "Differential value"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "Given that y = cos 2θ, x = sin θ. Express dy/dx in terms of θ.",
+    "options": ["-4 sin θ", "-2 sin 2θ", "4 cos θ", "-4 cos θ sin θ"]
+  },
+ {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "Let the given curve of a parabola be y² = x. Estimate the area under the curve of a parabola by y² = x. Estimate the area of the curve in terms of x.",
+    "options": ["x/2 + c", "2x/7 + c", "(2/3 x^{3/2})/3 + c", "2x + c"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "Find the derivative of the function y = logₑ tan 2x.",
+    "options": ["2 sec² 2x", "2/tan 2x", "(2 sec² 2x)/tan 2x", "(sec² 2x)/tan 2x"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "The radius of a sphere is increasing at the rate of 0.1 cm/s. Determine the rate at which the surface area is increasing when the radius is 5 cm.",
+    "options": ["8π cm²/s", "6π cm²/s", "5π cm²/s", "4π cm²/s"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "Evaluate y in terms of x if dy/dx = 3x² - 6x + 2, given that y = 7 when x = 0.",
+    "options": ["y = x³ - 3x² + 2x", "y = x³ - 3x² + 5x + 3", "y = x³ - 3x² + 2x + 7", "y = x³ - 3x² + 2x - 5"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Differentiation",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "Obtain d²y/dx² for the function: y = 2x^{2/3} - 5x^{1/2}.",
+    "options": ["(-2/9)x^{-2/3} - (5/4)x^{-3/7}", "(-4/9)x^{-4/3} + (5/4)x^{-3/2}", "(-4/9)x^{-4/9} + (5/4)x^{-3/7}", "(-4/3)x^{-4/3} - (1/4)x^{-3/2}"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Integration",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "Evaluate ∫₀² 12x² dx = 1372 to get the value of z.",
+    "options": ["-14", "14", "7", "8"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Maclaurin and Taylor Series",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "The expression for e⁻ˣ is given as ...",
+    "options": [
+      "1 + x + x²/2! + x³/3! + x⁴/4! + ...",
+      "1 - x + x²/2! - x³/3! + x⁴/4! - ...",
+      "1 - x + x²/2 - x³/6 + x⁴/24 - ...",
+      "1 + x + x²/2! + x³/3! + x⁴/4! - ..."
+    ]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Describe the unit vector in the direction of 2i + j - 2k.",
+    "options": ["(2/3)i + (1/3)j - (2/3)k", "(2/5)i + (1/5)j - (2/5)k", "(2/7)i + (1/7)j - (2/7)k", "(2/9)i + (1/9)j - (2/9)k"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "Compute the modulus of the vector 2i + 3j - √3k.",
+    "options": ["2", "3", "4", "5"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "An object of mass 2.5 kg moving at a constant velocity of 12 m/s comes in contact with a resistance of 10 N. How long does it take the body to come to rest?",
+    "options": ["2 s", "3 s", "4 s", "5 s"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "With what velocity should a stone be thrown vertically upwards to reach the top of a hill 50 m high? [Take g = 10 m/s²]",
+    "options": ["10 m/s", "31.62 m/s", "100 m/s", "3.33 m/s"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Work, Energy and Power",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "A truck travelling on level ground is subject to a resisting force (from the brakes and air resistance) of 250 kN for a distance of 5 km. How much kinetic energy does the train lose?",
+    "options": ["1250 MJ", "-1250 MJ", "1250 J", "1250 KJ"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "A body starts from rest and moves with a uniform acceleration of 10 m/s². Calculate the distance it covers in the 4th second.",
+    "options": ["35 m", "80 m", "24 m", "45 m"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "A stone is dropped from the top of a building and reaches the ground after 2 seconds. Determine the height of the building. [Take g = 10 m/s²]",
+    "options": ["19 m", "18 m", "20 m", "25 m"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "A load of mass 70 kg is placed in a lift. Calculate the reaction between the floor of the lift and the load when the lift moves upwards with an acceleration of 2 m/s². [Take g = 9.8 m/s²]",
+    "options": ["726 N", "800 N", "850 N", "826 N"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "A block of mass 3 kg rests on a rough horizontal table. If the coefficient of friction between the block and the table is 0.43, determine the minimum horizontal force that will make the block to slide on the table. [Take g = 10 m/s²]",
+    "options": ["12.9 N", "43.0 N", "30.0 N", "9.8 N"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "Three points A, B and C have spatial coordinates (-5, -2, 3), (-2, 5, 3) and (4, 5, 2) respectively. Find the scalar product of displacement vectors AB and BC.",
+    "options": ["-42.0", "-14.0", "-18.0", "-24.0"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "The mean score of 100 students in a class that took a Statistics test is 72. If the mean of score of the 70 boys in the class is 75, calculate the mean score of the girls in the class.",
+    "options": ["70", "65", "60", "58"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Combinatorics",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "In how many ways can the first, second and third positions be won by six athletes in a race of 100 metres?",
+    "options": ["20", "60", "120", "100"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Probability",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "A bag contains 5 white, 2 black and 3 green balls. If three balls are drawn at random without replacement, what is the probability that two balls are white and one ball is black?",
+    "options": ["1/6", "2/5", "1/5", "9/10"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "When a distribution is moderately skewed with one mode, which of the following relation is correct?",
+    "options": ["Mean - Median = 3(Mean - Median)", "2Mean = 3 mean - mode", "Mean + Mode = 3(Mean - Median)", "Mean - Mode = 3(Mean - Median)"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "Which of the measures of central tendency is often affected by extreme values?",
+    "options": ["Mode", "Mean", "Data", "Median"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "The heights, x cm of a sample of 80 female students are summarized by the equation Σ(x - 160) = 240. Compute the mean height of a female student.",
+    "options": ["243", "163", "136", "83"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Probability",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "A fair coin is tossed 5 times. Find the probability of obtaining at least 4 heads.",
+    "options": ["5/16", "1/16", "3/16", "13/16"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Measures of Location",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "Deduce the mode of 6, 8, 2, 1, 1, 2, 4, 2, 3.",
+    "options": ["1", "2", "6", "8"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Sampling Distribution",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "A population with variance 16 has unknown mean μ. Let X̄ be the mean of a random sample of size 100 from this population. If X̄ is used to estimate μ, determine the standard error of X̄.",
+    "options": ["16.00", "100.00", "0.40", "0.16"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Probability Distributions",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "What is the mean value of a binomial variate whose number of repeated trials (n) equals 8 and probability of success (p) equals 0.4?",
+    "options": ["8", "4", "3.2", "1.92"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Probability",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "The probability that a patient will die while undergoing a delicate heart operation is 0.175. What is the probability of the patient surviving from the operation?",
+    "options": ["0.0875", "0.325", "0.350", "0.825"]
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Set Theory",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) In a class of 100 students, 35 offer History, 43 offer Geography and 50 offer Economics. 14 students offer History and Geography, 13 offer Geography and Economics and 11 offer History and Economics. The number of students that offer none of the subjects is four times the number of those that offer three subjects.\n(i) How many students offer three subjects? [4 marks]\n(ii) How many students offer none? [1 mark]\n(iii) How many students offer only one of the subjects? [2 marks]\n(iv) How many students offer History and Geography only? [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Set Theory",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) Consider the Venn diagram below.\nFind the following sets:\n(i) A ∩ Bᶜ [1 mark]\n(ii) Aᶜ ∪ B [1 mark]",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Venn diagram. Please refer to your original past question paper.",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Quadratic Equations",
+    "type": "Essay",
+    "questionNumber": "1c",
+    "question": "(c) Solve 2√(x + 5) - √(2x + 8) = 2. [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Sequences and Series",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) Prove by mathematical induction or otherwise that ∑_{k=1}^{n} k² = n(n + 1)(2n + 1)/6. [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Binary Operations",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(b) Let R be the set of real numbers. If binary operation ⊗ is defined on R by a ⊗ b = (a + 1)(b + 1) where a and b belong to R. Solve the equation (2 + 4n) ⊗ (4 - n) = 5n ⊗ n. [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Sequences and Series",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) An A.P. has a common difference of 2 and a G.P. has a common ratio of 3. The corresponding terms are added together to produce a new sequence. If the 1st term of the sequence is 8 and its third term is 52, find:\n(i) the A.P. [2 marks]\n(ii) the G.P. [2 marks]\n(iii) the new sequence. [1 mark]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) A vehicle starts from rest and its velocity is measured every second for 8 seconds as follows:\nt(s): 0,1,2,3,4,5,6,7,8\nv(m/s): 0,0.4,1.0,1.7,2.9,4.1,6.2,8.0,9.4\nThe distance travelled in 8 seconds is given by ∫₀⁸ v dt. Estimate this distance using Simpson's rule. [6 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) Evaluate ∫ (x + 1)/(x² - 3x + 2) dx. [6 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Differentiation",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) Find the differential coefficient of y = 3x² sin 2x. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Maclaurin and Taylor Series",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) Obtain the expansion of eˣ sin x in ascending power of x as far as the term in x⁵. [8 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Integration",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) Evaluate:\n(i) ∫₀^{π/2} cos x dx\n(ii) ∫₀^{π/2} (sec² x + tan² x) dx [7 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Newton's Laws and Forces",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) A block of mass 3.5 kg rests on a rough plane which is inclined at an angle of 42° to the horizontal. If the coefficient of friction between the block and the plane is 0.75, what is the least force P parallel to the plane required to:\n(i) start moving the block up the plane? [5 marks]\n(ii) prevent the block from sliding down the plane? (Take g = 9.8 m/s²). [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Newton's Laws and Forces",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) A body of mass 100 kg is placed in a lift. Find the reaction between the floor of the lift and the body when the lift moves upward with an acceleration of 3.5 m/s². (Take g = 9.8 m/s²). [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Vectors",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) Three points A, B and C are uniquely orientated in space with coordinates (α, -1, 2), (5, 2, 4) and (14, β, 10) respectively. Find the values of α and β such that the three points are collinear. [8 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Newton's Laws and Forces",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) A car of mass 160 kg is placed on a rough horizontal road with coefficient of friction 0.5. Find the driving force when the car moves with:\n(i) an acceleration of 5 m/s², [4 marks]\n(ii) a uniform speed of 3 m/s. [3 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Probability Distributions",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Suppose the probability function of a discrete random variable X is given by: f(x) = { 4!/[(4 - x)! x!] × 1/16, x = 0,1,2,3,4; 0 elsewhere }\n(i) find P(X ≤ 3) [3 marks]\n(ii) obtain the distribution function of X [1 mark]\n(iii) find P(X > 0) [2 marks]\n(iv) find the mean and variance of X [4 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Significance Testing",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) The following table lists the frequency distribution for 60 rolls of a die:\nOutcome: 1,2,3,4,5,6\nFrequency: 7,12,8,15,11,7\nTest at the 5% significance level whether the null hypothesis that the given die is fair is true. [5 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Significance Testing",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) (i) Distinguish between type I and type II errors. [2 marks]\n(ii) Past record shows that the mean score of year II Accountancy students in Business Statistics is 56% with a standard deviation of 7%. A random sample of 45 year II students of this department was tested and the mean score was 52%. Verify at α = 0.05 if the average score of the students in this course has changed. [9 marks]",
+    "options": []
+  },
+  {
+    "subject": "Mathematics",
+    "year": 2019,
+    "category": "Significance Testing",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) An Accountancy student claims he is 90% sure of the postings he made in all transactions. Would you agree with this claim if in a given transaction, he makes 20 out of 25 postings correctly? Use α = 0.05. [4 marks]",
+    "options": []
+  }
+]

@@ -1,0 +1,656 @@
+[
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Heat and Energy",
+    "type": "Objective",
+    "questionNumber": 1,
+    "question": "When the word 'specific' is used in thermal physics it refers to",
+    "options": ["unit temperature.", "unit mass.", "unit heat.", "unit time."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Vectors",
+    "type": "Objective",
+    "questionNumber": 2,
+    "question": "Given three vectors, A = 3i - j + 3k, B = -i + 2j - k and C = -3i + 5j - 3k. Find: (A + B)·C",
+    "options": ["-7", "-8", "-10", "-14"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Kinematics",
+    "type": "Objective",
+    "questionNumber": 3,
+    "question": "Neglecting air resistance, a feather and a stone dropped at the same time from the same vertical height above ground level will land to the ground at the same time because",
+    "options": ["they are at the same height above ground level.", "they are both solids.", "they are falling with equal acceleration.", "they are released at the same time."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Work, Energy and Power",
+    "type": "Objective",
+    "questionNumber": 4,
+    "question": "A missile of mass 10 kg was launched at an angle 45° to the horizontal. If its launching velocity is 10 m/s neglecting air resistance, what will be its kinetic energy at its highest altitude?",
+    "options": ["500 J", "0 J", "50√2 J", "250 J"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 5,
+    "question": "If the net force applied in the direction of motion to a certain object on a horizontal frictionless surface is doubled, the acceleration of the object is",
+    "options": ["halved.", "doubled.", "unchanged.", "quadrupled."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Newton's Laws and Forces",
+    "type": "Objective",
+    "questionNumber": 6,
+    "question": "A 20 kg box is pulled along the level ground by a rope inclined at an angle of 30° above the horizontal. The coefficient of friction between the box and the ground is 0.20. How large is the pulling force if the box is moving with an acceleration of 0.40 m/s²?",
+    "options": ["8 N", "200 N", "208 N", "50 N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Modern Physics",
+    "type": "Objective",
+    "questionNumber": 7,
+    "question": "It is not possible to determine exactly and simultaneously the position and momentum of a particle. This statement is known as",
+    "options": ["Compton effect.", "de Broglie's law.", "Heisenberg's uncertainty principle.", "Wave-particle paradox."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Work, Energy and Power",
+    "type": "Objective",
+    "questionNumber": 8,
+    "question": "A body moves a distance of r = 2i - 5j - 2k (in metres) under the action of a force F = 2i - 2j - k (in newtons). Find the work done by the force.",
+    "options": ["8 J", "11 J", "16 J", "18 J"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Circular and Oscillatory Motions",
+    "type": "Objective",
+    "questionNumber": 9,
+    "question": "Which of the following factors do the period of a simple pendulum depend? I. The mass of the pendulum II. The amplitude III. The length of the pendulum",
+    "options": ["II only", "III only", "II and III only", "I, II and III"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Circular and Oscillatory Motions",
+    "type": "Objective",
+    "questionNumber": 10,
+    "question": "A compact disc accelerates uniformly from rest to an angular speed of 300 rpm in 2 s. Calculate the angular acceleration of the disc.",
+    "options": ["7.8 rad/s²", "2.5 rad/s²", "15.7 rad/s²", "10.7 rad/s²"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Circular and Oscillatory Motions",
+    "type": "Objective",
+    "questionNumber": 11,
+    "question": "The acceleration 'a' of a simple harmonic oscillator is related to its displacement 'x' by the equation a = -100x. What is the frequency of the oscillation?",
+    "options": ["0.63 Hz", "63 Hz", "1.6 Hz", "100 Hz"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Circular and Oscillatory Motions",
+    "type": "Objective",
+    "questionNumber": 12,
+    "question": "When a mass m is hung on a spring, the spring stretches by 8.0 cm. Determine its period of vibration if it is slightly pulled and released.",
+    "options": ["0.3 s", "0.6 s", "0.8 s", "1.2 s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Hydrodynamics",
+    "type": "Objective",
+    "questionNumber": 13,
+    "question": "If petrol flows at 4 m/s through a hose of 10 mm diameter. What nozzle diameter will dispense it at the rate of 16 m/s?",
+    "options": ["5.0 mm", "2.5 mm", "20.0 mm", "40.0 mm"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Hydrostatics",
+    "type": "Objective",
+    "questionNumber": 14,
+    "question": "A hydraulic lift has a narrow cylinder of diameter 4 cm and wide cylinder of diameter 30 cm. Calculate the force that must be applied to the liquid in the small cylinder to lift a 1500 kg car.",
+    "options": ["298.6 N", "266.7 N", "843.8 N", "587.2 N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Geometrical Optics",
+    "type": "Objective",
+    "questionNumber": 15,
+    "question": "An image which can be formed on a screen is said to be",
+    "options": ["virtual.", "blurred.", "inverted.", "real."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Ideal Gases",
+    "type": "Objective",
+    "questionNumber": 16,
+    "question": "Equal volumes of gas at the same conditions of temperature and pressure",
+    "options": ["contain the same number of molecules.", "have the same density.", "have the same mass.", "have the same ionization potential."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Heat and Energy",
+    "type": "Objective",
+    "questionNumber": 17,
+    "question": "The temperature of a liquid that is boiling does not increase even though heat is being continuously supplied because",
+    "options": ["heat supplied is used to break the molecular bonds in the liquid.", "there are impurities in the liquid.", "the latent heat of fusion of the liquid is greater than the latent heat of vaporization.", "the atmospheric pressure is high."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Temperature and Thermometry",
+    "type": "Objective",
+    "questionNumber": 18,
+    "question": "At what temperature are the numerical values of the Fahrenheit and Celsius scales equal?",
+    "options": ["0°C", "-40°C", "40°C", "180°C"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Heat and Energy",
+    "type": "Objective",
+    "questionNumber": 19,
+    "question": "What is most likely to happen to both the density and volume during anomalous expansion of water?",
+    "options": ["Volume decreases and density decreases", "Volume increases and density decreases", "Volume decreases and density increases", "Volume increases and density increases"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Heat and Energy",
+    "type": "Objective",
+    "questionNumber": 20,
+    "question": "An electric current of 3A flowing through an electric heating element of resistance 20Ω embedded in 1000g of an oil, raises the temperature of the oil by 10°C in 10 seconds, then the specific heat capacity of the oil is",
+    "options": ["1.8 Jg⁻¹", "0.6 Jg⁻¹", "0.18 Jg⁻¹°C⁻¹", "1.8 Jg⁻¹°C⁻¹"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Thermodynamics",
+    "type": "Objective",
+    "questionNumber": 21,
+    "question": "A thermodynamic process that does not allow heat to enter or leave the system is",
+    "options": ["isobaric.", "adiabatic.", "isothermal.", "isochoric."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Objective",
+    "questionNumber": 22,
+    "question": "An ideal gas is maintained at constant pressure. If the temperature of the gas is increased from 200 K to 600 K, what happens to the rms speed of the molecules?",
+    "options": ["It increases by a factor of 3.", "It remains the same.", "It is one-third the original speed", "It is √3 times the original speed."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Electromagnetic Waves",
+    "type": "Objective",
+    "questionNumber": 23,
+    "question": "The electromagnetic waves are arranged in which of the following order of increasing wavelength?",
+    "options": ["infra-red, radio, gamma, X-ray.", "gamma rays, X-ray, infra-red, radio.", "radio, X-ray, gamma ray, infra-red.", "gamma ray, infra-red, X-ray, radio."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Geometrical Optics",
+    "type": "Objective",
+    "questionNumber": 24,
+    "question": "All are properties of images formed by a plane mirror except",
+    "options": ["It is laterally inverted.", "It is erect.", "It is magnified.", "It is virtual."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Geometrical Optics",
+    "type": "Objective",
+    "questionNumber": 25,
+    "question": "An object is placed 20 cm in front of a concave mirror of radius of curvature 30 cm. Calculate the position and nature of image formed.",
+    "options": ["60 cm real", "30 cm real", "60 cm virtual", "30 cm virtual"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Lenses and Optical Instruments",
+    "type": "Objective",
+    "questionNumber": 26,
+    "question": "For the correction of hyperopia defect in the human eye we require",
+    "options": ["a concave lens.", "a convex lens.", "a prism.", "a combination of concave and convex lenses."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Lenses and Optical Instruments",
+    "type": "Objective",
+    "questionNumber": 27,
+    "question": "An astronomical telescope has an objective lens of focal length 0.5 m and an eyepiece of focal length 2 cm. What is the separation of the lenses when the telescope in normal adjustment views a distant object?",
+    "options": ["52 cm", "26 cm", "6 cm", "5 cm"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Waves",
+    "type": "Objective",
+    "questionNumber": 28,
+    "question": "The equation of a progressive sinusoidal wave is given as y = 25 sin(120t - 4x), where x is in meters and t in seconds. Find the wave number.",
+    "options": ["25 m⁻¹", "57 m⁻¹", "4 m⁻¹", "19.1 m⁻¹"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Wave Theory of Light",
+    "type": "Objective",
+    "questionNumber": 29,
+    "question": "All these are methods of polarizing an unpolarized light wave EXCEPT",
+    "options": ["Double refraction.", "Diffraction.", "Reflection.", "By pile of plates."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Sound Waves",
+    "type": "Objective",
+    "questionNumber": 30,
+    "question": "Two sound sources emit sound of wavelengths 1.00 m and 1.01 m respectively, producing 10 beats in 3.0 s in a gas. What is the speed of sound in the gas?",
+    "options": ["331 m/s", "333 m/s", "337 m/s", "321 m/s"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Electrostatics",
+    "type": "Objective",
+    "questionNumber": 31,
+    "question": "Which of these laws would be most applicable in estimating the magnitude of the force between two static charges?",
+    "options": ["Gauss's Law", "Coulomb's Law", "Faraday's Law", "Maxwell's Law"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Electrostatics",
+    "type": "Objective",
+    "questionNumber": 32,
+    "question": "Find the force of repulsion between each pair of protons of 1.6 × 10^{-19} C if the distance between them is 5.3 × 10^{-11} m.",
+    "options": ["8.2 × 10^{-8} N", "4.3 × 10^{-18} N", "7.8 × 10^{-2} N", "5.12 × 10^{11} N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Capacitors",
+    "type": "Objective",
+    "questionNumber": 33,
+    "question": "Three capacitors of 4 μF, 8 μF and 12 μF are connected in parallel and a potential difference of 6 V is maintained across each capacitor. Find the total energy stored in the system.",
+    "options": ["4.32 × 10^{-4} J", "7.2 × 10^{-5} J", "1.44 × 10^{-4} J", "5.8 × 10^{-5} J"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 34,
+    "question": "A cell of e.m.f. 1.5 V is connected in series with a resistor of resistance 3Ω. A high resistance voltmeter connected across the cell registers only 0.9 V. Calculate the internal resistance of the cell.",
+    "options": ["5.0Ω", "4.5Ω", "2.4Ω", "2.0Ω"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 35,
+    "question": "The effective resistance in a parallel arrangement is",
+    "options": ["less than the smallest resistance in the network.", "more than the smallest resistance in the network.", "same as the highest resistance in the network.", "twice the smallest resistance in the network."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Magnetic Field",
+    "type": "Objective",
+    "questionNumber": 36,
+    "question": "An electron moves in a circular path of radius 0.003 m perpendicular to a uniform magnetic field. The electron has a velocity of 10^6 m/s. Find the magnitude of the uniform field.",
+    "options": ["1.90 × 10^{-3} Wb/m²", "5.69 × 10^{-3} Wb/m²", "5.69 × 10^{-2} Wb/m²", "6.89 × 10^{-3} Wb/m²"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Magnetic Field",
+    "type": "Objective",
+    "questionNumber": 37,
+    "question": "Two parallel current-carrying conductors attract each other when the current in them flow in opposite direction; this is a statement of",
+    "options": ["Ohm's law.", "Faraday's law.", "Lenz's law.", "Ampere's law."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Magnetic Field",
+    "type": "Objective",
+    "questionNumber": 38,
+    "question": "A wire 50 mm long carries a 25 A current. If it is placed in a magnetic field B = 0.2 T, what is the force on the wire?",
+    "options": ["1.20 N", "2.50 N", "0.25 N", "0.20 N"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Alternating Current Circuits",
+    "type": "Objective",
+    "questionNumber": 39,
+    "question": "A 20Ω load is connected to the secondary coil of a transformer which has Np/Ns ratio of 1/4. Calculate the maximum current through the load if the input Vrms is 120 V.",
+    "options": ["34 A", "24 A", "480 A", "480√2 A"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Alternating Current Circuits",
+    "type": "Objective",
+    "questionNumber": 40,
+    "question": "An inductor is capable of dissipating 50 W of heat energy when a current 0.8 A flows through it at a certain frequency. Calculate its impedance when the reactance of the inductor is 50Ω.",
+    "options": ["62.5Ω", "40.0Ω", "92.8Ω", "1.0Ω"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Hydrostatics",
+    "type": "Objective",
+    "questionNumber": 41,
+    "question": "Which of the following is/are true about the oil drop falling freely under gravity in the absence of electric field? I: Over time, terminal velocity is attained. II: The net force acting on the oil drop is zero at terminal velocity. III: At terminal velocity, the drop no longer accelerates. IV: Fe = Fg",
+    "options": ["I and II only", "II and III only", "I, II and III only", "IV only"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Modern Physics",
+    "type": "Objective",
+    "questionNumber": 42,
+    "question": "Light of frequency 1.00 × 10^{15} Hz illuminates a metal surface. The ejected photoelectrons are found to have a maximum kinetic energy of 1.78 eV. Find the threshold frequency for this metal.",
+    "options": ["5.70 × 10^{14} Hz", "4.52 × 10^{14} Hz", "0.56 × 10^{14} Hz", "1.27 × 10^{14} Hz"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "X-Rays",
+    "type": "Objective",
+    "questionNumber": 43,
+    "question": "X-ray is sometimes called",
+    "options": ["Laue ray.", "Bragg ray.", "Roentgen ray.", "Compton ray."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "X-Rays",
+    "type": "Objective",
+    "questionNumber": 44,
+    "question": "What is the smallest Bragg angle for x rays of wavelength 30 pm to reflect from reflecting plane spaced 0.30 nm apart in a calcite crystal?",
+    "options": ["4.2°", "3.13°", "3.11°", "2.9°"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Wave-Particle Duality",
+    "type": "Objective",
+    "questionNumber": 45,
+    "question": "Evaluate the de Broglie wavelength of electron waves passing through a potential difference of 200 V.",
+    "options": ["19.3 × 10^{-9} m", "3.20 × 10^{-9} m", "6.19 × 10^{-9} m", "9.8 × 10^{-9} m"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Objective",
+    "questionNumber": 46,
+    "question": "Which of the following is the correct order of the strength of alpha, beta and gamma in a magnetic field?",
+    "options": ["alpha > beta > gamma", "alpha > gamma > beta", "beta > alpha > gamma", "beta > gamma > alpha"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Objective",
+    "questionNumber": 47,
+    "question": "What is the decay constant of Uranium-235 that has a half-life of 15 days?",
+    "options": ["0.0462 s⁻¹", "5.347 × 10^{-7} s⁻¹", "235.67 s⁻¹", "0.4567 × 10^{-7} s⁻¹"]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Semiconductors",
+    "type": "Objective",
+    "questionNumber": 48,
+    "question": "Pure silicon can be converted to a p-type material by adding a controlled amount of",
+    "options": ["trivalent atoms.", "tetravalent atoms.", "pentavalent.", "hexavalent atoms."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Semiconductors",
+    "type": "Objective",
+    "questionNumber": 49,
+    "question": "In a semiconductor junction diode, as the depletion or barrier layer is forward biased, the layer",
+    "options": ["widens.", "narrows.", "remains constant.", "widens then narrows."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Current Electricity",
+    "type": "Objective",
+    "questionNumber": 50,
+    "question": "The loss of power as a signal passes along a wire is known as",
+    "options": ["Reduction.", "Attenuation.", "Depreciation.", "Disappearance."]
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Physical Quantities and Units",
+    "type": "Essay",
+    "questionNumber": "1a",
+    "question": "(a) State the units and dimensions of the following quantities:\n(i) Surface tension (1 mark)\n(ii) frequency (1 mark)\n(iii) Show that the expression V² = V₀² + 2aS is dimensionally correct, where V and V₀ represent the final and initial velocities, a is acceleration and S is the displacement. (2 marks)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Kinematics",
+    "type": "Essay",
+    "questionNumber": "1b",
+    "question": "(b) A race car moves such that its position is given as X = 0.75t² + 5.0t + 1. Find:\n(i) the position at t = 4.00 s (2 marks)\n(ii) the instantaneous velocity of the car at t = 4.00 s (2 marks)\n(iii) the average velocity for the time interval t = 2.00 s to 7.00 s (2 marks)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Hydrostatics",
+    "type": "Essay",
+    "questionNumber": "2a",
+    "question": "(a) State Pascal's principle. (1 mark)\n(b) State two applications of:\n(i) Surface tension (1 mark)\n(ii) Viscosity. (1 mark)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Electromagnetic Waves",
+    "type": "Essay",
+    "questionNumber": "2b",
+    "question": "(iii) The electromagnetic pointing vector S is defined as S = E × H, where E and H are the electric and magnetic fields respectively. E = 10.10i + 0.20j + 0.60k and H = 0.40i + 9.80j + 0.10k. Calculate S. (3 marks)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Hydrostatics",
+    "type": "Essay",
+    "questionNumber": "2c",
+    "question": "(c) The mass of an object in air is 50 g and it appears to have a mass of 35 g when immersed in water. Find the:\n(i) relative density of the substance (2 marks)\n(ii) density of the substance. (2 marks)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Kinetic Molecular Theory of Gases",
+    "type": "Essay",
+    "questionNumber": "3a",
+    "question": "(a) State any three assumptions of kinetic theory of gases. (3 marks)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Ideal Gases",
+    "type": "Essay",
+    "questionNumber": "3b",
+    "question": "(b) What is the pressure of 3 moles of an ideal gas at a temperature of 27°C, having a volume of 5 litres? (2½ marks)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Heat and Energy",
+    "type": "Essay",
+    "questionNumber": "3c",
+    "question": "(c) A piece of copper of mass 0.04 kg at 160°C is transferred into a copper calorimeter of mass 0.06 kg containing 0.05 kg of water at 20°C. What will be the final temperature of the mixture? Specific heat capacity of copper and water are 400 J/kgK and 4200 J/kgK respectively. (Neglecting heat losses to the surroundings). (4½ marks)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Waves",
+    "type": "Essay",
+    "questionNumber": "4a",
+    "question": "(a) (i) State the principle of superposition of waves. (1 mark)\n(ii) Briefly describe Huygens principle with aid of appropriate diagram. (2 marks)",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Huygens principle diagram. Please refer to your original past question paper.",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Sound Waves",
+    "type": "Essay",
+    "questionNumber": "4b",
+    "question": "(b) The manufacturer's manual of a violin shows that the heaviest and lightest strings have linear densities of 6.0 and 0.58 kg/m respectively. Assuming that strings are of the same material, determine the ratio of their radii. (3 marks)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Electromagnetic Waves",
+    "type": "Essay",
+    "questionNumber": "4c",
+    "question": "(c) The voltage from an electromagnetic wave travelling on a transmission line is given by V(x,t) = 10e^{-α} sin(4πx × 10^9 t - 30πx) where x is the distance in meters from the transmitter.\n(i) Find the frequency, wavelength and phase velocity of the wave. (2 marks)\n(ii) Find the voltage at x = 2.1 × 10^{-2} cm and t = 0.32 s. (1 mark)\n(iii) If the amplitude of the wave is measured to be 2V, find α. (1 mark)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "5a",
+    "question": "(a) Define electromotive force. (1 mark)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Current Electricity",
+    "type": "Essay",
+    "questionNumber": "5b",
+    "question": "(b) A cell of e.m.f. E and internal resistance r was connected in series with two series external resistors, A (of 8Ω) and B (of 2Ω). A high resistance voltmeter connected across A was found to read 8 volts. When another resistor C (of 8Ω) was connected parallel to A, and then across A and C, the voltmeter read 6 volts.\n(i) Draw the circuit diagrams of the two arrangements. (2 marks)\n(ii) Calculate the internal resistance of the cell. (5 marks)\n(iii) Calculate the e.m.f. of the cell. (1 mark)",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagrams missing: Circuit diagrams for the two arrangements. Please refer to your original past question paper.",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "5c",
+    "question": "(c) Explain electrostatic induction and mention ONE method of producing electrostatic charges. (1 mark)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "6a",
+    "question": "(a) What is electrostatics? (1 mark)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "6b",
+    "question": "(b) Explain, with the aid of a diagram, how you can charge a gold leaf electroscope positively, using the method of charging by induction. (4 marks)",
+    "diagramMissing": true,
+    "diagramNote": "⚠️ Diagram missing: Charging a gold leaf electroscope by induction. Please refer to your original past question paper.",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Electrostatics",
+    "type": "Essay",
+    "questionNumber": "6c",
+    "question": "(c) Two charges are located on the positive x-axis of a coordinate system. Charge q₁ = 2 × 10^{-9} C is 2 cm from the origin, and charge q₂ = 3 × 10^{-9} C is 4 cm from the origin. What is the magnitude of the total force exerted by these two charges on a charge q₃ = 5 × 10^{-9} C located at the origin? (5 marks)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "7a",
+    "question": "(a) Calculate the total binding energy per nucleon of an alpha particle. The masses of the neutron, proton and alpha particles are respectively 1.008665 u, 1.007825 u and 4.004603 u. (3 marks)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "7b",
+    "question": "(b) (i) Radium with an atomic mass of 226, has a half-life of 800 years. For 0.5 g of radium, calculate the number of decays per second. (4 marks)\n(ii) Define half-life of a radioactive sample. (1 mark)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "Radioactivity and Nuclear Energy",
+    "type": "Essay",
+    "questionNumber": "7c",
+    "question": "(c) Which of the following radiations: α-rays, β-rays and γ-rays\n(i) are similar to X-rays? (1 mark)\n(ii) are easily absorbed by matter? (1 mark)\n(iii) travel with the greatest speed? (1 mark)\n(iv) are similar in nature to cathode rays? (1 mark)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "X-Rays",
+    "type": "Essay",
+    "questionNumber": "8a",
+    "question": "(a) (i) State four properties of X-rays. (2 marks)\n(ii) State four uses of X-rays. (2 marks)",
+    "options": []
+  },
+  {
+    "subject": "Physics",
+    "year": 2019,
+    "category": "X-Rays",
+    "type": "Essay",
+    "questionNumber": "8b",
+    "question": "(b) (i) Calculate the minimum wavelength of X-ray that can be produced by an electron accelerated by a potential difference of 20 kV between the electrodes. (2 marks)\n(ii) Write down the mathematical form of Bragg's law and explain each term. (2 marks)\n(iii) Determine the wavelength of the X-ray that was Bragg-diffracted by a cobalt crystal of interatomic spacing of 4.07 × 10^{-10} m, if the first order scattering angle is 24°. (2 marks)",
+    "options": []
+  }
+]
