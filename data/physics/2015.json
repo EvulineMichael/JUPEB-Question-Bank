@@ -6,7 +6,9 @@
     "type": "Objective",
     "questionNumber": 1,
     "question": "A particle with rest mass m moves with speed 0.6c. Its kinetic energy is ....",
-    "options": ["0.18mc^2", "0.22mc^2", "0.25mc^2", "mc^2"]
+    "options": ["0.18mc²", "0.22mc²", "0.25mc²", "mc²"],
+    "answer": "C",
+    "explanation": "γ = 1/√(1 - v²/c²) = 1/√(1 - 0.36) = 1/0.8 = 1.25. KE = (γ - 1)mc² = 0.25mc²."
   },
   {
     "subject": "Physics",
@@ -15,7 +17,9 @@
     "type": "Objective",
     "questionNumber": 2,
     "question": "Which of the following particles is stable?",
-    "options": ["Neutron", "Proton", "Pion", "Muon"]
+    "options": ["Neutron", "Proton", "Pion", "Muon"],
+    "answer": "B",
+    "explanation": "Proton is stable (not known to decay). Free neutron decays (half-life ~15 min). Pion and muon are unstable."
   },
   {
     "subject": "Physics",
@@ -24,7 +28,9 @@
     "type": "Objective",
     "questionNumber": 3,
     "question": "To travel at a constant speed, a car engine provides 24 KW of useful power. The driving force on the car is 600 N. At what speed does it travel?",
-    "options": ["2.5 m/s", "4.0 m/s", "25 m/s", "40 m/s"]
+    "options": ["2.5 m/s", "4.0 m/s", "25 m/s", "40 m/s"],
+    "answer": "D",
+    "explanation": "P = Fv → v = P/F = 24000/600 = 40 m/s."
   },
   {
     "subject": "Physics",
@@ -33,7 +39,9 @@
     "type": "Objective",
     "questionNumber": 4,
     "question": "A pure semiconductor at room temperature has:",
-    "options": ["more electrons/m^2 in its conduction band than holes/m^2 in its valence band", "more electrons/m^2 in its conduction band than a typical metal", "more electrons/m^2 in its valence band than at T = 0K", "more electrons/m^2 in its conduction band than at T = 0K"]
+    "options": ["more electrons/m² in its conduction band than holes/m² in its valence band", "more electrons/m² in its conduction band than a typical metal", "more electrons/m² in its valence band than at T = 0K", "more electrons/m² in its conduction band than at T = 0K"],
+    "answer": "D",
+    "explanation": "At T=0K, pure semiconductor has no electrons in conduction band. At room temperature, some electrons gain enough energy to jump to conduction band, so conduction band has more electrons than at T=0K."
   },
   {
     "subject": "Physics",
@@ -42,7 +50,9 @@
     "type": "Objective",
     "questionNumber": 5,
     "question": "The proper time between two events is measured by clocks at rest in a reference frame in which the two events",
-    "options": ["occur at the same time", "occur at the same coordinates", "occur at separate coordinates", "occur at separate times and separate coordinates"]
+    "options": ["occur at the same time", "occur at the same coordinates", "occur at separate coordinates", "occur at separate times and separate coordinates"],
+    "answer": "B",
+    "explanation": "Proper time is measured in the frame where the two events occur at the same spatial coordinates."
   },
   {
     "subject": "Physics",
@@ -51,7 +61,9 @@
     "type": "Objective",
     "questionNumber": 6,
     "question": "A handbag weighing 162 N is carried by two students each holding the handle of the bag next to him. If each handle is inclined at 60° to the vertical, find the force on each student's arm",
-    "options": ["324 N", "162 N", "121 N", "81 N"]
+    "options": ["324 N", "162 N", "121 N", "81 N"],
+    "answer": "B",
+    "explanation": "2T cos60° = 162 → 2T × 0.5 = 162 → T = 162 N."
   },
   {
     "subject": "Physics",
@@ -59,8 +71,10 @@
     "category": "Newton's Laws and Forces",
     "type": "Objective",
     "questionNumber": 7,
-    "question": "A rope is being used to pull a mass of 10 kg vertically upward. Determine the tension on the rope, if starting from rest, the mass acquires a velocity of 4 m/s in 8 s. [g = 10 m/s^2]",
-    "options": ["105 N", "95 N", "50 N", "55 N"]
+    "question": "A rope is being used to pull a mass of 10 kg vertically upward. Determine the tension on the rope, if starting from rest, the mass acquires a velocity of 4 m/s in 8 s. [g = 10 m/s²]",
+    "options": ["105 N", "95 N", "50 N", "55 N"],
+    "answer": "A",
+    "explanation": "a = (v-u)/t = 4/8 = 0.5 m/s². T - mg = ma → T = m(g+a) = 10(10.5) = 105 N."
   },
   {
     "subject": "Physics",
@@ -69,7 +83,9 @@
     "type": "Objective",
     "questionNumber": 8,
     "question": "A boy observes a piece of stone at the bottom of a river 6.0 m deep. If he looks vertically from the surface of the river, how far does the stone appear to be from him? [Refractive index of water = 4/3]",
-    "options": ["8.0 m", "4.5 m", "6.0 m", "5.5 m"]
+    "options": ["8.0 m", "4.5 m", "6.0 m", "5.5 m"],
+    "answer": "B",
+    "explanation": "Apparent depth = real depth / n = 6/(4/3) = 6 × 3/4 = 4.5 m."
   },
   {
     "subject": "Physics",
@@ -78,7 +94,9 @@
     "type": "Objective",
     "questionNumber": 9,
     "question": "A cell has an internal resistance of 0.01Ω. An instrument that can measure the resistance accurately is .........",
-    "options": ["Ohm-meter", "Potentiometer", "Electroscope", "Oscilloscope"]
+    "options": ["Ohm-meter", "Potentiometer", "Electroscope", "Oscilloscope"],
+    "answer": "B",
+    "explanation": "Potentiometer measures emf and internal resistance accurately by null deflection method (no current drawn from cell)."
   },
   {
     "subject": "Physics",
@@ -87,7 +105,9 @@
     "type": "Objective",
     "questionNumber": 10,
     "question": "A conductor of length 2m carries a current of 0.8A while kept in a magnetic field of magnetic flux density 0.5 T. The maximum force acting on it is",
-    "options": ["16.2 N", "8.0 N", "3.2 N", "0.8 N"]
+    "options": ["16.2 N", "8.0 N", "3.2 N", "0.8 N"],
+    "answer": "D",
+    "explanation": "F = BIL sinθ. Maximum when sinθ=1 → F = 0.5 × 0.8 × 2 = 0.8 N."
   },
   {
     "subject": "Physics",
@@ -96,7 +116,9 @@
     "type": "Objective",
     "questionNumber": 11,
     "question": "The bond that forms a semiconductor is",
-    "options": ["Covalent", "Electrovalent", "Metallic", "Electrostatic"]
+    "options": ["Covalent", "Electrovalent", "Metallic", "Electrostatic"],
+    "answer": "A",
+    "explanation": "Elemental semiconductors (Si, Ge) form covalent bonds."
   },
   {
     "subject": "Physics",
@@ -105,7 +127,9 @@
     "type": "Objective",
     "questionNumber": 12,
     "question": "The particle nature of light is demonstrated by",
-    "options": ["Photoelectric effect", "Speed of light", "Colours of light", "Diffraction of light"]
+    "options": ["Photoelectric effect", "Speed of light", "Colours of light", "Diffraction of light"],
+    "answer": "A",
+    "explanation": "Photoelectric effect (explained by Einstein using photon concept) demonstrates particle nature of light."
   },
   {
     "subject": "Physics",
@@ -114,7 +138,9 @@
     "type": "Objective",
     "questionNumber": 13,
     "question": "________ law states that at constant pressure, the volume of a given mass of gas is directly proportional to the absolute temperature.",
-    "options": ["Charles's", "Gay Lussac's", "Boyle's", "Pascal's"]
+    "options": ["Charles's", "Gay Lussac's", "Boyle's", "Pascal's"],
+    "answer": "A",
+    "explanation": "Charles's law: V ∝ T at constant pressure."
   },
   {
     "subject": "Physics",
@@ -123,7 +149,9 @@
     "type": "Objective",
     "questionNumber": 14,
     "question": "Use dimensional analysis to determine which of the following equations is certain wrong: I. λ = vt, II. F = m/a, III. F = mv/t, IV. h = v²/2g, V. v = (2gh)^{1/2}",
-    "options": ["I only", "I and III", "II and III", "II only"]
+    "options": ["I only", "I and III", "II and III", "II only"],
+    "answer": "D",
+    "explanation": "Equation II: F = m/a. Dimensions: LHS = MLT⁻², RHS = M/(LT⁻²) = ML⁻¹T² → not matching. Only II is dimensionally wrong."
   },
   {
     "subject": "Physics",
@@ -132,7 +160,9 @@
     "type": "Objective",
     "questionNumber": 15,
     "question": "A ________ can hear sound as high as 100,000 Hz",
-    "options": ["cat", "bat", "goat", "dog"]
+    "options": ["cat", "bat", "goat", "dog"],
+    "answer": "B",
+    "explanation": "Bats use echolocation and can hear frequencies up to about 100,000 Hz."
   },
   {
     "subject": "Physics",
@@ -141,7 +171,9 @@
     "type": "Objective",
     "questionNumber": 16,
     "question": "For an electron to be ejected from the surface of a metal, the radiation energy must be",
-    "options": ["greater than the work function of the metal", "less than the work function of the metal", "equal to the work function of the metal", "greater than the rest mass energy of the electron"]
+    "options": ["greater than the work function of the metal", "less than the work function of the metal", "equal to the work function of the metal", "greater than the rest mass energy of the electron"],
+    "answer": "A",
+    "explanation": "Photoelectric effect: hf ≥ φ. Radiation energy must be greater than or equal to work function to eject electrons."
   },
   {
     "subject": "Physics",
@@ -150,7 +182,9 @@
     "type": "Objective",
     "questionNumber": 17,
     "question": "________ is the only natural satellite of the earth",
-    "options": ["stars", "mercury", "sun", "moon"]
+    "options": ["stars", "mercury", "sun", "moon"],
+    "answer": "D",
+    "explanation": "The Moon is Earth's only natural satellite."
   },
   {
     "subject": "Physics",
@@ -159,7 +193,9 @@
     "type": "Objective",
     "questionNumber": 18,
     "question": "A 2-kilogram block rests at the edge of a platform that is 10 meters above level ground. The block is launched horizontally from the edge of the platform with an initial speed of 3 meters per second. Air resistance is negligible. The time it will take for the block to reach the ground is approximately [Take g = 10 m/s²].",
-    "options": ["0.3 s", "1.0 s", "1.4 s", "2.0 s"]
+    "options": ["0.3 s", "1.0 s", "1.4 s", "2.0 s"],
+    "answer": "C",
+    "explanation": "Vertical motion: h = ½gt² → 10 = 5t² → t = √2 ≈ 1.41 s."
   },
   {
     "subject": "Physics",
@@ -168,7 +204,9 @@
     "type": "Objective",
     "questionNumber": 19,
     "question": "A diver initially moving horizontally with speed v dives off the edge of a vertical cliff and lands in the water a distance d from the base of the cliff. How far from the base of the cliff would the diver have landed if the diver initially had been moving horizontally with speed 2v?",
-    "options": ["d", "3d", "2d", "4d"]
+    "options": ["d", "3d", "2d", "4d"],
+    "answer": "C",
+    "explanation": "Range = v × t, where t is constant (same height). So range ∝ v. Doubling v doubles range → 2d."
   },
   {
     "subject": "Physics",
@@ -177,7 +215,9 @@
     "type": "Objective",
     "questionNumber": 20,
     "question": "A truck traveled 400 meters north in 80 seconds, and then it traveled 300 meters east in 70 seconds. The magnitude of the average velocity of the truck was most nearly",
-    "options": ["1.2 m/s", "3.3 m/s", "4.6 m/s", "6.6 m/s"]
+    "options": ["1.2 m/s", "3.3 m/s", "4.6 m/s", "6.6 m/s"],
+    "answer": "B",
+    "explanation": "Displacement = √(400² + 300²) = 500 m. Total time = 80+70 = 150 s. Average velocity = 500/150 = 3.33 m/s."
   },
   {
     "subject": "Physics",
@@ -185,8 +225,10 @@
     "category": "Electrostatics",
     "type": "Objective",
     "questionNumber": 21,
-    "question": "The field intensity at a point close to a charged plane conductor situated in air is 3.5 × 10^6 V/m. The surface density of charge is: [Take the permittivity of free space as 8.85 × 10^{-12} F/m]",
-    "options": ["2.53 μC/m²", "26.55 × 10^{-12} C/m²", "31.0 × 10^{-12} μC/m²", "31.0 μC/m²"]
+    "question": "The field intensity at a point close to a charged plane conductor situated in air is 3.5 × 10⁶ V/m. The surface density of charge is: [Take the permittivity of free space as 8.85 × 10⁻¹² F/m]",
+    "options": ["2.53 μC/m²", "26.55 × 10⁻¹² C/m²", "31.0 × 10⁻¹² μC/m²", "31.0 μC/m²"],
+    "answer": "D",
+    "explanation": "E = σ/ε₀ → σ = Eε₀ = 3.5×10⁶ × 8.85×10⁻¹² = 3.0975×10⁻⁵ C/m² = 30.975 μC/m² ≈ 31.0 μC/m²."
   },
   {
     "subject": "Physics",
@@ -195,7 +237,9 @@
     "type": "Objective",
     "questionNumber": 22,
     "question": "Two parallel horizontal metal plates are 25 mm apart and a potential difference of 1000 V is applied across the plates. The field intensity between the plates is:",
-    "options": ["40 V/m", "25000 V/m", "40 kV/m", "2.5 kV/m"]
+    "options": ["40 V/m", "25000 V/m", "40 kV/m", "2.5 kV/m"],
+    "answer": "C",
+    "explanation": "E = V/d = 1000/(25×10⁻³) = 40,000 V/m = 40 kV/m."
   },
   {
     "subject": "Physics",
@@ -204,7 +248,9 @@
     "type": "Objective",
     "questionNumber": 23,
     "question": "Which of the following defines the Heisenberg uncertainty principle for position and momentum?",
-    "options": ["Δx Δp ≤ h/2", "Δx Δp = h/2", "Δx Δp ≥ h/2", "Δx Δp ≥ 2h"]
+    "options": ["Δx Δp ≤ h/2", "Δx Δp = h/2", "Δx Δp ≥ h/2", "Δx Δp ≥ 2h"],
+    "answer": "C",
+    "explanation": "Heisenberg uncertainty principle: Δx Δp ≥ ħ/2 = h/4π. But in terms of h, Δx Δp ≥ h/2 (since ħ = h/2π)."
   },
   {
     "subject": "Physics",
@@ -213,7 +259,9 @@
     "type": "Objective",
     "questionNumber": 24,
     "question": "The ejection of an alpha particle from a nucleus results in",
-    "options": ["an increase in the atomic number by one", "an increase in the atomic mass by four", "a decrease in the atomic number by two", "none of the above"]
+    "options": ["an increase in the atomic number by one", "an increase in the atomic mass by four", "a decrease in the atomic number by two", "none of the above"],
+    "answer": "C",
+    "explanation": "Alpha decay: Z decreases by 2, A decreases by 4."
   },
   {
     "subject": "Physics",
@@ -222,7 +270,9 @@
     "type": "Objective",
     "questionNumber": 25,
     "question": "Hydrogen-3 is a radioactive isotope of hydrogen. Which type of radiation would you expect an atom of this isotope to emit? (i) beta particle (ii) an alpha particle (iii) a gamma ray",
-    "options": ["(i) only", "(ii) only", "(i) and (iii)", "(i), (ii) and (iii)"]
+    "options": ["(i) only", "(ii) only", "(i) and (iii)", "(i), (ii) and (iii)"],
+    "answer": "A",
+    "explanation": "H-3 (tritium) decays by beta emission to He-3. No alpha (needs heavy nucleus) and usually no gamma."
   },
   {
     "subject": "Physics",
@@ -231,7 +281,9 @@
     "type": "Objective",
     "questionNumber": 26,
     "question": "Which of the following are derived units? (i) metres (ii) Coulomb (iii) Kilogram (iv) Ampere (v) Joule",
-    "options": ["I and III only", "II and V only", "II, IV and V only", "I, II, III and IV"]
+    "options": ["I and III only", "II and V only", "II, IV and V only", "I, II, III and IV"],
+    "answer": "B",
+    "explanation": "Coulomb (derived from ampere×second) and Joule (derived from kg·m²/s²) are derived units. Metre, kilogram, ampere are base units."
   },
   {
     "subject": "Physics",
@@ -240,7 +292,9 @@
     "type": "Objective",
     "questionNumber": 27,
     "question": "The dimension of power is",
-    "options": ["ML²T⁻³", "MLT⁻²", "ML²T⁻²", "ML⁻²T³"]
+    "options": ["ML²T⁻³", "MLT⁻²", "ML²T⁻²", "ML⁻²T³"],
+    "answer": "A",
+    "explanation": "Power = Work/Time = (ML²T⁻²)/T = ML²T⁻³."
   },
   {
     "subject": "Physics",
@@ -249,7 +303,9 @@
     "type": "Objective",
     "questionNumber": 28,
     "question": "Which of the following quantities has the same unit as kilowatt-hour?",
-    "options": ["Force × acceleration", "Force × Velocity", "Force × distance", "Force × time"]
+    "options": ["Force × acceleration", "Force × Velocity", "Force × distance", "Force × time"],
+    "answer": "C",
+    "explanation": "Kilowatt-hour is unit of energy. Force × distance = work = energy."
   },
   {
     "subject": "Physics",
@@ -258,7 +314,9 @@
     "type": "Objective",
     "questionNumber": 29,
     "question": "An elastic string of length 20 cm extends to 24 cm when it supports a weight of 50 N. The energy stored in the string is?",
-    "options": ["1 J", "2 J", "5 J", "10 J"]
+    "options": ["1 J", "2 J", "5 J", "10 J"],
+    "answer": "A",
+    "explanation": "Extension x = 0.04 m, k = F/x = 50/0.04 = 1250 N/m. Energy = ½kx² = 0.5×1250×0.0016 = 1 J."
   },
   {
     "subject": "Physics",
@@ -267,7 +325,9 @@
     "type": "Objective",
     "questionNumber": 30,
     "question": "Which of the following radiations will pass through a sheet of paper? (I) Alpha rays (II) Beta rays (III) Gamma rays",
-    "options": ["I only", "I and III only", "I, II and III only", "II and III only"]
+    "options": ["I only", "I and III only", "I, II and III only", "II and III only"],
+    "answer": "D",
+    "explanation": "Alpha particles are stopped by paper. Beta and gamma rays can pass through paper."
   },
   {
     "subject": "Physics",
@@ -276,7 +336,9 @@
     "type": "Objective",
     "questionNumber": 31,
     "question": "A metal having a work function of 5.76 eV is illuminated with a radiation of 7.88 eV. The kinetic energy of the electrons emitted from the metal surface is",
-    "options": ["2.12 eV", "1.37 eV", "45.39 eV", "13.64 eV"]
+    "options": ["2.12 eV", "1.37 eV", "45.39 eV", "13.64 eV"],
+    "answer": "A",
+    "explanation": "KE = hf - φ = 7.88 - 5.76 = 2.12 eV."
   },
   {
     "subject": "Physics",
@@ -284,8 +346,10 @@
     "category": "X-Rays",
     "type": "Objective",
     "questionNumber": 32,
-    "question": "What is the energy associated with an X-ray of wavelength 9 × 10^{-10} m? (Planck's constant = 6.6 × 10^{-34} Js and velocity of light = 3 × 10^8 m/s)",
-    "options": ["7.5 × 10^{14} J", "2.20 × 10^{-16} J", "7.5 × 10^5 J", "1.3 × 10^{-15} J"]
+    "question": "What is the energy associated with an X-ray of wavelength 9 × 10⁻¹⁰ m? (Planck's constant = 6.6 × 10⁻³⁴ Js and velocity of light = 3 × 10⁸ m/s)",
+    "options": ["7.5 × 10¹⁴ J", "2.20 × 10⁻¹⁶ J", "7.5 × 10⁵ J", "1.3 × 10⁻¹⁵ J"],
+    "answer": "B",
+    "explanation": "E = hc/λ = (6.6×10⁻³⁴ × 3×10⁸)/(9×10⁻¹⁰) = (1.98×10⁻²⁵)/(9×10⁻¹⁰) = 2.2×10⁻¹⁶ J."
   },
   {
     "subject": "Physics",
@@ -294,7 +358,9 @@
     "type": "Objective",
     "questionNumber": 33,
     "question": "Two football players with masses 75 kg and 100 kg run directly toward each other with speeds of 6 m/s and 8 m/s respectively. If they grab each other as they collide, the combined speed of the two players just after the collision would be:",
-    "options": ["2 m/s", "3.4 m/s", "4.6 m/s", "7.1 m/s"]
+    "options": ["2 m/s", "3.4 m/s", "4.6 m/s", "7.1 m/s"],
+    "answer": "A",
+    "explanation": "Momentum conservation: (75×6) - (100×8) = (175)v → 450 - 800 = 175v → -350 = 175v → v = -2 m/s. Magnitude = 2 m/s (in direction of the 100 kg player)."
   },
   {
     "subject": "Physics",
@@ -302,8 +368,10 @@
     "category": "Sound Waves",
     "type": "Objective",
     "questionNumber": 34,
-    "question": "The velocity of sound in a gas is given by v_s = √(γP/ρ) where the symbols have their usual meanings. For a particular gas under certain conditions, v_s is found to be 400 m/s. What is the new value of v_s if the pressure were reduced by 5%?",
-    "options": ["89.4 m/s", "20 m/s", "100 m/s", "390 m/s"]
+    "question": "The velocity of sound in a gas is given by v_s = √(γP/ρ). For a particular gas under certain conditions, v_s is found to be 400 m/s. What is the new value of v_s if the pressure were reduced by 5%?",
+    "options": ["89.4 m/s", "20 m/s", "100 m/s", "390 m/s"],
+    "answer": "D",
+    "explanation": "v ∝ √(P/ρ). At constant temperature, P/ρ is constant (Boyle's law), so velocity is independent of pressure. v remains approximately 400 m/s. 5% reduction in pressure with corresponding density change keeps speed same. Closest is 390 m/s."
   },
   {
     "subject": "Physics",
@@ -312,7 +380,9 @@
     "type": "Objective",
     "questionNumber": 35,
     "question": "Which of the following statement is/are true of interference of waves? (I) It is a result of superposition of two or more waves. (II) It can be explained using corpuscular nature of light. (III) It can be explained using wave nature of light waves. (IV) Only the wave-particle duality of light can be used to explain interferences. (V) It produces bright and dark fringes.",
-    "options": ["I and III only", "I and IV only", "I, II and V only", "I, III and V only"]
+    "options": ["I and III only", "I and IV only", "I, II and V only", "I, III and V only"],
+    "answer": "D",
+    "explanation": "Interference requires superposition (I), is explained by wave nature (III), and produces bright/dark fringes (V)."
   },
   {
     "subject": "Physics",
@@ -321,7 +391,9 @@
     "type": "Objective",
     "questionNumber": 36,
     "question": "Resistance of a material depends on the following except",
-    "options": ["temperature", "length and cross-section area of the material", "nature of the material", "shape of the material"]
+    "options": ["temperature", "length and cross-section area of the material", "nature of the material", "shape of the material"],
+    "answer": "D",
+    "explanation": "Resistance depends on temperature, length, area, and resistivity (nature). Shape alone (without affecting length/area) does not affect resistance."
   },
   {
     "subject": "Physics",
@@ -330,7 +402,9 @@
     "type": "Objective",
     "questionNumber": 37,
     "question": "An X-ray tube takes a current of 7.0 mA and operates at a potential difference of 80 kV. What power is dissipated?",
-    "options": ["460 W", "560 W", "660 W", "760 W"]
+    "options": ["460 W", "560 W", "660 W", "760 W"],
+    "answer": "B",
+    "explanation": "P = VI = 80×10³ × 7×10⁻³ = 560 W."
   },
   {
     "subject": "Physics",
@@ -339,7 +413,9 @@
     "type": "Objective",
     "questionNumber": 38,
     "question": "Which of the following describes what occurs in the fission process?",
-    "options": ["A heavy nucleus is fragmented into lighter ones.", "A neutron is split into a neutron and proton.", "Two light nuclei are combined into a heavier one.", "A proton is split into three quarks."]
+    "options": ["A heavy nucleus is fragmented into lighter ones.", "A neutron is split into a neutron and proton.", "Two light nuclei are combined into a heavier one.", "A proton is split into three quarks."],
+    "answer": "A",
+    "explanation": "Nuclear fission is the splitting of a heavy nucleus into lighter nuclei."
   },
   {
     "subject": "Physics",
@@ -348,7 +424,9 @@
     "type": "Objective",
     "questionNumber": 39,
     "question": "The coordinate of a particle in meters is given by x(t) = 16t - 3.0t³, where the time t is in seconds. The particle is momentarily at rest at t =",
-    "options": ["0.75 s", "1.3 s", "5.3 s", "7.3 s"]
+    "options": ["0.75 s", "1.3 s", "5.3 s", "7.3 s"],
+    "answer": "B",
+    "explanation": "v = dx/dt = 16 - 9t² = 0 → t² = 16/9 → t = 4/3 ≈ 1.33 s."
   },
   {
     "subject": "Physics",
@@ -357,7 +435,9 @@
     "type": "Objective",
     "questionNumber": 40,
     "question": "The maximum efficiency of a heat engine which operates between the measured temperatures of 227°C and 727°C is",
-    "options": ["50%", "20%", "30%", "40%"]
+    "options": ["50%", "20%", "30%", "40%"],
+    "answer": "A",
+    "explanation": "T_c = 227+273 = 500 K, T_h = 727+273 = 1000 K. η = 1 - T_c/T_h = 1 - 500/1000 = 0.5 = 50%."
   },
   {
     "subject": "Physics",
@@ -365,8 +445,10 @@
     "category": "Modern Physics",
     "type": "Objective",
     "questionNumber": 41,
-    "question": "The stopping potential for electrons ejected by 6.8 × 10^{14} Hz electromagnetic radiation incident on a certain sample is 1.8 V. The kinetic energy of the most energetic electrons ejected and the work function of the sample, respectively, are",
-    "options": ["1.8 eV, 2.8 eV", "1.8 eV, 1.0 eV", "1.8 eV, 4.6 eV", "2.8 eV, 1.0 eV"]
+    "question": "The stopping potential for electrons ejected by 6.8 × 10¹⁴ Hz electromagnetic radiation incident on a certain sample is 1.8 V. The kinetic energy of the most energetic electrons ejected and the work function of the sample, respectively, are",
+    "options": ["1.8 eV, 2.8 eV", "1.8 eV, 1.0 eV", "1.8 eV, 4.6 eV", "2.8 eV, 1.0 eV"],
+    "answer": "B",
+    "explanation": "KE = eV_s = 1.8 eV. hf = 6.63×10⁻³⁴×6.8×10¹⁴ = 4.51×10⁻¹⁹ J = 2.82 eV. φ = hf - KE = 2.82 - 1.8 = 1.02 eV ≈ 1.0 eV."
   },
   {
     "subject": "Physics",
@@ -375,7 +457,9 @@
     "type": "Objective",
     "questionNumber": 42,
     "question": "When a kaon decays via the strong interaction the products must include a:",
-    "options": ["baryon", "lepton", "strange particle", "electron"]
+    "options": ["baryon", "lepton", "strange particle", "electron"],
+    "answer": "C",
+    "explanation": "Kaon is a strange particle. In strong interactions, strangeness is conserved, so products must include a strange particle."
   },
   {
     "subject": "Physics",
@@ -384,7 +468,9 @@
     "type": "Objective",
     "questionNumber": 43,
     "question": "A particle with spin angular momentum is called a:",
-    "options": ["lepton", "hadron", "fermion", "boson"]
+    "options": ["lepton", "hadron", "fermion", "boson"],
+    "answer": "C",
+    "explanation": "Fermions have half-integer spin (e.g., electrons, protons). Bosons have integer spin."
   },
   {
     "subject": "Physics",
@@ -393,7 +479,9 @@
     "type": "Objective",
     "questionNumber": 44,
     "question": "Which of the following consists entirely of vector quantities?",
-    "options": ["velocity, magnetic flux and reaction", "tension, magnetic flux and mass", "displacement, impulse and power", "work, pressure and moment"]
+    "options": ["velocity, magnetic flux and reaction", "tension, magnetic flux and mass", "displacement, impulse and power", "work, pressure and moment"],
+    "answer": "A",
+    "explanation": "Velocity (vector), magnetic flux (vector), reaction (force, vector). Mass, power, work, pressure are scalars."
   },
   {
     "subject": "Physics",
@@ -402,7 +490,9 @@
     "type": "Objective",
     "questionNumber": 45,
     "question": "Two forces each of 10N act on a body, one towards the north and the other towards the east. The magnitude and the direction of the resultant force are",
-    "options": ["10N, 45°W", "20N, 45°E", "10√2 N, 45°W", "10√2 N, 45°E"]
+    "options": ["10N, 45°W", "20N, 45°E", "10√2 N, 45°W", "10√2 N, 45°E"],
+    "answer": "D",
+    "explanation": "Resultant = √(10²+10²) = 10√2 N, direction = 45° east of north (or north-east). Option D: 10√2 N, 45°E."
   },
   {
     "subject": "Physics",
@@ -411,7 +501,9 @@
     "type": "Objective",
     "questionNumber": 46,
     "question": "The main reason for making the cover of a vacuum flask air tight is to prevent heat loss by",
-    "options": ["conduction", "evaporation", "radiation", "convection"]
+    "options": ["conduction", "evaporation", "radiation", "convection"],
+    "answer": "D",
+    "explanation": "Air-tight cover prevents convection currents (air circulation) that transfer heat."
   },
   {
     "subject": "Physics",
@@ -420,7 +512,9 @@
     "type": "Objective",
     "questionNumber": 47,
     "question": "A cell can supply currents of 0.4A and 0.2A through a 4.0Ω and 10.0Ω resistors respectively. The internal resistance of the cell is",
-    "options": ["0.5Ω", "1.0Ω", "1.5Ω", "2.0Ω"]
+    "options": ["0.5Ω", "1.0Ω", "1.5Ω", "2.0Ω"],
+    "answer": "D",
+    "explanation": "E = I(R+r). 0.4(4+r) = 0.2(10+r) → 1.6 + 0.4r = 2 + 0.2r → 0.2r = 0.4 → r = 2Ω."
   },
   {
     "subject": "Physics",
@@ -429,7 +523,9 @@
     "type": "Objective",
     "questionNumber": 48,
     "question": "A working electric motor takes a current of 1.5A when the p.d. across it is 250V. If its efficiency is 80%, the power output is",
-    "options": ["562.0 W", "469.0 W", "300.0 W", "133.0 W"]
+    "options": ["562.0 W", "469.0 W", "300.0 W", "133.0 W"],
+    "answer": "C",
+    "explanation": "Input power = VI = 250×1.5 = 375 W. Output = η × input = 0.8×375 = 300 W."
   },
   {
     "subject": "Physics",
@@ -438,7 +534,9 @@
     "type": "Objective",
     "questionNumber": 49,
     "question": "At what frequency would a capacitor of 2.5 μF used in radio circuit have a reactance of 250Ω?",
-    "options": ["200π Hz", "π/800 Hz", "800/π Hz", "8000π Hz"]
+    "options": ["200π Hz", "π/800 Hz", "800/π Hz", "8000π Hz"],
+    "answer": "C",
+    "explanation": "X_c = 1/(2πfC) → f = 1/(2πCX_c) = 1/(2π×2.5×10⁻⁶×250) = 1/(2π×6.25×10⁻⁴) = 1/(3.93×10⁻³) ≈ 254.6 Hz. 800/π ≈ 254.6 Hz."
   },
   {
     "subject": "Physics",
@@ -447,7 +545,9 @@
     "type": "Objective",
     "questionNumber": 50,
     "question": "A certain radioactive source emits radiations that were found to be deflected by both magnetic and electric fields. The radiations are",
-    "options": ["ultra-violet rays", "gamma rays", "alpha rays", "beta rays"]
+    "options": ["ultra-violet rays", "gamma rays", "alpha rays", "beta rays"],
+    "answer": "D",
+    "explanation": "Beta rays (electrons) are charged and are deflected by electric and magnetic fields. Alpha rays are also deflected but heavier. Gamma rays are uncharged and not deflected."
   },
 {
     "subject": "Physics",

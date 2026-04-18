@@ -867,3 +867,99 @@ header {
         padding: 8px 16px;
     }
 }
+
+/* ===== QUIZ MODE TAB ===== */
+.quiz-mode-tab {
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9) !important;
+    color: white !important;
+}
+
+.quiz-mode-tab:hover {
+    transform: translateY(-2px);
+}
+
+/* ===== STUDY MODE - SHOW ANSWER BUTTON ===== */
+.show-answer-btn {
+    background: var(--tab-active-bg, #0d6efd);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-top: 12px;
+    transition: all 0.2s ease;
+}
+
+.show-answer-btn:hover {
+    background: var(--tab-active-bg, #0b5ed7);
+    transform: translateY(-1px);
+}
+
+/* Answer Display */
+.answer-display {
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #d4edda;
+    border-left: 4px solid #28a745;
+    display: none;
+}
+
+.answer-display.show {
+    display: block;
+}
+
+.answer-display .correct-answer {
+    font-weight: bold;
+    color: #155724;
+    margin-bottom: 8px;
+}
+
+.answer-display .explanation {
+    color: #155724;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+[data-theme="dark"] .answer-display {
+    background: #1a3a2a;
+    border-left-color: #2ecc71;
+}
+
+[data-theme="dark"] .answer-display .correct-answer,
+[data-theme="dark"] .answer-display .explanation {
+    color: #a3e4b7;
+}
+
+/* Highlight correct option when answer revealed */
+.option-correct-highlight {
+    background: #d4edda !important;
+    border-left: 3px solid #28a745 !important;
+    font-weight: bold;
+}
+
+[data-theme="dark"] .option-correct-highlight {
+    background: #1a3a2a !important;
+    border-left-color: #2ecc71 !important;
+}
+
+/* Quiz Mode Coming Soon */
+.quiz-coming-soon {
+    text-align: center;
+    padding: 80px 20px;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+}
+
+.quiz-coming-soon h2 {
+    font-size: 2rem;
+    color: var(--tab-active-bg);
+    margin-bottom: 20px;
+}
+
+.quiz-coming-soon p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}

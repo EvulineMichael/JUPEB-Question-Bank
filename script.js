@@ -461,17 +461,29 @@ function renderCategories() {
 // All course groups start closed
 }
 
+// Display questions for a given topic
 function displayQuestions(topic) {
     if (welcomeMessage) welcomeMessage.style.display = "none";
+    
+    // Remove active from quiz tab if active
+    const quizTab = document.getElementById('quiz-mode-tab');
+    if (quizTab) quizTab.classList.remove('active');
     
     let filteredQuestions = questionsData.filter(q => q.category === topic);
     filteredQuestions.sort((a, b) => b.year - a.year);
     
     if (filteredQuestions.length === 0) {
-        questionsContainer.innerHTML = `<div class="welcome-message"><h2>📭 No questions found</h2><p>No questions available for "${escapeHtml(topic)}" yet.</p></div>`;
+        questionsContainer.innerHTML = `
+            <div class="welcome-message">
+                <h2>📭 No questions found</h2>
+                <p>No questions available for "${escapeHtml(topic)}" yet.</p>
+                <p>Check back soon for updates!</p>
+            </div>
+        `;
         return;
     }
     
+    // Group by year
     const questionsByYear = {};
     filteredQuestions.forEach(q => {
         if (!questionsByYear[q.year]) questionsByYear[q.year] = [];
@@ -485,6 +497,8 @@ function displayQuestions(topic) {
         ${filteredQuestions.length} question(s) found | 📅 Years: ${sortedYears.join(", ")}
     </p>`;
     
+    let questionIndex = 1;
+    
     for (const year of sortedYears) {
         const yearQuestions = questionsByYear[year];
         
@@ -492,7 +506,7 @@ function displayQuestions(topic) {
             const qNumberDisplay = q.questionNumber.toString().padStart(2, '0');
             
             questionsHtml += `
-                <div class="question-card">
+                <div class="question-card" data-question-idx="${questionIndex}">
                     <div class="question-header">
                         <span class="question-year">📅 ${year}</span>
                         <span class="question-year" style="background: #198754;">🔢 Q${qNumberDisplay}</span>
@@ -508,14 +522,34 @@ function displayQuestions(topic) {
             }
             
             if (q.type === "Objective" && q.options && q.options.length > 0) {
-                questionsHtml += `<ul class="options-list">`;
+                questionsHtml += `<ul class="options-list" id="options-list-${questionIndex}">`;
                 const optionLabels = ['A', 'B', 'C', 'D', 'E', 'F'];
                 q.options.forEach((opt, optIdx) => {
                     if (opt && opt.trim() !== "") {
-                        questionsHtml += `<li><strong>${optionLabels[optIdx]})</strong> ${escapeHtml(opt)}</li>`;
+                        const isCorrect = q.answer && q.answer.toUpperCase() === optionLabels[optIdx];
+                        const correctClass = isCorrect ? 'data-correct="true"' : '';
+                        questionsHtml += `<li class="option-item" data-option="${optionLabels[optIdx]}" ${correctClass}><strong>${optionLabels[optIdx]})</strong> ${escapeHtml(opt)}</li>`;
                     }
                 });
                 questionsHtml += `</ul>`;
+                
+                // Add Show Answer button
+                if (q.answer && q.explanation) {
+                    questionsHtml += `
+                        <button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">🔍 Show Answer</button>
+                        <div class="answer-display" id="answer-${questionIndex}">
+                            <div class="correct-answer">✅ Correct Answer: ${q.answer}</div>
+                            <div class="explanation">💡 Explanation: ${escapeHtml(q.explanation)}</div>
+                        </div>
+                    `;
+                } else if (q.answer && !q.explanation) {
+                    questionsHtml += `
+                        <button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="">🔍 Show Answer</button>
+                        <div class="answer-display" id="answer-${questionIndex}">
+                            <div class="correct-answer">✅ Correct Answer: ${q.answer}</div>
+                        </div>
+                    `;
+                }
             }
             
             if (q.type === "Essay" && !q.diagramMissing) {
@@ -523,10 +557,47 @@ function displayQuestions(topic) {
             }
             
             questionsHtml += `</div>`;
+            questionIndex++;
         });
     }
     
     questionsContainer.innerHTML = questionsHtml;
+    
+    // Add event listeners to all Show Answer buttons
+    document.querySelectorAll('.show-answer-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const qIdx = btn.dataset.qIdx;
+            const answerDisplay = document.getElementById(`answer-${qIdx}`);
+            const answer = btn.dataset.answer;
+            const explanation = btn.dataset.explanation;
+            
+            // Toggle display
+            if (answerDisplay.classList.contains('show')) {
+                answerDisplay.classList.remove('show');
+                btn.textContent = '🔍 Show Answer';
+                // Remove highlighting from options
+                const optionsList = document.getElementById(`options-list-${qIdx}`);
+                if (optionsList) {
+                    optionsList.querySelectorAll('.option-item').forEach(opt => {
+                        opt.classList.remove('option-correct-highlight');
+                    });
+                }
+            } else {
+                answerDisplay.classList.add('show');
+                btn.textContent = '🙈 Hide Answer';
+                // Highlight the correct option
+                const optionsList = document.getElementById(`options-list-${qIdx}`);
+                if (optionsList) {
+                    optionsList.querySelectorAll('.option-item').forEach(opt => {
+                        if (opt.dataset.option === answer.toUpperCase()) {
+                            opt.classList.add('option-correct-highlight');
+                        }
+                    });
+                }
+            }
+        });
+    });
+    
     document.getElementById("questions-area").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
@@ -547,7 +618,39 @@ function setupEventListeners() {
             currentTopic = null;
             loadQuestions();
         });
+        // Quiz Mode Tab
+const quizModeTab = document.getElementById('quiz-mode-tab');
+if (quizModeTab) {
+    quizModeTab.addEventListener('click', () => {
+        // Remove active from all subject tabs
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        quizModeTab.classList.add('active');
+        
+        // Show Quiz Mode coming soon message
+        showQuizModeComingSoon();
     });
+}
+    });
+    // Show Quiz Mode coming soon
+function showQuizModeComingSoon() {
+    if (welcomeMessage) welcomeMessage.style.display = "none";
+    
+    questionsContainer.innerHTML = `
+        <div class="quiz-coming-soon">
+            <h2>📝 Quiz Mode</h2>
+            <p>Coming Soon!</p>
+            <p style="margin-top: 20px;">This feature will allow you to:</p>
+            <ul style="list-style: none; padding: 0;">
+                <li>✓ Generate quizzes by topic</li>
+                <li>✓ Take past exam simulations</li>
+                <li>✓ Get scores and performance feedback</li>
+            </ul>
+            <p style="margin-top: 30px;">🚀 Stay tuned for updates!</p>
+        </div>
+    `;
+}
     
     backToTopBtn.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
