@@ -549,14 +549,15 @@
     "answer": "B",
     "explanation": "Attenuation is the loss of signal power as it travels through a medium."
   },
-  {
+ {
     "subject": "Physics",
     "year": 2019,
     "category": "Physical Quantities and Units",
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) State the units and dimensions of the following quantities:\n(i) Surface tension (1 mark)\n(ii) frequency (1 mark)\n(iii) Show that the expression V² = V₀² + 2aS is dimensionally correct, where V and V₀ represent the final and initial velocities, a is acceleration and S is the displacement. (2 marks)",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Surface Tension:\nSurface tension is defined as force per unit length.\nUnit: N m⁻¹ (or J m⁻²)\nDimension: [F/L] = MLT⁻²/L = MT⁻²\n\n(ii) Frequency:\nFrequency is the number of cycles per second.\nUnit: Hz (hertz) = s⁻¹\nDimension: T⁻¹\n\n(iii) Dimensional Check of V² = V₀² + 2aS:\nLeft side: [V²] = (LT⁻¹)² = L²T⁻²\nRight side term 1: [V₀²] = (LT⁻¹)² = L²T⁻²\nRight side term 2: [2aS] = [a][S] = (LT⁻²)(L) = L²T⁻²\nSince [V²] = [V₀²] = [2aS] = L²T⁻², all terms have the same dimensions.\nTherefore the expression V² = V₀² + 2aS is dimensionally correct. ✓"
   },
   {
     "subject": "Physics",
@@ -565,7 +566,8 @@
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) A race car moves such that its position is given as X = 0.75t² + 5.0t + 1. Find:\n(i) the position at t = 4.00 s (2 marks)\n(ii) the instantaneous velocity of the car at t = 4.00 s (2 marks)\n(iii) the average velocity for the time interval t = 2.00 s to 7.00 s (2 marks)",
-    "options": []
+    "options": [],
+    "modelAnswer": "X(t) = 0.75t² + 5.0t + 1\n\n(i) Position at t = 4.00 s:\nX(4) = 0.75(4)² + 5.0(4) + 1\nX(4) = 0.75(16) + 20 + 1\nX(4) = 12 + 20 + 1 = 33 m\n\n(ii) Instantaneous Velocity at t = 4.00 s:\nv = dX/dt = 2(0.75)t + 5.0 = 1.5t + 5.0\nv(4) = 1.5(4) + 5.0 = 6.0 + 5.0 = 11.0 m/s\n\n(iii) Average Velocity from t = 2.00 s to t = 7.00 s:\nX(2) = 0.75(4) + 5.0(2) + 1 = 3 + 10 + 1 = 14 m\nX(7) = 0.75(49) + 5.0(7) + 1 = 36.75 + 35 + 1 = 72.75 m\nAverage velocity = ΔX/Δt = (72.75 − 14)/(7 − 2) = 58.75/5 = 11.75 m/s"
   },
   {
     "subject": "Physics",
@@ -574,7 +576,8 @@
     "type": "Essay",
     "questionNumber": "2a",
     "question": "(a) State Pascal's principle. (1 mark)\n(b) State two applications of:\n(i) Surface tension (1 mark)\n(ii) Viscosity. (1 mark)",
-    "options": []
+    "options": [],
+    "modelAnswer": "Pascal's Principle:\nPascal's principle states that pressure applied to an enclosed (confined) fluid is transmitted undiminished to every part of the fluid and to the walls of the container. The pressure increase at any point in the enclosed fluid is equal at all other points.\n\n(b)(i) Two Applications of Surface Tension:\n1. Walking on water: Small insects (e.g. water striders) can walk on water surfaces because surface tension supports their weight — the water surface behaves like a stretched elastic film.\n2. Capillary action: Surface tension enables water to rise in narrow tubes and in plant stems (together with adhesion), transporting water and nutrients upward.\n(Also: formation of soap bubbles and droplets; needles floating on water; detergent action)\n\n(b)(ii) Two Applications of Viscosity:\n1. Lubrication in engines: Viscous oils are used as lubricants in machines and engines to reduce friction between moving parts — the viscous oil layer prevents direct metal-to-metal contact.\n2. Dashpot/shock absorbers: Viscosity of fluids is exploited in shock absorbers (hydraulic dampers) in vehicles to slow down and control the motion of the suspension system."
   },
   {
     "subject": "Physics",
@@ -583,7 +586,8 @@
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(iii) The electromagnetic pointing vector S is defined as S = E × H, where E and H are the electric and magnetic fields respectively. E = 10.10i + 0.20j + 0.60k and H = 0.40i + 9.80j + 0.10k. Calculate S. (3 marks)",
-    "options": []
+    "options": [],
+    "modelAnswer": "S = E × H (cross product)\nE = 10.10i + 0.20j + 0.60k\nH = 0.40i + 9.80j + 0.10k\n\nUsing the determinant method:\nS = |i   j   k  |\n    |10.10  0.20  0.60|\n    |0.40  9.80  0.10|\n\nSᵢ = (0.20 × 0.10) − (0.60 × 9.80) = 0.020 − 5.88 = −5.86\nSⱼ = −[(10.10 × 0.10) − (0.60 × 0.40)] = −[1.010 − 0.240] = −0.770\nSₖ = (10.10 × 9.80) − (0.20 × 0.40) = 98.98 − 0.08 = 98.90\n\nS = −5.86i − 0.770j + 98.90k W/m²\n\nMagnitude: |S| = √(5.86² + 0.770² + 98.90²) = √(34.34 + 0.593 + 9781) = √9815.9 ≈ 99.1 W/m²"
   },
   {
     "subject": "Physics",
@@ -592,7 +596,8 @@
     "type": "Essay",
     "questionNumber": "2c",
     "question": "(c) The mass of an object in air is 50 g and it appears to have a mass of 35 g when immersed in water. Find the:\n(i) relative density of the substance (2 marks)\n(ii) density of the substance. (2 marks)",
-    "options": []
+    "options": [],
+    "modelAnswer": "Mass in air = 50 g; Apparent mass in water = 35 g\nUpthrust (buoyant force) = 50 − 35 = 15 g (weight of water displaced)\n\n(i) Relative Density:\nRelative density = mass in air / (mass in air − apparent mass in water)\nRelative density = 50 / (50 − 35) = 50/15 = 3.33\n\n(ii) Density of Substance:\nDensity = relative density × density of water\nDensity = 3.33 × 1000 = 3333 kg/m³ ≈ 3330 kg/m³"
   },
   {
     "subject": "Physics",
@@ -601,7 +606,8 @@
     "type": "Essay",
     "questionNumber": "3a",
     "question": "(a) State any three assumptions of kinetic theory of gases. (3 marks)",
-    "options": []
+    "options": [],
+    "modelAnswer": "Three Assumptions of the Kinetic Theory of Gases:\n1. Gas molecules are in constant, rapid, random motion in all directions, and they travel in straight lines between collisions.\n2. The volume of the gas molecules themselves is negligible compared to the total volume of the container (molecules are treated as point masses).\n3. Collisions between gas molecules and between molecules and the container walls are perfectly elastic — kinetic energy is conserved during collisions (no loss of kinetic energy).\n(Other valid assumptions: there are no intermolecular forces between gas molecules except during collisions; the duration of collisions is negligible compared to the time between collisions; all molecules of the same gas are identical and obey Newton's laws of motion.)"
   },
   {
     "subject": "Physics",
@@ -610,7 +616,8 @@
     "type": "Essay",
     "questionNumber": "3b",
     "question": "(b) What is the pressure of 3 moles of an ideal gas at a temperature of 27°C, having a volume of 5 litres? (2½ marks)",
-    "options": []
+    "options": [],
+    "modelAnswer": "Using the ideal gas law: PV = nRT\nn = 3 mol, T = 27°C = 300 K, V = 5 L = 5 × 10⁻³ m³\nR = 8.314 J mol⁻¹ K⁻¹\n\nP = nRT/V = (3 × 8.314 × 300) / (5 × 10⁻³)\nP = 7482.6 / 0.005\nP = 1,496,520 Pa ≈ 1.50 × 10⁶ Pa ≈ 14.8 atm"
   },
   {
     "subject": "Physics",
@@ -619,7 +626,8 @@
     "type": "Essay",
     "questionNumber": "3c",
     "question": "(c) A piece of copper of mass 0.04 kg at 160°C is transferred into a copper calorimeter of mass 0.06 kg containing 0.05 kg of water at 20°C. What will be the final temperature of the mixture? Specific heat capacity of copper and water are 400 J/kgK and 4200 J/kgK respectively. (Neglecting heat losses to the surroundings). (4½ marks)",
-    "options": []
+    "options": [],
+    "modelAnswer": "Let final temperature = T°C\nHeat lost by copper piece = heat gained by calorimeter + heat gained by water\n\nHeat lost by copper: m_cu × c_cu × (160 − T) = 0.04 × 400 × (160 − T) = 16(160 − T)\n\nHeat gained by calorimeter: m_cal × c_cu × (T − 20) = 0.06 × 400 × (T − 20) = 24(T − 20)\n\nHeat gained by water: m_w × c_w × (T − 20) = 0.05 × 4200 × (T − 20) = 210(T − 20)\n\nSetting heat lost = heat gained:\n16(160 − T) = 24(T − 20) + 210(T − 20)\n2560 − 16T = (24 + 210)(T − 20)\n2560 − 16T = 234(T − 20)\n2560 − 16T = 234T − 4680\n2560 + 4680 = 234T + 16T\n7240 = 250T\nT = 7240/250 = 28.96°C ≈ 29.0°C"
   },
   {
     "subject": "Physics",
@@ -630,7 +638,8 @@
     "question": "(a) (i) State the principle of superposition of waves. (1 mark)\n(ii) Briefly describe Huygens principle with aid of appropriate diagram. (2 marks)",
     "diagramMissing": true,
     "diagramNote": "⚠️ Diagram missing: Huygens principle diagram. Please refer to your original past question paper.",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Principle of Superposition:\nThe principle of superposition states that when two or more waves meet at a point in a medium simultaneously, the resultant displacement at that point is the algebraic (vector) sum of the individual displacements due to each wave acting independently. After passing through each other, each wave continues with its original properties unchanged.\n\n(ii) Huygens' Principle:\nHuygens' principle states that every point on a wavefront acts as a secondary source of spherical wavelets (secondary waves) that spread out in all directions with the same speed as the original wave. The new wavefront at a later time is the surface tangent to (the envelope of) all these secondary wavelets.\nIn practice:\n- Consider a plane wavefront AB at time t=0.\n- Each point on AB radiates secondary wavelets of radius vt (where v = wave speed, t = time elapsed).\n- The new wavefront A'B' at time t is drawn as the common tangent to all these secondary wavelets.\nThis principle explains reflection, refraction, and diffraction of waves."
   },
   {
     "subject": "Physics",
@@ -639,7 +648,8 @@
     "type": "Essay",
     "questionNumber": "4b",
     "question": "(b) The manufacturer's manual of a violin shows that the heaviest and lightest strings have linear densities of 6.0 and 0.58 kg/m respectively. Assuming that strings are of the same material, determine the ratio of their radii. (3 marks)",
-    "options": []
+    "options": [],
+    "modelAnswer": "Linear density μ = mass per unit length = ρ × A = ρ × πr²\nwhere ρ = density (same material for both strings), r = radius of string.\n\nFor the heavy string: μ₁ = ρπr₁²\nFor the light string: μ₂ = ρπr₂²\n\nRatio: μ₁/μ₂ = (ρπr₁²)/(ρπr₂²) = (r₁/r₂)²\n\n6.0/0.58 = (r₁/r₂)²\n10.345 = (r₁/r₂)²\nr₁/r₂ = √10.345 = 3.216 ≈ 3.22\n\nThe ratio of radii (heavy to light) = r₁ : r₂ ≈ 3.22 : 1"
   },
   {
     "subject": "Physics",
@@ -648,7 +658,8 @@
     "type": "Essay",
     "questionNumber": "4c",
     "question": "(c) The voltage from an electromagnetic wave travelling on a transmission line is given by V(x,t) = 10e^{-α} sin(4πx × 10^9 t - 30πx) where x is the distance in meters from the transmitter.\n(i) Find the frequency, wavelength and phase velocity of the wave. (2 marks)\n(ii) Find the voltage at x = 2.1 × 10^{-2} cm and t = 0.32 s. (1 mark)\n(iii) If the amplitude of the wave is measured to be 2V, find α. (1 mark)",
-    "options": []
+    "options": [],
+    "modelAnswer": "V(x,t) = 10e^{−α} sin(4π × 10⁹ t − 30πx)\nComparing with standard form V = A sin(ωt − kx):\nω = 4π × 10⁹ rad/s\nk = 30π rad/m\n\n(i) Frequency, Wavelength, Phase Velocity:\nFrequency: f = ω/(2π) = 4π × 10⁹/(2π) = 2 × 10⁹ Hz = 2 GHz\n\nWavelength: λ = 2π/k = 2π/(30π) = 1/15 m ≈ 0.0667 m = 6.67 cm\n\nPhase velocity: v = ω/k = (4π × 10⁹)/(30π) = 4 × 10⁹/30 = 1.333 × 10⁸ m/s\n\n(ii) Voltage at x = 2.1 × 10⁻² cm = 2.1 × 10⁻⁴ m, t = 0.32 s:\nArgument: (4π × 10⁹ × 0.32) − (30π × 2.1 × 10⁻⁴)\n= 4.021 × 10⁹ − 0.01979\n≈ 4.021 × 10⁹ rad\nsin(4.021 × 10⁹) — this is a rapidly oscillating function; the value depends on exact numerical evaluation. Numerically: 4.021 × 10⁹ mod 2π ≈ varies. V = 10e^{−α} × sin(value) — exact numerical answer requires the value of α.\n\n(iii) Finding α from amplitude = 2V:\nAmplitude = 10e^{−α} = 2\ne^{−α} = 0.2\n−α = ln(0.2) = −1.609\nα = 1.609 ≈ 1.61 Np/m (nepers per meter)"
   },
   {
     "subject": "Physics",
@@ -657,7 +668,8 @@
     "type": "Essay",
     "questionNumber": "5a",
     "question": "(a) Define electromotive force. (1 mark)",
-    "options": []
+    "options": [],
+    "modelAnswer": "Electromotive Force (EMF):\nThe electromotive force (EMF) of a source (e.g. battery, generator) is the work done per unit charge by the source in driving charge around the complete circuit, including through the source itself. It represents the total energy supplied per coulomb of charge by the source.\nEMF (E) = Work done / Charge = W/Q\nUnit: Volt (V) = J C⁻¹\nNote: EMF is not actually a force but an energy-per-charge quantity. It equals the terminal voltage of the source only when no current flows (open circuit). When current flows, E = V + Ir, where V is the terminal voltage and Ir is the voltage drop across internal resistance r."
   },
   {
     "subject": "Physics",
@@ -668,7 +680,8 @@
     "question": "(b) A cell of e.m.f. E and internal resistance r was connected in series with two series external resistors, A (of 8Ω) and B (of 2Ω). A high resistance voltmeter connected across A was found to read 8 volts. When another resistor C (of 8Ω) was connected parallel to A, and then across A and C, the voltmeter read 6 volts.\n(i) Draw the circuit diagrams of the two arrangements. (2 marks)\n(ii) Calculate the internal resistance of the cell. (5 marks)\n(iii) Calculate the e.m.f. of the cell. (1 mark)",
     "diagramMissing": true,
     "diagramNote": "⚠️ Diagrams missing: Circuit diagrams for the two arrangements. Please refer to your original past question paper.",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Circuit diagrams: Please refer to your original past question paper for the drawn diagrams.\nArrangement 1: E, r in series with A(8Ω) and B(2Ω). Voltmeter across A reads 8V.\nArrangement 2: C(8Ω) connected in parallel with A(8Ω). Voltmeter across A‖C reads 6V.\n\n(ii) Calculating Internal Resistance r:\n\nArrangement 1:\nVoltmeter across A = 8V, so V_A = 8V\nCurrent I₁ = V_A/R_A = 8/8 = 1 A\nVoltage across B: V_B = I₁ × R_B = 1 × 2 = 2V\nEMF equation: E = I₁(r + R_A + R_B) = 1 × (r + 8 + 2) = r + 10 ... (1)\n\nArrangement 2:\nA ‖ C: R_parallel = (8 × 8)/(8 + 8) = 64/16 = 4Ω\nVoltmeter reads 6V across the parallel combination.\nCurrent I₂ = V_parallel/R_parallel = 6/4 = 1.5 A\nEMF equation: E = I₂(r + R_parallel + R_B) = 1.5 × (r + 4 + 2) = 1.5(r + 6) ... (2)\n\nFrom (1): E = r + 10\nFrom (2): E = 1.5r + 9\nEquating: r + 10 = 1.5r + 9\n1 = 0.5r\nr = 2 Ω\n\n(iii) EMF of cell:\nE = r + 10 = 2 + 10 = 12 V"
   },
   {
     "subject": "Physics",
@@ -677,7 +690,8 @@
     "type": "Essay",
     "questionNumber": "5c",
     "question": "(c) Explain electrostatic induction and mention ONE method of producing electrostatic charges. (1 mark)",
-    "options": []
+    "options": [],
+    "modelAnswer": "Electrostatic Induction:\nElectrostatic induction is the redistribution of electric charges within or on the surface of a conductor when a charged object is brought near it, without direct contact. The charges within the conductor separate — the charges of opposite sign to the inducing charge are attracted toward the near end, while charges of the same sign are repelled to the far end. The conductor remains electrically neutral overall unless some charges are removed during the process.\n\nOne Method of Producing Electrostatic Charges:\nFriction (Triboelectric effect): When two different materials are rubbed together (e.g. a glass rod rubbed with silk, or a plastic ruler rubbed on hair), electrons are transferred from one material to the other. The material that loses electrons becomes positively charged, and the one that gains electrons becomes negatively charged. This is the simplest method of producing static electricity."
   },
   {
     "subject": "Physics",
@@ -686,7 +700,8 @@
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) What is electrostatics? (1 mark)",
-    "options": []
+    "options": [],
+    "modelAnswer": "Electrostatics is the branch of physics that deals with the study of electric charges at rest (stationary charges) and the forces, fields, and potentials associated with them. It examines phenomena arising from static electric charges, including Coulomb's law of force between charges, electric fields, electric potential, capacitance, and the behaviour of conductors and insulators in the presence of static charges. Unlike electrodynamics (which deals with moving charges), electrostatics focuses on systems where charges are not flowing."
   },
   {
     "subject": "Physics",
@@ -697,7 +712,8 @@
     "question": "(b) Explain, with the aid of a diagram, how you can charge a gold leaf electroscope positively, using the method of charging by induction. (4 marks)",
     "diagramMissing": true,
     "diagramNote": "⚠️ Diagram missing: Charging a gold leaf electroscope by induction. Please refer to your original past question paper.",
-    "options": []
+    "options": [],
+    "modelAnswer": "Charging a Gold Leaf Electroscope Positively by Induction:\n\nStep 1: Bring a negatively charged rod near (but not touching) the cap of the uncharged electroscope.\nResult: By induction, positive charges are attracted to the cap (near end) and negative charges are repelled down to the gold leaves. The leaves diverge (spread apart) due to mutual repulsion of the negative charges.\n\nStep 2: While the charged rod is still held near the cap, touch the cap briefly with your finger (or connect to earth).\nResult: The negative charges on the leaves are repelled away through your finger to the earth. Positive charges remain on the cap, attracted by the negative rod. The leaves collapse (come together) because negative charges have left.\n\nStep 3: Remove your finger first, then remove the charged rod.\nResult: The positive charges that were attracted to the cap are now free to distribute over the entire electroscope. The leaves diverge again — this time they carry positive charge.\n\nFinal state: The electroscope is positively charged by induction. No direct contact with the negative rod was made, yet the electroscope acquired a charge of opposite sign (positive). This process can be confirmed by bringing a positively charged object near — the leaves will collapse slightly; a negatively charged object will cause greater divergence."
   },
   {
     "subject": "Physics",
@@ -706,7 +722,8 @@
     "type": "Essay",
     "questionNumber": "6c",
     "question": "(c) Two charges are located on the positive x-axis of a coordinate system. Charge q₁ = 2 × 10^{-9} C is 2 cm from the origin, and charge q₂ = 3 × 10^{-9} C is 4 cm from the origin. What is the magnitude of the total force exerted by these two charges on a charge q₃ = 5 × 10^{-9} C located at the origin? (5 marks)",
-    "options": []
+    "options": [],
+    "modelAnswer": "k = 9 × 10⁹ N m² C⁻²\nq₁ = 2 × 10⁻⁹ C at r₁ = 0.02 m from origin (on +x axis)\nq₂ = 3 × 10⁻⁹ C at r₂ = 0.04 m from origin (on +x axis)\nq₃ = 5 × 10⁻⁹ C at origin\n\nAll charges are positive, so both forces on q₃ are repulsive — directed in the −x direction (away from q₁ and q₂, which are on the +x axis).\n\nForce on q₃ due to q₁:\nF₁ = kq₁q₃/r₁² = (9 × 10⁹ × 2 × 10⁻⁹ × 5 × 10⁻⁹) / (0.02)²\nF₁ = (9 × 10⁹ × 10⁻¹⁷) / (4 × 10⁻⁴)\nF₁ = (9 × 10⁻⁸) / (4 × 10⁻⁴) = 2.25 × 10⁻⁴ N (in −x direction)\n\nForce on q₃ due to q₂:\nF₂ = kq₂q₃/r₂² = (9 × 10⁹ × 3 × 10⁻⁹ × 5 × 10⁻⁹) / (0.04)²\nF₂ = (9 × 10⁹ × 1.5 × 10⁻¹⁷) / (1.6 × 10⁻³)\nF₂ = (1.35 × 10⁻⁷) / (1.6 × 10⁻³) = 8.4375 × 10⁻⁵ N (in −x direction)\n\nTotal force (both in same −x direction, so they add):\nF_total = F₁ + F₂ = 2.25 × 10⁻⁴ + 8.44 × 10⁻⁵\nF_total = 2.25 × 10⁻⁴ + 0.844 × 10⁻⁴ = 3.094 × 10⁻⁴ N ≈ 3.09 × 10⁻⁴ N\n\nThe total force on q₃ is approximately 3.09 × 10⁻⁴ N directed in the −x direction."
   },
   {
     "subject": "Physics",
@@ -715,7 +732,8 @@
     "type": "Essay",
     "questionNumber": "7a",
     "question": "(a) Calculate the total binding energy per nucleon of an alpha particle. The masses of the neutron, proton and alpha particles are respectively 1.008665 u, 1.007825 u and 4.004603 u. (3 marks)",
-    "options": []
+    "options": [],
+    "modelAnswer": "Alpha particle ⁴₂He: 2 protons + 2 neutrons\nMass of 2 protons = 2 × 1.007825 = 2.015650 u\nMass of 2 neutrons = 2 × 1.008665 = 2.017330 u\nTotal mass of free nucleons = 4.032980 u\nMass of alpha particle = 4.004603 u\nMass defect Δm = 4.032980 − 4.004603 = 0.028377 u\n\nTotal binding energy = 0.028377 × 931.5 MeV = 26.43 MeV\n\nBinding energy per nucleon = 26.43 / 4 = 6.61 MeV/nucleon\n\nNote: The mass given here (4.004603 u) differs slightly from the standard value (4.002603 u), giving a slightly lower BE/nucleon than the standard ~7.07 MeV/nucleon. The calculation uses the values as given."
   },
   {
     "subject": "Physics",
@@ -724,7 +742,8 @@
     "type": "Essay",
     "questionNumber": "7b",
     "question": "(b) (i) Radium with an atomic mass of 226, has a half-life of 800 years. For 0.5 g of radium, calculate the number of decays per second. (4 marks)\n(ii) Define half-life of a radioactive sample. (1 mark)",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Activity of 0.5 g Radium:\nA = λN = (ln2/T½) × N\n\nT½ = 800 years = 800 × 365.25 × 24 × 3600 = 2.524 × 10¹⁰ s\nλ = ln2/T½ = 0.6931/(2.524 × 10¹⁰) = 2.746 × 10⁻¹¹ s⁻¹\n\nNumber of atoms N:\nN = (m/M) × Nₐ = (0.5/226) × 6.022 × 10²³\nN = 2.213 × 10⁻³ × 6.022 × 10²³ = 1.333 × 10²¹ atoms\n\nActivity A = λN = 2.746 × 10⁻¹¹ × 1.333 × 10²¹\nA = 3.66 × 10¹⁰ decays/second ≈ 3.66 × 10¹⁰ Bq\n(≈ 0.99 Ci — close to 1 Curie, which is defined as the activity of 1 g of Ra-226 ✓)\n\n(ii) Half-Life:\nThe half-life of a radioactive sample is the time required for the number of radioactive nuclei (or the activity) of the sample to reduce to exactly half of its initial value."
   },
   {
     "subject": "Physics",
@@ -733,7 +752,8 @@
     "type": "Essay",
     "questionNumber": "7c",
     "question": "(c) Which of the following radiations: α-rays, β-rays and γ-rays\n(i) are similar to X-rays? (1 mark)\n(ii) are easily absorbed by matter? (1 mark)\n(iii) travel with the greatest speed? (1 mark)\n(iv) are similar in nature to cathode rays? (1 mark)",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Similar to X-rays: γ-rays (gamma rays)\nBoth γ-rays and X-rays are high-energy electromagnetic radiation (photons) with no mass or charge, travelling at the speed of light. They differ mainly in their origin (γ from nuclear transitions, X-rays from electron transitions or deceleration).\n\n(ii) Easily absorbed by matter: α-rays (alpha particles)\nAlpha particles are the most heavily ionizing but least penetrating radiation. They are stopped by a few centimetres of air, a sheet of paper, or the outer layers of skin — they are most easily absorbed.\n\n(iii) Travel with the greatest speed: γ-rays (and β-rays)\nGamma rays travel at the speed of light (3 × 10⁸ m/s). Beta particles (high-energy electrons) can travel close to the speed of light (relativistic speeds). Alpha particles travel much slower (typically ~5% of c). Therefore γ-rays travel with the greatest speed (speed of light).\n\n(iv) Similar in nature to cathode rays: β-rays (beta-minus particles)\nCathode rays are streams of electrons. Beta-minus (β⁻) particles are also high-energy electrons (emitted from the nucleus when a neutron converts to a proton). Both are streams of electrons and thus have the same nature."
   },
   {
     "subject": "Physics",
@@ -742,7 +762,8 @@
     "type": "Essay",
     "questionNumber": "8a",
     "question": "(a) (i) State four properties of X-rays. (2 marks)\n(ii) State four uses of X-rays. (2 marks)",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Four Properties of X-rays:\n1. They are electromagnetic waves with very short wavelengths (0.01–10 nm) and high frequencies.\n2. They travel at the speed of light (3 × 10⁸ m/s) in a vacuum and are not deflected by electric or magnetic fields.\n3. They can ionize gases, affect photographic film (cause blackening), and cause fluorescence in certain materials.\n4. They are highly penetrating — they can pass through soft tissue, wood, and thin metals, but are absorbed by denser materials like bone and lead.\n(Other valid properties: they travel in straight lines; they undergo diffraction, interference, reflection; they can cause biological damage to cells.)\n\n(ii) Four Uses of X-rays:\n1. Medical diagnosis (radiography): Used to image bones and internal organs — fractures, tumours, and lung conditions are detected.\n2. Cancer treatment (radiotherapy): High-dose X-rays can kill cancerous cells (radiation therapy).\n3. Industrial inspection (non-destructive testing): Used to detect internal flaws, cracks, or defects in metal structures, welds, and aircraft components without damaging them.\n4. Crystal structure analysis (X-ray crystallography): X-ray diffraction (Bragg's law) is used to determine the atomic structure of crystals, proteins, and DNA."
   },
   {
     "subject": "Physics",
@@ -751,6 +772,7 @@
     "type": "Essay",
     "questionNumber": "8b",
     "question": "(b) (i) Calculate the minimum wavelength of X-ray that can be produced by an electron accelerated by a potential difference of 20 kV between the electrodes. (2 marks)\n(ii) Write down the mathematical form of Bragg's law and explain each term. (2 marks)\n(iii) Determine the wavelength of the X-ray that was Bragg-diffracted by a cobalt crystal of interatomic spacing of 4.07 × 10^{-10} m, if the first order scattering angle is 24°. (2 marks)",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Minimum Wavelength of X-ray:\nAll kinetic energy of electron converts to photon energy:\neV = hc/λ_min → λ_min = hc/(eV)\n\nλ_min = (6.626 × 10⁻³⁴ × 3 × 10⁸) / (1.602 × 10⁻¹⁹ × 20 × 10³)\nλ_min = (1.988 × 10⁻²⁵) / (3.204 × 10⁻¹⁵)\nλ_min = 6.21 × 10⁻¹¹ m = 0.0621 nm\n\n(ii) Bragg's Law:\nnλ = 2d sinθ\nWhere:\nn = order of diffraction (positive integer: 1, 2, 3, ...)\nλ = wavelength of the X-rays (m)\nd = interplanar spacing of the crystal (distance between adjacent parallel planes of atoms) (m)\nθ = Bragg angle (glancing angle) — the angle between the incident X-ray beam and the crystal plane surface (not the normal)\nThe equation gives the conditions for constructive interference (diffraction maxima).\n\n(iii) Wavelength from Bragg Diffraction:\nnλ = 2d sinθ\nFirst order: n = 1, d = 4.07 × 10⁻¹⁰ m, θ = 24°\nλ = 2 × 4.07 × 10⁻¹⁰ × sin24°\nλ = 2 × 4.07 × 10⁻¹⁰ × 0.4067\nλ = 3.31 × 10⁻¹⁰ m = 0.331 nm"
   }
 ]

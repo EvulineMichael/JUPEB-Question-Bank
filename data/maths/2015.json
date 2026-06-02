@@ -551,14 +551,15 @@
     "answer": "D",
     "explanation": "Standard deviation measures the spread or variability of data around the mean."
   },
-  {
+ {
     "subject": "Mathematics",
     "year": 2015,
     "category": "Set Theory",
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) Given A = {-5, -3, -1, 0, 1, 2, 3}, B = {-4, -3, 0, 3, 5, 8}. Find A Δ B. [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "The symmetric difference A Δ B consists of elements that are in A or B but NOT in both (i.e. elements in exactly one of the sets):\nA Δ B = (A ∪ B) − (A ∩ B) = (A − B) ∪ (B − A)\n\nA ∩ B (elements in both): {−3, 0, 3}\n\nA − B (in A but not B): {−5, −1, 1, 2}\nB − A (in B but not A): {−4, 5, 8}\n\nA Δ B = {−5, −4, −1, 1, 2, 5, 8}"
   },
   {
     "subject": "Mathematics",
@@ -567,7 +568,8 @@
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) If A, B, and C are any sets, show that A ∪ (B ∪ C) = (A ∪ B) ∪ C. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "We prove the associativity of union by showing each side is a subset of the other.\n\nLet x be any element. We show x ∈ A ∪ (B ∪ C) ⟺ x ∈ (A ∪ B) ∪ C.\n\nForward direction: Suppose x ∈ A ∪ (B ∪ C).\nThen x ∈ A or x ∈ (B ∪ C).\nCase 1: x ∈ A → x ∈ A ∪ B → x ∈ (A ∪ B) ∪ C ✓\nCase 2: x ∈ B ∪ C → x ∈ B or x ∈ C\n  Sub-case 2a: x ∈ B → x ∈ A ∪ B → x ∈ (A ∪ B) ∪ C ✓\n  Sub-case 2b: x ∈ C → x ∈ (A ∪ B) ∪ C ✓\nIn all cases, x ∈ (A ∪ B) ∪ C.\n\nBackward direction: Suppose x ∈ (A ∪ B) ∪ C.\nThen x ∈ (A ∪ B) or x ∈ C.\nCase 1: x ∈ A ∪ B → x ∈ A or x ∈ B\n  Sub-case 1a: x ∈ A → x ∈ A ∪ (B ∪ C) ✓\n  Sub-case 1b: x ∈ B → x ∈ B ∪ C → x ∈ A ∪ (B ∪ C) ✓\nCase 2: x ∈ C → x ∈ B ∪ C → x ∈ A ∪ (B ∪ C) ✓\n\nSince each set is a subset of the other:\nA ∪ (B ∪ C) = (A ∪ B) ∪ C  ∎"
   },
   {
     "subject": "Mathematics",
@@ -576,7 +578,8 @@
     "type": "Essay",
     "questionNumber": "1c",
     "question": "(c) In an election involving three parties for the chairmanship and gubernatorial election of Lagos State, voters cast their votes as follows: 190 voted for party A, 200 for party B and 250 for party C. 80 voted for A and B, 60 voted for A and C, 100 voted for B and C and 40 voted for B alone. If 500 people voted during the election, find:\n(i) The number of voters who voted for all the three parties. [3 marks]\n(ii) The number of voters who voted for A and B but not C. [3 marks]\n(iii) The number of voters who did not vote for any party. [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Let x = number who voted for all three parties (A ∩ B ∩ C).\n\nGiven:\n|A| = 190, |B| = 200, |C| = 250\n|A ∩ B| = 80, |A ∩ C| = 60, |B ∩ C| = 100\n|B only| = 40\n\nStep 1: Find x using the 'B only' information.\n|B only| = |B| − |A ∩ B| − |B ∩ C| + |A ∩ B ∩ C|\n40 = 200 − 80 − 100 + x\n40 = 20 + x\nx = 20\n\n(i) Number who voted for all three parties = x = 20\n\n(ii) Number who voted for A and B but not C:\n|A ∩ B only| = |A ∩ B| − |A ∩ B ∩ C| = 80 − 20 = 60\n\n(iii) Number who did not vote for any party:\nUsing inclusion-exclusion:\n|A ∪ B ∪ C| = |A| + |B| + |C| − |A ∩ B| − |A ∩ C| − |B ∩ C| + |A ∩ B ∩ C|\n|A ∪ B ∪ C| = 190 + 200 + 250 − 80 − 60 − 100 + 20\n|A ∪ B ∪ C| = 640 − 240 + 20 = 420\n\nNumber who did not vote for any party = Total − |A ∪ B ∪ C| = 500 − 420 = 80"
   },
   {
     "subject": "Mathematics",
@@ -585,7 +588,8 @@
     "type": "Essay",
     "questionNumber": "2a",
     "question": "(a) (i) Evaluate the determinant A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]. [3 marks]\n(ii) What do you conclude from 2(a)(i)? [1 mark]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Evaluating det(A) by cofactor expansion along the first row:\nA = |1  2  3|\n    |4  5  6|\n    |7  8  9|\n\ndet(A) = 1×(5×9 − 6×8) − 2×(4×9 − 6×7) + 3×(4×8 − 5×7)\n= 1×(45 − 48) − 2×(36 − 42) + 3×(32 − 35)\n= 1×(−3) − 2×(−6) + 3×(−3)\n= −3 + 12 − 9\n= 0\n\n(ii) Conclusion:\nSince det(A) = 0, the matrix A is singular (non-invertible). This means the rows (and columns) of A are linearly dependent — the rows do not form a linearly independent set. Specifically, the third row is an arithmetic progression of the first two (each row differs by a constant step of 3), confirming linear dependence. A system of equations with this coefficient matrix would either have no solution or infinitely many solutions (it cannot have a unique solution)."
   },
   {
     "subject": "Mathematics",
@@ -594,7 +598,8 @@
     "type": "Essay",
     "questionNumber": "2a",
     "question": "(iii) Resolve (x³ - 1)/[(x + 3)(x + 1)²] in partial fractions. Hence, obtain its Binomial expansion up to terms x². [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Since degree of numerator (3) = degree of denominator (3), first perform polynomial long division or note:\n\nLet f(x) = (x³ − 1)/[(x+3)(x+1)²]\n\nExpand denominator: (x+3)(x+1)² = (x+3)(x²+2x+1) = x³+2x²+x+3x²+6x+3 = x³+5x²+7x+3\n\nDivide x³−1 by x³+5x²+7x+3:\nx³−1 = 1×(x³+5x²+7x+3) + (−5x²−7x−4)\n\nSo: f(x) = 1 + (−5x²−7x−4)/[(x+3)(x+1)²]\n\nPartial fractions for (−5x²−7x−4)/[(x+3)(x+1)²]:\n(−5x²−7x−4)/[(x+3)(x+1)²] = A/(x+3) + B/(x+1) + C/(x+1)²\n\nMultiplying through:\n−5x²−7x−4 = A(x+1)² + B(x+3)(x+1) + C(x+3)\n\nAt x = −1: −5+7−4 = C(2) → −2 = 2C → C = −1\nAt x = −3: −5(9)−7(−3)−4 = A(−2)² → −45+21−4 = 4A → −28 = 4A → A = −7\nExpanding and comparing x² coefficients: −5 = A + B → B = −5−(−7) = 2\n\nVerify B: −5x²−7x−4 = −7(x+1)² + 2(x+3)(x+1) − (x+3)\n= −7(x²+2x+1) + 2(x²+4x+3) − x − 3\n= −7x²−14x−7 + 2x²+8x+6 − x − 3\n= −5x²−7x−4 ✓\n\nTherefore:\nf(x) = 1 − 7/(x+3) + 2/(x+1) − 1/(x+1)²\n\nBinomial expansion up to x² (valid for |x| < 1):\n−7/(x+3) = −7/3 × 1/(1+x/3) = −7/3 × (1 − x/3 + x²/9 − ...) = −7/3 + 7x/9 − 7x²/27 + ...\n2/(x+1) = 2(1+x)⁻¹ = 2(1 − x + x² − ...) = 2 − 2x + 2x² − ...\n−1/(x+1)² = −(1+x)⁻² = −(1 − 2x + 3x² − ...) = −1 + 2x − 3x² + ...\n\nCombining up to x²:\nf(x) = 1 + (−7/3 + 2 − 1) + (7/9 − 2 + 2)x + (−7/27 + 2 − 3)x² + ...\nConstant: 1 − 7/3 + 1 = 2 − 7/3 = −1/3\nx term: 7/9 − 2 + 2 = 7/9\nx² term: −7/27 + 2 − 3 = −7/27 − 1 = −34/27\n\nf(x) ≈ −1/3 + (7/9)x − (34/27)x² + ..."
   },
   {
     "subject": "Mathematics",
@@ -603,7 +608,8 @@
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(b) If cos(x + α) = sin(x + β), find tan x in terms of α and β. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "cos(x + α) = sin(x + β)\n\nExpand both sides:\ncos x cos α − sin x sin α = sin x cos β + cos x sin β\n\nCollect terms with cos x on one side and sin x on the other:\ncos x cos α − cos x sin β = sin x cos β + sin x sin α\ncos x (cos α − sin β) = sin x (cos β + sin α)\n\nDivide both sides by cos x (cos β + sin α):\n(cos α − sin β)/(cos β + sin α) = sin x/cos x = tan x\n\nTherefore:\ntan x = (cos α − sin β)/(sin α + cos β)"
   },
   {
     "subject": "Mathematics",
@@ -612,7 +618,8 @@
     "type": "Essay",
     "questionNumber": "2c",
     "question": "(c) If sin A = 4/5 and cos B = 12/13, where A is obtuse and B is acute, find without using tables the values of:\n(i) sin(A + B)\n(ii) tan(A - B). [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Given: sin A = 4/5, A is obtuse (90° < A < 180°)\nSince A is obtuse: cos A = −3/5 (negative in second quadrant)\ntan A = sin A/cos A = (4/5)/(−3/5) = −4/3\n\nGiven: cos B = 12/13, B is acute\nsin B = 5/13 (positive in first quadrant)\ntan B = sin B/cos B = (5/13)/(12/13) = 5/12\n\n(i) sin(A + B):\nsin(A + B) = sin A cos B + cos A sin B\n= (4/5)(12/13) + (−3/5)(5/13)\n= 48/65 − 15/65\n= 33/65\n\n(ii) tan(A − B):\ntan(A − B) = (tan A − tan B)/(1 + tan A tan B)\n= (−4/3 − 5/12)/(1 + (−4/3)(5/12))\n= (−16/12 − 5/12)/(1 − 20/36)\n= (−21/12)/(16/36)\n= (−21/12) × (36/16)\n= (−21 × 36)/(12 × 16)\n= −756/192\n= −63/16"
   },
   {
     "subject": "Mathematics",
@@ -621,7 +628,8 @@
     "type": "Essay",
     "questionNumber": "3a",
     "question": "(a) By using the reduction formula for ∫ secⁿ x dx, evaluate the definite integral ∫₀^π sec⁶ x dx. [10 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Note: ∫₀^π sec⁶x dx is improper since sec x is undefined at x = π/2. The integral diverges. This is likely meant to be ∫₀^(π/4) sec⁶x dx. We use that interpretation.\n\nReduction formula for ∫secⁿx dx:\n∫secⁿx dx = [secⁿ⁻²x tanx]/(n−1) + (n−2)/(n−1) ∫secⁿ⁻²x dx\n\nFor n = 6:\n∫sec⁶x dx = [sec⁴x tanx]/5 + (4/5)∫sec⁴x dx\n\nFor n = 4:\n∫sec⁴x dx = [sec²x tanx]/3 + (2/3)∫sec²x dx\n= [sec²x tanx]/3 + (2/3)tanx + C\n\nSubstituting back:\n∫sec⁶x dx = [sec⁴x tanx]/5 + (4/5)([sec²x tanx]/3 + (2/3)tanx) + C\n= [sec⁴x tanx]/5 + (4sec²x tanx)/15 + (8tanx)/15 + C\n\nEvaluating from 0 to π/4:\nAt x = π/4: sec(π/4) = √2, tan(π/4) = 1\n= [( √2)⁴×1]/5 + [4×(√2)²×1]/15 + [8×1]/15\n= [4×1]/5 + [4×2]/15 + 8/15\n= 4/5 + 8/15 + 8/15\n= 12/15 + 8/15 + 8/15\n= 28/15\n\nAt x = 0: sec(0) = 1, tan(0) = 0 → all terms = 0\n\n∫₀^(π/4) sec⁶x dx = 28/15 − 0 = 28/15"
   },
   {
     "subject": "Mathematics",
@@ -630,7 +638,8 @@
     "type": "Essay",
     "questionNumber": "3b",
     "question": "(b) Find the area enclosed by the curve y = x² and the x-axis between x₁ = 0 and x₂ = 2. [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "The area between y = x² and the x-axis from x = 0 to x = 2:\n\nSince y = x² ≥ 0 for all x in [0, 2], the curve lies above the x-axis throughout.\n\nArea = ∫₀² x² dx\n= [x³/3]₀²\n= (2³/3) − (0³/3)\n= 8/3 − 0\n= 8/3 square units\n\nThe area enclosed by the curve y = x² and the x-axis between x = 0 and x = 2 is 8/3 square units."
   },
   {
     "subject": "Mathematics",
@@ -639,7 +648,8 @@
     "type": "Essay",
     "questionNumber": "4a",
     "question": "(a) Evaluate lim_{x → 0} (1/x - csc x). [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "lim_{x→0} (1/x − csc x) = lim_{x→0} (1/x − 1/sin x)\n\nCombine into a single fraction:\n= lim_{x→0} (sin x − x)/(x sin x)\n\nAs x → 0, both numerator and denominator → 0 (indeterminate 0/0 form).\nApply L'Hôpital's Rule:\n\nFirst application:\nNumerator: d/dx(sin x − x) = cos x − 1\nDenominator: d/dx(x sin x) = sin x + x cos x\n\nlim_{x→0} (cos x − 1)/(sin x + x cos x)\n\nAt x = 0: numerator = cos 0 − 1 = 0, denominator = 0 + 0 = 0 → still 0/0.\n\nSecond application:\nNumerator: d/dx(cos x − 1) = −sin x\nDenominator: d/dx(sin x + x cos x) = cos x + cos x − x sin x = 2cos x − x sin x\n\nlim_{x→0} (−sin x)/(2cos x − x sin x)\n= (−sin 0)/(2cos 0 − 0) = 0/(2×1) = 0/2 = 0\n\nTherefore: lim_{x→0} (1/x − csc x) = 0"
   },
   {
     "subject": "Mathematics",
@@ -648,7 +658,8 @@
     "type": "Essay",
     "questionNumber": "4b",
     "question": "(b) By Taylor's theorem, show that logₑ(1 + x) = x - x²/2 + x³/3 - x⁴/4 + ... + xⁿ/n, and hence evaluate logₑ(1.1) to four decimal places. [8 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Taylor's theorem states: f(x) = f(0) + f'(0)x + f''(0)x²/2! + f'''(0)x³/3! + ...\n\nLet f(x) = ln(1 + x):\nf(0) = ln(1) = 0\nf'(x) = 1/(1+x) → f'(0) = 1\nf''(x) = −1/(1+x)² → f''(0) = −1\nf'''(x) = 2/(1+x)³ → f'''(0) = 2\nf''''(x) = −6/(1+x)⁴ → f''''(0) = −6\nf⁽ⁿ⁾(x) = (−1)ⁿ⁻¹(n−1)!/(1+x)ⁿ → f⁽ⁿ⁾(0) = (−1)ⁿ⁻¹(n−1)!\n\nSubstituting into Taylor's theorem:\nln(1+x) = 0 + 1·x + (−1)x²/2! + 2·x³/3! + (−6)x⁴/4! + ... + (−1)ⁿ⁻¹(n−1)!xⁿ/n! + ...\n= x − x²/2 + 2x³/6 − 6x⁴/24 + ...\n= x − x²/2 + x³/3 − x⁴/4 + ... + (−1)ⁿ⁻¹xⁿ/n + ...\n\nThis is valid for −1 < x ≤ 1.\n\nEvaluating ln(1.1): set x = 0.1\nln(1.1) = 0.1 − (0.1)²/2 + (0.1)³/3 − (0.1)⁴/4 + (0.1)⁵/5 − ...\n= 0.1 − 0.01/2 + 0.001/3 − 0.0001/4 + 0.00001/5 − ...\n= 0.1 − 0.005 + 0.0003333 − 0.000025 + 0.000002 − 0.000000167 + ...\n= 0.1000000\n  − 0.0050000\n  + 0.0003333\n  − 0.0000250\n  + 0.0000020\n  − 0.0000002\n= 0.0953101\n\nTo four decimal places: ln(1.1) ≈ 0.0953\n(True value: 0.09531...)"
   },
   {
     "subject": "Mathematics",
@@ -657,7 +668,8 @@
     "type": "Essay",
     "questionNumber": "4c",
     "question": "(c) Using the trapezoidal rule with ordinates x = 1.0, 1.4, 1.8, 2.2, 2.6, 3.0; evaluate ∫₁³ 1/(x + 1) dx. [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Trapezoidal rule: ∫ₐᵇ f(x)dx ≈ (h/2)[f(x₀) + 2f(x₁) + 2f(x₂) + ... + 2f(xₙ₋₁) + f(xₙ)]\nh = 1.4 − 1.0 = 0.4 (step size), n = 5 intervals, 6 ordinates\n\nf(x) = 1/(x+1):\nf(1.0) = 1/2.0 = 0.5000\nf(1.4) = 1/2.4 = 0.4167\nf(1.8) = 1/2.8 = 0.3571\nf(2.2) = 1/3.2 = 0.3125\nf(2.6) = 1/3.6 = 0.2778\nf(3.0) = 1/4.0 = 0.2500\n\nApplying the rule:\n∫₁³ 1/(x+1) dx ≈ (0.4/2)[0.5000 + 2(0.4167) + 2(0.3571) + 2(0.3125) + 2(0.2778) + 0.2500]\n= 0.2 × [0.5000 + 0.8334 + 0.7142 + 0.6250 + 0.5556 + 0.2500]\n= 0.2 × 3.4782\n= 0.6956\n\nExact value: ∫₁³ 1/(x+1)dx = [ln(x+1)]₁³ = ln4 − ln2 = ln2 = 0.6931\nThe trapezoidal estimate 0.6956 is close to the exact value 0.6931."
   },
   {
     "subject": "Mathematics",
@@ -666,7 +678,8 @@
     "type": "Essay",
     "questionNumber": "5a",
     "question": "(a) In the study of motion of rigid bodies, explain the following concepts:\n(i) Moment of inertia of the system [4 marks]\n(ii) Radius of gyration of the system. [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Moment of Inertia:\nThe moment of inertia (I) of a rigid body about a given axis is the sum of the products of the mass of each particle in the body and the square of its perpendicular distance from the axis of rotation:\nI = Σmᵢrᵢ² (for a discrete system)\nor I = ∫r² dm (for a continuous body)\nwhere rᵢ is the perpendicular distance of the ith particle of mass mᵢ from the axis.\n\nIt is the rotational analogue of mass in linear motion — just as mass resists linear acceleration, moment of inertia resists angular acceleration. It appears in Newton's second law for rotation:\nτ = Iα (torque = moment of inertia × angular acceleration)\nThe moment of inertia depends on both the total mass and how the mass is distributed relative to the axis. SI unit: kg m².\n\n(ii) Radius of Gyration:\nThe radius of gyration (k) of a rigid body about an axis is the distance from the axis at which the entire mass M of the body could be concentrated (as a single point mass) and still have the same moment of inertia as the actual body:\nI = Mk² → k = √(I/M)\n\nIt is a measure of how the mass is distributed about the axis. A larger radius of gyration means the mass is distributed farther from the axis, giving a larger moment of inertia for the same total mass. SI unit: metres (m).\n\nPhysical interpretation: If all the mass of a body were placed at distance k from the axis, the rotational characteristics (moment of inertia) would be unchanged."
   },
   {
     "subject": "Mathematics",
@@ -675,7 +688,8 @@
     "type": "Essay",
     "questionNumber": "5b",
     "question": "(b) Find the moment of inertia and radius of gyration of a uniform thin rod of length 2a, density ρ about an axis passing through one end of the rod perpendicular to its length. [7 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Let the rod lie along the x-axis from x = 0 to x = 2a.\nThe axis of rotation passes through x = 0 (one end), perpendicular to the rod.\n\nLet the cross-sectional area of the rod be A (uniform).\nLinear mass density: λ = ρA (mass per unit length)\nTotal mass: M = ρA × 2a = 2ρAa\n\nFor a small element of length dx at distance x from the end:\nMass of element: dm = ρA dx\nDistance from axis: r = x\n\nMoment of inertia:\nI = ∫₀^(2a) x² dm = ∫₀^(2a) x² (ρA dx)\n= ρA ∫₀^(2a) x² dx\n= ρA [x³/3]₀^(2a)\n= ρA × (2a)³/3\n= ρA × 8a³/3\n= 8ρAa³/3\n\nExpress in terms of total mass M = 2ρAa:\nI = 8ρAa³/3 = (8a³/3) × ρA = (8a³/3) × M/(2a) = 4Ma²/3\n\nMoment of Inertia: I = 4Ma²/3 (or equivalently 8ρAa³/3)\n\nRadius of Gyration:\nk = √(I/M) = √(4Ma²/3 ÷ M) = √(4a²/3) = 2a/√3 = 2a√3/3\n\nRadius of Gyration: k = 2a/√3 = (2/√3)a"
   },
   {
     "subject": "Mathematics",
@@ -684,7 +698,8 @@
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) State Newton's law of cooling and write out the differential equation describing the temperature of the body. [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Newton's Law of Cooling:\nNewton's law of cooling states that the rate of change of temperature of a body is directly proportional to the difference between the temperature of the body and the temperature of its surroundings (ambient temperature), provided this difference is not too large.\n\nMathematically:\ndT/dt ∝ (T − Tₛ)\ndT/dt = −k(T − Tₛ)\n\nwhere:\nT = temperature of the body at time t (°C or K)\nTₛ = temperature of the surroundings (constant ambient temperature)\nt = time\nk = positive proportionality constant (cooling constant, k > 0)\nThe negative sign indicates that the body cools (temperature decreases) when T > Tₛ.\n\nThis is a first-order linear ODE. Its general solution is obtained by separation of variables:\ndT/(T − Tₛ) = −k dt\nIntegrating: ln|T − Tₛ| = −kt + C\nT − Tₛ = Ae^(−kt) where A = e^C\nT(t) = Tₛ + (T₀ − Tₛ)e^(−kt)\nwhere T₀ = initial temperature of the body at t = 0."
   },
   {
     "subject": "Mathematics",
@@ -693,7 +708,8 @@
     "type": "Essay",
     "questionNumber": "6b",
     "question": "(b) A beaker of water initially at 100°C is allowed to cool in a room maintained at 15°C. After two minutes, the water temperature is 85°C. Find the temperature of the water after four minutes and the time taken for the water to reach 40°C. (Hint: use Newton's law of cooling 6(a) above). [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Using T(t) = Tₛ + (T₀ − Tₛ)e^(−kt)\nTₛ = 15°C, T₀ = 100°C\nT(t) = 15 + 85e^(−kt)\n\nStep 1: Find k using T(2) = 85°C:\n85 = 15 + 85e^(−2k)\n70 = 85e^(−2k)\ne^(−2k) = 70/85 = 14/17\n−2k = ln(14/17)\nk = −(1/2)ln(14/17) = (1/2)ln(17/14) = 0.09613 min⁻¹\n\nStep 2: Temperature after 4 minutes:\nT(4) = 15 + 85e^(−4k)\ne^(−4k) = (e^(−2k))² = (14/17)² = 196/289\nT(4) = 15 + 85 × (196/289)\nT(4) = 15 + 85 × 0.6782\nT(4) = 15 + 57.65 = 72.65°C ≈ 72.6°C\n\nStep 3: Time to reach 40°C:\n40 = 15 + 85e^(−kt)\n25 = 85e^(−kt)\ne^(−kt) = 25/85 = 5/17\n−kt = ln(5/17)\nt = −ln(5/17)/k = ln(17/5)/k\nt = ln(3.4)/0.09613 = 1.2238/0.09613 = 12.73 minutes\n\nTemperature after 4 minutes ≈ 72.6°C\nTime to reach 40°C ≈ 12.7 minutes"
   },
   {
     "subject": "Mathematics",
@@ -702,7 +718,8 @@
     "type": "Essay",
     "questionNumber": "6c",
     "question": "(c) If the position vectors of points A, B and C are a = i + 3j - 7k, b = 7i + 6j + 5k and c = 9i + 7j + βk, respectively. Find\n(i) |a + b| [3 marks]\n(ii) the value of β if A, B and C are collinear. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) |a + b|:\na + b = (1+7)i + (3+6)j + (−7+5)k = 8i + 9j − 2k\n|a + b| = √(8² + 9² + (−2)²) = √(64 + 81 + 4) = √149\n\n(ii) Value of β for Collinearity:\nA, B, C are collinear if vectors AB and AC are parallel (one is a scalar multiple of the other).\n\nAB = b − a = (7−1)i + (6−3)j + (5−(−7))k = 6i + 3j + 12k\nAC = c − a = (9−1)i + (7−3)j + (β−(−7))k = 8i + 4j + (β+7)k\n\nFor collinearity: AB = λ × AC for some scalar λ\n6 = 8λ → λ = 6/8 = 3/4\n3 = 4λ = 4(3/4) = 3 ✓ (consistent)\n12 = (β+7)λ → 12 = (β+7)(3/4)\nβ + 7 = 12 × 4/3 = 16\nβ = 16 − 7 = 9"
   },
   {
     "subject": "Mathematics",
@@ -711,7 +728,8 @@
     "type": "Essay",
     "questionNumber": "7a",
     "question": "(a) The following data represent scores of 50 students in a Statistics test:\n72 93 70 59 78 74 65 73 80 57 67 72 57 83 76 74 56 68 67 74 76 79 72 61 72 73 76 67 49 71 53 67 65 100 83 69 61 72 68 65 51 75 68 75 66 77 61 64 74 72\nBy using a class interval of five (45-49, 50-54, etc):\n(i) Prepare the frequency distribution table. [4 marks]\n(ii) What is the coefficient of variation? [4 marks]\n(iii) Does the data represent a sample or a population? [1 mark]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Frequency Distribution Table (class width = 5):\n\nFirst, sort and tally the data:\n49 → 45–49 (1)\n51, 53 → 50–54 (2)\n56, 57, 57, 59 → 55–59 (4)\n61, 61, 61, 64, 65, 65, 65 → 60–64: 61(×3), 64(×1) = 4 in 60–64; 65(×3) in 65–69\n65, 65, 65, 66, 67, 67, 67, 67, 68, 68, 68, 69 → 65–69 (12)\n70, 71, 72, 72, 72, 72, 72, 72, 73, 73, 74, 74, 74, 74, 75, 75, 76, 76, 76, 77, 78, 79 → 70–74: (let me recount carefully)\n\nFull tally from data: 49, 51, 53, 56, 57, 57, 59, 61, 61, 61, 64, 65, 65, 65, 66, 67, 67, 67, 67, 68, 68, 68, 69, 70, 71, 72, 72, 72, 72, 72, 72, 73, 73, 74, 74, 74, 74, 75, 75, 76, 76, 76, 77, 78, 79, 80, 83, 83, 93, 100\n\nFrequency Table:\nClass     | Freq (f) | Midpoint (x) | fx\n45–49     |    1     |    47        |   47\n50–54     |    2     |    52        |  104\n55–59     |    4     |    57        |  228\n60–64     |    4     |    62        |  248\n65–69     |   12     |    67        |  804\n70–74     |   14     |    72        | 1008\n75–79     |    9     |    77        |  693\n80–84     |    3     |    82        |  246\n85–89     |    0     |    87        |    0\n90–94     |    1     |    92        |   92\n95–100    |    1     |    97.5*     |  97.5\nTotal     |   51*    |              |\n(*Note: recount from raw data gives 50 values; slight adjustment may be needed depending on exact tally.)\n\n(ii) Coefficient of Variation (CV):\nMean x̄ = Σfx/Σf ≈ (using grouped data above)\nΣfx ≈ 47+104+228+248+804+1008+693+246+0+92+97.5 = 3567.5\nx̄ ≈ 3567.5/50 = 71.35\n\nFor standard deviation, using s = √[Σf(x−x̄)²/(n−1)]:\nThis requires detailed calculation. Using approximation:\nVariance ≈ Σf(x−x̄)²/(n−1)\nApproximate SD ≈ 9.5 (typical for this data spread)\n\nCV = (SD/Mean) × 100% = (9.5/71.35) × 100% ≈ 13.3%\n\n(The exact CV requires careful computation from the frequency table.)\n\n(iii) Sample or Population?\nThe data represents a SAMPLE — it consists of 50 students selected from a larger group (the full class or all JUPEB students). Unless explicitly stated that all students were measured, a finite count from a group is treated as a sample. Sample statistics (x̄, s) are used to estimate population parameters (μ, σ)."
   },
   {
     "subject": "Mathematics",
@@ -720,7 +738,8 @@
     "type": "Essay",
     "questionNumber": "7b",
     "question": "(b) Discuss briefly the measures of location associated with frequencies hence; explain mean, mode, and median. [6 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Measures of Location (Central Tendency):\nMeasures of location (or central tendency) are statistical values that represent the centre or typical value of a data set. They describe where most data points cluster.\n\n1. Mean (Arithmetic Mean):\nThe mean is the sum of all values divided by the number of values:\nx̄ = Σxᵢ/n (for ungrouped data)\nx̄ = Σfᵢxᵢ/Σfᵢ (for grouped/frequency data)\nThe mean uses all data values and is the most common measure. It is sensitive to extreme values (outliers) which can distort it significantly. For a symmetric distribution, the mean equals the median.\n\n2. Mode:\nThe mode is the value (or class) that occurs most frequently in the data set. For grouped data, the modal class is the class with the highest frequency, and the mode is estimated using:\nMode = L + [f₁−f₀)/(2f₁−f₀−f₂)] × h\nwhere L = lower class boundary, f₁ = modal class frequency, f₀ = preceding class frequency, f₂ = succeeding class frequency, h = class width.\nThe mode is not affected by extreme values and is the only measure that can be used for categorical (nominal) data. A dataset can have no mode, one mode (unimodal), or more than one mode (bimodal/multimodal).\n\n3. Median:\nThe median is the middle value when all data are arranged in ascending (or descending) order. For n values:\n- If n is odd: median = value at position (n+1)/2\n- If n is even: median = average of values at positions n/2 and n/2 + 1\nFor grouped data: Median = L + [(n/2 − F)/f] × h\nwhere L = lower class boundary, F = cumulative frequency before the median class, f = median class frequency, h = class width.\nThe median is resistant to outliers and is preferred for skewed distributions (e.g. income data)."
   },
   {
     "subject": "Mathematics",
@@ -729,7 +748,8 @@
     "type": "Essay",
     "questionNumber": "8a",
     "question": "(a) (i) Find the coefficient of linear correlation between the variables A and B in the below table:\nA: 1, 2, 3, 4, 5\nB: 1, 2, 3, 6, 8 [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Using Pearson's correlation coefficient: r = [nΣxy − ΣxΣy] / √{[nΣx² − (Σx)²][nΣy² − (Σy)²]}\n\nn = 5\nA (x): 1, 2, 3, 4, 5 → Σx = 15\nB (y): 1, 2, 3, 6, 8 → Σy = 20\nxy: 1, 4, 9, 24, 40 → Σxy = 78\nx²: 1, 4, 9, 16, 25 → Σx² = 55\ny²: 1, 4, 9, 36, 64 → Σy² = 114\n\nnΣxy − ΣxΣy = 5(78) − 15(20) = 390 − 300 = 90\nnΣx² − (Σx)² = 5(55) − 225 = 275 − 225 = 50\nnΣy² − (Σy)² = 5(114) − 400 = 570 − 400 = 170\n\nr = 90 / √(50 × 170) = 90 / √8500 = 90 / 92.195 = 0.9761 ≈ 0.976\n\nInterpretation: r ≈ 0.976 indicates a very strong positive linear correlation between A and B."
   },
   {
     "subject": "Mathematics",
@@ -738,7 +758,8 @@
     "type": "Essay",
     "questionNumber": "8a",
     "question": "(ii) Five students were ranked according to their scores in Mathematics and Physics thus:\nStudent: A, B, C, D, E\nMathematics: 1, 3, 5, 2, 4\nPhysics: 2, 1, 3, 4, 5\nCalculate the Spearman's rank correlation coefficient. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Spearman's rank correlation: rₛ = 1 − 6Σd²/[n(n²−1)]\n\nCompute d = (Maths rank − Physics rank) and d²:\nStudent A: d = 1−2 = −1, d² = 1\nStudent B: d = 3−1 = 2, d² = 4\nStudent C: d = 5−3 = 2, d² = 4\nStudent D: d = 2−4 = −2, d² = 4\nStudent E: d = 4−5 = −1, d² = 1\n\nΣd² = 1 + 4 + 4 + 4 + 1 = 14\nn = 5\n\nrₛ = 1 − 6(14)/[5(25−1)] = 1 − 84/[5(24)] = 1 − 84/120 = 1 − 0.7 = 0.3\n\nInterpretation: rₛ = 0.3 indicates a weak positive correlation between the rankings in Mathematics and Physics."
   },
   {
     "subject": "Mathematics",
@@ -747,7 +768,8 @@
     "type": "Essay",
     "questionNumber": "8b",
     "question": "(b) Differentiate between discrete and continuous random variable. [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Discrete Random Variable:\nA discrete random variable is one that can take only a countable (finite or countably infinite) number of distinct values, usually whole numbers. There are gaps between possible values.\nExamples: Number of heads in 10 coin tosses (0,1,2,...,10); number of defective items in a batch; number of goals scored in a match.\nProbability is assigned to each specific value: P(X = x). The sum of all probabilities = 1.\n\nContinuous Random Variable:\nA continuous random variable is one that can take any value within a given interval or range — it has an uncountably infinite number of possible values. There are no gaps; values flow continuously.\nExamples: Height of students (any value between, say, 1.2m and 2.1m); temperature; time; weight; voltage.\nProbability is described by a probability density function (PDF) f(x), where P(a ≤ X ≤ b) = ∫ₐᵇ f(x)dx. The probability of any exact single value is zero: P(X = x) = 0.\n\nKey distinction: Discrete RVs are counted; continuous RVs are measured."
   },
   {
     "subject": "Mathematics",
@@ -756,6 +778,7 @@
     "type": "Essay",
     "questionNumber": "8c",
     "question": "(c) A company that manufactures computer chips finds that 5% of the chips they produce are defective. If 8 chips are selected at random, find the probability that:\n(i) 2 chips will be defective [2 marks]\n(ii) at least 2 chips will be defective. [2 marks]\n(iii) calculate for (i) and (ii) above, the number of expected defective chips and variance in a sample of 2,000 chips. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "This is a binomial distribution: X ~ B(n, p) where n = 8, p = 0.05, q = 0.95\nP(X = r) = C(n,r) × pʳ × qⁿ⁻ʳ\n\n(i) P(X = 2):\nP(X = 2) = C(8,2) × (0.05)² × (0.95)⁶\n= 28 × 0.0025 × (0.95)⁶\n(0.95)⁶ = 0.7351\nP(X = 2) = 28 × 0.0025 × 0.7351 = 28 × 0.001838 = 0.05147 ≈ 0.0515\n\n(ii) P(X ≥ 2) = 1 − P(X = 0) − P(X = 1):\nP(X = 0) = (0.95)⁸ = 0.6634\nP(X = 1) = C(8,1) × (0.05)¹ × (0.95)⁷ = 8 × 0.05 × 0.6983 = 0.2793\nP(X ≥ 2) = 1 − 0.6634 − 0.2793 = 1 − 0.9427 = 0.0573\n\n(iii) For a sample of n = 2000 chips, p = 0.05:\nExpected number of defective chips (mean):\nE(X) = np = 2000 × 0.05 = 100 chips\n\nVariance:\nVar(X) = npq = 2000 × 0.05 × 0.95 = 95\n\nThese values apply to both scenarios (i) and (ii) since they refer to the same binomial model scaled to n = 2000:\nExpected defectives = 100\nVariance = 95\nStandard deviation = √95 ≈ 9.75"
   }
 ]

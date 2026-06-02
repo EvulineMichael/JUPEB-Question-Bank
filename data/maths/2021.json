@@ -558,7 +558,8 @@
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) (i) Consider two lines L₁ and L₂ that are perpendicular to each other. Show that the gradient m₂ = -1/m₁ or m₁ = -1/m₂. [3 marks]\n(ii) Find the equation of the straight line through (1, -2) which is perpendicular to 3x - 2y = 6. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Proof that perpendicular gradients satisfy m₁m₂ = −1:\nLet L₁ have gradient m₁ making angle θ₁ with the positive x-axis, and L₂ have gradient m₂ making angle θ₂.\nIf L₁ ⊥ L₂, then θ₂ = θ₁ + 90° (or θ₁ − 90°).\n\nUsing the formula for the angle between two lines:\ntan(angle between lines) = |(m₁ − m₂)/(1 + m₁m₂)|\n\nFor perpendicular lines, the angle between them = 90°, so:\ntan90° → undefined, which means the denominator = 0:\n1 + m₁m₂ = 0\nm₁m₂ = −1\n\nTherefore: m₂ = −1/m₁ or equivalently m₁ = −1/m₂. ∎\n\nAlternative (vector approach): If direction vectors of L₁ and L₂ are (1, m₁) and (1, m₂), perpendicularity requires their dot product = 0:\n(1)(1) + m₁m₂ = 0 → m₁m₂ = −1, giving m₂ = −1/m₁. ∎\n\n(ii) Equation of line through (1, −2) perpendicular to 3x − 2y = 6:\nFrom 3x − 2y = 6 → y = (3/2)x − 3, so m₁ = 3/2\nPerpendicular gradient: m₂ = −1/m₁ = −1/(3/2) = −2/3\n\nUsing point-slope form through (1, −2):\ny − (−2) = −(2/3)(x − 1)\ny + 2 = −(2/3)x + 2/3\ny = −(2/3)x + 2/3 − 2\ny = −(2/3)x − 4/3\n\nMultiplying by 3: 3y = −2x − 4\n2x + 3y + 4 = 0"
   },
   {
     "subject": "Mathematics",
@@ -567,7 +568,8 @@
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) (i) Find the centre and radius of the circle x² + y² + 3x - 2y + 2 = 0. [3 marks]\n(ii) If the ends of a diameter of a circle have coordinates (5, 4) and (-3, 6), find the equation of the circle. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Centre and radius of x² + y² + 3x − 2y + 2 = 0:\nComplete the square:\n(x² + 3x + 9/4) + (y² − 2y + 1) = −2 + 9/4 + 1\n(x + 3/2)² + (y − 1)² = −2 + 9/4 + 1 = −8/4 + 9/4 + 4/4 = 5/4\n\nCentre = (−3/2, 1)\nRadius r = √(5/4) = √5/2\n\n(ii) Equation of circle with diameter endpoints (5, 4) and (−3, 6):\nCentre = midpoint of diameter = ((5+(−3))/2, (4+6)/2) = (1, 5)\nRadius = half the diameter length:\nDiameter = √((5−(−3))² + (4−6)²) = √(64+4) = √68 = 2√17\nRadius = √17\n\nEquation: (x−1)² + (y−5)² = 17\nExpanding: x² − 2x + 1 + y² − 10y + 25 = 17\nx² + y² − 2x − 10y + 9 = 0"
   },
   {
     "subject": "Mathematics",
@@ -576,7 +578,8 @@
     "type": "Essay",
     "questionNumber": "1c",
     "question": "(c) Find the equation of the tangent to the circle x² + y² + 2x - 3y = -1 at the point (3, 4). [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Circle: x² + y² + 2x − 3y + 1 = 0\nCentre: complete the square → (x+1)² + (y−3/2)² = 1 + 9/4 − 1 = 9/4\nCentre C = (−1, 3/2)\n\nThe tangent at a point P on a circle is perpendicular to the radius CP.\nGradient of radius CP from (−1, 3/2) to (3, 4):\nm_r = (4 − 3/2)/(3 − (−1)) = (5/2)/4 = 5/8\n\nGradient of tangent: m_t = −1/m_r = −8/5\n\nTangent at (3, 4):\ny − 4 = −(8/5)(x − 3)\n5(y − 4) = −8(x − 3)\n5y − 20 = −8x + 24\n8x + 5y = 44\n\nAlternatively, using the formula: the equation of tangent to x² + y² + Dx + Ey + F = 0 at (x₁, y₁):\nxx₁ + yy₁ + D(x+x₁)/2 + E(y+y₁)/2 + F = 0\nx(3) + y(4) + 2(x+3)/2 − 3(y+4)/2 + 1 = 0\n3x + 4y + (x+3) − (3y+12)/2 + 1 = 0\nMultiply by 2: 6x + 8y + 2x + 6 − 3y − 12 + 2 = 0\n8x + 5y − 4 = 0\n8x + 5y = 4\n\nNote: Both methods should give the same result. Using the formula:\nxx₁ + yy₁ + (x+x₁) − (3/2)(y+y₁) + 1 = 0\n3x + 4y + (x+3) − (3/2)(y+4) + 1 = 0\n3x + 4y + x + 3 − 3y/2 − 6 + 1 = 0\n4x + 4y − 3y/2 − 2 = 0\nMultiply by 2: 8x + 8y − 3y − 4 = 0\n8x + 5y = 4\n\nVerify (3,4): 8(3) + 5(4) = 24 + 20 = 44 ≠ 4. Using gradient method: 8(3) + 5(4) = 44. The tangent equation is 8x + 5y = 44."
   },
   {
     "subject": "Mathematics",
@@ -585,7 +588,8 @@
     "type": "Essay",
     "questionNumber": "2a",
     "question": "(a) For what values of x is |x - 1| > 2|x + 3|? [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "|x − 1| > 2|x + 3|\n\nSquare both sides (valid since both sides are non-negative):\n(x−1)² > 4(x+3)²\nx² − 2x + 1 > 4(x² + 6x + 9)\nx² − 2x + 1 > 4x² + 24x + 36\n0 > 3x² + 26x + 35\n3x² + 26x + 35 < 0\n\nSolve 3x² + 26x + 35 = 0:\nDiscriminant = 676 − 420 = 256\nx = (−26 ± 16)/6\nx₁ = (−26 + 16)/6 = −10/6 = −5/3\nx₂ = (−26 − 16)/6 = −42/6 = −7\n\nSince the parabola opens upward (coefficient of x² is +3 > 0), the expression is negative between the roots:\n3x² + 26x + 35 < 0 for −7 < x < −5/3\n\nTherefore: |x − 1| > 2|x + 3| for x ∈ (−7, −5/3)\n\nVerification at x = −3 (inside interval): |−4| > 2|0| → 4 > 0 ✓\nAt x = −1 (outside): |−2| > 2|2| → 2 > 4 ✗ ✓"
   },
   {
     "subject": "Mathematics",
@@ -594,7 +598,8 @@
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(b) (i) Write 1 + i√3 and 1 - i√3 in trigonometric form and simplify (1 + i√3)⁹ + (1 - i√3)⁹ in x + iy form. [3 marks]\n(ii) Find tan(7π/12) using the known values of tangent of π/3 and π/4. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Trigonometric (polar) form:\nFor z = 1 + i√3:\nr = √(1² + (√3)²) = √(1+3) = 2\nθ = arctan(√3/1) = π/3\nz = 1 + i√3 = 2(cos π/3 + i sin π/3) = 2e^{iπ/3}\n\nFor z̄ = 1 − i√3:\nr = 2, θ = −π/3\nz̄ = 2(cos π/3 − i sin π/3) = 2e^{−iπ/3}\n\nUsing De Moivre's theorem:\n(1+i√3)⁹ = 2⁹(cos 9π/3 + i sin 9π/3) = 512(cos 3π + i sin 3π) = 512(−1 + 0) = −512\n(1−i√3)⁹ = 2⁹(cos(−3π) + i sin(−3π)) = 512(cos 3π − i sin 3π) = 512(−1 − 0) = −512\n\n(1+i√3)⁹ + (1−i√3)⁹ = −512 + (−512) = −1024\n\nIn x + iy form: −1024 + 0i\n\n(ii) tan(7π/12):\n7π/12 = π/3 + π/4\n\nUsing tan(A+B) = (tan A + tan B)/(1 − tan A tan B):\ntan(π/3) = √3, tan(π/4) = 1\n\ntan(7π/12) = (√3 + 1)/(1 − √3×1) = (√3+1)/(1−√3)\n\nRationalise by multiplying by (1+√3)/(1+√3):\n= (√3+1)(1+√3)/[(1−√3)(1+√3)]\n= (√3+3+1+√3)/(1−3)\n= (2√3+4)/(−2)\n= −(√3+2)\n= −2 − √3"
   },
   {
     "subject": "Mathematics",
@@ -603,7 +608,8 @@
     "type": "Essay",
     "questionNumber": "2c",
     "question": "(c) Prove by induction that 1 + 3 + 5 + ... + (2n - 1) = n². [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Let P(n): 1 + 3 + 5 + ... + (2n−1) = n²\n\nBase case (n = 1):\nLHS = 1 (the first odd number = 2(1)−1 = 1)\nRHS = 1² = 1\nLHS = RHS ✓  P(1) is true.\n\nInductive step: Assume P(k) is true for some positive integer k:\n1 + 3 + 5 + ... + (2k−1) = k²  ... (inductive hypothesis)\n\nWe must prove P(k+1) is true, i.e.:\n1 + 3 + 5 + ... + (2k−1) + (2(k+1)−1) = (k+1)²\n\nStarting from the left side of P(k+1):\n[1 + 3 + 5 + ... + (2k−1)] + (2k+1)\n= k² + (2k+1)   [by inductive hypothesis]\n= k² + 2k + 1\n= (k+1)²\n\nThis is the RHS of P(k+1). ✓\n\nBy the principle of mathematical induction, P(n) is true for all positive integers n. ∎"
   },
   {
     "subject": "Mathematics",
@@ -612,7 +618,8 @@
     "type": "Essay",
     "questionNumber": "3a",
     "question": "(a) Integrate the following functions with respect to x: y = (e³ˣ + 3)/(e³ˣ + 9x + 2). [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "∫ (e³ˣ + 3)/(e³ˣ + 9x + 2) dx\n\nObserve that d/dx(e³ˣ + 9x + 2) = 3e³ˣ + 9 = 3(e³ˣ + 3)\n\nSo the numerator e³ˣ + 3 = (1/3) × d/dx(e³ˣ + 9x + 2)\n\nThis is of the form ∫ f'(x)/f(x) dx = ln|f(x)| + C\n\n∫ (e³ˣ + 3)/(e³ˣ + 9x + 2) dx = (1/3) ∫ [3(e³ˣ + 3)]/(e³ˣ + 9x + 2) dx\n= (1/3) ln|e³ˣ + 9x + 2| + C"
   },
   {
     "subject": "Mathematics",
@@ -621,7 +628,8 @@
     "type": "Essay",
     "questionNumber": "3b",
     "question": "(b) ∫ 8x dx/(3 + 2x). [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "∫ 8x/(3+2x) dx\n\nMethod: Polynomial division (since degree of numerator = degree of denominator = 1):\nDivide 8x by (3+2x):\n8x/(2x+3): 8x = 4(2x+3) − 12\nSo: 8x/(2x+3) = 4 − 12/(2x+3)\n\n∫ 8x/(3+2x) dx = ∫ [4 − 12/(2x+3)] dx\n= 4x − 12 × (1/2)ln|2x+3| + C\n= 4x − 6ln|2x+3| + C\n\nVerification by differentiation:\nd/dx[4x − 6ln|2x+3|] = 4 − 6×2/(2x+3) = 4 − 12/(2x+3) = [4(2x+3)−12]/(2x+3) = (8x+12−12)/(2x+3) = 8x/(2x+3) ✓"
   },
   {
     "subject": "Mathematics",
@@ -630,7 +638,8 @@
     "type": "Essay",
     "questionNumber": "3c",
     "question": "(c) ∫ dx/(9 - 4x²). [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "∫ dx/(9 − 4x²)\n\nFactor: 9 − 4x² = (3−2x)(3+2x)\n\nPartial fractions:\n1/[(3−2x)(3+2x)] = A/(3−2x) + B/(3+2x)\n1 = A(3+2x) + B(3−2x)\n\nAt x = 3/2: 1 = A(6) → A = 1/6\nAt x = −3/2: 1 = B(6) → B = 1/6\n\n∫ dx/(9−4x²) = ∫ [1/6 × 1/(3−2x) + 1/6 × 1/(3+2x)] dx\n= (1/6)[∫ dx/(3−2x) + ∫ dx/(3+2x)]\n= (1/6)[−(1/2)ln|3−2x| + (1/2)ln|3+2x|] + C\n= (1/12)[ln|3+2x| − ln|3−2x|] + C\n= (1/12)ln|(3+2x)/(3−2x)| + C\n\nAlternatively, using the standard form ∫dx/(a²−x²) = (1/2a)ln|(a+x)/(a−x)| + C:\nHere: 9 − 4x² = (9/4)(1 − (4x²/9)) → rewrite as:\n∫dx/(9−4x²) = (1/4)∫dx/((9/4)−x²) ... this is more complex.\nThe partial fraction method gives the cleaner result:\n= (1/12)ln|(3+2x)/(3−2x)| + C"
   },
   {
     "subject": "Mathematics",
@@ -639,7 +648,8 @@
     "type": "Essay",
     "questionNumber": "4a",
     "question": "(a) Determine the initial value problem dy/dx = (y - 1)/(x + 3), y(-1) = 0. [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "dy/dx = (y−1)/(x+3)\n\nSeparate variables:\ndy/(y−1) = dx/(x+3)\n\nIntegrate both sides:\n∫ dy/(y−1) = ∫ dx/(x+3)\nln|y−1| = ln|x+3| + C\n\nExponentiate:\n|y−1| = A|x+3|  where A = e^C\ny−1 = k(x+3)  where k is an arbitrary constant\n\nApply initial condition y(−1) = 0:\n0 − 1 = k(−1+3) = 2k\nk = −1/2\n\nSolution: y − 1 = −(1/2)(x+3)\ny = 1 − (x+3)/2\ny = 1 − x/2 − 3/2\ny = −1/2 − x/2\ny = −(x+1)/2\n\nVerification: dy/dx = −1/2; (y−1)/(x+3) = (−(x+1)/2 − 1)/(x+3) = (−x/2−3/2)/(x+3) = −(x+3)/(2(x+3)) = −1/2 ✓"
   },
   {
     "subject": "Mathematics",
@@ -648,7 +658,8 @@
     "type": "Essay",
     "questionNumber": "4b",
     "question": "(b) Solve the initial value problem y'' + 2y' - y = 0; y(0) = 0, y'(0) = -1. [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Characteristic equation: m² + 2m − 1 = 0\nUsing quadratic formula:\nm = (−2 ± √(4+4))/2 = (−2 ± 2√2)/2 = −1 ± √2\n\nTwo distinct real roots: m₁ = −1 + √2, m₂ = −1 − √2\n\nGeneral solution:\ny = C₁e^{(−1+√2)x} + C₂e^{(−1−√2)x}\n\nApply initial conditions:\nAt x = 0, y = 0:\nC₁ + C₂ = 0  → C₂ = −C₁  ... (1)\n\ny' = C₁(−1+√2)e^{(−1+√2)x} + C₂(−1−√2)e^{(−1−√2)x}\nAt x = 0, y' = −1:\nC₁(−1+√2) + C₂(−1−√2) = −1\n\nSubstitute C₂ = −C₁:\nC₁(−1+√2) − C₁(−1−√2) = −1\nC₁[(−1+√2) − (−1−√2)] = −1\nC₁[2√2] = −1\nC₁ = −1/(2√2) = −√2/4\nC₂ = √2/4\n\nSolution:\ny = −(√2/4)e^{(−1+√2)x} + (√2/4)e^{(−1−√2)x}\ny = (√2/4)[e^{(−1−√2)x} − e^{(−1+√2)x}]\ny = (√2/4)e^{−x}[e^{−√2 x} − e^{√2 x}]\ny = −(√2/2)e^{−x} sinh(√2 x)"
   },
   {
     "subject": "Mathematics",
@@ -657,7 +668,8 @@
     "type": "Essay",
     "questionNumber": "4c",
     "question": "(c) Solve the differential equations:\n(i) (x² + 1) dy/dx + (y² - 1) = 0 [2½ marks]\n(ii) dy/dx = (x² - y²)/(2x²) [2½ marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) (x²+1) dy/dx + (y²−1) = 0\n(x²+1) dy/dx = 1 − y²\nSeparate: dy/(1−y²) = dx/(x²+1)\n\n∫ dy/(1−y²) = ∫ dx/(x²+1)\n(1/2)ln|(1+y)/(1−y)| = arctan x + C\n\nOr: dy/(1−y²) = dy/[(1−y)(1+y)] → partial fractions:\n1/(1−y²) = (1/2)[(1/(1−y)) + (1/(1+y))] → wait, standard form:\n1/(1−y²) = 1/[(1+y)(1−y)]\n\n∫ dy/(1−y²) = (1/2)∫[1/(1+y) + 1/(1−y)]dy\n... wait: 1/[(1+y)(1−y)] = (1/2)[1/(1−y) + 1/(1+y)] when checked:\n(1/2)[(1+y+1−y)/((1−y)(1+y))] = 1/(1−y²) ... let me redo:\nA/(1+y) + B/(1−y) = 1/(1−y²): A(1−y) + B(1+y) = 1\ny=1: 2B=1 → B=1/2; y=−1: 2A=1 → A=1/2\n\n∫ dy/(1−y²) = (1/2)[ln|1+y| − ln|1−y|] + C = (1/2)ln|(1+y)/(1−y)| + C\n\nSolution: (1/2)ln|(1+y)/(1−y)| = arctan x + C\n\n(ii) dy/dx = (x²−y²)/(2x²)\nRewrite: dy/dx = 1/2 − (y/x)²/2\n\nThis is a homogeneous equation. Let v = y/x → y = vx → dy/dx = v + x(dv/dx)\nv + x dv/dx = 1/2 − v²/2\nx dv/dx = 1/2 − v²/2 − v = (1 − v² − 2v)/2 = (1−v²−2v)/2\n\nSeparate: 2dv/(1−2v−v²) = dx/x\n\n1−2v−v² = −(v²+2v−1) = −[(v+1)²−2]\nLet u = v+1: 1−2v−v² = 2−u²\n\n∫ 2dv/(2−(v+1)²) = ∫ dx/x\n\nUsing ∫du/(a²−u²) = (1/2a)ln|(a+u)/(a−u)|, a = √2:\n(1/√2)ln|(√2+(v+1))/(√2−(v+1))| = ln|x| + C\n\nBack-substitute v = y/x:\n(1/√2)ln|(√2x+x+y)/(√2x−x−y)| = ln|x| + C"
   },
   {
     "subject": "Mathematics",
@@ -666,7 +678,8 @@
     "type": "Essay",
     "questionNumber": "5a",
     "question": "(a) Find the area of the triangle whose two adjacent sides are given by vectors a = 2i - 3j + k and b = 2i + 3j - 4k. [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Area of triangle = (1/2)|a × b|\n\na × b = |i    j    k |\n        |2   −3    1 |\n        |2    3   −4|\n\ni: (−3)(−4) − (1)(3) = 12 − 3 = 9\nj: −[(2)(−4) − (1)(2)] = −[−8−2] = 10\nk: (2)(3) − (−3)(2) = 6+6 = 12\n\na × b = 9i + 10j + 12k\n\n|a × b| = √(81 + 100 + 144) = √325 = 5√13\n\nArea of triangle = (1/2) × 5√13 = (5√13)/2 ≈ 9.01 square units"
   },
   {
     "subject": "Mathematics",
@@ -675,7 +688,8 @@
     "type": "Essay",
     "questionNumber": "5b",
     "question": "(b) A body of mass 6 kg has on a smooth plane inclined at an angle of 60° to the horizontal. This body is attached to another body of mass 10 kg by a light inextensible string. Find:\n(i) the acceleration of the system. [3 marks]\n(ii) the tension in the string. (Take g = 10 m/s²) [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Assume the 10 kg mass hangs vertically over a pulley at the top of the incline, and the 6 kg mass is on the smooth inclined plane.\n\nm₁ = 6 kg (on plane), m₂ = 10 kg (hanging), θ = 60°, g = 10 m/s²\n\n(i) Acceleration of the system:\nNet force = m₂g − m₁g sinθ (10 kg pulls down, 6 kg component acts down the plane)\nNet force = 10(10) − 6(10)sin60° = 100 − 60(√3/2) = 100 − 30√3 = 100 − 51.96 = 48.04 N\nTotal mass = m₁ + m₂ = 6 + 10 = 16 kg\na = Net force/total mass = 48.04/16 = 3.003 m/s² ≈ 3.0 m/s²\n\n(ii) Tension in the string:\nFor the hanging mass (Newton's 2nd law, downward positive):\nm₂g − T = m₂a\nT = m₂(g − a) = 10(10 − 3.003) = 10 × 6.997 = 69.97 N ≈ 70.0 N\n\nVerification using the 6 kg mass:\nT − m₁g sinθ = m₁a\nT = m₁(g sinθ + a) = 6(10sin60° + 3.003) = 6(8.660 + 3.003) = 6 × 11.663 = 69.98 N ✓"
   },
   {
     "subject": "Mathematics",
@@ -684,7 +698,8 @@
     "type": "Essay",
     "questionNumber": "5c",
     "question": "(c) A car of mass 200 kg moves forward on a road with an acceleration of 0.8 m/s² and covers a distance of 200 m. If the road has a resistance of 40 N, calculate the driving power of the car if the trip lasted 20 seconds. [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "m = 200 kg, a = 0.8 m/s², distance s = 200 m, resistance F_r = 40 N, time t = 20 s\n\nStep 1: Find the driving force (F_d):\nNet force = F_d − F_r = ma\nF_d = ma + F_r = 200(0.8) + 40 = 160 + 40 = 200 N\n\nStep 2: Find the velocity at end of the trip:\nUsing v² = u² + 2as (assuming starts from rest u = 0):\nv² = 0 + 2(0.8)(200) = 320\nv = √320 = 8√5 m/s ≈ 17.89 m/s\n\nAlternatively, checking: s = ½at² for start from rest → s = ½(0.8)(400) = 160 m ≠ 200 m\nSo the car does not start from rest; the problem is consistent with constant acceleration but non-zero initial speed.\n\nUsing s = ut + ½at²:\n200 = u(20) + ½(0.8)(400) = 20u + 160\n20u = 40 → u = 2 m/s (initial speed)\nFinal speed: v = u + at = 2 + 0.8(20) = 18 m/s\n\nStep 3: Driving Power at the end of the trip:\nP = F_d × v = 200 × 18 = 3600 W = 3.6 kW\n\nOr average driving power:\nWork done = F_d × s = 200 × 200 = 40000 J\nAverage power = Work/time = 40000/20 = 2000 W = 2 kW"
   },
   {
     "subject": "Mathematics",
@@ -693,7 +708,8 @@
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) A man paddles a boat downstream a distance of 3 km in 20 minutes, and rows back in 40 minutes. Find his average speed:\n(i) downstream, [½ mark]\n(ii) upstream, [½ mark]\n(iii) for the whole journey. [½ mark]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Average speed downstream:\nDistance = 3 km, time = 20 min = 20/60 hr = 1/3 hr\nSpeed = 3 ÷ (1/3) = 9 km/h\n\n(ii) Average speed upstream:\nDistance = 3 km, time = 40 min = 40/60 hr = 2/3 hr\nSpeed = 3 ÷ (2/3) = 4.5 km/h\n\n(iii) Average speed for whole journey:\nTotal distance = 3 + 3 = 6 km\nTotal time = 20 + 40 = 60 min = 1 hr\nAverage speed = 6/1 = 6 km/h"
   },
   {
     "subject": "Mathematics",
@@ -702,7 +718,8 @@
     "type": "Essay",
     "questionNumber": "6b",
     "question": "(b) A rifle bullet passes through two planks in succession, and the average resistance of the second plank is 50% more than that of the first. The initial velocity is 800 m/s, and the bullet loses 160 m/s in passing through each plank. Show that the ratio of the thickness of the planks is as 27:14. [4½ marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Let F₁ = resistance of first plank, F₂ = resistance of second plank.\nGiven: F₂ = 1.5F₁\n\nFor first plank:\nu₁ = 800 m/s, v₁ = 800 − 160 = 640 m/s, thickness = d₁\nUsing v² = u² + 2as (where a = −F₁/m for first plank):\n640² = 800² − 2(F₁/m)d₁\n(F₁/m)d₁ = (800² − 640²)/2 = (640000 − 409600)/2 = 230400/2 = 115200 ... (1)\n\nFor second plank:\nu₂ = 640 m/s, v₂ = 640 − 160 = 480 m/s, thickness = d₂\n480² = 640² − 2(F₂/m)d₂\n(F₂/m)d₂ = (640² − 480²)/2 = (409600 − 230400)/2 = 179200/2 = 89600 ... (2)\n\nFrom (1): (F₁/m)d₁ = 115200\nFrom (2): (F₂/m)d₂ = 89600, and F₂ = 1.5F₁:\n(1.5F₁/m)d₂ = 89600\n(F₁/m)d₂ = 89600/1.5 = 59733.33 ... (3)\n\nRatio d₁/d₂:\nd₁/d₂ = [(F₁/m)d₁]/[(F₁/m)d₂] = 115200/59733.33\n= 115200/(89600/1.5) = 115200 × 1.5/89600\n= 172800/89600\n= 1728/896\n= 27/14\n\nTherefore d₁ : d₂ = 27 : 14  ∎"
   },
   {
     "subject": "Mathematics",
@@ -711,7 +728,8 @@
     "type": "Essay",
     "questionNumber": "6c",
     "question": "(c) (i) Find the constant c such that the vectors a = i - j + 2k and b = i + 3j - ck are perpendicular to each other. [2 marks]\n(ii) Find the area of triangle ABC where the position vectors of A, B, C are -j + 2k, i + 4j - 3k, and i - 3j + 2k, respectively. [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) For a ⊥ b: a·b = 0\na·b = (1)(1) + (−1)(3) + (2)(−c) = 1 − 3 − 2c = −2 − 2c\nSet equal to 0: −2 − 2c = 0 → c = −1\n\n(ii) Area of triangle ABC:\nA = (0,−1,2), B = (1,4,−3), C = (1,−3,2)\n\nAB = B − A = (1,5,−5)\nAC = C − A = (1,−2,0)\n\nAB × AC = |i    j    k |\n            |1    5   −5|\n            |1   −2    0|\n\ni: (5)(0) − (−5)(−2) = 0 − 10 = −10\nj: −[(1)(0) − (−5)(1)] = −[0+5] = −5\nk: (1)(−2) − (5)(1) = −2 − 5 = −7\n\nAB × AC = −10i − 5j − 7k\n\n|AB × AC| = √(100 + 25 + 49) = √174\n\nArea = (1/2)|AB × AC| = √174/2 ≈ 6.60 square units"
   },
   {
     "subject": "Mathematics",
@@ -720,7 +738,8 @@
     "type": "Essay",
     "questionNumber": "7a",
     "question": "(a) Define the following concepts associated with hypothesis testing:\n(i) Hypothesis, [1 mark]\n(ii) Null hypothesis, [1 mark]\n(iii) Alternative hypothesis, [1 mark]\n(iv) Level of significance of a test, [1 mark]\n(v) Critical region of a test. [1 mark]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Hypothesis:\nA hypothesis is a statement or claim (assumption) about the value of one or more population parameters that may or may not be true, and which is subjected to statistical testing using sample data to determine whether it should be accepted or rejected.\n\n(ii) Null Hypothesis (H₀):\nThe null hypothesis is the default statement being tested, usually expressing 'no effect', 'no difference', or a specific value of the parameter. It is assumed to be true until the sample evidence provides sufficient reason to reject it. Example: H₀: μ = 50 (the population mean equals 50).\n\n(iii) Alternative Hypothesis (H₁ or Hₐ):\nThe alternative hypothesis is the statement that is accepted if the null hypothesis is rejected. It represents the claim the researcher seeks to support, and can be one-tailed (directional) or two-tailed (non-directional). Example: H₁: μ ≠ 50 (two-tailed) or H₁: μ > 50 (one-tailed).\n\n(iv) Level of Significance (α):\nThe level of significance is the probability of rejecting the null hypothesis when it is actually true (the probability of making a Type I error). It is set by the researcher before the test (commonly α = 0.05 or α = 0.01) and defines how extreme the sample evidence must be before H₀ is rejected.\n\n(v) Critical Region (Rejection Region):\nThe critical region is the set of values of the test statistic that would lead to rejection of the null hypothesis. If the computed test statistic falls within the critical region (beyond the critical value), H₀ is rejected. The size (area) of the critical region equals the significance level α."
   },
   {
     "subject": "Mathematics",
@@ -729,7 +748,8 @@
     "type": "Essay",
     "questionNumber": "7b",
     "question": "(b) The Director of Admissions at a City university advises parents of incoming students about the cost of textbooks during a typical semester. A sample of 100 students enrolled in the university indicates a sample mean cost of 315.40, with a sample standard deviation of 43.20.\n(i) Using a 1% level of significance, is there evidence that the population average is above 300? [2½ marks]\n(ii) What is your answer in 7b(i) if the standard deviation is 75 and a 5% level of significance is used? [2½ marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Test at α = 0.01:\nH₀: μ = 300, H₁: μ > 300 (one-tailed, right)\nGiven: n = 100, x̄ = 315.40, s = 43.20\n\nz = (x̄ − μ₀)/(s/√n) = (315.40 − 300)/(43.20/√100)\n= 15.40/(43.20/10) = 15.40/4.320 = 3.565\n\nCritical value (one-tailed, α = 0.01): z_critical = 2.326\n\nSince z_calc = 3.565 > 2.326, reject H₀.\nConclusion: At 1% significance level, there is sufficient evidence that the average textbook cost exceeds ₦300.\n\n(ii) Test at α = 0.05 with s = 75:\nz = (315.40 − 300)/(75/√100) = 15.40/(75/10) = 15.40/7.5 = 2.053\n\nCritical value (one-tailed, α = 0.05): z_critical = 1.645\n\nSince z_calc = 2.053 > 1.645, reject H₀.\nConclusion: Even with the larger standard deviation of 75, at 5% significance level there is still sufficient evidence that the average textbook cost exceeds ₦300."
   },
   {
     "subject": "Mathematics",
@@ -738,7 +758,8 @@
     "type": "Essay",
     "questionNumber": "8a",
     "question": "(a) The Table below shows the distribution of heights (in cm) of some athletes. Using an assumed mean of 167 cm, find (i) the mean and (ii) standard deviation of the distribution.\n\nHeight (cm): 150-154, 155-159, 160-164, 165-169, 170-174, 175-179, 180-184\nNo of Athletes: 4, 14, 26, 32, 22, 11, 3 [8 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Assumed mean A = 167, class width h = 5\nn = Σf = 4+14+26+32+22+11+3 = 112\n\nMidpoints (x): 152, 157, 162, 167, 172, 177, 182\nd = x − A: −15, −10, −5, 0, 5, 10, 15\nu = d/h: −3, −2, −1, 0, 1, 2, 3\n\nTable:\nClass     | f  |  u  | fu  | fu²\n150-154   |  4 | −3  | −12 |  36\n155-159   | 14 | −2  | −28 |  56\n160-164   | 26 | −1  | −26 |  26\n165-169   | 32 |  0  |   0 |   0\n170-174   | 22 |  1  |  22 |  22\n175-179   | 11 |  2  |  22 |  44\n180-184   |  3 |  3  |   9 |  27\nTotal     |112 |     | −13 | 211\n\n(i) Mean:\nΣfu = −12−28−26+0+22+22+9 = −13\nx̄ = A + h(Σfu/n) = 167 + 5(−13/112) = 167 − 65/112 = 167 − 0.5804 = 166.42 cm\n\n(ii) Standard Deviation:\nΣfu² = 36+56+26+0+22+44+27 = 211\ns = h × √(Σfu²/n − (Σfu/n)²)\n= 5 × √(211/112 − (−13/112)²)\n= 5 × √(1.8839 − 0.01347)\n= 5 × √1.8705\n= 5 × 1.3677\n= 6.838 cm ≈ 6.84 cm"
   },
   {
     "subject": "Mathematics",
@@ -747,7 +768,8 @@
     "type": "Essay",
     "questionNumber": "8b",
     "question": "(b) Find the coefficient of linear correlation between the variables X and Y presented in the table below.\n\nX: 1, 2, 3, 6, 8\nY: 1, 2, 3, 4, 5 [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Pearson's r = [nΣxy − ΣxΣy]/√{[nΣx²−(Σx)²][nΣy²−(Σy)²]}\n\nn = 5\nX: 1,2,3,6,8 → Σx = 20\nY: 1,2,3,4,5 → Σy = 15\nxy: 1,4,9,24,40 → Σxy = 78\nx²: 1,4,9,36,64 → Σx² = 114\ny²: 1,4,9,16,25 → Σy² = 55\n\nnΣxy − ΣxΣy = 5(78) − 20(15) = 390 − 300 = 90\nnΣx² − (Σx)² = 5(114) − 400 = 570 − 400 = 170\nnΣy² − (Σy)² = 5(55) − 225 = 275 − 225 = 50\n\nr = 90/√(170 × 50) = 90/√8500 = 90/92.195 = 0.9762 ≈ 0.976"
   },
   {
     "subject": "Mathematics",
@@ -756,6 +778,7 @@
     "type": "Essay",
     "questionNumber": "8c",
     "question": "(c) What is your conclusion from (b) above? [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "From the calculated Pearson correlation coefficient r ≈ 0.976:\n\n1. Strength: The value of r = 0.976 is very close to +1, indicating a very strong positive linear correlation between variables X and Y.\n\n2. Direction: The positive sign shows that as X increases, Y also tends to increase (direct relationship).\n\n3. Interpretation: Approximately 97.6% of the variation in Y can be explained by the linear relationship with X (since r² ≈ 0.953, i.e. 95.3% of variance in Y is explained by X).\n\nConclusion: There is a very strong, positive linear relationship between X and Y. A linear regression model would provide an excellent fit for predicting Y from X."
   }
 ]

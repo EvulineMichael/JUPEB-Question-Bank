@@ -556,7 +556,8 @@
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) In a class of 100 students, 35 offer History, 43 offer Geography and 50 offer Economics. 14 students offer History and Geography, 13 offer Geography and Economics and 11 offer History and Economics. The number of students that offer none of the subjects is four times the number of those that offer three subjects.\n(i) How many students offer three subjects? [4 marks]\n(ii) How many students offer none? [1 mark]\n(iii) How many students offer only one of the subjects? [2 marks]\n(iv) How many students offer History and Geography only? [1 mark]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Let x = number who offer all three subjects (H ∩ G ∩ E).\nLet n = number who offer none. Given: n = 4x.\n\nUsing inclusion-exclusion:\n|H ∪ G ∪ E| = |H| + |G| + |E| − |H∩G| − |G∩E| − |H∩E| + |H∩G∩E|\n= 35 + 43 + 50 − 14 − 13 − 11 + x\n= 90 + x\n\nTotal: |H ∪ G ∪ E| + n = 100\n(90 + x) + 4x = 100\n90 + 5x = 100\n5x = 10\nx = 2\n\n(i) Number who offer all three subjects = 2\n\n(ii) Number who offer none = 4x = 4 × 2 = 8\n\n(iii) Number who offer only one subject:\nFirst find 'exactly two' numbers:\n|H∩G only| = |H∩G| − x = 14 − 2 = 12\n|G∩E only| = |G∩E| − x = 13 − 2 = 11\n|H∩E only| = |H∩E| − x = 11 − 2 = 9\n\nOnly H = |H| − |H∩G only| − |H∩E only| − x = 35 − 12 − 9 − 2 = 12\nOnly G = |G| − |H∩G only| − |G∩E only| − x = 43 − 12 − 11 − 2 = 18\nOnly E = |E| − |G∩E only| − |H∩E only| − x = 50 − 11 − 9 − 2 = 28\n\nNumber offering only one subject = 12 + 18 + 28 = 58\n\nVerification: 58 + (12+11+9) + 2 + 8 = 58 + 32 + 2 + 8 = 100 ✓\n\n(iv) Number offering History and Geography only (not Economics):\n|H∩G only| = 12"
   },
   {
     "subject": "Mathematics",
@@ -567,7 +568,8 @@
     "question": "(b) Consider the Venn diagram below.\nFind the following sets:\n(i) A ∩ Bᶜ [1 mark]\n(ii) Aᶜ ∪ B [1 mark]",
     "diagramMissing": true,
     "diagramNote": "⚠️ Diagram missing: Venn diagram. Please refer to your original past question paper.",
-    "options": []
+    "options": [],
+    "modelAnswer": "Note: The Venn diagram is not available. General definitions apply:\n\n(i) A ∩ Bᶜ:\nThis is the set of elements that are in A but NOT in B. On a Venn diagram, it is the region inside circle A that does not overlap with circle B (the left crescent of A).\nA ∩ Bᶜ = A − B (elements in A only)\nPlease refer to your diagram and list the elements in the A-only region.\n\n(ii) Aᶜ ∪ B:\nThis is the set of all elements that are either NOT in A, or are in B (or both). By De Morgan's law and complement rules:\nAᶜ ∪ B = complement of (A ∩ Bᶜ)\nOn a Venn diagram, it includes: the B-only region, the A∩B overlap, all elements outside A (including outside both sets).\nPlease refer to your diagram to identify and list these elements."
   },
   {
     "subject": "Mathematics",
@@ -576,7 +578,8 @@
     "type": "Essay",
     "questionNumber": "1c",
     "question": "(c) Solve 2√(x + 5) - √(2x + 8) = 2. [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "2√(x+5) − √(2x+8) = 2\n\nIsolate one radical:\n2√(x+5) − 2 = √(2x+8)\n\nSquare both sides:\n[2√(x+5) − 2]² = 2x + 8\n4(x+5) − 8√(x+5) + 4 = 2x + 8\n4x + 20 − 8√(x+5) + 4 = 2x + 8\n4x + 24 − 8√(x+5) = 2x + 8\n2x + 16 = 8√(x+5)\nx + 8 = 4√(x+5)\n\nSquare both sides again:\n(x+8)² = 16(x+5)\nx² + 16x + 64 = 16x + 80\nx² = 16\nx = ±4\n\nCheck x = 4: 2√9 − √16 = 2(3) − 4 = 6 − 4 = 2 ✓\nCheck x = −4: 2√1 − √0 = 2 − 0 = 2 ✓\n\nBoth solutions are valid: x = 4 or x = −4"
   },
   {
     "subject": "Mathematics",
@@ -585,7 +588,8 @@
     "type": "Essay",
     "questionNumber": "2a",
     "question": "(a) Prove by mathematical induction or otherwise that ∑_{k=1}^{n} k² = n(n + 1)(2n + 1)/6. [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Proof by Mathematical Induction:\n\nLet P(n): ∑_{k=1}^{n} k² = n(n+1)(2n+1)/6\n\nBase case (n = 1):\nLHS = 1² = 1\nRHS = 1(2)(3)/6 = 6/6 = 1\nLHS = RHS ✓ P(1) is true.\n\nInductive step: Assume P(m) is true for some positive integer m:\n∑_{k=1}^{m} k² = m(m+1)(2m+1)/6 ... (inductive hypothesis)\n\nWe must show P(m+1) is true, i.e.:\n∑_{k=1}^{m+1} k² = (m+1)(m+2)(2m+3)/6\n\nStarting from the LHS of P(m+1):\n∑_{k=1}^{m+1} k² = ∑_{k=1}^{m} k² + (m+1)²\n= m(m+1)(2m+1)/6 + (m+1)²   [by inductive hypothesis]\n= (m+1)[m(2m+1)/6 + (m+1)]\n= (m+1)[m(2m+1) + 6(m+1)]/6\n= (m+1)[2m² + m + 6m + 6]/6\n= (m+1)[2m² + 7m + 6]/6\n= (m+1)(m+2)(2m+3)/6   [factoring 2m²+7m+6 = (m+2)(2m+3)]\n\nThis is exactly the RHS of P(m+1). ✓\n\nBy the principle of mathematical induction, P(n) is true for all positive integers n.  ∎"
   },
   {
     "subject": "Mathematics",
@@ -594,7 +598,8 @@
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(b) Let R be the set of real numbers. If binary operation ⊗ is defined on R by a ⊗ b = (a + 1)(b + 1) where a and b belong to R. Solve the equation (2 + 4n) ⊗ (4 - n) = 5n ⊗ n. [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Using a ⊗ b = (a+1)(b+1):\n\nLHS: (2+4n) ⊗ (4−n) = (2+4n+1)(4−n+1) = (3+4n)(5−n)\n= 15 − 3n + 20n − 4n² = 15 + 17n − 4n²\n\nRHS: 5n ⊗ n = (5n+1)(n+1) = 5n² + 5n + n + 1 = 5n² + 6n + 1\n\nSetting LHS = RHS:\n15 + 17n − 4n² = 5n² + 6n + 1\n0 = 5n² + 4n² + 6n − 17n + 1 − 15\n0 = 9n² − 11n − 14\n\nUsing the quadratic formula:\nn = [11 ± √(121 + 504)] / 18 = [11 ± √625] / 18 = [11 ± 25] / 18\n\nn = (11 + 25)/18 = 36/18 = 2\nor n = (11 − 25)/18 = −14/18 = −7/9\n\nn = 2 or n = −7/9"
   },
   {
     "subject": "Mathematics",
@@ -603,7 +608,8 @@
     "type": "Essay",
     "questionNumber": "2c",
     "question": "(c) An A.P. has a common difference of 2 and a G.P. has a common ratio of 3. The corresponding terms are added together to produce a new sequence. If the 1st term of the sequence is 8 and its third term is 52, find:\n(i) the A.P. [2 marks]\n(ii) the G.P. [2 marks]\n(iii) the new sequence. [1 mark]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Let the AP have first term a and common difference d = 2: terms are a, a+2, a+4, ...\nLet the GP have first term b and common ratio r = 3: terms are b, 3b, 9b, ...\n\nNew sequence terms: (a+b), (a+2+3b), (a+4+9b), ...\n\nGiven: 1st term = 8: a + b = 8 ... (1)\nGiven: 3rd term = 52: a + 4 + 9b = 52 → a + 9b = 48 ... (2)\n\nSubtract (1) from (2): 8b = 40 → b = 5\nFrom (1): a = 8 − 5 = 3\n\n(i) The AP: first term = 3, d = 2 → 3, 5, 7, 9, 11, ...\n\n(ii) The GP: first term = 5, r = 3 → 5, 15, 45, 135, ...\n\n(iii) The new sequence (AP + GP term by term):\n3+5, 5+15, 7+45, 9+135, ... = 8, 20, 52, 144, ..."
   },
   {
     "subject": "Mathematics",
@@ -612,7 +618,8 @@
     "type": "Essay",
     "questionNumber": "3a",
     "question": "(a) A vehicle starts from rest and its velocity is measured every second for 8 seconds as follows:\nt(s): 0,1,2,3,4,5,6,7,8\nv(m/s): 0,0.4,1.0,1.7,2.9,4.1,6.2,8.0,9.4\nThe distance travelled in 8 seconds is given by ∫₀⁸ v dt. Estimate this distance using Simpson's rule. [6 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Simpson's rule: ∫ₐᵇ f(x)dx ≈ (h/3)[f(x₀) + 4f(x₁) + 2f(x₂) + 4f(x₃) + ... + 4f(xₙ₋₁) + f(xₙ)]\nRequires even number of intervals (n must be even). Here n = 8 intervals, h = 1.\n\nValues:\nv₀ = 0 (end)\nv₁ = 0.4 (×4)\nv₂ = 1.0 (×2)\nv₃ = 1.7 (×4)\nv₄ = 2.9 (×2)\nv₅ = 4.1 (×4)\nv₆ = 6.2 (×2)\nv₇ = 8.0 (×4)\nv₈ = 9.4 (end)\n\nS = (1/3)[v₀ + 4v₁ + 2v₂ + 4v₃ + 2v₄ + 4v₅ + 2v₆ + 4v₇ + v₈]\n= (1/3)[0 + 4(0.4) + 2(1.0) + 4(1.7) + 2(2.9) + 4(4.1) + 2(6.2) + 4(8.0) + 9.4]\n= (1/3)[0 + 1.6 + 2.0 + 6.8 + 5.8 + 16.4 + 12.4 + 32.0 + 9.4]\n= (1/3)[86.4]\n= 28.8 m\n\nThe estimated distance travelled in 8 seconds is 28.8 m."
   },
   {
     "subject": "Mathematics",
@@ -621,7 +628,8 @@
     "type": "Essay",
     "questionNumber": "3b",
     "question": "(b) Evaluate ∫ (x + 1)/(x² - 3x + 2) dx. [6 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Factor the denominator: x² − 3x + 2 = (x−1)(x−2)\n\nPartial fractions:\n(x+1)/[(x−1)(x−2)] = A/(x−1) + B/(x−2)\nx + 1 = A(x−2) + B(x−1)\n\nAt x = 1: 2 = A(−1) → A = −2\nAt x = 2: 3 = B(1) → B = 3\n\nSo: (x+1)/[(x−1)(x−2)] = −2/(x−1) + 3/(x−2)\n\nIntegrating:\n∫ (x+1)/(x²−3x+2) dx = −2∫ 1/(x−1) dx + 3∫ 1/(x−2) dx\n= −2ln|x−1| + 3ln|x−2| + C\n= ln|(x−2)³| − ln|(x−1)²| + C\n= ln|(x−2)³/(x−1)²| + C"
   },
   {
     "subject": "Mathematics",
@@ -630,7 +638,8 @@
     "type": "Essay",
     "questionNumber": "3c",
     "question": "(c) Find the differential coefficient of y = 3x² sin 2x. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "y = 3x² sin 2x\n\nUsing the product rule: d/dx(uv) = u'v + uv'\nLet u = 3x² → u' = 6x\nLet v = sin 2x → v' = 2cos 2x\n\ndy/dx = u'v + uv'\n= 6x · sin 2x + 3x² · 2cos 2x\n= 6x sin 2x + 6x² cos 2x\n= 6x(sin 2x + x cos 2x)"
   },
   {
     "subject": "Mathematics",
@@ -639,7 +648,8 @@
     "type": "Essay",
     "questionNumber": "4a",
     "question": "(a) Obtain the expansion of eˣ sin x in ascending power of x as far as the term in x⁵. [8 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Use the known Maclaurin series:\neˣ = 1 + x + x²/2! + x³/3! + x⁴/4! + x⁵/5! + ...\n= 1 + x + x²/2 + x³/6 + x⁴/24 + x⁵/120 + ...\n\nsin x = x − x³/3! + x⁵/5! − ...\n= x − x³/6 + x⁵/120 − ...\n\nMultiply eˣ × sin x (collecting up to x⁵):\n\n(1 + x + x²/2 + x³/6 + x⁴/24 + x⁵/120 + ...)(x − x³/6 + x⁵/120 − ...)\n\nCollect by power of x:\n\nx¹: 1 × x = x\n\nx²: x × x = x² (coefficient: 1)\n\nx³: (x²/2) × x + 1 × (−x³/6) = x³/2 − x³/6 = 3x³/6 − x³/6 = 2x³/6 = x³/3\n\nx⁴: (x³/6) × x + x × (−x³/6) = x⁴/6 − x⁴/6 = 0\n\nx⁵: (x⁴/24) × x + (x²/2) × (−x³/6) + 1 × (x⁵/120)\n= x⁵/24 − x⁵/12 + x⁵/120\n= x⁵(1/24 − 1/12 + 1/120)\n= x⁵(5/120 − 10/120 + 1/120)\n= x⁵(−4/120)\n= −x⁵/30\n\nTherefore:\neˣ sin x = x + x² + x³/3 + 0·x⁴ − x⁵/30 + ...\n= x + x² + x³/3 − x⁵/30 + ..."
   },
   {
     "subject": "Mathematics",
@@ -648,7 +658,8 @@
     "type": "Essay",
     "questionNumber": "4b",
     "question": "(b) Evaluate:\n(i) ∫₀^{π/2} cos x dx\n(ii) ∫₀^{π/2} (sec² x + tan² x) dx [7 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) ∫₀^{π/2} cos x dx:\n= [sin x]₀^{π/2}\n= sin(π/2) − sin(0)\n= 1 − 0 = 1\n\n(ii) ∫₀^{π/2} (sec²x + tan²x) dx:\n\nUse the identity: tan²x = sec²x − 1\nSo: sec²x + tan²x = sec²x + (sec²x − 1) = 2sec²x − 1\n\n∫₀^{π/2} (2sec²x − 1) dx\n\nNote: This integral is improper since sec x → ∞ as x → π/2.\nHowever, treating as a standard exam question (likely intended for a closed interval not including π/2, or with a limiting approach):\n\n= [2tan x − x]₀^{π/2}\n\nAs x → π/2, tan x → ∞, so the integral diverges.\n\nIf the intended limits were 0 to π/4:\n∫₀^{π/4} (2sec²x − 1) dx = [2tan x − x]₀^{π/4}\n= (2tan(π/4) − π/4) − (0 − 0)\n= 2(1) − π/4\n= 2 − π/4 ≈ 1.215\n\nPlease verify the limits from your original paper. The method shown applies for any valid closed interval."
   },
   {
     "subject": "Mathematics",
@@ -657,7 +668,8 @@
     "type": "Essay",
     "questionNumber": "5a",
     "question": "(a) A block of mass 3.5 kg rests on a rough plane which is inclined at an angle of 42° to the horizontal. If the coefficient of friction between the block and the plane is 0.75, what is the least force P parallel to the plane required to:\n(i) start moving the block up the plane? [5 marks]\n(ii) prevent the block from sliding down the plane? (Take g = 9.8 m/s²). [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "m = 3.5 kg, θ = 42°, μ = 0.75, g = 9.8 m/s²\nWeight W = mg = 3.5 × 9.8 = 34.3 N\nNormal reaction N = W cos θ = 34.3 cos 42° = 34.3 × 0.7431 = 25.49 N\nFriction force F = μN = 0.75 × 25.49 = 19.12 N\nComponent of weight along plane (down) = W sin θ = 34.3 × 0.6691 = 22.95 N\n\n(i) Least force P to start moving block UP the plane:\nWhen moving up: friction acts DOWN the plane (opposing motion).\nP = W sinθ + F = 22.95 + 19.12 = 42.07 N ≈ 42.1 N\n\n(ii) Least force P to prevent block sliding DOWN the plane:\nWhen on the verge of sliding down: friction acts UP the plane (opposing tendency to slide down).\nFor equilibrium: P + F = W sinθ\nP = W sinθ − F = 22.95 − 19.12 = 3.83 N ≈ 3.83 N\n\nSince P > 0, a small force of 3.83 N up the plane is needed to prevent sliding down."
   },
   {
     "subject": "Mathematics",
@@ -666,7 +678,8 @@
     "type": "Essay",
     "questionNumber": "5b",
     "question": "(b) A body of mass 100 kg is placed in a lift. Find the reaction between the floor of the lift and the body when the lift moves upward with an acceleration of 3.5 m/s². (Take g = 9.8 m/s²). [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "m = 100 kg, a = 3.5 m/s² (upward), g = 9.8 m/s²\n\nApplying Newton's second law (upward positive):\nR − mg = ma\nR = m(g + a)\nR = 100(9.8 + 3.5)\nR = 100 × 13.3\nR = 1330 N\n\nThe reaction between the floor of the lift and the body is 1330 N.\n\nNote: This is greater than the body's weight (mg = 980 N) because the lift is accelerating upward, so the floor must exert a greater force to both support the body and accelerate it upward."
   },
   {
     "subject": "Mathematics",
@@ -675,7 +688,8 @@
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) Three points A, B and C are uniquely orientated in space with coordinates (α, -1, 2), (5, 2, 4) and (14, β, 10) respectively. Find the values of α and β such that the three points are collinear. [8 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "A = (α, −1, 2), B = (5, 2, 4), C = (14, β, 10)\n\nFor collinearity, AB and AC must be parallel (AC = λAB for some scalar λ).\n\nAB = B − A = (5−α, 3, 2)\nAC = C − A = (14−α, β+1, 8)\n\nFor AC = λAB:\nFrom z-component: 8 = 2λ → λ = 4\n\nFrom y-component: β + 1 = 3λ = 3(4) = 12 → β = 11\n\nFrom x-component: 14 − α = λ(5−α) = 4(5−α)\n14 − α = 20 − 4α\n14 − 20 = −4α + α\n−6 = −3α\nα = 2\n\nVerification:\nA = (2, −1, 2), B = (5, 2, 4), C = (14, 11, 10)\nAB = (3, 3, 2)\nAC = (12, 12, 8) = 4(3, 3, 2) = 4 × AB ✓\n\nα = 2, β = 11"
   },
   {
     "subject": "Mathematics",
@@ -684,7 +698,8 @@
     "type": "Essay",
     "questionNumber": "6b",
     "question": "(b) A car of mass 160 kg is placed on a rough horizontal road with coefficient of friction 0.5. Find the driving force when the car moves with:\n(i) an acceleration of 5 m/s², [4 marks]\n(ii) a uniform speed of 3 m/s. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "m = 160 kg, μ = 0.5, g = 9.8 m/s² (use 10 m/s² unless specified)\nUsing g = 9.8 m/s²:\nNormal reaction N = mg = 160 × 9.8 = 1568 N\nFriction force f = μN = 0.5 × 1568 = 784 N\n\n(i) Driving force for acceleration a = 5 m/s²:\nBy Newton's second law: F − f = ma\nF = ma + f = 160 × 5 + 784 = 800 + 784 = 1584 N\n\n(ii) Driving force for uniform speed (a = 0):\nF − f = 0 → F = f = 784 N\n\nAt uniform speed, the driving force equals the friction force (no net force, no acceleration)."
   },
   {
     "subject": "Mathematics",
@@ -693,7 +708,8 @@
     "type": "Essay",
     "questionNumber": "7a",
     "question": "(a) Suppose the probability function of a discrete random variable X is given by: f(x) = { 4!/[(4 - x)! x!] × 1/16, x = 0,1,2,3,4; 0 elsewhere }\n(i) find P(X ≤ 3) [3 marks]\n(ii) obtain the distribution function of X [1 mark]\n(iii) find P(X > 0) [2 marks]\n(iv) find the mean and variance of X [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "f(x) = C(4,x) × (1/16) = C(4,x)/16 for x = 0,1,2,3,4\nThis is Binomial B(4, 1/2) since C(4,x)/16 = C(4,x)(1/2)^x(1/2)^(4−x).\n\nProbabilities:\nP(X=0) = C(4,0)/16 = 1/16\nP(X=1) = C(4,1)/16 = 4/16 = 1/4\nP(X=2) = C(4,2)/16 = 6/16 = 3/8\nP(X=3) = C(4,3)/16 = 4/16 = 1/4\nP(X=4) = C(4,4)/16 = 1/16\nSum = (1+4+6+4+1)/16 = 16/16 = 1 ✓\n\n(i) P(X ≤ 3):\nP(X ≤ 3) = 1 − P(X=4) = 1 − 1/16 = 15/16\n\n(ii) Distribution function (CDF) F(x) = P(X ≤ x):\nF(0) = 1/16\nF(1) = 5/16\nF(2) = 11/16\nF(3) = 15/16\nF(4) = 16/16 = 1\n\n(iii) P(X > 0):\nP(X > 0) = 1 − P(X=0) = 1 − 1/16 = 15/16\n\n(iv) Mean and Variance:\nFor X ~ B(n, p): n = 4, p = 1/2\nMean E(X) = np = 4 × 1/2 = 2\nVariance Var(X) = np(1−p) = 4 × 1/2 × 1/2 = 1"
   },
   {
     "subject": "Mathematics",
@@ -702,7 +718,8 @@
     "type": "Essay",
     "questionNumber": "7b",
     "question": "(b) The following table lists the frequency distribution for 60 rolls of a die:\nOutcome: 1,2,3,4,5,6\nFrequency: 7,12,8,15,11,7\nTest at the 5% significance level whether the null hypothesis that the given die is fair is true. [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "H₀: The die is fair (each outcome equally likely).\nH₁: The die is not fair.\nSignificance level: α = 0.05\n\nExpected frequency for each outcome = 60/6 = 10.\n\nChi-square test statistic:\nχ² = Σ(O − E)²/E\n\nOutcome | O  |  E  | (O−E)  | (O−E)² | (O−E)²/E\n1       |  7 | 10  |   −3   |    9   |   0.9\n2       | 12 | 10  |    2   |    4   |   0.4\n3       |  8 | 10  |   −2   |    4   |   0.4\n4       | 15 | 10  |    5   |   25   |   2.5\n5       | 11 | 10  |    1   |    1   |   0.1\n6       |  7 | 10  |   −3   |    9   |   0.9\n\nχ²_calc = 0.9 + 0.4 + 0.4 + 2.5 + 0.1 + 0.9 = 5.2\n\nDegrees of freedom: df = k − 1 = 6 − 1 = 5\nCritical value: χ²_{0.05, 5} = 11.07 (from chi-square table)\n\nDecision: χ²_calc = 5.2 < χ²_critical = 11.07\n\nConclusion: We fail to reject H₀ at the 5% significance level. There is insufficient evidence to conclude that the die is unfair. The die is consistent with being a fair die."
   },
   {
     "subject": "Mathematics",
@@ -711,7 +728,8 @@
     "type": "Essay",
     "questionNumber": "8a",
     "question": "(a) (i) Distinguish between type I and type II errors. [2 marks]\n(ii) Past record shows that the mean score of year II Accountancy students in Business Statistics is 56% with a standard deviation of 7%. A random sample of 45 year II students of this department was tested and the mean score was 52%. Verify at α = 0.05 if the average score of the students in this course has changed. [9 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Type I and Type II Errors:\nType I Error (α): Rejecting the null hypothesis H₀ when it is actually true (a 'false positive'). The probability of making a Type I error is the significance level α. Example: concluding the die is unfair when it actually is fair.\n\nType II Error (β): Failing to reject H₀ when it is actually false (a 'false negative'). The probability of making a Type II error is β, and the power of the test = 1 − β. Example: concluding the die is fair when it is actually biased.\n\n(ii) Hypothesis Test for Change in Mean Score:\nH₀: μ = 56% (mean score has not changed)\nH₁: μ ≠ 56% (two-tailed: mean has changed)\nα = 0.05\n\nGiven: population σ = 7%, n = 45, x̄ = 52%, μ₀ = 56%\n\nTest statistic (z-test, since σ is known):\nz = (x̄ − μ₀)/(σ/√n) = (52 − 56)/(7/√45) = −4/(7/6.708) = −4/1.0435 = −3.834\n\nCritical values (two-tailed, α = 0.05): z_critical = ±1.96\n\nDecision: |z_calc| = 3.834 > 1.96 = z_critical\n\nConclusion: Reject H₀ at the 5% significance level. There is sufficient statistical evidence to conclude that the average score of the students in this course has significantly changed (decreased) from 56% to 52%."
   },
   {
     "subject": "Mathematics",
@@ -719,7 +737,8 @@
     "category": "Significance Testing",
     "type": "Essay",
     "questionNumber": "8b",
-    "question": "(b) An Accountancy student claims he is 90% sure of the postings he made in all transactions. Would you agree with this claim if in a given transaction, he makes 20 out of 25 postings correctly? Use α = 0.05. [4 marks]",
-    "options": []
+    "question": "(b) An Accountancy student claims he is 90% sure of the postings he makes in all transactions. Would you agree with this claim if in a given transaction, he makes 20 out of 25 postings correctly? Use α = 0.05. [4 marks]",
+    "options": [],
+    "modelAnswer": "This is a one-sample proportion test.\nH₀: p = 0.90 (the claim is true)\nH₁: p < 0.90 (one-tailed; the actual proportion is less than claimed)\nα = 0.05\n\nSample proportion: p̂ = 20/25 = 0.80\nn = 25, p₀ = 0.90, q₀ = 0.10\n\nTest statistic (z-test for proportion):\nz = (p̂ − p₀)/√(p₀q₀/n)\nz = (0.80 − 0.90)/√(0.90 × 0.10/25)\nz = (−0.10)/√(0.09/25)\nz = (−0.10)/√(0.0036)\nz = (−0.10)/0.06\nz = −1.667\n\nCritical value (one-tailed, α = 0.05): z_critical = −1.645\n\nDecision: z_calc = −1.667 < −1.645 = z_critical (falls in rejection region)\n\nConclusion: Reject H₀ at the 5% significance level. We do not agree with the student's claim of 90% accuracy. The evidence suggests his accuracy rate is significantly less than 90% (the observed rate of 80% is statistically significantly lower than the claimed 90%)."
   }
 ]

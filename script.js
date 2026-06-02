@@ -521,6 +521,7 @@ function displayQuestions(topic) {
                 </div>`;
             }
             
+            // ===== OBJECTIVE QUESTIONS =====
             if (q.type === "Objective" && q.options && q.options.length > 0) {
                 questionsHtml += `<ul class="options-list" id="options-list-${questionIndex}">`;
                 const optionLabels = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -533,7 +534,6 @@ function displayQuestions(topic) {
                 });
                 questionsHtml += `</ul>`;
                 
-                // Add Show Answer button
                 if (q.answer && q.explanation) {
                     questionsHtml += `
                         <button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">🔍 Show Answer</button>
@@ -542,18 +542,24 @@ function displayQuestions(topic) {
                             <div class="explanation">💡 Explanation: ${escapeHtml(q.explanation)}</div>
                         </div>
                     `;
-                } else if (q.answer && !q.explanation) {
-                    questionsHtml += `
-                        <button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="">🔍 Show Answer</button>
-                        <div class="answer-display" id="answer-${questionIndex}">
-                            <div class="correct-answer">✅ Correct Answer: ${q.answer}</div>
-                        </div>
-                    `;
                 }
             }
             
-            if (q.type === "Essay" && !q.diagramMissing) {
-                questionsHtml += `<div class="essay-note">📝 Essay question (provide written answer in your notebook)</div>`;
+            // ===== ESSAY QUESTIONS =====
+            if (q.type === "Essay") {
+                if (q.modelAnswer) {
+                    questionsHtml += `
+                        <button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">📝 Show Model Answer</button>
+                        <div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display: none;">
+                            <div class="model-answer">
+                                <strong>📖 Model Answer:</strong><br>
+                                ${escapeHtml(q.modelAnswer)}
+                            </div>
+                        </div>
+                    `;
+                } else if (!q.diagramMissing) {
+                    questionsHtml += `<div class="essay-note">📝 Essay question (provide written answer in your notebook)</div>`;
+                }
             }
             
             questionsHtml += `</div>`;
@@ -563,19 +569,15 @@ function displayQuestions(topic) {
     
     questionsContainer.innerHTML = questionsHtml;
     
-    // Add event listeners to all Show Answer buttons
+    // Event listeners for Objective "Show Answer" buttons
     document.querySelectorAll('.show-answer-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             const qIdx = btn.dataset.qIdx;
             const answerDisplay = document.getElementById(`answer-${qIdx}`);
-            const answer = btn.dataset.answer;
-            const explanation = btn.dataset.explanation;
             
-            // Toggle display
             if (answerDisplay.classList.contains('show')) {
                 answerDisplay.classList.remove('show');
                 btn.textContent = '🔍 Show Answer';
-                // Remove highlighting from options
                 const optionsList = document.getElementById(`options-list-${qIdx}`);
                 if (optionsList) {
                     optionsList.querySelectorAll('.option-item').forEach(opt => {
@@ -585,7 +587,7 @@ function displayQuestions(topic) {
             } else {
                 answerDisplay.classList.add('show');
                 btn.textContent = '🙈 Hide Answer';
-                // Highlight the correct option
+                const answer = btn.dataset.answer;
                 const optionsList = document.getElementById(`options-list-${qIdx}`);
                 if (optionsList) {
                     optionsList.querySelectorAll('.option-item').forEach(opt => {
@@ -594,6 +596,22 @@ function displayQuestions(topic) {
                         }
                     });
                 }
+            }
+        });
+    });
+    
+    // Event listeners for Essay "Show Model Answer" buttons
+    document.querySelectorAll('.show-essay-answer-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const essayIdx = btn.dataset.essayIdx;
+            const answerDisplay = document.getElementById(`essay-answer-${essayIdx}`);
+            
+            if (answerDisplay.style.display === 'none') {
+                answerDisplay.style.display = 'block';
+                btn.textContent = '🙈 Hide Model Answer';
+            } else {
+                answerDisplay.style.display = 'none';
+                btn.textContent = '📝 Show Model Answer';
             }
         });
     });

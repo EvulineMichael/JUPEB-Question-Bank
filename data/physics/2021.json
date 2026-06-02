@@ -501,7 +501,8 @@
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) (i) Define the terms: work, energy and power.\n(ii) Calculate the power of a pump which lifts 100 kg of water through a vertical distance of 15 meters in 3 seconds. [2½ marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Definitions:\n\nWork: Work is done when a force causes displacement of an object in the direction of the force. It is defined as the product of the force and the displacement in the direction of the force:\nW = F × d × cosθ\nwhere θ is the angle between the force and displacement. SI unit: Joule (J).\n\nEnergy: Energy is the capacity (ability) to do work. It is a scalar quantity that exists in various forms (kinetic, potential, thermal, chemical, etc.) and can be converted from one form to another but cannot be created or destroyed (conservation of energy). SI unit: Joule (J).\n\nPower: Power is the rate of doing work, or the rate of energy transfer. It is defined as:\nP = W/t = F × v\nSI unit: Watt (W = J/s).\n\n(ii) Power of the Pump:\nWork done = mgh = 100 × 10 × 15 = 15000 J (using g = 10 m/s²)\nPower = W/t = 15000/3 = 5000 W = 5 kW"
   },
   {
     "subject": "Physics",
@@ -510,7 +511,8 @@
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) (i) Explain the term 'Coefficient of restitution'.\n(ii) A ball is dropped from a height h above the tile floor and rebounds to a height of 0.65h. Find the coefficient of restitution between the ball and the floor. [4½ marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Coefficient of Restitution (e):\nThe coefficient of restitution is a dimensionless quantity that measures the ratio of the relative speed of separation to the relative speed of approach of two colliding objects along their line of impact. It characterises the elasticity of a collision:\ne = relative speed of separation / relative speed of approach = v₂ − v₁ / u₁ − u₂\nFor a ball bouncing off a stationary floor: e = speed after impact / speed before impact\n- e = 1: perfectly elastic collision (no energy lost)\n- e = 0: perfectly inelastic collision (objects stick together)\n- 0 < e < 1: partially elastic (real collisions)\n\n(ii) Coefficient of Restitution:\nBall dropped from height h: speed just before impact (u) = √(2gh)\nBall rebounds to height 0.65h: speed just after impact (v) = √(2g × 0.65h) = √(0.65 × 2gh)\n\ne = v/u = √(0.65 × 2gh) / √(2gh) = √0.65 = 0.806 ≈ 0.81"
   },
   {
     "subject": "Physics",
@@ -519,7 +521,8 @@
     "type": "Essay",
     "questionNumber": "2a",
     "question": "(a) Describe each of the following:\n(i) a perfectly elastic collision.\n(ii) a perfectly inelastic collision. [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Perfectly Elastic Collision:\nA perfectly elastic collision is one in which both momentum AND kinetic energy are conserved. No kinetic energy is converted to other forms (heat, sound, deformation). The objects bounce off each other and return to their original shapes. At the atomic/molecular level, collisions between gas molecules are approximately elastic. In everyday life, collisions between billiard balls are nearly elastic.\nConditions: Δp = 0 (momentum conserved) AND ΔKE = 0 (kinetic energy conserved).\n\n(ii) Perfectly Inelastic Collision:\nA perfectly inelastic collision is one in which momentum is conserved but the maximum possible kinetic energy is lost. The two colliding objects stick together and move as one combined mass after the collision. The kinetic energy lost is converted to internal energy (heat, sound, deformation). This represents the maximum possible energy loss in a collision.\nCondition: Δp = 0 (momentum conserved); objects move together with common velocity v = (m₁u₁ + m₂u₂)/(m₁ + m₂). Coefficient of restitution e = 0."
   },
   {
     "subject": "Physics",
@@ -528,7 +531,8 @@
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(b) A cricket bat strikes a ball of mass 0.6 kg travelling towards it. The ball initially hits the bat at a speed of 25 m/s and returning along the same path with the same speed. The time of impact is 0.0030 s.\n(i) Determine the change in momentum of the cricket ball.\n(ii) Calculate the force exerted by the bat on the cricket ball.\n(iii) State whether the collision is elastic or inelastic and give reasons. [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "m = 0.6 kg, initial speed u = 25 m/s (toward bat), final speed v = 25 m/s (away from bat)\nTake direction toward bat as positive → u = +25 m/s, v = −25 m/s\n\n(i) Change in Momentum:\nΔp = m(v − u) = 0.6 × (−25 − 25) = 0.6 × (−50) = −30 kg m/s\nMagnitude of change in momentum = 30 kg m/s\n\n(ii) Force Exerted by Bat on Ball:\nBy Newton's second law: F = Δp/Δt\nF = 30 / 0.0030 = 10,000 N = 10 kN\n(Direction: away from bat — in the return direction of the ball)\n\n(iii) Elastic or Inelastic?\nThe collision is elastic (or approximately perfectly elastic).\nReason: The ball returns with the same speed as it approached (|v| = |u| = 25 m/s). Since the kinetic energy before and after impact is the same:\nKE_before = ½ × 0.6 × 25² = 187.5 J\nKE_after = ½ × 0.6 × 25² = 187.5 J\nΔKE = 0, so kinetic energy is conserved — the collision is perfectly elastic."
   },
   {
     "subject": "Physics",
@@ -537,7 +541,8 @@
     "type": "Essay",
     "questionNumber": "2c",
     "question": "(c) A stone projected horizontally with a velocity of 15 m/s from the top of a building lands at a horizontal distance of 60 m from the building. Calculate the height of the building. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Horizontal projection: initial vertical velocity = 0, horizontal velocity vₓ = 15 m/s\nHorizontal distance x = 60 m\n\nTime of flight:\nx = vₓ × t → t = x/vₓ = 60/15 = 4 s\n\nHeight of building (vertical free fall):\nh = ½gt² = ½ × 10 × 4² = ½ × 10 × 16 = 80 m\n\nThe height of the building is 80 m."
   },
   {
     "subject": "Physics",
@@ -546,7 +551,8 @@
     "type": "Essay",
     "questionNumber": "3a",
     "question": "(a) Define the following and give an example each:\n(i) Transverse wave.\n(ii) Longitudinal waves. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Transverse Wave:\nA transverse wave is a wave in which the particle oscillations (displacements) are perpendicular to the direction of wave propagation (energy transfer).\nExample: Light waves (electromagnetic waves), waves on a stretched string, water surface waves, seismic S-waves.\nTransverse waves can be polarized.\n\n(ii) Longitudinal Wave:\nA longitudinal wave is a wave in which the particle oscillations (displacements) are parallel to (along) the direction of wave propagation (energy transfer). The wave consists of alternating compressions (regions of high pressure) and rarefactions (regions of low pressure).\nExample: Sound waves in air, ultrasonic waves, seismic P-waves, compression waves in a spring.\nLongitudinal waves cannot be polarized."
   },
   {
     "subject": "Physics",
@@ -555,7 +561,8 @@
     "type": "Essay",
     "questionNumber": "3b",
     "question": "(b) State FOUR characteristics of a wave. [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Four Characteristics of a Wave:\n1. Amplitude (A): The maximum displacement of particles from their rest (equilibrium) position. It determines the energy carried by the wave — greater amplitude means more energy.\n2. Frequency (f): The number of complete oscillations (cycles) per second. Unit: Hertz (Hz).\n3. Wavelength (λ): The distance between two successive points that are in phase (e.g. crest to crest, or compression to compression). Unit: metres (m).\n4. Wave speed (v): The speed at which the wave pattern travels through the medium, given by v = fλ. Unit: m/s.\n(Other valid characteristics: period T = 1/f; phase angle; wave number k = 2π/λ.)"
   },
   {
     "subject": "Physics",
@@ -564,7 +571,8 @@
     "type": "Essay",
     "questionNumber": "3c",
     "question": "(c) (i) A Carnot engine operates between two reservoirs at 450 K and 600 K. What is the coefficient of performance of the engine?\n(ii) A Carnot engine whose low-temperature reservoir is at 200 K has an efficiency of 45%. By how much must the temperature of the high-temperature reservoir be raised if the efficiency is to be increased to 50%? [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Coefficient of Performance (Efficiency) of Carnot Engine:\nη = 1 − T_cold/T_hot = 1 − 450/600 = 1 − 0.75 = 0.25 = 25%\n\nNote: 'Coefficient of performance' is more commonly used for refrigerators/heat pumps. For a heat engine it is called efficiency. If the question means efficiency:\nη = 25%\n\nIf COP as a heat pump: COP_HP = T_hot/(T_hot − T_cold) = 600/(600 − 450) = 600/150 = 4.0\n\n(ii) Raising Temperature of Hot Reservoir:\nInitial efficiency: η₁ = 1 − T_L/T_H1 = 0.45\nT_L = 200 K\n0.45 = 1 − 200/T_H1\n200/T_H1 = 0.55\nT_H1 = 200/0.55 = 363.6 K\n\nNew efficiency: η₂ = 1 − T_L/T_H2 = 0.50\n0.50 = 1 − 200/T_H2\n200/T_H2 = 0.50\nT_H2 = 200/0.50 = 400 K\n\nIncrease in temperature = T_H2 − T_H1 = 400 − 363.6 = 36.4 K ≈ 36.4 K\n\nThe high-temperature reservoir must be raised by approximately 36.4 K."
   },
   {
     "subject": "Physics",
@@ -573,7 +581,8 @@
     "type": "Essay",
     "questionNumber": "4a",
     "question": "(a) (i) State any FOUR postulates of kinetic theory of gas.\n(ii) What is the average translational energy of an oxygen molecule for such a particle in air at 350 K? [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Four Postulates of Kinetic Theory of Gas:\n1. A gas consists of a very large number of molecules (atoms) that are in constant, rapid, random motion in all directions.\n2. The volume of the gas molecules themselves is negligibly small compared to the total volume of the container — molecules are treated as point masses.\n3. Collisions between molecules and between molecules and the walls of the container are perfectly elastic — total kinetic energy is conserved.\n4. There are no intermolecular attractive or repulsive forces between molecules except during the very brief moments of collision.\n(Other valid postulates: the time of collision is negligibly short compared to the time between collisions; molecules obey Newton's laws of motion; the average kinetic energy of molecules is proportional to the absolute temperature.)\n\n(ii) Average Translational Kinetic Energy of O₂ at 350 K:\nUsing the equipartition theorem, the average translational KE of any molecule is:\nKE = (3/2)k_BT\nwhere k_B = Boltzmann's constant = 1.381 × 10⁻²³ J/K, T = 350 K\n\nKE = (3/2) × 1.381 × 10⁻²³ × 350\nKE = 1.5 × 1.381 × 10⁻²³ × 350\nKE = 7.25 × 10⁻²¹ J\n\nThe average translational energy of an oxygen molecule at 350 K is 7.25 × 10⁻²¹ J.\n(Note: This value is the same for any ideal gas molecule regardless of mass, since it depends only on temperature.)"
   },
   {
     "subject": "Physics",
@@ -582,7 +591,8 @@
     "type": "Essay",
     "questionNumber": "4b",
     "question": "(b) A plane-progressive wave is represented by the equation y = 3.0 sin(300πt - 0.3πx). If all the variables are in S.I. units, calculate the:\n(i) amplitude;\n(ii) frequency;\n(iii) wavelength; and\n(iv) speed of the wave. [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "y = 3.0 sin(300πt − 0.3πx)\nComparing with standard form y = A sin(ωt − kx):\nA = 3.0 m, ω = 300π rad/s, k = 0.3π rad/m\n\n(i) Amplitude:\nA = 3.0 m\n\n(ii) Frequency:\nω = 2πf → f = ω/(2π) = 300π/(2π) = 150 Hz\n\n(iii) Wavelength:\nk = 2π/λ → λ = 2π/k = 2π/(0.3π) = 2/0.3 = 6.67 m\n\n(iv) Speed of the Wave:\nv = fλ = 150 × 6.67 = 1000 m/s\nOr: v = ω/k = 300π/(0.3π) = 300/0.3 = 1000 m/s ✓"
   },
   {
     "subject": "Physics",
@@ -591,7 +601,8 @@
     "type": "Essay",
     "questionNumber": "5a",
     "question": "(a) (i) State Faraday's law of electromagnetic induction.\n(ii) An RLC circuit is used in a radio to tune into the radio FM station broadcasting at 94.4 MHz. The resistance in the circuit is 12Ω and the inductance is 5.3 μH. What capacitance should be used? [3½ marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Faraday's Law of Electromagnetic Induction:\nFaraday's law states that the magnitude of the induced EMF in a circuit is directly proportional to the rate of change of magnetic flux linkage through the circuit:\nε = −dΦ/dt  (for a single turn)\nε = −N × dΦ/dt  (for N turns)\nThe negative sign indicates Lenz's law — the induced EMF acts to oppose the change in flux that causes it. The induced EMF drives a current that creates a magnetic field opposing the change in the original flux.\n\n(ii) Capacitance for Resonance at 94.4 MHz:\nAt resonance in an RLC circuit, the resonant frequency is:\nf₀ = 1/(2π√(LC))\nSolving for C:\nC = 1/(4π²f₀²L)\nf₀ = 94.4 × 10⁶ Hz, L = 5.3 × 10⁻⁶ H\n\nC = 1/(4π² × (94.4 × 10⁶)² × 5.3 × 10⁻⁶)\nC = 1/(4 × 9.8696 × 8.911 × 10¹⁵ × 5.3 × 10⁻⁶)\nC = 1/(4 × 9.8696 × 4.723 × 10¹⁰)\nC = 1/(1.865 × 10¹²)\nC = 5.36 × 10⁻¹³ F ≈ 0.536 pF"
   },
   {
     "subject": "Physics",
@@ -600,7 +611,8 @@
     "type": "Essay",
     "questionNumber": "5b",
     "question": "(b) A step-up transformer has 240 V input which is transformed to 150 kV output. The primary coil has 70 loops and draws a current of 20 A when in use.\n(i) What is the number of loops in the secondary coil?\n(ii) Calculate the current output. [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "V_p = 240 V, V_s = 150,000 V, N_p = 70 loops, I_p = 20 A\n\n(i) Number of Secondary Loops:\nN_s/N_p = V_s/V_p\nN_s = N_p × (V_s/V_p) = 70 × (150000/240) = 70 × 625 = 43,750 loops\n\n(ii) Current Output (assuming ideal transformer):\nP_p = P_s → V_p × I_p = V_s × I_s\nI_s = (V_p × I_p)/V_s = (240 × 20)/150000 = 4800/150000 = 0.032 A = 32 mA"
   },
   {
     "subject": "Physics",
@@ -609,7 +621,8 @@
     "type": "Essay",
     "questionNumber": "5c",
     "question": "(c) How much energy is stored in a 0.008 mH inductor when a 30.0 A current flows through it? [2½ marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Energy stored in an inductor:\nU = ½LI²\nL = 0.008 mH = 0.008 × 10⁻³ H = 8 × 10⁻⁶ H\nI = 30.0 A\n\nU = ½ × 8 × 10⁻⁶ × (30.0)²\nU = ½ × 8 × 10⁻⁶ × 900\nU = ½ × 7.2 × 10⁻³\nU = 3.6 × 10⁻³ J = 3.6 mJ"
   },
   {
     "subject": "Physics",
@@ -618,9 +631,10 @@
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) Write an expression each for capacitive reactance and inductive reactance. [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Capacitive Reactance (X_C):\nX_C = 1/(ωC) = 1/(2πfC)\nwhere ω = angular frequency (rad/s), f = frequency (Hz), C = capacitance (F)\nUnit: Ohm (Ω)\nX_C decreases as frequency increases — a capacitor opposes low-frequency (and DC) currents more than high-frequency currents.\n\nInductive Reactance (X_L):\nX_L = ωL = 2πfL\nwhere ω = angular frequency (rad/s), f = frequency (Hz), L = inductance (H)\nUnit: Ohm (Ω)\nX_L increases as frequency increases — an inductor opposes high-frequency currents more than low-frequency currents.\n\nAt resonance in a series RLC circuit: X_L = X_C → ω₀ = 1/√(LC)"
   },
-    {
+  {
     "subject": "Physics",
     "year": 2021,
     "category": "Current Electricity",
@@ -629,7 +643,8 @@
     "question": "(b) The Figure below shows a 12 V power supply with negligible internal resistance connected to a uniform metal wire AB. The wire has length 1.00 m and resistance 10Ω. Two resistors of resistance 4.0Ω and 2.0Ω are connected in series across the wire. Currents I₁, I₂ and I₃ in the circuit are as shown in the circuit above.\n\n(i) State a relationship between I₁, I₂ and I₃.\n(ii) Calculate I₁.\n(iii) Calculate the ratio of power in the metal wire to the power in the series resistor.\n(iv) Calculate the potential difference (p.d.) between the points C and D, as shown in the Figure. The distance AC is 40 cm and D is the point between the two series resistors.",
     "diagramMissing": true,
     "diagramNote": "⚠️ Diagram missing: Circuit diagram for question 6b. Please refer to your original past question paper.",
-    "options": []
+    "options": [],
+    "modelAnswer": "The wire AB (10Ω) is in parallel with the series combination of 4.0Ω and 2.0Ω resistors (total = 6.0Ω), connected across the 12 V supply.\n\n(i) Relationship between currents:\nBy Kirchhoff's Current Law at the junction:\nI₁ = I₂ + I₃\n(The total current I₁ from the supply splits into I₂ through the wire AB and I₃ through the series resistors)\n\n(ii) Calculating I₁:\nParallel resistance of wire and series resistors:\n1/R_parallel = 1/10 + 1/6 = 3/30 + 5/30 = 8/30\nR_parallel = 30/8 = 3.75 Ω\nI₁ = V/R_parallel = 12/3.75 = 3.2 A\n\nAlso: I₂ = 12/10 = 1.2 A; I₃ = 12/6 = 2.0 A\nCheck: I₂ + I₃ = 1.2 + 2.0 = 3.2 A = I₁ ✓\n\n(iii) Ratio of Power in Wire to Power in Series Resistors:\nP_wire = I₂² × R_wire = (1.2)² × 10 = 14.4 W\nP_series = I₃² × R_series = (2.0)² × 6 = 24 W\nRatio = P_wire/P_series = 14.4/24 = 0.6 = 3:5\n\n(iv) p.d. between C and D:\nPoint C is on wire AB at 40 cm from A.\nResistance of AC = (40/100) × 10 = 4.0 Ω\nVoltage at A = 12 V (connected directly to supply positive terminal)\nVoltage at C: V_C = 12 − I₂ × R_AC = 12 − 1.2 × 4.0 = 12 − 4.8 = 7.2 V\n\nPoint D is between the 4.0Ω and 2.0Ω resistors:\nVoltage at D: V_D = 12 − I₃ × 4.0 = 12 − 2.0 × 4.0 = 12 − 8.0 = 4.0 V\n\np.d. between C and D = V_C − V_D = 7.2 − 4.0 = 3.2 V"
   },
   {
     "subject": "Physics",
@@ -638,7 +653,8 @@
     "type": "Essay",
     "questionNumber": "7a",
     "question": "(a) Briefly explain the term 'LASER' and state FOUR of its applications. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "LASER — Light Amplification by Stimulated Emission of Radiation:\nA LASER is a device that produces an intense, highly directional, coherent, and monochromatic beam of light through the process of stimulated emission. When an atom in an excited state is struck by a photon of exactly the right energy, it emits a second photon of the same frequency, phase, direction, and polarization as the incident photon — this is stimulated emission. By placing the gain medium between mirrors (an optical cavity), light is amplified by repeated stimulated emission, producing the laser beam.\nKey properties of laser light: coherent (fixed phase relationship), monochromatic (single wavelength), highly collimated (narrow, non-diverging beam), and very high intensity.\n\nFour Applications of LASER:\n1. Medical surgery: Lasers are used for precise cutting and cauterizing in eye surgery (LASIK), tumour removal, and dental procedures.\n2. Communication (fibre optics): Laser light carries information as pulses through optical fibres for high-speed internet and telephone communications.\n3. CD/DVD/Blu-ray players: Laser beams read data encoded as pits and lands on optical discs.\n4. Industrial cutting and welding: High-power lasers cut through metals, drill holes, and weld materials with high precision in manufacturing."
   },
   {
     "subject": "Physics",
@@ -647,7 +663,8 @@
     "type": "Essay",
     "questionNumber": "7b",
     "question": "(b) Estimate the change in energy ΔE of an electron that jumps from the L shell to the K shell of Molybdenum (Z = 42). [2½ marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Using Moseley's law / Bohr model approximation for inner shell transitions:\nFor characteristic X-rays, the energy of transitions can be estimated using:\nE_n = −13.6 × Z_eff² / n² eV\n\nFor the K shell (n=1) and L shell (n=2) of Molybdenum (Z = 42):\nUsing effective nuclear charge with screening:\nFor K shell: Z_eff ≈ Z − 0.3 = 42 − 0.3 = 41.7 (screening by 1 other K electron)\nFor L shell: Z_eff ≈ Z − 7.4 ≈ 42 − 7.4 = 34.6 (approximate screening constants)\n\nSimpler Bohr approximation (commonly used at this level):\nE_K = −13.6 × Z²/1² eV ≈ −13.6 × (42)² = −13.6 × 1764 = −23,990 eV ≈ −24.0 keV\nE_L = −13.6 × Z²/2² eV = −13.6 × 1764/4 = −5997 eV ≈ −6.0 keV\n\nΔE = E_L − E_K = −6.0 − (−24.0) = +18.0 keV\n\nThe electron loses 18.0 keV of energy (emitted as a Kα X-ray photon) when it transitions from the L shell to the K shell.\n(Literature value for Mo Kα ≈ 17.4 keV — close to this estimate.)"
   },
   {
     "subject": "Physics",
@@ -656,7 +673,8 @@
     "type": "Essay",
     "questionNumber": "7c",
     "question": "(c) A beam of neutrons moving with a speed of 1450 m/s is diffracted from a crystal of salt which has an interplanar spacing of 0.282 nm.\n(i) Compute the De Broglie's wavelength of the neutrons.\n(ii) Calculate the angle of the first interference minimum. [4½ marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) De Broglie Wavelength of Neutrons:\nm_n = 1.675 × 10⁻²⁷ kg, v = 1450 m/s\np = m_n × v = 1.675 × 10⁻²⁷ × 1450 = 2.429 × 10⁻²⁴ kg m/s\nλ = h/p = 6.626 × 10⁻³⁴ / 2.429 × 10⁻²⁴ = 2.728 × 10⁻¹⁰ m ≈ 0.273 nm\n\n(ii) Angle of First-Order Bragg Maximum (First Interference Maximum):\nUsing Bragg's law: nλ = 2d sinθ\nFor first order n = 1:\nsinθ = λ/(2d) = 2.728 × 10⁻¹⁰ / (2 × 0.282 × 10⁻⁹)\nsinθ = 2.728 × 10⁻¹⁰ / 5.64 × 10⁻¹⁰ = 0.4837\nθ = sin⁻¹(0.4837) = 28.94° ≈ 28.9°\n\nNote: The question asks for 'first interference minimum'. For Bragg diffraction, constructive maxima occur at nλ = 2d sinθ. If the first minimum is required, it falls between the zeroth and first order maxima, but in standard Bragg notation, the 'first order' refers to the first maximum (n=1). The angle of the first Bragg maximum (first-order diffraction) is approximately 28.9°."
   },
   {
     "subject": "Physics",
@@ -665,7 +683,8 @@
     "type": "Essay",
     "questionNumber": "8a",
     "question": "(a) (i) What do you understand by the term 'binding energy'?\n(ii) Calculate the binding energy per nucleon of the Helium nucleus ⁴₂He. (mass of proton = 1.0073 u, mass of neutron = 1.0073 u, mass of helium nucleus = 4.0015 u) [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Nuclear Binding Energy:\nNuclear binding energy is the energy required to completely separate all the nucleons (protons and neutrons) in a nucleus into individual free nucleons. Equivalently, it is the energy released when free protons and neutrons combine to form the nucleus. It arises from the mass defect — the actual mass of the nucleus is less than the sum of the masses of its constituent nucleons (Δm), and this mass difference is converted to energy according to E = Δmc². A higher binding energy per nucleon indicates a more stable nucleus.\n\n(ii) Binding Energy per Nucleon of ⁴₂He:\nNote: Both proton and neutron mass are given as 1.0073 u (the proton mass is slightly different in reality, but we use the given value).\n\n⁴₂He has 2 protons + 2 neutrons.\nMass of 2 protons = 2 × 1.0073 = 2.0146 u\nMass of 2 neutrons = 2 × 1.0073 = 2.0146 u\nTotal mass of free nucleons = 2.0146 + 2.0146 = 4.0292 u\nMass of He nucleus = 4.0015 u\nMass defect Δm = 4.0292 − 4.0015 = 0.0277 u\n\nTotal binding energy = 0.0277 × 931.5 MeV = 25.80 MeV\n\nBinding energy per nucleon = 25.80/4 = 6.45 MeV/nucleon"
   },
   {
     "subject": "Physics",
@@ -674,7 +693,8 @@
     "type": "Essay",
     "questionNumber": "8b",
     "question": "(b) (i) What potential difference is required between the anode and cathode of a vacuum tube if the electrons are to reach a velocity of 5.0 × 10⁶ m/s?\n(ii) If the electron current in (b) is 10.0 mA, what is the power dissipated at the anode? (e/m = 1.76 × 10¹¹ C kg⁻¹) [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Required Potential Difference:\nFrom e/m = 1.76 × 10¹¹ C/kg:\ne = 1.602 × 10⁻¹⁹ C, so m_e = e/(e/m) = 1.602 × 10⁻¹⁹/1.76 × 10¹¹ = 9.10 × 10⁻³¹ kg\n\nKinetic energy gained = work done by electric field:\n½m_e v² = eV\nV = m_e v²/(2e) = (v²)/(2 × e/m)\nV = (5.0 × 10⁶)²/(2 × 1.76 × 10¹¹)\nV = 2.5 × 10¹³/(3.52 × 10¹¹)\nV = 71.02 V ≈ 71 V\n\n(ii) Power Dissipated at Anode:\nP = V × I = 71.02 × 10.0 × 10⁻³ = 0.7102 W ≈ 0.71 W"
   },
   {
     "subject": "Physics",
@@ -685,6 +705,7 @@
     "question": "(c) (i) Draw the circuit symbol of a p-n-p transistor.\n(ii) Explain the term full-wave rectification. [2 marks]",
     "diagramMissing": true,
     "diagramNote": "⚠️ Diagram required: Circuit symbol of a p-n-p transistor. Please refer to your original past question paper or draw it yourself.",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) PNP Transistor Circuit Symbol:\nThe PNP transistor symbol consists of:\n- Three terminals: Base (B), Collector (C), and Emitter (E)\n- A vertical line representing the Base\n- Two diagonal lines connecting the base to the Collector and Emitter\n- An arrow on the Emitter line pointing INTO the base (toward the base) — this distinguishes PNP from NPN (NPN arrow points away from base)\nPlease draw this symbol from your textbook or past paper.\n\n(ii) Full-Wave Rectification:\nFull-wave rectification is the process of converting an alternating current (AC) signal into a direct current (DC) signal by utilizing both the positive and negative half-cycles of the AC input. Both halves of the AC waveform are made to flow in the same direction through the load.\n\nThis is achieved using a bridge rectifier circuit (4 diodes) or a centre-tap rectifier (2 diodes). Unlike half-wave rectification (which uses only one half-cycle and wastes the other), full-wave rectification is more efficient — the output is a pulsating DC that has double the frequency of the input AC. After filtering with a capacitor, it produces a smoother DC output.\nThe output voltage ripple is smaller and easier to smooth compared to half-wave rectification."
   }
 ]

@@ -556,7 +556,8 @@
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) From a consideration of the flow of a liquid through a narrow tube, define viscosity. Express the coefficient of viscosity η in terms of the internal frictional force F, surface area A of the liquid and velocity gradient dv/dx and derive its units using dimensional analysis. [2 marks]\n\n(b) (i) Discuss qualitatively the motion of a small metal ball allowed to drop downwards in a long vertical tube of viscous liquid so that it moves along the axis of the tube. Sketch the variation of velocity v with time t. [3 marks]\n(ii) Write down the equation relating the velocity v of a ball bearing of radius r and mass m falling vertically, from rest, in a viscous liquid after an elapsed time t. The effect of the buoyancy of the liquid should be neglected. Obtain an expression for the terminal velocity v₀. [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Definition of Viscosity:\nViscosity is the property of a fluid that resists the relative motion between adjacent layers. When a liquid flows through a narrow tube, adjacent layers of liquid move at different velocities — the layer in contact with the wall is stationary (no-slip condition) while the central layer moves fastest. The internal frictional force F between adjacent layers opposes this relative motion.\n\nCoefficient of Viscosity (η):\nThe internal frictional force is proportional to the surface area A and the velocity gradient dv/dx:\nF = η × A × (dv/dx)\nTherefore: η = F / (A × dv/dx)\n\nDimensional Analysis of η:\n[F] = MLT⁻²\n[A] = L²\n[dv/dx] = (LT⁻¹)/L = T⁻¹\n[η] = MLT⁻² / (L² × T⁻¹) = MLT⁻² / L²T⁻¹ = ML⁻¹T⁻¹\nSI unit of η = kg m⁻¹ s⁻¹ = Pa·s (Pascal-second)\n\n(b)(i) Qualitative Motion of a Metal Ball in Viscous Liquid:\nWhen a metal ball is released from rest in a viscous liquid:\n1. Initially, the only downward force is gravity (weight W = mg). The viscous drag force is zero at rest.\n2. As the ball accelerates downward, its velocity increases, and the viscous drag force (F_drag = 6πηrv by Stokes' law) increases proportionally.\n3. The net downward force (W − F_drag) decreases as v increases, so acceleration decreases.\n4. Eventually, when the drag force equals the weight, net force = 0 and acceleration = 0. The ball reaches terminal velocity v₀ and moves at constant speed.\n\nVelocity-time graph: starts at v=0, curves upward with decreasing slope (concave down), asymptotically approaching a horizontal line at v = v₀ (terminal velocity). It is an exponential approach curve.\n\n(b)(ii) Equation of Motion and Terminal Velocity:\nApplying Newton's second law (neglecting buoyancy):\nm(dv/dt) = mg − 6πηrv\n\nAt terminal velocity v₀, acceleration = 0:\n0 = mg − 6πηrv₀\nv₀ = mg / (6πηr)\n\nThe general solution gives:\nv(t) = v₀(1 − e^(−t/τ))\nwhere τ = m/(6πηr) is the time constant.\nAt t → ∞, v → v₀ = mg/(6πηr)"
   },
   {
     "subject": "Physics",
@@ -565,7 +566,8 @@
     "type": "Essay",
     "questionNumber": "1c",
     "question": "(c) An object is thrown forward horizontally from the top of a cliff 20 m high with a horizontal velocity of 15 m/s. Calculate:\n(i) The time to return to the ground\n(ii) The horizontal distance from the foot of the cliff at which the object strikes the ground. [Take g = 10 m/s²]. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "This is projectile motion. The object is launched horizontally (initial vertical velocity = 0), from height h = 20 m.\n\n(i) Time to reach the ground:\nUsing vertical motion: h = ½gt²\n20 = ½ × 10 × t²\n20 = 5t²\nt² = 4\nt = 2 s\n\n(ii) Horizontal distance:\nHorizontal velocity is constant = 15 m/s (no air resistance)\nHorizontal distance x = vₓ × t = 15 × 2 = 30 m\n\nThe object strikes the ground 30 m from the foot of the cliff after 2 seconds."
   },
   {
     "subject": "Physics",
@@ -574,7 +576,8 @@
     "type": "Essay",
     "questionNumber": "2a",
     "question": "(a) A narrow beam of light traveling in air is incident on a slab of transparent material. The incident beam makes an angle of 40.0° with the normal, and the refracted beam makes an angle of 26.0° with the normal. (Refractive index = 1.00 for air). Use Snell's law of refraction to:\n(i) find the index of refraction of the slab material. [2 marks]\n(ii) find the speed of light through the slab material. [2 marks]\n(iii) Draw a diagram to support your answer in (ii) above. [1 mark]\n(iv) Explain the concept of total internal reflection. [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Index of Refraction of Slab:\nSnell's Law: n₁ sin θ₁ = n₂ sin θ₂\n1.00 × sin 40.0° = n₂ × sin 26.0°\n0.6428 = n₂ × 0.4384\nn₂ = 0.6428 / 0.4384 = 1.466 ≈ 1.47\n\n(ii) Speed of Light in the Slab:\nn = c/v → v = c/n\nv = (3.00 × 10⁸) / 1.47\nv = 2.04 × 10⁸ m/s\n\n(iii) Diagram description:\nA ray of light travels from air (n=1.00) to the slab (n=1.47). The incident ray makes 40° with the normal at the surface, and the refracted ray bends toward the normal, making 26° with the normal inside the slab. The ray slows down in the denser medium.\n\n(iv) Total Internal Reflection:\nTotal internal reflection occurs when light travels from a denser medium (higher refractive index, n₂) to a less dense medium (lower refractive index, n₁), and the angle of incidence exceeds the critical angle θc. At the critical angle:\nsin θc = n₁/n₂\nWhen the angle of incidence ≥ θc, no refracted ray exists — all the light is reflected back into the denser medium. This phenomenon is exploited in optical fibres (total internal reflection keeps light bouncing along the fibre), diamonds (cut to maximize sparkle), and prisms in binoculars and periscopes."
   },
   {
     "subject": "Physics",
@@ -582,8 +585,9 @@
     "category": "Lenses and Optical Instruments",
     "type": "Essay",
     "questionNumber": "2b",
-    "question": "(b) Complete the table of the image properties for converging and diverging lenses below: [3 marks]\n\nCases: \n1. Converging, Object >2f → Image position <2f, Orientation Inverted, Size Smaller, Type Real\n2. Converging, Object =2f → Image position 2f, Orientation Inverted, Size Same, Type Real\n3. Converging, Object >f but <2f → Image position >2f, Orientation Inverted, Size Larger, Type Real\n4. Converging, Object =f → No image is formed\n5. Converging, Object <f → Image position >f, Orientation Upright, Size Larger, Type Virtual\n6. Diverging, Any position → Image position <f, Orientation Upright, Size Smaller, Type Virtual",
-    "options": []
+    "question": "(b) Complete the table of the image properties for converging and diverging lenses below: [3 marks]",
+    "options": [],
+    "modelAnswer": "Image Properties for Converging and Diverging Lenses:\n\n1. Converging lens, Object beyond 2f:\nImage position: Between f and 2f (on other side)\nOrientation: Inverted\nSize: Smaller (diminished)\nType: Real\n\n2. Converging lens, Object at 2f:\nImage position: At 2f (on other side)\nOrientation: Inverted\nSize: Same size\nType: Real\n\n3. Converging lens, Object between f and 2f:\nImage position: Beyond 2f (on other side)\nOrientation: Inverted\nSize: Larger (magnified)\nType: Real\n\n4. Converging lens, Object at f:\nImage: No image formed (rays emerge parallel — image at infinity)\n\n5. Converging lens, Object inside f (between lens and f):\nImage position: Same side as object, beyond f\nOrientation: Upright (erect)\nSize: Larger (magnified)\nType: Virtual\n\n6. Diverging lens, Object at any position:\nImage position: Between object and lens (same side as object), inside f\nOrientation: Upright (erect)\nSize: Smaller (diminished)\nType: Virtual"
   },
   {
     "subject": "Physics",
@@ -592,7 +596,8 @@
     "type": "Essay",
     "questionNumber": "3a",
     "question": "(a) State Ohm's law. [1 mark]\n\n(b) A battery of emf 24 V and internal resistance r is connected to a circuit having two parallel resistors of 3Ω and 6Ω in series with an 8Ω resistor. The current flowing in the 3Ω resistor is 0.8A. Calculate:\n(i) The current in the 6Ω resistor.\n(ii) The internal resistance r of the battery.\n(iii) The terminal potential difference of the battery. [6 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Ohm's Law:\nOhm's law states that the current flowing through a conductor is directly proportional to the potential difference (voltage) across it, provided temperature and other physical conditions remain constant: V = IR, where R is the resistance (constant for an ohmic conductor).\n\n(b) Circuit Calculations:\nThe circuit: EMF source (24V, internal resistance r) → 8Ω in series → parallel combination of 3Ω and 6Ω.\n\n(i) Current in the 6Ω resistor:\nSince 3Ω and 6Ω are in parallel, they have the same voltage across them.\nV₃ = I₃ × 3 = 0.8 × 3 = 2.4 V\nV₆ = V₃ = 2.4 V (parallel)\nI₆ = V₆/6 = 2.4/6 = 0.4 A\n\n(ii) Internal resistance r:\nTotal current from battery: I_total = I₃ + I₆ = 0.8 + 0.4 = 1.2 A\nVoltage across 8Ω: V₈ = 1.2 × 8 = 9.6 V\nVoltage across parallel combination: 2.4 V\nBy Kirchhoff's voltage law: EMF = I(r) + V₈ + V_parallel\n24 = 1.2r + 9.6 + 2.4\n24 = 1.2r + 12\n1.2r = 12\nr = 10 Ω\n\n(iii) Terminal potential difference:\nTerminal p.d. = EMF − I×r = 24 − 1.2 × 10 = 24 − 12 = 12 V\n(Also = V₈ + V_parallel = 9.6 + 2.4 = 12 V ✓)"
   },
   {
     "subject": "Physics",
@@ -601,7 +606,8 @@
     "type": "Essay",
     "questionNumber": "3c",
     "question": "(c) (i) Define the capacitance of a capacitor. [1 mark]\n(ii) A capacitor carrying 10 μC charge has a voltage of 50 V across its plates. [1 mark]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Capacitance of a Capacitor:\nThe capacitance of a capacitor is defined as the ratio of the charge Q stored on one of its plates to the potential difference V between the plates:\nC = Q/V\nCapacitance is a measure of a capacitor's ability to store electric charge. The SI unit of capacitance is the Farad (F), where 1 F = 1 C/V.\n\n(ii) Calculating Capacitance:\nC = Q/V = (10 × 10⁻⁶) / 50 = 2 × 10⁻⁷ F = 0.2 μF"
   },
   {
     "subject": "Physics",
@@ -610,7 +616,8 @@
     "type": "Essay",
     "questionNumber": "4",
     "question": "(a) Define radioactivity. [1 mark]\n\n(b) Calculate the total binding energy of an alpha particle. The masses of the neutron, proton and alpha particle are respectively 1.008665 u, 1.007825 u and 4.002603 u. (1u = 931.5 MeV/c²). [3 marks]\n\n(c) (i) Define half-life of a radioactive substance. [1 mark]\n(ii) Show that half-life T½ = ln2/λ where λ is the decay constant. [2 marks]\n(iii) A radioactive material has an initial activity of 7000 counts per second and an activity of 875 counts per second after 6 hrs. What is the half-life of the material? [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(a) Definition of Radioactivity:\nRadioactivity is the spontaneous disintegration (decay) of unstable atomic nuclei, accompanied by the emission of radiation in the form of alpha particles (α), beta particles (β), or gamma rays (γ). It is a random process that cannot be controlled by external physical or chemical conditions such as temperature, pressure, or chemical state.\n\n(b) Binding Energy of Alpha Particle (⁴₂He: 2 protons + 2 neutrons):\nMass of 2 protons = 2 × 1.007825 = 2.015650 u\nMass of 2 neutrons = 2 × 1.008665 = 2.017330 u\nTotal mass of separated nucleons = 2.015650 + 2.017330 = 4.032980 u\nMass of alpha particle = 4.002603 u\nMass defect Δm = 4.032980 − 4.002603 = 0.030377 u\nBinding energy = Δm × 931.5 MeV/u = 0.030377 × 931.5 = 28.30 MeV\n\n(c)(i) Half-Life:\nThe half-life of a radioactive substance is the time required for half the atoms in a sample to undergo radioactive decay, reducing the activity to half its initial value.\n\n(c)(ii) Derivation of T½ = ln2/λ:\nThe law of radioactive decay: N = N₀e^(−λt)\nAt t = T½: N = N₀/2\nN₀/2 = N₀e^(−λT½)\n1/2 = e^(−λT½)\nTaking natural log: ln(1/2) = −λT½\n−ln2 = −λT½\nT½ = ln2/λ ✓\n\n(c)(iii) Half-Life Calculation:\nActivity A = A₀ × (1/2)^(t/T½)\n875 = 7000 × (1/2)^(6/T½)\n875/7000 = (1/2)^(6/T½)\n1/8 = (1/2)^(6/T½)\n(1/2)³ = (1/2)^(6/T½)\n3 = 6/T½\nT½ = 6/3 = 2 hours"
   },
   {
     "subject": "Physics",
@@ -619,7 +626,8 @@
     "type": "Essay",
     "questionNumber": "5a",
     "question": "(a) Differentiate between scalar and vector quantities and give two examples in each case. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Scalar Quantities:\nScalar quantities are physical quantities that have magnitude only — they are fully described by a numerical value and a unit, with no direction associated.\nExamples: Mass (e.g. 5 kg), Temperature (e.g. 300 K), Speed (e.g. 20 m/s), Energy, Time, Distance.\n\nVector Quantities:\nVector quantities are physical quantities that have both magnitude AND direction. They require both a numerical value (with unit) and a specified direction to be fully described. They obey vector addition rules (triangle law or parallelogram law).\nExamples: Velocity (e.g. 20 m/s due north), Force (e.g. 10 N downward), Displacement, Acceleration, Momentum.\n\nKey Distinction: Two scalars of the same magnitude are always equal; two vectors are equal only if they have the same magnitude AND the same direction."
   },
   {
     "subject": "Physics",
@@ -628,7 +636,8 @@
     "type": "Essay",
     "questionNumber": "5b",
     "question": "(b) (i) At a stage in the launch of a satellite, the force due to thrust is equal to the gravitational force. Determine the rate of change of the satellite's momentum at that instant. [2 marks]\n(ii) A truck accelerates uniformly from rest at 2 m/s² for 10 s, maintains a steady velocity for 30 s, and is then brought to rest in 5 s under uniform retardation. Calculate the total distance travelled by the truck. [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Rate of Change of Momentum:\nBy Newton's second law: net force = rate of change of momentum = dp/dt\nIf thrust = gravitational force, the net force on the satellite = Thrust − Weight = 0\nTherefore, dp/dt = 0\nThe rate of change of momentum is zero at that instant — the satellite's momentum is not changing (momentarily constant velocity).\n\n(ii) Total Distance Travelled by Truck:\nPhase 1 — Uniform acceleration from rest:\nu = 0, a = 2 m/s², t₁ = 10 s\nv = u + at₁ = 0 + 2(10) = 20 m/s\nd₁ = ½at₁² = ½(2)(10²) = 100 m\n\nPhase 2 — Constant velocity:\nv = 20 m/s, t₂ = 30 s\nd₂ = v × t₂ = 20 × 30 = 600 m\n\nPhase 3 — Uniform retardation to rest:\nu = 20 m/s, v = 0, t₃ = 5 s\nd₃ = ½(u + v)t₃ = ½(20 + 0)(5) = 50 m\n\nTotal distance = d₁ + d₂ + d₃ = 100 + 600 + 50 = 750 m"
   },
   {
     "subject": "Physics",
@@ -637,7 +646,8 @@
     "type": "Essay",
     "questionNumber": "5c",
     "question": "(c) A projectile is launched with an initial velocity of 35 m/s at an angle of 40° to the horizontal. Find:\n(i) The maximum height attained,\n(ii) Total time of flight,\n(iii) Range. (Take g = 9.8 m/s²). [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Initial velocity: u = 35 m/s, θ = 40°\nuₓ = u cosθ = 35 cos40° = 35 × 0.766 = 26.81 m/s\nuᵧ = u sinθ = 35 sin40° = 35 × 0.6428 = 22.50 m/s\n\n(i) Maximum Height:\nAt maximum height, vertical velocity = 0\nH = uᵧ²/(2g) = (22.50)²/(2 × 9.8) = 506.25/19.6 = 25.83 m ≈ 25.8 m\n\n(ii) Total Time of Flight:\nT = 2uᵧ/g = 2 × 22.50/9.8 = 45/9.8 = 4.59 s ≈ 4.6 s\n\n(iii) Range:\nR = uₓ × T = 26.81 × 4.59 = 123.1 m ≈ 123 m\n(Or: R = u²sin2θ/g = 35² × sin80°/9.8 = 1225 × 0.9848/9.8 = 123.1 m)"
   },
   {
     "subject": "Physics",
@@ -646,7 +656,8 @@
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) State how three features of a thermos flask are used to reduce heat loss. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Three Features of a Thermos Flask and How They Reduce Heat Loss:\n\n1. Double-walled glass vessel with vacuum between the walls:\nThe vacuum between the two glass walls eliminates heat transfer by conduction and convection (both require a material medium). Since there are virtually no molecules in the vacuum, heat cannot be conducted or convected across the gap. This is the most important heat-loss reduction feature.\n\n2. Silvered (mirror-like) inner walls:\nBoth inner surfaces of the double wall are silvered (coated with a reflective material). This reduces heat transfer by radiation. The silvered surface has very low emissivity and high reflectivity — it reflects radiant heat back rather than absorbing or emitting it, preventing heat loss or gain by radiation in either direction.\n\n3. Cork or plastic stopper/cap at the top:\nThe stopper seals the opening of the flask, preventing heat loss by convection (warm air rising out) and conduction through the neck. It also acts as a poor conductor of heat, reducing conduction from the contents to the surroundings through the opening."
   },
   {
     "subject": "Physics",
@@ -655,7 +666,8 @@
     "type": "Essay",
     "questionNumber": "6b",
     "question": "(b) (i) State Zeroth law of thermodynamics. [1 mark]\n(ii) Give an implication of this law. [1 mark]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Zeroth Law of Thermodynamics:\nThe Zeroth Law states that if two systems A and B are each in thermal equilibrium with a third system C, then A and B are also in thermal equilibrium with each other.\nIn other words: if A ↔ C (thermal equilibrium) and B ↔ C (thermal equilibrium), then A ↔ B (thermal equilibrium).\n\n(ii) Implication:\nThe Zeroth Law provides the basis for the concept of temperature and the use of thermometers. If system C is a thermometer, then when C reads the same temperature for both A and B, it implies A and B are at the same temperature and will not exchange heat if brought into contact. This justifies the use of a thermometer as a universal measure of temperature — temperature is a transitive property that can be meaningfully compared between systems."
   },
   {
     "subject": "Physics",
@@ -664,7 +676,8 @@
     "type": "Essay",
     "questionNumber": "6c",
     "question": "(c) (i) A steel rod has a length of 30 m at 0°C. Calculate the length of the rod after it has been heated to 40°C, given that the linear expansion coefficient is 11 × 10^{-6} /°C. [2 marks]\n(ii) A 0.050 kg steel mass, heated to 200.0°C is dropped into a beaker containing 0.400 kg of water. The initial temperature of the water is 20.0°C and the final temperature with the steel is 22.4°C. Calculate the specific heat of the steel mass. Assume the beaker has negligible heat capacity. Specific heat capacity of water = 4186 J/kg°C. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Linear Thermal Expansion:\nΔL = L₀ × α × ΔT\nΔL = 30 × 11 × 10⁻⁶ × (40 − 0)\nΔL = 30 × 11 × 10⁻⁶ × 40\nΔL = 0.0132 m\nFinal length L = L₀ + ΔL = 30 + 0.0132 = 30.0132 m\n\n(ii) Specific Heat of Steel:\nUsing the principle of calorimetry (heat lost by steel = heat gained by water):\nm_steel × c_steel × (T_steel − T_final) = m_water × c_water × (T_final − T_water)\n0.050 × c_steel × (200.0 − 22.4) = 0.400 × 4186 × (22.4 − 20.0)\n0.050 × c_steel × 177.6 = 0.400 × 4186 × 2.4\n8.88 × c_steel = 4018.56\nc_steel = 4018.56 / 8.88\nc_steel = 452.5 J/kg°C ≈ 452 J/kg°C\n(Literature value for steel ≈ 452 J/kg°C ✓)"
   },
   {
     "subject": "Physics",
@@ -673,7 +686,8 @@
     "type": "Essay",
     "questionNumber": "7a",
     "question": "(a) Explain what is meant by a field of force. [1 mark]",
-    "options": []
+    "options": [],
+    "modelAnswer": "A field of force is a region of space in which a body experiences a force due to the presence of another body or source. The field exists throughout the region and can be represented by field lines showing the direction and relative magnitude of the force at each point. The force field is characterised by its field strength — the force per unit test quantity placed at that point:\n- Gravitational field: force per unit mass (g = F/m, units N/kg)\n- Electric field: force per unit positive charge (E = F/q, units N/C)\n- Magnetic field: force per unit current element\n\nA field of force allows action-at-a-distance — one body influences another without direct contact, through the field they create in the surrounding space."
   },
   {
     "subject": "Physics",
@@ -682,7 +696,8 @@
     "type": "Essay",
     "questionNumber": "7b",
     "question": "(b) State Coulomb's Law. [1 mark]\n\n(c) A negative charge of 6.0 × 10^{-6} C exerts an attractive force of 65 N on a second charge that is 0.050 m away. What is the magnitude of the second charge? (ε₀ = 8.85 × 10^{-12} F/m) [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Coulomb's Law:\nCoulomb's law states that the electrostatic force between two point charges is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them. The force acts along the line joining the charges:\nF = kq₁q₂/r² = q₁q₂/(4πε₀r²)\nwhere k = 1/(4πε₀) ≈ 9 × 10⁹ N m² C⁻²\nThe force is attractive for opposite charges and repulsive for like charges.\n\n(c) Magnitude of Second Charge:\nk = 1/(4πε₀) = 1/(4π × 8.85 × 10⁻¹²) = 8.988 × 10⁹ N m² C⁻²\nF = kq₁q₂/r²\n65 = (8.988 × 10⁹ × 6.0 × 10⁻⁶ × q₂) / (0.050)²\n65 = (8.988 × 10⁹ × 6.0 × 10⁻⁶ × q₂) / 0.0025\n65 × 0.0025 = 8.988 × 10⁹ × 6.0 × 10⁻⁶ × q₂\n0.1625 = 53928 × q₂\nq₂ = 0.1625 / 53928\nq₂ = 3.01 × 10⁻⁶ C ≈ 3.0 μC\n\nThe force is attractive, so the second charge must be positive (opposite sign to the negative 6 μC charge)."
   },
   {
     "subject": "Physics",
@@ -693,7 +708,8 @@
     "question": "(d) Find the currents I₁, I₂ and I₃ in the circuit below. [5 marks]",
     "diagramMissing": true,
     "diagramNote": "⚠️ Diagram missing: Circuit diagram with resistors and currents I₁, I₂, I₃. Please refer to your original past question paper.",
-    "options": []
+    "options": [],
+    "modelAnswer": "Note: The circuit diagram is missing. To solve for I₁, I₂, and I₃ using Kirchhoff's laws, follow these steps with the actual circuit values from your paper:\n\nMethod — Kirchhoff's Laws:\n1. Label all branch currents (I₁, I₂, I₃) and assign directions.\n2. Apply Kirchhoff's Current Law (KCL) at each junction:\n   Sum of currents entering a node = Sum of currents leaving (e.g. I₁ = I₂ + I₃)\n3. Apply Kirchhoff's Voltage Law (KVL) around each independent loop:\n   Sum of EMFs = Sum of IR drops around any closed loop\n   Loop 1: E₁ = I₁R₁ + I₂R₂\n   Loop 2: E₂ = I₃R₃ − I₂R₂ (or similar, depending on configuration)\n4. Solve the simultaneous equations for I₁, I₂, and I₃.\n\nA positive result confirms the assumed current direction; a negative result means the actual direction is opposite to assumed.\nPlease refer to your original past question paper for the specific resistor values and EMF sources to complete the numerical solution."
   },
   {
     "subject": "Physics",
@@ -702,7 +718,8 @@
     "type": "Essay",
     "questionNumber": "8a",
     "question": "(a) Explain the term wave-particle duality. [1 mark]\n\n(b) (i) Write down, without proof, de Broglie's relation. [1 mark]\n(ii) A bullet of mass 20 g is moving with a speed of 300 m/s. Calculate the de Broglie wavelength of the bullet. [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(a) Wave-Particle Duality:\nWave-particle duality is the quantum mechanical concept that all matter and radiation exhibit both wave-like and particle-like properties, depending on the type of experiment used to observe them. Light (and all electromagnetic radiation) can behave as waves (shown by interference and diffraction) and as particles called photons (shown by the photoelectric effect and Compton scattering). Similarly, particles such as electrons and even larger objects have an associated wavelength (matter waves), as demonstrated by electron diffraction. The two aspects are complementary — in any given experiment, only one aspect is observed.\n\n(b)(i) de Broglie's Relation:\nλ = h/p = h/(mv)\nwhere λ = de Broglie wavelength, h = Planck's constant (6.626 × 10⁻³⁴ J·s), p = momentum, m = mass, v = velocity.\n\n(b)(ii) de Broglie Wavelength of Bullet:\nm = 20 g = 0.020 kg, v = 300 m/s\np = mv = 0.020 × 300 = 6 kg·m/s\nλ = h/p = 6.626 × 10⁻³⁴ / 6 = 1.104 × 10⁻³⁴ m\n\nThe de Broglie wavelength ≈ 1.10 × 10⁻³⁴ m — an immeasurably small wavelength, which explains why wave effects are never observed for macroscopic objects like bullets."
   },
   {
     "subject": "Physics",
@@ -711,6 +728,7 @@
     "type": "Essay",
     "questionNumber": "8b",
     "question": "(c) Define the following: Photoelectric effect and work function. [2 marks]\n\n(d) The threshold frequency for a metal surface is 3 × 10^{14} Hz. If the metal is illuminated with a radiation of 7.88 eV, what is the kinetic energy of the electrons emitted from the metal surface? [Planck constant, h = 6.6 × 10^{-34} J.s, 1 eV = 1.602 × 10^{-19} J]. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Photoelectric Effect:\nThe photoelectric effect is the phenomenon whereby electrons are emitted from the surface of a metal when electromagnetic radiation (light) of sufficiently high frequency is incident on it. The emitted electrons are called photoelectrons. Key observations: there is a minimum frequency (threshold frequency) below which no emission occurs regardless of intensity; above the threshold, emission is instantaneous; the kinetic energy of emitted electrons depends on the frequency (not intensity) of light.\n\nWork Function (φ):\nThe work function is the minimum energy required to completely remove an electron from the surface of a metal. It equals the energy of a photon at the threshold frequency: φ = hf₀, where f₀ is the threshold frequency. It represents the binding energy of the most loosely bound surface electrons. Units: joules (J) or electron-volts (eV).\n\n(d) Kinetic Energy of Emitted Electrons:\nEinstein's photoelectric equation: KE = hf − φ = hf − hf₀\n\nWork function: φ = hf₀ = 6.6 × 10⁻³⁴ × 3 × 10¹⁴ = 1.98 × 10⁻¹⁹ J\nConvert to eV: φ = 1.98 × 10⁻¹⁹ / 1.602 × 10⁻¹⁹ = 1.236 eV\n\nEnergy of incident radiation = 7.88 eV\nKE = 7.88 − 1.236 = 6.644 eV ≈ 6.64 eV\nIn joules: KE = 6.644 × 1.602 × 10⁻¹⁹ = 1.064 × 10⁻¹⁸ J"
   }
 ]

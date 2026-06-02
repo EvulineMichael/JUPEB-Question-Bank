@@ -558,7 +558,8 @@
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) (i) A vernier caliper has 20 divisions on the vernier scale. 1 cm on the main scale is divided into 10 equal parts. Determine the least count on the vernier scale. [2 marks]\n(ii) Complete the below table:\nS/N | Physical quantity | Unit\nI | | Js⁻¹\nII | Surface tension |\nIII | | Nm\nIV | Electric charge | [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Least Count of Vernier Caliper:\nLeast count = 1 MSD − 1 VSD\n1 MSD (main scale division) = 1 cm/10 = 0.1 cm = 1 mm\n1 VSD (vernier scale division) = 1 MSD × (number of MSD / number of VSD)\nThe vernier scale has 20 divisions that span some number of main scale divisions.\nStandard formula: Least count = 1 MSD / number of vernier divisions\nLeast count = 1 mm / 20 = 0.05 mm = 0.005 cm\n\nAlternatively: If 20 VSD = 19 MSD (standard vernier):\n1 VSD = 19/20 MSD = 19/20 × 0.1 cm = 0.095 cm\nLeast count = 1 MSD − 1 VSD = 0.1 − 0.095 = 0.005 cm = 0.05 mm\n\nLeast count = 0.05 mm = 0.005 cm\n\n(ii) Completed Table:\nI | Power | Js⁻¹ (Watt, W)\nII | Surface tension | Nm⁻¹ (or J m⁻²)\nIII | Torque (moment of force) | Nm\nIV | Electric charge | Coulomb (C)"
   },
   {
     "subject": "Physics",
@@ -567,7 +568,8 @@
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) A mason working at a construction site drops his trowel from a height of 125 m. How long does it take to reach the ground? [Take g = 10 m/s²] [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "The trowel is dropped from rest (u = 0) from height h = 125 m.\nUsing: h = ut + ½gt²\n125 = 0 + ½ × 10 × t²\n125 = 5t²\nt² = 25\nt = 5 s\n\nThe trowel takes 5 seconds to reach the ground."
   },
   {
     "subject": "Physics",
@@ -576,16 +578,18 @@
     "type": "Essay",
     "questionNumber": "1c",
     "question": "(c) (i) A body of mass 4 × 10⁻³ kg is placed on top of a spiral spring of force constant 400 N/m. If the spring is compressed downwards by 0.02 m and then returns, calculate the height to which the body is projected. [g = 10 m/s²] [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Energy stored in compressed spring = elastic potential energy:\nE_spring = ½kx² = ½ × 400 × (0.02)² = ½ × 400 × 4 × 10⁻⁴ = 0.08 J\n\nThis energy converts to gravitational potential energy when the body reaches maximum height:\nE_spring = mgh\n0.08 = 4 × 10⁻³ × 10 × h\n0.08 = 0.04h\nh = 0.08/0.04 = 2 m\n\nThe body is projected to a height of 2 m."
   },
-    {
+  {
     "subject": "Physics",
     "year": 2025,
     "category": "Work, Energy and Power",
     "type": "Essay",
     "questionNumber": "1c",
     "question": "(ii) The engine of a train produces a force of 5000 N when moving at 50 m/s. What is the power rating of the engine? [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Power = Force × velocity\nP = F × v = 5000 × 50 = 250,000 W = 250 kW\n\nThe power rating of the engine is 250 kW."
   },
   {
     "subject": "Physics",
@@ -596,7 +600,8 @@
     "question": "(a) Explain the following:\n(i) Centre of gravity;\n(ii) Angular momentum;\n(iii) Inertia;\n(iv) Terminal speed. [2 marks]\n\n(b) (i) State Newton's second law of motion. [1 mark]\n(ii) If A = -5i + 6j - 3k and B = 7i + 8j + 4k, find A × B. [3 marks]\n\n(c) A body of mass 10 kg is kept in equilibrium by two ropes as shown in the diagram below. If one rope pulls the body in a horizontal direction and the other in a direction 40° to the vertical, calculate the tension in each rope. [4 marks]",
     "diagramMissing": true,
     "diagramNote": "⚠️ Diagram missing: Equilibrium of body with two ropes. Please refer to your original past question paper.",
-    "options": []
+    "options": [],
+    "modelAnswer": "(a) Definitions:\n\n(i) Centre of Gravity:\nThe centre of gravity of a body is the single point at which the entire weight of the body may be considered to act, regardless of the orientation of the body. It is the point where the resultant gravitational force effectively acts. For a uniform body it coincides with the geometric centre; for irregular bodies it may lie outside the body.\n\n(ii) Angular Momentum:\nAngular momentum (L) is the rotational analogue of linear momentum. For a body rotating about an axis, it is the product of the moment of inertia (I) and angular velocity (ω):\nL = Iω\nFor a particle: L = r × p = mvr sinθ\nSI unit: kg m² s⁻¹. Angular momentum is conserved when no net external torque acts on the system.\n\n(iii) Inertia:\nInertia is the inherent property of a body that resists any change in its state of rest or uniform motion. A body at rest tends to remain at rest, and a body in motion tends to remain in motion at the same speed and direction, unless acted upon by an external force (Newton's first law). Inertia is directly proportional to mass — a more massive body has greater inertia.\n\n(iv) Terminal Speed:\nTerminal speed (or terminal velocity) is the constant maximum speed attained by a falling body when the drag force (air resistance or viscous resistance) becomes equal in magnitude to the net downward force (weight minus buoyancy). At terminal speed, acceleration = 0 and the body falls at constant velocity. Example: a raindrop or a parachutist falling at constant speed.\n\n(b)(i) Newton's Second Law of Motion:\nNewton's second law states that the net force acting on a body is directly proportional to the rate of change of its momentum, and acts in the direction of the change in momentum:\nF_net = dp/dt = ma (for constant mass)\nThe acceleration of a body is directly proportional to the net force and inversely proportional to the mass.\n\n(b)(ii) Cross Product A × B:\nA = −5i + 6j − 3k\nB = 7i + 8j + 4k\n\nA × B = |i    j    k  |\n         |−5   6   −3|\n         |7    8    4|\n\nA × Bᵢ = (6×4) − (−3×8) = 24 − (−24) = 24 + 24 = 48\nA × Bⱼ = −[(−5×4) − (−3×7)] = −[−20 − (−21)] = −[−20 + 21] = −[1] = −1\nA × Bₖ = (−5×8) − (6×7) = −40 − 42 = −82\n\nA × B = 48i − j − 82k\n\n(c) Tension in Each Rope:\nThe body (W = mg = 10 × 10 = 100 N) is in equilibrium under three forces:\n- Weight W = 100 N downward\n- T₁ = horizontal tension\n- T₂ = tension at 40° to the vertical (i.e. 50° to horizontal)\n\nResolving vertically (T₂ cos40° = W):\nT₂ × cos40° = 100\nT₂ = 100/cos40° = 100/0.766 = 130.5 N ≈ 130.5 N\n\nResolving horizontally (T₁ = T₂ sin40°):\nT₁ = 130.5 × sin40° = 130.5 × 0.6428 = 83.9 N ≈ 83.9 N"
   },
   {
     "subject": "Physics",
@@ -605,7 +610,8 @@
     "type": "Essay",
     "questionNumber": "3a",
     "question": "(a) (i) State any FOUR components of the electromagnetic spectrum in order of their decreasing wavelength. [2 marks]\n(ii) State TWO properties of electromagnetic waves that distinguish them from mechanical waves. [1 mark]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Four Components of EM Spectrum in Order of Decreasing Wavelength:\n1. Radio waves (longest wavelength, ~10³ m and above)\n2. Microwaves (~10⁻³ to 10⁻¹ m)\n3. Infrared radiation (~7 × 10⁻⁷ to 10⁻³ m)\n4. Visible light (~4 × 10⁻⁷ to 7 × 10⁻⁷ m)\n(Continuing: Ultraviolet → X-rays → Gamma rays — shortest wavelength)\n\nFor the four in decreasing order: Radio waves > Microwaves > Infrared > Visible light\n(Or any four consecutive regions of the spectrum listed correctly in decreasing wavelength order)\n\n(ii) Two Properties Distinguishing EM Waves from Mechanical Waves:\n1. Electromagnetic waves do not require a material medium for propagation — they can travel through a vacuum (e.g. light travels through space). Mechanical waves (e.g. sound) require a material medium and cannot travel through vacuum.\n2. Electromagnetic waves are transverse waves that consist of oscillating electric and magnetic fields perpendicular to each other and to the direction of propagation, and can be polarized. Mechanical waves can be either transverse or longitudinal, and longitudinal mechanical waves (like sound) cannot be polarized."
   },
   {
     "subject": "Physics",
@@ -614,7 +620,8 @@
     "type": "Essay",
     "questionNumber": "3b",
     "question": "(b) (i) State and define the THREE modes of heat transfer. [3 marks]\n(ii) A filament of a light bulb of surface area 7 × 10⁻⁶ m² operates at 1727°C. Calculate the electrical power which must be supplied to filament if its emissivity is 0.91. [Stefan constant = 5.67 × 10⁻⁸ Wm⁻²K⁻⁴] [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Three Modes of Heat Transfer:\n\n1. Conduction:\nConduction is the transfer of heat through a solid material (or between objects in direct contact) by the vibration and collision of neighbouring atoms or molecules, without bulk movement of the material. Heat flows from the hotter region to the cooler region. Metals are excellent thermal conductors due to free electrons.\nRate: Q/t = kA(ΔT/d), where k = thermal conductivity, A = area, ΔT = temperature difference, d = thickness.\n\n2. Convection:\nConvection is the transfer of heat through fluids (liquids and gases) by the bulk movement (flow) of the fluid itself. Hot fluid becomes less dense and rises, while cooler denser fluid sinks, setting up convection currents that carry thermal energy from hot regions to cooler ones.\nTypes: Natural (free) convection driven by density differences; forced convection driven by external means (fans, pumps).\n\n3. Radiation:\nRadiation is the transfer of heat energy in the form of electromagnetic waves (primarily infrared radiation) without requiring any material medium. All objects above absolute zero emit thermal radiation. The rate of emission depends on temperature and surface properties.\nStefan-Boltzmann law: P = εσAT⁴, where ε = emissivity, σ = Stefan constant, A = surface area, T = absolute temperature.\n\n(ii) Electrical Power to Filament:\nT = 1727°C + 273 = 2000 K\nA = 7 × 10⁻⁶ m², ε = 0.91, σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴\n\nP = εσAT⁴\nP = 0.91 × 5.67 × 10⁻⁸ × 7 × 10⁻⁶ × (2000)⁴\n(2000)⁴ = 1.6 × 10¹⁴\nP = 0.91 × 5.67 × 10⁻⁸ × 7 × 10⁻⁶ × 1.6 × 10¹⁴\nP = 0.91 × 5.67 × 7 × 1.6 × 10⁻⁸⁻⁶⁺¹⁴\nP = 0.91 × 63.504 × 10⁰\nP = 0.91 × 63.504 = 57.79 W ≈ 57.8 W"
   },
   {
     "subject": "Physics",
@@ -623,7 +630,8 @@
     "type": "Essay",
     "questionNumber": "4a",
     "question": "(a) (i) Distinguish between heat and temperature. [2 marks]\n(ii) State any THREE reasons why mercury is preferred to alcohol as a thermometric liquid. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Heat vs Temperature:\nHeat is the total thermal energy transferred between objects due to a temperature difference. It is an extensive quantity (depends on the amount of substance) and flows from a region of higher temperature to lower temperature until equilibrium. SI unit: Joule (J).\n\nTemperature is a measure of the average kinetic energy of the particles of a substance. It is an intensive property (independent of the amount of substance) and determines the direction of heat flow. It is measured on a scale (Kelvin, Celsius). SI unit: Kelvin (K).\n\nKey distinction: Temperature is a state property of a body; heat is energy in transit between bodies.\n\n(ii) Three Reasons Mercury is Preferred over Alcohol as a Thermometric Liquid:\n1. Higher boiling point: Mercury boils at 357°C (vs alcohol at ~78°C), enabling measurement of much higher temperatures — mercury thermometers cover a range of roughly −39°C to 357°C.\n2. Uniform and consistent expansion: Mercury expands very uniformly (linearly) with temperature over its working range, ensuring the thermometer scale is accurate and consistent.\n3. Does not wet glass (non-wetting): Mercury has a convex meniscus and does not stick to glass, making it easier to read accurately. Alcohol wets glass and has a concave meniscus, which can cause reading errors."
   },
   {
     "subject": "Physics",
@@ -632,7 +640,8 @@
     "type": "Essay",
     "questionNumber": "4b",
     "question": "(b) (i) State Boyle's law and express its mathematical relations. [2 marks]\n(ii) A gas contained in a cylinder is of volume 1.0 × 10⁻² m³ at temperature 325 K and pressure 2.7 × 10⁵ N/m². When some of the gas is used at constant temperature, the pressure falls to 1.2 × 10⁵ N/m². Calculate the number of moles of the gas used. [Take R = 8.3 J mol⁻¹ K⁻¹] [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Boyle's Law:\nBoyle's law states that at constant temperature, the pressure of a fixed mass of an ideal gas is inversely proportional to its volume:\nP ∝ 1/V (at constant T)\nMathematically: PV = constant, or P₁V₁ = P₂V₂\n\n(ii) Moles of Gas Used:\nUsing the ideal gas law PV = nRT:\n\nInitial: P₁ = 2.7 × 10⁵ Pa, V = 1.0 × 10⁻² m³, T = 325 K\nn₁ = P₁V/(RT) = (2.7 × 10⁵ × 1.0 × 10⁻²)/(8.3 × 325)\nn₁ = 2700/2697.5 = 1.0009 mol ≈ 1.00 mol\n\nFinal: P₂ = 1.2 × 10⁵ Pa, V = 1.0 × 10⁻² m³ (same cylinder), T = 325 K\nn₂ = P₂V/(RT) = (1.2 × 10⁵ × 1.0 × 10⁻²)/(8.3 × 325)\nn₂ = 1200/2697.5 = 0.4449 mol\n\nMoles used = n₁ − n₂ = 1.0009 − 0.4449 = 0.556 mol ≈ 0.56 mol"
   },
   {
     "subject": "Physics",
@@ -643,18 +652,8 @@
     "question": "(a) Draw a diagram to illustrate the magnetic field between the south poles of two bar magnets. On your diagram, indicate the 'neutral point' with K. [2 marks]",
     "diagramMissing": true,
     "diagramNote": "⚠️ Diagram required: Magnetic field between south poles of two bar magnets. Please draw it yourself or refer to your original past question paper.",
-    "options": []
-  },
-  {
-    "subject": "Physics",
-    "year": 2025,
-    "category": "Magnetic Field",
-    "type": "Essay",
-    "questionNumber": "5a",
-    "question": "(a) Draw a diagram to illustrate the magnetic field between the south poles of two bar magnets. On your diagram, indicate the 'neutral point' with K. [2 marks]",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Diagram required: Magnetic field between south poles of two bar magnets. Please draw it yourself or refer to your original past question paper.",
-    "options": []
+    "options": [],
+    "modelAnswer": "Description of the Magnetic Field Pattern Between Two South Poles:\nWhen the south poles of two bar magnets face each other:\n- Magnetic field lines from each south pole point INTO the poles (since field lines enter south poles).\n- The field lines from both south poles push against each other in the space between the magnets.\n- The field lines curve outward and away from the midpoint between the poles.\n- At the neutral point K (located at the midpoint between the two south poles, on the line joining them), the magnetic fields from the two magnets are equal in magnitude but opposite in direction, resulting in a zero net field at that point.\n- The neutral point K is marked at the centre between the two facing south poles.\n\nNote: Please draw this diagram by hand showing the two bar magnets facing each other with S poles, curved field lines repelling outward between them, and the neutral point K marked at the centre where field lines cancel."
   },
   {
     "subject": "Physics",
@@ -663,7 +662,8 @@
     "type": "Essay",
     "questionNumber": "5b",
     "question": "(b) A lamp used in a JUPEB Foundation School is rated 60 W, 220 V with a 4400 V AC supply and operated by a transformer which is 95% efficient. Calculate the\n(i) ratio of the number of turns between the primary and secondary coils of the transformer respectively.\n(ii) current supplied by the mains circuit. [4 marks]\n\n(c) (i) In an A.C circuit, the peak value of the potential difference is 180 V. What is the instantaneous potential difference when it has reached two-third of a cycle? [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(b) Transformer Calculations:\nThis is a step-down transformer: V_primary = 4400 V (mains), V_secondary = 220 V (lamp rated voltage)\n\n(i) Turns Ratio (Primary : Secondary):\nN_p/N_s = V_p/V_s = 4400/220 = 20\nRatio of primary to secondary turns = 20 : 1\n\n(ii) Current Supplied by Mains (Primary Current):\nPower consumed by lamp = 60 W\nEfficiency = 95% = 0.95\nInput power (primary) = Output power / efficiency = 60/0.95 = 63.16 W\n\nPrimary current: I_p = P_input/V_p = 63.16/4400 = 0.01435 A ≈ 14.4 mA\n\n(c) Instantaneous Potential Difference at Two-Thirds of a Cycle:\nV(t) = V₀ sin(ωt) where V₀ = 180 V\nTwo-thirds of a cycle: t = (2/3)T → ωt = (2/3) × 2π = 4π/3 radians = 240°\n\nV = 180 × sin(240°)\nsin(240°) = sin(180° + 60°) = −sin(60°) = −√3/2 = −0.8660\n\nV = 180 × (−0.8660) = −155.88 V ≈ −155.9 V\n\nThe instantaneous potential difference at two-thirds of a cycle is approximately −155.9 V."
   },
   {
     "subject": "Physics",
@@ -672,7 +672,8 @@
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) (i) Explain the term 'Temperature coefficient of resistance'. [1 mark]\n(ii) The resistance of a conductor is 3 kΩ at a temperature of 150°C, if the temperature coefficient of resistance is 0.005 °C⁻¹, at what temperature will the resistance become 5 kΩ. [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Temperature Coefficient of Resistance (α):\nThe temperature coefficient of resistance is the fractional change in resistance per unit change in temperature (per degree Celsius or per Kelvin). It describes how the resistance of a material changes with temperature:\nα = (R_T − R₀)/(R₀ × ΔT)\nor: R_T = R₀(1 + αΔT)\nFor most metals (e.g. copper), α is positive — resistance increases with temperature (positive temperature coefficient, PTC). For semiconductors and thermistors (NTC), resistance decreases with temperature.\nSI unit: °C⁻¹ or K⁻¹.\n\n(ii) Finding Temperature for R = 5 kΩ:\nUsing R_T = R₀(1 + α(T − T₀))\nHere, the reference state is T₀ = 150°C, R₀ = 3 kΩ, α = 0.005 °C⁻¹, R_T = 5 kΩ\n\n5 = 3(1 + 0.005(T − 150))\n5/3 = 1 + 0.005(T − 150)\n1.6667 = 1 + 0.005(T − 150)\n0.6667 = 0.005(T − 150)\nT − 150 = 0.6667/0.005 = 133.3\nT = 150 + 133.3 = 283.3°C ≈ 283°C\n\nThe resistance becomes 5 kΩ at approximately 283°C."
   },
   {
     "subject": "Physics",
@@ -681,7 +682,8 @@
     "type": "Essay",
     "questionNumber": "6b",
     "question": "(b) (i) State Fleming's Right hand rule. [2 marks]\n(ii) A solid of 2000 turns coil is 75 cm long and carries a current of 2 A, calculate magnetic flux density at the centre of the solenoid. Hence determine the force exerted on an electron moving with a velocity 3000 m/s through the interior of the solenoid at an angle of 30° relative to the solenoid axis. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Fleming's Right-Hand Rule:\nFleming's right-hand rule is used to determine the direction of the induced EMF (or current) in a conductor moving through a magnetic field (generator effect). Hold the right hand with the thumb, index finger, and middle finger mutually perpendicular:\n- The thumb points in the direction of the Motion of the conductor\n- The index finger points in the direction of the magnetic Field (B)\n- The middle finger points in the direction of the induced Current (conventional current / EMF)\nThis rule applies to electromagnetic induction (generators), unlike Fleming's left-hand rule which applies to motors (force on current-carrying conductors).\n\n(ii) Magnetic Flux Density in Solenoid and Force on Electron:\nNumber of turns N = 2000, length L = 75 cm = 0.75 m, current I = 2 A\nNumber of turns per unit length: n = N/L = 2000/0.75 = 2666.7 turns/m\n\nMagnetic flux density at centre of solenoid:\nB = μ₀nI = 4π × 10⁻⁷ × 2666.7 × 2\nB = 4π × 10⁻⁷ × 5333.4\nB = 4 × 3.1416 × 10⁻⁷ × 5333.4\nB = 6.702 × 10⁻³ T ≈ 6.70 × 10⁻³ T\n\nForce on electron:\nF = qvB sinθ\nq = 1.602 × 10⁻¹⁹ C, v = 3000 m/s, B = 6.70 × 10⁻³ T, θ = 30°\nF = 1.602 × 10⁻¹⁹ × 3000 × 6.70 × 10⁻³ × sin30°\nF = 1.602 × 10⁻¹⁹ × 3000 × 6.70 × 10⁻³ × 0.5\nF = 1.602 × 10⁻¹⁹ × 10.05\nF = 1.610 × 10⁻¹⁸ N ≈ 1.61 × 10⁻¹⁸ N"
   },
   {
     "subject": "Physics",
@@ -690,7 +692,8 @@
     "type": "Essay",
     "questionNumber": "6c",
     "question": "(c) A 10 μF capacitor is connected in series with a 0.4 MΩ resistor. The DC voltage supply is 200 V, calculate the voltage in the capacitor, 5 s after the power is supplied. [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "RC charging circuit: V_C(t) = V₀(1 − e^(−t/RC))\nC = 10 μF = 10 × 10⁻⁶ F\nR = 0.4 MΩ = 0.4 × 10⁶ Ω\nV₀ = 200 V, t = 5 s\n\nTime constant: τ = RC = 0.4 × 10⁶ × 10 × 10⁻⁶ = 4 s\n\nV_C(5) = 200 × (1 − e^(−5/4))\n= 200 × (1 − e^(−1.25))\n= 200 × (1 − 0.2865)\n= 200 × 0.7135\n= 142.7 V ≈ 142.7 V\n\nThe voltage across the capacitor 5 seconds after power is supplied is approximately 142.7 V."
   },
   {
     "subject": "Physics",
@@ -699,7 +702,8 @@
     "type": "Essay",
     "questionNumber": "7a",
     "question": "(a) An electron makes a transition from -3.4 eV energy level to -13.6 eV energy level. Calculate the:\n(i) amount of energy in joules lost as a result of the transition.\n(ii) frequency of the emitted radiation. [Take h = 6.63 × 10⁻³⁴ Js] [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Energy Lost:\nΔE = E_initial − E_final = −3.4 − (−13.6) = 10.2 eV\nConvert to Joules:\nΔE = 10.2 × 1.602 × 10⁻¹⁹ = 1.634 × 10⁻¹⁸ J\n\nThe electron loses 1.634 × 10⁻¹⁸ J of energy (emitted as a photon).\n\n(ii) Frequency of Emitted Radiation:\nE = hf → f = E/h\nf = 1.634 × 10⁻¹⁸ / 6.63 × 10⁻³⁴\nf = 2.465 × 10¹⁵ Hz ≈ 2.47 × 10¹⁵ Hz\n\nThis corresponds to the Lyman series (transition to n=1, ground state) and falls in the ultraviolet region."
   },
   {
     "subject": "Physics",
@@ -708,7 +712,8 @@
     "type": "Essay",
     "questionNumber": "7b",
     "question": "(b) In a thermonuclear reaction, the difference between the initial and final mass is 1.0 × 10⁻²⁹ kg. What is the amount of energy released in the process? [2 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Using Einstein's mass-energy equivalence:\nE = Δmc²\nΔm = 1.0 × 10⁻²⁹ kg, c = 3 × 10⁸ m/s\n\nE = 1.0 × 10⁻²⁹ × (3 × 10⁸)²\nE = 1.0 × 10⁻²⁹ × 9 × 10¹⁶\nE = 9 × 10⁻¹³ J\n\nThe amount of energy released in the thermonuclear reaction is 9 × 10⁻¹³ J."
   },
   {
     "subject": "Physics",
@@ -717,7 +722,8 @@
     "type": "Essay",
     "questionNumber": "7c",
     "question": "(c) A photoelectric surface has a threshold frequency of 4.02 × 10¹⁴ Hz. If light of frequency 5.00 × 10¹⁵ Hz illuminates the surface, calculate the:\n(i) work function;\n(ii) threshold wavelength;\n(iii) kinetic energy of the emitted photons. [h = 6.63 × 10⁻³⁴ Js] [5 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Work Function:\nφ = hf₀ = 6.63 × 10⁻³⁴ × 4.02 × 10¹⁴\nφ = 2.665 × 10⁻¹⁹ J\nIn eV: φ = 2.665 × 10⁻¹⁹ / 1.602 × 10⁻¹⁹ = 1.663 eV ≈ 1.66 eV\n\n(ii) Threshold Wavelength:\nλ₀ = c/f₀ = (3 × 10⁸)/(4.02 × 10¹⁴)\nλ₀ = 7.463 × 10⁻⁷ m = 746.3 nm\n(This is in the near-infrared/red region of the spectrum)\n\n(iii) Kinetic Energy of Emitted Electrons:\nUsing Einstein's photoelectric equation:\nKE = hf − φ = h(f − f₀)\nKE = 6.63 × 10⁻³⁴ × (5.00 × 10¹⁵ − 4.02 × 10¹⁴)\nKE = 6.63 × 10⁻³⁴ × (50.0 × 10¹⁴ − 4.02 × 10¹⁴)\nKE = 6.63 × 10⁻³⁴ × 45.98 × 10¹⁴\nKE = 6.63 × 10⁻³⁴ × 4.598 × 10¹⁵\nKE = 3.048 × 10⁻¹⁸ J ≈ 3.05 × 10⁻¹⁸ J\nIn eV: KE = 3.048 × 10⁻¹⁸ / 1.602 × 10⁻¹⁹ = 19.03 eV ≈ 19.0 eV"
   },
   {
     "subject": "Physics",
@@ -726,7 +732,8 @@
     "type": "Essay",
     "questionNumber": "8a",
     "question": "(a) Explain the term threshold frequency and work function as used in the concept of photoelectric effect. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "Threshold Frequency (f₀):\nThe threshold frequency is the minimum frequency of electromagnetic radiation that must be incident on a metal surface to cause the emission of photoelectrons (electrons ejected from the surface). Below this frequency, no electrons are emitted regardless of the intensity of the light. This is because photons below the threshold frequency do not have sufficient energy to overcome the binding energy holding electrons in the metal.\nPhysically: hf₀ = φ (work function)\nEach metal has its own characteristic threshold frequency. For example, for sodium f₀ ≈ 5.5 × 10¹⁴ Hz.\n\nWork Function (φ):\nThe work function is the minimum energy required to completely remove one electron from the surface of a metal — it is the energy needed to overcome the attractive forces binding the electron to the metal. It is equal to the energy of a photon at the threshold frequency:\nφ = hf₀\nDifferent metals have different work functions depending on how strongly their surface electrons are bound. A metal with a low work function (e.g. caesium, φ ≈ 2.0 eV) emits electrons more easily than one with a high work function (e.g. platinum, φ ≈ 5.7 eV).\n\nRelationship to photoelectric equation:\nKE_max = hf − φ\nIf the photon energy (hf) exceeds the work function, the excess energy appears as kinetic energy of the emitted electron."
   },
   {
     "subject": "Physics",
@@ -735,7 +742,8 @@
     "type": "Essay",
     "questionNumber": "8b",
     "question": "(b) Consider the popular nuclear reaction that uses deuterium as fuel;\n3(²₁H) → ⁴₂He + ¹₁H + ¹₀n\n(i) Determine the mass defect of a single reaction given the following data:\n(²₁H) = 2.014 u, ⁴₂He = 4.0026 u, ¹₁H = 1.0078 u, ¹₀n = 1.0087 u\n(ii) Determine the energy in Joules released during a single fusion reaction. [4 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "(i) Mass Defect:\nTotal mass of reactants: 3 × mass of ²₁H = 3 × 2.014 = 6.042 u\n\nTotal mass of products: mass of ⁴₂He + mass of ¹₁H + mass of ¹₀n\n= 4.0026 + 1.0078 + 1.0087 = 6.0191 u\n\nMass defect: Δm = mass of reactants − mass of products\nΔm = 6.042 − 6.0191 = 0.0229 u\n\n(ii) Energy Released:\nConvert mass defect to kg:\nΔm = 0.0229 u × 1.6605 × 10⁻²⁷ kg/u = 3.803 × 10⁻²⁹ kg\n\nUsing E = Δmc²:\nE = 3.803 × 10⁻²⁹ × (3 × 10⁸)²\nE = 3.803 × 10⁻²⁹ × 9 × 10¹⁶\nE = 3.423 × 10⁻¹² J ≈ 3.42 × 10⁻¹² J\n\nAlternatively using MeV: E = 0.0229 × 931.5 MeV = 21.33 MeV\nIn Joules: E = 21.33 × 1.602 × 10⁻¹³ = 3.417 × 10⁻¹² J ✓"
   },
   {
     "subject": "Physics",
@@ -744,6 +752,7 @@
     "type": "Essay",
     "questionNumber": "8c",
     "question": "(c) A clinical X-ray tube was designed to operate at 24.8 kV. Determine the maximum possible wavelength of the radiation emitted from the tube. [3 marks]",
-    "options": []
+    "options": [],
+    "modelAnswer": "The minimum wavelength (maximum energy) of X-rays produced corresponds to all the kinetic energy of the accelerated electron being converted into a single photon (Duane-Hunt limit):\n\neV = hc/λ_min → λ_min = hc/(eV)\n\nFor maximum wavelength, the question asks for λ_min (shortest wavelength, highest energy X-ray):\nV = 24.8 kV = 24800 V\nh = 6.626 × 10⁻³⁴ J·s\nc = 3 × 10⁸ m/s\ne = 1.602 × 10⁻¹⁹ C\n\nλ_min = (6.626 × 10⁻³⁴ × 3 × 10⁸)/(1.602 × 10⁻¹⁹ × 24800)\nλ_min = (1.988 × 10⁻²⁵)/(3.973 × 10⁻¹⁵)\nλ_min = 5.0 × 10⁻¹¹ m = 0.050 nm\n\nNote: The question asks for 'maximum possible wavelength' which is a less precise phrasing — in X-ray physics, accelerating voltage determines the minimum wavelength (hardest X-rays). The maximum wavelength of useful radiation from the tube would depend on the anode material's characteristic lines and filtration. However, using the Duane-Hunt law:\nλ_min = hc/(eV) = 5.0 × 10⁻¹¹ m = 0.050 nm"
   }
 ]
