@@ -13,10 +13,7 @@ const ASSETS_TO_CACHE = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(cache => {
-        console.log('Caching core assets');
-        return cache.addAll(ASSETS_TO_CACHE);
-      })
+      .then(cache => cache.addAll(ASSETS_TO_CACHE))
       .then(() => self.skipWaiting())
   );
 });
@@ -33,45 +30,27 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch event - cache then network strategy for JSON, cache first for assets
+// Fetch event - network first for JSON, cache first for assets
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
   
-  // Cache JSON data files (questions) - Network first, fallback to cache
+  // JSON data files - Network first, fallback to cache
   if (url.pathname.includes('/data/') && url.pathname.endsWith('.json')) {
     event.respondWith(
       fetch(event.request)
         .then(response => {
           const responseClone = response.clone();
-          caches.open(CACHE_NAME).then(cache => {
-            cache.put(event.request, responseClone);
-          });
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
           return response;
         })
-        .catch(() => {
-          return caches.match(event.request);
-        })
+        .catch(() => caches.match(event.request))
     );
     return;
   }
   
-  // Core assets - Cache first, fallback to network
+  // Everything else - Cache first, fallback to network
   event.respondWith(
     caches.match(event.request)
-      .then(cachedResponse => {
-        if (cachedResponse) {
-          return cachedResponse;
-        }
-        return fetch(event.request).then(response => {
-          // Cache new requests for offline use
-          if (response.status === 200) {
-            const responseClone = response.clone();
-            caches.open(CACHE_NAME).then(cache => {
-              cache.put(event.request, responseClone);
-            });
-          }
-          return response;
-        });
-      })
+      .then(cachedResponse => cachedResponse || fetch(event.request))
   );
 });
