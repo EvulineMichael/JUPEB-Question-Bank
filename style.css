@@ -2405,3 +2405,129 @@ header {
     background: rgba(239, 68, 68, 0.15);
     color: #fca5a5;
 }
+
+/* ===== QUESTION NUMBER BADGE (Study Mode) ===== */
+.question-number-badge {
+    background: #198754;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.question-diagram-badge {
+    background: var(--warning-bg);
+    color: var(--warning-text);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px dashed var(--warning-border);
+}
+
+/* ===== QUIZ BADGES ===== */
+.quiz-q-badge.num-badge {
+    background: #6366f1;
+    color: white;
+}
+
+.quiz-q-badge.diagram-badge {
+    background: var(--warning-bg);
+    color: var(--warning-text);
+    border: 1px dashed var(--warning-border);
+}
+
+/* ===== REVIEW CARD BADGES ===== */
+.rq-paper-num {
+    font-size: 0.8rem;
+    color: #6366f1;
+    font-weight: 500;
+}
+
+.rq-diagram-badge {
+    font-size: 0.8rem;
+}
+
+/* ===== MULTI-SELECT TOPICS ===== */
+.multi-select-hint {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.multi-select-hint #selected-count {
+    font-weight: 700;
+    color: var(--tab-active-bg);
+}
+
+.quiz-confirm-topics-btn {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+    background: var(--tab-active-bg);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quiz-confirm-topics-btn:hover:not(:disabled) {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+.quiz-confirm-topics-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.no-data-message {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* ===== IMPROVED SWIPE AREA (Reduced sensitivity) ===== */
+.swipe-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 12px; /* Narrower edge zone */
+    height: 100%;
+    z-index: 80;
+    background: transparent;
+}
+
+/* ===== MOBILE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+    .question-header {
+        gap: 6px;
+    }
+    
+    .question-number-badge,
+    .question-diagram-badge {
+        font-size: 0.7rem;
+        padding: 2px 8px;
+    }
+    
+    .quiz-q-badge.num-badge,
+    .quiz-q-badge.diagram-badge {
+        font-size: 0.7rem;
+        padding: 2px 8px;
+    }
+    
+    .rq-paper-num {
+        font-size: 0.7rem;
+    }
+    
+    .swipe-area {
+        width: 10px;
+    }
+}

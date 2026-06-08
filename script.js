@@ -173,7 +173,9 @@ function initMobileSidebar() {
     }
 
     let touchStartX = 0;
+    let touchStartY = 0;
     let touchEndX = 0;
+    let touchEndY = 0;
 
     function openMobileMenu() {
         sidebar.classList.add('sidebar-open');
@@ -210,18 +212,27 @@ function initMobileSidebar() {
         }
     }
 
-    swipeArea.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; });
-    swipeArea.addEventListener('touchend', e => {
-        touchEndX = e.changedTouches[0].screenX;
-        if (touchEndX - touchStartX > 50 && !isMobileMenuOpen && window.innerWidth <= 768) openMobileMenu();
-        else if (touchStartX - touchEndX > 50 && isMobileMenuOpen && window.innerWidth <= 768) closeMobileMenu();
-    });
-    document.body.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; });
+    // Touch tracking on body
+    document.body.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
     document.body.addEventListener('touchend', e => {
         touchEndX = e.changedTouches[0].screenX;
-        if (touchEndX - touchStartX > 50 && !isMobileMenuOpen && window.innerWidth <= 768) openMobileMenu();
-        else if (touchStartX - touchEndX > 50 && isMobileMenuOpen && window.innerWidth <= 768) closeMobileMenu();
-    });
+        touchEndY = e.changedTouches[0].screenY;
+        const swipeDistanceX = touchEndX - touchStartX;
+        const swipeDistanceY = Math.abs(touchEndY - touchStartY);
+
+        // KEY CHANGE: Must be more horizontal than vertical to trigger
+        if (Math.abs(swipeDistanceX) < swipeDistanceY) return;
+
+        if (swipeDistanceX > 50 && !isMobileMenuOpen && window.innerWidth <= 768) {
+            openMobileMenu();
+        } else if (swipeDistanceX < -50 && isMobileMenuOpen && window.innerWidth <= 768) {
+            closeMobileMenu();
+        }
+    }, { passive: true });
 
     if (originalHamburger) originalHamburger.addEventListener('click', openMobileMenu);
     if (navbarHamburger) navbarHamburger.addEventListener('click', openMobileMenu);
@@ -242,6 +253,24 @@ function initMobileSidebar() {
     });
 
     resetHamburgerVisibility();
+}
+// Auto-open sidebar on mobile when subject changes
+function autoOpenSidebarOnMobile() {
+    if (window.innerWidth <= 768) {
+        const sidebar = document.getElementById('categories-sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+        const originalHamburger = document.getElementById('hamburger-btn');
+        const navbarHamburger = document.getElementById('navbar-hamburger');
+        
+        if (sidebar && !sidebar.classList.contains('sidebar-open')) {
+            sidebar.classList.add('sidebar-open');
+            if (overlay) overlay.classList.add('active');
+            if (originalHamburger) originalHamburger.style.display = 'none';
+            if (navbarHamburger) navbarHamburger.style.display = 'none';
+            isMobileMenuOpen = true;
+            document.body.style.overflow = 'hidden';
+        }
+    }
 }
 
 function handleSidebarResponsive() {
@@ -304,6 +333,9 @@ async function loadQuestions(forceSubject = null) {
     
     renderCategories();
     showWelcomeMessage();
+    
+    // Auto-open sidebar on mobile when subject loads
+    autoOpenSidebarOnMobile();
 }
 
 function getAvailableCategoriesFromJSON() {
@@ -396,8 +428,9 @@ function displayQuestions(topic) {
             questionsHtml += `<div class="question-card" data-question-idx="${questionIndex}">
                 <div class="question-header">
                     <span class="question-year">📅 ${year}</span>
-                    <span class="question-year" style="background:#198754;">🔢 Q${qNumberDisplay}</span>
+                    <span class="question-number-badge">🔢 Q${qNumberDisplay}</span>
                     <span class="question-type">${q.type === "Objective" ? "🔘 Multiple Choice" : "✍️ Essay"}</span>
+                    ${q.diagramMissing ? '<span class="question-diagram-badge">⚠️ Missing Diagram</span>' : ''}
                 </div>
                 <div class="question-text">${escapeHtml(q.question)}</div>`;
 
@@ -501,6 +534,9 @@ function setupEventListeners() {
             window.currentSubjectYears = allSubjectYears[currentSubject] || [];
             renderCategories();
             showWelcomeMessage();
+            
+            // Auto-open sidebar on mobile
+            autoOpenSidebarOnMobile();
         });
     });
 
@@ -571,6 +607,7 @@ let quizState = {
     subject: null,
     mode: null,
     filter: null,
+    selectedTopics: [],  // For multi-topic selection
     count: 40,
     timed: false,
     totalTime: 0,
@@ -588,10 +625,10 @@ let quizState = {
 
 // ----- WEAK AREAS CONFIG -----
 const WEAK_AREA_CONFIG = {
-    MIN_ATTEMPTS_TO_JUDGE: 3,    // Need at least 3 attempts per topic
-    WEAK_THRESHOLD: 0.6,          // Below 60% = weak
-    STRONG_THRESHOLD: 0.7,        // Above 70% = strong
-    TOTAL_QUESTIONS_TO_UNLOCK: 10 // Need 10 total attempts to unlock feature
+    MIN_ATTEMPTS_TO_JUDGE: 3,
+    WEAK_THRESHOLD: 0.6,
+    STRONG_THRESHOLD: 0.7,
+    TOTAL_QUESTIONS_TO_UNLOCK: 10
 };
 
 function clearQuizTimer() {
@@ -714,6 +751,7 @@ function showQuizLobby() {
     quizState.subject = currentSubject;
     quizState.mode = null;
     quizState.filter = null;
+    quizState.selectedTopics = [];
     
     questionsData = allSubjectData[currentSubject] || [];
     window.currentSubjectYears = allSubjectYears[currentSubject] || [];
@@ -755,7 +793,7 @@ function showQuizLobby() {
             <div class="quiz-step" id="qstep-1">
                 <div class="quiz-step-label"><span class="step-number">2</span> Choose Quiz Mode</div>
                 <div class="quiz-mode-grid">
-                    <button class="quiz-mode-card" data-mode="topic"><div class="qmc-icon">🏷️</div><div class="qmc-title">Topic Quiz</div><div class="qmc-desc">Questions from a specific topic</div></button>
+                    <button class="quiz-mode-card" data-mode="topic"><div class="qmc-icon">🏷️</div><div class="qmc-title">Topic Quiz</div><div class="qmc-desc">Select one or more topics</div></button>
                     <button class="quiz-mode-card" data-mode="course"><div class="qmc-icon">📘</div><div class="qmc-title">Course Quiz</div><div class="qmc-desc">All topics in one course code</div></button>
                     <button class="quiz-mode-card" data-mode="year"><div class="qmc-icon">📅</div><div class="qmc-title">Year Quiz</div><div class="qmc-desc">Questions from a specific exam year</div></button>
                     <button class="quiz-mode-card" data-mode="random"><div class="qmc-icon">🎲</div><div class="qmc-title">Random Mix</div><div class="qmc-desc">Questions from all years & topics</div></button>
@@ -845,6 +883,7 @@ function setupLobbyListeners() {
             
             quizState.mode = null;
             quizState.filter = null;
+            quizState.selectedTopics = [];
             document.querySelectorAll('.quiz-mode-card').forEach(c => c.classList.remove('selected'));
             document.querySelectorAll('.quiz-timer-btn').forEach(b => { 
                 b.classList.remove('active'); 
@@ -870,6 +909,7 @@ function setupLobbyListeners() {
             card.classList.add('selected');
             quizState.mode = card.dataset.mode;
             quizState.filter = null;
+            quizState.selectedTopics = [];
             quizState.timed = false;
             quizState.totalTime = 0;
             document.querySelectorAll('.quiz-timer-btn').forEach(b => { 
@@ -898,20 +938,54 @@ function showQuizStep2() {
     step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
     if (quizState.mode === 'topic') {
-        label.textContent = 'Select Topic';
+        label.textContent = 'Select Topics (choose one or more)';
         const allTopics = getAllTopicsForSubject();
         filterOptions.innerHTML = `
             <div class="quiz-filter-search">
                 <input type="text" id="topic-search" placeholder="🔍 Search topics..." class="quiz-search-input">
             </div>
+            <p class="multi-select-hint">Click multiple topics to combine them. Selected: <span id="selected-count">0</span></p>
             <div class="quiz-filter-list" id="topic-filter-list">
-                ${allTopics.map(t => `<button class="quiz-filter-btn" data-filter="${escapeHtml(t.name)}"><span>${escapeHtml(t.name)}</span><span class="filter-count">${t.count}q</span></button>`).join('')}
-            </div>`;
+                ${allTopics.map(t => `<button class="quiz-filter-btn multi-select-topic" data-filter="${escapeHtml(t.name)}"><span>${escapeHtml(t.name)}</span><span class="filter-count">${t.count}q</span></button>`).join('')}
+            </div>
+            <button class="quiz-confirm-topics-btn" id="confirm-topics-btn" disabled>Confirm Selection (0 topics)</button>`;
+        
         document.getElementById('topic-search').addEventListener('input', function() {
             const q = this.value.toLowerCase();
             document.querySelectorAll('#topic-filter-list .quiz-filter-btn').forEach(btn => {
                 btn.style.display = btn.dataset.filter.toLowerCase().includes(q) ? '' : 'none';
             });
+        });
+
+        // Multi-select logic
+        document.querySelectorAll('.multi-select-topic').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const topicName = btn.dataset.filter;
+                
+                if (quizState.selectedTopics.includes(topicName)) {
+                    quizState.selectedTopics = quizState.selectedTopics.filter(t => t !== topicName);
+                    btn.classList.remove('selected');
+                } else {
+                    quizState.selectedTopics.push(topicName);
+                    btn.classList.add('selected');
+                }
+                
+                const countEl = document.getElementById('selected-count');
+                const confirmBtn = document.getElementById('confirm-topics-btn');
+                if (countEl) countEl.textContent = quizState.selectedTopics.length;
+                if (confirmBtn) {
+                    confirmBtn.textContent = `Confirm Selection (${quizState.selectedTopics.length} topic${quizState.selectedTopics.length !== 1 ? 's' : ''})`;
+                    confirmBtn.disabled = quizState.selectedTopics.length === 0;
+                }
+            });
+        });
+
+        document.getElementById('confirm-topics-btn').addEventListener('click', () => {
+            if (quizState.selectedTopics.length > 0) {
+                quizState.filter = quizState.selectedTopics;
+                showQuizStep3();
+            }
         });
 
     } else if (quizState.mode === 'course') {
@@ -922,23 +996,40 @@ function showQuizStep2() {
             return `<button class="quiz-filter-btn course-btn" data-filter="${escapeHtml(c)}"><span>${escapeHtml(c)}</span><span class="filter-count">${count}q</span></button>`;
         }).join('');
 
+        filterOptions.querySelectorAll('.quiz-filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterOptions.querySelectorAll('.quiz-filter-btn').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+                quizState.filter = btn.dataset.filter;
+                showQuizStep3();
+            });
+        });
+
     } else if (quizState.mode === 'year') {
         label.textContent = 'Select Year';
         const years = [...new Set(questionsData.map(q => q.year))].sort((a, b) => b - a);
-        filterOptions.innerHTML = `<div class="quiz-year-grid">${years.map(y => {
-            const count = questionsData.filter(q => q.year === y && q.type === 'Objective').length;
-            return `<button class="quiz-year-btn" data-filter="${y}"><span class="year-num">${y}</span><span class="year-count">${count}q</span></button>`;
-        }).join('')}</div>`;
+        const yearsWithCounts = years.map(y => {
+            const count = questionsData.filter(q => q.year === y && q.type === 'Objective' && q.options && q.options.length > 0 && q.answer).length;
+            return { year: y, count };
+        }).filter(y => y.count > 0); // Only show years with actual quiz-ready questions
+        
+        if (yearsWithCounts.length === 0) {
+            filterOptions.innerHTML = `<p class="no-data-message">No quiz-ready questions found. Questions need answers and options to be used in quiz mode.</p>`;
+        } else {
+            filterOptions.innerHTML = `<div class="quiz-year-grid">${yearsWithCounts.map(y => {
+                return `<button class="quiz-year-btn" data-filter="${y.year}"><span class="year-num">${y.year}</span><span class="year-count">${y.count}q</span></button>`;
+            }).join('')}</div>`;
+            
+            filterOptions.querySelectorAll('.quiz-year-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterOptions.querySelectorAll('.quiz-year-btn').forEach(b => b.classList.remove('selected'));
+                    btn.classList.add('selected');
+                    quizState.filter = parseInt(btn.dataset.filter);
+                    showQuizStep3();
+                });
+            });
+        }
     }
-
-    filterOptions.querySelectorAll('.quiz-filter-btn, .quiz-year-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterOptions.querySelectorAll('.quiz-filter-btn, .quiz-year-btn').forEach(b => b.classList.remove('selected'));
-            btn.classList.add('selected');
-            quizState.filter = quizState.mode === 'year' ? parseInt(btn.dataset.filter) : btn.dataset.filter;
-            showQuizStep3();
-        });
-    });
 }
 
 function showQuizStep3() {
@@ -1022,13 +1113,20 @@ function showQuizStep5() {
     step5.classList.remove('hidden');
     step5.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
-    const modeLabels = {
-        topic: `Topic: ${quizState.filter}`,
-        course: `Course: ${quizState.filter}`,
-        year: `Year: ${quizState.filter}`,
-        random: 'Random Mix (all topics)',
-        weak: 'Weak Areas Focus'
-    };
+    let modeLabel;
+    if (quizState.mode === 'topic') {
+        const topics = Array.isArray(quizState.filter) ? quizState.filter : [quizState.filter];
+        modeLabel = `Topics: ${topics.map(t => t.split(' ').slice(0, 2).join(' ')).join(', ')}`;
+    } else {
+        const modeLabels = {
+            course: `Course: ${quizState.filter}`,
+            year: `Year: ${quizState.filter}`,
+            random: 'Random Mix (all topics)',
+            weak: 'Weak Areas Focus'
+        };
+        modeLabel = modeLabels[quizState.mode] || quizState.mode;
+    }
+    
     const timerLabel = !quizState.timed ? 'No timer' : quizState.totalTime >= 3600 ? `${quizState.totalTime/3600}h` : `${quizState.totalTime/60} min`;
     const available = getAvailableQuestions().length;
     const finalCount = Math.min(quizState.count, available);
@@ -1036,7 +1134,7 @@ function showQuizStep5() {
     document.getElementById('quiz-summary').innerHTML = `
         <div class="quiz-summary-grid">
             <div class="qs-item"><span class="qs-label">Subject</span><span class="qs-value">${currentSubject.charAt(0).toUpperCase() + currentSubject.slice(1)}</span></div>
-            <div class="qs-item"><span class="qs-label">Mode</span><span class="qs-value">${modeLabels[quizState.mode] || quizState.mode}</span></div>
+            <div class="qs-item"><span class="qs-label">Mode</span><span class="qs-value">${modeLabel}</span></div>
             <div class="qs-item"><span class="qs-label">Questions</span><span class="qs-value">${finalCount}</span></div>
             <div class="qs-item"><span class="qs-label">Timer</span><span class="qs-value">${timerLabel}</span></div>
         </div>`;
@@ -1068,7 +1166,8 @@ function getCourseQuestionCount(courseName) {
 function getAvailableQuestions() {
     let pool = questionsData.filter(q => q.type === 'Objective' && q.options && q.options.length > 0 && q.answer);
     if (quizState.mode === 'topic') {
-        pool = pool.filter(q => q.category === quizState.filter);
+        const topics = Array.isArray(quizState.filter) ? quizState.filter : [quizState.filter];
+        pool = pool.filter(q => topics.includes(q.category));
     } else if (quizState.mode === 'course') {
         const topics = (courseStructure[currentSubject] || {})[quizState.filter] || [];
         pool = pool.filter(q => topics.includes(q.category));
@@ -1210,7 +1309,9 @@ function renderQuizExam() {
             <div class="quiz-question-card">
                 <div class="quiz-q-meta">
                     <span class="quiz-q-badge year-badge">📅 ${q.year}</span>
+                    <span class="quiz-q-badge num-badge">🔢 Q${q.questionNumber.toString().padStart(2, '0')}</span>
                     <span class="quiz-q-badge cat-badge">🏷️ ${escapeHtml(q.category)}</span>
+                    ${q.diagramMissing ? '<span class="quiz-q-badge diagram-badge">⚠️ Diagram</span>' : ''}
                     ${quizState.flagged.has(quizState.currentIndex) ? '<span class="quiz-q-badge flag-badge">🚩 Flagged</span>' : ''}
                 </div>
                 <div class="quiz-question-text">${escapeHtml(q.question)}</div>
@@ -1405,7 +1506,9 @@ function submitQuiz(timeUp = false) {
                             <div class="rq-header">
                                 <span class="rq-num">Q${i+1}</span>
                                 <span class="rq-year">📅 ${q.year}</span>
+                                <span class="rq-paper-num">📄 Paper Q${q.questionNumber.toString().padStart(2, '0')}</span>
                                 <span class="rq-cat">🏷️ ${escapeHtml(q.category)}</span>
+                                ${q.diagramMissing ? '<span class="rq-diagram-badge">⚠️</span>' : ''}
                                 <span class="rq-status">${isCorrect ? '✅' : isSkipped ? '⏭️' : '❌'}</span>
                             </div>
                             <div class="rq-question">${escapeHtml(q.question)}</div>
