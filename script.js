@@ -11,12 +11,14 @@ let currentTopic = null;
 let allSubjectData = {
     chemistry: [],
     physics: [],
-    maths: []
+    maths: [],
+    biology: []
 };
 let allSubjectYears = {
     chemistry: [],
     physics: [],
-    maths: []
+    maths: [],
+    biology: []
 };
 
 // ===== THEME =====
@@ -33,6 +35,18 @@ function updateThemeIcons() {
         if (navbarThemeToggle) navbarThemeToggle.innerHTML = sunIcon;
         if (headerThemeToggle) headerThemeToggle.innerHTML = sunIcon;
     }
+    const sidebarThemeToggle = document.getElementById('sidebar-theme-toggle');
+if (sidebarThemeToggle) {
+    const sidebarSun = sidebarThemeToggle.querySelector('.sidebar-sun-icon');
+    const sidebarMoon = sidebarThemeToggle.querySelector('.sidebar-moon-icon');
+    if (currentTheme === 'dark') {
+        if (sidebarSun) sidebarSun.style.display = 'none';
+        if (sidebarMoon) sidebarMoon.style.display = 'block';
+    } else {
+        if (sidebarSun) sidebarSun.style.display = 'block';
+        if (sidebarMoon) sidebarMoon.style.display = 'none';
+    }
+}
 }
 
 function toggleTheme() {
@@ -62,6 +76,8 @@ function setupThemeListeners() {
     const headerThemeToggle = document.getElementById('header-theme-toggle');
     if (navbarThemeToggle) navbarThemeToggle.addEventListener('click', toggleTheme);
     if (headerThemeToggle) headerThemeToggle.addEventListener('click', toggleTheme);
+    const sidebarThemeToggle = document.getElementById('sidebar-theme-toggle');
+if (sidebarThemeToggle) sidebarThemeToggle.addEventListener('click', toggleTheme);
 }
 
 // ===== COURSE STRUCTURE =====
@@ -130,7 +146,55 @@ const courseStructure = {
             "Mathematics of Finance", "Marginal Concepts", "Production and Cost Functions",
             "Consumer and Producer Surplus", "Optimization", "Linear Programming"
         ]
-    }
+    },
+    biology: {
+    "BIO 001 - General Biology": [
+        "Origin of Living Things",
+        "Living Things in Nature and Biological Molecules",
+        "Cell Organisation, Structure and Functions",
+        "Cell Division, Principles of Genetics, Variations and Heredity",
+        "Systematics, Taxonomy and Nomenclature",
+        "Ecology",
+        "Biological Methods and Application",
+        "Evolution",
+        "Enzymes"
+    ],
+    "BIO 002 - Microbiology": [
+        "History of the Discovery of Microorganisms",
+        "Types and Taxonomic Groupings of Microorganisms",
+        "Structures, Morphology and Characteristics of Microorganisms",
+        "Microbial Ecology",
+        "Microbial Nucleic Acids in Information Storage and Transfer",
+        "Microorganisms and their Application in Biotechnology"
+    ],
+    "BIO 003 - Botany": [
+        "General Characteristics and Diversity of Plants",
+        "Taxonomy of Lower and Higher Plants",
+        "Plant Conservation",
+        "Plant Tissues and Functions",
+        "Plant Morphology/Anatomy",
+        "Nutrition in Plants",
+        "Transport System in Plants",
+        "Respiration",
+        "Plant Reproduction",
+        "Growth in Higher Plants and Growth Regulators",
+        "Crop Improvement",
+        "Economic and Ecological Importance of Plants"
+    ],
+    "BIO 004 - Zoology": [
+        "Diversity and General Characteristics of Animals",
+        "Systematics (Taxonomy) of Animals",
+        "Evolution of Animals",
+        "Invertebrates",
+        "Introduction to Chordates",
+        "Ecologic and Economic Importance of Animals",
+        "Physiological Processes",
+        "Transport of Substances across Membranes",
+        "Nervous System",
+        "Sense Organ",
+        "Endocrine System"
+    ]
+}
 };
 
 // DOM Elements
@@ -297,7 +361,7 @@ async function loadQuestions(forceSubject = null) {
         currentSubject = forceSubject;
     }
     
-    const subjects = ['chemistry', 'physics', 'maths'];
+    const subjects = ['chemistry', 'physics', 'maths', 'biology'];
     
     for (const subject of subjects) {
         if (allSubjectData[subject].length > 0) continue;
@@ -355,7 +419,9 @@ function renderCategories() {
         categoriesList.innerHTML = '<p class="loading">📭 No categories available.</p>';
         return;
     }
-    let subjectDisplay = currentSubject === 'physics' ? 'Physics' : currentSubject === 'maths' ? 'Mathematics' : 'Chemistry';
+    let subjectDisplay = currentSubject === 'physics' ? 'Physics' : 
+                     currentSubject === 'maths' ? 'Mathematics' : 
+                     currentSubject === 'biology' ? 'Biology' : 'Chemistry';
     const yearsLoaded = window.currentSubjectYears || [];
     sidebarTitle.innerHTML = `📚 ${subjectDisplay} <span style="font-size:0.7rem;font-weight:normal;">(${yearsLoaded.join(', ')})</span>`;
 
@@ -785,6 +851,11 @@ function showQuizLobby() {
                         <div class="qmc-icon">📐</div>
                         <div class="qmc-title">Mathematics</div>
                         <div class="qmc-desc">${allSubjectYears.maths.length} years loaded</div>
+                    </button>
+                    <button class="quiz-subject-card ${currentSubject === 'biology' ? 'selected' : ''}" data-subject="biology">
+                        <div class="qmc-icon">🧬</div>
+                        <div class="qmc-title">Biology</div>
+                        <div class="qmc-desc">${allSubjectYears.biology.length} years loaded</div>
                     </button>
                 </div>
             </div>

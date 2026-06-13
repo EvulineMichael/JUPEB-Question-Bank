@@ -101,9 +101,9 @@ body {
 
 /* Mobile adjustment for header theme toggle */
 @media (max-width: 768px) {
+        /* Hide header theme toggle on mobile - use sidebar one instead */
     .header-theme-toggle {
-        width: 32px;
-        height: 32px;
+        display: none;
     }
 }
 /* Header */
@@ -171,11 +171,6 @@ header {
     .hamburger-btn {
         position: relative;
         left: auto;
-    }
-    
-    /* Hide header theme toggle on mobile - use sticky navbar one instead */
-    .header-theme-toggle {
-        display: none;
     }
 }
 /* Subject Tabs */
@@ -348,6 +343,97 @@ header {
 .sidebar-overlay.active {
     display: block;
     opacity: 1;
+}
+/* ===== SIDEBAR FOOTER (Mobile Only) ===== */
+/* ===== SIDEBAR FOOTER (Mobile Only) ===== */
+.sidebar-footer {
+    display: none;
+    background: var(--sidebar-bg);
+    padding: 16px 0 0 0;
+    margin-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Show only on mobile */
+@media (max-width: 768px) {
+    .sidebar-footer {
+        display: block;
+    }
+    
+    #categories-sidebar.sidebar-collapsed .sidebar-footer {
+        display: none;
+    }
+}
+
+.sidebar-theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 14px;
+    background: var(--topic-btn-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.sidebar-theme-toggle:hover {
+    background: var(--topic-btn-hover);
+    border-color: var(--tab-active-bg);
+}
+
+.sidebar-theme-toggle svg {
+    flex-shrink: 0;
+}
+
+.sidebar-footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+    padding: 8px 0;
+}
+
+.sidebar-footer-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 14px;
+    background: var(--topic-btn-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.sidebar-footer-link:hover {
+    background: var(--topic-btn-hover);
+    border-color: var(--tab-active-bg);
+    color: var(--tab-active-bg);
+}
+
+.sidebar-version {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
+.sidebar-footer-dot {
+    color: var(--border-color);
+}
+/* Hide desktop-only elements on mobile */
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
 }
 
 /* Swipe area */
