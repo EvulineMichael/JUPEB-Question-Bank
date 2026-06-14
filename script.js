@@ -1638,7 +1638,7 @@ function getGrade(score) {
 // ============================================================
 // ===== INIT ===================================================
 // ============================================================
-document.addEventListener("DOMContentLoaded", () => {
+function initJUPEBApp() {
     initTheme();
     initSidebar();
     initMobileSidebar();
@@ -1647,6 +1647,11 @@ document.addEventListener("DOMContentLoaded", () => {
     initStickyNavbar();
     setupEventListeners();
     loadQuestions();
+}
+
+// Don't auto-init - wait for auth
+document.addEventListener("DOMContentLoaded", () => {
+    // App waits for Firebase auth before loading
 });
 
 window.addEventListener('resize', () => { handleSidebarResponsive(); });

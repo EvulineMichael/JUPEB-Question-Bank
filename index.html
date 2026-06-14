@@ -45,6 +45,36 @@
 </script>
 </head>
 <body>
+<!-- Login Screen -->
+<div id="login-screen" style="display:block;">
+    <div style="max-width:450px;margin:80px auto;padding:40px;text-align:center;background:var(--bg-secondary);border-radius:16px;box-shadow:var(--card-shadow);">
+        <h1 style="font-size:2rem;color:var(--tab-active-bg);">📚 JUPEB Question Bank</h1>
+        <p style="color:var(--text-secondary);margin-bottom:30px;font-style:italic;">Helping you ace JUPEB, one question at a time</p>
+        
+        <div id="auth-status"></div>
+        
+        <button onclick="window.signInWithGoogle()" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:14px;background:white;border:2px solid #e9ecef;border-radius:12px;font-size:1rem;font-weight:500;cursor:pointer;color:#1a1a2e;">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Sign in with Google
+        </button>
+        
+        <div style="margin-top:30px;padding:20px;background:var(--bg-card);border-radius:12px;text-align:left;font-size:0.9rem;color:var(--text-secondary);">
+            <h3 style="color:var(--text-primary);margin-bottom:8px;">💰 One-Time Payment — Full Access</h3>
+            <p><strong>Price:</strong> ₦3,000</p>
+            <p><strong>Includes:</strong> All subjects + Quiz Mode</p>
+            <p style="margin-top:12px;"><strong>📱 Pay to:</strong><br>
+            Bank: GTBank<br>
+            Account: 0123456789<br>
+            Name: Michael Evuline</p>
+            <p style="margin-top:8px;"><strong>Then send on WhatsApp:</strong><br>
+            +234 903 580 1863</p>
+            <p style="margin-top:4px;font-size:0.8rem;">Include: Payment proof + Your Gmail address</p>
+        </div>
+    </div>
+</div>
+
+    <!-- App Content (Hidden until authorized) -->
+    <div id="app-content" style="display:none;">
     <!-- Sticky Navbar (DeepSeek Style) -->
 <nav class="sticky-navbar" id="sticky-navbar">
     <div class="navbar-container">
@@ -203,8 +233,6 @@
 <!-- Back to Top Button -->
 <button id="back-to-top" style="display:none;">↑ Back to Top</button>
 
-<script src="script.js"></script>
-
 <!-- Footer -->
 <footer class="app-footer">
     <div class="footer-content">
@@ -237,5 +265,82 @@
         </div>
     </div>
 </footer>
+    <!-- Auth Logic -->
+    <script type="module">
+  import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-auth.js";
+  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAY1AMutEKCUKwi8rcgldJIrgn3LJGfDPo",
+    authDomain: "jupeb-question-bank.firebaseapp.com",
+    projectId: "jupeb-question-bank",
+    storageBucket: "jupeb-question-bank.firebasestorage.app",
+    messagingSenderId: "746059285176",
+    appId: "1:746059285176:web:7bd7410ccb20f6e5f36a4d"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+
+  window.signInWithGoogle = async function() {
+    const provider = new GoogleAuthProvider();
+    try {
+      await signInWithPopup(auth, provider);
+    } catch (error) {
+      console.error('Login failed:', error);
+      alert('Login failed: ' + error.message);
+    }
+  };
+
+  window.signOutUser = async function() {
+    await signOut(auth);
+  };
+
+  onAuthStateChanged(auth, async (user) => {
+    if (user) {
+      const email = user.email;
+      const docRef = doc(db, "authorized_users", email);
+      const docSnap = await getDoc(docRef);
+      
+      if (docSnap.exists()) {
+        const userData = docSnap.data();
+        
+        // Check expiry
+        if (userData.expiry_date) {
+          const expiryDate = new Date(userData.expiry_date);
+          const today = new Date();
+          if (today > expiryDate) {
+            document.getElementById('auth-status').innerHTML = 
+              `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
+                <p>⏰ <strong>Access expired</strong></p>
+                <p>Your access expired on ${userData.expiry_date}. Please renew.</p>
+              </div>`;
+            await signOut(auth);
+            return;
+          }
+        }
+        
+        // Access granted
+        window.authorizedSubjects = userData.subjects || [];
+        document.getElementById('login-screen').style.display = 'none';
+        document.getElementById('app-content').style.display = 'block';
+        if (typeof initJUPEBApp === 'function') initJUPEBApp();
+      } else {
+        document.getElementById('auth-status').innerHTML = 
+          `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
+            <p>❌ <strong>${email}</strong> is not authorized.</p>
+            <p>Follow payment instructions below to gain access.</p>
+          </div>`;
+        await signOut(auth);
+      }
+    } else {
+      document.getElementById('login-screen').style.display = 'block';
+      document.getElementById('app-content').style.display = 'none';
+    }
+  });
+</script>
+    <script src="script.js"></script>
 </body>
 </html>
