@@ -1,3 +1,17 @@
+// Bypass auth on localhost
+if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('app-content').style.display = 'block';
+  window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
+  if (typeof initJUPEBApp === 'function') {
+    initJUPEBApp();
+  }
+} else {
+  // Normal auth flow below...
+  auth.onAuthStateChanged(async (user) => {
+    // ... rest of your existing auth code
+  });
+}
 // Check auth state
 auth.onAuthStateChanged(async (user) => {
   if (user) {

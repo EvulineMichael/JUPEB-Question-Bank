@@ -36,17 +36,17 @@ function updateThemeIcons() {
         if (headerThemeToggle) headerThemeToggle.innerHTML = sunIcon;
     }
     const sidebarThemeToggle = document.getElementById('sidebar-theme-toggle');
-if (sidebarThemeToggle) {
-    const sidebarSun = sidebarThemeToggle.querySelector('.sidebar-sun-icon');
-    const sidebarMoon = sidebarThemeToggle.querySelector('.sidebar-moon-icon');
-    if (currentTheme === 'dark') {
-        if (sidebarSun) sidebarSun.style.display = 'none';
-        if (sidebarMoon) sidebarMoon.style.display = 'block';
-    } else {
-        if (sidebarSun) sidebarSun.style.display = 'block';
-        if (sidebarMoon) sidebarMoon.style.display = 'none';
+    if (sidebarThemeToggle) {
+        const sidebarSun = sidebarThemeToggle.querySelector('.sidebar-sun-icon');
+        const sidebarMoon = sidebarThemeToggle.querySelector('.sidebar-moon-icon');
+        if (currentTheme === 'dark') {
+            if (sidebarSun) sidebarSun.style.display = 'none';
+            if (sidebarMoon) sidebarMoon.style.display = 'block';
+        } else {
+            if (sidebarSun) sidebarSun.style.display = 'block';
+            if (sidebarMoon) sidebarMoon.style.display = 'none';
+        }
     }
-}
 }
 
 function toggleTheme() {
@@ -77,7 +77,7 @@ function setupThemeListeners() {
     if (navbarThemeToggle) navbarThemeToggle.addEventListener('click', toggleTheme);
     if (headerThemeToggle) headerThemeToggle.addEventListener('click', toggleTheme);
     const sidebarThemeToggle = document.getElementById('sidebar-theme-toggle');
-if (sidebarThemeToggle) sidebarThemeToggle.addEventListener('click', toggleTheme);
+    if (sidebarThemeToggle) sidebarThemeToggle.addEventListener('click', toggleTheme);
 }
 
 // ===== COURSE STRUCTURE =====
@@ -148,53 +148,53 @@ const courseStructure = {
         ]
     },
     biology: {
-    "BIO 001 - General Biology": [
-        "Origin of Living Things",
-        "Living Things in Nature and Biological Molecules",
-        "Cell Organisation, Structure and Functions",
-        "Cell Division, Principles of Genetics, Variations and Heredity",
-        "Systematics, Taxonomy and Nomenclature",
-        "Ecology",
-        "Biological Methods and Application",
-        "Evolution",
-        "Enzymes"
-    ],
-    "BIO 002 - Microbiology": [
-        "History of the Discovery of Microorganisms",
-        "Types and Taxonomic Groupings of Microorganisms",
-        "Structures, Morphology and Characteristics of Microorganisms",
-        "Microbial Ecology",
-        "Microbial Nucleic Acids in Information Storage and Transfer",
-        "Microorganisms and their Application in Biotechnology"
-    ],
-    "BIO 003 - Botany": [
-        "General Characteristics and Diversity of Plants",
-        "Taxonomy of Lower and Higher Plants",
-        "Plant Conservation",
-        "Plant Tissues and Functions",
-        "Plant Morphology/Anatomy",
-        "Nutrition in Plants",
-        "Transport System in Plants",
-        "Respiration",
-        "Plant Reproduction",
-        "Growth in Higher Plants and Growth Regulators",
-        "Crop Improvement",
-        "Economic and Ecological Importance of Plants"
-    ],
-    "BIO 004 - Zoology": [
-        "Diversity and General Characteristics of Animals",
-        "Systematics (Taxonomy) of Animals",
-        "Evolution of Animals",
-        "Invertebrates",
-        "Introduction to Chordates",
-        "Ecologic and Economic Importance of Animals",
-        "Physiological Processes",
-        "Transport of Substances across Membranes",
-        "Nervous System",
-        "Sense Organ",
-        "Endocrine System"
-    ]
-}
+        "BIO 001 - General Biology": [
+            "Origin of Living Things",
+            "Living Things in Nature and Biological Molecules",
+            "Cell Organisation, Structure and Functions",
+            "Cell Division, Principles of Genetics, Variations and Heredity",
+            "Systematics, Taxonomy and Nomenclature",
+            "Ecology",
+            "Biological Methods and Application",
+            "Evolution",
+            "Enzymes"
+        ],
+        "BIO 002 - Microbiology": [
+            "History of the Discovery of Microorganisms",
+            "Types and Taxonomic Groupings of Microorganisms",
+            "Structures, Morphology and Characteristics of Microorganisms",
+            "Microbial Ecology",
+            "Microbial Nucleic Acids in Information Storage and Transfer",
+            "Microorganisms and their Application in Biotechnology"
+        ],
+        "BIO 003 - Botany": [
+            "General Characteristics and Diversity of Plants",
+            "Taxonomy of Lower and Higher Plants",
+            "Plant Conservation",
+            "Plant Tissues and Functions",
+            "Plant Morphology/Anatomy",
+            "Nutrition in Plants",
+            "Transport System in Plants",
+            "Respiration",
+            "Plant Reproduction",
+            "Growth in Higher Plants and Growth Regulators",
+            "Crop Improvement",
+            "Economic and Ecological Importance of Plants"
+        ],
+        "BIO 004 - Zoology": [
+            "Diversity and General Characteristics of Animals",
+            "Systematics (Taxonomy) of Animals",
+            "Evolution of Animals",
+            "Invertebrates",
+            "Introduction to Chordates",
+            "Ecologic and Economic Importance of Animals",
+            "Physiological Processes",
+            "Transport of Substances across Membranes",
+            "Nervous System",
+            "Sense Organ",
+            "Endocrine System"
+        ]
+    }
 };
 
 // DOM Elements
@@ -276,7 +276,6 @@ function initMobileSidebar() {
         }
     }
 
-    // Touch tracking on body
     document.body.addEventListener('touchstart', e => {
         touchStartX = e.changedTouches[0].screenX;
         touchStartY = e.changedTouches[0].screenY;
@@ -288,7 +287,6 @@ function initMobileSidebar() {
         const swipeDistanceX = touchEndX - touchStartX;
         const swipeDistanceY = Math.abs(touchEndY - touchStartY);
 
-        // KEY CHANGE: Must be more horizontal than vertical to trigger
         if (Math.abs(swipeDistanceX) < swipeDistanceY) return;
 
         if (swipeDistanceX > 50 && !isMobileMenuOpen && window.innerWidth <= 768) {
@@ -318,7 +316,7 @@ function initMobileSidebar() {
 
     resetHamburgerVisibility();
 }
-// Auto-open sidebar on mobile when subject changes
+
 function autoOpenSidebarOnMobile() {
     if (window.innerWidth <= 768) {
         const sidebar = document.getElementById('categories-sidebar');
@@ -398,7 +396,6 @@ async function loadQuestions(forceSubject = null) {
     renderCategories();
     showWelcomeMessage();
     
-    // Auto-open sidebar on mobile when subject loads
     autoOpenSidebarOnMobile();
 }
 
@@ -595,13 +592,11 @@ function setupEventListeners() {
             currentTopic = null;
             clearQuizTimer();
             
-            // Switch data from cache
             questionsData = allSubjectData[currentSubject] || [];
             window.currentSubjectYears = allSubjectYears[currentSubject] || [];
             renderCategories();
             showWelcomeMessage();
             
-            // Auto-open sidebar on mobile
             autoOpenSidebarOnMobile();
         });
     });
@@ -673,7 +668,7 @@ let quizState = {
     subject: null,
     mode: null,
     filter: null,
-    selectedTopics: [],  // For multi-topic selection
+    selectedTopics: [],
     count: 40,
     timed: false,
     totalTime: 0,
@@ -701,7 +696,6 @@ function clearQuizTimer() {
     clearInterval(quizState.timerInterval);
 }
 
-// ----- PRACTICE STATS FOR WEAK AREAS CARD -----
 function getPracticeStats() {
     const subjectWeak = quizState.weakAreas[currentSubject] || {};
     const totalTopics = getAllTopicsForSubject().length;
@@ -722,12 +716,7 @@ function getPracticeStats() {
             
             if (data.attempts >= WEAK_AREA_CONFIG.MIN_ATTEMPTS_TO_JUDGE) {
                 if (pct < WEAK_AREA_CONFIG.WEAK_THRESHOLD) {
-                    weakTopicsList.push({ 
-                        topic, 
-                        pct, 
-                        attempts: data.attempts, 
-                        correct: data.correct 
-                    });
+                    weakTopicsList.push({ topic, pct, attempts: data.attempts, correct: data.correct });
                 }
                 if (pct >= WEAK_AREA_CONFIG.STRONG_THRESHOLD) {
                     topicsAboveThreshold++;
@@ -739,13 +728,8 @@ function getPracticeStats() {
     const progressToUnlock = Math.min(100, Math.round((totalAttempts / WEAK_AREA_CONFIG.TOTAL_QUESTIONS_TO_UNLOCK) * 100));
     
     return {
-        totalAttempts,
-        totalCorrect,
-        topicsWithAttempts,
-        topicsAboveThreshold,
-        weakTopicsList,
-        totalTopics,
-        progressToUnlock,
+        totalAttempts, totalCorrect, topicsWithAttempts, topicsAboveThreshold,
+        weakTopicsList, totalTopics, progressToUnlock,
         isUnlocked: totalAttempts >= WEAK_AREA_CONFIG.TOTAL_QUESTIONS_TO_UNLOCK,
         questionsRemaining: Math.max(0, WEAK_AREA_CONFIG.TOTAL_QUESTIONS_TO_UNLOCK - totalAttempts)
     };
@@ -753,54 +737,26 @@ function getPracticeStats() {
 
 function getWeakAreasMessage(stats) {
     if (stats.totalAttempts === 0) {
-        return {
-            icon: '🌱',
-            title: 'Start Your Journey',
-            desc: `Answer <strong>${stats.questionsRemaining}+ questions</strong> to unlock personalized weak area detection`,
-            progressText: `${stats.progressToUnlock}% to unlock`
-        };
+        return { icon: '🌱', title: 'Start Your Journey', desc: `Answer <strong>${stats.questionsRemaining}+ questions</strong> to unlock`, progressText: `${stats.progressToUnlock}% to unlock` };
     }
-    
     if (!stats.isUnlocked) {
-        return {
-            icon: '📊',
-            title: 'Gathering Data...',
-            desc: `<strong>${stats.questionsRemaining} more questions</strong> needed. You've attempted ${stats.totalAttempts} so far!`,
-            progressText: `${stats.progressToUnlock}% to unlock`
-        };
+        return { icon: '📊', title: 'Gathering Data...', desc: `<strong>${stats.questionsRemaining} more questions</strong> needed.`, progressText: `${stats.progressToUnlock}% to unlock` };
     }
-    
     if (stats.weakTopicsList.length === 0) {
-        return {
-            icon: '🎉',
-            title: 'All Topics Strong!',
-            desc: `${stats.topicsWithAttempts} topics analyzed — all above ${Math.round(WEAK_AREA_CONFIG.WEAK_THRESHOLD * 100)}%`,
-            progressText: 'Keep it up!'
-        };
+        return { icon: '🎉', title: 'All Topics Strong!', desc: `${stats.topicsWithAttempts} topics analyzed`, progressText: 'Keep it up!' };
     }
-    
     return {
-        icon: '⚡',
-        title: `${stats.weakTopicsList.length} Weak Area${stats.weakTopicsList.length > 1 ? 's' : ''} Found`,
-        desc: stats.weakTopicsList.map(w => 
-            `${w.topic.split(' ').slice(0, 2).join(' ')}... (${Math.round(w.pct * 100)}%)`
-        ).join('<br>'),
+        icon: '⚡', title: `${stats.weakTopicsList.length} Weak Area${stats.weakTopicsList.length > 1 ? 's' : ''} Found`,
+        desc: stats.weakTopicsList.map(w => `${w.topic.split(' ').slice(0, 2).join(' ')}... (${Math.round(w.pct * 100)}%)`).join('<br>'),
         progressText: `Click to focus practice`
     };
 }
 
 function getWeakTopics() {
     const weak = quizState.weakAreas[currentSubject] || {};
-    
-    if (!quizState.history || quizState.history.length === 0) {
-        return [];
-    }
-    
+    if (!quizState.history || quizState.history.length === 0) return [];
     return Object.entries(weak)
-        .filter(([, data]) => {
-            if (!data || data.attempts < WEAK_AREA_CONFIG.MIN_ATTEMPTS_TO_JUDGE) return false;
-            return (data.correct / data.attempts) < WEAK_AREA_CONFIG.WEAK_THRESHOLD;
-        })
+        .filter(([, data]) => data && data.attempts >= WEAK_AREA_CONFIG.MIN_ATTEMPTS_TO_JUDGE && (data.correct / data.attempts) < WEAK_AREA_CONFIG.WEAK_THRESHOLD)
         .map(([topic]) => topic);
 }
 
@@ -833,68 +789,41 @@ function showQuizLobby() {
                 <p class="quiz-subtitle">Choose your subject and configure your session</p>
             </div>
 
-            <!-- STEP 0: Choose Subject -->
             <div class="quiz-step" id="qstep-0">
                 <div class="quiz-step-label"><span class="step-number">1</span> Choose Subject</div>
                 <div class="quiz-subject-grid">
                     <button class="quiz-subject-card ${currentSubject === 'chemistry' ? 'selected' : ''}" data-subject="chemistry">
-                        <div class="qmc-icon">🧪</div>
-                        <div class="qmc-title">Chemistry</div>
-                        <div class="qmc-desc">${allSubjectYears.chemistry.length} years loaded</div>
+                        <div class="qmc-icon">🧪</div><div class="qmc-title">Chemistry</div><div class="qmc-desc">${allSubjectYears.chemistry.length} years loaded</div>
                     </button>
                     <button class="quiz-subject-card ${currentSubject === 'physics' ? 'selected' : ''}" data-subject="physics">
-                        <div class="qmc-icon">⚛️</div>
-                        <div class="qmc-title">Physics</div>
-                        <div class="qmc-desc">${allSubjectYears.physics.length} years loaded</div>
+                        <div class="qmc-icon">⚛️</div><div class="qmc-title">Physics</div><div class="qmc-desc">${allSubjectYears.physics.length} years loaded</div>
                     </button>
                     <button class="quiz-subject-card ${currentSubject === 'maths' ? 'selected' : ''}" data-subject="maths">
-                        <div class="qmc-icon">📐</div>
-                        <div class="qmc-title">Mathematics</div>
-                        <div class="qmc-desc">${allSubjectYears.maths.length} years loaded</div>
+                        <div class="qmc-icon">📐</div><div class="qmc-title">Mathematics</div><div class="qmc-desc">${allSubjectYears.maths.length} years loaded</div>
                     </button>
                     <button class="quiz-subject-card ${currentSubject === 'biology' ? 'selected' : ''}" data-subject="biology">
-                        <div class="qmc-icon">🧬</div>
-                        <div class="qmc-title">Biology</div>
-                        <div class="qmc-desc">${allSubjectYears.biology.length} years loaded</div>
+                        <div class="qmc-icon">🧬</div><div class="qmc-title">Biology</div><div class="qmc-desc">${allSubjectYears.biology.length} years loaded</div>
                     </button>
                 </div>
             </div>
 
-            <!-- STEP 1: Choose Quiz Mode -->
             <div class="quiz-step" id="qstep-1">
                 <div class="quiz-step-label"><span class="step-number">2</span> Choose Quiz Mode</div>
                 <div class="quiz-mode-grid">
-                    <button class="quiz-mode-card" data-mode="topic"><div class="qmc-icon">🏷️</div><div class="qmc-title">Topic Quiz</div><div class="qmc-desc">Select one or more topics</div></button>
-                    <button class="quiz-mode-card" data-mode="course"><div class="qmc-icon">📘</div><div class="qmc-title">Course Quiz</div><div class="qmc-desc">All topics in one course code</div></button>
-                    <button class="quiz-mode-card" data-mode="year"><div class="qmc-icon">📅</div><div class="qmc-title">Year Quiz</div><div class="qmc-desc">Questions from a specific exam year</div></button>
-                    <button class="quiz-mode-card" data-mode="random"><div class="qmc-icon">🎲</div><div class="qmc-title">Random Mix</div><div class="qmc-desc">Questions from all years & topics</div></button>
+                    <button class="quiz-mode-card" data-mode="practice">
+                        <div class="qmc-icon">📝</div><div class="qmc-title">Practice Quiz</div><div class="qmc-desc">Select topics or random • Up to 50 questions</div>
+                    </button>
+                    <button class="quiz-mode-card" data-mode="exam">
+                        <div class="qmc-icon">📅</div><div class="qmc-title">Past Exam</div><div class="qmc-desc">Questions from a specific exam year</div>
+                    </button>
                     <button class="quiz-mode-card weak-area-card ${!stats.isUnlocked && stats.totalAttempts === 0 ? 'disabled' : ''} ${stats.isUnlocked && !hasWeakTopics ? 'all-strong' : ''}" 
-                            data-mode="weak" 
-                            ${!hasWeakTopics ? 'disabled' : ''}>
-                        <div class="qmc-icon">${msg.icon}</div>
-                        <div class="qmc-title">${msg.title}</div>
-                        <div class="qmc-desc">${msg.desc}</div>
-                        ${!stats.isUnlocked ? `
-                            <div class="weak-progress-bar">
-                                <div class="weak-progress-fill" style="width:${stats.progressToUnlock}%"></div>
-                            </div>
-                            <div class="weak-progress-label">${msg.progressText}</div>
-                        ` : ''}
-                        ${stats.isUnlocked && hasWeakTopics ? `
-                            <div class="weak-topics-preview">
-                                ${stats.weakTopicsList.slice(0, 3).map(w => 
-                                    `<span class="weak-topic-tag">${w.topic.split(' ').slice(0, 2).join(' ')} ${Math.round(w.pct * 100)}%</span>`
-                                ).join('')}
-                                ${stats.weakTopicsList.length > 3 ? `<span class="weak-topic-tag">+${stats.weakTopicsList.length - 3} more</span>` : ''}
-                            </div>
-                        ` : ''}
+                            data-mode="weak" ${!hasWeakTopics ? 'disabled' : ''}>
+                        <div class="qmc-icon">${msg.icon}</div><div class="qmc-title">${msg.title}</div><div class="qmc-desc">${msg.desc}</div>
+                        ${!stats.isUnlocked ? `<div class="weak-progress-bar"><div class="weak-progress-fill" style="width:${stats.progressToUnlock}%"></div></div><div class="weak-progress-label">${msg.progressText}</div>` : ''}
+                        ${stats.isUnlocked && hasWeakTopics ? `<div class="weak-topics-preview">${stats.weakTopicsList.slice(0, 3).map(w => `<span class="weak-topic-tag">${w.topic.split(' ').slice(0, 2).join(' ')} ${Math.round(w.pct * 100)}%</span>`).join('')}${stats.weakTopicsList.length > 3 ? `<span class="weak-topic-tag">+${stats.weakTopicsList.length - 3} more</span>` : ''}</div>` : ''}
                     </button>
                 </div>
-                ${!stats.isUnlocked ? `
-                    <div class="weak-info-box">
-                        <p>💡 <strong>How Weak Areas work:</strong> After answering <strong>${WEAK_AREA_CONFIG.TOTAL_QUESTIONS_TO_UNLOCK}+ questions</strong>, topics where you score below <strong>${Math.round(WEAK_AREA_CONFIG.WEAK_THRESHOLD * 100)}%</strong> (with at least ${WEAK_AREA_CONFIG.MIN_ATTEMPTS_TO_JUDGE} attempts) will appear here for focused practice.</p>
-                    </div>
-                ` : ''}
+                ${!stats.isUnlocked ? `<div class="weak-info-box"><p>💡 <strong>How Weak Areas work:</strong> After answering <strong>${WEAK_AREA_CONFIG.TOTAL_QUESTIONS_TO_UNLOCK}+ questions</strong>, topics where you score below <strong>${Math.round(WEAK_AREA_CONFIG.WEAK_THRESHOLD * 100)}%</strong> will appear here for focused practice.</p></div>` : ''}
             </div>
 
             <div class="quiz-step hidden" id="qstep-2">
@@ -903,31 +832,17 @@ function showQuizLobby() {
             </div>
 
             <div class="quiz-step hidden" id="qstep-3">
-                <div class="quiz-step-label"><span class="step-number">4</span> Number of Questions</div>
-                <div class="quiz-count-grid" id="quiz-count-grid">
-                    <button class="quiz-count-btn" data-count="10">10</button>
-                    <button class="quiz-count-btn" data-count="20">20</button>
-                    <button class="quiz-count-btn" data-count="30">30</button>
-                    <button class="quiz-count-btn active" data-count="40">40</button>
-                    <button class="quiz-count-btn" data-count="50">50</button>
-                    <button class="quiz-count-btn" data-count="0">All</button>
-                </div>
-                <p class="quiz-available-count" id="quiz-available-count"></p>
-            </div>
-
-            <div class="quiz-step hidden" id="qstep-4">
-                <div class="quiz-step-label"><span class="step-number">5</span> Timer</div>
+                <div class="quiz-step-label"><span class="step-number">4</span> Timer</div>
                 <div class="quiz-timer-grid">
                     <button class="quiz-timer-btn active" data-time="0">⏱️ No Timer</button>
                     <button class="quiz-timer-btn" data-time="1800">30 min</button>
                     <button class="quiz-timer-btn" data-time="3600">60 min</button>
                     <button class="quiz-timer-btn" data-time="5400">90 min</button>
-                    <button class="quiz-timer-btn exam-sim-btn" data-time="-1">🎯 Exam Sim <span class="exam-badge">60Q / 60min</span></button>
                 </div>
             </div>
 
-            <div class="quiz-step hidden" id="qstep-5">
-                <div class="quiz-step-label"><span class="step-number">6</span> Ready?</div>
+            <div class="quiz-step hidden" id="qstep-4">
+                <div class="quiz-step-label"><span class="step-number">5</span> Ready?</div>
                 <div class="quiz-summary" id="quiz-summary"></div>
                 <button class="quiz-start-btn" id="quiz-start-btn">🚀 Start Quiz</button>
             </div>
@@ -938,42 +853,28 @@ function showQuizLobby() {
 }
 
 function setupLobbyListeners() {
-    // Subject selection - instant switch from cache
     document.querySelectorAll('.quiz-subject-card').forEach(card => {
         card.addEventListener('click', () => {
             const newSubject = card.dataset.subject;
             if (newSubject === currentSubject) return;
-            
             document.querySelectorAll('.quiz-subject-card').forEach(c => c.classList.remove('selected'));
             card.classList.add('selected');
-            
             currentSubject = newSubject;
             quizState.subject = newSubject;
             questionsData = allSubjectData[currentSubject] || [];
             window.currentSubjectYears = allSubjectYears[currentSubject] || [];
-            
             quizState.mode = null;
             quizState.filter = null;
             quizState.selectedTopics = [];
             document.querySelectorAll('.quiz-mode-card').forEach(c => c.classList.remove('selected'));
-            document.querySelectorAll('.quiz-timer-btn').forEach(b => { 
-                b.classList.remove('active'); 
-                if (b.dataset.time === '0') b.classList.add('active'); 
-            });
+            document.querySelectorAll('.quiz-timer-btn').forEach(b => { b.classList.remove('active'); if (b.dataset.time === '0') b.classList.add('active'); });
             quizState.timed = false;
             quizState.totalTime = 0;
-            
-            ['qstep-2','qstep-3','qstep-4','qstep-5'].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.classList.add('hidden');
-            });
-            
-            // Refresh the lobby to update weak areas card for new subject
+            ['qstep-2','qstep-3','qstep-4'].forEach(id => { const el = document.getElementById(id); if (el) el.classList.add('hidden'); });
             showQuizLobby();
         });
     });
     
-    // Mode selection
     document.querySelectorAll('.quiz-mode-card:not([disabled])').forEach(card => {
         card.addEventListener('click', () => {
             document.querySelectorAll('.quiz-mode-card').forEach(c => c.classList.remove('selected'));
@@ -983,21 +884,18 @@ function setupLobbyListeners() {
             quizState.selectedTopics = [];
             quizState.timed = false;
             quizState.totalTime = 0;
-            document.querySelectorAll('.quiz-timer-btn').forEach(b => { 
-                b.classList.remove('active'); 
-                if (b.dataset.time === '0') b.classList.add('active'); 
-            });
+            document.querySelectorAll('.quiz-timer-btn').forEach(b => { b.classList.remove('active'); if (b.dataset.time === '0') b.classList.add('active'); });
             showQuizStep2();
         });
     });
 }
 
 function showQuizStep2() {
-    ['qstep-3','qstep-4','qstep-5'].forEach(id => { const el = document.getElementById(id); if (el) el.classList.add('hidden'); });
+    ['qstep-3','qstep-4'].forEach(id => { const el = document.getElementById(id); if (el) el.classList.add('hidden'); });
 
-    if (quizState.mode === 'random' || quizState.mode === 'weak') {
+    if (quizState.mode === 'weak') {
         document.getElementById('qstep-2').classList.add('hidden');
-        quizState.filter = quizState.mode === 'random' ? 'all' : 'weak';
+        quizState.filter = 'weak';
         showQuizStep3();
         return;
     }
@@ -1008,18 +906,16 @@ function showQuizStep2() {
     step2.classList.remove('hidden');
     step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
-    if (quizState.mode === 'topic') {
-        label.textContent = 'Select Topics (choose one or more)';
+    if (quizState.mode === 'practice') {
+        label.textContent = 'Select Topics or Random';
         const allTopics = getAllTopicsForSubject();
         filterOptions.innerHTML = `
-            <div class="quiz-filter-search">
-                <input type="text" id="topic-search" placeholder="🔍 Search topics..." class="quiz-search-input">
-            </div>
-            <p class="multi-select-hint">Click multiple topics to combine them. Selected: <span id="selected-count">0</span></p>
+            <div class="quiz-filter-search"><input type="text" id="topic-search" placeholder="🔍 Search topics..." class="quiz-search-input"></div>
+            <p class="multi-select-hint">Select specific topics, or leave empty for random mix. Selected: <span id="selected-count">0</span></p>
             <div class="quiz-filter-list" id="topic-filter-list">
                 ${allTopics.map(t => `<button class="quiz-filter-btn multi-select-topic" data-filter="${escapeHtml(t.name)}"><span>${escapeHtml(t.name)}</span><span class="filter-count">${t.count}q</span></button>`).join('')}
             </div>
-            <button class="quiz-confirm-topics-btn" id="confirm-topics-btn" disabled>Confirm Selection (0 topics)</button>`;
+            <button class="quiz-confirm-topics-btn" id="confirm-topics-btn">Continue (Random Mix)</button>`;
         
         document.getElementById('topic-search').addEventListener('input', function() {
             const q = this.value.toLowerCase();
@@ -1028,12 +924,10 @@ function showQuizStep2() {
             });
         });
 
-        // Multi-select logic
         document.querySelectorAll('.multi-select-topic').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 const topicName = btn.dataset.filter;
-                
                 if (quizState.selectedTopics.includes(topicName)) {
                     quizState.selectedTopics = quizState.selectedTopics.filter(t => t !== topicName);
                     btn.classList.remove('selected');
@@ -1041,56 +935,30 @@ function showQuizStep2() {
                     quizState.selectedTopics.push(topicName);
                     btn.classList.add('selected');
                 }
-                
                 const countEl = document.getElementById('selected-count');
                 const confirmBtn = document.getElementById('confirm-topics-btn');
                 if (countEl) countEl.textContent = quizState.selectedTopics.length;
-                if (confirmBtn) {
-                    confirmBtn.textContent = `Confirm Selection (${quizState.selectedTopics.length} topic${quizState.selectedTopics.length !== 1 ? 's' : ''})`;
-                    confirmBtn.disabled = quizState.selectedTopics.length === 0;
-                }
+                if (confirmBtn) confirmBtn.textContent = `Continue (${quizState.selectedTopics.length === 0 ? 'Random Mix' : quizState.selectedTopics.length + ' topic(s)'})`;
             });
         });
 
         document.getElementById('confirm-topics-btn').addEventListener('click', () => {
-            if (quizState.selectedTopics.length > 0) {
-                quizState.filter = quizState.selectedTopics;
-                showQuizStep3();
-            }
+            quizState.filter = quizState.selectedTopics.length > 0 ? quizState.selectedTopics : 'all';
+            showQuizStep3();
         });
 
-    } else if (quizState.mode === 'course') {
-        label.textContent = 'Select Course';
-        const courses = Object.keys(courseStructure[currentSubject] || {});
-        filterOptions.innerHTML = courses.map(c => {
-            const count = getCourseQuestionCount(c);
-            return `<button class="quiz-filter-btn course-btn" data-filter="${escapeHtml(c)}"><span>${escapeHtml(c)}</span><span class="filter-count">${count}q</span></button>`;
-        }).join('');
-
-        filterOptions.querySelectorAll('.quiz-filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterOptions.querySelectorAll('.quiz-filter-btn').forEach(b => b.classList.remove('selected'));
-                btn.classList.add('selected');
-                quizState.filter = btn.dataset.filter;
-                showQuizStep3();
-            });
-        });
-
-    } else if (quizState.mode === 'year') {
-        label.textContent = 'Select Year';
+    } else if (quizState.mode === 'exam') {
+        label.textContent = 'Select Exam Year';
         const years = [...new Set(questionsData.map(q => q.year))].sort((a, b) => b - a);
         const yearsWithCounts = years.map(y => {
             const count = questionsData.filter(q => q.year === y && q.type === 'Objective' && q.options && q.options.length > 0 && q.answer).length;
             return { year: y, count };
-        }).filter(y => y.count > 0); // Only show years with actual quiz-ready questions
+        }).filter(y => y.count > 0);
         
         if (yearsWithCounts.length === 0) {
-            filterOptions.innerHTML = `<p class="no-data-message">No quiz-ready questions found. Questions need answers and options to be used in quiz mode.</p>`;
+            filterOptions.innerHTML = `<p class="no-data-message">No quiz-ready questions found.</p>`;
         } else {
-            filterOptions.innerHTML = `<div class="quiz-year-grid">${yearsWithCounts.map(y => {
-                return `<button class="quiz-year-btn" data-filter="${y.year}"><span class="year-num">${y.year}</span><span class="year-count">${y.count}q</span></button>`;
-            }).join('')}</div>`;
-            
+            filterOptions.innerHTML = `<div class="quiz-year-grid">${yearsWithCounts.map(y => `<button class="quiz-year-btn" data-filter="${y.year}"><span class="year-num">${y.year}</span><span class="year-count">${y.count}q</span></button>`).join('')}</div>`;
             filterOptions.querySelectorAll('.quiz-year-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
                     filterOptions.querySelectorAll('.quiz-year-btn').forEach(b => b.classList.remove('selected'));
@@ -1104,51 +972,17 @@ function showQuizStep2() {
 }
 
 function showQuizStep3() {
-    const step3 = document.getElementById('qstep-3');
-    step3.classList.remove('hidden');
-    step3.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    ['qstep-4','qstep-5'].forEach(id => { const el = document.getElementById(id); if (el) el.classList.add('hidden'); });
-
     const available = getAvailableQuestions().length;
-    const availableEl = document.getElementById('quiz-available-count');
-    if (availableEl) availableEl.textContent = `${available} objective question${available !== 1 ? 's' : ''} available`;
-
-    document.querySelectorAll('.quiz-count-btn').forEach(btn => {
-        const count = parseInt(btn.dataset.count);
-        if (count > 0 && count > available) { btn.disabled = true; btn.classList.add('disabled'); }
-        else { btn.disabled = false; btn.classList.remove('disabled'); }
-    });
-
-    quizState.count = Math.min(40, available) || available;
-    document.querySelectorAll('.quiz-count-btn').forEach(btn => {
-        btn.classList.remove('active');
-        const c = parseInt(btn.dataset.count);
-        if ((c === 40 && quizState.count === Math.min(40, available)) || (c === 0 && quizState.count === available) || c === quizState.count) btn.classList.add('active');
-    });
-
-    document.querySelectorAll('.quiz-count-btn').forEach(btn => {
-        const newBtn = btn.cloneNode(true);
-        btn.parentNode.replaceChild(newBtn, btn);
-    });
-    document.querySelectorAll('.quiz-count-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            if (btn.disabled) return;
-            document.querySelectorAll('.quiz-count-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const c = parseInt(btn.dataset.count);
-            quizState.count = c === 0 ? available : c;
-            showQuizStep4();
-        });
-    });
-
-    if (available > 0) showQuizStep4();
+    quizState.count = Math.min(available, quizState.mode === 'practice' ? 50 : available);
+    ['qstep-3'].forEach(id => { const el = document.getElementById(id); if (el) el.classList.add('hidden'); });
+    showQuizStep4();
 }
 
 function showQuizStep4() {
-    const step4 = document.getElementById('qstep-4');
+    const step4 = document.getElementById('qstep-3');
     step4.classList.remove('hidden');
     step4.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    document.getElementById('qstep-5').classList.add('hidden');
+    document.getElementById('qstep-4').classList.add('hidden');
 
     document.querySelectorAll('.quiz-timer-btn').forEach(btn => {
         const newBtn = btn.cloneNode(true);
@@ -1159,19 +993,8 @@ function showQuizStep4() {
             document.querySelectorAll('.quiz-timer-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             const t = parseInt(btn.dataset.time);
-            if (t === -1) {
-                quizState.timed = true;
-                quizState.totalTime = 3600;
-                const avail = getAvailableQuestions().length;
-                quizState.count = Math.min(60, avail);
-                document.querySelectorAll('.quiz-count-btn').forEach(b => {
-                    b.classList.remove('active');
-                    if (parseInt(b.dataset.count) === quizState.count || (parseInt(b.dataset.count) === 0 && quizState.count === avail)) b.classList.add('active');
-                });
-            } else {
-                quizState.timed = t > 0;
-                quizState.totalTime = t;
-            }
+            quizState.timed = t > 0;
+            quizState.totalTime = t;
             showQuizStep5();
         });
     });
@@ -1180,27 +1003,18 @@ function showQuizStep4() {
 }
 
 function showQuizStep5() {
-    const step5 = document.getElementById('qstep-5');
+    const step5 = document.getElementById('qstep-4');
     step5.classList.remove('hidden');
     step5.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
-    let modeLabel;
-    if (quizState.mode === 'topic') {
-        const topics = Array.isArray(quizState.filter) ? quizState.filter : [quizState.filter];
-        modeLabel = `Topics: ${topics.map(t => t.split(' ').slice(0, 2).join(' ')).join(', ')}`;
-    } else {
-        const modeLabels = {
-            course: `Course: ${quizState.filter}`,
-            year: `Year: ${quizState.filter}`,
-            random: 'Random Mix (all topics)',
-            weak: 'Weak Areas Focus'
-        };
-        modeLabel = modeLabels[quizState.mode] || quizState.mode;
-    }
-    
+    const modeLabels = {
+        practice: quizState.filter === 'all' ? 'Random Practice' : 'Selected Topics',
+        exam: `Past Exam: ${quizState.filter}`,
+        weak: 'Weak Areas Focus'
+    };
+    const modeLabel = modeLabels[quizState.mode] || quizState.mode;
     const timerLabel = !quizState.timed ? 'No timer' : quizState.totalTime >= 3600 ? `${quizState.totalTime/3600}h` : `${quizState.totalTime/60} min`;
-    const available = getAvailableQuestions().length;
-    const finalCount = Math.min(quizState.count, available);
+    const finalCount = Math.min(quizState.count, getAvailableQuestions().length);
 
     document.getElementById('quiz-summary').innerHTML = `
         <div class="quiz-summary-grid">
@@ -1229,20 +1043,16 @@ function getAllTopicsForSubject() {
     return result;
 }
 
-function getCourseQuestionCount(courseName) {
-    const topics = (courseStructure[currentSubject] || {})[courseName] || [];
-    return questionsData.filter(q => topics.includes(q.category) && q.type === 'Objective').length;
-}
-
 function getAvailableQuestions() {
     let pool = questionsData.filter(q => q.type === 'Objective' && q.options && q.options.length > 0 && q.answer);
-    if (quizState.mode === 'topic') {
-        const topics = Array.isArray(quizState.filter) ? quizState.filter : [quizState.filter];
-        pool = pool.filter(q => topics.includes(q.category));
-    } else if (quizState.mode === 'course') {
-        const topics = (courseStructure[currentSubject] || {})[quizState.filter] || [];
-        pool = pool.filter(q => topics.includes(q.category));
-    } else if (quizState.mode === 'year') {
+    
+    if (quizState.mode === 'practice') {
+        if (quizState.filter !== 'all') {
+            const topics = Array.isArray(quizState.filter) ? quizState.filter : [quizState.filter];
+            pool = pool.filter(q => topics.includes(q.category));
+        }
+        if (pool.length > 50) pool = shuffleArray(pool).slice(0, 50);
+    } else if (quizState.mode === 'exam') {
         pool = pool.filter(q => q.year === quizState.filter);
     } else if (quizState.mode === 'weak') {
         const weakTopics = getWeakTopics();
@@ -1272,25 +1082,16 @@ function loadQuizPersistentData() {
         const weak = localStorage.getItem('jupeb_weak_areas');
         if (weak) {
             const parsed = JSON.parse(weak);
-            if (typeof parsed === 'object' && !Array.isArray(parsed)) {
-                quizState.weakAreas = parsed;
-            } else {
-                quizState.weakAreas = {};
-                localStorage.removeItem('jupeb_weak_areas');
-            }
+            if (typeof parsed === 'object' && !Array.isArray(parsed)) quizState.weakAreas = parsed;
+            else { quizState.weakAreas = {}; localStorage.removeItem('jupeb_weak_areas'); }
         }
         const hist = localStorage.getItem('jupeb_quiz_history');
         if (hist) {
             const parsed = JSON.parse(hist);
-            if (Array.isArray(parsed)) {
-                quizState.history = parsed;
-            } else {
-                quizState.history = [];
-                localStorage.removeItem('jupeb_quiz_history');
-            }
+            if (Array.isArray(parsed)) quizState.history = parsed;
+            else { quizState.history = []; localStorage.removeItem('jupeb_quiz_history'); }
         }
     } catch(e) {
-        console.error('Error loading quiz data:', e);
         quizState.weakAreas = {};
         quizState.history = [];
     }
@@ -1374,9 +1175,7 @@ function renderQuizExam() {
                     <button class="quiz-submit-early-btn" id="quiz-submit-early">Submit</button>
                 </div>
             </div>
-
             <div class="quiz-navigator" id="quiz-navigator">${navDots}</div>
-
             <div class="quiz-question-card">
                 <div class="quiz-q-meta">
                     <span class="quiz-q-badge year-badge">📅 ${q.year}</span>
@@ -1391,16 +1190,11 @@ function renderQuizExam() {
                     ${q.options.filter(o => o && o.trim()).map((opt, i) => {
                         const label = optionLabels[i];
                         const isSelected = quizState.answers[quizState.currentIndex] === label;
-                        return `<button class="quiz-option-btn ${isSelected ? 'selected' : ''}" data-label="${label}">
-                            <span class="option-label">${label}</span>
-                            <span class="option-text">${escapeHtml(opt)}</span>
-                        </button>`;
+                        return `<button class="quiz-option-btn ${isSelected ? 'selected' : ''}" data-label="${label}"><span class="option-label">${label}</span><span class="option-text">${escapeHtml(opt)}</span></button>`;
                     }).join('')}
                 </div>
                 <div class="quiz-card-actions">
-                    <button class="quiz-flag-btn ${quizState.flagged.has(quizState.currentIndex) ? 'flagged' : ''}" id="quiz-flag-btn">
-                        ${quizState.flagged.has(quizState.currentIndex) ? '🚩 Unflag' : '🏳️ Flag'}
-                    </button>
+                    <button class="quiz-flag-btn ${quizState.flagged.has(quizState.currentIndex) ? 'flagged' : ''}" id="quiz-flag-btn">${quizState.flagged.has(quizState.currentIndex) ? '🚩 Unflag' : '🏳️ Flag'}</button>
                     <div class="quiz-nav-btns">
                         <button class="quiz-prev-btn" id="quiz-prev-btn" ${quizState.currentIndex === 0 ? 'disabled' : ''}>← Prev</button>
                         <button class="quiz-next-btn" id="quiz-next-btn">${quizState.currentIndex === total - 1 ? 'Review →' : 'Next →'}</button>
@@ -1422,26 +1216,21 @@ function setupExamListeners() {
             updateNavigatorDot(quizState.currentIndex);
         });
     });
-
     document.querySelectorAll('.nav-dot').forEach(dot => {
         dot.addEventListener('click', () => { quizState.currentIndex = parseInt(dot.dataset.idx); renderQuizExam(); });
     });
-
     document.getElementById('quiz-prev-btn').addEventListener('click', () => {
         if (quizState.currentIndex > 0) { quizState.currentIndex--; renderQuizExam(); }
     });
-
     document.getElementById('quiz-next-btn').addEventListener('click', () => {
         if (quizState.currentIndex < quizState.questions.length - 1) { quizState.currentIndex++; renderQuizExam(); }
         else showQuizReviewScreen();
     });
-
     document.getElementById('quiz-flag-btn').addEventListener('click', () => {
         if (quizState.flagged.has(quizState.currentIndex)) quizState.flagged.delete(quizState.currentIndex);
         else quizState.flagged.add(quizState.currentIndex);
         renderQuizExam();
     });
-
     document.getElementById('quiz-submit-early').addEventListener('click', () => showQuizReviewScreen());
 }
 
@@ -1523,14 +1312,8 @@ function submitQuiz(timeUp = false) {
             ${timeUp ? '<div class="time-up-banner">⏰ Time Up! Auto-Submitted</div>' : ''}
             <div class="debrief-hero">
                 <div class="debrief-score-ring">
-                    <svg viewBox="0 0 120 120" class="score-ring-svg">
-                        <circle cx="60" cy="60" r="52" class="ring-track"/>
-                        <circle cx="60" cy="60" r="52" class="ring-fill" style="stroke-dashoffset:${dashOffset}"/>
-                    </svg>
-                    <div class="score-ring-label">
-                        <span class="score-pct">${score}%</span>
-                        <span class="score-grade" style="color:${gradeInfo.color}">${gradeInfo.grade}</span>
-                    </div>
+                    <svg viewBox="0 0 120 120" class="score-ring-svg"><circle cx="60" cy="60" r="52" class="ring-track"/><circle cx="60" cy="60" r="52" class="ring-fill" style="stroke-dashoffset:${dashOffset}"/></svg>
+                    <div class="score-ring-label"><span class="score-pct">${score}%</span><span class="score-grade" style="color:${gradeInfo.color}">${gradeInfo.grade}</span></div>
                 </div>
                 <div class="debrief-summary-text">
                     <h2>${gradeInfo.message}</h2>
@@ -1542,28 +1325,21 @@ function submitQuiz(timeUp = false) {
                     <p class="debrief-time">⏱ Time taken: ${formatTime(timeTaken)}</p>
                 </div>
             </div>
-
             <div class="debrief-section">
                 <h3>📊 Performance by Topic</h3>
                 <div class="topic-breakdown">
                     ${Object.entries(topicBreakdown).sort((a,b) => (a[1].correct/a[1].total) - (b[1].correct/b[1].total)).map(([cat, data]) => {
                         const pct = Math.round((data.correct / data.total) * 100);
                         const barColor = pct >= 70 ? '#22c55e' : pct >= 50 ? '#f59e0b' : '#ef4444';
-                        return `<div class="topic-row">
-                            <span class="topic-name">${escapeHtml(cat)}</span>
-                            <div class="topic-bar-wrap"><div class="topic-bar" style="width:${pct}%;background:${barColor}"></div></div>
-                            <span class="topic-pct" style="color:${barColor}">${data.correct}/${data.total}</span>
-                        </div>`;
+                        return `<div class="topic-row"><span class="topic-name">${escapeHtml(cat)}</span><div class="topic-bar-wrap"><div class="topic-bar" style="width:${pct}%;background:${barColor}"></div></div><span class="topic-pct" style="color:${barColor}">${data.correct}/${data.total}</span></div>`;
                     }).join('')}
                 </div>
             </div>
-
             <div class="debrief-actions">
                 <button class="da-btn primary" id="review-answers-btn">🔍 Review Answers</button>
                 <button class="da-btn secondary" id="retry-wrong-btn" ${incorrect === 0 ? 'disabled' : ''}>🔁 Retry Wrong (${incorrect})</button>
                 <button class="da-btn secondary" id="new-quiz-btn">➕ New Quiz</button>
             </div>
-
             <div id="answer-review-section" style="display:none">
                 <div class="debrief-section">
                     <h3>🔍 Question Review</h3>
@@ -1575,12 +1351,7 @@ function submitQuiz(timeUp = false) {
                         const optLabels = ['A','B','C','D','E'];
                         return `<div class="review-q-card ${isCorrect ? 'rq-correct' : isSkipped ? 'rq-skipped' : 'rq-wrong'}">
                             <div class="rq-header">
-                                <span class="rq-num">Q${i+1}</span>
-                                <span class="rq-year">📅 ${q.year}</span>
-                                <span class="rq-paper-num">📄 Paper Q${q.questionNumber.toString().padStart(2, '0')}</span>
-                                <span class="rq-cat">🏷️ ${escapeHtml(q.category)}</span>
-                                ${q.diagramMissing ? '<span class="rq-diagram-badge">⚠️</span>' : ''}
-                                <span class="rq-status">${isCorrect ? '✅' : isSkipped ? '⏭️' : '❌'}</span>
+                                <span class="rq-num">Q${i+1}</span><span class="rq-year">📅 ${q.year}</span><span class="rq-paper-num">📄 Paper Q${q.questionNumber.toString().padStart(2, '0')}</span><span class="rq-cat">🏷️ ${escapeHtml(q.category)}</span>${q.diagramMissing ? '<span class="rq-diagram-badge">⚠️</span>' : ''}<span class="rq-status">${isCorrect ? '✅' : isSkipped ? '⏭️' : '❌'}</span>
                             </div>
                             <div class="rq-question">${escapeHtml(q.question)}</div>
                             <div class="rq-options">
@@ -1608,21 +1379,15 @@ function submitQuiz(timeUp = false) {
         this.textContent = visible ? '🔍 Review Answers' : '🙈 Hide Review';
         if (!visible) section.scrollIntoView({ behavior: 'smooth' });
     });
-
     document.getElementById('retry-wrong-btn').addEventListener('click', () => {
         const wrongQs = questions.filter((q, i) => answers[i] && answers[i].toUpperCase() !== q.answer.toUpperCase());
         if (wrongQs.length === 0) return;
         quizState.questions = shuffleArray(wrongQs);
-        quizState.currentIndex = 0;
-        quizState.answers = {};
-        quizState.flagged = new Set();
-        quizState.submitted = false;
-        quizState.startTime = Date.now();
-        quizState.timeRemaining = quizState.totalTime;
+        quizState.currentIndex = 0; quizState.answers = {}; quizState.flagged = new Set();
+        quizState.submitted = false; quizState.startTime = Date.now(); quizState.timeRemaining = quizState.totalTime;
         renderQuizExam();
         if (quizState.timed && quizState.totalTime > 0) startTimer();
     });
-
     document.getElementById('new-quiz-btn').addEventListener('click', () => showQuizLobby());
     questionsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -1649,7 +1414,6 @@ function initJUPEBApp() {
     loadQuestions();
 }
 
-// Don't auto-init - wait for auth
 document.addEventListener("DOMContentLoaded", () => {
     // App waits for Firebase auth before loading
 });
