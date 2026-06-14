@@ -105,6 +105,9 @@ body {
     .header-theme-toggle {
         display: none;
     }
+    .sign-out-btn {
+        display: none;
+    }
 }
 /* Header */
 header {
@@ -432,8 +435,14 @@ header {
 /* Hide desktop-only elements on mobile */
 @media (max-width: 768px) {
     .desktop-only {
-        display: none;
+        display: none !important;
     }
+    .sign-out-btn {
+   display: none !important; 
+}
+}
+.sign-out-btn {
+    margin-top: 200px !important; 
 }
 
 /* Swipe area */

@@ -53,7 +53,7 @@
         
         <div id="auth-status"></div>
         
-        <button onclick="window.signInWithGoogle()" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:14px;background:white;border:2px solid #e9ecef;border-radius:12px;font-size:1rem;font-weight:500;cursor:pointer;color:#1a1a2e;">
+        <button onclick="signInWithGoogle()" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:14px;background:white;border:2px solid #e9ecef;border-radius:12px;font-size:1rem;font-weight:500;cursor:pointer;color:#1a1a2e;">
             <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
             Sign in with Google
         </button>
@@ -117,19 +117,21 @@
             <p>Select a subject, then choose a topic to view questions</p>
         </div>
         <!-- ADD THEME TOGGLE TO HEADER -->
-        <button class="header-theme-toggle" id="header-theme-toggle" aria-label="Toggle theme">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-        </button>
+         <div class="desktop-only" style="display:flex;align-items:center;gap:8px;">
+    <button class="header-theme-toggle" id="header-theme-toggle" aria-label="Toggle theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+</div>
     </div>
 </header>
 
@@ -164,9 +166,17 @@
     <div id="categories-list">
         <p class="loading">Loading...</p>
     </div>
+    <button class="sign-out-btn" onclick="signOutUser()" style="display:flex;align-items:center;gap:8px;width:100%;padding:10px 12px;background:var(--topic-btn-bg);border:1px solid var(--border-color);border-radius:8px;cursor:pointer;color:#dc3545;font-size:0.85rem;margin-bottom:8px;">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+    Sign Out
+</button>
     
        <!-- Sidebar Footer (Mobile Only) -->
     <div class="sidebar-footer">
+        <button onclick="signOutUser()" style="display:flex;align-items:center;gap:8px;width:100%;padding:10px 12px;background:var(--topic-btn-bg);border:1px solid var(--border-color);border-radius:8px;cursor:pointer;color:#dc3545;font-size:0.85rem;margin-bottom:8px;">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+    Sign Out
+</button>
         <button class="sidebar-theme-toggle" id="sidebar-theme-toggle" aria-label="Toggle theme">
             <svg class="sidebar-sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="5"></circle>
@@ -187,10 +197,6 @@
         <div class="sidebar-footer-links">
             <span class="sidebar-version">v2.0</span>
             <span class="sidebar-footer-dot">•</span>
-            <a href="https://github.com/EvulineMichael/JUPEB-Question-Bank/" target="_blank" rel="noopener noreferrer" class="sidebar-footer-link">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                GitHub
-            </a>
             <a href="https://wa.me/2349035801863" target="_blank" rel="noopener noreferrer" class="sidebar-footer-link">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                 Chat
@@ -230,6 +236,7 @@
     </svg>
 </button>
 
+
 <!-- Back to Top Button -->
 <button id="back-to-top" style="display:none;">↑ Back to Top</button>
 
@@ -250,10 +257,7 @@
                 <span class="footer-updated desktop-only">Updated: June 13, 2026</span>
             </div>
             <div class="footer-right desktop-only">
-                <a href="https://github.com/EvulineMichael/JUPEB-Question-Bank/" target="_blank" rel="noopener noreferrer" class="footer-link" title="View on GitHub">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    GitHub
-                </a>
+                <span class="footer-contact">Contact: +234 903 580 1863</span>
                 <a href="https://wa.me/2349035801863" target="_blank" rel="noopener noreferrer" class="footer-link" title="Message on WhatsApp">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     WhatsApp
@@ -265,92 +269,16 @@
         </div>
     </div>
 </footer>
-    <!-- Firebase + Auth (Combined) -->
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
-  import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-auth.js";
-  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyAY1AMutEKCUKwi8rcgldJIrgn3LJGfDPo",
-    authDomain: "jupeb-question-bank.firebaseapp.com",
-    projectId: "jupeb-question-bank",
-    storageBucket: "jupeb-question-bank.firebasestorage.app",
-    messagingSenderId: "746059285176",
-    appId: "1:746059285176:web:7bd7410ccb20f6e5f36a4d"
-  };
+<!-- Firebase Config & Auth -->
+<script src="firebase-config.js"></script>
+<script src="auth.js"></script>
 
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
-  const db = getFirestore(app);
-  console.log('Firebase initialized ✅');
-
-  window.signInWithGoogle = async function() {
-    const provider = new GoogleAuthProvider();
-    try {
-      await signInWithPopup(auth, provider);
-    } catch (error) {
-      console.error('Login failed:', error);
-      alert('Login failed: ' + error.message);
-    }
-  };
-
-  window.signOutUser = async function() {
-    await signOut(auth);
-  };
-
-  onAuthStateChanged(auth, async (user) => {
-    console.log('Auth state changed. User:', user ? user.email : 'null');
-
-    if (user) {
-      const email = user.email;
-      console.log('Checking Firestore for:', email);
-
-      const docRef = doc(db, "authorized_users", email);
-      const docSnap = await getDoc(docRef);
-
-      console.log('Document exists:', docSnap.exists());
-
-      if (docSnap.exists()) {
-        const userData = docSnap.data();
-        console.log('User data:', userData);
-
-        if (userData.expiry_date) {
-          const expiryDate = new Date(userData.expiry_date);
-          const today = new Date();
-          if (today > expiryDate) {
-            document.getElementById('auth-status').innerHTML = 
-              `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
-                <p>⏰ <strong>Access expired</strong></p>
-                <p>Your access expired on ${userData.expiry_date}. Please renew.</p>
-              </div>`;
-            await signOut(auth);
-            return;
-          }
-        }
-
-        console.log('Access granted!');
-        document.getElementById('login-screen').style.display = 'none';
-        document.getElementById('app-content').style.display = 'block';
-        window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
-        if (typeof initJUPEBApp === 'function') {
-          initJUPEBApp();
-        }
-      } else {
-        console.log('Email not authorized');
-        document.getElementById('auth-status').innerHTML = 
-          `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
-            <p>❌ <strong>${email}</strong> is not authorized.</p>
-            <p>Follow payment instructions below to gain access.</p>
-          </div>`;
-        await signOut(auth);
-      }
-    } else {
-      document.getElementById('login-screen').style.display = 'block';
-      document.getElementById('app-content').style.display = 'none';
-    }
-  });
-</script>
-    <script src="script.js"></script>
+<!-- Main App -->
+<script src="script.js"></script>
 </body>
 </html>
