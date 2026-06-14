@@ -265,11 +265,11 @@
         </div>
     </div>
 </footer>
-    <!-- Auth Logic -->
-    <script type="module">
+    <!-- Firebase + Auth (Combined) -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
   import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-auth.js";
   import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
 
   const firebaseConfig = {
     apiKey: "AIzaSyAY1AMutEKCUKwi8rcgldJIrgn3LJGfDPo",
@@ -283,6 +283,7 @@
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
   const db = getFirestore(app);
+  console.log('Firebase initialized ✅');
 
   window.signInWithGoogle = async function() {
     const provider = new GoogleAuthProvider();
@@ -299,15 +300,21 @@
   };
 
   onAuthStateChanged(auth, async (user) => {
+    console.log('Auth state changed. User:', user ? user.email : 'null');
+
     if (user) {
       const email = user.email;
+      console.log('Checking Firestore for:', email);
+
       const docRef = doc(db, "authorized_users", email);
       const docSnap = await getDoc(docRef);
-      
+
+      console.log('Document exists:', docSnap.exists());
+
       if (docSnap.exists()) {
         const userData = docSnap.data();
-        
-        // Check expiry
+        console.log('User data:', userData);
+
         if (userData.expiry_date) {
           const expiryDate = new Date(userData.expiry_date);
           const today = new Date();
@@ -321,13 +328,16 @@
             return;
           }
         }
-        
-        // Access granted
-        window.authorizedSubjects = userData.subjects || [];
+
+        console.log('Access granted!');
         document.getElementById('login-screen').style.display = 'none';
         document.getElementById('app-content').style.display = 'block';
-        if (typeof initJUPEBApp === 'function') initJUPEBApp();
+        window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
+        if (typeof initJUPEBApp === 'function') {
+          initJUPEBApp();
+        }
       } else {
+        console.log('Email not authorized');
         document.getElementById('auth-status').innerHTML = 
           `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
             <p>❌ <strong>${email}</strong> is not authorized.</p>
