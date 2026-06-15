@@ -12,6 +12,14 @@ if (window.location.hostname === 'localhost' || window.location.hostname === '12
     // ... rest of your existing auth code
   });
 }
+function toggleAccessInfo() {
+  const info = document.getElementById('access-info');
+  if (info.style.display === 'none') {
+    info.style.display = 'block';
+  } else {
+    info.style.display = 'none';
+  }
+}
 // Check auth state
 auth.onAuthStateChanged(async (user) => {
   if (user) {
@@ -48,10 +56,10 @@ auth.onAuthStateChanged(async (user) => {
       }
     } else {
       document.getElementById('auth-status').innerHTML = 
-        `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
-          <p>❌ <strong>${email}</strong> is not authorized yet.</p>
-          <p>Follow payment instructions below to gain access.</p>
-        </div>`;
+  `<div style="background:#fff3cd;color:#856404;padding:12px;border-radius:8px;margin-bottom:16px;">
+    <p style="margin-bottom:4px;">❌ <strong>${email}</strong> is not authorized yet.</p>
+    <button onclick="toggleAccessInfo()" style="padding:8px 16px;background:#856404;color:white;border:none;border-radius:6px;cursor:pointer;font-size:0.85rem;">See How to Get Access →</button>
+  </div>`;
       auth.signOut();
     }
   } else {

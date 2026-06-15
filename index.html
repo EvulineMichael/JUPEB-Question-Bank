@@ -48,7 +48,7 @@
 <!-- Login Screen -->
 <div id="login-screen" style="display:block;">
     <div style="max-width:450px;margin:80px auto;padding:40px;text-align:center;background:var(--bg-secondary);border-radius:16px;box-shadow:var(--card-shadow);">
-        <h1 style="font-size:2rem;color:var(--tab-active-bg);">📚 JUPEB Question Bank</h1>
+        <h1 style="font-size:2rem;color:var(--tab-active-bg);margin-bottom:8px;">📚 JUPEB Question Bank</h1>
         <p style="color:var(--text-secondary);margin-bottom:30px;font-style:italic;">Helping you ace JUPEB, one question at a time</p>
         
         <div id="auth-status"></div>
@@ -58,17 +58,23 @@
             Sign in with Google
         </button>
         
-        <div style="margin-top:30px;padding:20px;background:var(--bg-card);border-radius:12px;text-align:left;font-size:0.9rem;color:var(--text-secondary);">
-            <h3 style="color:var(--text-primary);margin-bottom:8px;">💰 One-Time Payment — Full Access</h3>
-            <p><strong>Price:</strong> ₦3,000</p>
-            <p><strong>Includes:</strong> All subjects + Quiz Mode</p>
-            <p style="margin-top:12px;"><strong>📱 Pay to:</strong><br>
-            Bank: GTBank<br>
-            Account: 0123456789<br>
-            Name: Michael Evuline</p>
-            <p style="margin-top:8px;"><strong>Then send on WhatsApp:</strong><br>
-            +234 903 580 1863</p>
-            <p style="margin-top:4px;font-size:0.8rem;">Include: Payment proof + Your Gmail address</p>
+        <div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--border-color);">
+            <span style="color:var(--text-secondary);font-size:0.85rem;">New here?</span>
+            <button onclick="toggleAccessInfo()" style="display:block;margin:8px auto 0;padding:10px 24px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;cursor:pointer;color:var(--tab-active-bg);font-size:0.9rem;font-weight:500;transition:all 0.2s;">How to Get Access →</button>
+        </div>
+        
+        <div id="access-info" style="display:none;margin-top:20px;padding:20px;background:var(--bg-card);border-radius:12px;text-align:left;font-size:0.9rem;color:var(--text-secondary);">
+            <h3 style="color:var(--text-primary);margin-bottom:12px;">💡 Here's How It Works</h3>
+            <p style="margin-bottom:8px;"><strong>1.</strong> Pay ₦3,000 to:<br>
+            <span style="color:var(--text-primary);font-weight:500;">Moniepoint: 5282798033</span><br>
+            <span style="color:var(--text-primary);font-weight:500;">Michael Evuline</span></p>
+            <p style="margin-bottom:8px;"><strong>2.</strong> Send payment proof to:<br>
+<span style="color:var(--text-primary);font-weight:500;">WhatsApp: 09035801863</span></p>
+<p style="margin-bottom:8px;padding:10px;background:#fff3cd;border-radius:8px;border-left:3px solid #ffc107;">
+    <strong>⚠️ Important:</strong> You must include your <strong>Gmail address</strong> in the WhatsApp message — this is the email you'll use to sign in.
+</p>
+            <p><strong>3.</strong> You're in! Full access to all subjects + quiz mode 🎉</p>
+            <button onclick="toggleAccessInfo()" style="display:block;margin:16px auto 0;padding:10px 24px;background:var(--tab-active-bg);color:white;border:none;border-radius:10px;cursor:pointer;font-size:0.9rem;font-weight:500;">Got it!</button>
         </div>
     </div>
 </div>
