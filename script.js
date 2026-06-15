@@ -47,6 +47,15 @@ function updateThemeIcons() {
             if (sidebarMoon) sidebarMoon.style.display = 'none';
         }
     }
+    const loginSun = document.getElementById('login-sun-icon');
+const loginMoon = document.getElementById('login-moon-icon');
+if (currentTheme === 'dark') {
+    if (loginSun) loginSun.style.display = 'none';
+    if (loginMoon) loginMoon.style.display = 'block';
+} else {
+    if (loginSun) loginSun.style.display = 'block';
+    if (loginMoon) loginMoon.style.display = 'none';
+}
 }
 
 function toggleTheme() {
