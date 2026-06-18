@@ -73,7 +73,7 @@
     "questionNumber": 7,
     "question": "What is the atomic mass of a triatomic elementary gas with a vapour density of 48?",
     "options": ["48", "96", "32", "16"],
-    "answer": "B",
+    "answer": "C",
     "explanation": "Vapour density = molecular mass / 2. Molecular mass = 2 × 48 = 96. Since gas is triatomic (3 atoms per molecule), atomic mass = 96/3 = 32. Option C is 32."
   },
   {

@@ -440,8 +440,7 @@ function renderCategories() {
             const hasQuestions = availableCategories.has(topic);
             const questionCount = getQuestionCountForTopic(topic);
             const statusIcon = hasQuestions ? "✅" : "⏳";
-            html += `<button class="topic-btn ${!hasQuestions ? 'no-questions' : ''}" data-topic="${escapeHtml(topic)}" ${!hasQuestions ? 'disabled' : ''}>${statusIcon} <span class="topic-text">📖 ${escapeHtml(topic)} ${hasQuestions ? `(${questionCount})` : '(coming soon)'}</span></button>`;
-        });
+html += `<button class="topic-btn ...">${statusIcon} <span class="topic-text">📖 ${escapeHtml(topic)}</span></button>`;        });
         html += `</div></div>`;
         courseIndex++;
     }
@@ -619,6 +618,15 @@ function setupEventListeners() {
             showQuizLobby();
         });
     }
+    const pastQuestionsTab = document.getElementById('past-questions-tab');
+if (pastQuestionsTab) {
+    pastQuestionsTab.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        pastQuestionsTab.classList.add('active');
+        clearQuizTimer();
+        showPastQuestionsSidebar();
+    });
+}
 
     backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
     window.addEventListener("scroll", () => {
@@ -860,7 +868,236 @@ function showQuizLobby() {
 
     setupLobbyListeners();
 }
+// ===== PAST QUESTIONS MODE =====
+function showPastQuestionsSidebar() {
+    if (welcomeMessage) welcomeMessage.style.display = 'none';
+    
+    const subjects = ['chemistry', 'physics', 'maths', 'biology'];
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
+    
+    // Build sidebar exactly like study mode
+    let html = '';
+    
+    subjects.forEach(subject => {
+        const years = allSubjectYears[subject] || [];
+        const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
+        const subjectId = `past-subject-${subject}`;
+        
+        html += `
+            <div class="course-group">
+                <div class="course-header" data-course-id="${subjectId}">
+                    <h4>${subjectEmojis[subject]} ${displayName}</h4>
+                    <span class="dropdown-icon">▼</span>
+                </div>
+                <div class="course-topics" id="${subjectId}">
+                    ${years.sort((a, b) => b - a).map(year => `
+                        <button class="topic-btn" data-subject="${subject}" data-year="${year}">
+                            📖 📅 ${year}
+                        </button>
+                    `).join('')}
+                </div>
+            </div>`;
+    });
+    
+    categoriesList.innerHTML = html;
+    sidebarTitle.innerHTML = '📄 Past Questions';
+    
+    // Same dropdown toggle as study mode
+    document.querySelectorAll(".course-header").forEach(header => {
+        header.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const courseId = header.dataset.courseId;
+            const topicsDiv = document.getElementById(courseId);
+            document.querySelectorAll(".course-topics").forEach(div => { 
+                if (div.id !== courseId) div.classList.remove("show"); 
+            });
+            document.querySelectorAll(".course-header").forEach(h => { 
+                if (h.dataset.courseId !== courseId) h.classList.remove("open"); 
+            });
+            topicsDiv.classList.toggle("show");
+            header.classList.toggle("open");
+        });
+    });
+    
+    // Year click handler
+    document.querySelectorAll('.topic-btn').forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".topic-btn").forEach(b => b.classList.remove("active-topic"));
+            btn.classList.add("active-topic");
+            const subject = btn.dataset.subject;
+            const year = parseInt(btn.dataset.year);
+            displayPastQuestions(subject, year);
+        });
+    });
+    
+    showWelcomeMessage();
+    autoOpenSidebarOnMobile();
+}
 
+function displayPastQuestions(subject, year) {
+    if (welcomeMessage) welcomeMessage.style.display = 'none';
+    
+    const data = allSubjectData[subject] || [];
+    let filteredQuestions = data.filter(q => q.year === year);
+    
+    // Use same display logic as study mode
+    // Temporarily swap questionsData
+    const originalData = questionsData;
+    questionsData = data;
+    
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
+    const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
+    
+    if (filteredQuestions.length === 0) {
+        questionsContainer.innerHTML = `<div class="welcome-message"><h2>📭 No questions found</h2><p>No questions for ${displayName} ${year}.</p></div>`;
+        questionsData = originalData;
+        return;
+    }
+    
+    // Sort by question number within year
+    filteredQuestions.sort((a, b) => {
+        const aNum = parseInt(a.questionNumber) || a.questionNumber;
+        const bNum = parseInt(b.questionNumber) || b.questionNumber;
+        if (typeof aNum === 'number' && typeof bNum === 'number') return aNum - bNum;
+        return String(a.questionNumber).localeCompare(String(b.questionNumber));
+    });
+    
+    let questionsHtml = `
+        <div class="past-questions-header">
+            <div>
+                <h2 style="margin-bottom:4px;color:#0d6efd;">${subjectEmojis[subject]} ${displayName} — <span style="color:#059669;">${year}</span></h2>
+                <p style="color:#6c757d;font-size:0.9rem;margin-bottom:0;">${filteredQuestions.length} question(s)</p>
+            </div>
+            <button class="past-take-quiz-btn" onclick="takePastQuestionsAsQuiz('${subject}', ${year})">
+                📝 Take This as a Quiz
+            </button>
+        </div>`;
+    
+    let questionIndex = 1;
+    filteredQuestions.forEach((q) => {
+        const qNumberDisplay = q.questionNumber.toString().padStart(2, '0');
+        questionsHtml += `<div class="question-card" data-question-idx="${questionIndex}">
+            <div class="question-header">
+                <span class="question-year">📅 ${year}</span>
+                <span class="question-number-badge">🔢 Q${qNumberDisplay}</span>
+                <span class="question-type">${q.type === "Objective" ? "🔘 Multiple Choice" : "✍️ Essay"}</span>
+                ${q.diagramMissing ? '<span class="question-diagram-badge">⚠️ Missing Diagram</span>' : ''}
+            </div>
+            <div class="question-text">${escapeHtml(q.question)}</div>`;
+
+        if (q.diagramMissing) {
+            questionsHtml += `<div style="background:var(--warning-bg);border-left:4px solid var(--warning-border);padding:12px;margin:12px 0;border-radius:6px;color:var(--warning-text);">⚠️ <strong>Diagram Missing</strong><br>${escapeHtml(q.diagramNote || 'Refer to original paper.')}</div>`;
+        }
+
+        if (q.type === "Objective" && q.options && q.options.length > 0) {
+            questionsHtml += `<ul class="options-list" id="options-list-${questionIndex}">`;
+            const optionLabels = ['A','B','C','D','E','F'];
+            q.options.forEach((opt, optIdx) => {
+                if (opt && opt.trim() !== "") {
+                    const isCorrect = q.answer && q.answer.toUpperCase() === optionLabels[optIdx];
+                    questionsHtml += `<li class="option-item" data-option="${optionLabels[optIdx]}" ${isCorrect ? 'data-correct="true"' : ''}><strong>${optionLabels[optIdx]})</strong> ${escapeHtml(opt)}</li>`;
+                }
+            });
+            questionsHtml += `</ul>`;
+            if (q.answer && q.explanation) {
+                questionsHtml += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">🔍 Show Answer</button>
+                    <div class="answer-display" id="answer-${questionIndex}">
+                        <div class="correct-answer">✅ Correct Answer: ${q.answer}</div>
+                        <div class="explanation">💡 ${escapeHtml(q.explanation)}</div>
+                    </div>`;
+            }
+        }
+
+        if (q.type === "Essay") {
+            if (q.modelAnswer) {
+                questionsHtml += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">📝 Show Model Answer</button>
+                    <div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;">
+                        <div class="model-answer"><strong>📖 Model Answer:</strong><br>${escapeHtml(q.modelAnswer)}</div>
+                    </div>`;
+            } else if (!q.diagramMissing) {
+                questionsHtml += `<div class="essay-note">📝 Essay question (answer in your notebook)</div>`;
+            }
+        }
+        questionsHtml += `</div>`;
+        questionIndex++;
+    });
+
+    questionsContainer.innerHTML = questionsHtml;
+
+    // Show/Hide answer buttons - same as study mode
+    document.querySelectorAll('.show-answer-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const qIdx = btn.dataset.qIdx;
+            const answerDisplay = document.getElementById(`answer-${qIdx}`);
+            if (answerDisplay.classList.contains('show')) {
+                answerDisplay.classList.remove('show');
+                btn.textContent = '🔍 Show Answer';
+                document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => opt.classList.remove('option-correct-highlight'));
+            } else {
+                answerDisplay.classList.add('show');
+                btn.textContent = '🙈 Hide Answer';
+                const answer = btn.dataset.answer;
+                document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => {
+                    if (opt.dataset.option === answer.toUpperCase()) opt.classList.add('option-correct-highlight');
+                });
+            }
+        });
+    });
+
+    document.querySelectorAll('.show-essay-answer-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const essayIdx = btn.dataset.essayIdx;
+            const answerDisplay = document.getElementById(`essay-answer-${essayIdx}`);
+            if (answerDisplay.style.display === 'none') {
+                answerDisplay.style.display = 'block';
+                btn.textContent = '🙈 Hide Model Answer';
+            } else {
+                answerDisplay.style.display = 'none';
+                btn.textContent = '📝 Show Model Answer';
+            }
+        });
+    });
+
+    // Restore original data
+    questionsData = originalData;
+    
+    document.getElementById("questions-area").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function takePastQuestionsAsQuiz(subject, year) {
+    // Switch data
+    currentSubject = subject;
+    questionsData = allSubjectData[subject] || [];
+    window.currentSubjectYears = allSubjectYears[subject] || [];
+    
+    // Pre-configure quiz state
+    quizState.subject = subject;
+    quizState.mode = 'exam';
+    quizState.filter = year;
+    quizState.selectedTopics = [];
+    quizState.timed = false;
+    quizState.totalTime = 0;
+    
+    // Update subject tabs
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    const quizTab = document.getElementById('quiz-mode-tab');
+    if (quizTab) quizTab.classList.add('active');
+    
+    // Show quiz lobby
+    clearQuizTimer();
+    showQuizLobby();
+    
+    // Auto-click through: Past Exam card → then year button → then skip to timer
+    setTimeout(() => {
+        const examCard = document.querySelector('.quiz-mode-card[data-mode="exam"]');
+        if (examCard) examCard.click();
+        
+        setTimeout(() => {
+            const yearBtn = document.querySelector(`.quiz-year-btn[data-filter="${year}"]`);
+            if (yearBtn) yearBtn.click();
+        }, 150);
+    }, 100);
+}
 function setupLobbyListeners() {
     document.querySelectorAll('.quiz-subject-card').forEach(card => {
         card.addEventListener('click', () => {
@@ -1420,6 +1657,7 @@ function initJUPEBApp() {
     setupThemeListeners();
     initStickyNavbar();
     setupEventListeners();
+    // Past questions tab is set up in setupEventListeners// Past questions tab is set up in setupEventListeners
     loadQuestions();
 }
 
