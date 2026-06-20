@@ -2626,59 +2626,6 @@ header {
         width: 10px;
     }
 }
-/* Question count badge on topic buttons */
-.question-count {
-    background: var(--tab-active-bg);
-    color: white;
-    padding: 1px 8px;
-    border-radius: 12px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    margin-left: auto;
-    flex-shrink: 0;
-}
-
-.topic-btn[disabled] .question-count {
-    display: none;
-}
-/* ===== PAST QUESTIONS MODE ===== */
-.past-questions-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 2px solid var(--border-color);
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.past-take-quiz-btn {
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-weight: 600;
-    white-space: nowrap;
-    transition: all 0.2s ease;
-}
-
-.past-take-quiz-btn:hover {
-    filter: brightness(1.1);
-    transform: translateY(-1px);
-}
-
-@keyframes spin {
-    to { transform: rotate(360deg); }
-}
-
-.past-questions-tab {
-    background: linear-gradient(135deg, #059669, #047857) !important;
-    color: white !important;
-}
 /* ===== FOOTER ===== */
 .app-footer {
     background: var(--bg-secondary);
