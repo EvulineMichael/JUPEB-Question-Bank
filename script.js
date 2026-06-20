@@ -363,7 +363,7 @@ async function getAvailableYears(subject) {
     return availableYears;
 }
 
-async function loadQuestions(forceSubject = null) {
+async function loadQuestions(forceSubject = null, callback = null) {
     if (forceSubject) {
         currentSubject = forceSubject;
     }
@@ -406,6 +406,9 @@ async function loadQuestions(forceSubject = null) {
     showWelcomeMessage();
     
     autoOpenSidebarOnMobile();
+    
+    // Call callback if provided
+    if (callback) callback();
 }
 
 function getAvailableCategoriesFromJSON() {
@@ -890,49 +893,125 @@ function showQuizLobby() {
 function showPastQuestionsSidebar() {
     if (welcomeMessage) welcomeMessage.style.display = 'none';
     
+    // Show loading state in sidebar
+    categoriesList.innerHTML = `
+        <div style="text-align:center;padding:40px 20px;">
+            <div class="loading-spinner" style="display:inline-block;width:30px;height:30px;border:3px solid var(--border-color);border-top:3px solid var(--tab-active-bg);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
+            <p style="margin-top:12px;color:var(--text-secondary);font-size:0.9rem;">Loading past questions...</p>
+        </div>
+    `;
+    sidebarTitle.innerHTML = '📄 Past Questions';
+    
+    // Show loading in questions area too
+    questionsContainer.innerHTML = `
+        <div class="loading-container" style="text-align:center;padding:60px 20px;">
+            <div class="loading-spinner" style="display:inline-block;width:40px;height:40px;border:4px solid var(--border-color);border-top:4px solid var(--tab-active-bg);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
+            <p style="margin-top:16px;color:var(--text-secondary);font-size:1rem;">Loading past questions...</p>
+        </div>
+    `;
+    
+    // Use setTimeout to allow loading state to render, then check if data is ready
+    setTimeout(() => {
+        // Check if data is loaded
+        const subjects = ['chemistry', 'physics', 'maths', 'biology'];
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
+        
+        // Check if any subject has data loaded
+        let hasData = false;
+        for (const subject of subjects) {
+            if (allSubjectData[subject] && allSubjectData[subject].length > 0) {
+                hasData = true;
+                break;
+            }
+        }
+        
+        if (!hasData) {
+            // Data not loaded yet - show retry option
+            categoriesList.innerHTML = `
+                <div style="text-align:center;padding:40px 20px;color:var(--text-secondary);">
+                    <p style="font-size:1.2rem;margin-bottom:16px;">⏳ Data is still loading...</p>
+                    <p style="font-size:0.9rem;margin-bottom:20px;">Please wait a moment or try refreshing.</p>
+                    <button onclick="location.reload()" style="padding:10px 24px;background:var(--tab-active-bg);color:white;border:none;border-radius:8px;cursor:pointer;font-size:0.9rem;">
+                        🔄 Refresh
+                    </button>
+                </div>
+            `;
+            questionsContainer.innerHTML = `
+                <div class="welcome-message">
+                    <h2>⏳ Loading...</h2>
+                    <p>Please wait while questions are being loaded.</p>
+                    <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:12px;">This may take a few seconds on slower connections.</p>
+                </div>
+            `;
+            return;
+        }
+        
+        // Data is ready - build the sidebar
+        buildPastQuestionsSidebar();
+    }, 300); // Give time for loading state to render
+}
+
+// Helper function to build the past questions sidebar
+function buildPastQuestionsSidebar() {
     const subjects = ['chemistry', 'physics', 'maths', 'biology'];
     const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
+    
     let html = '';
     
     subjects.forEach(subject => {
         const years = allSubjectYears[subject] || [];
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
         const subjectId = `past-subject-${subject}`;
-        html += `
-            <div class="course-group">
-                <div class="course-header" data-course-id="${subjectId}">
-                    <h4>${subjectEmojis[subject]} ${displayName}</h4>
-                    <span class="dropdown-icon">▼</span>
-                </div>
-                <div class="course-topics" id="${subjectId}">
-                    ${years.sort((a, b) => b - a).map(year => `
-                        <button class="topic-btn" data-subject="${subject}" data-year="${year}">
-                            📖 📅 ${year}
-                        </button>
-                    `).join('')}
-                </div>
-            </div>`;
+        
+        if (years.length === 0) {
+            html += `
+                <div class="course-group">
+                    <div class="course-header" style="opacity:0.5;cursor:default;">
+                        <h4>${subjectEmojis[subject]} ${displayName}</h4>
+                        <span style="font-size:0.7rem;color:var(--text-secondary);">(No data)</span>
+                    </div>
+                </div>`;
+        } else {
+            html += `
+                <div class="course-group">
+                    <div class="course-header" data-course-id="${subjectId}">
+                        <h4>${subjectEmojis[subject]} ${displayName}</h4>
+                        <span class="dropdown-icon">▼</span>
+                    </div>
+                    <div class="course-topics" id="${subjectId}">
+                        ${years.sort((a, b) => b - a).map(year => `
+                            <button class="topic-btn" data-subject="${subject}" data-year="${year}">
+                                📖 📅 ${year}
+                            </button>
+                        `).join('')}
+                    </div>
+                </div>`;
+        }
     });
     
     categoriesList.innerHTML = html;
     sidebarTitle.innerHTML = '📄 Past Questions';
     
+    // Set up event listeners for dropdowns
     document.querySelectorAll(".course-header").forEach(header => {
         header.addEventListener("click", (e) => {
             e.stopPropagation();
             const courseId = header.dataset.courseId;
+            if (!courseId) return; // Skip if no data
             const topicsDiv = document.getElementById(courseId);
-            document.querySelectorAll(".course-topics").forEach(div => {
-                if (div.id !== courseId) div.classList.remove("show");
+            if (!topicsDiv) return;
+            document.querySelectorAll(".course-topics").forEach(div => { 
+                if (div.id !== courseId) div.classList.remove("show"); 
             });
-            document.querySelectorAll(".course-header").forEach(h => {
-                if (h.dataset.courseId !== courseId) h.classList.remove("open");
+            document.querySelectorAll(".course-header").forEach(h => { 
+                if (h.dataset.courseId !== courseId) h.classList.remove("open"); 
             });
             topicsDiv.classList.toggle("show");
             header.classList.toggle("open");
         });
     });
     
+    // Set up event listeners for year buttons
     document.querySelectorAll('.topic-btn').forEach(btn => {
         btn.addEventListener("click", () => {
             document.querySelectorAll(".topic-btn").forEach(b => b.classList.remove("active-topic"));
@@ -943,7 +1022,11 @@ function showPastQuestionsSidebar() {
         });
     });
     
-    showWelcomeMessage();
+    // Clear the questions area if no year is selected
+    if (!document.querySelector('.topic-btn.active-topic')) {
+        showWelcomeMessage();
+    }
+    
     autoOpenSidebarOnMobile();
 }
 
@@ -952,15 +1035,39 @@ function displayPastQuestions(subject, year) {
     const quizTab = document.getElementById('quiz-mode-tab');
     if (quizTab) quizTab.classList.remove('active');
     
-    questionsContainer.innerHTML = `
-        <div style="text-align:center;padding:60px 20px;">
-            <div style="display:inline-block;width:40px;height:40px;border:4px solid var(--border-color);border-top:4px solid var(--tab-active-bg);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
-            <p style="margin-top:16px;color:var(--text-secondary);">Loading ${subject.charAt(0).toUpperCase() + subject.slice(1)} ${year}...</p>
-        </div>`;
+    // Check if data is loaded
+    const data = allSubjectData[subject] || [];
+    if (data.length === 0) {
+        questionsContainer.innerHTML = `
+            <div class="loading-container" style="text-align:center;padding:60px 20px;">
+                <div class="loading-spinner" style="display:inline-block;width:40px;height:40px;border:4px solid var(--border-color);border-top:4px solid var(--tab-active-bg);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
+                <p style="margin-top:16px;color:var(--text-secondary);font-size:1rem;">Loading ${subject.charAt(0).toUpperCase() + subject.slice(1)} ${year} questions...</p>
+                <p style="margin-top:8px;font-size:0.85rem;color:var(--text-secondary);">Please wait, data is still loading...</p>
+            </div>
+        `;
+        // Try reloading data
+        loadQuestions(subject).then(() => {
+            // Retry after data loads
+            setTimeout(() => {
+                displayPastQuestions(subject, year);
+            }, 500);
+        });
+        return;
+    }
     
+    // Show loading state immediately
+    questionsContainer.innerHTML = `
+        <div class="loading-container" style="text-align:center;padding:60px 20px;">
+            <div class="loading-spinner" style="display:inline-block;width:40px;height:40px;border:4px solid var(--border-color);border-top:4px solid var(--tab-active-bg);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
+            <p style="margin-top:16px;color:var(--text-secondary);font-size:1rem;">Loading ${subject.charAt(0).toUpperCase() + subject.slice(1)} ${year} questions...</p>
+        </div>
+    `;
+    
+    // Use setTimeout to allow the loading state to render
     setTimeout(() => {
-        const data = allSubjectData[subject] || [];
-        const allQuestions = data.filter(q => q.year === year);
+        // Read DIRECTLY from allSubjectData - never touch questionsData
+        let allQuestions = data.filter(q => q.year === year);
+        
         const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
         
@@ -969,32 +1076,71 @@ function displayPastQuestions(subject, year) {
             return;
         }
         
-        const objectiveQuestions = allQuestions.filter(q => q.type === "Objective")
-            .sort((a, b) => (parseInt(a.questionNumber) || 0) - (parseInt(b.questionNumber) || 0));
-        const essayQuestions = allQuestions.filter(q => q.type === "Essay")
-            .sort((a, b) => (parseInt(a.questionNumber) || 0) - (parseInt(b.questionNumber) || 0));
+        // SEPARATE Objective and Essay questions
+        const objectiveQuestions = allQuestions.filter(q => q.type === "Objective");
+        const essayQuestions = allQuestions.filter(q => q.type === "Essay");
         
+        // Sort objective questions by question number
+        objectiveQuestions.sort((a, b) => {
+            const aNum = parseInt(a.questionNumber) || 0;
+            const bNum = parseInt(b.questionNumber) || 0;
+            return aNum - bNum;
+        });
+        
+        // Sort essay questions by question number
+        essayQuestions.sort((a, b) => {
+            const aNum = parseInt(a.questionNumber) || 0;
+            const bNum = parseInt(b.questionNumber) || 0;
+            return aNum - bNum;
+        });
+        
+        // Build the HTML
         let questionsHtml = `
             <div class="past-questions-header">
                 <div>
                     <h2 style="margin-bottom:4px;color:#0d6efd;">${subjectEmojis[subject]} ${displayName} — <span style="color:#059669;">${year}</span></h2>
                     <p style="color:#6c757d;font-size:0.9rem;margin-bottom:0;">${objectiveQuestions.length} Objective • ${essayQuestions.length} Essay</p>
                 </div>
-                <button class="past-take-quiz-btn" onclick="takePastQuestionsAsQuiz('${subject}', ${year})">📝 Take This as a Quiz</button>
+                <button class="past-take-quiz-btn" onclick="takePastQuestionsAsQuiz('${subject}', ${year})">
+                    📝 Take This as a Quiz
+                </button>
             </div>`;
         
+        // --- SECTION 1: OBJECTIVE QUESTIONS ---
         if (objectiveQuestions.length > 0) {
-            questionsHtml += `<h3 style="color:#0d6efd;font-size:1.2rem;margin:24px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--border-color);">📝 Multiple-Choice Questions</h3>`;
-            objectiveQuestions.forEach((q, i) => { questionsHtml += buildQuestionCard(q, year, i + 1); });
+            questionsHtml += `
+                <div class="past-section-header">
+                    <h3 style="color:#0d6efd;font-size:1.2rem;margin:24px 0 16px 0;padding-bottom:8px;border-bottom:2px solid var(--border-color);">
+                        📝 Multiple-Choice Questions
+                    </h3>
+                </div>`;
+            
+            let questionIndex = 1;
+            objectiveQuestions.forEach((q) => {
+                questionsHtml += buildQuestionCard(q, year, questionIndex);
+                questionIndex++;
+            });
         }
         
+        // --- SECTION 2: ESSAY QUESTIONS ---
         if (essayQuestions.length > 0) {
-            questionsHtml += `<h3 style="color:#059669;font-size:1.2rem;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--border-color);">✍️ Essay Questions</h3>`;
-            essayQuestions.forEach((q, i) => { questionsHtml += buildQuestionCard(q, year, i + 1); });
+            questionsHtml += `
+                <div class="past-section-header">
+                    <h3 style="color:#059669;font-size:1.2rem;margin:32px 0 16px 0;padding-bottom:8px;border-bottom:2px solid var(--border-color);">
+                        ✍️ Essay Questions
+                    </h3>
+                </div>`;
+            
+            let questionIndex = 1;
+            essayQuestions.forEach((q) => {
+                questionsHtml += buildQuestionCard(q, year, questionIndex);
+                questionIndex++;
+            });
         }
-        
+
         questionsContainer.innerHTML = questionsHtml;
-        
+
+        // Set up event listeners for show answer buttons
         document.querySelectorAll('.show-answer-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 const qIdx = btn.dataset.qIdx;
@@ -1006,23 +1152,30 @@ function displayPastQuestions(subject, year) {
                 } else {
                     answerDisplay.classList.add('show');
                     btn.textContent = '🙈 Hide Answer';
+                    const answer = btn.dataset.answer;
                     document.getElementById(`options-list-${qIdx}`)?.querySelectorAll('.option-item').forEach(opt => {
-                        if (opt.dataset.option === btn.dataset.answer.toUpperCase()) opt.classList.add('option-correct-highlight');
+                        if (opt.dataset.option === answer.toUpperCase()) opt.classList.add('option-correct-highlight');
                     });
                 }
             });
         });
-        
+
         document.querySelectorAll('.show-essay-answer-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                const el = document.getElementById(`essay-answer-${btn.dataset.essayIdx}`);
-                if (el.style.display === 'none') { el.style.display = 'block'; btn.textContent = '🙈 Hide Model Answer'; }
-                else { el.style.display = 'none'; btn.textContent = '📝 Show Model Answer'; }
+                const essayIdx = btn.dataset.essayIdx;
+                const answerDisplay = document.getElementById(`essay-answer-${essayIdx}`);
+                if (answerDisplay.style.display === 'none') {
+                    answerDisplay.style.display = 'block';
+                    btn.textContent = '🙈 Hide Model Answer';
+                } else {
+                    answerDisplay.style.display = 'none';
+                    btn.textContent = '📝 Show Model Answer';
+                }
             });
         });
-        
+
         document.getElementById("questions-area").scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 100);
+    }, 100); // Small delay to ensure loading state renders
 }
 
 function buildQuestionCard(q, year, questionIndex) {
@@ -1637,6 +1790,14 @@ function initJUPEBApp() {
     initStickyNavbar();
     setupEventListeners();
     loadQuestions();
+    // In initJUPEBApp or wherever you first load data
+loadQuestions(null, () => {
+    console.log('All data loaded!');
+    // Optionally refresh past questions sidebar if it's open
+    if (document.getElementById('past-questions-tab')?.classList.contains('active')) {
+        showPastQuestionsSidebar();
+    }
+});
 }
 
 document.addEventListener("DOMContentLoaded", () => {
