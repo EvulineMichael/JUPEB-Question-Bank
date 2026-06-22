@@ -172,7 +172,7 @@
     "questionNumber": 16,
     "question": "If the minimum value of the function y = x² + kx - 3 is -4. Find values of k.",
     "options": ["k = -1, k = 1", "k = 2, k = 1", "k = -2, k = 1", "k = 2, k = -2"],
-    "answer": "C",
+    "answer": "D",
     "explanation": "Minimum at x = -k/2. y_min = (-k/2)² + k(-k/2) - 3 = k²/4 - k²/2 - 3 = -k²/4 - 3 = -4 → -k²/4 = -1 → k² = 4 → k = ±2. Also k=1? The vertex method: y = (x + k/2)² - k²/4 - 3. Minimum = -k²/4 - 3 = -4 → -k²/4 = -1 → k²=4 → k=±2. Option C has k=-2, k=1. Not matching. Option D has k=2, k=-2. That's correct."
   },
   {
