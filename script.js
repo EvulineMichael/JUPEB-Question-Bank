@@ -1498,13 +1498,6 @@ function startQuiz() {
     const pool = shuffleArray(getAvailableQuestions());
     const finalCount = Math.min(quizState.count, pool.length);
     quizState.questions = pool.slice(0, finalCount);
-    
-    // Clear old shuffled mappings
-    quizState.questions.forEach(q => {
-        delete q._shuffledMapping;
-        delete q._correctLabel;
-    });
-    
     quizState.currentIndex = 0;
     quizState.answers = {};
     quizState.flagged = new Set();
@@ -1571,49 +1564,13 @@ function renderQuizExam() {
                 </div>
                 <div class="quiz-question-text">${escapeHtml(q.question)}</div>
                 ${q.diagramMissing ? `<div class="quiz-diagram-note">⚠️ ${escapeHtml(q.diagramNote || 'Diagram missing — refer to past paper.')}</div>` : ''}
- <div class="quiz-options" id="quiz-options">
-    ${(() => {
-        // Create shuffled options with original labels tracked
-        const shuffledOptions = q.options.map((opt, i) => ({
-            text: opt,
-            originalLabel: optionLabels[i]
-        })).filter(o => o.text && o.text.trim());
-        
-        // Fisher-Yates shuffle
-        for (let i = shuffledOptions.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
-        }
-        
-        // Store mapping: new label → original label
-        q._shuffledMapping = {};
-        shuffledOptions.forEach((opt, i) => {
-            q._shuffledMapping[optionLabels[i]] = opt.originalLabel;
-        });
-        
-        // Also store what the correct answer's new label is
-        q._correctLabel = null;
-        shuffledOptions.forEach((opt, i) => {
-            if (opt.originalLabel === q.answer.toUpperCase()) {
-                q._correctLabel = optionLabels[i];
-            }
-        });
-        
-        // If no match found (shouldn't happen), fallback to original
-        if (!q._correctLabel) {
-            q._correctLabel = q.answer.toUpperCase();
-        }
-        
-        return shuffledOptions.map((opt, i) => {
-            const newLabel = optionLabels[i];
-            const isSelected = quizState.answers[quizState.currentIndex] === newLabel;
-            return `<button class="quiz-option-btn ${isSelected ? 'selected' : ''}" data-label="${newLabel}">
-                <span class="option-label">${newLabel}</span>
-                <span class="option-text">${escapeHtml(opt.text)}</span>
-            </button>`;
-        }).join('');
-    })()}
-</div>
+                <div class="quiz-options" id="quiz-options">
+                    ${q.options.filter(o => o && o.trim()).map((opt, i) => {
+                        const label = optionLabels[i];
+                        const isSelected = quizState.answers[quizState.currentIndex] === label;
+                        return `<button class="quiz-option-btn ${isSelected ? 'selected' : ''}" data-label="${label}"><span class="option-label">${label}</span><span class="option-text">${escapeHtml(opt)}</span></button>`;
+                    }).join('')}
+                </div>
                 <div class="quiz-card-actions">
                     <button class="quiz-flag-btn ${quizState.flagged.has(quizState.currentIndex) ? 'flagged' : ''}" id="quiz-flag-btn">${quizState.flagged.has(quizState.currentIndex) ? '🚩 Unflag' : '🏳️ Flag'}</button>
                     <div class="quiz-nav-btns">
@@ -1704,24 +1661,10 @@ function submitQuiz(timeUp = false) {
     let correct = 0, incorrect = 0, skipped = 0;
 
     questions.forEach((q, i) => {
-    if (answers[i] === undefined) {
-        skipped++;
-    } else {
-        const userLabel = answers[i].toUpperCase();
-        
-        // Map the shuffled label back to the original label
-        let mappedAnswer = userLabel;
-        if (q._shuffledMapping && q._shuffledMapping[userLabel]) {
-            mappedAnswer = q._shuffledMapping[userLabel];
-        }
-        
-        if (mappedAnswer === q.answer.toUpperCase()) {
-            correct++;
-        } else {
-            incorrect++;
-        }
-    }
-});
+        if (answers[i] === undefined) skipped++;
+        else if (answers[i].toUpperCase() === q.answer.toUpperCase()) correct++;
+        else incorrect++;
+    });
 
     const score = Math.round((correct / total) * 100);
     const timeTaken = Math.round((Date.now() - quizState.startTime) / 1000);
