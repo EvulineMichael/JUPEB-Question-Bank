@@ -14,7 +14,8 @@ let allSubjectData = {
     maths: [],
     biology: [],
     economics: [],
-    government: []
+    government: [],
+    crs: []
 };
 let allSubjectYears = {
     chemistry: [],
@@ -22,7 +23,8 @@ let allSubjectYears = {
     maths: [],
     biology: [],
     economics: [],
-    government: []
+    government: [],
+    crs: []
 };
 
 // ===== THEME =====
@@ -191,6 +193,40 @@ const courseStructure = {
         "Applied Issues in Labour Economics",
         "Stabilization Policies in Developing Countries",
         "International Economic Institutions"
+    ]
+},
+crs: {
+    "CRS 001 - Old Testament Studies": [
+        "Formation and Composition of the Old Testament",
+        "Mosaic Authorship of the Pentateuch",
+        "The Rise of Monarchy in Israel",
+        "The Divided Kingdoms and the Exiles",
+        "The Rise of Prophecy in Israel"
+    ],
+    "CRS 002 - New Testament Studies": [
+        "Historical Background of the New Testament",
+        "The Synopsis, Materials and Canonization of the New Testament",
+        "The Synoptic Gospels and the Synoptic Problem",
+        "Modern Criticism of the Gospel",
+        "Literature and Theology of the Synoptic Gospels"
+    ],
+    "CRS 003 - History of Christianity in West Africa": [
+        "Previous Attempts at Christianizing Africa",
+        "Establishing Christianity in Sierra Leone",
+        "The Planting of Christianity in the Gold Coast (Ghana)",
+        "The Planting of Christianity in Nigeria",
+        "The Rise of the African Independent Churches",
+        "Pentecostalism in Nigeria",
+        "Proliferation of Churches in Nigeria"
+    ],
+    "CRS 004 - Religion and Society": [
+        "Relationship Between Religion and Society",
+        "Sociological Theories of Religion",
+        "Measures of Religion",
+        "Functions of Religion",
+        "Religion, Peace and Conflict Resolution",
+        "Religious Personality and Human Values",
+        "Christianity Response to Contemporary Issues"
     ]
 },
 government: {
@@ -440,7 +476,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
         currentSubject = forceSubject;
     }
     
-  const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government'];
+  const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs'];
     
     for (const subject of subjects) {
         if (allSubjectData[subject].length > 0) continue;
@@ -504,7 +540,8 @@ let subjectDisplay = currentSubject === 'physics' ? 'Physics' :
                      currentSubject === 'maths' ? 'Mathematics' : 
                      currentSubject === 'biology' ? 'Biology' :
                      currentSubject === 'government' ? 'Government' :
-                     currentSubject === 'economics' ? 'Economics' : 'Chemistry';
+                     currentSubject === 'economics' ? 'Economics' : 
+                     currentSubject === 'crs' ? 'CRS' : 'Chemistry';
     const yearsLoaded = window.currentSubjectYears || [];
     sidebarTitle.innerHTML = `📚 ${subjectDisplay} <span style="font-size:0.7rem;font-weight:normal;">(${yearsLoaded.join(', ')})</span>`;
 
@@ -921,6 +958,9 @@ function showQuizLobby() {
                     <button class="quiz-subject-card ${currentSubject === 'government' ? 'selected' : ''}" data-subject="government">
     <div class="qmc-icon">🏛️</div><div class="qmc-title">Government</div><div class="qmc-desc">${allSubjectYears.government.length} years loaded</div>
 </button>
+                    <button class="quiz-subject-card ${currentSubject === 'crs' ? 'selected' : ''}" data-subject="crs">
+    <div class="qmc-icon">📖</div><div class="qmc-title">CRS</div><div class="qmc-desc">${allSubjectYears.crs.length} years loaded</div>
+</button>
                 </div>
             </div>
 
@@ -993,8 +1033,8 @@ function showPastQuestionsSidebar() {
     // Use setTimeout to allow loading state to render, then check if data is ready
     setTimeout(() => {
         // Check if data is loaded
-        const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government'];
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️' };
+        const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs'];
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖' };
         
         // Check if any subject has data loaded
         let hasData = false;
@@ -1033,8 +1073,8 @@ function showPastQuestionsSidebar() {
 
 // Helper function to build the past questions sidebar
 function buildPastQuestionsSidebar() {
-    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government'];
-    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️' };
+    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs'];
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖' };
     
     let html = '';
     
@@ -1148,7 +1188,7 @@ function displayPastQuestions(subject, year) {
         // Read DIRECTLY from allSubjectData - never touch questionsData
         let allQuestions = data.filter(q => q.year === year);
         
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️'};
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖'};
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
         
         if (allQuestions.length === 0) {
