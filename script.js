@@ -15,7 +15,8 @@ let allSubjectData = {
     biology: [],
     economics: [],
     government: [],
-    crs: []
+    crs: [],
+    literature: []
 };
 let allSubjectYears = {
     chemistry: [],
@@ -24,7 +25,8 @@ let allSubjectYears = {
     biology: [],
     economics: [],
     government: [],
-    crs: []
+    crs: [],
+    literature: []
 };
 
 // ===== THEME =====
@@ -227,6 +229,32 @@ crs: {
         "Religion, Peace and Conflict Resolution",
         "Religious Personality and Human Values",
         "Christianity Response to Contemporary Issues"
+    ]
+},
+literature: {
+    "LIT 001 - Introduction to Drama": [
+        "Introduction",
+        "The Classical Tradition",
+        "European Drama (The Renaissance Tradition)",
+        "European Drama (The Modern Tradition)",
+        "American Drama (The Modern Tradition)",
+        "African Drama (The Modern Tradition)"
+    ],
+    "LIT 002 - Prose Fiction": [
+        "Introduction",
+        "The European Prose Tradition",
+        "African Prose (Modern African Novel)"
+    ],
+    "LIT 003 - Introduction to Poetry": [
+        "Introduction",
+        "The Classical Tradition",
+        "European Poetry (The Medieval and Renaissance Traditions)",
+        "European Poetry (19th and 20th Centuries)",
+        "American Poetry (The Modern Tradition)",
+        "African Poetry (The Modern Tradition)"
+    ],
+    "LIT 004 - Unseen Prose and Poetry": [
+        "Unseen Prose and Poetry"
     ]
 },
 government: {
@@ -476,7 +504,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
         currentSubject = forceSubject;
     }
     
-  const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs'];
+  const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
     
     for (const subject of subjects) {
         if (allSubjectData[subject].length > 0) continue;
@@ -541,7 +569,8 @@ let subjectDisplay = currentSubject === 'physics' ? 'Physics' :
                      currentSubject === 'biology' ? 'Biology' :
                      currentSubject === 'government' ? 'Government' :
                      currentSubject === 'economics' ? 'Economics' : 
-                     currentSubject === 'crs' ? 'CRS' : 'Chemistry';
+                     currentSubject === 'crs' ? 'CRS': 
+                     currentSubject === 'literature' ? 'Literature': 'Chemistry';
     const yearsLoaded = window.currentSubjectYears || [];
     sidebarTitle.innerHTML = `📚 ${subjectDisplay} <span style="font-size:0.7rem;font-weight:normal;">(${yearsLoaded.join(', ')})</span>`;
 
@@ -961,6 +990,9 @@ function showQuizLobby() {
                     <button class="quiz-subject-card ${currentSubject === 'crs' ? 'selected' : ''}" data-subject="crs">
     <div class="qmc-icon">📖</div><div class="qmc-title">CRS</div><div class="qmc-desc">${allSubjectYears.crs.length} years loaded</div>
 </button>
+                    <button class="quiz-subject-card ${currentSubject === 'literature' ? 'selected' : ''}" data-subject="literature">
+    <div class="qmc-icon">📚</div><div class="qmc-title">Literature</div><div class="qmc-desc">${allSubjectYears.literature.length} years loaded</div>
+</button> 
                 </div>
             </div>
 
@@ -1033,8 +1065,8 @@ function showPastQuestionsSidebar() {
     // Use setTimeout to allow loading state to render, then check if data is ready
     setTimeout(() => {
         // Check if data is loaded
-        const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs'];
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖' };
+        const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
         
         // Check if any subject has data loaded
         let hasData = false;
@@ -1073,8 +1105,8 @@ function showPastQuestionsSidebar() {
 
 // Helper function to build the past questions sidebar
 function buildPastQuestionsSidebar() {
-    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs'];
-    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖' };
+    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
     
     let html = '';
     
@@ -1188,7 +1220,7 @@ function displayPastQuestions(subject, year) {
         // Read DIRECTLY from allSubjectData - never touch questionsData
         let allQuestions = data.filter(q => q.year === year);
         
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖'};
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
         
         if (allQuestions.length === 0) {
