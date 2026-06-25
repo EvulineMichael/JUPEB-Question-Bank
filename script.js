@@ -12,13 +12,15 @@ let allSubjectData = {
     chemistry: [],
     physics: [],
     maths: [],
-    biology: []
+    biology: [],
+    economics: []
 };
 let allSubjectYears = {
     chemistry: [],
     physics: [],
     maths: [],
-    biology: []
+    biology: [],
+    economics: []
 };
 
 // ===== THEME =====
@@ -156,6 +158,39 @@ const courseStructure = {
             "Consumer and Producer Surplus", "Optimization", "Linear Programming"
         ]
     },
+    economics: {
+    "ECN 001 - Principles of Economics I": [
+        "Introduction to Economics",
+        "Basic Economic Principles",
+        "Tools and Methods of Economic Analysis",
+        "The Price System",
+        "Theory of Consumer Behavior",
+        "Theory of the Firm",
+        "Market Structure",
+        "Theory of Income Distribution",
+        "Government Intervention"
+    ],
+    "ECN 002 - Principles of Economics II": [
+        "Circular Flow of Income",
+        "National Income Accounting",
+        "Theory of National Income Determination",
+        "Money and Banking",
+        "Inflation and Unemployment",
+        "Public Finance"
+    ],
+    "ECN 003 - Applied Economics I": [
+        "Economic Structure of West Africa",
+        "Growth and Development",
+        "Population",
+        "International Trade"
+    ],
+    "ECN 004 - Applied Economics II": [
+        "Measurement and Application in Macroeconomics",
+        "Applied Issues in Labour Economics",
+        "Stabilization Policies in Developing Countries",
+        "International Economic Institutions"
+    ]
+},
     biology: {
         "BIO 001 - General Biology": [
             "Origin of Living Things",
@@ -368,7 +403,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
         currentSubject = forceSubject;
     }
     
-    const subjects = ['chemistry', 'physics', 'maths', 'biology'];
+  const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics'];
     
     for (const subject of subjects) {
         if (allSubjectData[subject].length > 0) continue;
@@ -428,9 +463,10 @@ function renderCategories() {
         categoriesList.innerHTML = '<p class="loading">📭 No categories available.</p>';
         return;
     }
-    let subjectDisplay = currentSubject === 'physics' ? 'Physics' : 
+let subjectDisplay = currentSubject === 'physics' ? 'Physics' : 
                      currentSubject === 'maths' ? 'Mathematics' : 
-                     currentSubject === 'biology' ? 'Biology' : 'Chemistry';
+                     currentSubject === 'biology' ? 'Biology' :
+                     currentSubject === 'economics' ? 'Economics' : 'Chemistry';
     const yearsLoaded = window.currentSubjectYears || [];
     sidebarTitle.innerHTML = `📚 ${subjectDisplay} <span style="font-size:0.7rem;font-weight:normal;">(${yearsLoaded.join(', ')})</span>`;
 
@@ -841,6 +877,9 @@ function showQuizLobby() {
                     <button class="quiz-subject-card ${currentSubject === 'biology' ? 'selected' : ''}" data-subject="biology">
                         <div class="qmc-icon">🧬</div><div class="qmc-title">Biology</div><div class="qmc-desc">${allSubjectYears.biology.length} years loaded</div>
                     </button>
+                    <button class="quiz-subject-card ${currentSubject === 'economics' ? 'selected' : ''}" data-subject="economics">
+    <div class="qmc-icon">📈</div><div class="qmc-title">Economics</div><div class="qmc-desc">${allSubjectYears.economics.length} years loaded</div>
+</button>
                 </div>
             </div>
 
@@ -913,8 +952,8 @@ function showPastQuestionsSidebar() {
     // Use setTimeout to allow loading state to render, then check if data is ready
     setTimeout(() => {
         // Check if data is loaded
-        const subjects = ['chemistry', 'physics', 'maths', 'biology'];
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
+        const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics'];
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊' };
         
         // Check if any subject has data loaded
         let hasData = false;
@@ -953,8 +992,8 @@ function showPastQuestionsSidebar() {
 
 // Helper function to build the past questions sidebar
 function buildPastQuestionsSidebar() {
-    const subjects = ['chemistry', 'physics', 'maths', 'biology'];
-    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
+    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics'];
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊' };
     
     let html = '';
     
@@ -1068,7 +1107,7 @@ function displayPastQuestions(subject, year) {
         // Read DIRECTLY from allSubjectData - never touch questionsData
         let allQuestions = data.filter(q => q.year === year);
         
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬' };
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊'};
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
         
         if (allQuestions.length === 0) {
@@ -1789,15 +1828,12 @@ function initJUPEBApp() {
     setupThemeListeners();
     initStickyNavbar();
     setupEventListeners();
-    loadQuestions();
-    // In initJUPEBApp or wherever you first load data
-loadQuestions(null, () => {
-    console.log('All data loaded!');
-    // Optionally refresh past questions sidebar if it's open
-    if (document.getElementById('past-questions-tab')?.classList.contains('active')) {
-        showPastQuestionsSidebar();
-    }
-});
+    loadQuestions(null, () => {
+        console.log('All data loaded!');
+        if (document.getElementById('past-questions-tab')?.classList.contains('active')) {
+            showPastQuestionsSidebar();
+        }
+    });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
