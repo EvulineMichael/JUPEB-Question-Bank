@@ -13,14 +13,16 @@ let allSubjectData = {
     physics: [],
     maths: [],
     biology: [],
-    economics: []
+    economics: [],
+    government: []
 };
 let allSubjectYears = {
     chemistry: [],
     physics: [],
     maths: [],
     biology: [],
-    economics: []
+    economics: [],
+    government: []
 };
 
 // ===== THEME =====
@@ -189,6 +191,41 @@ const courseStructure = {
         "Applied Issues in Labour Economics",
         "Stabilization Policies in Developing Countries",
         "International Economic Institutions"
+    ]
+},
+government: {
+    "GOV 001 - Elements of Government": [
+        "Nature of Government and Politics",
+        "Basic Concepts of Government",
+        "The State, Structure and Types of Government",
+        "Constitution and Constitutionalism",
+        "Governance and Citizenship"
+    ],
+    "GOV 002 - Fundamentals of Government": [
+        "Political Ideas and Thoughts",
+        "Political Parties, Party System and Pressure Groups",
+        "Public Opinion and Propaganda",
+        "Elections and Electoral System",
+        "Political and Social Change",
+        "Public Administration",
+        "International Relations"
+    ],
+    "GOV 003 - Nigerian Government and Politics": [
+        "Pre-Colonial Systems of Government in Nigeria",
+        "Colonial Administration in Nigeria",
+        "Development of Political Parties in Nigeria",
+        "Elections and Electoral Process in Nigeria",
+        "Major Political Crises in Nigeria",
+        "Reasons for Military Rule of Military Regimes",
+        "Nigerian Foreign Policy"
+    ],
+    "GOV 004 - African Government and Politics": [
+        "Africa Before European Invasion and Colonial Conquest",
+        "Colonial Systems of Administration in Africa",
+        "Constitutional Development of Selected West African Countries",
+        "The Nationalist Movement in West Africa",
+        "Military Intervention in Africa",
+        "Democratization and Political Process in Africa"
     ]
 },
     biology: {
@@ -403,7 +440,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
         currentSubject = forceSubject;
     }
     
-  const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics'];
+  const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government'];
     
     for (const subject of subjects) {
         if (allSubjectData[subject].length > 0) continue;
@@ -466,6 +503,7 @@ function renderCategories() {
 let subjectDisplay = currentSubject === 'physics' ? 'Physics' : 
                      currentSubject === 'maths' ? 'Mathematics' : 
                      currentSubject === 'biology' ? 'Biology' :
+                     currentSubject === 'government' ? 'Government' :
                      currentSubject === 'economics' ? 'Economics' : 'Chemistry';
     const yearsLoaded = window.currentSubjectYears || [];
     sidebarTitle.innerHTML = `📚 ${subjectDisplay} <span style="font-size:0.7rem;font-weight:normal;">(${yearsLoaded.join(', ')})</span>`;
@@ -880,6 +918,9 @@ function showQuizLobby() {
                     <button class="quiz-subject-card ${currentSubject === 'economics' ? 'selected' : ''}" data-subject="economics">
     <div class="qmc-icon">📈</div><div class="qmc-title">Economics</div><div class="qmc-desc">${allSubjectYears.economics.length} years loaded</div>
 </button>
+                    <button class="quiz-subject-card ${currentSubject === 'government' ? 'selected' : ''}" data-subject="government">
+    <div class="qmc-icon">🏛️</div><div class="qmc-title">Government</div><div class="qmc-desc">${allSubjectYears.government.length} years loaded</div>
+</button>
                 </div>
             </div>
 
@@ -952,8 +993,8 @@ function showPastQuestionsSidebar() {
     // Use setTimeout to allow loading state to render, then check if data is ready
     setTimeout(() => {
         // Check if data is loaded
-        const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics'];
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊' };
+        const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government'];
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️' };
         
         // Check if any subject has data loaded
         let hasData = false;
@@ -992,8 +1033,8 @@ function showPastQuestionsSidebar() {
 
 // Helper function to build the past questions sidebar
 function buildPastQuestionsSidebar() {
-    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics'];
-    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊' };
+    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government'];
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️' };
     
     let html = '';
     
@@ -1107,7 +1148,7 @@ function displayPastQuestions(subject, year) {
         // Read DIRECTLY from allSubjectData - never touch questionsData
         let allQuestions = data.filter(q => q.year === year);
         
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊'};
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️'};
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
         
         if (allQuestions.length === 0) {
