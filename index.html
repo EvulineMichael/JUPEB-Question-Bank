@@ -167,14 +167,19 @@
 
 <!-- Subject Tabs -->
 <div class="subject-tabs">
-    <button class="tab-btn active" data-subject="chemistry">🧪 CHEMISTRY</button>
-    <button class="tab-btn" data-subject="physics">⚛️ PHYSICS</button>
-    <button class="tab-btn" data-subject="maths">📐 MATHEMATICS</button>
-    <button class="tab-btn" data-subject="biology">🧬 BIOLOGY</button>
-    <button class="tab-btn" data-subject="economics">📈 ECONOMICS</button>
-    <button class="tab-btn" data-subject="government">🏛️ GOVERNMENT</button>
-    <button class="tab-btn" data-subject="crs">📖 CRS</button>
-    <button class="tab-btn" data-subject="literature">📖 LITERATURE</button>
+    <div class="subjects-dropdown">
+        <button class="tab-btn active" id="subjects-dropdown-btn" onclick="toggleSubjectsDropdown()">
+            📚 SUBJECTS <span class="dropdown-arrow">▼</span>
+        </button>
+        <div class="subjects-dropdown-menu" id="subjects-dropdown-menu">
+            <button class="subject-dropdown-item active" data-subject="chemistry">🧪 Chemistry</button>
+            <button class="subject-dropdown-item" data-subject="physics">⚛️ Physics</button>
+            <button class="subject-dropdown-item" data-subject="maths">📐 Mathematics</button>
+            <button class="subject-dropdown-item" data-subject="biology">🧬 Biology</button>
+            <button class="subject-dropdown-item" data-subject="crs">✝️ CRS</button>
+            <button class="subject-dropdown-item" data-subject="literature">📖 Literature</button>
+        </div>
+    </div>
     <button class="tab-btn quiz-mode-tab" id="quiz-mode-tab" data-subject="quiz">📝 QUIZ MODE</button>
     <button class="tab-btn past-questions-tab" id="past-questions-tab" data-subject="past">📄 PAST QUESTIONS</button>
 </div>

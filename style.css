@@ -209,7 +209,108 @@ header {
     color: var(--tab-active-text);
     box-shadow: 0 4px 12px rgba(13,110,253,0.3);
 }
+/* ===== SUBJECTS DROPDOWN ===== */
+.subjects-dropdown {
+    position: relative;
+}
 
+#subjects-dropdown-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: var(--tab-bg);
+    color: var(--tab-text);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#subjects-dropdown-btn:hover {
+    background: var(--course-header-hover);
+    transform: translateY(-2px);
+}
+
+#subjects-dropdown-btn.active {
+    background: var(--tab-active-bg);
+    color: var(--tab-active-text);
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+.dropdown-arrow {
+    font-size: 0.7rem;
+    transition: transform 0.3s;
+}
+
+#subjects-dropdown-btn.open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.subjects-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    z-index: 500;
+    min-width: 220px;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.subjects-dropdown-menu.show {
+    display: block;
+}
+
+.subject-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px 16px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.subject-dropdown-item:hover {
+    background: var(--topic-btn-hover);
+}
+
+.subject-dropdown-item.active {
+    background: var(--tab-active-bg);
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #subjects-dropdown-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .subjects-dropdown-menu {
+        min-width: 200px;
+    }
+    
+    .subject-dropdown-item {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+}
 /* Main Container */
 .main-container {
     display: flex;

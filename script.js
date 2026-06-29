@@ -750,44 +750,60 @@ function showWelcomeMessage() {
 
 // ===== EVENT LISTENERS =====
 function setupEventListeners() {
-    const tabBtns = document.querySelectorAll(".tab-btn");
-    tabBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-        if (btn.id === 'quiz-mode-tab') return;
-        if (btn.id === 'past-questions-tab') return;
-            tabBtns.forEach(b => b.classList.remove("active"));
-            btn.classList.add("active");
-            currentSubject = btn.dataset.subject;
+    // Subject dropdown items
+    document.querySelectorAll('.subject-dropdown-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const subject = item.dataset.subject;
+            
+            // Update active states
+            document.querySelectorAll('.subject-dropdown-item').forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('subjects-dropdown-btn').classList.add('active');
+            
+            // Close dropdown
+            document.getElementById('subjects-dropdown-menu').classList.remove('show');
+            document.getElementById('subjects-dropdown-btn').classList.remove('open');
+            
+            // Switch subject
+            currentSubject = subject;
             currentTopic = null;
             clearQuizTimer();
-            
             questionsData = allSubjectData[currentSubject] || [];
             window.currentSubjectYears = allSubjectYears[currentSubject] || [];
             renderCategories();
             showWelcomeMessage();
-            
             autoOpenSidebarOnMobile();
         });
     });
 
+    // Quiz mode tab
     const quizModeTab = document.getElementById('quiz-mode-tab');
     if (quizModeTab) {
         quizModeTab.addEventListener('click', () => {
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.subject-dropdown-item').forEach(i => i.classList.remove('active'));
+            document.getElementById('subjects-dropdown-btn').classList.remove('active');
             quizModeTab.classList.add('active');
             clearQuizTimer();
             showQuizLobby();
         });
     }
-const pastQuestionsTab = document.getElementById('past-questions-tab');
-if (pastQuestionsTab) {
-    pastQuestionsTab.addEventListener('click', () => {
-        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-        pastQuestionsTab.classList.add('active');
-        clearQuizTimer();
-        showPastQuestionsSidebar();
-    });
-}
+
+    // Past questions tab
+    const pastQuestionsTab = document.getElementById('past-questions-tab');
+    if (pastQuestionsTab) {
+        pastQuestionsTab.addEventListener('click', () => {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.subject-dropdown-item').forEach(i => i.classList.remove('active'));
+            document.getElementById('subjects-dropdown-btn').classList.remove('active');
+            pastQuestionsTab.classList.add('active');
+            clearQuizTimer();
+            showPastQuestionsSidebar();
+        });
+    }
+
+    // Back to top
     backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
     window.addEventListener("scroll", () => {
         backToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
@@ -966,35 +982,20 @@ function showQuizLobby() {
                 <p class="quiz-subtitle">Choose your subject and configure your session</p>
             </div>
 
-            <div class="quiz-step" id="qstep-0">
-                <div class="quiz-step-label"><span class="step-number">1</span> Choose Subject</div>
-                <div class="quiz-subject-grid">
-                    <button class="quiz-subject-card ${currentSubject === 'chemistry' ? 'selected' : ''}" data-subject="chemistry">
-                        <div class="qmc-icon">🧪</div><div class="qmc-title">Chemistry</div><div class="qmc-desc">${allSubjectYears.chemistry.length} years loaded</div>
-                    </button>
-                    <button class="quiz-subject-card ${currentSubject === 'physics' ? 'selected' : ''}" data-subject="physics">
-                        <div class="qmc-icon">⚛️</div><div class="qmc-title">Physics</div><div class="qmc-desc">${allSubjectYears.physics.length} years loaded</div>
-                    </button>
-                    <button class="quiz-subject-card ${currentSubject === 'maths' ? 'selected' : ''}" data-subject="maths">
-                        <div class="qmc-icon">📐</div><div class="qmc-title">Mathematics</div><div class="qmc-desc">${allSubjectYears.maths.length} years loaded</div>
-                    </button>
-                    <button class="quiz-subject-card ${currentSubject === 'biology' ? 'selected' : ''}" data-subject="biology">
-                        <div class="qmc-icon">🧬</div><div class="qmc-title">Biology</div><div class="qmc-desc">${allSubjectYears.biology.length} years loaded</div>
-                    </button>
-                    <button class="quiz-subject-card ${currentSubject === 'economics' ? 'selected' : ''}" data-subject="economics">
-    <div class="qmc-icon">📈</div><div class="qmc-title">Economics</div><div class="qmc-desc">${allSubjectYears.economics.length} years loaded</div>
-</button>
-                    <button class="quiz-subject-card ${currentSubject === 'government' ? 'selected' : ''}" data-subject="government">
-    <div class="qmc-icon">🏛️</div><div class="qmc-title">Government</div><div class="qmc-desc">${allSubjectYears.government.length} years loaded</div>
-</button>
-                    <button class="quiz-subject-card ${currentSubject === 'crs' ? 'selected' : ''}" data-subject="crs">
-    <div class="qmc-icon">📖</div><div class="qmc-title">CRS</div><div class="qmc-desc">${allSubjectYears.crs.length} years loaded</div>
-</button>
-                    <button class="quiz-subject-card ${currentSubject === 'literature' ? 'selected' : ''}" data-subject="literature">
-    <div class="qmc-icon">📚</div><div class="qmc-title">Literature</div><div class="qmc-desc">${allSubjectYears.literature.length} years loaded</div>
-</button> 
-                </div>
-            </div>
+            <!-- STEP 0: Choose Subject -->
+<div class="quiz-step" id="qstep-0">
+    <div class="quiz-step-label"><span class="step-number">1</span> Choose Subject</div>
+    <div class="quiz-subject-select">
+        <select id="quiz-subject-select" style="width:100%;padding:14px 16px;border:2px solid var(--border-color);border-radius:12px;background:var(--bg-secondary);color:var(--text-primary);font-size:1rem;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22currentColor%22 stroke-width=%222%22><polyline points=%226 9 12 15 18 9%22/></svg>');background-repeat:no-repeat;background-position:right 16px center;padding-right:40px;">
+            <option value="chemistry" ${currentSubject === 'chemistry' ? 'selected' : ''}>🧪 Chemistry</option>
+            <option value="physics" ${currentSubject === 'physics' ? 'selected' : ''}>⚛️ Physics</option>
+            <option value="maths" ${currentSubject === 'maths' ? 'selected' : ''}>📐 Mathematics</option>
+            <option value="biology" ${currentSubject === 'biology' ? 'selected' : ''}>🧬 Biology</option>
+            <option value="crs" ${currentSubject === 'crs' ? 'selected' : ''}>✝️ CRS</option>
+            <option value="literature" ${currentSubject === 'literature' ? 'selected' : ''}>📖 Literature</option>
+        </select>
+    </div>
+</div>
 
             <div class="quiz-step" id="qstep-1">
                 <div class="quiz-step-label"><span class="step-number">2</span> Choose Quiz Mode</div>
@@ -1040,7 +1041,24 @@ function showQuizLobby() {
 
     setupLobbyListeners();
 }
+// Toggle subjects dropdown
+function toggleSubjectsDropdown() {
+    const menu = document.getElementById('subjects-dropdown-menu');
+    const btn = document.getElementById('subjects-dropdown-btn');
+    menu.classList.toggle('show');
+    btn.classList.toggle('open');
+}
 
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e) {
+    const dropdown = document.querySelector('.subjects-dropdown');
+    if (dropdown && !dropdown.contains(e.target)) {
+        const menu = document.getElementById('subjects-dropdown-menu');
+        const btn = document.getElementById('subjects-dropdown-btn');
+        if (menu) menu.classList.remove('show');
+        if (btn) btn.classList.remove('open');
+    }
+});
 // ===== PAST QUESTIONS MODE =====
 function showPastQuestionsSidebar() {
     if (welcomeMessage) welcomeMessage.style.display = 'none';
@@ -1383,27 +1401,37 @@ function takePastQuestionsAsQuiz(subject, year) {
 }
 
 function setupLobbyListeners() {
-    document.querySelectorAll('.quiz-subject-card').forEach(card => {
-        card.addEventListener('click', () => {
-            const newSubject = card.dataset.subject;
-            if (newSubject === currentSubject) return;
-            document.querySelectorAll('.quiz-subject-card').forEach(c => c.classList.remove('selected'));
-            card.classList.add('selected');
-            currentSubject = newSubject;
-            quizState.subject = newSubject;
-            questionsData = allSubjectData[currentSubject] || [];
-            window.currentSubjectYears = allSubjectYears[currentSubject] || [];
-            quizState.mode = null;
-            quizState.filter = null;
-            quizState.selectedTopics = [];
-            document.querySelectorAll('.quiz-mode-card').forEach(c => c.classList.remove('selected'));
-            document.querySelectorAll('.quiz-timer-btn').forEach(b => { b.classList.remove('active'); if (b.dataset.time === '0') b.classList.add('active'); });
-            quizState.timed = false;
-            quizState.totalTime = 0;
-            ['qstep-2','qstep-3','qstep-4'].forEach(id => { const el = document.getElementById(id); if (el) el.classList.add('hidden'); });
-            showQuizLobby();
+    // Subject dropdown in quiz lobby
+const quizSubjectSelect = document.getElementById('quiz-subject-select');
+if (quizSubjectSelect) {
+    quizSubjectSelect.addEventListener('change', () => {
+        const newSubject = quizSubjectSelect.value;
+        if (newSubject === currentSubject) return;
+        
+        currentSubject = newSubject;
+        quizState.subject = newSubject;
+        questionsData = allSubjectData[currentSubject] || [];
+        window.currentSubjectYears = allSubjectYears[currentSubject] || [];
+        
+        quizState.mode = null;
+        quizState.filter = null;
+        quizState.selectedTopics = [];
+        document.querySelectorAll('.quiz-mode-card').forEach(c => c.classList.remove('selected'));
+        document.querySelectorAll('.quiz-timer-btn').forEach(b => { 
+            b.classList.remove('active'); 
+            if (b.dataset.time === '0') b.classList.add('active'); 
         });
+        quizState.timed = false;
+        quizState.totalTime = 0;
+        
+        ['qstep-2','qstep-3','qstep-4'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.classList.add('hidden');
+        });
+        
+        showQuizLobby();
     });
+}
     
     document.querySelectorAll('.quiz-mode-card:not([disabled])').forEach(card => {
         card.addEventListener('click', () => {
