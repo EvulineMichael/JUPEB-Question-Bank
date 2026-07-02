@@ -194,7 +194,7 @@
     "questionNumber": 18,
     "question": "Two forces having magnitude 5 N and 4 N have an angle of 30° between them. What is the scalar product?",
     "options": ["10√3 N", "20√3 N", "10√3 N", "5√3 N"],
-    "answer": "D",
+    "answer": "A",
     "explanation": "Scalar product = F₁·F₂ = |F₁||F₂|cosθ = 5×4×cos30° = 20×(√3/2) = 10√3 N. Option A is 10√3 N, C is same as A. D is 5√3 N, incorrect. So A/C is correct."
   },
   {
@@ -306,8 +306,8 @@
     "questionNumber": 28,
     "question": "How much heat must be added to 50 kg of lead at 30°C to cause it to melt? Specific heat capacity of lead is 130 J kg⁻¹ °C⁻¹, it melts at 330°C and its heat of fusion is 24600 J kg⁻¹.",
     "options": ["1950000 J", "123000 J", "1827000 J", "3180000 J"],
-    "answer": "C",
-    "explanation": "Q₁ = mcΔT = 50×130×300 = 1,950,000 J. Q₂ = mL = 50×24600 = 1,230,000 J. Total = 3,180,000 J ≈ 3.18×10⁶ J. Option D is 3180000 J."
+    "answer": "D",
+    "explanation": "Q₁ = mcΔT = 50×130×300 = 1,950,000 J. Q₂ = mL = 50×24600 = 1,230,000 J. Total = 3,180,000 J ≈ 3.18×10⁶ J."
   },
   {
     "subject": "Physics",
