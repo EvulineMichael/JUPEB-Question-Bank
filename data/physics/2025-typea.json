@@ -32,7 +32,7 @@
     "answer": "A",
     "explanation": "Impulse = force × time = change in momentum, so impulse has same units as momentum (kg·m/s). Moment (torque) has N·m, pressure has N/m², tension is force (N)."
   },
-  {
+    {
     "subject": "Physics",
     "year": 2025,
     "category": "Measurement",
@@ -40,8 +40,8 @@
     "questionNumber": 4,
     "question": "An attempt was made to determine the volume V of a cylinder. The radius r was measured as 3.30 ± 0.05 cm and the length L was measured as 25 ± 0.4 cm. Evaluate the value of V and the uncertainty in this value using the relation: V = πr²L.",
     "options": ["(869 ± 0.02) cm³", "(869 ± 0.45) cm³", "(869 ± 4.00) cm³", "(869 ± 40.00) cm³"],
-    "answer": "C",
-    "explanation": "V = π×(3.30)²×25 = 3.14×10.89×25 = 855 cm³. Not 869. ΔV/V = 2Δr/r + ΔL/L = 2×0.05/3.30 + 0.4/25 = 0.0303 + 0.016 = 0.0463. ΔV = 855×0.0463 = 39.6 ≈ 40. Given options, (869±4) has smaller uncertainty. Closest is C."
+    "answer": "D",
+    "explanation": "V = π×(3.30)²×25 = 3.14×10.89×25 = 855 cm³. Not 869. ΔV/V = 2Δr/r + ΔL/L = 2×0.05/3.30 + 0.4/25 = 0.0303 + 0.016 = 0.0463. ΔV = 855×0.0463 = 39.6 ≈ 40. (869 ± 40.00) cm³ is the correct choice in the exam because the uncertainty is ±40 cm³. However, the stated volume (869 cm³) is likely a typo; using the given measurements, the volume should be about 855 cm³."
   },
   {
     "subject": "Physics",
@@ -62,8 +62,8 @@
     "questionNumber": 6,
     "question": "A student measures the length of a table and finds it to be 1.7 meters. If another student measures the same table and reports the length as 170 centimeters, what can you conclude about their measurements? The measurements are",
     "options": ["accurate and precise.", "precise but not accurate.", "accurate but not precise.", "neither accurate nor precise."],
-    "answer": "C",
-    "explanation": "Both measurements are the same (1.7 m = 170 cm). They agree with each other (precise) but without the true value, we cannot assess accuracy. However, given they are equal, they are accurate relative to each other. Option C says accurate but not precise? Actually they are both accurate if true value is 1.7 m. The wording is ambiguous. Typically, if two measurements agree, they are precise."
+    "answer": "A",
+    "explanation": "Since 1.7 m is exactly equal to 170 cm, both students obtained the same measurement using different units. Their results agree with each other (precise) and correctly represent the table's length (accurate). Therefore, the measurements are accurate and precise."
   },
   {
     "subject": "Physics",

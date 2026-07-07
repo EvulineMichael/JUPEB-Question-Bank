@@ -154,8 +154,8 @@
     "questionNumber": 14,
     "question": "The current through a resistor in an a.c. circuit is given as I = 2 sin ωt. Determine the d.c. equivalent of the current.",
     "options": ["1/√2 A", "2√2 A", "2 A", "√2 A"],
-    "answer": "A",
-    "explanation": "DC equivalent = RMS value. For I = I₀ sin ωt, I_rms = I₀/√2 = 2/√2 = √2 A. Option D is √2 A."
+    "answer": "D",
+    "explanation": "DC equivalent = RMS value. For I = I₀ sin ωt, I_rms = I₀/√2 = 2/√2 = √2 A."
   },
   {
     "subject": "Physics",
@@ -297,8 +297,8 @@
     "questionNumber": 27,
     "question": "A galvanometer has a resistance of 4Ω. By using a shunt wire of resistance 0.04Ω, the galvanometer could be converted to an ammeter capable of reading 2.5 A. What is the current through the galvanometer?",
     "options": ["2 mA", "10 mA", "20 mA", "25 mA"],
-    "answer": "C",
-    "explanation": "I_g = I × (R_shunt)/(R_g + R_shunt) = 2.5 × (0.04)/(4.04) = 2.5 × 0.0099 = 0.02475 A = 24.75 mA ≈ 25 mA. Option D is 25 mA."
+    "answer": "D",
+    "explanation": "I_g = I × (R_shunt)/(R_g + R_shunt) = 2.5 × (0.04)/(4.04) = 2.5 × 0.0099 = 0.02475 A = 24.75 mA ≈ 25 mA."
   },
   {
     "subject": "Physics",
