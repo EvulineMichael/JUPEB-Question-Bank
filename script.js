@@ -1048,7 +1048,7 @@ function showQuizLobby() {
             <option value="physics" ${currentSubject === 'physics' ? 'selected' : ''}>⚛️ Physics</option>
             <option value="maths" ${currentSubject === 'maths' ? 'selected' : ''}>📐 Mathematics</option>
             <option value="biology" ${currentSubject === 'biology' ? 'selected' : ''}>🧬 Biology</option>
-            <option value="crs" ${currentSubject === 'crs' ? 'selected' : ''}>✝️ CRS</option>
+            <option value="crs" ${currentSubject === 'crs' ? 'selected' : ''}>🕊️ CRS</option>
             <option value="literature" ${currentSubject === 'literature' ? 'selected' : ''}>📖 Literature</option>
             <option value="economics" ${currentSubject === 'economics' ? 'selected' : ''}>💰 Economics</option>
 <option value="government" ${currentSubject === 'government' ? 'selected' : ''}>🏛️ Government</option>
@@ -1143,7 +1143,7 @@ function showPastQuestionsSidebar() {
     setTimeout(() => {
         // Check if data is loaded
         const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', literature: '📖' };
         
         // Check if any subject has data loaded
         let hasData = false;
@@ -1183,7 +1183,7 @@ function showPastQuestionsSidebar() {
 // Helper function to build the past questions sidebar
 function buildPastQuestionsSidebar() {
     const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'literature'];
-    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
+    const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', literature: '📖' };
     
     let html = '';
     
@@ -1332,7 +1332,7 @@ function displayPastQuestions(subject, year, paper = null) {
     return true; // Show all if no specific paper selected
 });
         
-        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '📖', literature: '📖' };
+        const subjectEmojis = { chemistry: '🧪', physics: '⚛️', maths: '📐', biology: '🧬', economics: '📊', government: '🏛️', crs: '🕊️', literature: '📖' };
         const displayName = subject.charAt(0).toUpperCase() + subject.slice(1);
         
         if (allQuestions.length === 0) {
