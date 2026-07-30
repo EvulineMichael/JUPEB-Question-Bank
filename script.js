@@ -146,7 +146,7 @@ const courseStructure = {
         "MAT 001 - Pure Mathematics": [
             "Real Numbers", "Set Theory", "Mappings", "Quadratic Equations", "Polynomials",
             "Partial Fractions", "Binomial Theorem", "Logarithms", "Matrices", "Inequalities",
-            "Trigonometry", "Coordinate Geometry", "Complex Numbers"
+            "Trigonometry", "Coordinate Geometry", "Complex Numbers", "Sequences and series"
         ],
         "MAT 002 - Calculus": [
             "Functions", "Limits and Continuity", "Differentiation", "Applications of Differentiation",
