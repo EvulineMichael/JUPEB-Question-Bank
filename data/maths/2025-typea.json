@@ -502,8 +502,8 @@
     "questionNumber": 46,
     "question": "Determine the value of n for which C(n+1, 4) = 6 × C(n, 3).",
     "options": ["5", "23", "24", "22"],
-    "answer": "C",
-    "explanation": "C(n+1,4) = (n+1)n(n-1)(n-2)/24, C(n,3) = n(n-1)(n-2)/6. Equation: (n+1)n(n-1)(n-2)/24 = 6 × n(n-1)(n-2)/6 = n(n-1)(n-2). Cancel n(n-1)(n-2): (n+1)/24 = 1 → n+1 = 24 → n = 23. Option B is 23."
+    "answer": "B",
+    "explanation": "C(n+1,4) = (n+1)n(n-1)(n-2)/24, C(n,3) = n(n-1)(n-2)/6. Equation: (n+1)n(n-1)(n-2)/24 = 6 × n(n-1)(n-2)/6 = n(n-1)(n-2). Cancel n(n-1)(n-2): (n+1)/24 = 1 → n+1 = 24 → n = 23."
   },
   {
     "subject": "Mathematics",
