@@ -102,45 +102,44 @@ function setupThemeListeners() {
 // ===== COURSE STRUCTURE =====
 const courseStructure = {
     chemistry: {
-        "CHM 001 - General Chemistry": [
-            "Measurement", "Mole Concept", "Atomic Structure", "Electronic Configuration",
-            "Periodic Table and Periodicity", "Chemical Bonding"
-        ],
-        "CHM 002 - Physical Chemistry": [
-            "Kinetic Molecular Theory of Gases", "Solutions and Colligative Properties",
-            "Thermochemistry", "Thermodynamics", "Electrochemistry", "Chemical Kinetics",
-            "Equilibrium State", "Acid-Base Equilibria", "Ionic Equilibria", "Nuclear Chemistry"
-        ],
-        "CHM 003 - Inorganic Chemistry": [
-            "Chemistry of Hydrogen", "s-block elements", "p-block elements", "d-block elements",
-            "Coordination Chemistry", "Chemistry of the Environment", "Nanochemistry"
-        ],
-        "CHM 004 - Organic Chemistry": [
-            "Separation and Purification", "Structure and Bonding in Organic Compounds",
-            "Organic Reactions", "Isomerism", "Alkanes, Alkenes, Alkynes", "Alcohols",
-            "Alkyl Halides", "Carbonyl Compounds", "Carboxylic Acids and Derivatives",
-            "Amines", "Aromatic Compounds", "Macromolecules", "Petroleum Industry"
-        ]
-    },
+    "CHM 001 - General Chemistry": [
+        "Measurement", "Mole Concept", "Atomic Structure", "Chemical Bonding"
+    ],
+    "CHM 002 - Physical Chemistry": [
+        "Nature of Matter", "Kinetic Molecular Theory of Gases", "Solutions and Colligative Properties",
+        "Thermochemistry", "Thermodynamics", "Electrochemistry", "Chemical Kinetics",
+        "Equilibrium State", "Acid-Base Equilibria", "Ionic Equilibria", "Nuclear Chemistry"
+    ],
+    "CHM 003 - Inorganic Chemistry": [
+        "Periodicity", "Chemistry of Hydrogen", "s-block elements", "p-block elements", "d-block elements",
+        "Coordination Chemistry", "Chemistry of the Environment", "Nanochemistry"
+    ],
+    "CHM 004 - Organic Chemistry": [
+        "Separation and Purification Techniques", "Structure and Bonding in Organic Compounds",
+        "Organic Reactions", "Isomerism in Organic Compounds", "Alkanes, Alkenes, Alkynes", "Alcohols",
+        "Alkyl Halides", "Carbonyl Compounds", "Carboxylic Acids and Derivatives",
+        "Amines", "Aromatic Compounds", "Macromolecules", "Petroleum Industry"
+    ]
+},
     physics: {
-        "PHY 001 - Mechanics & Properties of Matter": [
-            "Physical Quantities and Units", "Vectors", "Kinematics", "Newton's Laws and Forces",
-            "Gravitational Field", "Work, Energy and Power", "Circular and Oscillatory Motions",
-            "Elasticity", "Hydrostatics", "Hydrodynamics"
-        ],
-        "PHY 002 - Heat, Waves & Optics": [
-            "Temperature and Thermometry", "Heat and Energy", "Ideal Gases", "Thermodynamics",
-            "Waves", "Electromagnetic Waves", "Sound Waves", "Geometrical Optics",
-            "Lenses and Optical Instruments", "Wave Theory of Light"
-        ],
-        "PHY 003 - Electricity & Magnetism": [
-            "Electrostatics", "Capacitors", "Current Electricity", "Magnetic Field",
-            "Force on Conductor and Moving Charge", "Electromagnetic Induction", "Alternating Current Circuits"
-        ],
-        "PHY 004 - Modern Physics": [
-            "Atomic Structure", "Elements of Modern Physics", "X-Rays", "Wave-Particle Duality",
-            "Radioactivity and Nuclear Energy", "Semiconductors", "Applied Physics"
-        ]
+    "PHY 001 - Mechanics & Properties of Matter": [
+        "Physical Quantities and Units", "Vectors", "Kinematics", "Dynamics (Newton's Laws and Forces)",
+        "The Gravitational Field", "Work, Energy and Power", "Circular and Oscillatory Motions",
+        "Elasticity", "Hydrostatics", "Hydrodynamics"
+    ],
+    "PHY 002 - Heat, Waves & Optics": [
+        "Temperature and Thermometry", "Heat and Energy", "Ideal Gases", 
+        "Waves", "Sound Waves", "Geometric Optics (Light)", 
+        "Lenses and Optical Instruments", "Wave Theory of Light"
+    ],
+    "PHY 003 - Electricity & Magnetism": [
+        "Electrostatics", "Capacitors", "Current Electricity", "Magnetic Field",
+        "Force on Conductor and Moving Charge", "Electromagnetic Induction", "Alternating Current Circuits"
+    ],
+    "PHY 004 - Modern Physics": [
+        "Atomic Structure", "Elements of Modern Physics", "X-Rays", "Wave-Particle Duality",
+        "Radioactivity and Nuclear Energy", "Semiconductors", "Applied Physics"
+    ]
     },
     maths: {
         "MAT 001 - Pure Mathematics": [
@@ -294,54 +293,60 @@ government: {
         "Democratization and Political Process in Africa"
     ]
 },
-    biology: {
-        "BIO 001 - General Biology": [
-            "Origin of Living Things",
-            "Living Things in Nature and Biological Molecules",
-            "Cell Organisation, Structure and Functions",
-            "Cell Division, Principles of Genetics, Variations and Heredity",
-            "Systematics, Taxonomy and Nomenclature",
-            "Ecology",
-            "Biological Methods and Application",
-            "Evolution",
-            "Enzymes"
-        ],
-        "BIO 002 - Microbiology": [
-            "History of the Discovery of Microorganisms",
-            "Types and Taxonomic Groupings of Microorganisms",
-            "Structures, Morphology and Characteristics of Microorganisms",
-            "Microbial Ecology",
-            "Microbial Nucleic Acids in Information Storage and Transfer",
-            "Microorganisms and their Application in Biotechnology"
-        ],
-        "BIO 003 - Botany": [
-            "General Characteristics and Diversity of Plants",
-            "Taxonomy of Lower and Higher Plants",
-            "Plant Conservation",
-            "Plant Tissues and Functions",
-            "Plant Morphology/Anatomy",
-            "Nutrition in Plants",
-            "Transport System in Plants",
-            "Respiration",
-            "Plant Reproduction",
-            "Growth in Higher Plants and Growth Regulators",
-            "Crop Improvement",
-            "Economic and Ecological Importance of Plants"
-        ],
-        "BIO 004 - Zoology": [
-            "Diversity and General Characteristics of Animals",
-            "Systematics (Taxonomy) of Animals",
-            "Evolution of Animals",
-            "Invertebrates",
-            "Introduction to Chordates",
-            "Ecologic and Economic Importance of Animals",
-            "Physiological Processes",
-            "Transport of Substances across Membranes",
-            "Nervous System",
-            "Sense Organ",
-            "Endocrine System"
-        ]
-    },
+   biology: {
+    "BIO 001 - General Biology": [
+        "Origin of Living Things",
+        "Origin of Organic Molecules",
+        "Basic Biostatistics",
+        "Diversity of Living Things",
+        "Biological Molecules",
+        "Cell Structure and Functions",
+        "Cell Division, Genetics, Variations and Heredity",
+        "Systematics, Taxonomy and Nomenclature",
+        "Ecology",
+        "Biological Methods and Application",
+        "Evolution",
+        "Enzymes"
+    ],
+    "BIO 002 - Microbiology": [
+        "History of the Discovery of Microorganisms",
+        "Types and Taxonomic Groupings of Microorganisms",
+        "Structures, Morphology and Characteristics of Microorganisms",
+        "Microbial Ecology",
+        "Microbial Nucleic Acids in Information Storage and Transfer",
+        "Microorganisms and their Application in Biotechnology"
+    ],
+    "BIO 003 - Botany": [
+        "General Characteristics and Diversity of Plants",
+        "Plant Morphology/Anatomy",
+        "Nutrition in Plants",
+        "Transport System in Plants",
+        "Respiration",
+        "Plant Reproduction",
+        "Growth in Higher Plants and Growth Regulators",
+        "Crop Improvement",
+        "Economic and Ecological Importance of Plants"
+    ],
+    "BIO 004 - Zoology": [
+        "Diversity and General Characteristics of Animals",
+        "Systematics (Taxonomy) of Animals",
+        "Evolution of Animals",
+        "Invertebrates",
+        "Introduction to Chordates",
+        "Ecologic and Economic Importance of Animals",
+        "Nutrition in Animals",
+        "Respiration in Mammals",
+        "Transport of Substances across Membranes",
+        "Skeletal System and Muscles",
+        "Reproduction",
+        "Excretion",
+        "Circulatory System",
+        "Growth and Development",
+        "Nervous System",
+        "Sense Organs",
+        "Endocrine System"
+    ]
+},
     irs: {
     "ISS 001 - History of Islam": [
         "An Appraisal of the Jahiliyyah Period and the Significance of the Islamic Reforms",
@@ -541,86 +546,137 @@ function handleSidebarResponsive() {
 async function getAvailableYears(subject) {
     const possibleYears = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
     const availableYears = [];
-    
+
     for (const year of possibleYears) {
-        // Check for type variants (Type A, Type B, Type C, Type D)
         let foundAny = false;
         for (const type of ['A', 'B', 'C', 'D']) {
             try {
-                const response = await fetch(`data/${subject}/${year}-type${type.toLowerCase()}.json`, { method: 'HEAD' });
+                const fileName = `data/${subject}/${year}-type${type.toLowerCase()}.json`;
+                const response = await fetch(fileName); // Direct fetch, no HEAD
                 if (response.ok) {
                     availableYears.push({ year, paper: `Type ${type}`, label: `${year} Type ${type}` });
                     foundAny = true;
                 }
-            } catch (error) {}
+            } catch (error) {
+                // File doesn't exist — skip
+            }
         }
-        
-        // If no type files found, try the plain year file
+
         if (!foundAny) {
             try {
-                const response = await fetch(`data/${subject}/${year}.json`, { method: 'HEAD' });
+                const response = await fetch(`data/${subject}/${year}.json`);
                 if (response.ok) availableYears.push({ year, paper: null, label: String(year) });
-            } catch (error) {}
+            } catch (error) {
+                // Doesn't exist — skip
+            }
         }
     }
-    
+
     return availableYears;
+}
+// ===== QUESTION BODY RENDERER =====
+// Detects and renders equation, dataTable, and diagram fields
+function renderQuestionBody(q) {
+    let html = '';
+    
+    // 1. Question text
+    html += `<div class="question-text">${escapeHtml(q.question)}</div>`;
+    
+    // 2. LaTeX equation (if present)
+    if (q.equation) {
+        html += `<div class="question-equation">\\[${q.equation}\\]</div>`;
+    }
+    
+    // 3. Data table (if present)
+    if (q.dataTable && q.dataTable.headers && q.dataTable.rows) {
+        html += `<div class="question-table-wrap"><table class="question-table">
+            <thead><tr>${q.dataTable.headers.map(h => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead>
+            <tbody>${q.dataTable.rows.map(row => 
+                `<tr>${row.map(cell => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`
+            ).join('')}</tbody>
+        </table></div>`;
+    }
+    
+    // 4. Image (if present)
+if (q.image && q.image.src) {
+    html += `
+        <div class="question-diagram">
+            <img src="${q.image.src}" 
+                 alt="${escapeHtml(q.image.alt || 'Question diagram')}" 
+                 style="max-width:100%;height:auto;border-radius:8px;" 
+                 loading="lazy" />
+        </div>`;
+}
+
+// 5. Diagram missing warning (if flagged)
+if (q.diagramMissing) {
+    html += `<div class="quiz-diagram-note">⚠️ ${escapeHtml(q.diagramNote || 'Diagram missing — refer to past paper.')}</div>`;
+}
+    
+    return html;
 }
 
 async function loadQuestions(forceSubject = null, callback = null) {
     if (forceSubject) {
         currentSubject = forceSubject;
     }
-    
-  const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
-    
-    for (const subject of subjects) {
-        if (allSubjectData[subject].length > 0) continue;
-        
+
+    const subjects = ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
+
+    // Create a promise for each subject that needs loading
+    const loadPromises = subjects.map(async (subject) => {
+        if (allSubjectData[subject].length > 0) return; // Skip already-loaded
+
         const availableYears = await getAvailableYears(subject);
         allSubjectYears[subject] = availableYears;
-        
-        if (availableYears.length === 0) continue;
-        
+
+        if (availableYears.length === 0) return;
+
         let allQuestions = [];
-        for (const yr of availableYears) {
-    try {
-        let fileName;
-        if (yr.paper) {
-            const typeLetter = yr.paper.replace('Type ', '').toLowerCase();
-            fileName = `data/${subject}/${yr.year}-type${typeLetter}.json`;
-        } else {
-            fileName = `data/${subject}/${yr.year}.json`;
-        }
-        const response = await fetch(fileName);
+        const fetchPromises = availableYears.map(async (yr) => {
+            try {
+                let fileName;
+                if (yr.paper) {
+                    const typeLetter = yr.paper.replace('Type ', '').toLowerCase();
+                    fileName = `data/${subject}/${yr.year}-type${typeLetter}.json`;
+                } else {
+                    fileName = `data/${subject}/${yr.year}.json`;
+                }
+                const response = await fetch(fileName);
                 if (response.ok) {
-    const yearData = await response.json();
-    if (Array.isArray(yearData)) {
-        const tagged = yearData.map(q => ({ ...q, paper: yr.paper || null }));
-        allQuestions = [...allQuestions, ...tagged];
-    } else if (yearData.questions && Array.isArray(yearData.questions)) {
-        const tagged = yearData.questions.map(q => ({ ...q, paper: yr.paper || null }));
-        allQuestions = [...allQuestions, ...tagged];
-    }
-}
-} catch (error) {
-    console.error(`Error loading ${subject}/${yr.year}${yr.paper ? '-type' + yr.paper.replace('Type ', '').toLowerCase() : ''}.json:`, error);
-}
-        }
-        
+                    const yearData = await response.json();
+                    if (Array.isArray(yearData)) {
+                        return yearData.map(q => ({ ...q, paper: yr.paper || null }));
+                    } else if (yearData.questions && Array.isArray(yearData.questions)) {
+                        return yearData.questions.map(q => ({ ...q, paper: yr.paper || null }));
+                    }
+                }
+                return [];
+            } catch (error) {
+                console.error(`Error loading ${subject}/${yr.year}${yr.paper ? '-type' + yr.paper.replace('Type ', '').toLowerCase() : ''}.json:`, error);
+                return [];
+            }
+        });
+
+        const yearResults = await Promise.all(fetchPromises);
+        yearResults.forEach(result => {
+            allQuestions = [...allQuestions, ...result];
+        });
+
         allSubjectData[subject] = allQuestions;
         console.log(`Cached ${subject}: ${allQuestions.length} questions from years ${availableYears.map(y => y.label).join(', ')}`);
-    }
-    
+    });
+
+    // Wait for ALL subjects to load simultaneously
+    await Promise.all(loadPromises);
+
     questionsData = allSubjectData[currentSubject] || [];
     window.currentSubjectYears = allSubjectYears[currentSubject] || [];
-    
+
     renderCategories();
     showWelcomeMessage();
-    
     autoOpenSidebarOnMobile();
-    
-    // Call callback if provided
+
     if (callback) callback();
 }
 
@@ -790,6 +846,11 @@ allQuestions = allQuestions.filter(q => {
         }
 
         questionsContainer.innerHTML = questionsHtml;
+
+        // Re-render MathJax for new LaTeX content
+if (window.MathJax && window.MathJax.typesetPromise) {
+    MathJax.typesetPromise([questionsContainer]).catch(err => console.log('MathJax error:', err));
+}
 
         // Set up event listeners for show answer buttons
         document.querySelectorAll('.show-answer-btn').forEach(btn => {
@@ -1457,6 +1518,11 @@ function displayPastQuestions(subject, year, paper = null) {
 
         questionsContainer.innerHTML = questionsHtml;
 
+// Re-render MathJax for new LaTeX content
+if (window.MathJax && window.MathJax.typesetPromise) {
+    MathJax.typesetPromise([questionsContainer]).catch(err => console.log('MathJax error:', err));
+}      
+
         // Set up event listeners for show answer buttons
         document.querySelectorAll('.show-answer-btn').forEach(btn => {
             btn.addEventListener('click', () => {
@@ -1505,7 +1571,7 @@ function buildQuestionCard(q, year, questionIndex) {
             <span class="question-type">${q.type === "Objective" ? "🔘 Multiple Choice" : "✍️ Essay"}</span>
             ${q.diagramMissing ? '<span class="question-diagram-badge">⚠️ Missing Diagram</span>' : ''}
         </div>
-        <div class="question-text">${escapeHtml(q.question)}</div>`;
+        ${renderQuestionBody(q)}`;
     if (q.diagramMissing) html += `<div style="background:var(--warning-bg);border-left:4px solid var(--warning-border);padding:12px;margin:12px 0;border-radius:6px;color:var(--warning-text);">⚠️ <strong>Diagram Missing</strong><br>${escapeHtml(q.diagramNote || 'Refer to original paper.')}</div>`;
     if (q.type === "Objective" && q.options?.length > 0) {
         html += `<ul class="options-list" id="options-list-${questionIndex}">`;
@@ -1513,13 +1579,99 @@ function buildQuestionCard(q, year, questionIndex) {
             if (opt?.trim()) html += `<li class="option-item" data-option="${optionLabels[optIdx]}"><strong>${optionLabels[optIdx]})</strong> ${escapeHtml(opt)}</li>`;
         });
         html += `</ul>`;
-        if (q.answer && q.explanation) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">🔍 Show Answer</button><div class="answer-display" id="answer-${questionIndex}"><div class="correct-answer">✅ Correct Answer: ${q.answer}</div><div class="explanation">💡 ${escapeHtml(q.explanation)}</div></div>`;
+        if (q.answer && q.explanation) html += `<button class="show-answer-btn" data-q-idx="${questionIndex}" data-answer="${q.answer}" data-explanation="${escapeHtml(q.explanation)}">🔍 Show Answer</button><div class="answer-display" id="answer-${questionIndex}"><div class="correct-answer">✅ Correct Answer: ${q.answer}</div><div class="explanation">💡 ${formatModelAnswer(q.explanation)}</div></div>`;
     }
     if (q.type === "Essay") {
-        if (q.modelAnswer) html += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">📝 Show Model Answer</button><div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;"><div class="model-answer"><strong>📖 Model Answer:</strong><br>${escapeHtml(q.modelAnswer)}</div></div>`;
+        if (q.modelAnswer) html += `<button class="show-essay-answer-btn" data-essay-idx="${questionIndex}">📝 Show Model Answer</button><div class="essay-answer-display" id="essay-answer-${questionIndex}" style="display:none;"><div class="model-answer"><strong>📖 Model Answer:</strong><br>${formatModelAnswer(q.modelAnswer)}</div></div>`;
         else if (!q.diagramMissing) html += `<div class="essay-note">📝 Essay question (answer in your notebook)</div>`;
     }
     return html + `</div>`;
+}
+// ===== FORMAT MODEL ANSWER =====
+function formatModelAnswer(text) {
+    if (!text) return "";
+    
+    const paragraphs = text.split("\n\n");
+    
+    return paragraphs.map(paragraph => {
+        const lines = paragraph.split("\n");
+        const firstLine = lines[0] || "";
+        
+        const isHeader = /^\([iIvVxX]+\)\s|^Final Answers|^Finding|^Actual directions|^Step\s\d/.test(firstLine);
+        
+        let paragraphHtml;
+        
+        if (isHeader) {
+            const header = escapeHtml(firstLine);
+            const restLines = lines.slice(1);
+            const restHtml = processLinesForVisuals(restLines);
+            paragraphHtml = `<strong style="display:block;margin-top:12px;color:#17a2b8;">${header}</strong>${restHtml ? `<br>${restHtml}` : ''}`;
+        } else {
+            paragraphHtml = processLinesForVisuals(lines);
+        }
+        
+        return paragraphHtml;
+    }).join("<div style='height:10px;'></div>");
+}
+// ===== PROCESS LINES FOR VISUALS (IMAGES & TABLES) =====
+function processLinesForVisuals(lines) {
+    const imageRegex = /\[IMAGE:\s*([^\|]+)\s*\|\s*([^\]]+)\]/g;
+    const tableRegex = /\[TABLE:\s*([^\]]+)\]/g;
+    
+    return lines.map(line => {
+        // 1. Check for TABLE marker first
+        if (tableRegex.test(line)) {
+            return line.replace(tableRegex, (match, tableData) => {
+                return renderTableFromMarker(tableData);
+            });
+        }
+        
+        // 2. Check for IMAGE marker
+        if (imageRegex.test(line)) {
+            return line.replace(imageRegex, (match, src, alt) => {
+                return `<div class="question-diagram" style="margin:12px 0;"><img src="${src.trim()}" alt="${escapeHtml(alt.trim())}" style="max-width:100%;height:auto;border-radius:8px;" loading="lazy" /></div>`;
+            });
+        }
+        
+        // 3. Plain text — escape it
+        return escapeHtml(line);
+    }).join("<br>");
+}
+
+// ===== RENDER TABLE FROM MARKER =====
+function renderTableFromMarker(tableData) {
+    // Format: col1 | col2 | col3 | row1c1 | row1c2 | row1c3 | row2c1 | row2c2 | row2c3 | ...
+    const cells = tableData.split("|").map(cell => cell.trim());
+    
+    // First 3 cells are headers
+    const headers = cells.slice(0, 3);
+    const rowData = cells.slice(3);
+    
+    let html = `<div class="question-table-wrap"><table class="question-table">`;
+    html += `<thead><tr>${headers.map(h => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead>`;
+    html += `<tbody>`;
+    
+    for (let i = 0; i < rowData.length; i += 3) {
+        const rowCells = rowData.slice(i, i + 3);
+        html += `<tr>${rowCells.map(cell => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`;
+    }
+    
+    html += `</tbody></table></div>`;
+    return html;
+}
+
+function processLinesForImages(lines) {
+    const imageRegex = /\[IMAGE:\s*([^\|]+)\s*\|\s*([^\]]+)\]/g;
+    
+    return lines.map(line => {
+        // Check if this line contains an image marker
+        if (imageRegex.test(line)) {
+            return line.replace(imageRegex, (match, src, alt) => {
+                return `<div class="question-diagram" style="margin:12px 0;"><img src="${src.trim()}" alt="${escapeHtml(alt.trim())}" style="max-width:100%;height:auto;border-radius:8px;" loading="lazy" /></div>`;
+            });
+        }
+        return escapeHtml(line);
+    }).join("<br>");
 }
 
 function takePastQuestionsAsQuiz(subject, year, paper = null) {
@@ -1905,7 +2057,7 @@ function renderQuizExam() {
                 </div>
             </div>
             <div class="quiz-navigator" id="quiz-navigator">${navDots}</div>
-            <div class="quiz-question-card">
+           <div class="quiz-question-card">
                 <div class="quiz-q-meta">
                     <span class="quiz-q-badge year-badge">📅 ${q.year}</span>
                     <span class="quiz-q-badge num-badge">🔢 Q${q.questionNumber.toString().padStart(2, '0')}</span>
@@ -1913,8 +2065,7 @@ function renderQuizExam() {
                     ${q.diagramMissing ? '<span class="quiz-q-badge diagram-badge">⚠️ Diagram</span>' : ''}
                     ${quizState.flagged.has(quizState.currentIndex) ? '<span class="quiz-q-badge flag-badge">🚩 Flagged</span>' : ''}
                 </div>
-                <div class="quiz-question-text">${escapeHtml(q.question)}</div>
-                ${q.diagramMissing ? `<div class="quiz-diagram-note">⚠️ ${escapeHtml(q.diagramNote || 'Diagram missing — refer to past paper.')}</div>` : ''}
+                ${renderQuestionBody(q)}
                 <div class="quiz-options" id="quiz-options">
                     ${q.options.filter(o => o && o.trim()).map((opt, i) => {
                         const label = optionLabels[i];
@@ -1931,6 +2082,10 @@ function renderQuizExam() {
                 </div>
             </div>
         </div>`;
+// Re-render MathJax for new LaTeX content
+if (window.MathJax && window.MathJax.typesetPromise) {
+    MathJax.typesetPromise([questionsContainer]).catch(err => console.log('MathJax error:', err));
+}
 
     setupExamListeners();
     updateTimerDisplay();
@@ -2094,7 +2249,7 @@ function submitQuiz(timeUp = false) {
                             </div>
                             ${!isCorrect && !isSkipped ? `<div class="rq-your-ans">Your answer: <strong>${userAns}</strong></div>` : ''}
                             <div class="rq-correct-ans">Correct answer: <strong>${correctAns}</strong></div>
-                            ${q.explanation ? `<div class="rq-explanation">💡 ${escapeHtml(q.explanation)}</div>` : ''}
+                            ${q.explanation ? `<div class="rq-explanation">💡 ${formatModelAnswer(q.explanation)}</div>` : ''}
                         </div>`;
                     }).join('')}
                 </div>

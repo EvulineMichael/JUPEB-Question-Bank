@@ -1,9 +1,12 @@
-const CACHE_NAME = 'jupeb-qb-v7'; // ← Bumped to v7
+const CACHE_VERSION = 'v8'; // ← Still bump this when you make major changes
+const CACHE_NAME = `jupeb-qb-${CACHE_VERSION}`;
+
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
   '/style.css',
   '/script.js',
+  '/auth.js',
   '/manifest.json',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css',
   'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js'
@@ -30,25 +33,49 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch event - Network first for ALL your files, cache first only for external CDN
+// Fetch event
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
-  
-  // Your own files (HTML, CSS, JS, JSON) - Network first
-  if (url.origin === self.location.origin || url.pathname.includes('/data/')) {
+
+  // --- JSON data files: Stale-While-Revalidate ---
+  if (url.pathname.includes('/data/')) {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(async (cache) => {
+        const cached = await cache.match(event.request);
+
+        const networkFetch = fetch(event.request)
+          .then(response => {
+            if (response.ok) {
+              const clone = response.clone();
+              cache.put(event.request, clone);
+            }
+            return response;
+          })
+          .catch(() => cached);
+
+        return cached || networkFetch;
+      })
+    );
+    return;
+  }
+
+  // --- Your own files (HTML/CSS/JS): Network-first ---
+  if (url.origin === self.location.origin) {
     event.respondWith(
       fetch(event.request)
         .then(response => {
-          const responseClone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+          }
           return response;
         })
         .catch(() => caches.match(event.request))
     );
     return;
   }
-  
-  // External CDN files (Font Awesome, MathJax) - Cache first
+
+  // --- External CDN files: Cache-first ---
   event.respondWith(
     caches.match(event.request)
       .then(cachedResponse => cachedResponse || fetch(event.request))
