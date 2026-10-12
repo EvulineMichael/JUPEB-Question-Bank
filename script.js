@@ -1194,6 +1194,37 @@ function showWelcomeMessage() {
     currentTopic = null;
 }
 
+// ===== TEMPORARY: SHOW REFERRAL TEACHER BADGE =====
+(function showReferralBadge() {
+    const refCode = localStorage.getItem("jupeb_referral_code");
+    if (!refCode) return;
+    if (typeof REFERRAL_CODES === "undefined") return;
+    
+    const teacherName = REFERRAL_CODES[refCode];
+    if (!teacherName) return;
+    
+    // Wait for page to fully load
+    window.addEventListener("load", () => {
+        const badge = document.createElement("div");
+        badge.textContent = `🔗 Referral: ${teacherName} (${refCode})`;
+        badge.style.cssText = `
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0d6efd;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            box-shadow: 0 4px 16px rgba(13, 110, 253, 0.4);
+            z-index: 9999;
+            pointer-events: none;
+        `;
+        document.body.appendChild(badge);
+    });
+})();
 // ===== EVENT LISTENERS =====
 function setupEventListeners() {
     // Subject dropdown items
