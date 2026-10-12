@@ -155,15 +155,9 @@ if (doc.exists) {
   // Dashboard always reveals immediately — the survey no longer blocks it.
   revealDashboard();
 
-  const storedRefCode = localStorage.getItem("jupeb_referral_code");
-
-if (storedRefCode && REFERRAL_CODES[storedRefCode]) {
-    // Came via a teacher's link — skip the survey, record the referral silently
-    await recordTeacherReferral(user, storedRefCode);
-} else if (userData.hasSeenSurvey !== true) {
-    // No referral code — show the normal survey
+  if (userData.hasSeenSurvey !== true) {
     showSurvey(user, docRef);
-}
+  }
 
 } else {
   // Not authorized — unchanged from before
