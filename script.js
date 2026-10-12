@@ -1196,6 +1196,7 @@ function showWelcomeMessage() {
 
 // ===== TEMPORARY: SHOW REFERRAL TEACHER BADGE =====
 (function showReferralBadge() {
+    
     const refCode = localStorage.getItem("jupeb_referral_code");
     if (!refCode) return;
     if (typeof REFERRAL_CODES === "undefined") return;
