@@ -39,7 +39,7 @@ const REFERRAL_CODES = {
   "SEG001": "Segun",
   "CHI001": "Chidinma",
   "TEN001": "Tenkat",
-  "EDA001": "Edafe"
+  "ADE001": "Ade"
 };
 
 async function recordTeacherReferral(user, refCode) {
