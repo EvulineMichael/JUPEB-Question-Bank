@@ -365,12 +365,34 @@ async function logoutAdmin() {
 }
 
 auth.onAuthStateChanged((user) => {
-    if (user && user.email === ADMIN_EMAIL && sessionStorage.getItem('admin_auth') === 'true') {
+    const hasSession = sessionStorage.getItem('admin_auth') === 'true';
+    const isCorrectAdmin = user && user.email === ADMIN_EMAIL;
+
+    if (isCorrectAdmin && hasSession) {
+        // Fully authenticated — show panel
         document.getElementById('login-section').style.display = 'none';
         document.getElementById('admin-panel').style.display = 'block';
         loadUsers();
         loadTeachers();
         loadPayouts();
+        db.collection('feedback').where('status', '==', 'new').get().then(snap => {
+            const badge = document.getElementById('feedback-badge');
+            if (snap.size > 0) {
+                badge.textContent = snap.size;
+                badge.style.display = 'inline-block';
+            }
+        });
+    } else if (!user && hasSession) {
+        // Firebase session gone but sessionStorage still says we were in.
+        // Force back to login so this can't silently happen again.
+        sessionStorage.removeItem('admin_auth');
+        document.getElementById('admin-panel').style.display = 'none';
+        document.getElementById('login-section').style.display = 'block';
+    } else if (user && !isCorrectAdmin && hasSession) {
+        // Signed in with wrong account
+        sessionStorage.removeItem('admin_auth');
+        document.getElementById('admin-panel').style.display = 'none';
+        document.getElementById('login-section').style.display = 'block';
     }
 });
 

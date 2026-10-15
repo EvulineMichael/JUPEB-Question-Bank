@@ -74,54 +74,28 @@ auth.onAuthStateChanged(async (user) => {
   if (user) {
     const email = user.email;
 
-    // ===== REFERRAL CAPTURE / AUTO-CREDIT =====
-const storedRefCode = localStorage.getItem("jupeb_referral_code");
-if (storedRefCode && REFERRAL_CODES[storedRefCode]) {
-  try {
-    // 1. Always record on surveys (if not already there)
-    await db.collection("surveys").doc(email).set({
-      email: email,
-      name: user.displayName || null,
-      referralCode: storedRefCode,
-      viaLink: true,
-      capturedAt: firebase.firestore.FieldValue.serverTimestamp()
-    }, { merge: true });
-
-    // 2. Clear localStorage immediately
-    localStorage.removeItem("jupeb_referral_code");
-
-    // 3. Try to auto-credit (only if student is authorized AND has no referredBy)
-    //    This runs BEFORE the normal authorization check, but we read the doc ourselves.
-    const authDoc = await db.collection("authorized_users").doc(email).get();
-    if (authDoc.exists) {
-      const userData = authDoc.data();
-      const hasReferral = userData.referredBy && userData.referredBy !== "";
-
-      if (!hasReferral) {
-        // Verify the teacher exists and is active
-        const teacherDoc = await db.collection("teachers").doc(storedRefCode).get();
-        if (teacherDoc.exists && teacherDoc.data().active !== false) {
-          // Credit the teacher
-          await db.collection("teachers").doc(storedRefCode).set({
-            referralCount: firebase.firestore.FieldValue.increment(1),
-            totalEarned: firebase.firestore.FieldValue.increment(1000)
-          }, { merge: true });
-
-          // Set referredBy on the student
-          await db.collection("authorized_users").doc(email).update({
-            referredBy: storedRefCode,
-            referredAt: firebase.firestore.FieldValue.serverTimestamp()
-          });
-
-          console.log(`Auto-credited ${storedRefCode} to ${email}`);
-        }
+    // ===== REFERRAL CAPTURE (runs before authorization check) =====
+    // If the student arrived via ?ref=XXXXX, we record it on their survey
+    // doc immediately — regardless of whether they're authorized yet.
+    // This is what admin.html reads later when you authorize them.
+    const storedRefCode = localStorage.getItem("jupeb_referral_code");
+    if (storedRefCode && REFERRAL_CODES[storedRefCode]) {
+      try {
+        await db.collection("surveys").doc(email).set({
+          email: email,
+          name: user.displayName || null,
+          referralCode: storedRefCode,
+          viaLink: true,
+          capturedAt: firebase.firestore.FieldValue.serverTimestamp()
+        }, { merge: true });
+        // Clear the code so it doesn't re-fire on future sign-ins
+        localStorage.removeItem("jupeb_referral_code");
+      } catch (err) {
+        console.error("Referral capture failed:", err);
+        // Fail silently — don't break login
       }
     }
-  } catch (err) {
-    console.error("Referral capture failed:", err);
-    // Fail silently — don't break login
-  }
-}
+
     // ===== NORMAL AUTHORIZATION CHECK =====
     const docRef = db.collection("authorized_users").doc(email);
     const doc = await docRef.get();
