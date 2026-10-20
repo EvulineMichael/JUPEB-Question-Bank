@@ -292,6 +292,11 @@
     </div>
 
     <!-- ============ REFERRALS TAB ============ -->
+          <div class="admin-card">
+       <h2>⏳ Pending Credits</h2>
+       <p class="subtitle">Authorized students who signed in through a teacher's link and haven't been credited yet</p>
+       <div id="pending-credits-list"><p class="empty-state">Loading...</p></div>
+     </div>
     <div class="tab-panel" id="tab-referrals">
         <div class="admin-card">
             <h2>🔗 All Referrals</h2>
@@ -301,6 +306,7 @@
             </div>
         </div>
     </div>
+         <span id="credit-badge" style="display:none;background:#dc3545;color:white;padding:1px 7px;border-radius:10px;font-size:0.7rem;margin-left:4px;"></span>
 
 </div>
 
@@ -327,6 +333,7 @@
 <script>
 const ADMIN_PASSCODE = "michael2026";
 const ADMIN_EMAIL = "evulinemichael@gmail.com";
+const ADMIN_SESSION_DAYS = 10;
 const RATE_PER_STUDENT = 1000;
 let sortOrder = 'desc';
 
@@ -346,12 +353,13 @@ async function verifyAdmin() {
             await auth.signOut();
             return;
         }
-        sessionStorage.setItem('admin_auth', 'true');
+        localStorage.setItem('admin_auth_until', String(Date.now() + ADMIN_SESSION_DAYS * 24 * 60 * 60 * 1000));
         document.getElementById('login-section').style.display = 'none';
         document.getElementById('admin-panel').style.display = 'block';
         loadUsers();
         loadTeachers();
         loadPayouts();
+        loadPendingCredits();
     } catch (error) {
         alert('Sign-in failed: ' + error.message);
     }
@@ -359,40 +367,17 @@ async function verifyAdmin() {
 
 async function logoutAdmin() {
     await auth.signOut();
-    sessionStorage.removeItem('admin_auth');
-    document.getElementById('login-section').style.display = 'block';
+    localStorage.removeItem('admin_auth_until');    document.getElementById('login-section').style.display = 'block';
     document.getElementById('admin-panel').style.display = 'none';
 }
 
 auth.onAuthStateChanged((user) => {
-    const hasSession = sessionStorage.getItem('admin_auth') === 'true';
-    const isCorrectAdmin = user && user.email === ADMIN_EMAIL;
-
-    if (isCorrectAdmin && hasSession) {
-        // Fully authenticated — show panel
-        document.getElementById('login-section').style.display = 'none';
+    if (user && user.email === ADMIN_EMAIL && Number(localStorage.getItem('admin_auth_until')) > Date.now()) {        document.getElementById('login-section').style.display = 'none';
         document.getElementById('admin-panel').style.display = 'block';
         loadUsers();
         loadTeachers();
         loadPayouts();
-        db.collection('feedback').where('status', '==', 'new').get().then(snap => {
-            const badge = document.getElementById('feedback-badge');
-            if (snap.size > 0) {
-                badge.textContent = snap.size;
-                badge.style.display = 'inline-block';
-            }
-        });
-    } else if (!user && hasSession) {
-        // Firebase session gone but sessionStorage still says we were in.
-        // Force back to login so this can't silently happen again.
-        sessionStorage.removeItem('admin_auth');
-        document.getElementById('admin-panel').style.display = 'none';
-        document.getElementById('login-section').style.display = 'block';
-    } else if (user && !isCorrectAdmin && hasSession) {
-        // Signed in with wrong account
-        sessionStorage.removeItem('admin_auth');
-        document.getElementById('admin-panel').style.display = 'none';
-        document.getElementById('login-section').style.display = 'block';
+        loadPendingCredits();
     }
 });
 
@@ -407,7 +392,7 @@ function showTab(name) {
 
     // Load data for the active tab
     if (name === 'teachers') loadTeachers();
-    if (name === 'referrals') loadReferralsMgmt();
+    if (name === 'referrals') { loadPendingCredits(); loadReferralsMgmt(); };
     if (name === 'payouts') loadPayouts();
 }
 
@@ -952,6 +937,101 @@ async function removeReferral(email, refCode) {
         alert('Error: ' + err.message);
     }
 }
+// ===== PENDING CREDITS (admin.html) =====
+// Paste inside the <script> in admin.html, anywhere after RATE_PER_STUDENT is defined.
+// Lists students who are authorized and signed in through a teacher's link, but have
+// not been credited yet, and credits them in one click.
+
+function adminEsc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, c =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+async function loadPendingCredits() {
+  const el = document.getElementById('pending-credits-list');
+  const badge = document.getElementById('credit-badge');
+  try {
+    const [usersSnap, surveysSnap, teachersSnap] = await Promise.all([
+      db.collection('authorized_users').get(),
+      db.collection('surveys').get(),
+      db.collection('teachers').get()
+    ]);
+
+    const teachers = {};
+    teachersSnap.forEach(d => { teachers[d.id] = d.data(); });
+    const claims = {};
+    surveysSnap.forEach(d => { const c = d.data().referralCode; if (c) claims[d.id] = c; });
+
+    const rows = [];
+    usersSnap.forEach(d => {
+      const u = d.data();
+      const code = claims[d.id];
+      if (!u.referredBy && code && teachers[code]) {
+        rows.push({ email: d.id, code, teacher: teachers[code].name, date: u.date || '—' });
+      }
+    });
+
+    if (badge) {
+      badge.textContent = rows.length;
+      badge.style.display = rows.length ? 'inline-block' : 'none';
+    }
+
+    if (rows.length === 0) {
+      el.innerHTML = '<p class="empty-state">Nothing waiting 🎉</p>';
+      return;
+    }
+
+    el.innerHTML = rows.map(r => `
+      <div class="user-item">
+        <div style="flex:1;">
+          <span class="user-email">${adminEsc(r.email)}</span>
+          <span class="badge badge-referral" style="margin-left:8px;">via ${adminEsc(r.code)}</span>
+          <div class="user-info">Teacher: ${adminEsc(r.teacher)}</div>
+          <div class="user-date">Authorized: ${adminEsc(r.date)}</div>
+        </div>
+        <button class="small success" data-email="${adminEsc(r.email)}" data-code="${adminEsc(r.code)}">
+          Credit ₦${RATE_PER_STUDENT.toLocaleString()}
+        </button>
+      </div>`).join('');
+  } catch (err) {
+    el.innerHTML = '<p style="color:#dc3545;">Error: ' + adminEsc(err.message) + '</p>';
+  }
+}
+
+async function creditPending(email, code, button) {
+  if (!confirm(`Credit ₦${RATE_PER_STUDENT.toLocaleString()} to ${code} for ${email}?`)) return;
+  if (button) button.disabled = true;
+  try {
+    const userRef = db.collection('authorized_users').doc(email);
+    const teacherRef = db.collection('teachers').doc(code);
+
+    // A transaction, so the student's record and the teacher's totals change together,
+    // and a student can never be credited twice (even from two open tabs).
+    await db.runTransaction(async (tx) => {
+      const snap = await tx.get(userRef);
+      if (!snap.exists) throw new Error('This student is not authorized.');
+      if (snap.data().referredBy) throw new Error('This student has already been credited.');
+      tx.update(userRef, {
+        referredBy: code,
+        referredAt: firebase.firestore.FieldValue.serverTimestamp()
+      });
+      tx.set(teacherRef, {
+        referralCount: firebase.firestore.FieldValue.increment(1),
+        totalEarned: firebase.firestore.FieldValue.increment(RATE_PER_STUDENT)
+      }, { merge: true });
+    });
+  } catch (err) {
+    alert(err.message);
+  }
+  loadPendingCredits();
+  loadTeachers();
+  loadReferralsMgmt();
+}
+
+document.getElementById('pending-credits-list')?.addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-email]');
+  if (btn) creditPending(btn.dataset.email, btn.dataset.code, btn);
+});
 </script>
 </body>
 </html>
