@@ -355,44 +355,45 @@ function setupThemeListeners() {
 // ===== COURSE STRUCTURE =====
 const courseStructure = {
     chemistry: {
-    "CHM 001 - General Chemistry": [
-        "Measurement", "Mole Concept", "Atomic Structure", "Chemical Bonding"
-    ],
-    "CHM 002 - Physical Chemistry": [
-        "Nature of Matter", "Kinetic Molecular Theory of Gases", "Solutions and Colligative Properties",
-        "Thermochemistry", "Thermodynamics", "Electrochemistry", "Chemical Kinetics",
-        "Equilibrium State", "Acid-Base Equilibria", "Ionic Equilibria", "Nuclear Chemistry"
-    ],
-    "CHM 003 - Inorganic Chemistry": [
-        "Periodicity", "Chemistry of Hydrogen", "s-block elements", "p-block elements", "d-block elements",
-        "Coordination Chemistry", "Chemistry of the Environment", "Nanochemistry"
-    ],
-    "CHM 004 - Organic Chemistry": [
-        "Separation and Purification Techniques", "Structure and Bonding in Organic Compounds",
-        "Organic Reactions", "Isomerism in Organic Compounds", "Alkanes, Alkenes, Alkynes", "Alcohols",
-        "Alkyl Halides", "Carbonyl Compounds", "Carboxylic Acids and Derivatives",
-        "Amines", "Aromatic Compounds", "Macromolecules", "Petroleum Industry"
-    ]
-},
+        "CHM 001 - General Chemistry": [
+            "Measurement", "Mole Concept", "Atomic Structure", "Electronic Configuration",
+            "Periodic Table and Periodicity", "Chemical Bonding"
+        ],
+        "CHM 002 - Physical Chemistry": [
+            "Kinetic Molecular Theory of Gases", "Solutions and Colligative Properties",
+            "Thermochemistry", "Thermodynamics", "Electrochemistry", "Chemical Kinetics",
+            "Equilibrium State", "Acid-Base Equilibria", "Ionic Equilibria", "Nuclear Chemistry"
+        ],
+        "CHM 003 - Inorganic Chemistry": [
+            "Chemistry of Hydrogen", "s-block elements", "p-block elements", "d-block elements",
+            "Coordination Chemistry", "Chemistry of the Environment", "Nanochemistry"
+        ],
+        "CHM 004 - Organic Chemistry": [
+            "Separation and Purification", "Structure and Bonding in Organic Compounds",
+            "Organic Reactions", "Isomerism", "Alkanes, Alkenes, Alkynes", "Alcohols",
+            "Alkyl Halides", "Carbonyl Compounds", "Carboxylic Acids and Derivatives",
+            "Amines", "Aromatic Compounds", "Macromolecules", "Petroleum Industry"
+        ]
+    },
     physics: {
-    "PHY 001 - Mechanics & Properties of Matter": [
-        "Physical Quantities and Units", "Vectors", "Kinematics", "Dynamics (Newton's Laws and Forces)",
-        "The Gravitational Field", "Work, Energy and Power", "Circular and Oscillatory Motions",
-        "Elasticity", "Hydrostatics", "Hydrodynamics"
-    ],
-    "PHY 002 - Heat, Waves & Optics": [
-        "Temperature and Thermometry", "Heat and Energy", "Ideal Gases", 
-        "Waves", "Sound Waves", "Geometric Optics (Light)", 
-        "Lenses and Optical Instruments", "Wave Theory of Light"
-    ],
-    "PHY 003 - Electricity & Magnetism": [
-        "Electrostatics", "Capacitors", "Current Electricity", "Magnetic Field",
-        "Force on Conductor and Moving Charge", "Electromagnetic Induction", "Alternating Current Circuits"
-    ],
-    "PHY 004 - Modern Physics": [
-        "Atomic Structure", "Elements of Modern Physics", "X-Rays", "Wave-Particle Duality",
-        "Radioactivity and Nuclear Energy", "Semiconductors", "Applied Physics"
-    ]
+        "PHY 001 - Mechanics & Properties of Matter": [
+            "Physical Quantities and Units", "Vectors", "Kinematics", "Newton's Laws and Forces",
+            "Gravitational Field", "Work, Energy and Power", "Circular and Oscillatory Motions",
+            "Elasticity", "Hydrostatics", "Hydrodynamics"
+        ],
+        "PHY 002 - Heat, Waves & Optics": [
+            "Temperature and Thermometry", "Heat and Energy", "Ideal Gases", "Thermodynamics",
+            "Waves", "Electromagnetic Waves", "Sound Waves", "Geometrical Optics",
+            "Lenses and Optical Instruments", "Wave Theory of Light"
+        ],
+        "PHY 003 - Electricity & Magnetism": [
+            "Electrostatics", "Capacitors", "Current Electricity", "Magnetic Field",
+            "Force on Conductor and Moving Charge", "Electromagnetic Induction", "Alternating Current Circuits"
+        ],
+        "PHY 004 - Modern Physics": [
+            "Atomic Structure", "Elements of Modern Physics", "X-Rays", "Wave-Particle Duality",
+            "Radioactivity and Nuclear Energy", "Semiconductors", "Applied Physics"
+        ]
     },
     maths: {
         "MAT 001 - Pure Mathematics": [
@@ -546,60 +547,54 @@ government: {
         "Democratization and Political Process in Africa"
     ]
 },
-   biology: {
-    "BIO 001 - General Biology": [
-        "Origin of Living Things",
-        "Origin of Organic Molecules",
-        "Basic Biostatistics",
-        "Diversity of Living Things",
-        "Biological Molecules",
-        "Cell Structure and Functions",
-        "Cell Division, Genetics, Variations and Heredity",
-        "Systematics, Taxonomy and Nomenclature",
-        "Ecology",
-        "Biological Methods and Application",
-        "Evolution",
-        "Enzymes"
-    ],
-    "BIO 002 - Microbiology": [
-        "History of the Discovery of Microorganisms",
-        "Types and Taxonomic Groupings of Microorganisms",
-        "Structures, Morphology and Characteristics of Microorganisms",
-        "Microbial Ecology",
-        "Microbial Nucleic Acids in Information Storage and Transfer",
-        "Microorganisms and their Application in Biotechnology"
-    ],
-    "BIO 003 - Botany": [
-        "General Characteristics and Diversity of Plants",
-        "Plant Morphology/Anatomy",
-        "Nutrition in Plants",
-        "Transport System in Plants",
-        "Respiration",
-        "Plant Reproduction",
-        "Growth in Higher Plants and Growth Regulators",
-        "Crop Improvement",
-        "Economic and Ecological Importance of Plants"
-    ],
-    "BIO 004 - Zoology": [
-        "Diversity and General Characteristics of Animals",
-        "Systematics (Taxonomy) of Animals",
-        "Evolution of Animals",
-        "Invertebrates",
-        "Introduction to Chordates",
-        "Ecologic and Economic Importance of Animals",
-        "Nutrition in Animals",
-        "Respiration in Mammals",
-        "Transport of Substances across Membranes",
-        "Skeletal System and Muscles",
-        "Reproduction",
-        "Excretion",
-        "Circulatory System",
-        "Growth and Development",
-        "Nervous System",
-        "Sense Organs",
-        "Endocrine System"
-    ]
-},
+    biology: {
+        "BIO 001 - General Biology": [
+            "Origin of Living Things",
+            "Living Things in Nature and Biological Molecules",
+            "Cell Organisation, Structure and Functions",
+            "Cell Division, Principles of Genetics, Variations and Heredity",
+            "Systematics, Taxonomy and Nomenclature",
+            "Ecology",
+            "Biological Methods and Application",
+            "Evolution",
+            "Enzymes"
+        ],
+        "BIO 002 - Microbiology": [
+            "History of the Discovery of Microorganisms",
+            "Types and Taxonomic Groupings of Microorganisms",
+            "Structures, Morphology and Characteristics of Microorganisms",
+            "Microbial Ecology",
+            "Microbial Nucleic Acids in Information Storage and Transfer",
+            "Microorganisms and their Application in Biotechnology"
+        ],
+        "BIO 003 - Botany": [
+            "General Characteristics and Diversity of Plants",
+            "Taxonomy of Lower and Higher Plants",
+            "Plant Conservation",
+            "Plant Tissues and Functions",
+            "Plant Morphology/Anatomy",
+            "Nutrition in Plants",
+            "Transport System in Plants",
+            "Respiration",
+            "Plant Reproduction",
+            "Growth in Higher Plants and Growth Regulators",
+            "Crop Improvement",
+            "Economic and Ecological Importance of Plants"
+        ],
+        "BIO 004 - Zoology": [
+            "Diversity and General Characteristics of Animals",
+            "Systematics (Taxonomy) of Animals",
+            "Evolution of Animals",
+            "Invertebrates",
+            "Introduction to Chordates",
+            "Ecologic and Economic Importance of Animals",
+            "Physiological Processes",
+            "Transport of Substances across Membranes",
+            "Nervous System",
+            "Sense Organ",
+            "Endocrine System"
+        ]
+    },
     irs: {
     "ISS 001 - History of Islam": [
         "An Appraisal of the Jahiliyyah Period and the Significance of the Islamic Reforms",
