@@ -3107,10 +3107,7 @@ function screenFromHash() {
     return match ? match[0] : "dashboard-screen";
 }
 
-// On first load, respect hash in URL
-window.addEventListener("DOMContentLoaded", () => {
-    showScreen(screenFromHash(), { pushHistory: false });
-});
+
 // Stub navigation
 function goToProgress() { showScreen("progress-screen"); }
 function goToSettings() {
@@ -3512,20 +3509,14 @@ function renderSettings() {
 
   document.getElementById("settings-email").textContent = user.email || "";
 
-  const savedName = localStorage.getItem("jupeb_user_name");
-localStorage.setItem("jupeb_user_name", name);
+    const savedName = localStorage.getItem("jupeb_user_name");
+  document.getElementById("settings-name-input").value =
+    savedName || (user.displayName ? user.displayName.split(" ")[0] : "");
 
   // --- Appearance ---
   const themeToggle = document.getElementById("settings-theme-toggle");
   themeToggle.checked = document.documentElement.getAttribute("data-theme") === "dark";
 
-  // --- Subscription ---
-  const isPremium = localStorage.getItem("jupeb_is_premium") === "true"; // adjust to your real flag
-  document.getElementById("settings-plan-label").textContent = isPremium ? "⭐ Premium Plan" : "Free Plan";
-  document.getElementById("settings-plan-detail").textContent = isPremium
-    ? "You have full access to all subjects."
-    : "Upgrade to unlock full access to all subjects.";
-  document.getElementById("settings-plan-action").textContent = isPremium ? "Manage" : "Upgrade";
 
   // --- Study preferences ---
   document.getElementById("settings-default-length").value =
@@ -3543,19 +3534,20 @@ document.getElementById("settings-name-save").addEventListener("click", () => {
         statusEl.textContent = "Please enter a name.";
         return;
     }
-    
+
     localStorage.setItem("jupeb_user_name", name);
-    
+
     // Update sidebar display
     const user = firebase.auth().currentUser;
+    if (user) db.collection("surveys").doc(user.email).set({ preferredName: name }, { merge: true }).catch(() => {});
     if (typeof renderSidebarUser === 'function' && user) {
-        renderSidebarUser({ 
-            name: name, 
-            isPremium: true, 
-            photoURL: user.photoURL || null 
+        renderSidebarUser({
+            name: name,
+            isPremium: true,
+            photoURL: user.photoURL || null
         });
     }
-    
+
     statusEl.textContent = "✓ Saved";
     setTimeout(() => (statusEl.textContent = ""), 2000);
 });
@@ -3563,10 +3555,9 @@ document.getElementById("settings-name-save").addEventListener("click", () => {
 document.getElementById("settings-signout-btn").addEventListener("click", () => {
   const confirmed = confirm("Sign out of your account?");
   if (!confirmed) return;
-  firebase.auth().signOut().then(() => {
-  history.replaceState(null, "", location.pathname);
-  window.location.reload();
-});
+    firebase.auth().signOut().then(() => {
+    window.location.replace("/");
+  });
 });
 
 document.getElementById("settings-theme-toggle").addEventListener("change", (e) => {
@@ -3577,10 +3568,6 @@ document.getElementById("settings-theme-toggle").addEventListener("change", (e) 
     }
 });
 
-document.getElementById("settings-plan-action").addEventListener("click", () => {
-  // Wire to your existing payment flow / upgrade page
-  alert("Wire this to your Paystack/payment flow");
-});
 
 document.getElementById("settings-default-length").addEventListener("change", (e) => {
   localStorage.setItem("jupeb_default_quiz_length", e.target.value);
@@ -3657,4 +3644,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener('resize', () => { handleSidebarResponsive(); });
-
