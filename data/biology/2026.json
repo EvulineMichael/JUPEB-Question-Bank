@@ -2,7 +2,7 @@
   {
     "subject": "Biology",
     "year": 2026,
-    "category": "Basic Biostatistics",
+    "category": "Biological Methods and Application",
     "type": "Essay",
     "questionNumber": "1a",
     "question": "A survey was carried out in a community with ten villages (A, B, C.......J) to know the prevalence of Plasmodium falciparum. From each of the villages the following number of individuals were found positive to the pathogen. Find the (i) Mean (ii) Median (iii) Mode (iv) Range [4 Marks]",
@@ -27,7 +27,7 @@
   {
     "subject": "Biology",
     "year": 2026,
-    "category": "Basic Biostatistics",
+    "category": "Biological Methods and Application",
     "type": "Essay",
     "questionNumber": "1b",
     "question": "Define the following: (i) Variable. (ii) Population. (iii) Parameter. (iv) Sample. [4 Marks]",
@@ -47,7 +47,7 @@
   {
     "subject": "Biology",
     "year": 2026,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Essay",
     "questionNumber": "2a",
     "question": "(a) i. State any THREE differences between Deoxyribonucleic acid (DNA) and Ribonucleic acid (RNA). [3 Marks]\nii. State any THREE differences between Mitochondrion and Golgi Apparatus [3 Marks]",
@@ -70,9 +70,9 @@
     "category": "Types and Taxonomic Groupings of Microorganisms",
     "type": "Essay",
     "questionNumber": "3a",
-    "question": "(a) Name the FOUR cellular arrangement for groups of bacteria and state their characteristics. [4 Marks]",
+    "question": "(a) Name the FOUR morphological groups (shapes) of bacteria and state their characteristics. [4 Marks]",
     "options": [],
-    "modelAnswer": "1. Cocci: spherical bacteria; may occur singly, in pairs (diplococci), chains (streptococci), clusters (staphylococci) or tetrads.\n2. Bacilli: rod-shaped bacteria; may occur singly, in pairs (diplobacilli) or chains (streptobacilli).\n3. Spirilla: spiral/helical-shaped bacteria; occur mostly singly.\n4. Vibrios: comma-shaped bacteria; usually occur singly.\n\n(Also: spirochaetes — corkscrew-shaped.)\n\nNote: The question uses \"cellular arrangement\" but the answer lists shapes. Flagged for examiner clarification."
+    "modelAnswer": "1. Cocci: spherical bacteria; may occur singly, in pairs (diplococci), chains (streptococci), clusters (staphylococci) or tetrads.\n2. Bacilli: rod-shaped bacteria; may occur singly, in pairs (diplobacilli) or chains (streptobacilli).\n3. Spirilla: spiral/helical-shaped bacteria; occur mostly singly.\n4. Vibrios: comma-shaped bacteria; usually occur singly.\n\n(Also: spirochaetes — corkscrew-shaped.)"
   },
   {
     "subject": "Biology",
@@ -117,7 +117,7 @@
   {
     "subject": "Biology",
     "year": 2026,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "4c",
     "question": "(c) Define the following types of mutation\ni. Spontaneous mutation\nii. Base substitution mutation [2 Mark]",
@@ -197,7 +197,7 @@
   {
     "subject": "Biology",
     "year": 2026,
-    "category": "Respiration in Mammals",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "7a",
     "question": "(a) (i) Define respiration. [1 Mark]\n(ii) State TWO differences between Glycolysis and Krebs' cycle. [2 Marks]",
@@ -217,7 +217,7 @@
   {
     "subject": "Biology",
     "year": 2026,
-    "category": "Sense Organs",
+    "category": "Sense Organ",
     "type": "Essay",
     "questionNumber": "7c",
     "question": "(c) (i) Define Accommodation. [1 Mark]\n(ii) Name any TWO eye defects and state how they are corrected. [2 Marks]",
@@ -237,7 +237,7 @@
   {
     "subject": "Biology",
     "year": 2026,
-    "category": "Excretion",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "8b",
     "question": "(b) In an attempt to ascertain the excretory and respiratory organs of some organisms, Bisi arrived with the table below. Fill in the missing spaces. [5 Marks]",
