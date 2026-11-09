@@ -1,4 +1,18 @@
 {
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "jupeb-question-bank-test.vercel.app" }],
+      "destination": "https://test.jupebijmbprep.com/$1",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "jupeb-question-bank.vercel.app" }],
+      "destination": "https://jupebijmbprep.com/$1",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     { "source": "/((?!data/|api/|images/|.*\\.).*)", "destination": "/index.html" }
   ]
