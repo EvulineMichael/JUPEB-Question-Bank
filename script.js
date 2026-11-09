@@ -97,14 +97,18 @@ const FAQ_ITEMS = [
     q: "How do I sign in?",
     a: "Use the \"Sign in with Google\" button with the same Gmail you sent during payment."
   },
-  {
+    {
     q: "Which subjects are available?",
-    a: "Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics, Government."
+    a: "Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics and Government, for both JUPEB and IJMB."
   },
   {
     q: "Which years are covered?",
-    a: "2015–2026, depending on the subject."
+    a: "JUPEB: 2015–2026, depending on the subject. IJMB: 2016 to date."
   },
+  {
+    q: "How do I get IJMB?",
+    a: "Tap IJMB at the top of the menu. If it's locked, the screen shows how to add it for ₦3,000. Send your receipt and Gmail on WhatsApp, and we'll unlock it. Then reload the page and tap IJMB."
+  },,
   {
     q: "How do I browse questions by topic?",
     a: "Click \"Subjects\" in the sidebar → pick a subject → pick a course → pick a topic."
@@ -142,8 +146,8 @@ const FAQ_ITEMS = [
     a: "Go to the sidebar → Settings → Sign Out."
   },
   {
-    q: "What if my access expires?",
-    a: "Message us on WhatsApp to renew."
+    q: "Does my access expire?",
+    a: "No. Your access is for life, with no renewal."
   },
   {
     q: "What if I have a different question?",
