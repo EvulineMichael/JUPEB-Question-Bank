@@ -1,4 +1,7 @@
 {
+  "functions": {
+    "api/papers.js": { "includeFiles": "data/**" }
+  },
   "redirects": [
     {
       "source": "/(.*)",
@@ -10,6 +13,11 @@
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "jupeb-question-bank.vercel.app" }],
       "destination": "https://jupebijmbprep.com/$1",
+      "permanent": false
+    },
+    {
+      "source": "/data/(.*)",
+      "destination": "/",
       "permanent": false
     }
   ],
