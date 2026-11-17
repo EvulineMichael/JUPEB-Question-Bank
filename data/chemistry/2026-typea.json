@@ -230,19 +230,7 @@
     "answer": "D",
     "explanation": "Standard state: 1 atm pressure and 298 K (25°C)."
   },
-  {
-    "subject": "Chemistry",
-    "year": 2026,
-    "category": "Organic Chemistry",
-    "type": "Objective",
-    "questionNumber": 22,
-    "question": "The IUPAC name for the compound below is",
-    "options": ["5,5,9,9 - tetramethylundecane", "3,3,7,7 - tetramethylundecane", "2,6,6 - trimethyl - 2 - n - butyloctane", "3,3,7 - trimethyl - 7 - n - butyloctane"],
-    "answer": "B",
-    "explanation": "The correct IUPAC name is 3,3,7,7-tetramethylundecane.",
-    "diagramMissing": true,
-    "diagramNote": "⚠️ Structure diagram missing: The skeletal structure of the compound is required to identify its IUPAC name. Please refer to your original past question paper."
-  },
+
   {
     "subject": "Chemistry",
     "year": 2026,

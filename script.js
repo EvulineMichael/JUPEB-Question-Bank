@@ -547,6 +547,18 @@ geography: {
         "International Economic Institutions"
     ]
 },
+sociology: {
+    "SOC 001 - Introduction to Sociology": [
+        "Introduction to Sociology",
+        "Society and Culture",
+        "Social Structure and Social Interaction"
+    ],
+    "SOC 002 - Social Institutions and Social Change": [
+        "Social Institutions",
+        "Social Stratification and Inequality",
+        "Social Change and Nigerian/African Social Structure"
+    ]
+},
 crs: {
     "CRS 001 - Old Testament Studies": [
         "Formation and Composition of the Old Testament",
@@ -1188,7 +1200,10 @@ if (q.diagramMissing) {
   function isLocalDev() {
       return location.hostname === 'localhost' || location.hostname === '127.0.0.1';
   }
-
+// Give up waiting after a while, so one stuck step can't leave subjects on "Loading…"
+function withTimeout(promise, ms) {
+    return Promise.race([promise, new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))]);
+}
   // Returns { years: [...], questions: [...] } for one subject in the current exam
   async function loadSubjectPapers(subject) {
       if (isLocalDev()) return loadSubjectPapersFromFiles(subject);
@@ -1198,11 +1213,14 @@ if (q.diagramMissing) {
       if (!user) return empty;                       // not signed in: no questions
       const exam = (typeof getCurrentExam === 'function') ? getCurrentExam() : 'jupeb';
 
-      try {
-          const token = await user.getIdToken();
-          const response = await fetch(`/api/papers?exam=${exam}&subject=${encodeURIComponent(subject)}`, {
-              headers: { Authorization: 'Bearer ' + token }
-          });
+             try {
+           // Offline, a fresh sign-in token can't be fetched. Ask anyway: the service
+           // worker answers with the copy saved on this device.
+                   let token = '';
+        try { token = await withTimeout(user.getIdToken(), 4000); } catch (e) { /* offline or slow */ }
+        const response = await withTimeout(fetch(`/api/papers?exam=${exam}&subject=${encodeURIComponent(subject)}`, {
+            headers: token ? { Authorization: 'Bearer ' + token } : {}
+        }), 30000);
           if (!response.ok) {
               console.warn(`No ${subject} papers (${response.status})`);
               return empty;
@@ -1246,7 +1264,7 @@ async function loadQuestions(forceSubject = null, callback = null) {
 
     const subjects = (typeof examSubjects === 'function')
         ? examSubjects()
-        : ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature'];
+        : ['chemistry', 'physics', 'maths', 'biology', 'economics', 'government', 'crs', 'irs', 'literature', 'sociology'];
 
     // Create a promise for each subject that needs loading
     const loadPromises = subjects.map(async (subject) => {
