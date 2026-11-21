@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v41';
+const CACHE_VERSION = 'v42';
 const CACHE_NAME = `jupeb-qb-${CACHE_VERSION}`;
 
 // Everything the app needs to open, saved when the service worker installs, so a
@@ -41,6 +41,7 @@ const ASSETS_TO_CACHE = [
   '/welcome.js',
   '/ui.js',
   '/install-guide.js',
+  '/tour.js',
   '/images/jupeb-icon.png',
   '/favicon.ico',
   '/icon-192.png'

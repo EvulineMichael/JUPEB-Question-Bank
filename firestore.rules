@@ -1,0 +1,156 @@
+rules_version = '2';
+
+// Copy of the live Firestore rules. Paste this into Firebase console ->
+// Firestore Database -> Rules -> Publish. (This file is not published on the site.)
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ============ HELPERS ============
+    // Signed in AND the email is confirmed by the sign-in provider (Google always
+    // confirms). This stops anyone using an unconfirmed account under someone
+    // else's email address, including yours.
+    function isSignedIn() {
+      return request.auth != null
+          && request.auth.token.email_verified == true;
+    }
+
+    function isAdmin() {
+      return isSignedIn()
+          && request.auth.token.email == 'evulinemichael@gmail.com';
+    }
+
+    function isOwnEmail(email) {
+      return isSignedIn() && request.auth.token.email == email;
+    }
+
+    // ============ AUTHORIZED USERS ============
+    // Each student can read only their own record. Only admin can list them all.
+    // (The question server reads records with admin rights, so it isn't affected.)
+    match /authorized_users/{email} {
+      allow get: if isAdmin() || isOwnEmail(email);
+      allow list: if isAdmin();
+
+      allow create, delete: if isAdmin();
+
+      // Admin can update anything; a student can change only hasSeenSurvey on their own record
+      allow update: if isAdmin()
+                    || (isOwnEmail(email)
+                        && request.resource.data.diff(resource.data).affectedKeys()
+                            .hasOnly(['hasSeenSurvey']));
+    }
+
+    // ============ SURVEYS (welcome answers, referral claims) ============
+    // Each student reads and writes only their own; admin sees all.
+    // Once a referral code is saved, the student can't change or remove it
+    // (first link wins), and can't mark it dismissed: only admin can.
+    match /surveys/{email} {
+      allow read: if isAdmin() || isOwnEmail(email);
+      allow create: if isAdmin()
+                    || (isOwnEmail(email)
+                        && !('referralDismissed' in request.resource.data));
+      allow update: if isAdmin()
+                    || (isOwnEmail(email)
+                        && !request.resource.data.diff(resource.data).affectedKeys()
+                             .hasAny(['referralDismissed', 'referralDismissedAt'])
+                        && (!('referralCode' in resource.data)
+                            || request.resource.data.get('referralCode', null) == resource.data.referralCode));
+      allow delete: if isAdmin();
+    }
+
+    // ============ STUDENT STATS (dashboard numbers on every device) ============
+    // One document per student, saved under the lowercased email.
+    // Each student reads and writes only their own; admin can read all.
+    function isOwnStatsEmail(email) {
+      return isSignedIn() && request.auth.token.email.lower() == email;
+    }
+
+    match /user_stats/{email} {
+      allow read: if isAdmin() || isOwnStatsEmail(email);
+
+      // Only the stats the site actually saves, nothing else
+      allow create, update: if isOwnStatsEmail(email)
+                            && request.resource.data.keys().hasOnly([
+                                 'jupeb_quiz_history', 'ijmb_quiz_history',
+                                 'jupeb_weak_areas', 'ijmb_weak_areas',
+                                 'jupeb_streak',
+                                 'jupeb_last_session', 'ijmb_last_session',
+                                 'jupeb_subject_progress', 'ijmb_subject_progress'
+                               ]);
+
+      allow delete: if isAdmin() || isOwnStatsEmail(email);
+    }
+
+    // ============ TEACHERS ============
+    // Private: only admin, or the teacher themself. Students never read these, so
+    // a student holding a referral link can't see the teacher's name, email or
+    // earnings.
+    match /teachers/{code} {
+      allow get: if isAdmin()
+                 || (isSignedIn() && resource.data.email == request.auth.token.email);
+
+      allow list: if isAdmin()
+                  || (isSignedIn() && resource.data.email == request.auth.token.email);
+
+      allow create, delete: if isAdmin();
+
+      // Admin can update anything; a teacher can change only their name and email
+      allow update: if isAdmin()
+                    || (isSignedIn()
+                        && request.auth.token.email == resource.data.email
+                        && request.resource.data.diff(resource.data).affectedKeys()
+                            .hasOnly(['name', 'email']));
+    }
+
+    // ============ UPDATES (the bell) ============
+    match /updates/{updateId} {
+      allow read: if isSignedIn();
+      allow create, update, delete: if isAdmin();
+    }
+
+    // ============ FEEDBACK (the bell) ============
+    match /feedback/{feedbackId} {
+      allow create: if isSignedIn()
+                    && request.resource.data.keys().hasOnly(
+                         ['email', 'name', 'type', 'message', 'context', 'page', 'ua', 'status', 'createdAt'])
+                    && request.resource.data.email == request.auth.token.email
+                    && request.resource.data.type in ['Wrong answer', 'Bug', 'Suggestion', 'Other']
+                    && request.resource.data.message is string
+                    && request.resource.data.message.size() > 0
+                    && request.resource.data.message.size() <= 2000
+                    && (!('context' in request.resource.data)
+                        || request.resource.data.context.size() <= 400)
+                    && request.resource.data.status == 'new'
+                    && request.resource.data.createdAt == request.time;
+      allow read, update, delete: if isAdmin();
+    }
+
+    // ============ WITHDRAWALS (teacher payouts) ============
+    function teacherDoc(code) {
+      return get(/databases/$(database)/documents/teachers/$(code)).data;
+    }
+
+    match /withdrawals/{withdrawalId} {
+      // Admin reads all; a teacher reads only their own
+      allow read: if isAdmin()
+                  || (isSignedIn() && resource.data.teacherEmail == request.auth.token.email);
+
+      allow update, delete: if isAdmin();
+
+      // Admin can create anything. A teacher can request a payout only for their
+      // own code, only as 'pending', and never for more than their real balance
+      // (total earned minus total already paid out).
+      allow create: if isAdmin()
+                    || (isSignedIn()
+                        && request.resource.data.keys().hasOnly(
+                             ['teacherCode', 'teacherName', 'teacherEmail', 'amount', 'status', 'requestedAt', 'paidAt', 'note'])
+                        && request.resource.data.teacherEmail == request.auth.token.email
+                        && teacherDoc(request.resource.data.teacherCode).email == request.auth.token.email
+                        && request.resource.data.status == 'pending'
+                        && request.resource.data.amount is number
+                        && request.resource.data.amount > 0
+                        && request.resource.data.amount
+                             <= teacherDoc(request.resource.data.teacherCode).get('totalEarned', 0)
+                              - teacherDoc(request.resource.data.teacherCode).get('totalPaidOut', 0));
+    }
+  }
+}

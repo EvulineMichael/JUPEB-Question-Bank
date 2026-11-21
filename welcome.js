@@ -194,6 +194,8 @@ async function submitWelcome() {
 
     hideWelcome();
     _welcome = null;
+    // New students get a quick tour of the dashboard (once)
+    if (typeof startAppTour === "function") setTimeout(() => startAppTour(), 700);
   } catch (err) {
     console.error("Welcome save failed:", err);
     say("Could not save. Please check your connection and try again.");
