@@ -3,8 +3,7 @@
 //
 // Decides which exam the page shows, points the question loader at the right
 // folder (data/ for JUPEB, data/ijmb/ for IJMB), puts the JUPEB | IJMB switch
-// in the sidebar, hides what IJMB doesn't have (quiz mode, quick practice, weak
-// topics), and shows a locked screen for an exam the student hasn't paid for.
+// in the sidebar, and shows a locked screen for an exam the student hasn't paid for.
 // Which exams a student has comes from window.userExams, set by auth.js.
 
 // The site's name, in one place. Every element marked data-site-name shows it,
@@ -24,9 +23,10 @@ const ALL_SUBJECTS = ['chemistry', 'physics', 'maths', 'biology', 'economics', '
 const EXAM_LABELS = { jupeb: 'JUPEB', ijmb: 'IJMB' };
 const EXAM_PERKS = {
   jupeb: 'Objective and essay past questions, quiz mode and weak-topic tracking.',
-  ijmb: 'Essay past questions with step-by-step model answers.'
+  ijmb: 'Essay past questions with step-by-step model answers, and quizzes you mark yourself.'
 };
 const EXAM_ADD_PRICE = '₦3,000';
+const EXAM_NEW_PRICE = '₦5,000';   // one exam for a new student; also what a student pays once their year has ended
 const EXAM_PAY = { bank: 'Moniepoint', account: '5282798033', name: 'Michael Evuline', whatsapp: '2349035801863' };
 const EXAM_PREF_KEY = 'qb_current_exam';
 
@@ -73,8 +73,6 @@ function applyExamMode() {
     if (typeof currentSubject !== 'undefined' && !IJMB_SUBJECTS.includes(currentSubject)) {
       currentSubject = IJMB_SUBJECTS[0];
     }
-    // IJMB has no quiz mode
-    if (/^\/quiz/.test(location.pathname)) history.replaceState(null, '', '/');
   }
 
   const logoLabel = document.querySelector('#app-sidebar .sidebar-logo .sidebar-label');
@@ -132,7 +130,14 @@ function showExamLock(target) {
   const T = EXAM_LABELS[target], C = EXAM_LABELS[current];
   let email = '';
   try { email = (firebase.auth().currentUser || {}).email || ''; } catch (e) { /* not signed in */ }
-  const message = `Hello, I want to add ${T} to my ${SITE_NAME} account. My Gmail is ${email || '(your Gmail)'}. Here is my ${EXAM_ADD_PRICE} payment receipt:`;
+  // Had this exam before and the year ran out: they buy it again like a new student
+  const endedOn = (window.accessUntilDates || {})[target];
+  const ended = !!endedOn && typeof todayInNigeria === 'function' && endedOn < todayInNigeria();
+  const price = ended ? EXAM_NEW_PRICE : EXAM_ADD_PRICE;
+  const endedText = ended ? ((typeof formatAccessDate === 'function') ? formatAccessDate(endedOn) : endedOn) : '';
+  const message = ended
+    ? `Hello, my ${T} access on ${SITE_NAME} ended and I want another year. My Gmail is ${email || '(your Gmail)'}. Here is my ${price} payment receipt:`
+    : `Hello, I want to add ${T} to my ${SITE_NAME} account. My Gmail is ${email || '(your Gmail)'}. Here is my ${price} payment receipt:`;
   const waLink = `https://wa.me/${EXAM_PAY.whatsapp}?text=${encodeURIComponent(message)}`;
 
   let overlay = document.getElementById('exam-lock');
@@ -153,12 +158,14 @@ function showExamLock(target) {
   }
   overlay.innerHTML = `
     <div class="exam-lock-card" role="dialog" aria-modal="true" aria-labelledby="exam-lock-title">
-      <div class="exam-lock-icon" aria-hidden="true">🔒</div>
-      <h2 id="exam-lock-title">${T} is locked</h2>
-      <p class="exam-lock-sub">Add ${T} to your account for <strong>${EXAM_ADD_PRICE}</strong>. You keep ${C} too.</p>
+      <div class="exam-lock-icon" aria-hidden="true">${ended ? '⏳' : '🔒'}</div>
+      <h2 id="exam-lock-title">${ended ? `Your ${T} access has ended` : `${T} is locked`}</h2>
+      <p class="exam-lock-sub">${ended
+        ? `It ended on ${examEsc(endedText)}. Get another full year of ${T} for <strong>${price}</strong>. You keep ${C} too.`
+        : `Add ${T} to your account for <strong>${price}</strong>. You keep ${C} too.`}</p>
       <p class="exam-lock-perks">${examEsc(EXAM_PERKS[target])}</p>
       <ol class="exam-lock-steps">
-        <li>Pay <strong>${EXAM_ADD_PRICE}</strong> to <strong>${EXAM_PAY.bank} ${EXAM_PAY.account}</strong> (${EXAM_PAY.name})
+        <li>Pay <strong>${price}</strong> to <strong>${EXAM_PAY.bank} ${EXAM_PAY.account}</strong> (${EXAM_PAY.name})
           <button type="button" class="exam-lock-copy" data-copy="${EXAM_PAY.account}">Copy</button></li>
         <li>Send the receipt on WhatsApp with your Gmail address${email ? ` (<strong>${examEsc(email)}</strong>)` : ''}.</li>
         <li>Once we've unlocked ${T}, reload the page and tap ${T} in the menu.</li>
@@ -179,14 +186,51 @@ function hideExamLock() {
 }
 
    // ----- Offline notice -----
+   // The full message shows for a few seconds, then gets out of the way:
+   //  - phones: a small "Offline" tag in the top bar (the message drops in under the bar)
+   //  - computers: a small icon in the bottom-right corner
+   // Tap the tag or icon to read the message again. Styles: exam-mode.css.
    (function offlineNotice() {
-     const bar = document.createElement('div');
+     const ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l20 20"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 4.17-2.65"/><path d="M10.66 5c4.01-.36 8.14.9 11.34 3.76"/><path d="M16.85 11.25a10 10 0 0 1 2.22 1.68"/><path d="M5 13a10 10 0 0 1 5.24-2.76"/><path d="M12 20h.01"/></svg>';
+     const OFFLINE_MSG = "You're offline. Showing the questions saved on this device.";
+
+     const bar = document.createElement('button');
+     bar.type = 'button';
      bar.className = 'offline-bar';
-     bar.setAttribute('role', 'status');
-     bar.textContent = "You're offline. Showing the questions saved on this device.";
+     bar.setAttribute('aria-live', 'polite');
+     bar.innerHTML = ICON + '<span class="offline-bar-text"></span>';
+     const text = bar.querySelector('.offline-bar-text');
      document.body.appendChild(bar);
-     const update = () => bar.classList.toggle('is-on', !navigator.onLine);
-     window.addEventListener('online', update);
-     window.addEventListener('offline', update);
-     update();
+
+     // the small tag in the phone top bar
+     const tag = document.createElement('button');
+     tag.type = 'button';
+     tag.className = 'topbar-offline';
+     tag.setAttribute('aria-label', OFFLINE_MSG);
+     tag.innerHTML = ICON + '<span>Offline</span>';
+     const actions = document.querySelector('#app-topbar .topbar-actions');
+     if (actions) actions.insertBefore(tag, actions.firstChild);
+
+     let timer = null;
+     function expand(message, ms, thenHide) {
+       text.textContent = message;
+       bar.classList.add('is-on', 'is-open');
+       bar.setAttribute('aria-label', message);
+       clearTimeout(timer);
+       timer = setTimeout(() => {
+         bar.classList.remove('is-open');                 // shrink to the icon / tag
+         if (thenHide) bar.classList.remove('is-on');
+       }, ms);
+     }
+     const showAgain = () => { if (!navigator.onLine) expand(OFFLINE_MSG, 4000); };
+     bar.addEventListener('click', showAgain);
+     tag.addEventListener('click', showAgain);
+
+     function setOffline(off) { document.body.classList.toggle('is-offline', off); }
+     window.addEventListener('offline', () => { setOffline(true); expand(OFFLINE_MSG, 4000); });
+     window.addEventListener('online', () => {
+       setOffline(false);
+       if (bar.classList.contains('is-on')) expand("You're back online.", 2000, true);
+     });
+     if (!navigator.onLine) { setOffline(true); expand(OFFLINE_MSG, 4000); }
    })();

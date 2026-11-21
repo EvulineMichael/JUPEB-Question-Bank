@@ -583,7 +583,7 @@
   {
     "subject": "Mathematics",
     "year": 2022,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 48,
     "question": "An object of mass 4 kg hangs from a fixed point by a light inextensible string and then pulled by a force F N and rest in equilibrium with the string inclined at 60°. Find the force F.",
@@ -856,7 +856,7 @@
   {
     "subject": "Mathematics",
     "year": 2022,
-    "category": "Application of Integral Calculus to Business",
+    "category": "Consumer and Producer Surplus",
     "type": "Essay",
     "questionNumber": "9a",
     "question": "(a) The demand and supply curves for a product are respectively given by D(q) = 31 - 5q and S(q) = 10 + 2q. Obtain the (i) equilibrium price and quantity (ii) consumer's surplus.",

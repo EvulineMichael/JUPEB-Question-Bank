@@ -40,6 +40,42 @@ function getUserExams(userData) {
   return list.length ? list : ['jupeb'];
 }
 
+// ===== ACCESS LASTS ONE YEAR =====
+// Each exam runs for a year from the day it was paid for. admin.html saves
+// access_until: { jupeb: "2027-11-20", ijmb: "..." }. Students who joined before
+// this have none: they all have until LEGACY_ACCESS_UNTIL. The server
+// (api/papers.js) does the same check, so this is only for showing the right screen.
+function accessIsoDate(value) {
+  if (typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
+  const d = new Date(value);   // e.g. "June 14, 2026" on older records
+  if (!value || isNaN(d)) return null;
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+function accessUntil(record, exam) {
+  const set = record && record.access_until && accessIsoDate(record.access_until[exam]);
+  return set || LEGACY_ACCESS_UNTIL;
+}
+const LEGACY_ACCESS_UNTIL = '2027-11-30';
+function todayInNigeria() {
+  return new Date(Date.now() + 60 * 60 * 1000).toISOString().slice(0, 10);   // WAT is UTC+1
+}
+// { jupeb: "2027-06-14", ... } for every exam on the record
+function accessDates(record) {
+  const dates = {};
+  getUserExams(record).forEach(e => { dates[e] = accessUntil(record, e); });
+  return dates;
+}
+// Exams whose year hasn't run out (dates as made by accessDates)
+function activeExamsFrom(exams, dates) {
+  const today = todayInNigeria();
+  return exams.filter(e => !dates || !dates[e] || dates[e] >= today);
+}
+// "14 June 2027"
+function formatAccessDate(iso) {
+  const d = new Date(iso + 'T00:00:00Z');
+  return isNaN(d) ? iso : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+}
+
 // true if the signed-in student has paid for this exam ('jupeb' or 'ijmb')
 function hasExam(exam) {
   return Array.isArray(window.userExams) && window.userExams.includes(exam);
@@ -54,8 +90,17 @@ const ACCESS_KEY = 'qb_access';
 function getSavedAccess() {
   try { return JSON.parse(localStorage.getItem(ACCESS_KEY) || 'null'); } catch (e) { return null; }
 }
-function saveAccess(email, exams) {
-  localStorage.setItem(ACCESS_KEY, JSON.stringify({ email: email, exams: exams }));
+function saveAccess(email, exams, until) {
+  localStorage.setItem(ACCESS_KEY, JSON.stringify({ email: email, exams: exams, until: until || null }));
+}
+// Uses a saved or fresh record to set window.userExams (exams still running) and
+// window.accessUntilDates. Returns false if every exam's year has run out.
+function applyAccess(exams, until) {
+  const active = activeExamsFrom(exams, until);
+  window.accessUntilDates = until || null;
+  if (!active.length) return false;
+  window.userExams = active;
+  return true;
 }
 function forgetAccess() {
   localStorage.removeItem(ACCESS_KEY);
@@ -81,39 +126,75 @@ if (!IS_LOCAL && getSavedAccess()) {
   document.getElementById('app-sidebar').style.display = 'flex';
   document.body.classList.add('has-sidebar');
   document.getElementById('sidebar-toggle').style.display = '';
+
+  // With no internet, Firebase can take a long time to say who is signed in, or
+  // never does. Don't keep the student waiting: start the app from what this device
+  // saved (access, name, question papers). Offline it starts at once; online it
+  // gives Firebase a few seconds first. When Firebase does answer, revealDashboard
+  // fills in the rest, and a sign-out still sends the student to the home screen.
+  window.addEventListener('load', () => {
+    setTimeout(startFromSavedAccess, navigator.onLine ? 4000 : 0);
+  });
+}
+
+let appStartedFromSaved = false;
+function startFromSavedAccess() {
+  if (window.jupebAppStarted) return;          // Firebase already answered
+  const saved = getSavedAccess();
+  if (!saved) return;
+  if (!applyAccess(getUserExams({ exams: saved.exams }), saved.until)) {   // the year ran out, even offline
+    if (typeof auth !== 'undefined') showAccessEnded(saved.email, saved.until);
+    return;
+  }
+  appStartedFromSaved = true;
+  renderSidebarUser({ name: localStorage.getItem('jupeb_user_name') || 'Student', isPremium: true, photoURL: null });
+  window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
+  if (typeof initJUPEBApp === 'function') initJUPEBApp();
+  if (typeof runRouteInit === 'function') runRouteInit();
 }
 
 function revealDashboard(user) {
   document.body.classList.remove('is-signing-in');
   sessionStorage.removeItem('qb_signing_in');
-  const loginEl = document.getElementById('login-screen');
-  if (loginEl) loginEl.style.display = 'none';
-
-  showScreen("dashboard-screen", { pushHistory: false });
 
   if (user.displayName) {
     localStorage.setItem('jupeb_user_name', user.displayName.split(' ')[0]);
-  }
-
-  document.getElementById('app-sidebar').style.display = 'flex';
-  document.body.classList.add('has-sidebar');
-  document.getElementById('sidebar-toggle').style.display = '';
-  document.getElementById('sidebar-overlay').style.display = '';
-
-  if (user.displayName) {
     renderSidebarUser({
       name: user.displayName.split(' ')[0],
       isPremium: true,
       photoURL: user.photoURL || null
     });
   }
-
-  if (typeof showDashboard === 'function') showDashboard();
   window.authorizedSubjects = ['chemistry', 'physics', 'maths', 'biology'];
-  if (typeof initJUPEBApp === 'function') initJUPEBApp();
-  if (typeof runRouteInit === 'function') runRouteInit();
+
+  if (appStartedFromSaved && window.jupebAppStarted) {
+    // Already open from the saved copy (the student may be mid-quiz, so stay put).
+    // Now that we know who they are, load any subject that wasn't saved.
+    if ((window.jupebFailedSubjects || []).length && window.jupebDataLoaded && typeof retryQuestionLoad === 'function') retryQuestionLoad();
+  } else {
+    const loginEl = document.getElementById('login-screen');
+    if (loginEl) loginEl.style.display = 'none';
+    showScreen("dashboard-screen", { pushHistory: false });
+    document.getElementById('app-sidebar').style.display = 'flex';
+    document.body.classList.add('has-sidebar');
+    document.getElementById('sidebar-toggle').style.display = '';
+    document.getElementById('sidebar-overlay').style.display = '';
+    if (typeof showDashboard === 'function') showDashboard();
+    if (typeof initJUPEBApp === 'function') initJUPEBApp();
+    if (typeof runRouteInit === 'function') runRouteInit();
+  }
   // Bring in this student's stats from their other devices (refreshes the dashboard if anything changed)
   if (typeof syncStatsWithCloud === 'function') syncStatsWithCloud();
+}
+
+// Every exam on the account has run its year: they can buy again like a new student
+function showAccessEnded(email, until) {
+  const last = Object.values(until || {}).sort().pop();
+  showAuthMessage('warn',
+    `Your access for <strong>${escapeAuthText(email)}</strong> ended${last ? ` on <strong>${escapeAuthText(formatAccessDate(last))}</strong>` : ''}. Access lasts one year from payment. To study for another year, pay again and send your receipt and this Gmail to us on WhatsApp.`,
+    `<button type="button" class="auth-msg-btn" onclick="document.getElementById('lp-pricing')?.scrollIntoView({behavior:'smooth'}); if (document.getElementById('access-info').style.display === 'none') toggleAccessInfo();">See prices</button>`);
+  forgetAccess();
+  auth.signOut();
 }
 
 function showNotAuthorized(email) {
@@ -137,10 +218,13 @@ async function recheckAccess(user, docRef) {
       return;
     }
     const exams = getUserExams(doc.data());
-    saveAccess(user.email, exams);
-    if (exams.join() !== (window.userExams || []).join()) {
-      window.userExams = exams;                               // e.g. IJMB was just unlocked
+    const until = accessDates(doc.data());
+    const before = (window.userExams || []).join();
+    if (!applyAccess(exams, until)) { showAccessEnded(user.email, until); return; }
+    saveAccess(user.email, exams, until);
+    if (window.userExams.join() !== before) {                // e.g. IJMB was just unlocked, or a year ran out
       if (typeof renderExamSwitch === 'function') renderExamSwitch();
+      if (typeof applyExamMode === 'function') applyExamMode();
     }
   } catch (err) {
     // offline or a network problem: keep using the access saved on this device
@@ -156,7 +240,7 @@ auth.onAuthStateChanged(async (user) => {
 
     // Returning student on this device: open now, check in the background
     if (saved && saved.email === email) {
-      window.userExams = getUserExams({ exams: saved.exams });
+      if (!applyAccess(getUserExams({ exams: saved.exams }), saved.until)) { showAccessEnded(email, saved.until); return; }
       revealDashboard(user);
       if (typeof maybeShowWelcome === "function") maybeShowWelcome(user, docRef);
       recheckAccess(user, docRef);
@@ -178,9 +262,11 @@ auth.onAuthStateChanged(async (user) => {
 
     if (doc.exists) {
       clearAuthMessage();
-      // Access is lifetime, so there is no expiry check any more.
-      window.userExams = getUserExams(doc.data());
-      saveAccess(email, window.userExams);
+      // Each exam lasts a year from payment
+      const exams = getUserExams(doc.data());
+      const until = accessDates(doc.data());
+      if (!applyAccess(exams, until)) { showAccessEnded(email, until); return; }
+      saveAccess(email, exams, until);
       revealDashboard(user);
       if (typeof maybeShowWelcome === "function") maybeShowWelcome(user, docRef);
     } else {

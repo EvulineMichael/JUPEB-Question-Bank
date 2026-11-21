@@ -722,3 +722,7 @@ body.is-signing-in #login-screen [onclick*="signInWithGoogle"] { opacity: 0.6; p
 .home-demo--locked { text-align: center; }
 .home-demo--locked .home-demo-q { font-size: 1.15rem; letter-spacing: .02em; }
 .home-demo--locked .home-demo-why { filter: none; }
+
+/* "By signing in you agree to our privacy & data policy" under the Google button */
+.lp-legal { margin: 8px 0 0; font-size: 0.78rem; color: var(--lp-muted, #64748b); }
+.lp-legal a { color: inherit; text-decoration: underline; }

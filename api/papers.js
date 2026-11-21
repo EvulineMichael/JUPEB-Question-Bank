@@ -53,6 +53,26 @@ function examsOf(record) {
   return list.length ? list : ['jupeb'];
 }
 
+// ===== ACCESS LASTS ONE YEAR =====
+// Each exam on a student's record runs for a year from the day it was paid for:
+// access_until: { jupeb: "2027-11-20", ijmb: "2028-01-05" } (set by admin.html).
+// Students who joined before this have no access_until: they all have until
+// LEGACY_ACCESS_UNTIL. Keep in step with auth.js and admin.html.
+const LEGACY_ACCESS_UNTIL = '2027-11-30';
+function isoDate(value) {
+  if (typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
+  const d = new Date(value);   // e.g. "June 14, 2026" on older records
+  if (!value || isNaN(d)) return null;
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+function accessUntil(record, exam) {
+  const set = record && record.access_until && isoDate(record.access_until[exam]);
+  return set || LEGACY_ACCESS_UNTIL;
+}
+function todayInNigeria() {
+  return new Date(Date.now() + 60 * 60 * 1000).toISOString().slice(0, 10);   // WAT is UTC+1
+}
+
 module.exports = async (req, res) => {
   res.setHeader('Cache-Control', 'private, no-store');
   if (setupError) return res.status(500).json({ error: 'Server setup problem', detail: setupError });
@@ -70,7 +90,12 @@ module.exports = async (req, res) => {
 
   let email;
   try {
-    email = (await admin.auth().verifyIdToken(token)).email;
+    const decoded = await admin.auth().verifyIdToken(token);
+    // Only trust emails the sign-in provider has confirmed (Google always does).
+    // Without this, someone could create an unconfirmed account under a paid
+    // student's email address if another sign-in method were ever switched on.
+    if (decoded.email_verified !== true) return res.status(403).json({ error: 'Please sign in with Google' });
+    email = decoded.email;
   } catch (err) {
     // err.code says which check failed, e.g. "auth/id-token-expired", or
     // "auth/argument-error" when the token belongs to a different Firebase project than
@@ -91,6 +116,10 @@ module.exports = async (req, res) => {
   }
   if (!examsOf(record).includes(exam)) {
     return res.status(403).json({ error: 'This exam is not unlocked on your account' });
+  }
+  const until = accessUntil(record, exam);
+  if (until < todayInNigeria()) {
+    return res.status(403).json({ error: `Your ${exam.toUpperCase()} access ended on ${until}.`, detail: 'access-ended' });
   }
 
   const dir = path.join(process.cwd(), 'data', ...(exam === 'ijmb' ? ['ijmb'] : []), subject);

@@ -56,7 +56,7 @@ let allSubjectYears = {
 })();
 
 // 2) Called from auth.js right after sign-in (see the auth.js edit).
-//    Checks the code belongs to a real, active teacher, then saves a CLAIM on the
+//    Saves the code as a CLAIM on the
 //    student's survey doc. It never touches teacher money; you credit from admin.html.
 //    Returns the teacher code the student came through, or null.
 async function recordReferralClaim(user) {
@@ -80,19 +80,19 @@ async function recordReferralClaim(user) {
     return claimCode;
   }
 
+  // Students can't read teacher records (that keeps teachers' names, emails and
+  // earnings private), so the code is saved as it is. admin.html only lists
+  // claims whose code belongs to a real, active teacher.
   try {
-    const teacher = await db.collection("teachers").doc(storedCode).get();
-    if (teacher.exists && teacher.data().active !== false) {
-      await surveyRef.set({
-        email: user.email,
-        name: user.displayName || null,
-        referralCode: storedCode,
-        viaLink: true,
-        capturedAt: firebase.firestore.FieldValue.serverTimestamp()
-      }, { merge: true });
-      claimCode = storedCode;
-    }
-    localStorage.removeItem("jupeb_referral_code"); // real or not, it has been dealt with
+    await surveyRef.set({
+      email: user.email,
+      name: user.displayName || null,
+      referralCode: storedCode,
+      viaLink: true,
+      capturedAt: firebase.firestore.FieldValue.serverTimestamp()
+    }, { merge: true });
+    claimCode = storedCode;
+    localStorage.removeItem("jupeb_referral_code"); // it has been dealt with
   } catch (err) {
     console.error("Referral capture failed:", err);  // keep the code so the next sign-in retries
   }
@@ -139,7 +139,11 @@ const FAQ_ITEMS = [
   },
   {
     q: "Does the site work on my phone?",
-    a: "Yes. It's fully mobile-friendly and can be installed as an app."
+    a: "Yes. It works on any phone, and you can add it to your home screen so it opens like an app and works offline."
+  },
+  {
+    q: "How do I add the app to my home screen?",
+    a: "<strong>iPhone:</strong> open the site in Safari, tap Share (on newer iPhones it's inside the ••• menu), then “Add to Home Screen”, then “Add”.<br><strong>Android:</strong> open it in Chrome, tap the ⋮ menu, then “Add to Home screen” (or “Install app”), then “Install”.<br><button type=\"button\" class=\"help-inline-btn\" onclick=\"openInstallGuide()\">Show me how, with pictures</button>"
   },
   {
     q: "What if I see a wrong answer or a broken question?",
@@ -155,7 +159,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Does my access expire?",
-    a: "No. Your access is for life, with no renewal."
+    a: "Yes. Access lasts one year from the day you pay, which covers a full exam season. You can see the date in Settings. When it ends, you can pay again for another year."
   },
   {
     q: "What if I have a different question?",
@@ -307,9 +311,9 @@ await db.collection("surveys").doc(user.email).set({
     name: user.displayName || null,
     source: finalSource,
     referredBy: referrerEl?.value.trim() || null,
-    referralCode: refCode,
+    ...(refCode ? { referralCode: refCode } : {}),   // never overwrite a saved code with nothing
     submittedAt: firebase.firestore.FieldValue.serverTimestamp()
-});
+}, { merge: true });
 // After successful submit
 localStorage.removeItem("jupeb_referral_code");
 
@@ -595,7 +599,8 @@ crs: {
 },
 literature: {
     "LIT 001 - Introduction to Drama": [
-        "Introduction",
+        "Introduction to Literature",
+        "Introduction to Drama",
         "The Classical Tradition",
         "European Drama (The Renaissance Tradition)",
         "European Drama (The Modern Tradition)",
@@ -603,12 +608,12 @@ literature: {
         "African Drama (The Modern Tradition)"
     ],
     "LIT 002 - Prose Fiction": [
-        "Introduction",
+        "Introduction to Prose Fiction",
         "The European Prose Tradition",
         "African Prose (Modern African Novel)"
     ],
     "LIT 003 - Introduction to Poetry": [
-        "Introduction",
+        "Introduction to Poetry",
         "The Classical Tradition",
         "European Poetry (The Medieval and Renaissance Traditions)",
         "European Poetry (19th and 20th Centuries)",
@@ -1222,10 +1227,17 @@ function withTimeout(promise, ms) {
       const empty = { years: [], questions: [], failed: false };
       const errors = (window.jupebLoadErrors = window.jupebLoadErrors || {});
       delete errors[subject];
-      const user = (typeof auth !== 'undefined') ? auth.currentUser : null;
-      if (!user) { errors[subject] = 'Not signed in yet.'; return { ...empty, failed: true }; }
       const exam = (typeof getCurrentExam === 'function') ? getCurrentExam() : 'jupeb';
       const url = `/api/papers?exam=${exam}&subject=${encodeURIComponent(subject)}`;
+      const user = await signedInUser(navigator.onLine ? 15000 : 1500);
+      if (!user) {
+          // Firebase hasn't answered, which is normal with no internet. A returning
+          // student can still use the copy saved on this device (it is removed on sign-out).
+          const saved = (typeof getSavedAccess === 'function' && getSavedAccess()) ? await savedPapersResponse(url) : null;
+          if (saved) return readPapersResponse(saved, subject);
+          errors[subject] = navigator.onLine ? 'Not signed in yet.' : "You're offline and these questions aren't saved on this device yet.";
+          return { ...empty, failed: true };
+      }
 
       // Online, give the sign-in token time to arrive on a slow connection. Offline it
       // can't be refreshed, so don't wait: the saved copy is used instead.
@@ -1272,6 +1284,11 @@ function withTimeout(promise, ms) {
           console.warn(`${subject}: ${serverSaid}`);
           return { ...empty, failed: response.status !== 403 };   // 403: this exam isn't unlocked, so nothing to show
       }
+      return readPapersResponse(response, subject);
+  }
+
+  // Turns a papers answer (from the server or the saved copy) into { years, questions }
+  async function readPapersResponse(response, subject) {
       try {
           const body = await response.json();
           const years = [];
@@ -1283,8 +1300,24 @@ function withTimeout(promise, ms) {
           return { years, questions, failed: false };
       } catch (error) {
           console.error(`Error reading ${subject} papers:`, error);
-          return { ...empty, failed: true };
+          return { years: [], questions: [], failed: true };
       }
+  }
+
+  // The signed-in Firebase user, waiting up to ms for Firebase to say who it is.
+  // With no internet Firebase can take a long time to answer (or never does), so
+  // this gives up and returns null rather than leaving subjects on "Loading…".
+  function signedInUser(ms) {
+      return new Promise(resolve => {
+          if (typeof auth === 'undefined') return resolve(null);   // Firebase scripts didn't load
+          if (auth.currentUser) return resolve(auth.currentUser);
+          let done = false;
+          let stop = () => {};
+          const finish = (u) => { if (done) return; done = true; stop(); resolve(u || null); };
+          stop = auth.onAuthStateChanged(u => { if (u) finish(u); });
+          if (done) stop();
+          setTimeout(() => finish(auth.currentUser), ms);
+      });
   }
 
   // Local testing only: the old way, reading the files in data/ directly
@@ -1864,11 +1897,17 @@ function showQuizLobby() {
     const msg = getWeakAreasMessage(stats);
     const hasWeakTopics = stats.weakTopicsList.length > 0;
 
-    const QUIZ_SUBJECTS = [
-        ['chemistry', '🧪', 'Chemistry'], ['physics', '⚛️', 'Physics'], ['maths', '📐', 'Mathematics'],
-        ['biology', '🧬', 'Biology'], ['crs', '🕊️', 'CRS'], ['irs', '☪️', 'IRS'],
-        ['literature', '📖', 'Literature'], ['economics', '💰', 'Economics'], ['government', '🏛️', 'Government']
-    ];
+    // The current exam's subjects (IJMB has a few JUPEB doesn't), leaving out any with no papers yet
+    const examSubjectIds = (typeof examSubjects === 'function') ? examSubjects()
+        : ['chemistry', 'physics', 'maths', 'biology', 'crs', 'irs', 'literature', 'economics', 'government'];
+    const QUIZ_SUBJECTS = examSubjectIds
+        .filter(id => id === currentSubject || (allSubjectData[id] || []).length > 0 || (typeof subjectLoadFailed === 'function' && subjectLoadFailed(id)))
+        .map(id => [id, (id === 'crs' ? '🕊️' : SUBJECT_ICONS[id]) || '📘', SUBJECT_NAMES[id] || id]);
+
+    // Multiple choice or written: keep the student's choice if this subject has that kind
+    const kindCounts = (typeof quizKindCounts === 'function') ? quizKindCounts(currentSubject) : { objective: questionsData.length, essay: 0 };
+    if (!quizState.kind || !kindCounts[quizState.kind]) quizState.kind = kindCounts.objective ? 'objective' : (kindCounts.essay ? 'essay' : 'objective');
+    const isEssayKind = quizState.kind === 'essay';
     const pastScores = (quizState.history || []).map(h => Number(h.score)).filter(Number.isFinite);
     const avgScore = pastScores.length ? Math.round(pastScores.reduce((a, b) => a + b, 0) / pastScores.length) : null;
 
@@ -1898,6 +1937,16 @@ function showQuizLobby() {
                 <select id="quiz-subject-select" class="qz-hidden-select" aria-hidden="true" tabindex="-1">
                     ${QUIZ_SUBJECTS.map(([id, , name]) => `<option value="${id}" ${id === currentSubject ? 'selected' : ''}>${name}</option>`).join('')}
                 </select>
+                ${kindCounts.essay ? `
+                <div class="qz-kind" role="radiogroup" aria-label="Question type">
+                    <span class="qz-kind-label">Question type</span>
+                    <button type="button" class="qz-kind-btn ${!isEssayKind ? 'is-on' : ''}" data-kind="objective" role="radio" aria-checked="${!isEssayKind}" ${kindCounts.objective ? '' : 'disabled'}>
+                        <strong>Multiple choice</strong><span>${kindCounts.objective ? `${kindCounts.objective} questions · marked for you` : 'None for this subject'}</span>
+                    </button>
+                    <button type="button" class="qz-kind-btn ${isEssayKind ? 'is-on' : ''}" data-kind="essay" role="radio" aria-checked="${isEssayKind}">
+                        <strong>Written</strong><span>${kindCounts.essay} questions · you mark yourself</span>
+                    </button>
+                </div>` : ''}
             </div>
 
             <!-- STEP 2: Mode -->
@@ -1907,12 +1956,12 @@ function showQuizLobby() {
                     <button class="quiz-mode-card" data-mode="practice">
                         <div class="qmc-icon qz-tone-blue"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
                         <div class="qmc-title">Practice quiz</div>
-                        <div class="qmc-desc">Pick topics or go random. 10, 20 or 50 questions: set it in Settings.</div>
+                        <div class="qmc-desc">${isEssayKind ? `Pick topics or go random. ${ESSAY_PRACTICE_LENGTH} written questions.` : 'Pick topics or go random. 10, 20 or 50 questions: set it in Settings.'}</div>
                     </button>
                     <button class="quiz-mode-card" data-mode="exam">
                         <div class="qmc-icon qz-tone-violet"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div>
                         <div class="qmc-title">Past exam</div>
-                        <div class="qmc-desc">Every question from one exam year, in one go.</div>
+                        <div class="qmc-desc">${isEssayKind ? 'Every written question from one paper, in the paper\'s order.' : 'Every question from one exam year, in one go.'}</div>
                     </button>
                     <button class="quiz-mode-card weak-area-card ${!stats.isUnlocked && stats.totalAttempts === 0 ? 'disabled' : ''} ${stats.isUnlocked && !hasWeakTopics ? 'all-strong' : ''}"
                             data-mode="weak" ${!hasWeakTopics ? 'disabled' : ''}>
@@ -1958,6 +2007,13 @@ function showQuizLobby() {
         if (!select || select.value === btn.dataset.subject) return;
         select.value = btn.dataset.subject;
         select.dispatchEvent(new Event('change'));
+    }));
+
+    // Question type: redraw the lobby for the other kind
+    document.querySelectorAll('.qz-kind-btn:not([disabled])').forEach(btn => btn.addEventListener('click', () => {
+        if (quizState.kind === btn.dataset.kind) return;
+        quizState.kind = btn.dataset.kind;
+        showQuizLobby();
     }));
 
     setupLobbyListeners();
@@ -2298,7 +2354,7 @@ function displayPastQuestions(subject, year, paper = null, _triedLoading = false
             </div>
             <div class="pp-paper-actions">
                 <button class="pp-btn pp-btn--ghost" id="pp-reveal-all" data-on="0">Show all answers</button>
-                ${objectiveQuestions.length ? `<button class="past-take-quiz-btn pp-btn pp-btn--primary" onclick="takePastQuestionsAsQuiz('${subject}', ${year}, '${paper || ''}')">Take as a quiz</button>` : ''}
+                ${objectiveQuestions.length || (typeof isEssayQuizzable === 'function' && essayQuestions.some(isEssayQuizzable)) ? `<button class="past-take-quiz-btn pp-btn pp-btn--primary" onclick="takePastQuestionsAsQuiz('${subject}', ${year}, '${paper || ''}')">Take as a quiz</button>` : ''}
             </div>
         </div>
     </div>`;
@@ -2539,6 +2595,9 @@ function takePastQuestionsAsQuiz(subject, year, paper = null) {
     window.currentSubjectYears = allSubjectYears[subject] || [];
     quizState.subject = subject;
     quizState.mode = 'exam';
+    // Multiple choice if the paper has any, otherwise its written questions
+    const paperQs = questionsData.filter(q => q.year === year && (!paper || q.paper === paper));
+    quizState.kind = paperQs.some(isQuizzable) ? 'objective' : 'essay';
     quizState.filter = { year: year, paper: paper };
     quizState.selectedTopics = [];
     quizState.timed = false;
@@ -2683,9 +2742,7 @@ function showQuizStep2() {
             });
         }
         const entry = yearPapers.find(yp => yp.key === key);
-        if (q.type === 'Objective' && q.options && q.options.length > 0 && q.answer && !q.diagramMissing && !q.excludeFromQuiz) {
-            entry.count++;
-        }
+        if (currentKindTest()(q)) entry.count++;
     });
     
     const yearsWithCounts = yearPapers
@@ -2711,7 +2768,9 @@ filterOptions.innerHTML = `<div class="quiz-year-grid">${yearsWithCounts.map(y =
 function showQuizStep3() {
     const available = getAvailableQuestions().length;
     // Practice length comes from Settings (10, 20 or 50; 10 by default)
-    const practiceLength = parseInt(localStorage.getItem('jupeb_default_quiz_length'), 10) || 10;
+    // Written questions take much longer, so a written practice quiz is shorter
+    const practiceLength = quizState.kind === 'essay' ? ESSAY_PRACTICE_LENGTH
+        : (parseInt(localStorage.getItem('jupeb_default_quiz_length'), 10) || 10);
     quizState.count = Math.min(available, quizState.mode === 'practice' ? practiceLength : available);
     ['qstep-3'].forEach(id => { const el = document.getElementById(id); if (el) el.classList.add('hidden'); });
     showQuizStep4();
@@ -2767,7 +2826,7 @@ function showQuizStep5() {
     document.getElementById('quiz-summary').innerHTML = `
         <div class="quiz-summary-grid">
             <div class="qs-item"><span class="qs-label">Subject</span><span class="qs-value">${subjectLabel}</span></div>
-            <div class="qs-item"><span class="qs-label">Mode</span><span class="qs-value">${modeLabel}</span></div>
+            <div class="qs-item"><span class="qs-label">Mode</span><span class="qs-value">${modeLabel}${quizState.kind === 'essay' ? ' · Written' : ''}</span></div>
             <div class="qs-item"><span class="qs-label">Questions</span><span class="qs-value">${finalCount}</span></div>
             <div class="qs-item"><span class="qs-label">Timer</span><span class="qs-value">${timerLabel}</span></div>
         </div>`;
@@ -2784,7 +2843,7 @@ function getAllTopicsForSubject() {
     const result = [];
     for (const topics of Object.values(courses)) {
         for (const topic of topics) {
-            const count = questionsData.filter(q => q.category === topic && q.type === 'Objective').length;
+            const count = questionsData.filter(q => q.category === topic && currentKindTest()(q)).length;
             if (count > 0) result.push({ name: topic, count });
         }
     }
@@ -2807,8 +2866,13 @@ function questionId(q) {
     return h.toString(36);
 }
 
+// The test for the kind of quiz being set up: multiple choice, or written (essay-quiz.js)
+function currentKindTest() {
+    return (quizState.kind === 'essay' && typeof quizKindTest === 'function') ? quizKindTest('essay') : isQuizzable;
+}
+
 function getAvailableQuestions() {
-    let pool = questionsData.filter(isQuizzable);
+    let pool = questionsData.filter(currentKindTest());
     
     if (quizState.mode === 'practice') {
         if (quizState.filter !== 'all') {
@@ -2889,6 +2953,7 @@ function updateWeakAreas(questions, answers) {
 
 // ----- START QUIZ -----
 function startQuiz() {
+    if (quizState.kind === 'essay' && typeof startEssayQuiz === 'function') return startEssayQuiz();   // essay-quiz.js
     const pool = shuffleArray(getAvailableQuestions());
     const finalCount = Math.min(quizState.count, pool.length);
     quizState.questions = pool.slice(0, finalCount).map(q => shuffleOptions(q));
@@ -3509,16 +3574,21 @@ document.getElementById("dash-user-name").textContent =
     // Numbers row
     renderDashboardStats();
 
-    // Streak
-    document.getElementById("dash-streak-text").innerHTML = `${streakDays} <span>days</span>`;
-    document.getElementById("dash-streak-subtext").textContent =
-        streakDays > 0 ? "Keep it up! Consistency is key." : "Start studying today to build your streak";
+    // Streak: the card in the side column (wide screens) and the tag under the greeting (smaller screens)
+    const streakChip = document.getElementById("dash-streak-chip");
+    if (streakChip) {
+        if (streakDays > 0) streakChip.innerHTML = `${streakDays} <span>day streak</span>`;
+        else streakChip.textContent = "Start a streak today";
+    }
+    const streakText = document.getElementById("dash-streak-text");
+    if (streakText) streakText.innerHTML = `${streakDays} <span>days</span>`;
+    const streakSub = document.getElementById("dash-streak-subtext");
+    if (streakSub) streakSub.textContent = streakDays > 0 ? "Keep it up! Consistency is key." : "Start studying today to build your streak";
     document.querySelectorAll("#streak-dots .streak-dot").forEach((dot, i) => {
         dot.classList.toggle("is-complete", !!streakDayFlags[i]);
         dot.classList.remove("is-today");
     });
-    const todayIndex = (new Date().getDay() + 6) % 7;
-    const todayDot = document.querySelectorAll("#streak-dots .streak-dot")[todayIndex];
+    const todayDot = document.querySelectorAll("#streak-dots .streak-dot")[(new Date().getDay() + 6) % 7];
     if (todayDot) todayDot.classList.add("is-today");
 
     
@@ -3590,10 +3660,15 @@ function describeQuizTopic(questions) {
 // How much of a subject the student has covered: questions answered at least
 // once out of every quiz question in that subject. It only reaches 100% when
 // every question has been answered, and repeats don't push it up.
+// Which questions count towards "covered": multiple choice, plus written ones in IJMB (essay-quiz.js)
+function progressBankTest() {
+    return (typeof isInProgressBank === 'function') ? isInProgressBank : isQuizzable;
+}
+
 function subjectCoverage(subject, progressAll) {
     const p = (progressAll && progressAll[subject]) || {};
     const seen = new Set(Array.isArray(p.seen) ? p.seen : []);
-    const bank = (typeof allSubjectData === 'object' && allSubjectData[subject] || []).filter(isQuizzable);
+    const bank = (typeof allSubjectData === 'object' && allSubjectData[subject] || []).filter(progressBankTest());
     let covered, total;
     if (bank.length) {                                   // questions loaded: count against today's question bank
         total = bank.length;
@@ -3619,7 +3694,7 @@ function trackStudySession(subject, questions, answers) {
     p.seen = [...seen];
     p.answered = (Number(p.answered) || 0) + answeredQs.length;
     p.quizzes = (Number(p.quizzes) || 0) + 1;
-    const bankSize = (allSubjectData[subject] || []).filter(isQuizzable).length;
+    const bankSize = (allSubjectData[subject] || []).filter(progressBankTest()).length;
     if (bankSize) p.total = bankSize;
     progress[subject] = p;
     saveStat('jupeb_subject_progress', true, JSON.stringify(progress));
@@ -4184,8 +4259,30 @@ document.addEventListener("keydown", (e) => {
     if (!pickerEl?.classList.contains("is-open")) return;
     if (e.key === "Escape") closeSubjectPicker();
 });
+// ----- SHARE A GOOD SCORE -----
+// After a good score (70%+ on 5 or more questions) the student can send a
+// ready-made "beat my score" message to friends on WhatsApp. The link points to
+// the public home page, so friends who aren't members land somewhere useful.
+const SHARE_SITE_URL = "https://jupebijmbprep.com";
+function shareScoreCard(score, correct, total, subjectLabel, questions) {
+    if (score < 70 || total < 5) return "";
+    const exam = (typeof getCurrentExam === "function" && getCurrentExam() === "ijmb") ? "IJMB" : "JUPEB";
+    const topics = [...new Set(questions.map(q => q.category).filter(Boolean))];
+    const what = `${exam} ${subjectLabel}` + (topics.length === 1 ? ` (${topics[0]})` : "");
+    const text = `I just scored ${correct}/${total} on ${what} past questions 💪 Think you can beat me?\n\nTry it here: ${SHARE_SITE_URL}`;
+    const href = "https://wa.me/?text=" + encodeURIComponent(text);
+    return `<div class="share-score">
+        <div class="share-score-text"><strong>Nice score!</strong><span>Challenge a friend to beat it.</span></div>
+        <a class="share-score-btn" href="${href}" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+            Challenge on WhatsApp
+        </a>
+    </div>`;
+}
+
 // ----- SUBMIT & DEBRIEF -----
 function submitQuiz(timeUp = false) {
+    if (quizState.kind === 'essay' && quizState.essay && typeof submitEssayQuiz === 'function') return submitEssayQuiz(timeUp);   // the timer ends written quizzes too
     clearInterval(quizState.timerInterval);
     quizState.submitted = true;
     const questions = quizState.questions;
@@ -4246,6 +4343,7 @@ function submitQuiz(timeUp = false) {
                 <button class="da-btn secondary" id="retry-wrong-btn" ${incorrect === 0 ? 'disabled' : ''}>Retry wrong ones (${incorrect})</button>
                 <button class="da-btn secondary" id="new-quiz-btn">New quiz</button>
             </div>
+            ${shareScoreCard(score, correct, total, subjectLabel, questions)}
             <div class="debrief-section">
                 <h3>How you did by topic</h3>
                 <div class="topic-breakdown">
@@ -4343,8 +4441,15 @@ function renderSettings() {
   const badges = document.getElementById("settings-badges");
   if (badges) {
     const exams = (typeof userExamList === "function") ? userExamList() : ["jupeb"];
-    badges.innerHTML = '<span class="set-badge set-badge--gold">⭐ Lifetime access</span>' +
-      exams.map(x => `<span class="set-badge">${x === "ijmb" ? "IJMB" : "JUPEB"}</span>`).join("");
+    // Each exam lasts a year from payment (auth.js sets window.accessUntilDates)
+    const until = window.accessUntilDates || {};
+    const short = (iso) => (typeof formatAccessDate === "function" ? formatAccessDate(iso) : iso);
+    badges.innerHTML = exams.map(x => {
+      const name = x === "ijmb" ? "IJMB" : "JUPEB";
+      return until[x]
+        ? `<span class="set-badge set-badge--gold">⭐ ${name} · until ${escapeHtml(short(until[x]))}</span>`
+        : `<span class="set-badge">${name}</span>`;
+    }).join("");
   }
 
   // --- Appearance ---
@@ -4480,6 +4585,8 @@ document.getElementById("help-report-btn").addEventListener("click", () => openB
 window.jupebDataLoaded = false;
 
 function initJUPEBApp() {
+    if (window.jupebAppStarted) return;   // may start from the saved copy before Firebase answers (auth.js)
+    window.jupebAppStarted = true;
     if (typeof applyExamMode === 'function') applyExamMode();   // JUPEB or IJMB (exam-mode.js)
     initTheme();
     initSidebar();

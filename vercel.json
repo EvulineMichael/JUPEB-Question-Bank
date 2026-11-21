@@ -1,4 +1,6 @@
 {
+  "buildCommand": "node scripts/build-public.js",
+  "outputDirectory": "public",
   "functions": {
     "api/papers.js": {
       "includeFiles": "data/**"
@@ -43,8 +45,29 @@
       "destination": "https://jupeb-question-bank.firebaseapp.com/__/firebase/:path*"
     },
     {
+      "source": "/privacy",
+      "destination": "/privacy/index.html"
+    },
+    {
       "source": "/((?!data/|api/|images/|.*\\.).*)",
       "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "test.jupebijmbprep.com"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
     }
   ]
 }

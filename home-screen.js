@@ -214,8 +214,11 @@ document.getElementById("home-sample-body")?.addEventListener("click", (e) => {
     const siteName = (typeof SITE_NAME === "string") ? SITE_NAME : "JUPEB Question Bank";
     const code = localStorage.getItem("jupeb_referral_code");
     let text = `Hi! I've paid ${price} for ${exam} on ${siteName}.`;
-    if (code) text += "\nTeacher code: " + code;
-    text += "\nMy Gmail: ";
+    // Teacher referral, kept low-key on purpose: the referral programme isn't advertised
+    // to students. It's a backup for when the sign-in can't record the teacher (e.g. the
+    // link was opened in WhatsApp's browser but they sign in on Chrome).
+    if (code) text += " (Ref " + code + ")";
+    text += "\nMy Gmail: ";            // last, so the student types their Gmail straight after it
     btn.href = "https://wa.me/2349035801863?text=" + encodeURIComponent(text);
   }
 

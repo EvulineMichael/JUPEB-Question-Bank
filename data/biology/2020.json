@@ -248,7 +248,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Objective",
     "questionNumber": 23,
     "question": "Which of these cell structures can be seen only with an electron microscope?",
@@ -259,7 +259,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Objective",
     "questionNumber": 24,
     "question": "Which of the following are found in both eukaryotic and prokaryotic cells? I. Cellulose II. Deoxyribose III. Lipids IV. Ribose.",
@@ -292,7 +292,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Circulatory System",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 27,
     "question": "Choose the option that is associated with an open vascular system.",
@@ -303,7 +303,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Circulatory System",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 28,
     "question": "Choose the option that is associated with the measuring of the pulse beat.",
@@ -314,7 +314,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Excretion",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 29,
     "question": "Study the options carefully and identify the organism that excretes uric acid as its main nitrogenous waste.",
@@ -356,7 +356,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Excretion",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 32,
     "question": "Study the table below and choose the option which does not tally.",
@@ -431,7 +431,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Objective",
     "questionNumber": 38,
     "question": "The difference between the smooth endoplasmic reticulum and the rough endoplasmic reticulum is that",
@@ -578,7 +578,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) State one (1) function of the following cell organelles: i. Nucleus ii. Plasma membrane iii. Ribosome iv. Chloroplast v. Ribosomal Endoplasmic Reticulum vi. Golgi apparatus vii. Mitochondria viii. Cell wall ix. Lysosome x. Vacuoles.",
@@ -588,7 +588,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) Mention three (3) similarities between a prokaryotic and an eukaryotic cell.",
@@ -598,7 +598,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Essay",
     "questionNumber": "1c",
     "question": "(c) Mention two (2) differences between a prokaryotic and an eukaryotic cell.",
@@ -608,7 +608,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2a",
     "question": "(a) A breed of dog is said to have genes for hair colour and leg length. Allele 'A' is dominant and gives brown hair. Allele 'a' is recessive and gives black hair. Allele 'L' is dominant and gives long legs, and allele 'l' is recessive and gives short legs. Present in tabular form, the various types of genotypes and phenotypes that the dogs may have.",
@@ -618,7 +618,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(b) Construct a genetic table to show the offspring a breeder would expect between two dogs that are heterozygote for both genes using Punnet square.",
@@ -628,7 +628,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2c",
     "question": "(c) State the phenotypic ratio of the cross.",
@@ -738,7 +738,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Skeletal System and Muscles",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "7a",
     "question": "(a) Define the term: tissue.",
@@ -748,7 +748,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Skeletal System and Muscles",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "7b",
     "question": "(b) State the four (4) main types of tissue found in animals.",
@@ -758,7 +758,7 @@
   {
     "subject": "Biology",
     "year": 2020,
-    "category": "Skeletal System and Muscles",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "7c",
     "question": "(c) Write short notes on each of the various types of epithelial tissues, indicating their structures, locations and functions.",

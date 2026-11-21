@@ -959,3 +959,111 @@
   border-color: color-mix(in srgb, #f59e0b 30%, transparent); border-left-color: #f59e0b;
 }
 #app-content .answer-display--review .correct-answer { color: var(--st-warn); }
+
+/* ---------- Written quiz (essay-quiz.js) ---------- */
+/* Question type choice in the lobby: Multiple choice | Written */
+#app-content .qz-kind { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+#app-content .qz-kind-label { grid-column: 1 / -1; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--st-muted); }
+#app-content .qz-kind-btn {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 12px 14px; border-radius: 14px; text-align: left; cursor: pointer;
+  background: var(--st-tint); border: 1.5px solid var(--st-border); color: var(--st-text);
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+#app-content .qz-kind-btn strong { font-size: 0.95rem; }
+#app-content .qz-kind-btn span { font-size: 0.8rem; color: var(--st-muted); }
+#app-content .qz-kind-btn:hover:not([disabled]) { border-color: color-mix(in srgb, var(--st-primary) 45%, var(--st-border)); }
+#app-content .qz-kind-btn.is-on {
+  border-color: var(--st-primary); background: color-mix(in srgb, var(--st-primary) 8%, var(--st-surface)); color: var(--st-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--st-primary) 16%, transparent);
+}
+#app-content .qz-kind-btn[disabled] { opacity: 0.55; cursor: not-allowed; }
+
+/* Answer box and the reveal button */
+#app-content .quiz-q-badge.eq-marks-badge { background: color-mix(in srgb, var(--st-accent) 12%, transparent); border-color: transparent; color: var(--st-accent); font-weight: 700; }
+#app-content .eq-answer-label { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin: 4px 0 8px; font-size: 0.88rem; font-weight: 700; }
+#app-content .eq-answer-label span { font-weight: 500; font-size: 0.8rem; color: var(--st-muted); }
+#app-content .eq-answer {
+  display: block; width: 100%; box-sizing: border-box; padding: 12px 14px; border-radius: 14px; resize: vertical;
+  font: inherit; font-size: 0.95rem; line-height: 1.6; color: var(--st-text);
+  background: var(--st-tint); border: 1.5px solid var(--st-border);
+}
+#app-content .eq-answer:focus { outline: none; border-color: var(--st-primary); box-shadow: 0 0 0 3px color-mix(in srgb, var(--st-primary) 15%, transparent); }
+#app-content .eq-reveal-btn {
+  display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; padding: 12px 20px; border: none; border-radius: 14px; cursor: pointer;
+  background: linear-gradient(135deg, var(--st-primary), var(--st-accent)); color: #fff; font-size: 0.95rem; font-weight: 700;
+  box-shadow: 0 8px 18px -8px color-mix(in srgb, var(--st-primary) 70%, transparent);
+}
+#app-content .eq-reveal-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+#app-content .eq-reveal-hint { margin-top: 8px; font-size: 0.82rem; color: var(--st-muted); }
+
+/* The model answer as a marking scheme */
+#app-content .eq-marking {
+  margin-top: 18px; padding: 16px 18px; border-radius: 18px;
+  background: color-mix(in srgb, var(--st-accent) 5%, var(--st-surface));
+  border: 1px solid color-mix(in srgb, var(--st-accent) 22%, transparent); border-left: 4px solid var(--st-accent);
+}
+#app-content .eq-marking .explanation-label { background: color-mix(in srgb, var(--st-accent) 14%, transparent); color: var(--st-accent); }
+#app-content .eq-marking-head { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+#app-content .eq-marking-hint { margin-top: 6px; font-size: 0.85rem; color: var(--st-muted); }
+#app-content .eq-marking-quick { display: flex; gap: 6px; }
+#app-content .eq-quick-btn {
+  padding: 6px 12px; border-radius: 999px; cursor: pointer; font-size: 0.8rem; font-weight: 600;
+  background: var(--st-surface); border: 1px solid var(--st-border); color: var(--st-text);
+}
+#app-content .eq-quick-btn:hover { border-color: var(--st-primary); color: var(--st-primary); }
+#app-content .eq-notes {
+  margin-bottom: 12px; padding: 10px 12px; border-radius: 12px; font-size: 0.85rem; line-height: 1.6; color: var(--st-muted);
+  background: color-mix(in srgb, #f59e0b 8%, transparent); border: 1px solid color-mix(in srgb, #f59e0b 22%, transparent);
+}
+#app-content .eq-gap { height: 8px; }
+#app-content .eq-points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: eqp; }
+#app-content .eq-point { position: relative; counter-increment: eqp; border-radius: 14px; background: var(--st-surface); border: 1.5px solid var(--st-border); transition: border-color 0.15s ease, background 0.15s ease; }
+#app-content .eq-point label { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; cursor: pointer; }
+#app-content .eq-points--review .eq-point { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; }
+#app-content .eq-point-box { position: absolute; opacity: 0; width: 1px; height: 1px; }
+#app-content .eq-point-check {
+  flex-shrink: 0; width: 24px; height: 24px; margin-top: 1px; border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  border: 2px solid var(--st-border); background: var(--st-tint); font-size: 0.8rem; font-weight: 800; color: #fff;
+}
+#app-content .eq-point-check::after { content: counter(eqp); color: var(--st-muted); }
+#app-content .eq-point-text { flex: 1; min-width: 0; font-size: 0.93rem; line-height: 1.7; }
+#app-content .eq-point-box:focus-visible + .eq-point-check { box-shadow: 0 0 0 3px color-mix(in srgb, var(--st-primary) 30%, transparent); }
+#app-content .eq-point.is-ticked { border-color: color-mix(in srgb, var(--st-good) 55%, transparent); background: color-mix(in srgb, var(--st-good) 7%, var(--st-surface)); }
+#app-content .eq-point.is-ticked .eq-point-check { background: var(--st-good); border-color: var(--st-good); }
+#app-content .eq-point.is-ticked .eq-point-check::after { content: "✓"; color: #fff; }
+#app-content .eq-point.is-missed .eq-point-check { border-color: color-mix(in srgb, var(--st-bad) 45%, transparent); }
+#app-content .eq-point.is-missed .eq-point-check::after { content: "✗"; color: var(--st-bad); }
+#app-content .eq-score { margin-top: 12px; font-size: 0.92rem; color: var(--st-muted); }
+#app-content .eq-score strong { color: var(--st-text); font-size: 1.02rem; }
+
+/* Results: the student's own typed answer and the model answer */
+#app-content .eq-your-answer, #app-content .eq-review-answer { margin-top: 12px; font-size: 0.92rem; line-height: 1.65; }
+#app-content .eq-your-answer > div { margin-top: 6px; padding: 10px 12px; border-radius: 12px; background: var(--st-tint); border: 1px dashed var(--st-border); }
+#app-content .eq-review-answer .eq-points { margin-top: 8px; }
+
+@media (max-width: 640px) {
+  #app-content .qz-kind { grid-template-columns: 1fr; }
+  #app-content .eq-marking { padding: 14px; }
+  #app-content .eq-marking-quick { width: 100%; }
+  #app-content .eq-quick-btn { flex: 1; }
+  #app-content .eq-reveal-btn { width: 100%; justify-content: center; }
+}
+
+/* ---------- Share a good score (WhatsApp) ---------- */
+#app-content .share-score {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  margin: 0 0 16px; padding: 16px 20px; border-radius: 18px;
+  background: rgba(37, 211, 102, 0.08); border: 1px solid rgba(37, 211, 102, 0.35);
+}
+#app-content .share-score-text { display: flex; flex-direction: column; gap: 2px; font-size: 0.9rem; color: var(--st-muted, #64748b); }
+#app-content .share-score-text strong { font-size: 1rem; color: var(--st-text, inherit); }
+#app-content .share-score-btn {
+  display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; border-radius: 12px;
+  background: #25d366; color: #fff; font-weight: 700; font-size: 0.92rem; text-decoration: none;
+  transition: transform 0.15s, background 0.15s;
+}
+#app-content .share-score-btn:hover { background: #1ebe5b; transform: translateY(-1px); }
+[data-theme="dark"] #app-content .share-score { background: rgba(37, 211, 102, 0.1); }
+@media (max-width: 560px) {
+  #app-content .share-score-btn { width: 100%; justify-content: center; }
+}

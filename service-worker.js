@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v26';
+const CACHE_VERSION = 'v41';
 const CACHE_NAME = `jupeb-qb-${CACHE_VERSION}`;
 
 // Everything the app needs to open, saved when the service worker installs, so a
@@ -24,12 +24,23 @@ const ASSETS_TO_CACHE = [
   '/notes/chemistry.js',
   '/notes/biology.js',
   '/notes/maths.js',
+  '/notes/economics.js',
+  '/notes/government.js',
+  '/notes/crs.js',
+  '/notes/irs.js',
+  '/notes/literature.js',
+  '/notes/businessManagement.js',
+  '/notes/accounting.js',
+  '/notes/geography.js',
+  '/notes/sociology.js',
   '/script.js',
+  '/essay-quiz.js',
   '/exam-mode.js',
   '/auth.js',
   '/home-screen.js',
   '/welcome.js',
   '/ui.js',
+  '/install-guide.js',
   '/images/jupeb-icon.png',
   '/favicon.ico',
   '/icon-192.png'

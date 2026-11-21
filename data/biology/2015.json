@@ -13,7 +13,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Excretion",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 2,
     "question": "In mammals, the function of the sebaceous gland is to ______________",
@@ -24,7 +24,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Skeletal System and Muscles",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 3,
     "question": "Osteoporosis is a disease of the ______________",
@@ -57,7 +57,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Objective",
     "questionNumber": 6,
     "question": "The function of ribosomes in cells is ______________",
@@ -68,7 +68,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 7,
     "question": "Which statement correctly describes homologous chromosomes?",
@@ -90,7 +90,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Respiration in Mammals",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 9,
     "question": "Breathing movement in mammals is accompanied by regular movement of the diaphragm and the",
@@ -123,7 +123,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Objective",
     "questionNumber": 12,
     "question": "Which of the following nitrogenous base is found in RNA but not in DNA?",
@@ -145,7 +145,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 14,
     "question": "Genetic rearrangement between nonsister chromatids is known as",
@@ -277,7 +277,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 26,
     "question": "The type of cell division which forms the basis of Mendel's law of segregation is",
@@ -343,7 +343,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Objective",
     "questionNumber": 32,
     "question": "Which of these is a trace element?",
@@ -466,7 +466,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Objective",
     "questionNumber": 43,
     "question": "Non-living bodies in the cell includes one of these,",
@@ -488,7 +488,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Respiration in Mammals",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 45,
     "question": "Which of these is not a form of respiration in Amphibians?",
@@ -554,7 +554,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) State 6 differences between sexual and asexual reproduction",
@@ -564,7 +564,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) Write short notes on any 2 of the following:\n(i) Haplontic life cycle\n(ii) Diplontic life cycle\n(iii) Haplodiplontic life cycle",
@@ -574,7 +574,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2a",
     "question": "(a) Define the following terms:\n(i) Genotype\n(ii) Phenotype\n(iii) Hybrid\n(iv) Dominant character",
@@ -584,7 +584,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(b) State clearly Mendel's first and second laws of inheritance",
@@ -594,7 +594,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2c",
     "question": "(c) If a pure breeding brown coloured rat BB is crossed with a pure breeding White rat bb, using diagrams only, show the genotype of the offspring up to the second filial generation.",
@@ -664,7 +664,7 @@
   {
     "subject": "Biology",
     "year": 2015,
-    "category": "Reproduction",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "6b",
     "question": "(b) With aid of diagram only, describe mature spermatozoon",

@@ -35,7 +35,7 @@
   {
     "subject": "Mathematics",
     "year": 2019,
-    "category": "Indices",
+    "category": "Logarithms",
     "type": "Objective",
     "questionNumber": 4,
     "question": "Compute the value of x if (4⁻ˣ × 32ˣ⁺¹ + 5x)/5 = (16²ˣ⁺¹)/5 + x.",
@@ -127,7 +127,7 @@
   {
     "subject": "Mathematics",
     "year": 2019,
-    "category": "Binary Operations",
+    "category": "Mappings",
     "type": "Objective",
     "questionNumber": 12,
     "question": "A binary operation * is defined on the set of real numbers R by: x * y = (1/5)(5x + 5y - 4) for any two real numbers x, y ∈ R. Calculate the identity element.",
@@ -226,7 +226,7 @@
   {
     "subject": "Mathematics",
     "year": 2019,
-    "category": "Parametric Equations",
+    "category": "Differentiation",
     "type": "Objective",
     "questionNumber": 21,
     "question": "Given that x = sin(t) and y = cos(t), then the letter t is simply called the ______.",
@@ -347,7 +347,7 @@
   {
     "subject": "Mathematics",
     "year": 2019,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 32,
     "question": "An object of mass 2.5 kg moving at a constant velocity of 12 m/s comes in contact with a resistance of 10 N. How long does it take the body to come to rest?",
@@ -402,7 +402,7 @@
   {
     "subject": "Mathematics",
     "year": 2019,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 37,
     "question": "A load of mass 70 kg is placed in a lift. Calculate the reaction between the floor of the lift and the load when the lift moves upwards with an acceleration of 2 m/s². [Take g = 9.8 m/s²]",
@@ -413,7 +413,7 @@
   {
     "subject": "Mathematics",
     "year": 2019,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 38,
     "question": "A block of mass 3 kg rests on a rough horizontal table. If the coefficient of friction between the block and the table is 0.43, determine the minimum horizontal force that will make the block to slide on the table. [Take g = 10 m/s²]",
@@ -525,7 +525,7 @@
   {
     "subject": "Mathematics",
     "year": 2019,
-    "category": "Sampling Distribution",
+    "category": "Significance Testing",
     "type": "Objective",
     "questionNumber": 48,
     "question": "A population with variance 16 has unknown mean μ. Let X̄ be the mean of a random sample of size 100 from this population. If X̄ is used to estimate μ, determine the standard error of X̄.",
@@ -536,7 +536,7 @@
   {
     "subject": "Mathematics",
     "year": 2019,
-    "category": "Probability Distributions",
+    "category": "Random Variables",
     "type": "Objective",
     "questionNumber": 49,
     "question": "What is the mean value of a binomial variate whose number of repeated trials (n) equals 8 and probability of success (p) equals 0.4?",
@@ -610,7 +610,7 @@
   {
     "subject": "Mathematics",
     "year": 2019,
-    "category": "Binary Operations",
+    "category": "Mappings",
     "type": "Essay",
     "questionNumber": "2c",
     "question": "(c) Let R be the set of real numbers. If binary operation ⊗ is defined on R by a ⊗ b = (a + 1)(b + 1) where a and b belong to R. Solve the equation (2 + 4n) ⊗ (4 - n) = 5n ⊗ n.",
@@ -670,7 +670,7 @@
   {
     "subject": "Mathematics",
     "year": 2019,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Essay",
     "questionNumber": "5a",
     "question": "(a) A block of mass 3.5 kg rests on a rough plane which is inclined at an angle of 42° to the horizontal. If the coefficient of friction between the block and the plane is 0.75, what is the least force P parallel to the plane required to:\n(i) start moving the block up the plane?\n(ii) prevent the block from sliding down the plane? (Take g = 9.8 m/s²).",
@@ -680,7 +680,7 @@
   {
     "subject": "Mathematics",
     "year": 2019,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Essay",
     "questionNumber": "5b",
     "question": "(b) A body of mass 100 kg is placed in a lift. Find the reaction between the floor of the lift and the body when the lift moves upward with an acceleration of 3.5 m/s². (Take g = 9.8 m/s²).",
@@ -700,7 +700,7 @@
   {
     "subject": "Mathematics",
     "year": 2019,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Essay",
     "questionNumber": "6b",
     "question": "(b) A car of mass 160 kg is placed on a rough horizontal road with coefficient of friction 0.5. Find the driving force when the car moves with:\n(i) an acceleration of 5 m/s²\n(ii) a uniform speed of 3 m/s.",

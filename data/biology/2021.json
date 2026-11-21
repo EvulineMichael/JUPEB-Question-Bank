@@ -2,7 +2,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Objective",
     "questionNumber": 1,
     "question": "The process of a white blood cell engulfing a bacterium is known as",
@@ -46,7 +46,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Reproduction",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 5,
     "question": "The function of the scrotum is to",
@@ -79,7 +79,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Objective",
     "questionNumber": 8,
     "question": "A peptide bond is formed between",
@@ -90,7 +90,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Objective",
     "questionNumber": 9,
     "question": "Which one of the following molecules contains amino acids?",
@@ -123,7 +123,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Objective",
     "questionNumber": 12,
     "question": "Unsaturated fat is in the form of",
@@ -145,7 +145,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Objective",
     "questionNumber": 14,
     "question": "RNA means",
@@ -200,7 +200,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Objective",
     "questionNumber": 19,
     "question": "Which of these organelles synthesize, refines, sorts, stores and secretes chemical products in the cell?",
@@ -266,7 +266,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Reproduction",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 25,
     "question": "One of these is NOT a classification of egg based on the yolk content.",
@@ -310,7 +310,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Nutrition in Animals",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 29,
     "question": "In which of the following organisms would glycogen be stored?",
@@ -321,7 +321,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 30,
     "question": "The phenotype ratio resulting from Mendel's law of independent assortment is",
@@ -332,7 +332,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Objective",
     "questionNumber": 31,
     "question": "The function of ribosome in cell is",
@@ -343,7 +343,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Skeletal System and Muscles",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 32,
     "question": "The joint between the atlas and the vertebrae allows for",
@@ -365,7 +365,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Excretion",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 34,
     "question": "During the excretion of urea, there is also a corresponding re-absorption of water into the blood stream. This re-absorption take place in the",
@@ -389,7 +389,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Nutrition in Animals",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 36,
     "question": "Organisms which take in complex organic molecules are called",
@@ -400,7 +400,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 37,
     "question": "The genotype ratio of a monohybrid cross in the F2 generation is",
@@ -411,7 +411,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 38,
     "question": "Chiasmata formation leads to",
@@ -477,7 +477,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Growth and Development",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 44,
     "question": "In animals cleavage produces a mass of cells called",
@@ -556,7 +556,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Respiration in Mammals",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) What is gaseous exchange? [1 mark]",
@@ -566,7 +566,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Respiration in Mammals",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) What is respiratory surface? [1 mark]",
@@ -576,7 +576,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Respiration in Mammals",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "1c",
     "question": "(c) State FOUR properties required for a cell to be an effective respiratory surface. [4 marks]",
@@ -586,7 +586,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Respiration in Mammals",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "1d",
     "question": "(d) Give FOUR examples of respiratory surfaces [4 marks]",
@@ -796,7 +796,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Excretion",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "7c",
     "question": "(c) Explain ultrafiltration. [5 marks]",
@@ -806,7 +806,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Nutrition in Animals",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "8a",
     "question": "(a) Name the constituents of a balanced diet and state their importance in the diet. [4 marks]",
@@ -816,7 +816,7 @@
   {
     "subject": "Biology",
     "year": 2021,
-    "category": "Nutrition in Animals",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "8b",
     "question": "(b) What are the modifications and the mechanisms associated with the following habits; i. Filter feeding in mosquito larva [3 marks] ii. Parasitic feeding in tapeworms [3 marks]",

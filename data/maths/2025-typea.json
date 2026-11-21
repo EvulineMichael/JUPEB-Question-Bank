@@ -2,7 +2,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Indices",
+    "category": "Logarithms",
     "type": "Objective",
     "questionNumber": 1,
     "question": "If 2ˣ × 4⁻ʸ = 1/8 and 3ˣ × 9²ʸ = 27. Find (x, y).",
@@ -24,7 +24,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Number Systems",
+    "category": "Real Numbers",
     "type": "Objective",
     "questionNumber": 3,
     "question": "Write 0.66... recurring as a fraction",
@@ -112,7 +112,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Binary Operations",
+    "category": "Mappings",
     "type": "Objective",
     "questionNumber": 11,
     "question": "A binary operation Δ is defined on the set of real numbers R by p Δ q = p + q + pq. Solve for x in the equation x Δ 3 + 2 Δ 3 = 18.",
@@ -123,7 +123,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Probability Distributions",
+    "category": "Random Variables",
     "type": "Objective",
     "questionNumber": 12,
     "question": "Which of the following is not true about a random variable to form geometric distribution?",
@@ -156,7 +156,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 15,
     "question": "Two objects of masses 8 kg and 6 kg are attached to the ends of a light inextensible string that passes over a light frictionless pulley. If the masses hang freely and the system is released from rest when the 8 kg mass is 10 m above the floor, express in minutes the time the 8 kg mass takes to reach the floor [Take g = 9.8 m/s²].",
@@ -237,7 +237,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 22,
     "question": "If two vehicles with masses 750 kg and 400 kg travelling in the same direction, at velocities 3 m/s and 5 m/s respectively, collide and coalesce, evaluate their common velocity after collision.",
@@ -358,7 +358,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Probability Distributions",
+    "category": "Random Variables",
     "type": "Objective",
     "questionNumber": 33,
     "question": "Find the variance of a Bernoulli distribution with 2/3 probability of success.",
@@ -380,7 +380,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Statistics",
+    "category": "Introduction to Statistics",
     "type": "Objective",
     "questionNumber": 35,
     "question": "A measure obtained from a population is called",
@@ -413,7 +413,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Moments of Inertia",
+    "category": "Equilibrium of Rigid Bodies",
     "type": "Objective",
     "questionNumber": 38,
     "question": "The radius of gyration of a body is 18 m when it is rotating about an axis which passes through the centre of mass of the body. If the radius of gyration of the same body is 30 m about an axis parallel to the first axis, calculate the perpendicular distance between the two parallel axes.",
@@ -424,7 +424,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Moments of Inertia",
+    "category": "Equilibrium of Rigid Bodies",
     "type": "Objective",
     "questionNumber": 39,
     "question": "The moment of inertia of a thin uniform rod of mass m and length l, about an axis perpendicular to the rod through its centre is M. Derive an expression, in terms of M, for the moment of inertia of the rod about an axis perpendicular to the rod through its endpoint.",
@@ -678,7 +678,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Statistics",
+    "category": "Introduction to Statistics",
     "type": "Essay",
     "questionNumber": "5a",
     "question": "(a) The table below shows the distribution of marks of 100 candidates in a JUPEB examination.\nMark range: 21-33, 31-44, 41-55, 51-66, 61-77, 71-88\nFrequency: 9, 22, 25, 20, 16, 8\n(i) Draw the cumulative frequency curve for the distribution;\n(ii) from the curve, obtain the semi-interquartile range of the distribution;\n(iii) how many students passed the examination if 50% was the pass mark?",
@@ -698,7 +698,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Confidence Interval",
+    "category": "Significance Testing",
     "type": "Essay",
     "questionNumber": "5c",
     "question": "(c) The president of a certain university wishes to estimate the average age of the students presently enrolled. From past studies, the standard deviation is known to be 2 years. A sample of 50 students is selected, and the mean is found to be 23.5 years. Find the 95% confidence interval of the population mean. Take Z_α = 1.96.",
@@ -708,7 +708,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Probability Distributions",
+    "category": "Random Variables",
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) Given that the cumulative distribution function CDF for a random variable X is defined by F(x) = P(X ≤ x) where x is any real number i.e., -∞ < x < ∞. State three properties of the cumulative distribution function F(x).",
@@ -718,7 +718,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Probability Distributions",
+    "category": "Random Variables",
     "type": "Essay",
     "questionNumber": "6b",
     "question": "(b) Suppose that a pair of fair dice are to be tossed, and let the random variable X denote the sum of the points.\n(i) Obtain the probability distribution for X;\n(ii) find the cumulative distribution function (distribution function) F(x) for random variable X.",
@@ -728,7 +728,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Probability Distributions",
+    "category": "Random Variables",
     "type": "Essay",
     "questionNumber": "6c",
     "question": "(c) The distribution function for a random variable X is given in the figure.\n(i) find the density function f(x);\n(ii) using the value of f(x), compute P(-3 < X ≤ 4).",
@@ -750,7 +750,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Essay",
     "questionNumber": "7b",
     "question": "(b) A mass of 8 kg hangs in equilibrium by suspension from two light inelastic strings making angles 30° and 45° with the horizontal. Calculate the tensions in the two strings.",
@@ -790,7 +790,7 @@
   {
     "subject": "Mathematics",
     "year": 2025,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Essay",
     "questionNumber": "8c",
     "question": "(c) The angle between forces 40 N and 50 N acting on a body of mass 30 kg is 120°. Find the acceleration of the body.",

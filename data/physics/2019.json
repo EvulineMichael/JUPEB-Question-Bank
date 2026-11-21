@@ -244,7 +244,7 @@
   {
     "subject": "Physics",
     "year": 2019,
-    "category": "Electromagnetic Waves",
+    "category": "Waves",
     "type": "Objective",
     "questionNumber": 23,
     "question": "The electromagnetic waves are arranged in which of the following order of increasing wavelength?",
@@ -586,7 +586,7 @@
   {
     "subject": "Physics",
     "year": 2019,
-    "category": "Electromagnetic Waves",
+    "category": "Waves",
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(iii) The electromagnetic pointing vector S is defined as S = E × H, where E and H are the electric and magnetic fields respectively. E = 10.10i + 0.20j + 0.60k and H = 0.40i + 9.80j + 0.10k. Calculate S.",
@@ -656,7 +656,7 @@
   {
     "subject": "Physics",
     "year": 2019,
-    "category": "Electromagnetic Waves",
+    "category": "Waves",
     "type": "Essay",
     "questionNumber": "4c",
     "question": "(c) The voltage from an electromagnetic wave travelling on a transmission line is given by V(x,t) = 10e^{-α} sin(4πx × 10^9 t - 30πx) where x is the distance in meters from the transmitter.\n(i) Find the frequency, wavelength and phase velocity of the wave.\n(ii) Find the voltage at x = 2.1 × 10^{-2} cm and t = 0.32 s.\n(iii) If the amplitude of the wave is measured to be 2V, find α.",

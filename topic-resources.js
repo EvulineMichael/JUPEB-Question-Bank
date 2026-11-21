@@ -197,16 +197,15 @@ const TOPIC_RESOURCES = {
   "Origin of Organic Molecules": [],
   "Basic Biostatistics": [],
   "Diversity of Living Things": [],
-  "Biological Molecules": [
+  "Living Things in Nature and Biological Molecules": [
     { type: "video", title: "Introduction to Biochemistry", url: "https://youtu.be/BjzH4Hr_wGg?si=4rrlg6rghAOVAKLT" },
-    { type: "video", title: "Molecular Biology", url: "https://www.youtube.com/watch?v=0f5g8k0g3J6A" },
     { type: "video", title: "Introduction to Biological Molecules", url: "https://youtu.be/t3VPjObFd0I?si=LBf2Ru_3v86LldwY" },
   ],
-  "Cell Structure and Functions": [
+  "Cell Organisation, Structure and Functions": [
     { type: "video", title: "Ninja Nerd: Cell Structure and Function", url: "https://youtu.be/t5DvF5OVr1Y?si=RsPlhgbFoz75ADnl" },
     { type: "article", title: "Cell Structure A-Level Biology Revision Notes", url: "https://alevelbiology.co.uk/notes/cell-structure/" },
   ],
-  "Cell Division, Genetics, Variations and Heredity": [
+  "Cell Division, Principles of Genetics, Variations and Heredity": [
     { type: "video", title: "Ninja Nerd: DNA Structure & Organization", url: "https://youtu.be/S6LXyzZn5Ls?si=bHQJqlNCVXgqp6pQ" },
     { type: "article", title: "Genetics A-Level Biology Revision Notes", url: "https://alevelbiology.co.uk/notes/genetics/" },
   ],

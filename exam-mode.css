@@ -19,15 +19,8 @@
 .exam-switch-lock { font-size: 0.7rem; }
 body.sidebar-collapsed .exam-switch { display: none; }
 
-/* IJMB is essay-only: hide the quiz features */
-body.exam-ijmb .sidebar-link[data-screen="quiz-screen"],
-body.exam-ijmb .dash-quick-practice-card,
-body.exam-ijmb .dash-weak-topics-card,
-body.exam-ijmb .dash-recent-card,
-body.exam-ijmb .db-quiz-only,
-body.exam-ijmb .tabbar-link--quiz,
-body.exam-ijmb .help-quiz-only,
-body.exam-ijmb .past-take-quiz-btn { display: none !important; }
+/* IJMB has quiz mode too: written questions the student marks (essay-quiz.js),
+   plus multiple choice where a subject has it. Nothing is hidden any more. */
 
 /* Locked screen */
 .exam-lock {
@@ -72,12 +65,51 @@ body.exam-ijmb .past-take-quiz-btn { display: none !important; }
   color: var(--text-secondary); font-family: inherit; font-size: 0.88rem;
 }
 
-   /* Offline notice */
+   /* Offline notice (exam-mode.js): the full message for a few seconds, then a
+      small icon in the bottom-right corner (computers) or an "Offline" tag in the
+      top bar (phones) */
    .offline-bar {
-     position: fixed; left: 50%; bottom: 16px; z-index: 2300;
-     transform: translate(-50%, 140%); transition: transform 0.25s ease;
-     max-width: calc(100% - 32px); padding: 10px 18px; border-radius: 999px;
-     background: #1f2937; color: #ffffff; font-size: 0.88rem; font-weight: 600; text-align: center;
-     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+     position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 2300;
+     display: inline-flex; align-items: center;
+     max-width: 36px; height: 36px; padding: 0 10px; overflow: hidden;
+     border: 0; border-radius: 999px; cursor: pointer; font: inherit;
+     background: #1f2937; color: #ffffff; font-size: 0.85rem; font-weight: 600; white-space: nowrap;
+     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+     opacity: 0; visibility: hidden; transform: translateY(12px);
+     transition: max-width 0.35s ease, opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
    }
-   .offline-bar.is-on { transform: translate(-50%, 0); }
+   .offline-bar svg { flex: none; }
+   .offline-bar-text { opacity: 0; transition: opacity 0.2s ease; padding-left: 8px; }
+   .offline-bar.is-on { opacity: 0.85; visibility: visible; transform: none; }
+   .offline-bar.is-on:hover { opacity: 1; }
+   .offline-bar.is-open { max-width: min(460px, calc(100vw - 28px)); opacity: 1; padding: 0 16px 0 12px; }
+   .offline-bar.is-open .offline-bar-text { opacity: 1; }
+
+   .topbar-offline { display: none; }
+
+   /* Phones (signed in, so the top bar is showing) */
+   @media (max-width: 900px) {
+     body.has-sidebar.is-offline #app-topbar .topbar-offline {
+       display: inline-flex; align-items: center; gap: 5px; height: 30px; padding: 0 10px;
+       border-radius: 999px; border: 1px solid var(--dash-border); cursor: pointer;
+       background: var(--bg-secondary); color: var(--text-secondary);
+       font-family: inherit; font-size: 0.75rem; font-weight: 700;
+     }
+     body.has-sidebar.is-offline #app-topbar .topbar-offline svg { width: 14px; height: 14px; }
+     /* the message drops in just under the top bar, then leaves; the tag stays */
+     body.has-sidebar .offline-bar {
+       left: 50%; right: auto; bottom: auto;
+       top: calc(var(--nav-top-h, 60px) + env(safe-area-inset-top, 0px) + 8px);
+       width: max-content; max-width: calc(100vw - 28px); height: auto; padding: 10px 14px;
+       border-radius: 14px; white-space: normal; text-align: left; line-height: 1.35;
+       transform: translate(-50%, -10px);
+     }
+     body.has-sidebar .offline-bar.is-on { opacity: 0; visibility: hidden; transform: translate(-50%, -10px); }
+     body.has-sidebar .offline-bar.is-open { opacity: 1; visibility: visible; transform: translate(-50%, 0); max-width: calc(100vw - 28px); padding: 10px 14px; }
+     body.has-sidebar .offline-bar .offline-bar-text { opacity: 1; }
+   }
+   /* Phones, not signed in: no top bar, so keep the corner icon, bottom-left */
+   @media (max-width: 900px) {
+     body:not(.has-sidebar) .offline-bar { right: auto; left: 14px; }
+     body:not(.has-sidebar) .offline-bar.is-open { white-space: normal; height: auto; min-height: 36px; padding: 8px 14px 8px 12px; border-radius: 18px; }
+   }

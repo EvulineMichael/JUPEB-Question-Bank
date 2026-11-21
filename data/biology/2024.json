@@ -35,7 +35,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Circulatory System",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 4,
     "question": "The supply of blood to the tissues of the heart is termed",
@@ -46,7 +46,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Sense Organs",
+    "category": "Sense Organ",
     "type": "Objective",
     "questionNumber": 5,
     "question": "Which is NOT a bone involved in the connection of the outer and inner ear?",
@@ -68,7 +68,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Circulatory System",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 7,
     "question": "Which compound present in haemoglobin causes the characteristic red colour in blood?",
@@ -134,7 +134,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 13,
     "question": "The following events take place in early prophase of mitosis EXCEPT",
@@ -145,7 +145,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 14,
     "question": "The generation produced by crossing homologous parental stocks is",
@@ -156,7 +156,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 15,
     "question": "The change in the amount, arrangement or structure of deoxyribonucleic acid (DNA) of a living organism is called",
@@ -167,7 +167,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Reproduction",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 16,
     "question": "The type of cell division during spermatogenesis and oogenesis in which there is a reduction of chromosomes to half of the original number of chromosomes is called",
@@ -312,7 +312,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 29,
     "question": "After undergoing a genetic testing, a patient who has constantly exposed herself to ultrasound treatment during her first trimester of pregnancy was diagnosed of abnormality in her blood cell. This could have resulted from",
@@ -323,7 +323,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Objective",
     "questionNumber": 30,
     "question": "The following are nucleotide bases EXCEPT",
@@ -334,7 +334,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Growth and Development",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 31,
     "question": "For effective development of an embryo, which of the following organs emerges first?",
@@ -356,7 +356,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Excretion",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 33,
     "question": "Which food nutrient is detected in urine to announce the diabetics' condition?",
@@ -422,7 +422,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 39,
     "question": "The observable features in living organisms which can be inherited from parents is",
@@ -455,7 +455,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 42,
     "question": "One of the alternative forms of the same gene responsible for determining contrasting characteristics is called",
@@ -466,7 +466,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 43,
     "question": "One of the following is NOT true about meiosis and mitosis?",
@@ -477,7 +477,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Objective",
     "questionNumber": 44,
     "question": "The scientific study of cells is known as",
@@ -543,7 +543,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Objective",
     "questionNumber": 50,
     "question": "In which order will the synthesis of any macromolecule proceed?",
@@ -579,7 +579,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) i. Name the purines of the nitrogenous base of nucleic acid. [1 Mark]\niii. List TWO functions of lipids in a cell. [1 Mark]",
@@ -609,7 +609,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(b) State the THREE cell theories [3 Marks]",
@@ -619,7 +619,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Essay",
     "questionNumber": "2c",
     "question": "(c) Name the bonds that is formed between monomers of the following biological molecules: i. Starch, ii. Protein, iii. Lipid, iv. Nucleic acid [2 Marks]",
@@ -708,7 +708,7 @@
   {
   "subject": "Biology",
   "year": 2024,
-  "category": "Cell Structure and Functions",
+  "category": "Cell Organisation, Structure and Functions",
   "type": "Essay",
   "questionNumber": "5a",
   "question": "(a) Draw and label the plant cell. [4 Marks]",
@@ -768,7 +768,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Reproduction",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "7",
     "question": "(a) i. Define Gametogenesis. [2 Marks]\nii. Name the TWO different types of gametogenesis in organisms. [2 Marks]\niii. Describe the process of gametogenesis in male mammals. [3 Marks]\n\n(b) Explain the processes that occur in a nephron. [3 Marks]",
@@ -788,7 +788,7 @@
   {
     "subject": "Biology",
     "year": 2024,
-    "category": "Circulatory System",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "8b",
     "question": "(b) State two ways by which white blood cells carry out their activity in the body of humans [1 mark]",
@@ -798,7 +798,7 @@
   {
   "subject": "Biology",
   "year": 2024,
-  "category": "Reproduction",
+  "category": "Physiological Processes",
   "type": "Essay",
   "questionNumber": "8c",
   "question": "(c) i. Draw a well labelled diagram of spermatozoon [3 marks]\nii. State the functions of any four of the labelled parts [2 marks]",

@@ -24,7 +24,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "States of Matter",
+    "category": "Nature of Matter",
     "type": "Objective",
     "questionNumber": 3,
     "question": "The temperature above which the liquid states of a substance no longer exist is called",
@@ -46,7 +46,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Organic Chemistry",
+    "category": "Structure and Bonding in Organic Compounds",
     "type": "Objective",
     "questionNumber": 5,
     "question": "The number of pi electrons in butyne is",
@@ -101,7 +101,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Organic Chemistry",
+    "category": "Structure and Bonding in Organic Compounds",
     "type": "Objective",
     "questionNumber": 10,
     "question": "Given below are sets of homologous series, identify the set that contains a carbonyl group:",
@@ -123,7 +123,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Organic Chemistry",
+    "category": "Structure and Bonding in Organic Compounds",
     "type": "Objective",
     "questionNumber": 12,
     "question": "There is free rotation about the carbons of ethane but not that of ethene. This is due to the fact that",
@@ -134,7 +134,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Equilibrium",
+    "category": "Equilibrium State",
     "type": "Objective",
     "questionNumber": 13,
     "question": "Nitrogen dioxide decomposes on heating according to the following equation: 2NO₂(g) ⇌ 2NO(g) + O₂(g). When 4 mol nitrogen dioxide was put into a 1 dm³ container and heated to a constant temperature, the equilibrium mixture contained 0.8 mol of oxygen. What is the numerical value of equilibrium constant, Kc at the temperature of the experiment?",
@@ -145,7 +145,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Organic Chemistry",
+    "category": "Structure and Bonding in Organic Compounds",
     "type": "Objective",
     "questionNumber": 14,
     "question": "Identify P in the reaction: C₂H₅MgBr + P → C₂H₅C(OH)(CH₃)C₃H₇",
@@ -189,7 +189,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Industrial Chemistry",
+    "category": "p-block elements",
     "type": "Objective",
     "questionNumber": 18,
     "question": "What is the catalyst used in the contact process?",
@@ -211,7 +211,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Organic Chemistry",
+    "category": "Structure and Bonding in Organic Compounds",
     "type": "Objective",
     "questionNumber": 20,
     "question": "Hydrocarbons which react with ammoniacal copper(I) chloride solution conform to the general molecular formula",
@@ -233,7 +233,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Organic Chemistry",
+    "category": "Structure and Bonding in Organic Compounds",
     "type": "Objective",
     "questionNumber": 22,
     "question": "The IUPAC name for the compound below is",
@@ -247,7 +247,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Acid-Base Chemistry",
+    "category": "Acid-Base Equilibria",
     "type": "Objective",
     "questionNumber": 23,
     "question": "Substances that are electron pair acceptors are called",
@@ -258,7 +258,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Organic Chemistry",
+    "category": "Structure and Bonding in Organic Compounds",
     "type": "Objective",
     "questionNumber": 24,
     "question": "If the molecule A-B breaks homolytically, then",
@@ -291,7 +291,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Organic Chemistry",
+    "category": "Structure and Bonding in Organic Compounds",
     "type": "Objective",
     "questionNumber": 27,
     "question": "Iodohexane and 2-iodooctane are related as",
@@ -394,7 +394,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Redox Chemistry",
+    "category": "Electrochemistry",
     "type": "Objective",
     "questionNumber": 36,
     "question": "What is the oxidation state of oxygen in OF₂?",
@@ -405,7 +405,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Acid-Base Chemistry",
+    "category": "Acid-Base Equilibria",
     "type": "Objective",
     "questionNumber": 37,
     "question": "A shampoo solution at 25°C has a hydroxide-ion concentration of 1.5×10⁻⁹ moldm⁻³. The solution is",
@@ -427,7 +427,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Acid-Base Chemistry",
+    "category": "Acid-Base Equilibria",
     "type": "Objective",
     "questionNumber": 39,
     "question": "A base is a proton acceptor, according to",
@@ -460,7 +460,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Corrosion",
+    "category": "Electrochemistry",
     "type": "Objective",
     "questionNumber": 42,
     "question": "A method of preventing corrosion that involves coating steel with zinc metal is called?",
@@ -471,7 +471,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Organic Chemistry",
+    "category": "Structure and Bonding in Organic Compounds",
     "type": "Objective",
     "questionNumber": 43,
     "question": "The most common type of chemical reaction which alkanes undergo is",
@@ -515,7 +515,7 @@
   {
     "subject": "Chemistry",
     "year": 2026,
-    "category": "Equilibrium",
+    "category": "Equilibrium State",
     "type": "Objective",
     "questionNumber": 47,
     "question": "Which of the following will affect the equilibrium position of the reaction? I₂(g) + H₂(g) ⇌ 2HI(g)",

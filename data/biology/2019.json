@@ -13,7 +13,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Objective",
     "questionNumber": 2,
     "question": "The bonding between two complementary bases in a nucleotide is",
@@ -24,7 +24,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 3,
     "question": "______ is the basic unit of inheritance.",
@@ -35,7 +35,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 4,
     "question": "Which statement describes events during interphase of mitosis?",
@@ -46,7 +46,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 5,
     "question": "Which process occurs during prophase of the mitotic cell cycle in an animal cell?",
@@ -90,7 +90,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Objective",
     "questionNumber": 9,
     "question": "Cells consist of a number of different components. Which row shows the components present in both a prokaryotic and an eukaryotic cell?",
@@ -411,7 +411,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Objective",
     "questionNumber": 36,
     "question": "The stored carbohydrate nutrient in animals is known as",
@@ -433,7 +433,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Skeletal System and Muscles",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 38,
     "question": "The main function of epithelial tissue is",
@@ -444,7 +444,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Skeletal System and Muscles",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 39,
     "question": "Which of these is a connective tissue?",
@@ -499,7 +499,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Nutrition in Animals",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 44,
     "question": "The conversion of a nutrient into a molecule in the body of a consumer is referred to as",
@@ -542,7 +542,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Reproduction",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 47,
     "question": "The method of fertilization among vertebrates in which fertilized eggs are retained in the body of the female until when matured and then hatched out is",
@@ -586,7 +586,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) Two parents with normal skin and hair colouring had six (6) children, of whom three (3) were albino. Albino people have no colouring in their skin or hair, due to having an inactive form of the enzyme tyrosinase. The normal allele of the tyrosinase gene is 'A' and the allele that produces faulty tyrosinase is 'a'. State the genotype of the parents and their albino children.",
@@ -596,7 +596,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) Albinism is a relatively frequent condition in humans, but one (1) of these albino children had a very unusual phenotype. While most of her hair was white, the hair of her eye brows developed some brown colouring, as did the hair on her hands and lower legs. Suggest why it is likely that this mutation occurred in the child with brown coloured eye brows rather than in the testes and ovaries of the parent.",
@@ -606,7 +606,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "1c",
     "question": "(c) A man with normal vision, married a lady with normal vision. Incidentally, their first son is colour blind. Use a genetic diagram to show the possibility of this man being the rightful father of the colour blind child.",
@@ -616,7 +616,7 @@
   {
     "subject": "Biology",
     "year": 2019,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "1d",
     "question": "(d) What was the genotype of the man and his wife?",

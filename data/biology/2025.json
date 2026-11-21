@@ -24,7 +24,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 3,
     "question": "If diploid number 2n = 8 in an organism, how many sister chromatids will be formed during S phase of cell cycle?",
@@ -35,7 +35,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 4,
     "question": "The following are sex-linked disorder EXCEPT",
@@ -70,7 +70,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Objective",
     "questionNumber": 7,
     "question": "The membrane-bound ribosomes found in the cytoplasm of eukaryotic plant cell is",
@@ -103,7 +103,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 10,
     "question": "Homologous chromosomes do NOT necessarily have the same",
@@ -114,7 +114,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 11,
     "question": "The constricted region of a chromosome that is an attachment site for microtubules is",
@@ -213,7 +213,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Objective",
     "questionNumber": 20,
     "question": "The type of mutation that arises as a result of natural during DNA replication is referred to as",
@@ -411,7 +411,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Excretion",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 38,
     "question": "Blood flowing in renal vein is deep red in colour due to the presence of",
@@ -444,7 +444,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Excretion",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 41,
     "question": "The cortex of kidney contains all the following EXCEPT",
@@ -477,7 +477,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Reproduction",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 44,
     "question": "Fertilization of sex cells naturally occur in females in the",
@@ -532,7 +532,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Circulatory System",
+    "category": "Physiological Processes",
     "type": "Objective",
     "questionNumber": 49,
     "question": "Iliac artery supplies blood to",
@@ -556,7 +556,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) Briefly state ONE function each of the cell organelles listed below: i. Nucleus ii. Plasma membrane iii. Mitochondria iv. Ribosome v. Golgi apparatus vi. Rough Endoplasmic Reticulum [3 Marks]",
@@ -566,7 +566,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Biological Molecules",
+    "category": "Living Things in Nature and Biological Molecules",
     "type": "Essay",
     "questionNumber": "1b",
     "question": "(b) Itemize THREE differences between DNA and RNA. [3 Marks]",
@@ -606,7 +606,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Division, Genetics, Variations and Heredity",
+    "category": "Cell Division, Principles of Genetics, Variations and Heredity",
     "type": "Essay",
     "questionNumber": "2b",
     "question": "(b) State TWO reasons for the choice of garden pea plant by Gregor Mendel for his experiment in genetics. [2 Marks]",
@@ -616,7 +616,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Respiration in Mammals",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "2c(i,ii)",
     "question": "(c) i. Calculate the percentage change in the average breathing rates when running compared with bending sideways. [3 Marks]\nii. What is the relationship between the level of exercise and breathing rates? [1 Mark]",
@@ -635,7 +635,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Cell Structure and Functions",
+    "category": "Cell Organisation, Structure and Functions",
     "type": "Essay",
     "questionNumber": "2c(iii)",
     "question": "(c) iii. With ONE example each, state FOUR different forms in which cell exists. [2 Marks]",
@@ -775,7 +775,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Circulatory System",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "7b",
     "question": "(b) Highlight the steps involved in the process of blood clotting. [5 Marks]",
@@ -785,7 +785,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Nutrition in Animals",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "8a",
     "question": "(a) State FIVE functions of the mammalian liver. [5 Marks]",
@@ -795,7 +795,7 @@
   {
     "subject": "Biology",
     "year": 2025,
-    "category": "Skeletal System and Muscles",
+    "category": "Physiological Processes",
     "type": "Essay",
     "questionNumber": "8b",
     "question": "(b) Explain briefly how the skeleton is important to humans with specific examples. [5 Marks]",

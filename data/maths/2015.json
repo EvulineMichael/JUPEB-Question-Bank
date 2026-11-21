@@ -390,7 +390,7 @@
   {
     "subject": "Mathematics",
     "year": 2015,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 35,
     "question": "A block of mass 20 kg rests on a horizontal plane whose coefficient of friction is 0.4. Find the least force required to move the block if it acts horizontally.",
@@ -401,7 +401,7 @@
   {
     "subject": "Mathematics",
     "year": 2015,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 36,
     "question": "A mass of 8 kg hangs in equilibrium, suspended by two light inelastic strings making angles 30° and 45° with the horizontal, calculate the tensions in the two strings.",
@@ -648,7 +648,7 @@
   {
     "subject": "Mathematics",
     "year": 2015,
-    "category": "Equilibrium of a Rigid Body",
+    "category": "Equilibrium of Rigid Bodies",
     "type": "Essay",
     "questionNumber": "5",
     "question": "(a) In the study of motion of rigid bodies, explain the following concepts:\n(i) Moment of inertia of the system\n(ii) Radius of gyration of the system\n\n(b) Find the moment of inertia and radius of gyration of a uniform thin rod of length 2a, density ρ about an axis passing through one end of the rod perpendicular to its length.",
@@ -658,7 +658,7 @@
   {
     "subject": "Mathematics",
     "year": 2015,
-    "category": "Ordinary Differential Equations",
+    "category": "First Order Differential Equations",
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) State Newton's law of cooling and write out the differential equation describing the temperature of the body.\n\n(b) A beaker of water initially at 100°C is allowed to cool in a room maintained at 15°C. After two minutes, the water temperature is 85°C. Find the temperature of the water after four minutes and the time taken for the water to reach 40°C.",

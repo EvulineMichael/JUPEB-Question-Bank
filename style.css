@@ -3970,133 +3970,69 @@ body.sidebar-collapsed .sidebar-link[data-tooltip]:hover::after {
     font-size: 0.9rem;
 }
 
-/* ===== FOOTER ===== */
+/* ===== FOOTER =====
+   The footer under the dashboard and other app pages, in the same clean style as
+   the home page footer (.lp-footer in home.css). Markup: .app-footer in index.html. */
 .app-footer {
     flex-shrink: 0;
     margin-top: auto;
-    background: var(--bg-secondary);
-    border-top: 1px solid var(--border-color);
-    padding: 24px 24px 20px;
-    transition: background 0.3s ease;
+    padding: 26px 24px 22px;
+    border-top: 1px solid var(--dash-border, var(--border-color));
+    background: transparent;
+    color: var(--text-secondary);
 }
-
-.footer-content {
-    max-width: 1400px;
+.footer-inner {
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.footer-top {
-    text-align: center;
-}
-
-.footer-tagline {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--tab-active-bg);
-    font-style: italic;
-}
-
-.footer-bottom {
-    display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 12px;
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    padding-top: 8px;
-    border-top: 1px solid var(--border-color);
+    gap: 12px 28px;
 }
-
-.footer-left,
-.footer-center,
-.footer-right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
 .footer-brand {
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-.footer-version {
-    background: var(--tab-active-bg);
-    color: white;
-    padding: 2px 10px;
-    border-radius: 12px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-.footer-copyright {
-    color: var(--text-secondary);
-}
-
-.footer-dot {
-    color: var(--border-color);
-}
-
-.footer-updated {
-    color: var(--text-secondary);
-    font-size: 0.8rem;
-}
-
-.footer-link {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    color: var(--text-secondary);
-    text-decoration: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-    font-size: 0.85rem;
-    border: 1px solid var(--border-color);
+    gap: 10px;
+    font-weight: 700;
+    color: var(--text-primary);
 }
-
-.footer-link:hover {
-    color: var(--tab-active-bg);
-    border-color: var(--tab-active-bg);
-    background: rgba(13, 110, 253, 0.03);
-}
-
-[data-theme="dark"] .footer-link:hover {
-    background: rgba(59, 130, 246, 0.08);
-}
-
-.footer-disclaimer {
+.footer-brand img { border-radius: 8px; display: block; }
+.footer-note {
+    flex: 1 1 320px;
+    max-width: 520px;
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.55;
     text-align: center;
+}
+.footer-links { display: inline-flex; align-items: center; gap: 18px; }
+.footer-links a,
+.footer-links button {
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--tab-active-bg);
+    text-decoration: none;
+}
+.footer-links a:hover,
+.footer-links button:hover { text-decoration: underline; }
+.footer-copy {
+    max-width: 1100px;
+    margin: 14px auto 0;
     font-size: 0.75rem;
-    color: var(--text-secondary);
-    opacity: 0.7;
-    font-style: italic;
-    padding-top: 4px;
+    text-align: center;
+    opacity: 0.75;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-    .footer-bottom {
-        flex-direction: column;
-        gap: 12px;
-    }
-    
-    .footer-left,
-    .footer-center,
-    .footer-right {
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .footer-tagline {
-        font-size: 0.9rem;
-    }
+@media (max-width: 767px) {
+    .app-footer { padding: 24px 18px 20px; }
+    .footer-inner { flex-direction: column; text-align: center; gap: 12px; }
+    .footer-note { flex: none; }
 }
 .sidebar-footer,
 .sidebar-user-info,

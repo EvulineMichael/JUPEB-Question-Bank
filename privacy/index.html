@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy &amp; Data Policy · JUPEB &amp; IJMB Prep</title>
+<meta name="description" content="What JUPEB & IJMB Prep collects, why, who it is shared with, how long it is kept, and your rights.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<script>
+  // Same light/dark choice as the app
+  (function () {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || (!t && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
+<style>
+  :root {
+    --bg: #f5f7fb; --card: #ffffff; --text: #1a1a2e; --muted: #5b6474; --border: #e3e7ee;
+    --primary: #0d6efd; --tint: #eef4ff;
+  }
+  [data-theme="dark"] {
+    --bg: #0f172a; --card: #111c33; --text: #f1f5f9; --muted: #a3b0c2; --border: #24324d;
+    --primary: #60a5fa; --tint: #15254a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .top {
+    position: sticky; top: 0; z-index: 2; display: flex; align-items: center; gap: 10px;
+    padding: 12px 20px; padding-top: calc(12px + env(safe-area-inset-top, 0px));
+    background: color-mix(in srgb, var(--bg) 85%, transparent);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .top a { display: inline-flex; align-items: center; gap: 9px; color: var(--text); text-decoration: none; font-weight: 800; }
+  .top img { border-radius: 8px; }
+  .top .back { margin-left: auto; font-weight: 600; font-size: 0.9rem; color: var(--primary); }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: clamp(1.7rem, 4vw, 2.2rem); line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 24px; }
+  .summary {
+    background: var(--tint); border: 1px solid var(--border); border-radius: 14px; padding: 16px 20px; margin-bottom: 28px;
+  }
+  .summary h2 { margin-top: 0; font-size: 1rem; }
+  .summary ul { margin: 0; padding-left: 20px; }
+  section { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 6px 22px 14px; margin-bottom: 16px; }
+  h2 { font-size: 1.12rem; margin: 18px 0 8px; letter-spacing: -0.01em; }
+  h3 { font-size: 0.98rem; margin: 16px 0 4px; }
+  p, li { font-size: 0.96rem; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--primary); }
+  .muted { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 8px 0 12px; }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-top: 1px solid var(--border); }
+  th { font-weight: 700; }
+  @media (max-width: 560px) {
+    section { padding: 4px 16px 12px; }
+    table, thead, tbody, tr, th, td { display: block; }
+    thead { display: none; }
+    tr { border-top: 1px solid var(--border); padding: 8px 0; }
+    td { border: 0; padding: 2px 0; }
+    td:first-child { font-weight: 700; }
+    td:last-child { color: var(--muted); font-size: 0.88rem; }
+    td:last-child::before { content: 'From: '; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <a href="/"><img src="/images/jupeb-icon.png" alt="" width="28" height="28"> JUPEB &amp; IJMB Prep</a>
+  <a class="back" href="/">Back to the site</a>
+</header>
+
+<main>
+  <h1>Privacy &amp; Data Policy</h1>
+  <p class="meta">Last updated: 20 November 2026</p>
+
+  <div class="summary">
+    <h2>The short version</h2>
+    <ul>
+      <li>We collect only what we need to give you access, save your progress and run the site.</li>
+      <li>We don't sell your data, show ads, or use tracking tools or tracking cookies.</li>
+      <li>Your access to each exam lasts one year from the day you pay.</li>
+      <li>You can ask us at any time to see, correct or delete your data.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>1. Who we are</h2>
+    <p>JUPEB &amp; IJMB Prep (<a href="https://jupebijmbprep.com">jupebijmbprep.com</a>) is an independent study tool for JUPEB and IJMB students in Nigeria. We are not connected to JUPEB, IJMB or any university. In this policy, “we” and “us” means JUPEB &amp; IJMB Prep, and “you” means anyone who uses the site, including students and the teachers in our referral programme.</p>
+    <p>We follow the Nigeria Data Protection Act 2023. You can reach us using the details in section 11.</p>
+  </section>
+
+  <section>
+    <h2>2. What we collect</h2>
+    <table>
+      <thead><tr><th>What</th><th>Details</th><th>Where it comes from</th></tr></thead>
+      <tbody>
+        <tr><td>Google account details</td><td>Your name, Gmail address and profile photo</td><td>Google, when you sign in</td></tr>
+        <tr><td>Payment and access record</td><td>Your Gmail address, the exams you paid for, the payment date and reference, when your access ends, and the teacher code that referred you, if any</td><td>You, when you send your receipt on WhatsApp</td></tr>
+        <tr><td>Your profile</td><td>The name you want us to use, your school, your subjects, the exams you're writing, how you heard about us and any referral code</td><td>You, in the welcome form and in Settings</td></tr>
+        <tr><td>Study activity</td><td>Quiz scores and history, topics you find hard, progress, streaks, bookmarks and study settings</td><td>The app, as you study</td></tr>
+        <tr><td>Messages to us</td><td>Feedback or question reports you send in the app (with the page you were on and your device type), and WhatsApp messages</td><td>You</td></tr>
+        <tr><td>Teacher details</td><td>Name, email, referral code, number of referrals, amounts earned, and payout requests</td><td>Teachers, when they join the referral programme</td></tr>
+        <tr><td>Technical data</td><td>IP address, browser and device type, in the normal logs kept by our hosting and font providers</td><td>Your browser, automatically</td></tr>
+      </tbody>
+    </table>
+    <p>We don't collect your card details, phone contacts, location or anything else on your phone. Payments are made by bank transfer, so we only see what's on the receipt you send us.</p>
+  </section>
+
+  <section>
+    <h2>3. Why we use it</h2>
+    <ul>
+      <li><strong>To give you access you paid for</strong> (our agreement with you): checking your Gmail address against our list each time you open past questions, and ending access when your year is up.</li>
+      <li><strong>To save your progress</strong> (our agreement with you): so your scores, weak topics and streaks follow you to any phone or computer you sign in on.</li>
+      <li><strong>To support you</strong> (our agreement with you): answering your messages and fixing the questions you report.</li>
+      <li><strong>To pay teachers</strong> (our agreement with them): counting referrals and paying what they've earned.</li>
+      <li><strong>To improve the site</strong> (our legitimate interest): seeing which schools and subjects we serve and how people find us. We look at this as totals, not to single you out.</li>
+      <li><strong>To meet the law</strong> (legal duty): keeping payment records for as long as the law requires.</li>
+    </ul>
+    <p>We won't use your data for anything else without asking you first, and we never use it for advertising.</p>
+  </section>
+
+  <section>
+    <h2>4. Cookies and what stays on your device</h2>
+    <p><strong>We don't use advertising or tracking cookies</strong>, and we don't use analytics tools that follow you around the web. The site doesn't set any cookies of its own.</p>
+    <p>To work quickly and offline, the app saves a few things in your browser's storage on your phone or computer. These are needed for the site to work, so there's nothing to switch on or off:</p>
+    <table>
+      <thead><tr><th>What</th><th>Why</th><th>How long</th></tr></thead>
+      <tbody>
+        <tr><td>Sign-in (Firebase)</td><td>Keeps you signed in, so you don't have to sign in every time</td><td>Until you sign out</td></tr>
+        <tr><td>Your access and settings</td><td>Remembers which exams you have and when they end, your name, theme, quiz settings and subjects</td><td>Until you sign out or clear your browser</td></tr>
+        <tr><td>Study progress</td><td>Your scores, history and streaks, kept on the device and copied to your account</td><td>Until you clear your browser</td></tr>
+        <tr><td>Offline copy</td><td>The app itself and the past questions for your exam, so you can study without data</td><td>Questions are removed when you sign out</td></tr>
+      </tbody>
+    </table>
+    <p>When you sign in, Google may use its own cookies on its own sign-in pages; <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">Google explains them here</a>. You can clear everything the site saved at any time from your browser's settings (look for “site data” or “clear browsing data”). If you share a phone, sign out when you finish.</p>
+  </section>
+
+  <section>
+    <h2>5. Who we share it with</h2>
+    <p>We never sell or rent your data. We use a few trusted services to run the site, and they only process data to provide their service to us:</p>
+    <ul>
+      <li><strong>Google Firebase</strong>: sign-in and our database (your access record, profile, study progress and messages).</li>
+      <li><strong>Vercel</strong>: hosts the website and sends you the past questions.</li>
+      <li><strong>WhatsApp (Meta)</strong>: when you message us there, WhatsApp's own privacy policy also applies.</li>
+      <li><strong>Google Fonts, cdnjs and jsDelivr</strong>: supply the fonts, icons and maths display, so they see your IP address when the page loads.</li>
+    </ul>
+    <p>If a student signs up with a teacher's referral code, that teacher can see how many students they referred and what they've earned, but <strong>not</strong> the students' names or email addresses. We may also share data if the law or a court requires it.</p>
+  </section>
+
+  <section>
+    <h2>6. Data stored outside Nigeria</h2>
+    <p>Google and Vercel store data on servers outside Nigeria. They protect it with strong security and legal safeguards that meet the standards of the Nigeria Data Protection Act. By using the site you understand your data is stored this way.</p>
+  </section>
+
+  <section>
+    <h2>7. How long we keep it</h2>
+    <ul>
+      <li><strong>Your access record, profile and study progress</strong>: while your access lasts, then for up to 12 months after it ends in case you have questions about your account. After that we delete it, or keep only totals that don't identify you.</li>
+      <li><strong>Payment records</strong>: for as long as Nigerian law requires us to keep financial records.</li>
+      <li><strong>Feedback and messages</strong>: until we've dealt with them, and no longer than 12 months after that.</li>
+      <li><strong>Teacher records</strong>: while the teacher is in the programme, and payment records for as long as the law requires.</li>
+    </ul>
+    <p>If you ask us to delete your data sooner, we will, except for anything the law says we must keep.</p>
+  </section>
+
+  <section>
+    <h2>8. Your access period</h2>
+    <p>Each exam you pay for (JUPEB or IJMB) gives you <strong>one year</strong> of access from the day we activate your payment. You can see your end date in Settings. When it ends you can no longer open the questions, and the copies on your device stop being available. You can pay again at any time for another year. Students who joined before 20 November 2026 have access until 30 November 2027.</p>
+  </section>
+
+  <section>
+    <h2>9. Your rights</h2>
+    <p>Under the Nigeria Data Protection Act 2023 you can:</p>
+    <ul>
+      <li>ask for a copy of the data we hold about you;</li>
+      <li>ask us to correct anything that's wrong;</li>
+      <li>ask us to delete your data (this also ends your access);</li>
+      <li>object to how we use your data, or ask us to limit it;</li>
+      <li>take back any consent you've given, such as for the optional welcome questions;</li>
+      <li>ask for your data in a form you can take elsewhere; and</li>
+      <li>complain to the Nigeria Data Protection Commission (<a href="https://ndpc.gov.ng" target="_blank" rel="noopener">ndpc.gov.ng</a>).</li>
+    </ul>
+    <p>Message us using the details below. We reply within 30 days, and usually much sooner. We may ask you to confirm it's really you, for example by messaging from the Gmail address on your account.</p>
+  </section>
+
+  <section>
+    <h2>10. Students under 18</h2>
+    <p>Many of our students are under 18. If you are, please make sure a parent or guardian knows you're using the site and agrees to it; usually they'll be the one paying. A parent or guardian can contact us at any time to see or delete their child's data.</p>
+  </section>
+
+  <section>
+    <h2>11. Keeping it safe, changes, and contact</h2>
+    <p><strong>Security.</strong> Data is sent over encrypted connections, and past questions are only sent after we check you're signed in and have access. No system is perfect: if a breach ever affected your data, we would tell you and the Commission as the law requires.</p>
+    <p><strong>Changes.</strong> If we change this policy we'll update the date at the top, and tell you in the app if the change is important.</p>
+    <p><strong>Contact.</strong> For anything about your data:</p>
+    <ul>
+      <li>WhatsApp: <a href="https://wa.me/2349035801863" target="_blank" rel="noopener">+234 903 580 1863</a></li>
+      <li id="privacy-email-row" hidden>Email: <a id="privacy-email" href="#"></a></li>
+    </ul>
+  </section>
+</main>
+
+<script>
+  // The email for privacy requests. Leave '' to show WhatsApp only.
+  var PRIVACY_EMAIL = 'jupeb.qbank@gmail.com';
+  if (PRIVACY_EMAIL) {
+    var a = document.getElementById('privacy-email');
+    a.textContent = PRIVACY_EMAIL;
+    a.href = 'mailto:' + PRIVACY_EMAIL;
+    document.getElementById('privacy-email-row').hidden = false;
+  }
+</script>
+</body>
+</html>

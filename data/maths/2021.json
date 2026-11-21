@@ -46,7 +46,7 @@
   {
     "subject": "Mathematics",
     "year": 2021,
-    "category": "Indices",
+    "category": "Logarithms",
     "type": "Objective",
     "questionNumber": 5,
     "question": "Deduce the values of x if 9x² = 3^(5x - 2).",
@@ -244,7 +244,7 @@
   {
     "subject": "Mathematics",
     "year": 2021,
-    "category": "Curve Sketching",
+    "category": "Applications of Differentiation",
     "type": "Objective",
     "questionNumber": 23,
     "question": "An asymptote is a tangent to curve in two points at",
@@ -367,7 +367,7 @@
   {
     "subject": "Mathematics",
     "year": 2021,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 34,
     "question": "A body of mass 6 kg is suspended at a position P by two light inextensible strings AP and BP which are inclined respectively at angle 20° and 60° to the upward vertical. If the system is in equilibrium, calculate the total tension in the string.",
@@ -380,7 +380,7 @@
   {
     "subject": "Mathematics",
     "year": 2021,
-    "category": "Equilibrium of a Rigid Body",
+    "category": "Equilibrium of Rigid Bodies",
     "type": "Objective",
     "questionNumber": 35,
     "question": "A uniform beam is 14 m long and has a mass of 40 kg. Masses of 10 kg and 20 kg are suspended from its ends. At what point from the 20 kg mass must the beam be suspended so that it may rest horizontally on the support?",
@@ -507,7 +507,7 @@
   {
     "subject": "Mathematics",
     "year": 2021,
-    "category": "Probability Distributions",
+    "category": "Random Variables",
     "type": "Objective",
     "questionNumber": 46,
     "question": "Compute the expected number of males and its standard deviation in a random sample of 100 families.",
@@ -692,7 +692,7 @@
   {
     "subject": "Mathematics",
     "year": 2021,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Essay",
     "questionNumber": "5b",
     "question": "(b) A body of mass 6 kg has on a smooth plane inclined at an angle of 60° to the horizontal. This body is attached to another body of mass 10 kg by a light inextensible string. Find:\n(i) the acceleration of the system.\n(ii) the tension in the string. (Take g = 10 m/s²)",
@@ -702,7 +702,7 @@
   {
     "subject": "Mathematics",
     "year": 2021,
-    "category": "Work, Energy and Power",
+    "category": "Newtonian Mechanics",
     "type": "Essay",
     "questionNumber": "5c",
     "question": "(c) A car of mass 200 kg moves forward on a road with an acceleration of 0.8 m/s² and covers a distance of 200 m. If the road has a resistance of 40 N, calculate the driving power of the car if the trip lasted 20 seconds.",

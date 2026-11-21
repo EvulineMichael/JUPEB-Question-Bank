@@ -136,7 +136,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Partial Differentiation",
+    "category": "Differentiation",
     "type": "Objective",
     "questionNumber": 13,
     "question": "Given that u = x² + 3x²y + y², find u_xy.",
@@ -246,7 +246,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Probability Distributions",
+    "category": "Random Variables",
     "type": "Objective",
     "questionNumber": 23,
     "question": "Let X be a random variable having density function f(x) = { 1/4, -2 ≤ x ≤ 2; 0, otherwise }. What is the standard deviation of X if the variance of X is 4/3?",
@@ -257,7 +257,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "t-Distribution",
+    "category": "Significance Testing",
     "type": "Objective",
     "questionNumber": 24,
     "question": "The graph of student's t distribution with 9 degrees of freedom is shown in the figure below. Find the value of t₁ for which the shaded area on the right is 0.05.",
@@ -270,7 +270,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Probability Distributions",
+    "category": "Random Variables",
     "type": "Objective",
     "questionNumber": 25,
     "question": "Find the value of the constant c given that the function f(x) = { cx², 0 < x < 3; 0, otherwise } is a probability function.",
@@ -437,7 +437,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Number Systems",
+    "category": "Real Numbers",
     "type": "Objective",
     "questionNumber": 40,
     "question": "Which of the following statements is false?",
@@ -448,7 +448,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Friction",
+    "category": "Forces and Equilibrium",
     "type": "Objective",
     "questionNumber": 41,
     "question": "Frictional force encountered after commencement of motion is called",
@@ -459,7 +459,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Work, Energy and Power",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 42,
     "question": "A body at a height of 10 m moves with a velocity 10 m/s. If the mass of the body is 10 kg. What is the total energy of the body? [Assume g = 10 m/s²]",
@@ -470,7 +470,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Work, Energy and Power",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 43,
     "question": "Calculate the average power required to raise a 100 kg drum to a height of 15 m in one minute. [g = 10 m/s²]",
@@ -481,7 +481,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Work, Energy and Power",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 44,
     "question": "Calculate the potential energy of a body of mass 1200 g hanging at a height of 10 m above the ground. [g = 10 m/s²]",
@@ -536,7 +536,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Objective",
     "questionNumber": 49,
     "question": "An object of mass 4 kg moving at a constant velocity of 15 m/s comes in contact with a resistance of 20 N. How long does it take the body to come to rest?",
@@ -547,7 +547,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Friction",
+    "category": "Forces and Equilibrium",
     "type": "Objective",
     "questionNumber": 50,
     "question": "If the minimum force required to move a bus of mass 0.2 kg over a rough surface is 0.5 N, what is the coefficient of friction?",
@@ -558,7 +558,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Demand and Supply",
+    "category": "Consumer and Producer Surplus",
     "type": "Objective",
     "questionNumber": 41,
     "question": "In a perfect market, the demand and supply functions are respectively D = x² - 2x - 14 and S = 2x + 7, where x is the price per unit. Obtain the number of quantity demanded at equilibrium.",
@@ -580,7 +580,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Inventory",
+    "category": "Mathematics of Finance",
     "type": "Objective",
     "questionNumber": 43,
     "question": "In an inventory system, which of the following best describes costing method?",
@@ -591,7 +591,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Cost Functions",
+    "category": "Production and Cost Functions",
     "type": "Objective",
     "questionNumber": 44,
     "question": "Given that the fixed cost of manufacturing a carton of toothpick is ₦3500 and the marginal cost at q units is (100 + 2q). Calculate the total cost of 120 units.",
@@ -602,7 +602,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Depreciation",
+    "category": "Mathematics of Finance",
     "type": "Objective",
     "questionNumber": 45,
     "question": "The cost of an asset is ₦10,750. If the asset is expected to last for 5 years with residual value of ₦2,250.00, compute the annual depreciation.",
@@ -613,7 +613,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Compound Interest",
+    "category": "Mathematics of Finance",
     "type": "Objective",
     "questionNumber": 46,
     "question": "Find the amount of money that must be invested now that will grow to ₦8000 in four years at 5% per annum compound interest.",
@@ -646,7 +646,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Elasticity of Demand",
+    "category": "Marginal Concepts",
     "type": "Objective",
     "questionNumber": 49,
     "question": "Given the demand function x = 10 + 3p², find the price elasticity of demand at p = 3.",
@@ -657,7 +657,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Annuities",
+    "category": "Mathematics of Finance",
     "type": "Objective",
     "questionNumber": 50,
     "question": "An annuity that is payable forever is called",
@@ -668,7 +668,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Indices",
+    "category": "Logarithms",
     "type": "Essay",
     "questionNumber": "1a",
     "question": "(a) (i) Given that 3^(x + y) = 81 and (x - y) log₂ 8 = log₂ 256, evaluate 2xy.\n(ii) Find the possible values of k for which the equation 3x² + (k/3)x = -25/3 has equal roots.",
@@ -800,7 +800,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Probability Distributions",
+    "category": "Random Variables",
     "type": "Essay",
     "questionNumber": "5b",
     "question": "(b) Out of 2400 families with 5 children each, how many would you expect to have:\n(i) 5 girls\n(ii) either 2 or 3 boys\nIf the probabilities for boys and girls are equal.",
@@ -820,7 +820,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Probability Distributions",
+    "category": "Random Variables",
     "type": "Essay",
     "questionNumber": "6a",
     "question": "(a) The discrete random variable X has probability function as shown in the figure.\nShow that the value of b is 6/7.",
@@ -852,7 +852,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Newton's Laws and Forces",
+    "category": "Newtonian Mechanics",
     "type": "Essay",
     "questionNumber": "7a",
     "question": "(a) A particle of mass 4 kg rests on an inclined plane at an angle 30° to the horizontal surface. The coefficient of friction is 0.5.\n(i) Find the acceleration of the particle if it moves up the plane with a force of 80 N.\n(ii) Find the velocity attained after 3 s if it moves with an initial velocity of 12 m/s. [Take g = 10 m/s²]",
@@ -872,7 +872,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Moments of Inertia",
+    "category": "Equilibrium of Rigid Bodies",
     "type": "Essay",
     "questionNumber": "7c",
     "question": "(c) Calculate the moment of inertia and radius of gyration of a thin uniform rod of length 12 cm and mass 4 kg through its centre perpendicular to its length.",
@@ -912,7 +912,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Compound Interest",
+    "category": "Mathematics of Finance",
     "type": "Essay",
     "questionNumber": "9a",
     "question": "(a) ₦500,000 was invested in a clothing business for 2 years at 4% compounded semi-annually.\n(i) Find the compound amount.\n(ii) Find the compound interest.",
@@ -922,7 +922,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Market Equilibrium",
+    "category": "Consumer and Producer Surplus",
     "type": "Essay",
     "questionNumber": "9b",
     "question": "(b) Find the equilibrium price and quantity given the market below:\nQₛ = -14 + 2P;\nQ_d = 130 - 6P.",
@@ -932,7 +932,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Profit Maximization",
+    "category": "Optimization",
     "type": "Essay",
     "questionNumber": "9c",
     "question": "(c) The demand and cost functions for a scientific calculator are p = 4000 - 2q² and C = 25 + 1400q respectively, where p is the price in Naira and q is the quantity produced and C is the total cost of producing calculators in Naira. Determine the price and quantity for maximum profit, and the maximum profit.",
@@ -952,7 +952,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Inventory",
+    "category": "Mathematics of Finance",
     "type": "Essay",
     "questionNumber": "10b",
     "question": "(b) UNIBEN group of company had a beginning inventory of ₦800,000. In May 2021, it purchased and received goods worth ₦500,000; and had net sales of ₦900,000. If it maintained a 30% markup on sales,\n(i) compute cost of goods sold;\n(ii) estimate the ending inventory;\n(iii) calculate the inventory turnover at cost, correct to 2 decimal places.",
@@ -962,7 +962,7 @@
   {
     "subject": "Mathematics",
     "year": 2024,
-    "category": "Compound Interest",
+    "category": "Mathematics of Finance",
     "type": "Essay",
     "questionNumber": "10c",
     "question": "(c) A recent study shows that the cost of living in a city has been increasing by 4% a year. Calculate a family's monthly expected payment for 5 years if the current payment is ₦200,000.",

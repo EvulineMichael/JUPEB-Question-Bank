@@ -3,7 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JUPEB &amp; IJMB Prep</title>
+<title>JUPEB &amp; IJMB Prep: Past Questions with Answers</title>
+<meta name="description" content="Practise 2,000+ real JUPEB and IJMB past questions with answers and explanations, topic notes and timed quizzes. Works on your phone, even offline.">
+<link rel="canonical" href="https://jupebijmbprep.com/">
+
+<!-- How the link looks when shared on WhatsApp, Telegram, X, Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JUPEB &amp; IJMB Prep">
+<meta property="og:url" content="https://jupebijmbprep.com/">
+<meta property="og:title" content="JUPEB &amp; IJMB Prep: Past Questions with Answers">
+<meta property="og:description" content="2,000+ real past questions with answers that teach you. Topic notes, quizzes, works offline.">
+<meta property="og:image" content="https://jupebijmbprep.com/images/share-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JUPEB &amp; IJMB Prep: Pass JUPEB &amp; IJMB with confidence">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"JUPEB & IJMB Prep","url":"https://jupebijmbprep.com/"}
+</script>
   <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
@@ -32,6 +50,9 @@
 
 <!-- Service Worker Registration -->
 <script>
+  // The service worker saves the app and the papers a student opens so they work
+  // offline. It fetches the newest files whenever there is internet, so updates
+  // arrive by themselves on the next open and no "tap to refresh" message is needed.
   if ('serviceWorker' in navigator) {
     if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
       navigator.serviceWorker.getRegistrations().then(regs => {
@@ -40,35 +61,9 @@
     } else {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./service-worker.js')
-          .then(reg => console.log('SW registered:', reg.scope))
           .catch(err => console.log('SW failed:', err));
       });
-      navigator.serviceWorker.addEventListener('controllerchange', () => {
-        const banner = document.createElement('div');
-        banner.style.cssText = `position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#0d6efd;color:white;padding:14px 24px;border-radius:12px;z-index:9999;font-size:0.9rem;box-shadow:0 4px 16px rgba(0,0,0,0.3);cursor:pointer;text-align:center;font-family:'Segoe UI',sans-serif;white-space:nowrap;`;
-        banner.textContent = '🔄 Update available — tap to refresh';
-        banner.addEventListener('click', () => window.location.reload());
-        document.body.appendChild(banner);
-      });
     }
-  }
-</script>
-<script>
-  // Notify user when a new version is available
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.addEventListener('controllerchange', () => {
-      // New service worker took over - show update notification
-      const updateBanner = document.createElement('div');
-      updateBanner.style.cssText = `
-        position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
-        background: #0d6efd; color: white; padding: 14px 24px; border-radius: 12px;
-        z-index: 9999; font-size: 0.9rem; box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-        cursor: pointer; text-align: center; font-family: 'Segoe UI', sans-serif;
-      `;
-      updateBanner.textContent = '🔄 Update available — tap to refresh';
-      updateBanner.addEventListener('click', () => window.location.reload());
-      document.body.appendChild(updateBanner);
-    });
   }
 </script>
 </head>
@@ -255,10 +250,11 @@
             <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
             <span>Already paid? <strong>Sign in with Google</strong></span>
           </button>
+          <p class="lp-legal">By signing in you agree to our <a href="/privacy">privacy &amp; data policy</a>.</p>
 
           <ul class="lp-trust">
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>One-time payment</li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Lifetime access</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>A full year of access</li>
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Works on any phone</li>
           </ul>
         </div>
@@ -375,7 +371,7 @@
         <div class="lp-head lp-reveal">
           <span class="lp-kicker">How it works</span>
           <h2>Start studying in three steps</h2>
-          <p>No subscription and no card needed. Pay once and you're in for life.</p>
+          <p>No subscription and no card needed. Pay once and you're in for a full year.</p>
         </div>
         <ol class="lp-steps">
           <li class="lp-step lp-reveal">
@@ -402,7 +398,7 @@
       <div class="lp-wrap">
         <div class="lp-head lp-reveal">
           <span class="lp-kicker">Pricing</span>
-          <h2>One payment. Lifetime access.</h2>
+          <h2>One payment. A full year of access.</h2>
           <p>Already have one exam? Add the other for ₦3,000.</p>
         </div>
 
@@ -410,7 +406,7 @@
           <article class="lp-plan lp-reveal">
             <h3>JUPEB</h3>
             <p class="lp-plan-desc">All nine JUPEB subjects</p>
-            <p class="lp-plan-price"><strong>₦5,000</strong><span>one-time</span></p>
+            <p class="lp-plan-price"><strong>₦5,000</strong><span>for 1 year</span></p>
             <ul class="lp-plan-list">
               <li>JUPEB past questions</li>
               <li>Every answer explained</li>
@@ -423,11 +419,11 @@
             <span class="lp-plan-badge">Best value</span>
             <h3>JUPEB + IJMB</h3>
             <p class="lp-plan-desc">Both exams, everything included</p>
-            <p class="lp-plan-price"><strong>₦8,000</strong><span>one-time</span></p>
+            <p class="lp-plan-price"><strong>₦8,000</strong><span>for 1 year</span></p>
             <ul class="lp-plan-list">
               <li>Everything in JUPEB and IJMB</li>
               <li>Save ₦2,000</li>
-              <li>Lifetime access on all your devices</li>
+              <li>A full year of access on all your devices</li>
             </ul>
             <button class="lp-btn lp-btn--primary lp-btn--block" data-plan="JUPEB + IJMB">Choose both</button>
           </article>
@@ -435,7 +431,7 @@
           <article class="lp-plan lp-reveal">
             <h3>IJMB</h3>
             <p class="lp-plan-desc">All nine IJMB subjects</p>
-            <p class="lp-plan-price"><strong>₦5,000</strong><span>one-time</span></p>
+            <p class="lp-plan-price"><strong>₦5,000</strong><span>for 1 year</span></p>
             <ul class="lp-plan-list">
               <li>IJMB essay past questions</li>
               <li>Step-by-step model answers</li>
@@ -460,7 +456,7 @@
           <ol class="home-steps">
             <li><strong>Pay <span id="home-pay-amount">₦5,000</span></strong> to Moniepoint <span class="home-mono">5282798033</span> (Michael Evuline).</li>
             <li><strong>Send your receipt and your Gmail address</strong> to us on WhatsApp. This is the Gmail you'll sign in with.</li>
-            <li><strong>Sign in with that Gmail</strong> once we've activated you. That's it. Access is for life.</li>
+            <li><strong>Sign in with that Gmail</strong> once we've activated you. That's it. Access lasts a year from payment.</li>
           </ol>
           <div class="home-access-actions">
             <a class="lp-btn lp-btn--whatsapp lp-btn--block" id="home-wa-btn" href="https://wa.me/2349035801863" target="_blank" rel="noopener">
@@ -482,7 +478,7 @@
           <p>Can't find what you're looking for? <a href="https://wa.me/2349035801863" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>
         </div>
         <div class="home-faq-list">
-          <details class="home-faq-item"><summary>How much does it cost?</summary><p>₦5,000 per exam (JUPEB or IJMB), or ₦8,000 for both, paid once. You get lifetime access, with no subscription. Already have one exam? Add the other for ₦3,000.</p></details>
+          <details class="home-faq-item"><summary>How much does it cost?</summary><p>₦5,000 per exam (JUPEB or IJMB), or ₦8,000 for both, paid once. Access lasts one year from the day you pay, enough for a full exam season, with no subscription. Already have one exam? Add the other for ₦3,000.</p></details>
           <details class="home-faq-item"><summary>How do I get access?</summary><p>Choose JUPEB, IJMB or both and pay, then send your receipt and your Gmail address to us on WhatsApp. We activate that Gmail, and you sign in with it. Tap "Get access" above for the details.</p></details>
           <details class="home-faq-item"><summary>Which subjects and years are covered?</summary><p>JUPEB: Chemistry, Physics, Mathematics, Biology, CRS, IRS, Literature, Economics and Government, with past questions from 2015 to 2026 depending on the subject. IJMB: essay past questions with model answers in all nine subjects, from 2016 onwards.</p></details>
           <details class="home-faq-item"><summary>Are the answers correct?</summary><p>Yes, but always cross-check with your textbook, because no answer bank is 100% perfect. If you spot a mistake, tell us and we fix it quickly.</p></details>
@@ -517,6 +513,7 @@
         </div>
         <p class="lp-footer-note">An independent study tool. Not affiliated with JUPEB or IJMB.</p>
         <a class="lp-footer-link" href="https://wa.me/2349035801863" target="_blank" rel="noopener">WhatsApp: +234 903 580 1863</a>
+        <a class="lp-footer-link" href="/privacy">Privacy &amp; data policy</a>
       </div>
     </footer>
 
@@ -535,8 +532,8 @@
 <!-- ===== DASHBOARD =====
      Styles: dashboard.css. Filled in by renderDashboard() in script.js; ui.js adds the
      exam countdown, the study tip and the small animations.
-     exam-mode.css hides .dash-quick-practice-card, .dash-weak-topics-card,
-     .dash-recent-card and .db-quiz-only for IJMB, so keep those classes. -->
+     .dash-quick-practice-card, .dash-weak-topics-card, .dash-recent-card and
+     .db-quiz-only mark the quiz parts (shown for JUPEB and IJMB). -->
 <div id="dashboard-screen" style="display:none;">
   <div class="dash-shell">
 
@@ -546,6 +543,7 @@
         <p class="db-date" id="dash-date"></p>
         <h2 id="dash-greeting-text">Good morning</h2>
         <p id="dash-user-name">Ready to make today a productive study session?</p>
+        <p class="db-head-streak"><span aria-hidden="true">🔥</span><span id="dash-streak-chip">Start a streak today</span></p>
       </div>
       <div class="dash-header-actions">
         <button class="db-header-btn" onclick="openSubjectPicker()">
@@ -607,9 +605,8 @@
           </div>
         </div>
 
-        <!-- Start studying -->
-        <section class="db-block db-o-start" aria-labelledby="db-start-title">
-          <div class="db-section-title"><h3 id="db-start-title">Start studying</h3></div>
+        <!-- Shortcuts: a slim row of one-line buttons (dashboard.css "Shortcuts") -->
+        <section class="db-block db-o-start" aria-label="Start studying">
           <div class="db-actions">
             <button class="db-action dash-quick-practice-card" onclick="startQuickPractice()">
               <span class="db-action-icon db-tone-blue"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span>
@@ -661,7 +658,7 @@
       <!-- Side rail -->
       <aside class="db-rail">
 
-        <!-- Streak -->
+        <!-- Streak (wide screens; smaller screens show the streak tag under the greeting) -->
         <div class="dash-card db-streak db-o-streak" id="dash-streak-card">
           <div class="db-card-head">
             <h3><span class="db-head-icon db-tone-amber">🔥</span>Study streak</h3>
@@ -702,14 +699,6 @@
           </div>
         </div>
 
-        <!-- Study tip (ui.js) -->
-        <div class="dash-card db-tip db-o-tip">
-          <div class="db-card-head">
-            <h3><span class="db-head-icon db-tone-amber">💡</span>Study tip</h3>
-            <button class="dash-link-btn" id="db-tip-next">Next tip</button>
-          </div>
-          <p class="db-tip-text" id="db-tip-text">Little and often beats one long cram. Twenty focused minutes a day adds up fast.</p>
-        </div>
       </aside>
     </div>
 
@@ -747,7 +736,7 @@
       <div class="set-hero-text">
         <h3 id="settings-hero-name">Student</h3>
         <p class="settings-account-email" id="settings-email">Signed in with Google</p>
-        <div class="set-badges" id="settings-badges"><span class="set-badge set-badge--gold">⭐ Lifetime access</span></div>
+        <div class="set-badges" id="settings-badges"></div>
       </div>
     </div>
 
@@ -823,6 +812,10 @@
             <span>Message us on WhatsApp</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
           </a>
+          <a class="acc-list-row" href="/privacy" target="_blank" rel="noopener">
+            <span>Privacy &amp; data policy</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </a>
         </div>
         <button class="settings-danger-btn" id="settings-signout-btn">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
@@ -889,6 +882,10 @@
         <button class="help-guide-card" onclick="goToPastPapers()">
           <span class="acc-icon acc-tone-blue"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
           <strong>Past papers</strong><span>Read a full paper, reveal answers, or take it as a quiz.</span>
+        </button>
+        <button class="help-guide-card" onclick="openInstallGuide()">
+          <span class="acc-icon acc-tone-amber"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M12 7v7M9 11l3 3 3-3M11 18h2"/></svg></span>
+          <strong>Add to home screen</strong><span>Open it like an app in one tap, and study offline. See how, step by step.</span>
         </button>
       </div>
     </section>
@@ -1002,6 +999,7 @@
         <li><strong>iPhone (Safari):</strong> tap the Share button, then “Add to Home Screen”.</li>
       </ul>
       <p class="bell-guide-note">Opened this link from WhatsApp or Instagram? Open it in Chrome or Safari first.</p>
+      <button class="bell-link" type="button" onclick="openInstallGuide()">Show me how, with pictures</button>
       <button class="bell-link" id="bell-guide-hide">Don't show this again</button>
     </details>
     <div id="bell-updates-list"></div>
@@ -1082,35 +1080,21 @@
 <!-- Back to Top Button -->
 <button id="back-to-top" style="display:none;">↑ Back to Top</button>
 
-<!-- Footer -->
+<!-- Footer (inside the app; the home page has its own .lp-footer). Styles: style.css "FOOTER". -->
 <footer class="app-footer">
-    <div class="footer-content">
-        <div class="footer-top">
-            <span class="footer-tagline">Helping you ace JUPEB and IJMB, one question at a time...</span>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-left">
-                <span class="footer-brand" data-site-name>JUPEB &amp; IJMB Prep</span>
-                <span class="footer-version desktop-only">v2.0</span>
-            </div>
-            <div class="footer-center">
-                <span class="footer-copyright">&copy; 2026 <span data-site-name>JUPEB &amp; IJMB Prep</span></span>
-                <span class="footer-dot desktop-only">•</span>
-                <span class="footer-updated desktop-only">Updated: August 1, 2026</span>
-            </div>
-            <div class="footer-right desktop-only">
-                <span class="footer-contact">Contact: +234 903 580 1863</span>
-                <a href="https://wa.me/2349035801863" target="_blank" rel="noopener noreferrer" class="footer-link" title="Message on WhatsApp">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    WhatsApp
-                </a>
-            </div>
-        </div>
-        <div class="footer-disclaimer">
-        <p style="font-size:0.8rem;">⚠️ Answers may not be 100% accurate. Always cross-check with your textbooks and research tools.</p>
-        <p style="margin-bottom:4px;">Disclaimer: Not affiliated with the Joint Universities Preliminary Examinations Board (JUPEB) or the Interim Joint Matriculation Board (IJMB)</p>
-</div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="images/jupeb-icon.png" alt="" width="28" height="28">
+      <span data-site-name>JUPEB &amp; IJMB Prep</span>
     </div>
+    <p class="footer-note">Answers are carefully checked, but always cross-check with your textbooks. An independent study tool, not affiliated with JUPEB or IJMB.</p>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="https://wa.me/2349035801863" target="_blank" rel="noopener">WhatsApp</a>
+      <button type="button" onclick="goToHelp()">Help</button>
+      <a href="/privacy" target="_blank" rel="noopener">Privacy</a>
+    </nav>
+  </div>
+  <p class="footer-copy">&copy; 2026 <span data-site-name>JUPEB &amp; IJMB Prep</span></p>
 </footer>
 <!-- Firebase SDKs -->
 <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
@@ -1123,11 +1107,22 @@
 <script src="notes/chemistry.js"></script>
 <script src="notes/biology.js"></script>
 <script src="notes/maths.js"></script>
+<script src="notes/economics.js"></script>
+<script src="notes/government.js"></script>
+<script src="notes/crs.js"></script>
+<script src="notes/irs.js"></script>
+<script src="notes/literature.js"></script>
+<script src="notes/businessManagement.js"></script>
+<script src="notes/accounting.js"></script>
+<script src="notes/geography.js"></script>
+<script src="notes/sociology.js"></script>
 <script src="script.js"></script>
+<script src="essay-quiz.js"></script>
 <script src="exam-mode.js"></script>
 <script src="auth.js"></script>
 <script src="home-screen.js"></script>
      <script src="welcome.js"></script>
 <script src="ui.js"></script>
+<script src="install-guide.js"></script>
 </body>
 </html>
